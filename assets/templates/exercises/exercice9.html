@@ -1,0 +1,40 @@
+<div
+	ng-init=""
+	ng-resettable-init="
+		ans.locked = false;
+		ans.a = '';
+		ans.b = '';
+		feedback.reveal = false;
+		"
+    ng-equate="
+	  solution.a = a;
+	  solution.b = b;
+	  solution.aNumbersMatch = equal(solution.a, ans.a);
+	  solution.bNumbersMatch = equal(solution.b, ans.b);
+	  ans.isCorrect = and(solution.aNumbersMatch, solution.bNumbersMatch);
+	  ans.isCorrectFlag = ifElse(ans.isCorrect, 1, 0);
+	  ">
+	
+	<div class="bold type-medium">
+		<div class="inbook fraction ib">
+			<div>{{x}}</div>
+			<div class="fraction-line-thin"></div>
+			<div>{{y}}</div>
+		</div>
+		<div class="ib unbold ml2 mr2">et</div>
+		<div class="inbook fraction ib">
+			<div>{{a}}</div>
+			<div class="fraction-line-thin"></div>
+			<div>{{b}}</div>
+		</div>
+	</div>
+	<hr/>
+
+	<div class="mt5 type-small" vcollapse="!questionseries.questionComplete;">
+		<div inbook-nextbtn="question"></div>
+	</div>
+
+	<div class="mt5" vcollapse="!questionseries.seriesCompleted">
+		<div inbook-nextbtn="series"></div>
+	</div>
+</div>
