@@ -1,0 +1,16 @@
+<div    inbook-questionseries 
+		class="pa8"
+		on-complete="scene.markAsCompleted();"
+		ordered=true
+		no-remove=true
+		ng-init="
+			imgUrl = 'http://d3mw5hjf8nr5ry.cloudfront.net/collegeboreal-sample/images/3_10-les_suites/';
+		">
+
+		<div class="inbook-grid-layout" style="width:600px; margin: 0 auto;">
+			<div class="col10">
+
+				<div inbook-questionseries-item level="1">
+
+
+				</div>

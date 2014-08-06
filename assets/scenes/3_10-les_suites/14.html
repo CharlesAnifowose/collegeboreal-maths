@@ -1,0 +1,84 @@
+<div    inbook-questionseries 
+		class="pa8"
+		on-complete="scene.markAsCompleted();"
+		ordered=true
+		no-remove=true
+		ng-init="
+			imgUrl = 'http://d3mw5hjf8nr5ry.cloudfront.net/collegeboreal-sample/images/3_10-les_suites/';
+		">
+
+		<div class="inbook-grid-layout" style="width:600px; margin: 0 auto;">
+			<div class="col10">
+
+				<div inbook-questionseries-item level="1">
+
+					<div class="mt3 type-xxsmall">
+						Voici le menu des spéciaux offerts à la cafétéria, chaque semaine
+					</div>
+
+					<div class="pa5">
+						<img ng-src="{{imgUrl}}diagram_29.png" />
+					</div>
+
+					<div class="mt3 type-xxsmall">
+						Pouvez-vous prédire le mets qui sera au menu mercredi et jeudi?
+					</div>
+
+					<div class="mt4">
+						<div inbook-nextbtn="question"></div>
+					</div>
+				</div>
+
+				<div inbook-questionseries-item level="2">
+
+					<div class="mt3 type-xxsmall">
+						Voici l'horaire des joutes de quatre équipes de badminton
+					</div>
+
+					<div class="pa5">
+						<img ng-src="{{imgUrl}}diagram_30.png" />
+					</div>
+
+					<div class="mt3 type-xxsmall">
+						Si l'ordre des équipes se répète, quelle équipe jouera les joutes 6, 7, et 8?
+					</div>
+
+					<div class="mt4">
+						<div inbook-nextbtn="question"></div>
+					</div>
+				</div>
+
+				<div inbook-questionseries-item level="3">
+
+					<div class="mt3 type-xxsmall">
+						Voici les notes de biologie obtenues par une apprenante. Si cette apprenante continue de la sorte, quelle note pourrait-elle s'attendre de recevior à l'examen final?
+					</div>
+
+					<div class="pa5">
+						<img ng-src="{{imgUrl}}diagram_31.png" />
+					</div>
+
+					<div class="mt4">
+						<div inbook-nextbtn="question"></div>
+					</div>
+				</div>
+
+				<div inbook-questionseries-item level="4">
+
+					<div class="mt3 type-xxsmall">
+						À toues les deux mois, M Léger aime contribuer une somme d'argent à une cause ou à une œuvre de charité. S'il continue à augmenter ses contributions de la sorte, combien versa-t-il septembre et en novembre?
+					</div>
+
+					<div class="pa5">
+						<img ng-src="{{imgUrl}}diagram_32.png" />
+					</div>
+
+					<div class="mt4">
+						<div inbook-nextbtn="question"></div>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+</div>
