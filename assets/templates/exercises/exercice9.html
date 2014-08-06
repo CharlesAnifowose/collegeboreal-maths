@@ -15,7 +15,7 @@
 	  ans.isCorrectFlag = ifElse(ans.isCorrect, 1, 0);
 	  ">
 	
-	<div class="bold type-medium">
+	<div class="bold mb3 type-medium">
 		<div class="inbook fraction ib">
 			<div>{{x}}</div>
 			<div class="fraction-line-thin"></div>
@@ -28,6 +28,7 @@
 			<div>{{b}}</div>
 		</div>
 	</div>
+	<div inbook-yesorno="equal((x/y),(a/b))" on-correct="question.markAsCorrect();"></div>
 	<hr/>
 
 	<div class="mt5 type-small" vcollapse="!questionseries.questionComplete;">
