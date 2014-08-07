@@ -1,110 +1,91 @@
 <div 
-	inbook-lesson-set 
-	inbook-lib-math
-	inbook-lib-animation-presets
+  style="position:relative; padding-left:200px; height:100%;"
+  inbook-lib-math
+  inbook-lib-animation-presets
 >
+  <script type="text/inbook-javascript" inbook-javascript>
+    var sceneBaseUrl = 'assets/scenes/'
+    var sceneSections = scope.sceneSections = [
+      {name:'3.02 Les Fractions', scenes:[
+        {name: 'Les Fractions', url: '3_02-les_fractions/01.html'}, 
+        {name: 'scene-1', url: '3_02-les_fractions/01-scene-1.html'},
+        {name: 'scene-2', url: '3_02-les_fractions/01-scene-2.html'},
+        {name: 'exercise-1', url: '3_02-les_fractions/02-exercise-1.html'},
+        {name: 'exercise-3', url: '3_02-les_fractions/02-exercise-3.html'},
+        {name: 'exercise-4', url: '3_02-les_fractions/02-exercise-4.html'},
+        {name: 'scene-3', url: '3_02-les_fractions/01-scene-3.html'},
+        {name: 'exercise-6', url: '3_02-les_fractions/02-exercise-6.html'},
+        {name: 'scene-4', url: '3_02-les_fractions/01-scene-4.html'},
+        {name: 'exercise-9', url: '3_02-les_fractions/02-exercise-9.html'},
+        {name: 'exercise-10', url: '3_02-les_fractions/02-exercise-10.html'},
+        {name: 'scene-5', url: '3_02-les_fractions/01-scene-5.html'},
+        {name: 'exercise-11', url: '3_02-les_fractions/02-exercise-11.html'},
+        {name: 'exercise-12', url: '3_02-les_fractions/02-exercise-12.html', disabled:true},
+        {name: 'scene-6', url: '3_02-les_fractions/01-scene-6.html'},
+        {name: 'exercise-13', url: '3_02-les_fractions/02-exercise-13.html'},
+        {name: 'scene-7', url: '3_02-les_fractions/01-scene-7.html'},
+        {name: '02-exercise', url: '3_02-les_fractions/02-exercise-15'},
+        {name: 'scene-8', url: '3_02-les_fractions/01-scene-8.html'},
+        {name: 'exercise-17', url: '3_02-les_fractions/02-exercise-17.html'},
+        {name: 'scene-9', url: '3_02-les_fractions/01-scene-9.html'},
+        {name: 'exercise-18', url: '3_02-les_fractions/02-exercise-18.html'},
+        {name: 'scene-10', url: '3_02-les_fractions/01-scene-10.html'},
+        {name: 'scene-11', url: '3_02-les_fractions/01-scene-11.html'},
+        {name: 'scene-12', url: '3_02-les_fractions/01-scene-12.html'},
+      ]},
+      {name:'3.09 Gerers les donnees', scenes:[
+        {name: '01', url: '3_09-gerer_des_donnees/01.html'}, 
+        {name: '02', url: '3_09-gerer_des_donnees/02.html'}, 
+        {name: '03', url: '3_09-gerer_des_donnees/03.html'}, 
+      ]},
+      {name:'3.10 Les suites', scenes:[
+        {name: '01', url: '3_10-les_suites/01.html'}, 
+        {name: '02', url: '3_10-les_suites/02.html'}, 
+        {name: '03', url: '3_10-les_suites/03.html'}, 
+        {name: '04', url: '3_10-les_suites/04.html'}, 
+        {name: '05', url: '3_10-les_suites/05.html'}, 
+        {name: '06', url: '3_10-les_suites/06.html'}, 
+        {name: '07', url: '3_10-les_suites/07.html'}, 
+        {name: '08', url: '3_10-les_suites/08.html'}, 
+        {name: '09', url: '3_10-les_suites/09.html'}, 
+        {name: '10', url: '3_10-les_suites/10.html'}, 
+        {name: '11', url: '3_10-les_suites/11.html'}, 
+        {name: '12', url: '3_10-les_suites/12.html'}, 
+        {name: '13', url: '3_10-les_suites/13.html'}, 
+        {name: '14', url: '3_10-les_suites/14.html'}, 
+        {name: '15', url: '3_10-les_suites/15.html'}, 
+        {name: '16', url: '3_10-les_suites/16.html'}, 
+        {name: '17', url: '3_10-les_suites/17.html'}, 
+        {name: '18', url: '3_10-les_suites/18.html'}, 
+      ]},
 
-  <div inbook-lesson-scene="les_fractions">
-    <div inbook-include="assets/scenes/3_02-les_fractions/01.html"></div>
-  </div>
-  
-  <div inbook-lesson-scene="scene1">
-    <div inbook-include="assets/scenes/3_02-les_fractions/01-scene-1.html"></div>
-  </div>
-  
-  <div inbook-lesson-scene="scene2">
-    <div inbook-include="assets/scenes/3_02-les_fractions/01-scene-2.html"></div>
-  </div>
-  
-  <div inbook-lesson-scene="exercise1">
-    <div inbook-include="assets/scenes/3_02-les_fractions/02-exercise-1.html"></div>
-  </div>
-  
-  <div inbook-lesson-scene="exercise3">
-    <div inbook-include="assets/scenes/3_02-les_fractions/02-exercise-3.html"></div>
-  </div>
-  
-  <div inbook-lesson-scene="exercise4">
-    <div inbook-include="assets/scenes/3_02-les_fractions/02-exercise-4.html"></div>
-  </div>
-  
-  <div inbook-lesson-scene="scene3">
-    <div inbook-include="assets/scenes/3_02-les_fractions/01-scene-3.html"></div>
-  </div>
-  
-  <div inbook-lesson-scene="exercise6">
-    <div inbook-include="assets/scenes/3_02-les_fractions/02-exercise-6.html"></div>
-  </div>
+    ]
+    var activeScene = {}
+    scope.getSceneLink = function(){
+      return sceneBaseUrl+activeScene.url;
+    }
+    scope.selectScene = function(scene){
+      window.scrollTo(0, 0);
+      return activeScene = scene;
+    }
+    scope.isActiveScene = function(scene){
+      return activeScene.url === scene.url;
+    }
+  </script>
 
-  <div inbook-lesson-scene="scene4">
-    <div inbook-include="assets/scenes/3_02-les_fractions/01-scene-4.html"></div>
+  <div style="position:fixed; top:0px; bottom:0px; left:0px; width: 200px; overflow-y:scroll; border-right: 1px solid #999;" class="pa2">
+
+    <div ng-repeat="sceneSection in sceneSections" class="mb2 type-xxxsmall">
+      <div class="type-xxsmall mt3 mb2 bold" ng-bind="sceneSection.name"></div>
+      <div class="pl2">
+        <div ng-repeat="scene in sceneSection.scenes" class="mb1 type-xxxsmall">
+          <a href="" ng-click="selectScene(scene)" ng-bind="scene.name" ng-class="{'bg-yellow':isActiveScene(scene), notready:scene.disabled}"></a>
+        </div>
+      </div>
+    </div>
+
   </div>
-  
-  <div inbook-lesson-scene="exercise9">
-    <div inbook-include="assets/scenes/3_02-les_fractions/02-exercise-9.html"></div>
+  <div>
+    <div inbook-include="{{getSceneLink()}}"></div>
   </div>
-  
-   <div inbook-lesson-scene="exercise10">
-		<div inbook-include="assets/scenes/3_02-les_fractions/02-exercise-10.html"></div>
-   </div>
-   
-  <div inbook-lesson-scene="scene5">
-    <div inbook-include="assets/scenes/3_02-les_fractions/01-scene-5.html"></div>
-  </div>
-  
-   <div inbook-lesson-scene="exercise11">
-		<div inbook-include="assets/scenes/3_02-les_fractions/02-exercise-11.html"></div>
-   </div>
-   
-   <!--<div inbook-lesson-scene="exercise12">
-		<div inbook-include="assets/scenes/3_02-les_fractions/02-exercise-12.html"></div>
-   </div>-->
-  
-    <div inbook-lesson-scene="scene6">
-		<div inbook-include="assets/scenes/3_02-les_fractions/01-scene-6.html"></div>
-    </div>
-	
-	<div inbook-lesson-scene="exercise13">
-		<div inbook-include="assets/scenes/3_02-les_fractions/02-exercise-13.html"></div>
-   </div>
-   
-     <div inbook-lesson-scene="scene7">
-		<div inbook-include="assets/scenes/3_02-les_fractions/01-scene-7.html"></div>
-    </div>
-	
-	<div inbook-lesson-scene="exercise15">
-		<div inbook-include="assets/scenes/3_02-les_fractions/02-exercise-15.html"></div>
-   </div>
-	
-	<div inbook-lesson-scene="scene8">
-		<div inbook-include="assets/scenes/3_02-les_fractions/01-scene-8.html"></div>
-    </div>
-	
-	<div inbook-lesson-scene="exercise17">
-		<div inbook-include="assets/scenes/3_02-les_fractions/02-exercise-17.html"></div>
-   </div>
-   
-	<div inbook-lesson-scene="scene9">
-		<div inbook-include="assets/scenes/3_02-les_fractions/01-scene-9.html"></div>
-    </div>
-	
-	<div inbook-lesson-scene="exercise18">
-		<div inbook-include="assets/scenes/3_02-les_fractions/02-exercise-18.html"></div>
-   </div>
-	
-	<div inbook-lesson-scene="scene10">
-		<div inbook-include="assets/scenes/3_02-les_fractions/01-scene-10.html"></div>
-    </div>
-	
-	<div inbook-lesson-scene="scene11">
-		<div inbook-include="assets/scenes/3_02-les_fractions/01-scene-11.html"></div>
-    </div>
-	
-	<div inbook-lesson-scene="scene12">
-		<div inbook-include="assets/scenes/3_02-les_fractions/01-scene-12.html"></div>
-    </div>
-	
-	
 </div>
-
-
