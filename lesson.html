@@ -4,7 +4,8 @@
   inbook-lib-animation-presets
 >
   <script type="text/inbook-javascript" inbook-javascript>
-    var sceneBaseUrl = 'assets/scenes/'
+    var sceneBaseUrl = 'assets/scenes/';
+    var imgBaseUrl = '//vretta-inbook-assets.s3.amazonaws.com/collegeboreal-sample/images/';
     var sceneSections = scope.sceneSections = [
       {name:'3.02 Les Fractions', scenes:[
         {name: 'Les Fractions', url: '3_02-les_fractions/01.html'}, 
@@ -33,6 +34,52 @@
         {name: 'scene-11', url: '3_02-les_fractions/01-scene-11.html'},
         {name: 'scene-12', url: '3_02-les_fractions/01-scene-12.html'},
       ]},
+      { 
+        name:'3.04 Les Pourcentages', 
+        imgUrl:imgBaseUrl+'3_04-les_pourcentages/', 
+        folder: '3_04-les_pourcentages',
+        scenes:[
+          {name: '01', url: '3_04-les_pourcentages/01.html'}, 
+          {name: '02', url: '3_04-les_pourcentages/02.html'}, 
+          {name: '03', url: '3_04-les_pourcentages/03.html'}, 
+          {name: '04', url: '3_04-les_pourcentages/04.html'}, 
+          {name: '05', url: '3_04-les_pourcentages/05.html'}, 
+          {name: '06', url: '3_04-les_pourcentages/06.html'}, 
+          {name: '07', url: '3_04-les_pourcentages/07.html'}, 
+          {name: '08', url: '3_04-les_pourcentages/08.html'}, 
+          {name: '09', url: '3_04-les_pourcentages/09.html'}, 
+          {name: '10', url: '3_04-les_pourcentages/10.html'}, 
+          {name: '11', url: '3_04-les_pourcentages/11.html'}, 
+          {name: '12', url: '3_04-les_pourcentages/12.html'}, 
+          {name: '13', url: '3_04-les_pourcentages/13.html'}, 
+          {name: '14', url: '3_04-les_pourcentages/14.html'}, 
+          {name: '15', url: '3_04-les_pourcentages/15.html'}, 
+          {name: '16', url: '3_04-les_pourcentages/16.html'}, 
+          {name: '17', url: '3_04-les_pourcentages/17.html'}, 
+          {name: '18', url: '3_04-les_pourcentages/18.html'}, 
+          {name: '19', url: '3_04-les_pourcentages/19.html'}, 
+          {name: '20', url: '3_04-les_pourcentages/20.html'}, 
+          {name: '21', url: '3_04-les_pourcentages/21.html'}, 
+          {name: '22', url: '3_04-les_pourcentages/22.html'}, 
+          {name: '23', url: '3_04-les_pourcentages/23.html'}, 
+          {name: '24', url: '3_04-les_pourcentages/24.html'}, 
+          {name: '25', url: '3_04-les_pourcentages/25.html'}, 
+          {name: '26', url: '3_04-les_pourcentages/26.html'}, 
+          {name: '27', url: '3_04-les_pourcentages/27.html'}, 
+          {name: '28', url: '3_04-les_pourcentages/28.html'}, 
+          {name: '29', url: '3_04-les_pourcentages/29.html'}, 
+          {name: '30', url: '3_04-les_pourcentages/30.html'}, 
+          {name: '31', url: '3_04-les_pourcentages/31.html'}, 
+          {name: '32', url: '3_04-les_pourcentages/32.html'}, 
+          {name: '33', url: '3_04-les_pourcentages/33.html'}, 
+          {name: '34', url: '3_04-les_pourcentages/34.html'}, 
+          {name: '35', url: '3_04-les_pourcentages/35.html'}, 
+          {name: '36', url: '3_04-les_pourcentages/36.html'}, 
+          {name: '37', url: '3_04-les_pourcentages/37.html'}, 
+          {name: '38', url: '3_04-les_pourcentages/38.html'}, 
+          {name: '39', url: '3_04-les_pourcentages/39.html'}, 
+        ]
+      },
       {name:'3.09 Gerers les donnees', scenes:[
         {name: '01', url: '3_09-gerer_des_donnees/01.html'}, 
         {name: '02', url: '3_09-gerer_des_donnees/02.html'}, 
@@ -64,21 +111,24 @@
     scope.getSceneLink = function(){
       return sceneBaseUrl+activeScene.url;
     }
-    scope.selectScene = function(scene){
+    scope.selectScene = function(scene, sceneSection){
       window.scrollTo(0, 0);
-      return activeScene = scene;
+      console.log(scope, sceneSection.imgUrl)
+      activeScene = scene;
+      scope.activeSceneSection = sceneSection;
+      scope.imgUrl = sceneSection.imgUrl;
     }
     scope.isActiveScene = function(scene){
       return activeScene.url === scene.url;
     }
   </script>
 
-  <div style="position:fixed; top:0px; bottom:0px; left:0px; width: 200px; overflow-y:scroll; border-right: 1px solid #999;" class="pa2">
+  <div style="position:fixed; top:0px; bottom:0px; left:0px; width: 180px; overflow-y:scroll; border-right: 1px solid #999;" class="pa2">
 
     <div ng-repeat="sceneSection in sceneSections" class="mb2 type-xxxsmall">
       <div class="type-xxsmall mt3 mb2 bold" ng-bind="sceneSection.name"></div>
       <div class="pl2">
-        <div ng-repeat="scene in sceneSection.scenes" ng-click="selectScene(scene)" class="clickable pb1 type-xxxsmall">
+        <div ng-repeat="scene in sceneSection.scenes" ng-click="selectScene(scene, sceneSection)" class="clickable pb1 type-xxxsmall">
           <a href="" style="width:100%;"  ng-bind="scene.name" ng-class="{'bg-yellow':isActiveScene(scene), notready:scene.disabled}"></a>
         </div>
       </div>
