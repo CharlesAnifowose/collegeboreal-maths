@@ -1,15 +1,15 @@
 
 <div class="pa4">
-  <div  class="inbook-grid-layout narrow" >
+  <div  class="inbook-grid-layout narrow type-xxsmall" >
 
     <div class="center">
-      <div class="type-xxxxsmall">
+      <div class="type-xxxxsmall mb4">
         Module 4
       </div>
 
-      <div class="mt4 mb4 type-small bold">
-        Les pourcentages 
-      </div>
+      <div class="pa2 center mb4" style="background-color: #ddd;">
+          Les pourcentages 
+        </div>
     </div>
 
     <div class="type-small bold mb3">
@@ -23,7 +23,7 @@
       <div > ou</div>
       <div > 7 parties <strong>sur</strong> 8</div>
       <img class="mt5" ng-src="{{activeSceneSection.imgUrl}}000003.jpg" />
-      <div class="mt1">7 morceaux sur 8 sont en place. </div>
+      <div class="para">7 morceaux sur 8 sont en place. </div>
     </div>
     <hr/>
     <div class="mt4 mb4 center">
@@ -31,7 +31,7 @@
       <div > ou</div>
       <div > 4 parties <strong>sur</strong> 10</div>
       <img class="mt5" ng-src="{{activeSceneSection.imgUrl}}000004.jpg" />
-      <div class="mt1">4 roues d’engrenages sur 10 sont rouillées. </div>
+      <div class="para">4 roues d’engrenages sur 10 sont rouillées. </div>
     </div>
     <hr/>
     <div class="mt4 mb4 center">
@@ -40,10 +40,10 @@
       <div > 25 parties <strong>sur</strong> 100</div>
     </div>
     <hr/>
-    <div class="mb1">
+    <div class="para">
       Les fractions dont le dénominateur est 100 servent à exprimer des pourcentages.
     </div>
-    <div class="mb1">
+    <div class="para">
       Le symbole du pourcentage est %. Ce symbole se lit pour cent et signifie 
       par rapport à 100 ou sur 100 c’est-à-dire 
       <mfrac>
@@ -51,24 +51,52 @@
         <mdeno>100</mdeno>
       </mfrac>
     </div>
-    <div class="mb1">
+    <div class="para">
       Exemples :
     </div>
     <div class="pl4" ng-scope ng-init="align={}">
-      <div class="mb1" inbook-width="align.left">
+      <div class="para" inbook-width="align.left">
         25 % se lit 25 pour cent et signifie 
         <span math>25 / 100</span>.
       </div>
-      <div class="mb1" inbook-width="align.left">
+      <div class="para" inbook-width="align.left">
         32 % se lit 32 pour cent et signifie
         <span math>32 / 100</span>.
         
       </div>
-      <div class="mb1" inbook-width="align.left">
+      <div class="para" inbook-width="align.left">
         68 % se lit 68 pour cent et signifie 
         <span math>68 / 100</span>.
       </div>
     </div>
+
+    <div class="para">
+      Voici d’autres exemples :
+    </div>
+
+    <div class="para">
+      <div class="ib" 
+        inbook-fraction-area
+        ng-init="percentage={val:25}"
+        ng-model="percentage.val"
+        height="200"
+        width="200"
+        num-cols="10"
+        num-rows="10"
+        num-wholes="1"
+      ></div>
+    </div>
+
+
+
+
+
+
+    <div class="para"></div>
+    <div class="para"></div>
+    <div class="para"></div>
+    <div class="para"></div>
+    <div class="para"></div>
 
   </div>
 </div>
