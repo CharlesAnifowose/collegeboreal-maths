@@ -36,7 +36,7 @@
       {name:'3.09 Gerers les donnees', scenes:[
         {name: '01', url: '3_09-gerer_des_donnees/01.html'}, 
         {name: '02', url: '3_09-gerer_des_donnees/02.html'}, 
-        {name: '03', url: '3_09-gerer_des_donnees/03.html'}, 
+        {name: '03', url: '3_09-gerer_des_donnees/03.html', disabled:true}, 
       ]},
       {name:'3.10 Les suites', scenes:[
         {name: '01', url: '3_10-les_suites/01.html'}, 
@@ -54,7 +54,7 @@
         {name: '13', url: '3_10-les_suites/13.html'}, 
         {name: '14', url: '3_10-les_suites/14.html'}, 
         {name: '15', url: '3_10-les_suites/15.html'}, 
-        {name: '16', url: '3_10-les_suites/16.html'}, 
+        {name: '16', url: '3_10-les_suites/16.html'},   
         {name: '17', url: '3_10-les_suites/17.html'}, 
         {name: '18', url: '3_10-les_suites/18.html'}, 
       ]},
@@ -78,8 +78,8 @@
     <div ng-repeat="sceneSection in sceneSections" class="mb2 type-xxxsmall">
       <div class="type-xxsmall mt3 mb2 bold" ng-bind="sceneSection.name"></div>
       <div class="pl2">
-        <div ng-repeat="scene in sceneSection.scenes" class="mb1 type-xxxsmall">
-          <a href="" ng-click="selectScene(scene)" ng-bind="scene.name" ng-class="{'bg-yellow':isActiveScene(scene), notready:scene.disabled}"></a>
+        <div ng-repeat="scene in sceneSection.scenes" ng-click="selectScene(scene)" class="clickable pb1 type-xxxsmall">
+          <a href="" style="width:100%;"  ng-bind="scene.name" ng-class="{'bg-yellow':isActiveScene(scene), notready:scene.disabled}"></a>
         </div>
       </div>
     </div>
