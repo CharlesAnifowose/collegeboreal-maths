@@ -1,0 +1,24 @@
+<div class="center mt6">
+
+	<div class="ib vtop">
+		<div>
+			<img ng-src="{{imgUrl + ans.shape}}.png" />
+		</div>
+		<div class="type-xxsmall">
+			{{ans.name}}
+		</div>
+	</div>
+	<div class="ib vtop">
+		<div 	inbook-answerbox-fill="ans.val"
+				pattern="'.*'"
+				class="type-xxsmall"
+				input-class="type-xxsmall"
+				on-correct="question.markAsCorrect()"
+				on-incorrect="question.markAsIncorrect()"></div>
+	</div>
+
+
+	<div class="mt4">
+		<div inbook-nextbtn="question"></div>
+	</div>
+</div>
