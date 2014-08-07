@@ -1,0 +1,150 @@
+<div
+	ng-init=""
+	ng-resettable-init="
+		ans.locked = false;
+		ans.a = '';
+		feedback.reveal = false;
+		"
+    ng-equate="
+	  solution.a = equal(model.calc.numSelected, a);
+	  solution.aNumbersMatch = equal(solution.a, ans.a);
+	  ans.isCorrect = and(solution.aNumbersMatch);
+	  ans.isCorrectFlag = ifElse(ans.isCorrect, 1, 0);
+	  ">
+	
+	<div class="type-small bold">
+		<div class="inbook fraction ib">
+			<div>{{x}}</div>
+			<div class="fraction-line-thin"></div>
+			<div>{{y}}</div>
+		</div>
+		<div class="ib unbold ml2 mr2">&plus;</div>
+		<div class="inbook fraction ib">
+			<div>{{z}}</div>
+			<div class="fraction-line-thin"></div>
+			<div>{{y}}</div>
+		</div>
+		<div class="ib unbold ml2 mr2">&equals;</div>
+		<div class="inbook-fraction ib">
+			<div inbook-num-scrub ng-model="calc.numSelected" min="0" max="100"></div>
+			<div class="fraction-line-thin mb1"></div>
+			<div>{{y}}</div>
+		</div>
+		<div class="type-xsmall ib">
+			<div inbook-answer-submit="1"				
+				 ng-model="ans.isCorrectFlag" 
+				 attempts="1" simple-ui="1"
+				 remote-trigger="ans.remoteTrigger" 
+				 remote-trigger-reset="ans.remoteTrigger = false;"
+				 on-correct=   "question.markAsCorrect();														
+				"
+				 on-incorrect= "
+					storedAns.a = ans.a;
+					feedback.reveal = true;
+					question.markAsIncorrect();
+				 "
+				 on-complete="
+					ans.locked=false; 										
+					track({description:'question', calc:calc, ans:ans})
+				 ">
+			</div>
+		</div>
+	</div>
+	
+	<div class="mt5" 
+       inbook-lib-logic
+       ng-init="calc1={solved:false, sum: 4, deno1:d, deno2:1}" 
+       ng-equate="calc1.solved= or(calc1.solved, equal(calc1.sum, calc1.numSelected))">
+    
+		<div class="ib mr3 type-small">
+
+		  <div class="inbook-fraction">
+			<div>
+			  <span inbook-num-scrub ng-model="calc1.numSelected" min="0" max="100"></span>
+			</div>
+			<div class="fraction-line-thin"></div>
+			<div>
+			  <!-- <span inbook-num-scrub ng-model="calc1.deno1" min="1" max="5"></span> -->
+			  <span>{{d}}</span>
+			  <!-- <span inbook-num-scrub ng-model="calc1.deno2" min="1" max="3"></span> -->
+			</div>
+		  </div>
+
+		</div>
+		<div class="ib" inbook-fraction-area
+			 ng-model="calc1.numSelected"
+			 height="50"
+			 width="200"
+			 num-cols="calc1.deno1"
+			 num-rows="calc1.deno2"
+			 num-wholes="1"
+		></div>
+    </div>
+	<div class="mt3" 
+       inbook-lib-logic
+       ng-init="calc2={solved:false, sum: 4, deno1:d, deno2:1}" 
+       ng-equate="calc2.solved= or(calc2.solved, equal(calc2.sum, calc2.numSelected))">
+    
+		<div class="ib mr3 type-small">
+
+		  <div class="inbook-fraction">
+			<div>
+			  <span inbook-num-scrub ng-model="calc2.numSelected" min="0" max="100"></span>
+			</div>
+			<div class="fraction-line-thin"></div>
+			<div>
+			  <!-- <span inbook-num-scrub ng-model="calc2.deno1" min="1" max="5"></span> -->
+			  <span>{{d}}</span>
+			  <!-- <span inbook-num-scrub ng-model="calc2.deno2" min="1" max="3"></span> -->
+			</div>
+		  </div>
+
+		</div>
+		<div class="ib" inbook-fraction-area
+			 ng-model="calc2.numSelected"
+			 height="50"
+			 width="200"
+			 num-cols="calc2.deno1"
+			 num-rows="calc2.deno2"
+			 num-wholes="1"
+		></div>
+    </div>
+	<div class="mt3" 
+       inbook-lib-logic
+       ng-init="calc={solved:false, sum: 4, deno1:d, deno2:1}" 
+       ng-equate="calc.solved= or(calc.solved, equal(calc.sum, calc.numSelected))">
+    
+		<div class="ib mr3 type-small">
+
+		  <div class="inbook-fraction">
+			<div>
+			  <span inbook-num-scrub ng-model="calc.numSelected" min="0" max="100"></span>
+			</div>
+			<div class="fraction-line-thin"></div>
+			<div>
+			  <!-- <span inbook-num-scrub ng-model="calc.deno1" min="1" max="5"></span> -->
+			  <span>{{d}}</span>
+			  <!-- <span inbook-num-scrub ng-model="calc.deno2" min="1" max="3"></span> -->
+			</div>
+		  </div>
+
+		</div>
+		<div class="ib" inbook-fraction-area
+			 ng-model="calc.numSelected"
+			 height="50"
+			 width="200"
+			 num-cols="calc.deno1"
+			 num-rows="calc.deno2"
+			 num-wholes="1"
+		></div>
+    </div>
+	<hr/>
+
+	<div class="mt5 type-small" vcollapse="!questionseries.questionComplete;">
+		<div inbook-nextbtn="question"></div>
+	</div>
+
+	<div class="mt5" vcollapse="!questionseries.seriesCompleted">
+		<div inbook-nextbtn="series"></div>
+	</div>
+</div>

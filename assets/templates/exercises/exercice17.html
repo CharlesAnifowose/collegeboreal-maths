@@ -3,12 +3,15 @@
 	ng-resettable-init="
 		ans.locked = false;
 		ans.a = '';
+		ans.b = '';
 		feedback.reveal = false;
 		"
     ng-equate="
 	  solution.a = a;
+	  solution.b = b;
 	  solution.aNumbersMatch = equal(solution.a, ans.a);
-	  ans.isCorrect = and(solution.aNumbersMatch);
+	  solution.bNumbersMatch = equal(solution.b, ans.b);
+	  ans.isCorrect = and(solution.aNumbersMatch, solution.bNumbersMatch);
 	  ans.isCorrectFlag = ifElse(ans.isCorrect, 1, 0);
 	  ">
 	
@@ -20,34 +23,40 @@
 		</div>
 		<div class="ib unbold ml2 mr2">&equals;</div>
 		<div class="inbook-fraction mt5 ib">
-			<div>{{z}}</div>
-			<div class="fraction-line-thin mb1"></div>
 			<div auto-size-input class="ib type-small"><input type="text" class="type-small " 
 				ng-model="ans.a" 
 				ng-disabled="ans.locked"
 				ng-enter-key="ans.remoteTrigger=true;"
 				/>
 			</div>
-		</div>
-		<div class="type-xsmall ib">
-			<div inbook-answer-submit="1"				
-				 ng-model="ans.isCorrectFlag" 
-				 attempts="1" simple-ui="1"
-				 remote-trigger="ans.remoteTrigger" 
-				 remote-trigger-reset="ans.remoteTrigger = false;"
-				 on-correct=   "question.markAsCorrect();														
-				"
-				 on-incorrect= "
-					storedAns.a = ans.a;
-					feedback.reveal = true;
-					question.markAsIncorrect();
-				 "
-				 on-complete="
-					ans.locked=false; 										
-					track({description:'question', calc:calc, ans:ans})
-				 ">
+			<div class="fraction-line-thin mb1"></div>
+			<div auto-size-input class="ib type-small"><input type="text" class="type-small " 
+				ng-model="ans.b" 
+				ng-disabled="ans.locked"
+				ng-enter-key="ans.remoteTrigger=true;"
+				/>
 			</div>
 		</div>
+		<div class="type-xsmall ib">
+		<div inbook-answer-submit="1"				
+			 ng-model="ans.isCorrectFlag" 
+			 attempts="1" simple-ui="1"
+			 remote-trigger="ans.remoteTrigger" 
+			 remote-trigger-reset="ans.remoteTrigger = false;"
+			 on-correct=   "question.markAsCorrect();														
+			"
+			 on-incorrect= "
+				storedAns.a = ans.a;
+				storedAns.b = ans.b;
+				feedback.reveal = true;
+				question.markAsIncorrect();
+			 "
+			 on-complete="
+				ans.locked=false; 										
+				track({description:'question', calc:calc, ans:ans})
+			 ">
+		</div>
+	</div>
 	<hr/>
 
 	<div class="mt5 type-small" vcollapse="!questionseries.questionComplete;">

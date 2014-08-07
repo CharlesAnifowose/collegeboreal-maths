@@ -6,14 +6,8 @@
 			<div class="fraction-line-thin"></div>
 			<div>{{y}}</div>
 		</div>
-		<div class="ib unbold ml2 mr2">et</div>
-		<div class="inbook fraction ib">
-			<div>{{a}}</div>
-			<div class="fraction-line-thin"></div>
-			<div>{{b}}</div>
-		</div>
 	</div>
-	<div inbook-yesorno="equal((x/y),(a/b))" on-correct="question.markAsCorrect();"></div>
+	<div inbook-yesorno="equal(x,y)" on-correct="question.markAsCorrect();"></div>
 	<hr/>
 
 	<div class="mt5 type-small" vcollapse="!questionseries.questionComplete;">
