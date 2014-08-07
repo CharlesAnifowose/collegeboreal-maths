@@ -1,0 +1,19 @@
+<div class="mt2 center">
+
+	<div>
+		<img ng-src="{{imgUrl + ans.shape}}.png" />
+	</div>
+
+	<div>
+		<div 	inbook-answerbox-fill="ans.val"
+				pattern="'.*'"
+				class="type-xxxsmall"
+				input-class="type-xxxsmall"
+				on-correct="question.markAsCorrect()"
+				on-incorrect="question.markAsIncorrect()"></div>
+	</div>
+
+	<div class="mt4">
+		<div inbook-nextbtn="question"></div>
+	</div>
+</div>
