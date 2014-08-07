@@ -1,0 +1,106 @@
+<div    inbook-questionseries 
+		class="pa8 type-xxsmall"
+		on-complete="scene.markAsCompleted();"
+		ordered=true
+		no-remove=true
+		ng-scope
+		ng-init="
+			imgUrl = 'http://d3mw5hjf8nr5ry.cloudfront.net/collegeboreal-sample/images/3_08-les_figures_a_trois_dimensions_les_systemes_de_coordonnees_et_les_transformations/exercise04/';
+		">
+
+		<div class="inbook-grid-layout" style="width:600px; margin: 0 auto;">			
+			<div class="col10">
+
+				<div class="type-xsmall mt3">
+					Nommez chacune des pyramides et comptez leurs sommets.
+				</div>
+
+				<div class="type-xxxsmall mt3 mb3">
+					<span class="bold">Indice</span> : Examinez le polygone qui forme la base de chaque pyramide..
+				</div>
+
+				<div 	inbook-questionseries-item level="1"
+						ng-init="
+							ans={};
+							ans.word 	= 'hexagonale';
+							ans.cotes	= 6;
+							ans.sommets = 7;
+
+							ans.shape 	= 'shape01';
+						">	
+
+						<div>
+							<div inbook-include="assets/scenes/3_08-les_figures_a_trois_dimensions_les_systemes_de_coordonnees_et_les_transformations/exercise-04-template.html"></div>
+						</div>
+
+				</div>
+
+				<div 	inbook-questionseries-item level="2"
+						ng-init="
+							ans={};
+							ans.word 	= 'triangulaire';
+							ans.cotes	= 3;
+							ans.sommets = 4;
+
+							ans.shape 	= 'shape02';
+						">	
+
+						<div>
+							<div inbook-include="assets/scenes/3_08-les_figures_a_trois_dimensions_les_systemes_de_coordonnees_et_les_transformations/exercise-04-template.html"></div>
+						</div>
+
+				</div>
+
+				<div 	inbook-questionseries-item level="3"
+						ng-init="
+							ans={};
+							ans.word 	= 'carree';
+							ans.cotes	= 4;
+							ans.sommets = 5;
+
+							ans.shape 	= 'shape03';
+						">	
+
+						<div>
+							<div inbook-include="assets/scenes/3_08-les_figures_a_trois_dimensions_les_systemes_de_coordonnees_et_les_transformations/exercise-04-template.html"></div>
+						</div>
+
+				</div>
+
+				<div 	inbook-questionseries-item level="4"
+						ng-init="
+							ans={};
+							ans.word 	= 'pentagonale';
+							ans.cotes	= 5;
+							ans.sommets = 6;
+
+							ans.shape 	= 'shape04';
+						">	
+
+						<div>
+							<div inbook-include="assets/scenes/3_08-les_figures_a_trois_dimensions_les_systemes_de_coordonnees_et_les_transformations/exercise-04-template.html"></div>
+						</div>
+
+				</div>
+
+				<div 	inbook-questionseries-item level="5"
+						ng-init="
+							ans={};
+							ans.word 	= 'octogonale';
+							ans.cotes	= 8;
+							ans.sommets = 9;
+
+							ans.shape 	= 'shape05';
+						">	
+
+						<div>
+							<div inbook-include="assets/scenes/3_08-les_figures_a_trois_dimensions_les_systemes_de_coordonnees_et_les_transformations/exercise-04-template.html"></div>
+						</div>
+
+				</div>
+
+
+
+			</div>
+		</div>
+</div>

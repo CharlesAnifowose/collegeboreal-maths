@@ -1,0 +1,80 @@
+<div    inbook-questionseries 
+		class="pa8 type-xxsmall"
+		on-complete="scene.markAsCompleted();"
+		ordered=true
+		no-remove=true
+		ng-scope
+		ng-init="
+			imgUrl = 'http://d3mw5hjf8nr5ry.cloudfront.net/collegeboreal-sample/images/3_08-les_figures_a_trois_dimensions_les_systemes_de_coordonnees_et_les_transformations/exercise05/';
+		">
+
+		<div class="inbook-grid-layout" style="width:600px; margin: 0 auto;">			
+			<div class="col10">
+
+				<div class="type-xsmall mt3 mb3">
+					Identifiez la face manquante.
+				</div>
+
+				<div inbook-questionseries-item level="1">
+
+					<div class="mb3">
+						le prisme à base rectangulaire
+					</div>
+
+					<div class="mb3">
+						<img ng-src="{{imgUrl}}shape01.png" />
+					</div>
+
+					<div class="mt4">
+						<div inbook-nextbtn="question"></div>
+					</div>
+				</div>
+
+				<div inbook-questionseries-item level="2">
+
+					<div class="mt3">
+						le prisme à base octogonale (″octogonal veut dire à huit côtés″)
+					</div>
+
+					<div class="mb3">
+						<img ng-src="{{imgUrl}}shape02.png" />
+					</div>
+
+					<div class="mt4">
+						<div inbook-nextbtn="question"></div>
+					</div>
+				</div>
+
+				<div inbook-questionseries-item level="3">
+
+					<div class="mt3">
+						le prisme oblique à base triangulaire
+					</div>
+
+					<div class="mb3">
+						<img ng-src="{{imgUrl}}shape03.png" />
+					</div>
+
+					<div class="mt4">
+						<div inbook-nextbtn="question"></div>
+					</div>
+				</div>
+
+				<div inbook-questionseries-item level="4">
+
+					<div class="mt3">
+						le prisme droit à base hexagonale (″hexagonal veut dire à 6 côtés″)
+					</div>
+
+					<div class="mb3">
+						<img ng-src="{{imgUrl}}shape04.png" />
+					</div>
+
+					<div class="mt4">
+						<div inbook-nextbtn="question"></div>
+					</div>
+				</div>
+
+			</div>	
+		</div>
+</div>
