@@ -1,18 +1,3 @@
-input.clear-input,
-input[type=text].clear-input,
-input[type=text].clear-input:hover,
-input[type=text].clear-input:focus,
-input[type=text].clear-input:active {
-  border: none;
-  border-radius: none;
-  outline: none;
-  outline-offset: 0;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  height: 100%;
-  width: 100%;
-  padding: 4px 8px;
-}
 .table-of-contents a.notready {
   opacity: 0.2;
 }
@@ -223,4 +208,9 @@ input[type=text].clear-input:active {
   border: 1px solid #ccc;
   background-color: #f1f1f1;
   display: inline-block;
+}
+ol.basic-list,
+ul.basic-list {
+  margin: 12px 0;
+  padding: 0 0 0 12px;
 }
