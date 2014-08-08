@@ -1,0 +1,20 @@
+<div class="mt2">
+
+	<div>
+		<img ng-src="{{imgUrl + ans.shape}}.png" />
+	</div>
+
+	<div class="type-xxsmall mb2">
+		Est-ce un polygone?
+	</div>
+
+	<div 	inbook-yesorno="ans.val" 
+			on-correct="question.markAsCorrect()"
+			on-incorrect="question.markAsIncorrect()"></div>
+
+
+	<div class="mt4">
+		<div inbook-nextbtn="question"></div>
+	</div>
+
+</div>

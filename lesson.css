@@ -1,6 +1,139 @@
-a.notready {
+input.clear-input,
+input[type=text].clear-input,
+input[type=text].clear-input:hover,
+input[type=text].clear-input:focus,
+input[type=text].clear-input:active {
+  border: none;
+  border-radius: none;
+  outline: none;
+  outline-offset: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  padding: 4px 8px;
+}
+.table-of-contents a.notready {
   opacity: 0.2;
+}
+.header-module {
+  font-size: 12px;
+  line-height: 100%;
+}
+.header-module .input-xxxsmall {
+  width: 7.5px;
+}
+.header-module .input-xxsmall {
+  width: 15px;
+}
+.header-module .input-xsmall {
+  width: 30px;
+}
+.header-module .input-small {
+  width: 45px;
+}
+.header-module .input-medium {
+  width: 75px;
+}
+.header-module .input-large {
+  width: 120px;
+}
+.header-module .input-xlarge {
+  width: 150px;
+}
+.header-module .input-xxlarge {
+  width: 210px;
+}
+.header-module .input-xxxlarge {
+  width: 300px;
+}
+.header-module .digit-block {
+  width: 7.5px;
+}
+.header-module .diagram-row {
+  height: 12px 2;
+}
+.header-module .btn {
+  font-size: 9px;
+  height: 30px;
+}
+.header-module-sub {
+  text-align: center;
+  padding: 12px;
+  background-color: #ddd;
+}
+.header-module-sub input {
+  text-align: center;
+}
+.header-section {
+  font-size: 32px;
+  line-height: 100%;
+  font-weight: bold;
+  letter-spacing: -0.02em;
+  margin-bottom: 18px;
+}
+.header-section .input-xxxsmall {
+  width: 20px;
+}
+.header-section .input-xxsmall {
+  width: 40px;
+}
+.header-section .input-xsmall {
+  width: 80px;
+}
+.header-section .input-small {
+  width: 120px;
+}
+.header-section .input-medium {
+  width: 200px;
+}
+.header-section .input-large {
+  width: 320px;
+}
+.header-section .input-xlarge {
+  width: 400px;
+}
+.header-section .input-xxlarge {
+  width: 560px;
+}
+.header-section .input-xxxlarge {
+  width: 800px;
+}
+.header-section .digit-block {
+  width: 20px;
+}
+.header-section .diagram-row {
+  height: 32px 2;
+}
+.header-section .btn {
+  font-size: 24px;
+  height: 50px;
+}
+.header-section input {
+  font-weight: bold;
+  letter-spacing: -0.02em;
+}
+.header-section .unbold {
+  font-weight: 300;
+  letter-spacing: 0em;
 }
 .inbook-grid-layout.narrow {
   width: 600px;
+}
+.para {
+  margin-top: 12px;
+  margin-bottom: 18px;
+}
+.exemple-frame {
+  border: 1px solid #ccc;
+  padding: 12px;
+}
+.note-frame {
+  border: 3px solid #999;
+  padding: 12px;
+}
+.term-box {
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  display: inline-block;
 }
