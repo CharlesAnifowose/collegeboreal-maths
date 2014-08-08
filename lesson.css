@@ -120,6 +120,93 @@ input[type=text].clear-input:active {
 .inbook-grid-layout.narrow {
   width: 600px;
 }
+.page-layout {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  margin: 24px;
+}
+.page-layout .col1 {
+  width: 10%;
+  float: left;
+  min-height: 1px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.page-layout .col2 {
+  width: 20%;
+  float: left;
+  min-height: 1px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.page-layout .col3 {
+  width: 30%;
+  float: left;
+  min-height: 1px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.page-layout .col4 {
+  width: 40%;
+  float: left;
+  min-height: 1px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.page-layout .col5 {
+  width: 50%;
+  float: left;
+  min-height: 1px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.page-layout .col6 {
+  width: 60%;
+  float: left;
+  min-height: 1px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.page-layout .col7 {
+  width: 70%;
+  float: left;
+  min-height: 1px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.page-layout .col8 {
+  width: 80%;
+  float: left;
+  min-height: 1px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.page-layout .col9 {
+  width: 90%;
+  float: left;
+  min-height: 1px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.page-layout .col10 {
+  width: 100%;
+  float: left;
+  min-height: 1px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 .para {
   margin-top: 12px;
   margin-bottom: 18px;
