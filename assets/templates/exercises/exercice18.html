@@ -1,14 +1,11 @@
 <div
 	ng-init=""
 	ng-resettable-init="
-		ans.locked = false;
-		ans.a = ''
+		ans.locked = false;		
 		feedback.reveal = false;
 		"
-    ng-equate="
-	  solution.a = equal(model.calc.numSelected, a);
-	  solution.aNumbersMatch = equal(solution.a, ans.a);
-	  ans.isCorrect = and(solution.aNumbersMatch);
+    ng-equate="	  
+	  ans.isCorrect = equal(calc.numSelected, a);
 	  ans.isCorrectFlag = ifElse(ans.isCorrect, 1, 0);
 	  ">
 	
@@ -57,10 +54,10 @@
        ng-equate="calc1.solved= or(calc1.solved, equal(calc1.sum, calc1.numSelected))">
     
 		<div class="ib mr3 type-small">
-
+		
 		  <div class="inbook-fraction">
 			<div>
-			  <span inbook-num-scrub ng-model="calc1.numSelected" min="0" max="100"></span>
+			  <span>{{calc1.numSelected}}</span>
 			</div>
 			<div class="fraction-line-thin"></div>
 			<div>
@@ -80,16 +77,16 @@
 			 num-wholes="1"
 		></div>
     </div>
-	<div class="mt3" 
+	<div class="mt3 mr3" 
        inbook-lib-logic
        ng-init="calc2={solved:false, sum: 4, deno1:d, deno2:1}" 
        ng-equate="calc2.solved= or(calc2.solved, equal(calc2.sum, calc2.numSelected))">
     
 		<div class="ib mr3 type-small">
-
-		  <div class="inbook-fraction">
+		<div class="ib">&plus;</div>
+		  <div class="ib inbook-fraction">
 			<div>
-			  <span inbook-num-scrub ng-model="calc2.numSelected" min="0" max="100"></span>
+			  <span>{{calc2.numSelected}}</span>
 			</div>
 			<div class="fraction-line-thin"></div>
 			<div>
@@ -109,14 +106,14 @@
 			 num-wholes="1"
 		></div>
     </div>
-	<div class="mt3" 
+	<div class="mt3 mr3" 
        inbook-lib-logic
        ng-init="calc={solved:false, sum: 4, deno1:d, deno2:1}" 
        ng-equate="calc.solved= or(calc.solved, equal(calc.sum, calc.numSelected))">
     
 		<div class="ib mr3 type-small">
-
-		  <div class="inbook-fraction">
+		<div class="ib">&equals;</div>
+		  <div class="ib inbook-fraction">
 			<div>
 			  <span inbook-num-scrub ng-model="calc.numSelected" min="0" max="100"></span>
 			</div>
