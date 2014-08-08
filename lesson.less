@@ -1,5 +1,23 @@
-a.notready{
-  opacity:0.2;
+@import (reference) "../../inbook-client/latest/css/style.less";
+
+.table-of-contents{
+  a.notready{
+    opacity:0.2;
+  }
+}
+
+.header-module {
+  .type-xxxxsmall;
+}
+.header-module-sub {
+  .center;
+  padding: 2 * @sizer-base;
+  background-color: #ddd;
+}
+.header-section {
+  .type-small;
+  .bold;
+  margin-bottom: 3 * @sizer-base;
 }
 
 .inbook-grid-layout.narrow {
@@ -9,4 +27,20 @@ a.notready{
 .para {
   margin-top:12px;
   margin-bottom:18px;
+}
+
+.exemple-frame {
+  border: 1px solid #ccc;
+  padding:12px;
+}
+
+.note-frame {
+  border: 3px solid #999;
+  padding:12px;
+}
+
+.term-box {
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  display: inline-block;
 }

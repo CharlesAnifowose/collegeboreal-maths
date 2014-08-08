@@ -1,0 +1,67 @@
+Complétez le tableau en trouvant la fraction, le nombre décimal ou le 
+pourcentage correspondant à l'élément qui est fourni. Coloriez la figure avec 
+le nombre de sections qui correspond au pourcentage.  
+
+<script type="text/inbook-javascript" inbook-javascript>
+  var grid = scope.grid = [
+     [10,   '',       '',     '']
+    ,['',   '',       [2,5],  '']
+    ,['',   '',       '',     0.50]
+    ,[35,   '',       '',     '']
+    ,['',   '',       [3,4],  '']
+    ,['',   '',       '',     0.30]
+    ,['',   [25,100], '',     '']
+  ];
+</script>
+
+<table class="table" style="width:auto; margin:auto">
+  <tr>
+    <td></td>
+    <td>Figure </td>
+    <td>Pourcentage (%)  </td>
+    <td>Fraction dénominateur 100  </td>
+    <td>Fraction irréductible  </td>
+    <td>Nombre décimal  </td>
+  </tr>
+  <tr ng-repeat="row in grid">
+    <td>a)</td>
+    <td>
+      <input type="text" class="clear-input" ng-model="row[0]" /> 
+    </td>
+    <td>
+      <div class="inbook-fraction">
+        <div><input type="text" class="clear-input" ng-model="row[1][0]" /> </div>
+        <div class="fraction-line-thin"></div>
+        <div><input type="text" class="clear-input" ng-model="row[1][1]" /> </div>
+      </div>
+    </td>
+    <td>
+      <div class="inbook-fraction">
+        <div><input type="text" class="clear-input" ng-model="row[2][0]" /> </div>
+        <div class="fraction-line-thin"></div>
+        <div><input type="text" class="clear-input" ng-model="row[2][1]" /> </div>
+      </div>
+    </td>
+    <td>
+      <input type="text" class="clear-input" ng-model="row[3]" /> 
+    </td>
+  </tr>
+
+</table>
+
+ <img ng-src="{{activeSceneSection.imgUrl}}000028.jpg" />
+ Pour convertir un nombre décimal en fraction, nous devons 
+ porter attention à la position des chiffres après la virgule. Ainsi, 
+ dixième signifie 
+ <div class="inbook-fraction">
+  <div>&nbsp;</div>
+  <div class="fraction-line-thin"></div>
+  <div>10</div>
+</div>
+ , et centième signifie 
+ <div class="inbook-fraction">
+  <div>&nbsp;</div>
+  <div class="fraction-line-thin"></div>
+  <div>100</div>
+</div>
+ . 

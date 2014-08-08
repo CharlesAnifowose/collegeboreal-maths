@@ -1,0 +1,28 @@
+<script type="text/inbook-javascript">
+  var values = scope.values = [
+    {rate: 5 ,   base: 200   },
+    {rate: 4 ,   base: 4000  },
+    {rate: 8 ,   base: 9000  },
+    {rate: 18 ,  base: 500   },
+    {rate: 32 ,  base: 2000  },
+    {rate: 50 ,  base: 84    },
+    {rate: 25 ,  base: 1000  },
+    {rate: 75 ,  base: 2000  },
+    {rate: 27 ,  base: 200   },
+    {rate: 65 ,  base: 840   },
+    {rate: 15 ,  base: 45    , dollar:true },
+    {rate: 15 ,  base: 185   , dollar:true },
+    {rate: 15 ,  base: 4670  , dollar:true },
+    {rate: 7 ,   base: 12    , dollar:true },
+    {rate: 7 ,   base: 138   , dollar:true },
+    {rate: 7 ,   base: 2900  , dollar:true },
+    {rate: 8 ,   base: 69    , dollar:true },
+    {rate: 8 ,   base: 470   , dollar:true },
+    {rate: 8 ,   base: 999   , dollar:true },
+    {rate: 15 ,  base: 7823  , dollar:true },
+  ];
+</script>
+
+<div ng-equate="calc = values[0]; calc.portion = calc.base * (calc.rate /100)">
+  {{calc.rate}} % de {{calc.base}} = <div inbook-answerbox-fill="calc.portion"></div>
+</div>

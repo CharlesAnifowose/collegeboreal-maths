@@ -1,0 +1,226 @@
+<div
+  inbook-questionseries 
+  class="pa4"
+  on-complete="scene.markAsCompleted();"    
+> 
+
+  <div class="inbook-grid-layout narrow type-xxsmall">     
+
+
+    <div class="type-xsmall mt3 mb3">
+      Écrivez chaque rapport sous forme de pourcentage (%). 
+    </div>
+    
+
+
+
+    <div inbook-question-series level="1">
+      <div ng-resettable-init="
+        calc = {};
+        ans = {};
+        calc.ans = 00000;
+      "></div>
+      <div class="ib">
+        25 % = 
+      </div>
+      <div class="inbook-fraction">
+        <div><span auto-size-input><input 
+          type="text"
+          ng-model="ans.nume" 
+          class="input-xxsmall"
+          ng-disabled="ans.locked"
+          ng-enter-key="ans.remoteTrigger=true;"
+        /></span></div>
+        <div class="fraction-line"></div>
+        <div>100</div>
+      </div>
+      <div 
+        class="ib"
+        inbook-answer-submit="" 
+        ng-model="ans.nume" 
+        attempts="1" simple-ui="1"
+        remote-trigger="ans.remoteTrigger"
+        remote-trigger-reset="ans.remoteTrigger = false;"
+        on-correct=   "question.markAsCorrect();"
+        on-incorrect= "question.markAsIncorrect();"
+        on-complete="ans.locked=true; track({description:'question', calc:calc, ans:ans})"
+      ></div>
+    </div>
+
+    <div inbook-question-series level="1">
+      <div ng-resettable-init="
+        calc = {};
+        ans = {};
+        calc.ans = 00000;
+      "></div>
+
+      <div class="ib">
+        47 % =
+      </div>
+      <div class="inbook-fraction">
+        <div><span auto-size-input><input 
+          type="text"
+          ng-model="ans.nume" 
+          class="input-xxsmall"
+          ng-disabled="ans.locked"
+          ng-enter-key="ans.remoteTrigger=true;"
+        /></span></div>
+        <div class="fraction-line"></div>
+        <div>100</div>
+      </div>
+      <div 
+        class="ib"
+        inbook-answer-submit="" 
+        ng-model="ans.nume" 
+        attempts="1" simple-ui="1"
+        remote-trigger="ans.remoteTrigger"
+        remote-trigger-reset="ans.remoteTrigger = false;"
+        on-correct=   "question.markAsCorrect();"
+        on-incorrect= "question.markAsIncorrect();"
+        on-complete="ans.locked=true; track({description:'question', calc:calc, ans:ans})"
+      ></div>
+
+    </div>
+
+    <div inbook-question-series level="1">
+      <div ng-resettable-init="
+        calc = {};
+        ans = {};
+        calc.ans = 00000;
+      "></div>
+
+      <div class="ib">
+        3 % =
+      </div>
+      <div class="inbook-fraction">
+        <div><span auto-size-input><input 
+          type="text"
+          ng-model="ans.nume" 
+          class="input-xxsmall"
+          ng-disabled="ans.locked"
+          ng-enter-key="ans.remoteTrigger=true;"
+        /></span></div>
+        <div class="fraction-line"></div>
+        <div>100</div>
+      </div>
+      <div 
+        class="ib"
+        inbook-answer-submit="" 
+        ng-model="ans.nume" 
+        attempts="1" simple-ui="1"
+        remote-trigger="ans.remoteTrigger"
+        remote-trigger-reset="ans.remoteTrigger = false;"
+        on-correct=   "question.markAsCorrect();"
+        on-incorrect= "question.markAsIncorrect();"
+        on-complete="ans.locked=true; track({description:'question', calc:calc, ans:ans})"
+      ></div>
+
+    </div>
+
+    <div inbook-question-series level="1">
+      <div ng-resettable-init="
+        calc = {};
+        ans = {};
+        calc.ans = 00000;
+      "></div>
+
+      <div class="ib">
+        72 % =
+      </div>
+      <div class="inbook-fraction">
+        <div><span auto-size-input><input 
+          type="text"
+          ng-model="ans.nume" 
+          class="input-xxsmall"
+          ng-disabled="ans.locked"
+          ng-enter-key="ans.remoteTrigger=true;"
+        /></span></div>
+        <div class="fraction-line"></div>
+        <div>100</div>
+      </div>
+      <div 
+        class="ib"
+        inbook-answer-submit="" 
+        ng-model="ans.nume" 
+        attempts="1" simple-ui="1"
+        remote-trigger="ans.remoteTrigger"
+        remote-trigger-reset="ans.remoteTrigger = false;"
+        on-correct=   "question.markAsCorrect();"
+        on-incorrect= "question.markAsIncorrect();"
+        on-complete="ans.locked=true; track({description:'question', calc:calc, ans:ans})"
+      ></div>
+
+    </div>
+
+    <div inbook-question-series level="1">
+      <div ng-resettable-init="
+        calc = {};
+        ans = {};
+        calc.ans = 00000;
+      "></div>
+
+      <div class="ib">
+        5 % =
+      </div>
+      <div class="inbook-fraction">
+        <div><span auto-size-input><input 
+          type="text"
+          ng-model="ans.nume" 
+          class="input-xxsmall"
+          ng-disabled="ans.locked"
+          ng-enter-key="ans.remoteTrigger=true;"
+        /></span></div>
+        <div class="fraction-line"></div>
+        <div>100</div>
+      </div>
+      <div 
+        class="ib"
+        inbook-answer-submit="" 
+        ng-model="ans.nume" 
+        attempts="1" simple-ui="1"
+        remote-trigger="ans.remoteTrigger"
+        remote-trigger-reset="ans.remoteTrigger = false;"
+        on-correct=   "question.markAsCorrect();"
+        on-incorrect= "question.markAsIncorrect();"
+        on-complete="ans.locked=true; track({description:'question', calc:calc, ans:ans})"
+      ></div>
+
+    </div>
+
+    <div inbook-question-series level="1">
+      <div ng-resettable-init="
+        calc = {};
+        ans = {};
+        calc.ans = 00000;
+      "></div>
+
+      <div class="ib">
+        60 % =
+      </div>
+      <div class="inbook-fraction">
+        <div><span auto-size-input><input 
+          type="text"
+          ng-model="ans.nume" 
+          class="input-xxsmall"
+          ng-disabled="ans.locked"
+          ng-enter-key="ans.remoteTrigger=true;"
+        /></span></div>
+        <div class="fraction-line"></div>
+        <div>100</div>
+      </div>
+      <div 
+        class="ib"
+        inbook-answer-submit="" 
+        ng-model="ans.nume" 
+        attempts="1" simple-ui="1"
+        remote-trigger="ans.remoteTrigger"
+        remote-trigger-reset="ans.remoteTrigger = false;"
+        on-correct=   "question.markAsCorrect();"
+        on-incorrect= "question.markAsIncorrect();"
+        on-complete="ans.locked=true; track({description:'question', calc:calc, ans:ans})"
+      ></div>
+
+    </div>
+
+  </div>
+</div>
