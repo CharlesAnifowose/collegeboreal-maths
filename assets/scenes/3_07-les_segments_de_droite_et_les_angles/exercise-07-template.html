@@ -1,0 +1,51 @@
+<div class="mt2 center">
+
+	<div>
+		<img ng-src="{{imgUrl + ans.angle}}.png" />
+	</div>
+
+	<div>
+		<div class="ib bold type-xxsmall">
+			angles obtus
+		</div>
+		<div class="ib">
+			<div 	inbook-answerbox-fill="ans.val"
+					pattern="'.*'"
+					class="type-xxxsmall"
+					input-class="type-xxxsmall"
+					on-correct="question.markAsCorrect()"
+					on-incorrect="question.markAsIncorrect()"></div>
+		</div>
+	</div>
+	<div>
+		<div class="ib bold type-xxsmall">
+			angles aigus
+		</div>
+		<div class="ib">
+			<div 	inbook-answerbox-fill="ans.val"
+					pattern="'.*'"
+					class="type-xxxsmall"
+					input-class="type-xxxsmall"
+					on-correct="question.markAsCorrect()"
+					on-incorrect="question.markAsIncorrect()"></div>
+		</div>
+	</div>
+	<div>
+		<div class="ib bold type-xxsmall">
+			angles droits
+		</div>
+		<div class="ib">
+			<div 	inbook-answerbox-fill="ans.val"
+					pattern="'.*'"
+					class="type-xxxsmall"
+					input-class="type-xxxsmall"
+					on-correct="question.markAsCorrect()"
+					on-incorrect="question.markAsIncorrect()"></div>
+		</div>
+	</div>
+
+	<div class="mt4">
+		<div inbook-nextbtn="question"></div>
+	</div>
+	
+</div>
