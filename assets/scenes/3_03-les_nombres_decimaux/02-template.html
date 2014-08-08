@@ -18,11 +18,10 @@
 	  ans.isCorrectFlag = ifElse(ans.isCorrect, 1, 0);
 	  ">
 	
+	
 	<div class="type-small bold">
-		<div class="inbook fraction ib">
+		<div class="ib">
 			<div>{{x}}</div>
-			<div class="fraction-line-thin"></div>
-			<div>{{y}}</div>
 		</div>
 		<div class="ib unbold ml2 mr2">&equals;</div>
 		<div auto-size-input class="ib type-small"><input type="text" class="type-small " 
@@ -31,7 +30,7 @@
 			ng-enter-key="ans.remoteTrigger=true;"
 			/>
 		</div>
-		<div class="inbook-fraction mt5 ib">
+		<div class="inbook-fraction ib">
 			<div auto-size-input class="ib type-small"><input type="text" class="type-small " 
 				ng-model="ans.a" 
 				ng-disabled="ans.locked"

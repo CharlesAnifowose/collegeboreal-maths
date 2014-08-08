@@ -3,35 +3,23 @@
 	ng-resettable-init="
 		ans.locked = false;
 		ans.a = '';
-		ans.b = '';
-		ans.c = '';
 		feedback.reveal = false;
 		"
     ng-equate="
 	  solution.a = a;
 	  solution.b = b;
-	  solution.c = c;
 	  solution.aNumbersMatch = equal(solution.a, ans.a);
 	  solution.bNumbersMatch = equal(solution.b, ans.b);
-	  solution.cNumbersMatch = equal(solution.c, ans.c);
-	  ans.isCorrect = and(solution.aNumbersMatch, solution.bNumbersMatch, solution.cNumbersMatch);
+	  ans.isCorrect = and(solution.aNumbersMatch, solution.bNumbersMatch);
 	  ans.isCorrectFlag = ifElse(ans.isCorrect, 1, 0);
 	  ">
 	
 	<div class="type-small bold">
-		<div class="inbook fraction ib">
+		<div class="ib">
 			<div>{{x}}</div>
-			<div class="fraction-line-thin"></div>
-			<div>{{y}}</div>
 		</div>
 		<div class="ib unbold ml2 mr2">&equals;</div>
-		<div auto-size-input class="ib type-small"><input type="text" class="type-small " 
-			ng-model="ans.c" 
-			ng-disabled="ans.locked"
-			ng-enter-key="ans.remoteTrigger=true;"
-			/>
-		</div>
-		<div class="inbook-fraction mt5 ib">
+		<div class="inbook-fraction ib">
 			<div auto-size-input class="ib type-small"><input type="text" class="type-small " 
 				ng-model="ans.a" 
 				ng-disabled="ans.locked"
@@ -57,7 +45,6 @@
 			 on-incorrect= "
 				storedAns.a = ans.a;
 				storedAns.b = ans.b;
-				storedAns.c = ans.c;
 				feedback.reveal = true;
 				question.markAsIncorrect();
 			 "

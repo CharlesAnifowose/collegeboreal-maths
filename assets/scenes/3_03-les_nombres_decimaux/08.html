@@ -1,0 +1,83 @@
+<div class="center">
+	<div class="type-xsmall mt10 bold">EXERCICE 5</div>
+	<div class="inbook-grid-layout" style="width:600px; margin: 10px auto;">
+		<div>
+			Convertissez les fractions décimales en nombres décimaux.
+		</div>
+		<div inbook-questionseries on-complete="scene.markAsCompleted();"
+				ordered=true
+				no-remove=true>
+			<div id="question-dots" inbook-questionseries-dots class="mb3"></div> 
+				<div id="questions">		
+							
+				<div inbook-questionseries-item  level="1" >		
+					<div
+						ng-init=""
+						ng-resettable-init="x = 2;
+											y = 10;"
+						ng-equate="a = 0.2;"
+						></div>
+
+					<div inbook-include="assets/templates/exercises/exercice17a.html"></div>			
+				</div>
+				
+				<div inbook-questionseries-item  level="2">
+					<div
+						ng-init=""
+						ng-resettable-init="x = 30;
+											y = 100;"
+						ng-equate="a = 0.3;"
+						></div>
+
+					<div inbook-include="assets/templates/exercises/exercice17a.html"></div>				
+				</div>
+				
+				<div inbook-questionseries-item  level="3">
+					<div
+						ng-init=""
+						ng-resettable-init="x = 6;
+											y = 10;"
+						ng-equate="a = 0.6;"
+						></div>
+
+					<div inbook-include="assets/templates/exercises/exercice17a.html"></div>				
+				</div>
+				
+				<div inbook-questionseries-item  level="4">
+					<div
+						ng-init=""
+						ng-resettable-init="x = 37;
+											y = 100;"
+						ng-equate="a = 0.37;"
+						></div>
+					
+					<div inbook-include="assets/templates/exercises/exercice17a.html"></div>				
+				</div>
+				
+				<div inbook-questionseries-item  level="5">
+					<div
+						ng-init=""
+						ng-resettable-init="x = 9;
+											y = 10;
+											"
+						ng-equate="a = 0.9;"
+						></div>
+					
+					<div inbook-include="assets/templates/exercises/exercice17a.html"></div>				
+				</div>
+				
+				<div inbook-questionseries-item  level="6">
+					<div
+						ng-init=""
+						ng-resettable-init="x = 2;
+											y = 100;"
+						ng-equate="a = 0.02;"
+						></div>
+
+					<div inbook-include="assets/templates/exercises/exercice17a.html"></div>				
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
