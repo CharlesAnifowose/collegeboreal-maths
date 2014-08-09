@@ -8,11 +8,17 @@
 
 .header-module {
   .type-xxxxsmall;
+  .center;
+  margin-top: 2 * @sizer-base;
+  margin-bottom: 2 * @sizer-base;
 }
 .header-module-sub {
   .center;
   padding: 2 * @sizer-base;
-  background-color: #ddd;
+  background-color: #53B3E5;
+  color: #fff;
+  margin-top: 2 * @sizer-base;
+  margin-bottom: 4 * @sizer-base;
 }
 .header-section {
   .type-small;
@@ -25,10 +31,12 @@
   width:600px;
 }
 
+.page-container {
+  padding: 4 * @sizer-base;
+}
 .page-layout {
   .inbook-grid-layout;
   width:600px;
-  margin: 4 * @sizer-base;
 }
 
 
@@ -40,15 +48,28 @@
 .exemple-frame {
   border: 1px solid #ccc;
   padding:12px;
+  margin-top: 1 * @sizer-base;
+  margin-bottom: 2 * @sizer-base;
+  .exemple-header {
+    .para;
+    .bold;
+  }
 }
 
 .note-frame {
   border: 3px solid #999;
   padding:12px;
+  margin-top: 1 * @sizer-base;
+  margin-bottom: 2 * @sizer-base;
 }
 
 .term-box {
   border: 1px solid #ccc;
   background-color: #f1f1f1;
   display: inline-block;
+}
+
+
+tr.tr-underline td {
+  border-bottom: 1px solid #999;
 }

@@ -19,6 +19,9 @@ input[type=text].clear-input:active {
 .header-module {
   font-size: 12px;
   line-height: 100%;
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
 .header-module .input-xxxsmall {
   width: 7.5px;
@@ -57,10 +60,16 @@ input[type=text].clear-input:active {
   font-size: 9px;
   height: 30px;
 }
+.header-module input {
+  text-align: center;
+}
 .header-module-sub {
   text-align: center;
   padding: 12px;
-  background-color: #ddd;
+  background-color: #53B3E5;
+  color: #fff;
+  margin-top: 12px;
+  margin-bottom: 24px;
 }
 .header-module-sub input {
   text-align: center;
@@ -120,12 +129,14 @@ input[type=text].clear-input:active {
 .inbook-grid-layout.narrow {
   width: 600px;
 }
+.page-container {
+  padding: 24px;
+}
 .page-layout {
   width: 800px;
   margin-left: auto;
   margin-right: auto;
   width: 600px;
-  margin: 24px;
 }
 .page-layout .col1 {
   width: 10%;
@@ -214,13 +225,34 @@ input[type=text].clear-input:active {
 .exemple-frame {
   border: 1px solid #ccc;
   padding: 12px;
+  margin-top: 6px;
+  margin-bottom: 12px;
+}
+.exemple-frame .exemple-header {
+  margin-top: 12px;
+  margin-bottom: 18px;
+  font-weight: bold;
+  letter-spacing: -0.02em;
+}
+.exemple-frame .exemple-header input {
+  font-weight: bold;
+  letter-spacing: -0.02em;
+}
+.exemple-frame .exemple-header .unbold {
+  font-weight: 300;
+  letter-spacing: 0em;
 }
 .note-frame {
   border: 3px solid #999;
   padding: 12px;
+  margin-top: 6px;
+  margin-bottom: 12px;
 }
 .term-box {
   border: 1px solid #ccc;
   background-color: #f1f1f1;
   display: inline-block;
+}
+tr.tr-underline td {
+  border-bottom: 1px solid #999;
 }
