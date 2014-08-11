@@ -261,3 +261,12 @@ ul.basic-list {
   margin: 12px 0;
   padding: 0 0 0 12px;
 }
+.vert-add {
+  display: inline-block;
+}
+.vert-add .term {
+  text-align: right;
+}
+.vert-add .term.last {
+  border-bottom: 1px solid #333;
+}

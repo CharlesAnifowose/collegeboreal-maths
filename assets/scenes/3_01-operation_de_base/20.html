@@ -1,0 +1,306 @@
+<div 	class="page-layout" 
+		ng-init="
+			imgUrl = 'http://d3mw5hjf8nr5ry.cloudfront.net/collegeboreal-sample/images/3_01-operation_de_base/';
+		">
+
+		<div 	inbook-questionseries
+				on-complete="scene.markAsCompleted();"
+  				ordered=true
+  				no-remove=true>
+
+  				<div class="para">
+  					Additionnez dans les deux sens puis vérifiez à l'aide de la calculatrice
+  				</div>
+
+
+  				<div 	inbook-questionseries-item level="1"
+	  					ng-init="
+	  						ans				=	{};
+	  						ans.num1 		=  	56;
+	  						ans.num2 		=  	32;
+	  						ans.val 		=	ans.num1 + ans.num2; 
+	  					">
+
+					<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-11-template.html"></div>
+  				</div>
+
+  				<div 	inbook-questionseries-item level="2"
+	  					ng-init="
+	  						ans				=	{};
+	  						ans.num1 		=  	484;
+	  						ans.num2 		=  	213;
+	  						ans.val 		=	ans.num1 + ans.num2; 
+	  					">
+
+					<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-11-template.html"></div>
+  				</div>
+
+  				<div 	inbook-questionseries-item level="3"
+	  					ng-init="
+	  						ans				=	{};
+	  						ans.num1 		=  	3821;
+	  						ans.num2 		=  	5157;
+	  						ans.val 		=	ans.num1 + ans.num2; 
+	  					">
+
+					<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-11-template.html"></div>
+  				</div>
+
+  				<div 	inbook-questionseries-item level="4"
+	  					ng-init="
+	  						ans				=	{};
+	  						ans.num1 		=  	561;
+	  						ans.num2 		=  	136;
+	  						ans.val 		=	ans.num1 + ans.num2; 
+	  					">
+
+					<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-11-template.html"></div>
+  				</div>
+
+  				<div 	inbook-questionseries-item level="5"
+	  					ng-init="
+	  						ans				=	{};
+	  						ans.num1 		=  	5216;
+	  						ans.num2 		=  	2683;
+	  						ans.val 		=	ans.num1 + ans.num2; 
+	  					">
+
+					<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-11-template.html"></div>
+  				</div>
+
+  				<div 	inbook-questionseries-item level="6"
+	  					ng-init="
+	  						ans				=	{};
+	  						ans.num1 		=  	403;
+	  						ans.num2 		=  	153;
+	  						ans.val 		=	ans.num1 + ans.num2; 
+	  					">
+
+					<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-11-template.html"></div>
+  				</div>
+
+  				<div 	inbook-questionseries-item level="7"
+	  					ng-init="
+	  						ans				=	{};
+	  						ans.num1 		=  	562;
+	  						ans.num2 		=  	333;
+	  						ans.val 		=	ans.num1 + ans.num2; 
+	  					">
+
+					<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-11-template.html"></div>
+  				</div>
+
+  				<div 	inbook-questionseries-item level="8"
+	  					ng-init="
+	  						ans				=	{};
+	  						ans.num1 		=  	1987;
+	  						ans.num2 		=  	9012;
+	  						ans.val 		=	ans.num1 + ans.num2; 
+	  					">
+
+					<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-11-template.html"></div>
+  				</div>
+
+  				<div 	inbook-questionseries-item level="9"
+	  					ng-init="
+	  						ans				=	{};
+	  						ans.num1 		=  	5673;
+	  						ans.num2 		=  	3321;
+	  						ans.val 		=	ans.num1 + ans.num2; 
+	  					">
+
+					<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-11-template.html"></div>
+  				</div>
+
+  				<div 	inbook-questionseries-item level="10"
+	  					ng-init="
+	  						ans				=	{};
+	  						ans.num1 		=  	320;
+	  						ans.num2 		=  	51;
+	  						ans.num3 		=  	8;
+	  						ans.val 		=	ans.num1 + ans.num2 + ans.num3; 
+	  					">
+
+	  					<div class="type-small bold">
+	  						<div class="ib">
+		  						{{ans.num1}}
+	  						</div>
+	  						<div class="ib">
+		  						{{ans.num2}}
+	  						</div>
+	  						<div class="ib">
+		  						{{ans.num3}}
+	  						</div>
+	  						<div class="ib">
+	  							<div 	inbook-answerbox-fill="ans.val"
+										class="type-small"
+										input-class="type-small"
+										on-correct="question.markAsCorrect()"
+										on-incorrect="question.markAsIncorrect()"></div>
+	  						</div>
+	  					</div>
+
+	  					<div class="mt4">
+							<div inbook-nextbtn="question"></div>
+						</div>	  					
+  				</div>
+
+  				<div 	inbook-questionseries-item level="11"
+	  					ng-init="
+	  						ans				=	{};
+	  						ans.num1 		=  	52;
+	  						ans.num2 		=  	125;
+	  						ans.num3 		=  	821;
+	  						ans.val 		=	ans.num1 + ans.num2 + ans.num3; 
+	  					">
+
+	  					<div class="type-small bold">
+	  						<div class="ib">
+		  						{{ans.num1}}
+	  						</div>
+	  						<div class="ib">
+		  						{{ans.num2}}
+	  						</div>
+	  						<div class="ib">
+		  						{{ans.num3}}
+	  						</div>
+	  						<div class="ib">
+	  							<div 	inbook-answerbox-fill="ans.val"
+										class="type-small"
+										input-class="type-small"
+										on-correct="question.markAsCorrect()"
+										on-incorrect="question.markAsIncorrect()"></div>
+	  						</div>
+	  					</div>
+
+	  					<div class="mt4">
+							<div inbook-nextbtn="question"></div>
+						</div>	  					
+  				</div>
+
+  				<div 	inbook-questionseries-item level="12"
+	  					ng-init="
+	  						ans				=	{};
+	  						ans.num1 		=  	4067;
+	  						ans.num2 		=  	632;
+	  						ans.val 		=	ans.num1 + ans.num2; 
+	  					">
+
+	  					<div class="type-small bold">
+	  						<div class="ib">
+		  						{{ans.num1}}
+	  						</div>
+	  						<div class="ib">
+		  						{{ans.num2}}
+	  						</div>
+	  						<div class="ib">
+	  							<div 	inbook-answerbox-fill="ans.val"
+										class="type-small"
+										input-class="type-small"
+										on-correct="question.markAsCorrect()"
+										on-incorrect="question.markAsIncorrect()"></div>
+	  						</div>
+	  					</div>
+
+	  					<div class="mt4">
+							<div inbook-nextbtn="question"></div>
+						</div>	  					
+  				</div>
+
+  				<div 	inbook-questionseries-item level="13"
+	  					ng-init="
+	  						ans				=	{};
+	  						ans.num1 		=  	1728;
+	  						ans.num2 		=  	2251;
+	  						ans.val 		=	ans.num1 + ans.num2; 
+	  					">
+
+	  					<div class="type-small bold">
+	  						<div class="ib">
+		  						{{ans.num1}}
+	  						</div>
+	  						<div class="ib">
+		  						{{ans.num2}}
+	  						</div>
+	  						<div class="ib">
+	  							<div 	inbook-answerbox-fill="ans.val"
+										class="type-small"
+										input-class="type-small"
+										on-correct="question.markAsCorrect()"
+										on-incorrect="question.markAsIncorrect()"></div>
+	  						</div>
+	  					</div>
+
+	  					<div class="mt4">
+							<div inbook-nextbtn="question"></div>
+						</div>	  					
+  				</div>
+
+  				<div 	inbook-questionseries-item level="14"
+	  					ng-init="
+	  						ans				=	{};
+	  						ans.num1 		=  	943;
+	  						ans.num2 		=  	31;
+	  						ans.num3 		=  	3;
+	  						ans.val 		=	ans.num1 + ans.num2 + ans.num3; 
+	  					">
+
+	  					<div class="type-small bold">
+	  						<div class="ib">
+		  						{{ans.num1}}
+	  						</div>
+	  						<div class="ib">
+		  						{{ans.num2}}
+	  						</div>
+	  						<div class="ib">
+		  						{{ans.num3}}
+	  						</div>
+	  						<div class="ib">
+	  							<div 	inbook-answerbox-fill="ans.val"
+										class="type-small"
+										input-class="type-small"
+										on-correct="question.markAsCorrect()"
+										on-incorrect="question.markAsIncorrect()"></div>
+	  						</div>
+	  					</div>
+
+	  					<div class="mt4">
+							<div inbook-nextbtn="question"></div>
+						</div>	  					
+  				</div>
+
+  				<div 	inbook-questionseries-item level="15"
+	  					ng-init="
+	  						ans				=	{};
+	  						ans.num1 		=  	4512;
+	  						ans.num2 		=  	2153;
+	  						ans.num3 		=  	1222;
+	  						ans.val 		=	ans.num1 + ans.num2 + ans.num3; 
+	  					">
+
+	  					<div class="type-small bold">
+	  						<div class="ib">
+		  						{{ans.num1}}
+	  						</div>
+	  						<div class="ib">
+		  						{{ans.num2}}
+	  						</div>
+	  						<div class="ib">
+		  						{{ans.num3}}
+	  						</div>
+	  						<div class="ib">
+	  							<div 	inbook-answerbox-fill="ans.val"
+										class="type-small"
+										input-class="type-small"
+										on-correct="question.markAsCorrect()"
+										on-incorrect="question.markAsIncorrect()"></div>
+	  						</div>
+	  					</div>
+
+	  					<div class="mt4">
+							<div inbook-nextbtn="question"></div>
+						</div>	  					
+  				</div>
+
+  		</div>
+</div>
