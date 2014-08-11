@@ -1,0 +1,83 @@
+<div class="">
+	<div class="center type-xsmall mt10 bold">EXERCICE 14</div>
+	<div class="inbook-grid-layout" style="width:600px; margin: 10px auto;">
+		<div class="mb1">
+			Sachant que 1 carreau représente 1 cm<sup>2</sup>, déterminez l'aire approximative ou
+		</div>
+		<div>
+			exacte des polygones.
+		</div>
+		<div inbook-questionseries on-complete="scene.markAsCompleted();"
+				ordered=true
+				no-remove=true>
+			<div id="question-dots" inbook-questionseries-dots class="mb3"></div> 
+				<div id="questions" class="bold">		
+							
+				<div inbook-questionseries-item  level="1" >
+					
+					<div class="center"><img ng-src="{{imgUrl}}100.PNG" /></div>
+					<div class="center">
+						<div class="ib">
+							<div attempts="3" inbook-answerbox-fill="22"  
+							 on-correct="question.markAsCorrect();
+											
+							"></div>
+						</div>
+						<div class="ib">cm<sup>2</sup></div>
+					</div>
+				</div>
+				
+				<div inbook-questionseries-item  level="2" >
+					
+					<div class="center"><img ng-src="{{imgUrl}}101.PNG" /></div>
+					<div class="center">
+						<div class="ib">
+							<div attempts="3" inbook-answerbox-fill="12"  
+							 on-correct="question.markAsCorrect();
+											
+							"></div>
+						</div>
+						<div class="ib">cm<sup>2</sup></div>
+					</div>
+				</div>
+				
+				<div inbook-questionseries-item  level="3" >
+					
+					<div class="center"><img ng-src="{{imgUrl}}102.PNG" /></div>
+					<div class="center">
+						<div class="ib">
+							<div attempts="3" inbook-answerbox-fill="12"  
+							 on-correct="question.markAsCorrect();
+											
+							"></div>
+						</div>
+						<div class="ib">cm<sup>2</sup></div>
+					</div>
+				</div>
+				
+				<div inbook-questionseries-item  level="4" >
+					
+					<div class="center"><img ng-src="{{imgUrl}}103.PNG" /></div>
+					<div class="center">
+						<div class="ib">
+							<div attempts="3" inbook-answerbox-fill="12"  
+							 on-correct="question.markAsCorrect();
+											
+							"></div>
+						</div>
+						<div class="ib">cm<sup>2</sup></div>
+					</div>
+				</div>	
+				
+			<div class="mt5 type-small" vcollapse="!questionseries.questionComplete;">
+				<div inbook-nextbtn="question"></div>
+			</div>
+
+			<div class="mt5" vcollapse="!questionseries.seriesCompleted">
+				<div inbook-nextbtn="series"></div>
+			</div>
+			
+			</div>
+		</div>
+	</div>
+</div>

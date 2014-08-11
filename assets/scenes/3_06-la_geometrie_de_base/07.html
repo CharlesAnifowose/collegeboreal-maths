@@ -1,0 +1,84 @@
+<div class="center">
+	<div class="type-xsmall mt10 bold">EXERCICE 3</div>
+	<div class="inbook-grid-layout" style="width:600px; margin: 10px auto;">
+		<div>
+			Trouvez le périmètre des rectangles à l'aide de la formule.
+		</div>
+		<div inbook-questionseries on-complete="scene.markAsCompleted();"
+				ordered=true
+				no-remove=true>
+			<div id="question-dots" inbook-questionseries-dots class="mb3"></div> 
+				<div id="questions">		
+							
+				<div inbook-questionseries-item  level="1" >
+					
+					<div class="center"><img ng-src="{{imgUrl}}27.PNG" /></div>
+					<div class="ib">
+						<div attempts="3" inbook-answerbox-fill="19"  
+						 on-correct="question.markAsCorrect();
+										
+						"></div>
+					</div>
+					<div class="ib">cm</div>
+				</div>
+				
+				<div inbook-questionseries-item  level="2" >
+					
+					<div class="center"><img ng-src="{{imgUrl}}28.PNG" /></div>
+					<div class="ib">
+						<div attempts="3" inbook-answerbox-fill="17.4"  
+						 on-correct="question.markAsCorrect();
+										
+						"></div>
+					</div>
+					<div class="ib">m</div>
+				</div>
+				
+				<div inbook-questionseries-item  level="3" >
+					
+				<div class="center"><img ng-src="{{imgUrl}}29.PNG" /></div>
+					<div class="ib">
+						<div attempts="3" inbook-answerbox-fill="39.8"  
+						 on-correct="question.markAsCorrect();
+										
+						"></div>
+					</div>
+					<div class="ib">mm</div>
+				</div>
+				
+				<div inbook-questionseries-item  level="4" >
+					
+				<div class="center"><img ng-src="{{imgUrl}}30.PNG" /></div>
+					<div class="ib">
+						<div attempts="3" inbook-answerbox-fill="976"  
+						 on-correct="question.markAsCorrect();
+										
+						"></div>
+					</div>
+					<div class="ib">cm</div>
+				</div>	
+				
+				<div inbook-questionseries-item  level="5" >
+					
+					<div class="center"><img ng-src="{{imgUrl}}31.PNG" /></div>
+					<div class="ib">
+						<div attempts="3" inbook-answerbox-fill="119"  
+						 on-correct="question.markAsCorrect();
+										
+						"></div>
+					</div>
+					<div class="ib">mm</div>
+				</div>
+				
+			<div class="mt5 type-small" vcollapse="!questionseries.questionComplete;">
+				<div inbook-nextbtn="question"></div>
+			</div>
+
+			<div class="mt5" vcollapse="!questionseries.seriesCompleted">
+				<div inbook-nextbtn="series"></div>
+			</div>
+			
+			</div>
+		</div>
+	</div>
+</div>
