@@ -1,0 +1,79 @@
+<div 	class="page-layout" 
+		ng-init="
+
+			responses = [
+				S, S, T, T, S, I, I, P, S, P, S, T,
+				P, S, P, P, P, S, T, S, I, I, S, S,
+				I, I, T, T, S, P, T, S, I, T, T, I,
+				T, P, S, S, I, I, P, T, S
+			];
+
+		">
+
+	<div 	inbook-questionseries
+			on-complete="scene.markAsCompleted();"
+			ordered=true
+			no-remove=true>
+
+			<div class="para">
+				Pour connaître le résultat d’un nouveau produit de beauté sur le marché, on a
+				fait un sondage auprès de 45 femmes choisies au hasard. Les résultats
+				obtenus sont les suivants :
+			</div>
+
+			<div class="para">
+				<div class="mt1">
+					(T = très satisfait, S = satisfait, P = peu satisfait, I = insatisfait)
+				</div>
+				<div>
+					<span ng-repeat="response in responses">{{responses}}, </span>
+				</div>
+			</div>
+
+			<div class="para">
+				Utilisez la liste pour compléter le tableau de distribution de fréquences
+				et de fréquences relatives.
+			</div>
+
+			<div class="para">
+				<table>
+					<tr>
+						<td class="bold" colspan="3">
+							Répartition des bébés selon leurs tailles
+						</td>
+					</tr>
+					<tr>
+						<td>Tailles</td>
+						<td>Fréquences</td>
+						<td>Fréquences relatives (%)</td>
+					</tr>
+					<tr>
+						<td>Très satisfait</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Satisfait</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Peu satisfait</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Insatisfait</td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+			
+			<div class="para">
+				Quelle est la fréquence relative de la modalité «Peu satisfait»?
+			</div>
+			
+	</div>
+
+</div>

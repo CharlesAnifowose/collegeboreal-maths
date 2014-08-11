@@ -1,0 +1,87 @@
+<div 	class="page-layout"
+		ng-init="
+
+			babySizes = [
+				68, 67, 75, 74, 67, 69, 73, 74, 75, 66, 77, 76, 66, 67, 73,
+				71, 70, 72, 74, 71, 73, 68, 74, 71, 68, 67, 70, 75, 69, 69,
+				74, 75
+			];
+
+		">
+
+	<div 	inbook-questionseries
+			on-complete="scene.markAsCompleted();"
+			ordered=true
+			no-remove=true>
+
+			<div class="para">
+				On a fait une enquête pour connaître la taille en centimètre de 32 bébés âgés
+				d’un an dans un milieu rural. Voici les résultats de l’enquête.
+			</div>
+
+			<div class="para">
+				<span ng-repeat="baby in babySizes">{{babySizes[$index]}} ,</span>
+			</div>
+
+			<div class="para">	
+				À l’aide de cette liste, complétez le tableau de distribution de fréquences et
+				de fréquences relatives (arrondissez au dixième près).
+			</div>
+
+			<div class="para">	
+				<table>
+					<tr>
+						<td class="bold" colspan="3">
+							Répartition des bébés selon leurs tailles
+						</td>
+					</tr>
+					<tr>
+						<td>Tailles</td>
+						<td>Fréquences</td>
+						<td>Fréquences relatives (%)</td>
+					</tr>
+					<tr>
+						<td>66 - 68</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>68 - 70</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>70 - 72</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>72 - 74</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>74 - 76</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>76 - 78</td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+			
+			<div class="para">	
+				(a) En combien de classe se divisent les données?
+			</div>
+
+			<div class="para">	
+				(b) Quelle est la fréquence relative de la classe «66-68»?
+			</div>
+
+
+	</div>	
+
+</div>
