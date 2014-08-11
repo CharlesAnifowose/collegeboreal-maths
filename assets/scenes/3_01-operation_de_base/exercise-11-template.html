@@ -1,0 +1,37 @@
+<div class="mt2 type-small bold">
+
+	<div class="vert-add">
+		<div class="term">
+			<div class="ib">
+				&nbsp;		
+			</div>
+			<div class="ib">
+				{{ans.num1}}
+			</div>
+		</div>
+		<div class="term last">
+			<div class="ib">
+				+		
+			</div>
+			<div class="ib">
+				{{ans.num2}}
+			</div>
+		</div>
+		<div class="term">
+			<div class="ib">
+				&nbsp;		
+			</div>
+			<div class="ib">
+				<div 	inbook-answerbox-fill="ans.val"
+						class="type-small"
+						input-class="type-small"
+						on-correct="question.markAsCorrect()"
+						on-incorrect="question.markAsIncorrect()"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="mt4">
+		<div inbook-nextbtn="question"></div>
+	</div>
+</div>

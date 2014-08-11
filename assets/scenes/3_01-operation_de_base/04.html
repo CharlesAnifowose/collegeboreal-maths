@@ -1,0 +1,47 @@
+<div 	class="page-layout" 
+		ng-init="
+			imgUrl = 'http://d3mw5hjf8nr5ry.cloudfront.net/collegeboreal-sample/images/3_01-operation_de_base/';
+		">
+
+		<div class="para">
+			Un nombre est composé de chiffres. Ainsi, le nombre 243 est
+			composé des chiffres 2, 4 et 3. Les chiffres sont groupés par tranches de 3
+			chiffres à partir de la droite et en se déplaçant vers la gauche. On laisse un
+			espace entre chaque tranche.
+		</div>
+
+		<div class="exemple-frame">
+
+			<div class="ib vtop">
+				Exemple :
+			</div>
+			<div class="ib vtop">
+				<div>7 200 (sept mille deux cents)</div>
+				<div>23 440 (vingt-trois mille quatre cent quarante)</div>
+			</div>
+
+		</div>
+
+		<div class="para">
+			Les chiffres peuvent prendre différentes valeurs selon la place qu'ils
+			occupent dans un nombre.
+		</div>
+
+		<div class="para">
+			Voici un tableau qui nous aidera à identifier la valeur d'un chiffre selon la
+			position qu'il occupe dans un nombre.
+		</div>
+
+		<div class="center">
+			<img ng-src="{{imgUrl}}diagram_02.png"></div>
+		</div>
+
+		<div class="para">
+			Ainsi, dans le nombre 428 573,
+			<ul class="basic-list">
+				<li>le chiffre 8 occupe la position des unités de mille; sa valeur est 8 000</li>
+				<li>le chiffre 5 occupe la position des centaines; sa valeur est 500</li>
+				<li>le chiffre 7 occupe la position des dizaines; sa valeur est 70.</li>
+			</ul>
+		</div>
+</div>

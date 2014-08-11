@@ -1,0 +1,67 @@
+<div 	class="page-layout" 
+		ng-init="
+			imgUrl = 'http://d3mw5hjf8nr5ry.cloudfront.net/collegeboreal-sample/images/3_01-operation_de_base/';
+		">
+
+		<div 	inbook-questionseries
+				on-complete="scene.markAsCompleted();"
+  				ordered=true
+  				no-remove=true>
+
+  				<div class="para">
+  					Trouvez la différence puis vérifiez les résultats avec la calculatrice
+  				</div>
+
+
+  				<div 	inbook-questionseries-item level="1"
+  						ng-init="
+  							ans={};
+  							ans.num1 	=	148;
+  							ans.num2	=	33;
+  							ans.val		=	ans.num1 - ans.num2;
+  						">
+					<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-14.1-template.html"></div>
+  				</div>
+
+  				<div 	inbook-questionseries-item level="2"
+  						ng-init="
+  							ans={};
+  							ans.num1 	=	153;
+  							ans.num2	=	21;
+  							ans.val		=	ans.num1 - ans.num2;
+  						">
+					<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-14.1-template.html"></div>
+  				</div>
+
+  				<div 	inbook-questionseries-item level="3"
+  						ng-init="
+  							ans={};
+  							ans.num1 	=	8515;
+  							ans.num2	=	2304;
+  							ans.val		=	ans.num1 - ans.num2;
+  						">
+					<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-14.1-template.html"></div>
+  				</div>
+
+  				<div 	inbook-questionseries-item level="4"
+  						ng-init="
+  							ans={};
+  							ans.num1 	=	35659;
+  							ans.num2	=	4127;
+  							ans.val		=	ans.num1 - ans.num2;
+  						">
+					<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-14.1-template.html"></div>
+  				</div>
+
+  				<div 	inbook-questionseries-item level="5"
+  						ng-init="
+  							ans={};
+  							ans.num1 	=	76543;
+  							ans.num2	=	2532;
+  							ans.val		=	ans.num1 - ans.num2;
+  						">
+					<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-14.1-template.html"></div>
+  				</div>
+
+  		</div>
+</div>
