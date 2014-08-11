@@ -1,3 +1,5 @@
+<div class="page-layout">
+
 <script type="text/inbook-javascript">
   var values = scope.values = [
     {rate: 5 ,   base: 200   },
@@ -25,4 +27,6 @@
 
 <div ng-equate="calc = values[0]; calc.portion = calc.base * (calc.rate /100)">
   {{calc.rate}} % de {{calc.base}} = <div inbook-answerbox-fill="calc.portion"></div>
+</div>
+
 </div>
