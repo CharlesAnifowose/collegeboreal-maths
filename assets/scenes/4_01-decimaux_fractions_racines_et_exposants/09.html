@@ -1,0 +1,84 @@
+<div 	class="page-layout" 
+		ng-init="
+		imgUrl = 'http://d3mw5hjf8nr5ry.cloudfront.net/collegeboreal-sample/images/4_01-decimaux_fractions_racines_et_exposants/';
+		">
+
+		<div 	inbook-questionseries
+				on-complete="scene.markAsCompleted();"
+  				ordered=true
+  				no-remove=true>
+
+
+  				<div class="para">
+  					Comparez les nombres en insérant entre eux un des symboles : &gt;, &lt; ou = .
+				</div>
+
+
+				<div 	inbook-questionseries-item level="1"
+						ng-init="
+							ans={};
+							ans.num1 	=  	'64.787'; 
+							ans.num2	=	'23.787';
+							ans.val 	= 	'>';
+						">
+
+						<div inbook-include="assets/scenes/4_01-decimaux_fractions_racines_et_exposants/exercise-06-template.html"></div>
+				</div>
+
+				<div 	inbook-questionseries-item level="2"
+						ng-init="
+							ans={};
+							ans.num1 	= 	'0.699'; 
+							ans.num2	=	'0.999';
+							ans.val 	= 	'<';
+						">
+
+						<div inbook-include="assets/scenes/4_01-decimaux_fractions_racines_et_exposants/exercise-06-template.html"></div>
+				</div>
+
+				<div 	inbook-questionseries-item level="3"
+						ng-init="
+							ans={};
+							ans.num1 	=  	'5 987 004'; 
+							ans.num2	=	'6 987 004.9';
+							ans.val 	= 	'<';
+						">
+
+						<div inbook-include="assets/scenes/4_01-decimaux_fractions_racines_et_exposants/exercise-06-template.html"></div>
+				</div>
+
+				<div 	inbook-questionseries-item level="4"
+						ng-init="
+							ans={};
+							ans.num1 	=   '0.468 9'; 
+							ans.num2	=	'0.468 90';
+							ans.val 	= 	'=';
+						">
+
+						<div inbook-include="assets/scenes/4_01-decimaux_fractions_racines_et_exposants/exercise-06-template.html"></div>
+				</div>
+
+				<div 	inbook-questionseries-item level="5"
+						ng-init="
+							ans={};
+							ans.num1 	=   '2, 522 0'; 
+							ans.num2	=	'2, 522 01';
+							ans.val 	= 	'<';
+						">
+
+						<div inbook-include="assets/scenes/4_01-decimaux_fractions_racines_et_exposants/exercise-06-template.html"></div>
+				</div>
+
+				<div 	inbook-questionseries-item level="6"
+						ng-init="
+							ans={};
+							ans.num1 	=   '9 000 000'; 
+							ans.num2	=	'999 999';
+							ans.val 	= 	'>';
+						">
+
+						<div inbook-include="assets/scenes/4_01-decimaux_fractions_racines_et_exposants/exercise-06-template.html"></div>
+				</div>
+
+  		</div>
+ </div>

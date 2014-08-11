@@ -1,0 +1,23 @@
+<div class="center mt2 type-small">
+
+	<div class="ib bold">
+		{{ans.num1}}
+	</div>
+	<div class="ib">
+		<div 	inbook-answerbox-fill="ans.val"
+				pattern="'*.'"
+				class="type-small bold"
+				type="text"
+				input-class="type-small bold"
+				on-correct="question.markAsCorrect()"
+				on-incorrect="question.markAsIncorrect()"></div>
+	</div>
+	<div class="ib bold">
+		{{ans.num2}}
+	</div>
+
+	<div class="mt4">
+		<div inbook-nextbtn="question"></div>
+	</div>
+
+</div>
