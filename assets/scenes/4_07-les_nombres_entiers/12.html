@@ -1,0 +1,206 @@
+<div class="page-layout">
+	
+	<div 	inbook-questionseries
+			on-complete="scene.markAsCompleted();"
+			ordered=true
+			no-remove=true>
+
+		<div class="para">
+			Notez la valeur absolue de chaque nombre en vous servant du symbole.
+		</div>
+
+		<div 	inbook-questionseries-item level="1"
+				ng-init="
+					ans={};
+				
+					ans.num = -38;
+					ans.val = math('abs', ans.num);
+				">
+
+				<div class="type-small bold">
+
+					<div class="ib">
+						|{{ans.num}}|
+					</div>
+					<div class="ib">
+						<div class="ml2 mr2">&equals;</div>
+					</div>
+					<div class="ib">
+						<div 	inbook-answerbox-fill="ans.val"
+								class="type-small"
+								input-class="type-small"
+								on-correct="question.markAsCorrect()"
+								on-incorrect="question.markAsIncorrect()"></div>
+					</div>
+
+				</div>
+
+				<div class="mt4">
+					<div inbook-nextbtn="question"></div>
+				</div>
+
+		</div>
+
+		<div 	inbook-questionseries-item level="2"
+				ng-init="
+					ans={};
+				
+					ans.num = 70;
+					ans.val = math('abs', ans.num);
+				">
+
+				<div class="type-small bold">
+
+					<div class="ib">
+						|{{ans.num}}|
+					</div>
+					<div class="ib">
+						<div class="ml2 mr2">&equals;</div>
+					</div>
+					<div class="ib">
+						<div 	inbook-answerbox-fill="ans.val"
+								class="type-small"
+								input-class="type-small"
+								on-correct="question.markAsCorrect()"
+								on-incorrect="question.markAsIncorrect()"></div>
+					</div>
+
+				</div>
+
+				<div class="mt4">
+					<div inbook-nextbtn="question"></div>
+				</div>
+
+		</div>
+
+		<div 	inbook-questionseries-item level="3"
+				ng-init="
+					ans={};
+				
+					ans.num = 240;
+					ans.val = math('abs', ans.num);
+				">
+
+				<div class="type-small bold">
+
+					<div class="ib">
+						|{{ans.num}}|
+					</div>
+					<div class="ib">
+						<div class="ml2 mr2">&equals;</div>
+					</div>
+					<div class="ib">
+						<div 	inbook-answerbox-fill="ans.val"
+								class="type-small"
+								input-class="type-small"
+								on-correct="question.markAsCorrect()"
+								on-incorrect="question.markAsIncorrect()"></div>
+					</div>
+
+				</div>
+
+				<div class="mt4">
+					<div inbook-nextbtn="question"></div>
+				</div>
+
+		</div>
+
+		<div 	inbook-questionseries-item level="4"
+				ng-init="
+					ans={};
+				
+					ans.num = -92;
+					ans.val = math('abs', ans.num);
+				">
+
+				<div class="type-small bold">
+
+					<div class="ib">
+						|{{ans.num}}|
+					</div>
+					<div class="ib">
+						<div class="ml2 mr2">&equals;</div>
+					</div>
+					<div class="ib">
+						<div 	inbook-answerbox-fill="ans.val"
+								class="type-small"
+								input-class="type-small"
+								on-correct="question.markAsCorrect()"
+								on-incorrect="question.markAsIncorrect()"></div>
+					</div>
+
+				</div>
+
+				<div class="mt4">
+					<div inbook-nextbtn="question"></div>
+				</div>
+
+		</div>
+
+		<div 	inbook-questionseries-item level="5"
+				ng-init="
+					ans={};
+				
+					ans.num = -18;
+					ans.val = math('abs', ans.num);
+				">
+
+				<div class="type-small bold">
+
+					<div class="ib">
+						|{{ans.num}}|
+					</div>
+					<div class="ib">
+						<div class="ml2 mr2">&equals;</div>
+					</div>
+					<div class="ib">
+						<div 	inbook-answerbox-fill="ans.val"
+								class="type-small"
+								input-class="type-small"
+								on-correct="question.markAsCorrect()"
+								on-incorrect="question.markAsIncorrect()"></div>
+					</div>
+
+				</div>
+
+				<div class="mt4">
+					<div inbook-nextbtn="question"></div>
+				</div>
+
+		</div>
+
+		<div 	inbook-questionseries-item level="6"
+				ng-init="
+					ans={};
+				
+					ans.num = -500;
+					ans.val = math('abs', ans.num);
+				">
+
+				<div class="type-small bold">
+
+					<div class="ib">
+						|{{ans.num}}|
+					</div>
+					<div class="ib">
+						<div class="ml2 mr2">&equals;</div>
+					</div>
+					<div class="ib">
+						<div 	inbook-answerbox-fill="ans.val"
+								class="type-small"
+								input-class="type-small"
+								on-correct="question.markAsCorrect()"
+								on-incorrect="question.markAsIncorrect()"></div>
+					</div>
+
+				</div>
+
+				<div class="mt4">
+					<div inbook-nextbtn="question"></div>
+				</div>
+
+		</div>
+
+	</div>
+
+</div>
