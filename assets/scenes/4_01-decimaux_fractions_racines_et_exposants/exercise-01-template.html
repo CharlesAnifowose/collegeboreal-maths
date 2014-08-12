@@ -1,0 +1,75 @@
+<div class="center"
+	ng-init=""
+	ng-resettable-init="
+		ans.locked = false;
+		ans.a = '';
+		ans.b = '';
+		feedback.reveal = false;
+		"
+    ng-equate="
+	  solution.a = a;
+	  solution.b = b;
+	  solution.aNumbersMatch = equal(solution.a, ans.a);
+	  solution.bNumbersMatch = equal(solution.b, ans.b);
+	  ans.isCorrect = and(solution.aNumbersMatch, solution.bNumbersMatch);
+	  ans.isCorrectFlag = ifElse(ans.isCorrect, 1, 0);
+	  ">
+
+	<div class="center mt2 type-small">
+		<div>
+			<div class="ib inbook-fraction bold">
+				<div>{{x}}</div>
+				<div class="fraction-line-thin"></div>
+				<div>{{y}}</div>
+			</div>
+			<div class="ib">
+				<div auto-size-input class="ib type-small"><input type="text" class="type-small " 
+					ng-model="ans.a" 
+					ng-disabled="ans.locked"
+					ng-enter-key="ans.remoteTrigger=true;"
+					/>
+				</div>
+			</div>
+			<div class="ib inbook-fraction bold">
+				<div>{{c}}</div>
+				<div class="fraction-line-thin"></div>
+				<div>{{s}}</div>
+			</div>
+		</div>
+		<div class="mt4">
+			<div class="ib bold">PPDC = </div>
+			<div class="ib">
+				<div auto-size-input class="ib type-small"><input type="text" class="type-small " 
+					ng-model="ans.b" 
+					ng-disabled="ans.locked"
+					ng-enter-key="ans.remoteTrigger=true;"
+					/>
+				</div>
+				<div class="type-xsmall ib">
+				<div inbook-answer-submit="1"				
+					 ng-model="ans.isCorrectFlag" 
+					 attempts="1" simple-ui="1"
+					 remote-trigger="ans.remoteTrigger" 
+					 remote-trigger-reset="ans.remoteTrigger = false;"
+					 on-correct=   "question.markAsCorrect();														
+					"
+					 on-incorrect= "
+						storedAns.a = ans.a;
+						storedAns.b = ans.b;
+						feedback.reveal = true;
+						question.markAsIncorrect();
+					 "
+					 on-complete="
+						ans.locked=false; 										
+						track({description:'question', calc:calc, ans:ans})
+					 ">
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="mt4">
+			<div inbook-nextbtn="question"></div>
+		</div>
+
+	</div>
+</div>

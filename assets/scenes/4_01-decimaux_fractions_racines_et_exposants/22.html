@@ -1,0 +1,300 @@
+<div 	class="page-layout" 
+		ng-init="
+			imgUrl = 'http://d3mw5hjf8nr5ry.cloudfront.net/collegeboreal-sample/images/4_01-decimaux_fractions_racines_et_exposants/';
+		">
+
+
+		<div class="para"> 
+			Effectuez. N'oubliez pas de suivre les étapes de la résolution de problèmes.
+		</div>
+		<div 	inbook-questionseries
+				on-complete="scene.markAsCompleted();"
+  				ordered=true
+  				no-remove=true>
+
+  				<div inbook-questionseries-item level="1">  	
+
+					<div 
+						ng-init=""
+						ng-resettable-init="
+							ans.locked = false;
+							ans.a = '';
+							ans.b = '';
+							ans.w = '';
+							feedback.reveal = false;
+							"
+						ng-equate="
+						  solution.w = 500000;
+						  solution.a = 166667;
+						  solution.b = 166667;
+						  solution.aNumbersMatch = equal(solution.a, ans.a);
+						  solution.bNumbersMatch = equal(solution.b, ans.b);
+						  solution.wNumbersMatch = equal(solution.w, ans.w);
+						  ans.isCorrect = and(solution.aNumbersMatch, solution.bNumbersMatch, solution.wNumbersMatch);
+						  ans.isCorrectFlag = ifElse(ans.isCorrect, 1, 0);
+						  ">
+						<div>
+							<div class="mb5">
+								<div>Une personne gagne une loterie d'un million de dollars. Elle décide d'en</div>
+								<div>
+									<div class="ib">donner la moitié. Elle donne</div>
+									<div class="ib inbook-fraction">
+										<div>2</div>
+										<div class="fraction-line-thin"></div>
+										<div>3</div>
+									</div>
+									<div class="ib">de cette moitié à ses deux enfants et le</div>
+								</div>
+								<div>reste à une oeuvre de charité. Combien donne-t-elle à chacun?</div>
+							</div>
+							<div>
+								<div class="ib">elle garde :</div>
+								<div auto-size-input class="ib mb2 type-xsmall"><input type="text" class="type-xsmall " 
+									ng-model="ans.w" 
+									ng-disabled="ans.locked"
+									ng-enter-key="ans.remoteTrigger=true;"
+									/>
+								</div>	
+								<div class="ib">$</div>		
+							</div>
+							<div>
+								<div class="ib">enfants reçoivent</div>
+								<div auto-size-input class="ib mb2 type-xsmall"><input type="text" class="type-xsmall " 
+									ng-model="ans.a" 
+									ng-disabled="ans.locked"
+									ng-enter-key="ans.remoteTrigger=true;"
+									/>
+								</div>	
+								<div class="ib">$ chacun</div>		
+							</div>
+							<div>
+								<div class="ib">oeuvre de charité reçoit :</div>
+								<div auto-size-input class="ib mb2 type-xsmall"><input type="text" class="type-xsmall " 
+									ng-model="ans.b" 
+									ng-disabled="ans.locked"
+									ng-enter-key="ans.remoteTrigger=true;"
+									/>
+								</div>
+								<div class="ib">$</div>		
+								<div class="type-xxsmall mb2 ib">
+									<div inbook-answer-submit="1"				
+										 ng-model="ans.isCorrectFlag" 
+										 attempts="1" simple-ui="1"
+										 remote-trigger="ans.remoteTrigger" 
+										 remote-trigger-reset="ans.remoteTrigger = false;"
+										 on-correct=   "question.markAsCorrect();														
+										"
+										 on-incorrect= "
+											storedAns.a = ans.a;
+											storedAns.b = ans.b;
+											storedAns.w = ans.w;
+											feedback.reveal = true;
+											question.markAsIncorrect();
+										 "
+										 on-complete="
+											ans.locked=false; 										
+											track({description:'question', calc:calc, ans:ans})
+										 ">
+									</div>
+								</div>
+							</div>
+						 </div>
+					</div>
+  				</div>
+
+  				<div inbook-questionseries-item level="2">  				
+  					<div >
+  						<div class="para">
+							Une couturière taille 4,8 mètres de tissu en 8 pièces égales. Elle se sert
+							de 5 de ces pièces pour faire des napperons. Combien de tissu
+							lui reste-t-elle?
+						</div>
+						<div class="mt5">
+							<div class="ib">Il lui reste</div>
+							<div class="ib" attempts="3" inbook-answerbox-fill="1.8"  
+							on-correct="question.markAsCorrect();		          
+							"></div>	
+							<div class="ib">m de tissu.</div>		
+						</div>
+				     </div>
+  				</div>
+
+  				<div inbook-questionseries-item level="3">  	
+					<div
+						ng-init=""
+						ng-resettable-init="
+							ans.locked = false;
+							ans.a = '';
+							ans.b = '';
+							feedback.reveal = false;
+							"
+						ng-equate="
+						  solution.a = 111;
+						  solution.b = 19;
+						  solution.aNumbersMatch = equal(solution.a, ans.a);
+						  solution.bNumbersMatch = equal(solution.b, ans.b);
+						  ans.isCorrect = and(solution.aNumbersMatch, solution.bNumbersMatch);
+						  ans.isCorrectFlag = ifElse(ans.isCorrect, 1, 0);
+						  ">
+						<div >
+							<div class="mb5">
+								<div>Un propriétaire de restaurant coupe ses tartes en 6 pointes. Aujourd'hui,</div>
+								<div>
+									<div class="ib">il a 18</div
+									><div class="ib inbook-fraction">
+										<div>1</div>
+										<div class="fraction-line-thin"></div>
+										<div>2</div>
+									</div>
+									<div class="ib">tartes. S'il a servi une pointe à chacun de 92 clients, combien</div>
+								</div>
+								<div>de tartes lui reste-t-il?</div>
+							</div>
+							<div>
+								<div class="ib">Il y a</div>
+								<div auto-size-input class="ib type-xsmall mb2"><input type="text" class="type-xsmall " 
+									ng-model="ans.a" 
+									ng-disabled="ans.locked"
+									ng-enter-key="ans.remoteTrigger=true;"
+									/>
+								</div>
+								<div class="ib">pointes.</div>		
+							</div>
+							<div>
+								<div class="ib">Il reste</div>
+								<div auto-size-input class="ib type-xsmall mb2"><input type="text" class="type-xsmall " 
+									ng-model="ans.b" 
+									ng-disabled="ans.locked"
+									ng-enter-key="ans.remoteTrigger=true;"
+									/>
+								</div>	
+								<div class="ib">
+									<div class="ib">pointes.</div>
+								</div>
+								<div class="type-xxsmall mb2 ib">
+									<div inbook-answer-submit="1"				
+										 ng-model="ans.isCorrectFlag" 
+										 attempts="1" simple-ui="1"
+										 remote-trigger="ans.remoteTrigger" 
+										 remote-trigger-reset="ans.remoteTrigger = false;"
+										 on-correct=   "question.markAsCorrect();														
+										"
+										 on-incorrect= "
+											storedAns.a = ans.a;
+											storedAns.b = ans.b;
+											feedback.reveal = true;
+											question.markAsIncorrect();
+										 "
+										 on-complete="
+											ans.locked=false; 										
+											track({description:'question', calc:calc, ans:ans})
+										 ">
+									</div>	
+								</div>
+							</div>
+						 </div>
+					</div>
+  				</div>
+
+  				<div inbook-questionseries-item level="4">  				
+  					<div >
+  						<div class="mb5">
+							<div>
+								<div class="ib">Un éléphant pesait 1 tonne (1 000 kg). Il a perdu</div
+								><div class="ib inbook-fraction">
+									<div>2</div>
+									<div class="fraction-line-thin"></div>
+									<div>5</div>
+								</div>
+								<div class="ib">de sa masse en 1</div>
+							</div>
+							<div>an. Combien de kg, en moyenne, a-t-il perdu par mois?</div>
+						</div>
+						<div>
+							<div class="ib">Il a perdu une moyenne de</div>		
+							<div class="ib" attempts="3" inbook-answerbox-fill="33.3"  
+							on-correct="question.markAsCorrect();		          
+							"></div>	
+							<div class="ib">kg/mois.</div>		
+						</div>
+				     </div>
+  				</div>
+
+  				<div inbook-questionseries-item level="5">  				
+  					<div >
+  						<div class="para">
+							Dans une garderie, il y a 15 enfants. Si on partage 3 litres de jus entre
+							eux, combien de jus reçoit chaque enfant?
+						</div>
+						<div>
+							<div class="ib">Chaque enfant reçoit</div>
+							<div class="ib" attempts="3" inbook-answerbox-fill="0.2"  
+							on-correct="question.markAsCorrect();		          
+							"></div>	
+							<div class="ib">L de jus.</div>		
+						</div>
+				     </div>
+  				</div>
+
+
+				<div inbook-questionseries-item level="6">  				
+  					<div >
+  						<div class="mb5">
+							<div>
+								<div class="ib">On utilise les</div
+								><div class="ib inbook-fraction">
+									<div>5</div>
+									<div class="fraction-line-thin"></div>
+									<div>8</div>
+								</div>
+								<div class="ib">d'une planche qui mesure 2,4 mètres. Quelle longueur</div>
+							</div>
+							<div>est le bout qui reste?</div>
+						</div>
+						<div>
+							<div class="ib">Il reste</div>	
+							<div class="ib" attempts="3" inbook-answerbox-fill="0.9"  
+							on-correct="question.markAsCorrect();		          
+							"></div>	
+							<div class="ib">m.</div>		
+						</div>
+				     </div>
+  				</div>
+
+				<div inbook-questionseries-item level="7">  				
+  					<div >
+  						<div class="para">
+							Camille a reçu 45% de ses notes sur un examen qui avait un total de 80
+							points. Combien de points a-t-elle reçu?
+						</div>
+						<div>
+							<div class="ib">Elle a reçu</div>		
+							<div class="ib" attempts="3" inbook-answerbox-fill="36"  
+							on-correct="question.markAsCorrect();		          
+							"></div>	
+							<div class="ib">points.</div>		
+						</div>
+				     </div>
+  				</div>
+  					
+				<div inbook-questionseries-item level="8">  				
+  					<div >
+  						<div class="para">
+							Jusqu'à date 57,3% des votes pour les membres du conseil des étudiants
+							sont entrés. Si 950 étudiants devaient voter, combien ont encore à poster
+							leur vote?
+						</div>
+						<div>
+							<div class="ib" attempts="3" inbook-answerbox-fill="406"  
+							on-correct="question.markAsCorrect();		          
+							"></div>	
+							<div class="ib">étudiants ont encore à poster leur vote.</div>		
+						</div>
+				     </div>
+  				</div>
+				
+  			<div class="mt4">
+				<div inbook-nextbtn="question"></div>
+			</div>
+		</div>
+</div>

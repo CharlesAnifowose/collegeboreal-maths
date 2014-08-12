@@ -270,3 +270,12 @@ ul.basic-list {
 .vert-add .term.last {
   border-bottom: 1px solid #333;
 }
+.bottom {
+   position:relative; 
+   top:2px;
+}
+
+.top {
+ position:relative;
+ top:-2px;
+}
