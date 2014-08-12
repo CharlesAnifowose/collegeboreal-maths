@@ -1,0 +1,99 @@
+<div class="page-layout">
+	
+	<div 	inbook-questionseries
+			on-complete="scene.markAsCompleted();"
+			ordered=true
+			no-remove=true>
+
+		<div class="para">
+			Mettez en ordre décroissant.
+		</div>
+
+		<div 	inbook-questionseries-item level="1"
+				ng-init="
+					ans={};
+					ans.nums = [-4, -6, -1, -2, -7, 1];
+				">
+
+				<div class="type-small bold">
+					<span ng-repeat="num in ans.nums">{{ans.nums[$index]}}, </span>
+				</div>
+
+		</div>
+
+		<div 	inbook-questionseries-item level="2"
+				ng-init="
+					ans={};
+					ans.nums = [8, -1, -9, -7, 0, 6];
+				">
+
+				<div class="type-small bold">
+					<span ng-repeat="num in ans.nums">{{ans.nums[$index]}}, </span>
+				</div>
+
+		</div>
+
+		<div 	inbook-questionseries-item level="3"
+				ng-init="
+					ans={};
+					ans.nums = [5, 25, 12, -12, 2, -35];
+				">
+
+				<div class="type-small bold">
+					<span ng-repeat="num in ans.nums">{{ans.nums[$index]}}, </span>
+				</div>
+
+		</div>
+
+		<div 	inbook-questionseries-item level="4"
+				ng-init="
+					ans={};
+					ans.nums = [6090, 609, 906, -9, -69, -6];
+				">
+
+				<div class="type-small bold">
+					<span ng-repeat="num in ans.nums">{{ans.nums[$index]}}, </span>
+				</div>
+
+		</div>
+
+		<div 	inbook-questionseries-item level="5"
+				ng-init="
+					ans={};
+					ans.nums = [0, -4, 40, -400, 4, 4000];
+				">
+
+				<div class="type-small bold">
+					<span ng-repeat="num in ans.nums">{{ans.nums[$index]}}, </span>
+				</div>
+
+		</div>
+
+		<div 	inbook-questionseries-item level="6"
+				ng-init="
+					ans={};
+					ans.nums = [-3, -76, 26, -75, 62, 0];
+				">
+
+				<div class="type-small bold">
+					<span ng-repeat="num in ans.nums">{{ans.nums[$index]}}, </span>
+				</div>
+
+		</div>
+
+		<div 	inbook-questionseries-item level="7"
+				ng-init="
+					ans={};
+					ans.nums = [-12, -3, -89, -45, -1, -1098];
+				">
+
+				<div class="type-small bold">
+					<span ng-repeat="num in ans.nums">{{ans.nums[$index]}}, </span>
+				</div>
+
+		</div>
+
+
+	</div>
+
+</div>
