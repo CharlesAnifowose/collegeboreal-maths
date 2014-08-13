@@ -1,0 +1,387 @@
+
+<div  class="page-layout" 
+    ng-init="
+      imgUrl = 'http://d3mw5hjf8nr5ry.cloudfront.net/collegeboreal-sample/images/5_03_mesures/';
+    ">
+		<div class="para"> 
+			Trouvez  l'aire  totale:   (Arrondissez  votre réponse finale au centième près.) 
+		</div>
+		<div 	inbook-questionseries
+				on-complete="scene.markAsCompleted();"
+  				ordered=true
+  				no-remove=true>
+
+  				<div inbook-questionseries-item level="1">  				
+  					<div class="mt3">
+  						<div >d'un  cube dont l'arête  mesure  10 m;</div>
+  						<div class="mt5">Aire d 'une face : 10m &times;     10m = 100 <span math>m^2</span></div>
+  						<div>
+	  						<div class="ib">Aire totale  (4 faces et 2 bases)  : 6  x  100 <span math>m^2</span>  =</div>
+					      	<div class="ib" attempts="3" inbook-answerbox-fill="600"  
+					       	on-correct="question.markAsCorrect();		          
+					      "></div>
+				      	</div>				      	
+				     </div>
+  				</div>
+
+  				<div inbook-questionseries-item level="2">  	
+				   <div ng-init=""
+						ng-resettable-init="
+							ans.locked = false;
+							ans.a = '';
+							ans.b = '';
+							ans.c = '';
+							ans.w = '';
+							feedback.reveal = false;
+							"
+						ng-equate="
+						  solution.a = 60;
+						  solution.b = 40;
+						  solution.c = 112;
+						  solution.w = 12;
+						  solution.aNumbersMatch = equal(solution.a, ans.a);
+						  solution.bNumbersMatch = equal(solution.b, ans.b);
+						  solution.cNumbersMatch = equal(solution.c, ans.c);
+						  solution.wNumbersMatch = equal(solution.w, ans.w);
+						  ans.isCorrect = and(solution.aNumbersMatch, solution.bNumbersMatch, solution.wNumbersMatch, solution.cNumbersMatch);
+						  ans.isCorrectFlag = ifElse(ans.isCorrect, 1, 0);
+						  ">
+
+						<div class="mt3">d'un prisme rectangulaire  dont les dimensions  de la base sont de 2 m sur</div>
+						<div >10m  et dont la hauteur est de 3 m;</div>
+						<div class="mt5">
+							<div class="text-block mr5">
+							  Aire latérale
+							</div>
+							<div class="ib">
+								<div>
+								  <div class="para">
+								 = 3 m &times; 2 m = 6 <span math>m^2</span>
+								  </div>
+								  <div class="para">
+									  6 <span math>m^2</span>  &times; 2 faces = 
+									  <div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
+										ng-model="ans.w" 
+										ng-disabled="ans.locked"
+										ng-enter-key="ans.remoteTrigger=true;"
+										/>
+									 </div>
+								  </div> 
+							  </div>	
+							  <div>
+								  <div class="para">
+								 = 3 m &times; 10 m = 30 <span math>m^2</span>
+								  </div>
+								  <div class="para">
+									  30 <span math>m^2</span>  &times; 2 faces = 
+									   <div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
+										ng-model="ans.a" 
+										ng-disabled="ans.locked"
+										ng-enter-key="ans.remoteTrigger=true;"
+										/>
+									  </div> 
+								  </div>
+							  </div>
+						  </div>
+						  <div class="mt5">
+							 <div class="text-block mr5">
+							  Aire des bases
+							  </div>
+							  <div class="ib">
+								   <div>
+									  <div class="para">
+									 = 2 m &times; 10 m = 20 <span math>m^2</span>
+									  </div>
+									  <div class="para">
+										  20 <span math>m^2</span>  &times; 2 bases = 
+										   <div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
+												ng-model="ans.b" 
+												ng-disabled="ans.locked"
+												ng-enter-key="ans.remoteTrigger=true;"
+												/>
+											</div> 
+									  </div>			       
+							      </div>
+								  <div>
+									<div class="ib">Aire totale =</div>
+									 <div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
+										ng-model="ans.c" 
+										ng-disabled="ans.locked"
+										ng-enter-key="ans.remoteTrigger=true;"
+										/>
+									 </div>
+									 <div class="type-xxxsmall mb2 ib">
+										<div inbook-answer-submit="1"				
+											 ng-model="ans.isCorrectFlag" 
+											 attempts="1" simple-ui="1"
+											 remote-trigger="ans.remoteTrigger" 
+											 remote-trigger-reset="ans.remoteTrigger = false;"
+											 on-correct=   "question.markAsCorrect();														
+											"
+											 on-incorrect= "
+												storedAns.a = ans.a;
+												storedAns.b = ans.b;
+												storedAns.c = ans.c;
+												storedAns.w = ans.w;
+												feedback.reveal = true;
+												question.markAsIncorrect();
+											 "
+											 on-complete="
+												ans.locked=false; 										
+												track({description:'question', calc:calc, ans:ans})
+											 ">
+											</div>
+										</div>
+									</div>
+								</div>		     			  				
+							</div>		
+						</div>
+					</div>
+				</div>
+		
+
+
+  			<div inbook-questionseries-item level="3">
+				<div
+					ng-init=""
+					ng-resettable-init="
+						ans.locked = false;
+						ans.a = '';
+						ans.b = '';
+						ans.w = '';
+						feedback.reveal = false;
+						"
+					ng-equate="
+					  solution.a = 12.56;
+					  solution.b = 94.25;
+					   solution.w = 81.64;
+					  solution.aNumbersMatch = equal(solution.a, ans.a);
+					  solution.bNumbersMatch = equal(solution.b, ans.b);
+					  solution.wNumbersMatch = equal(solution.w, ans.w);
+					  ans.isCorrect = and(solution.aNumbersMatch, solution.bNumbersMatch, solution.wNumbersMatch);
+					  ans.isCorrectFlag = ifElse(ans.isCorrect, 1, 0);
+					  ">
+		     	<div class="mt3">
+					<div >d'un  cône dont la longueur  de la génératrice  mesure  13 m et  le rayon de la base 2 m;</div>  
+					<div class="mt5" style="width:700px;">
+						 <div class="text-block">
+						  Aire latérale:
+						  </div>
+						  <div class="text-block ml5">
+							  <div class="para">
+								&pi;rL
+							  </div>
+							  <div class="para">
+								&pi; &times; 2 m &times; 13 m;
+							  </div>
+							  <div class="para">
+									<div class="ib">=</div> 
+									<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
+										ng-model="ans.w" 
+										ng-disabled="ans.locked"
+										ng-enter-key="ans.remoteTrigger=true;"
+										/>
+									 </div>
+								</div> 
+								<div class="mt2"><img ng-src="{{imgUrl}}20.png" /></div>				     
+						  </div>							  
+					  </div>
+	      		</div>		
+	      		<div class="mt3">
+					<div >
+						[Apprenez à bien utiliser votre calculatrice.   
+						Essayez de toujours  faire vos calculs d'un  
+						trait et de mettre en mémoire les résultats que 
+						vous aurez à utiliser dans un calcul ultérieur.]
+					</div>  
+					<div>
+						<div class="mt5">
+					 <div class="text-block mr5">
+					  Aire de la base
+					  </div>
+					    <div class="ib">
+					    	<div>
+						      <div class="para">
+						    	&pi;<span math>r^2</span>
+						      </div>
+						      <div class="para">
+						    	&pi; &times; <span math>2m^2</span>
+						      </div>
+							  <div class="para">
+							     <div class="ib">=</div> 
+								 <div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
+									ng-model="ans.a" 
+									ng-disabled="ans.locked"
+									ng-enter-key="ans.remoteTrigger=true;"
+									/>
+								 </div>
+						      </div> 
+					      	</div>						     
+					      </div>			       
+					  </div>
+					</div>					      	
+	      		</div>		
+				<div class="center"><img ng-src="{{imgUrl}}200.png" /></div>
+					<div class="mt3">
+						<div class="ib">Aire totale =</div>
+						<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
+							ng-model="ans.b" 
+							ng-disabled="ans.locked"
+							ng-enter-key="ans.remoteTrigger=true;"
+							/>
+						 </div>
+						 <div class="type-xxxsmall mb2 ib">
+							<div inbook-answer-submit="1"				
+								 ng-model="ans.isCorrectFlag" 
+								 attempts="1" simple-ui="1"
+								 remote-trigger="ans.remoteTrigger" 
+								 remote-trigger-reset="ans.remoteTrigger = false;"
+								 on-correct=   "question.markAsCorrect();														
+								"
+								 on-incorrect= "
+									storedAns.a = ans.a;
+									storedAns.b = ans.b;
+									storedAns.w = ans.w;
+									feedback.reveal = true;
+									question.markAsIncorrect();
+								 "
+								 on-complete="
+									ans.locked=false; 										
+									track({description:'question', calc:calc, ans:ans})
+								 ">
+							</div>
+						</div>
+					</div>		      	
+				</div>
+			</div>
+			
+			<div inbook-questionseries-item level="4">
+				<div ng-init=""
+						ng-resettable-init="
+							ans.locked = false;
+							ans.a = '';
+							ans.b = '';
+							ans.c = '';
+							ans.w = '';
+							feedback.reveal = false;
+							"
+						ng-equate="
+						  solution.a = 12.57;
+						  solution.b = 25.13;
+						  solution.c = 163.36;
+						  solution.w = 138.23;
+						  solution.aNumbersMatch = equal(solution.a, ans.a);
+						  solution.bNumbersMatch = equal(solution.b, ans.b);
+						  solution.cNumbersMatch = equal(solution.c, ans.c);
+						  solution.wNumbersMatch = equal(solution.w, ans.w);
+						  ans.isCorrect = and(solution.aNumbersMatch, solution.bNumbersMatch, solution.wNumbersMatch, solution.cNumbersMatch);
+						  ans.isCorrectFlag = ifElse(ans.isCorrect, 1, 0);
+						  ">
+		     	<div class="mt3">
+					<div >d'un  cylindre dont le rayon de la base mesure 2 cm et la hauteur  11 cm.</div>  
+					<div>
+						<div class="mt5">
+					 <div class="text-block mr5">
+					  Aire latérale:
+					  </div>
+					    <div class="ib">
+					    	<div>
+						      <div class="para">
+						    	2&pi;rh
+						      </div>
+						      <div class="para">
+						    	2 &times; &pi; &times; 2 cm &times; 11 cm;
+						      </div>
+							  <div class="para">
+								<div class="ib">=</div> 
+								<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
+									ng-model="ans.w" 
+									ng-disabled="ans.locked"
+									ng-enter-key="ans.remoteTrigger=true;"
+									/>
+								 </div>
+						      </div> 
+					      	</div>						     
+					      </div>			       
+					  </div>
+					</div>					      	
+	      		</div>		
+	      		<div class="mt3">					
+					<div>
+						<div class="mt5">
+					 <div class="text-block mr5">
+					  Aire d'une base:
+					  </div>
+					    <div class="ib">
+					    	<div>
+						      <div class="para">
+						    	&pi;<span math>r^2</span>
+						      </div>
+							  <div class="para">
+									<div class="ib">&pi; &times; <span math>(2cm)^2</span>=</div> 
+									<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
+										ng-model="ans.a" 
+										ng-disabled="ans.locked"
+										ng-enter-key="ans.remoteTrigger=true;"
+										/>
+									</div>
+						      </div> 
+							  <div class="para">
+									<div class="ib">L'aire des deux bases =</div> 
+									<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
+										ng-model="ans.b" 
+										ng-disabled="ans.locked"
+										ng-enter-key="ans.remoteTrigger=true;"
+										/>
+									</div>
+						      </div> 
+					      	</div>						     
+					      </div>			       
+					  </div>
+					</div>					      	
+	      		</div>		
+
+	      		<div class="mt3">
+						<div class="ib">Aire totale: </div>
+						<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
+							ng-model="ans.c" 
+							ng-disabled="ans.locked"
+							ng-enter-key="ans.remoteTrigger=true;"
+							/>
+						</div>
+						<div class="type-xxxsmall mb2 ib">
+							<div inbook-answer-submit="1"				
+								 ng-model="ans.isCorrectFlag" 
+								 attempts="1" simple-ui="1"
+								 remote-trigger="ans.remoteTrigger" 
+								 remote-trigger-reset="ans.remoteTrigger = false;"
+								 on-correct=   "question.markAsCorrect();														
+								"
+								 on-incorrect= "
+									storedAns.a = ans.a;
+									storedAns.b = ans.b;
+									storedAns.c = ans.c;
+									storedAns.w = ans.w;
+									feedback.reveal = true;
+									question.markAsIncorrect();
+								 "
+								 on-complete="
+									ans.locked=false; 										
+									track({description:'question', calc:calc, ans:ans})
+								 ">
+							</div>
+						</div>
+					</div>		      	
+				</div>
+			</div>
+  				
+
+
+  		
+  			
+
+  			<div class="mt4">
+				<div inbook-nextbtn="question"></div>
+			</div>
+		</div>
+</div>
