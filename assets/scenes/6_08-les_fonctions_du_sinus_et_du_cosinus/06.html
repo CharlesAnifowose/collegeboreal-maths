@@ -1,0 +1,146 @@
+﻿<div  class="page-layout" 
+    ng-init="
+       imgUrl = 'http://d3mw5hjf8nr5ry.cloudfront.net/collegeboreal-sample/images/6_08-les_fonctions_du_sinus_et_du_cosinus/';
+		">	
+	
+	<div class="para">
+		Complétez les énoncés des numéros 1 à 3.
+	</div>
+	
+	<ol>
+		<li class="para">
+			<div	ng-resettable-init="
+					ans.locked = false;
+					ans.a = '';
+					ans.b = '';
+					feedback.reveal = false;
+					"
+				ng-equate="
+				  solution.a = 'degrés';
+				  solution.b = 'radians';
+				  solution.aNumbersMatch = equal(solution.a, ans.a);
+				  solution.bNumbersMatch = equal(solution.b, ans.b);
+				  ans.isCorrect = and(solution.aNumbersMatch, solution.bNumbersMatch);
+				  ans.isCorrectFlag = ifElse(ans.isCorrect, 1, 0);
+				  ">
+			<div class="ib">Nous pouvons exprimer un angle en</div>
+			<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
+				ng-model="ans.a" 
+				ng-disabled="ans.locked"
+				ng-enter-key="ans.remoteTrigger=true;"
+				/>
+			</div>
+			<div class="ib">ou en</div>			
+			<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
+				ng-model="ans.b" 
+				ng-disabled="ans.locked"
+				ng-enter-key="ans.remoteTrigger=true;"
+				/>
+			</div>
+			<div class="type-xxxsmall mb2 ib">
+				<div inbook-answer-submit="1"				
+					 ng-model="ans.isCorrectFlag" 
+					 attempts="1" simple-ui="1"
+					 remote-trigger="ans.remoteTrigger" 
+					 remote-trigger-reset="ans.remoteTrigger = false;"
+					 on-correct=   "question.markAsCorrect();														
+					"
+					 on-incorrect= "
+						storedAns.a = ans.a;
+						storedAns.b = ans.b;
+						feedback.reveal = true;
+						question.markAsIncorrect();
+					 "
+					 on-complete="
+						ans.locked=false; 										
+						track({description:'question', calc:calc, ans:ans})
+					 ">
+				</div>
+			</div>
+			</div>
+		</li>
+		<li class="para">
+			<div	ng-resettable-init="
+					ans.locked = false;
+					ans.c = '';
+					ans.d = '';
+					feedback.reveal = false;
+					"
+				ng-equate="
+				  solution.c = 'arc';
+				  solution.d = 'rayon';
+				  solution.cNumbersMatch1 = equal(solution.c, ans.c);
+				  solution.dNumbersMatch1 = equal(solution.d, ans.d);
+				  ans.isCorrect1 = and(solution.cNumbersMatch1, solution.dNumbersMatch1);
+				  ans.isCorrectFlag1 = ifElse(ans.isCorrect, 1, 0);
+				  ">
+			<div class="ib">Un radian est la mesure d’un angle au centre sous-tendu par un</div>
+			<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
+				ng-model="ans.c" 
+				ng-disabled="ans.locked1"
+				ng-enter-key="ans.remoteTrigger1=true;"
+				/>
+			</div>
+			<div class="ib">égal au</div>			
+			<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
+				ng-model="ans.d" 
+				ng-disabled="ans.locked1"
+				ng-enter-key="ans.remoteTrigger1=true;"
+				/>
+			</div>
+			<div class="ib">du cercle.</div>	
+			<div class="type-xxxsmall mb2 ib">
+				<div inbook-answer-submit="1"				
+					 ng-model="ans.isCorrectFlag1" 
+					 attempts="1" simple-ui="1"
+					 remote-trigger="ans.remoteTrigger1" 
+					 remote-trigger-reset="ans.remoteTrigger1 = false;"
+					 on-correct=   "question.markAsCorrect();														
+					"
+					 on-incorrect= "
+						storedAns.c = ans.c;
+						storedAns.d = ans.d;
+						feedback.reveal = true;
+						question.markAsIncorrect();
+					 "
+					 on-complete="
+						ans.locked1=false; 										
+						track({description:'question', calc:calc, ans:ans})
+					 ">
+				</div>
+			</div>
+			</div>
+		</li>
+		<li class="para">
+			<div>
+				<div class="ib">a) Dans un cercle, il y a exactement</div>
+				<div class="ib" attempts="3" inbook-answerbox-fill="2"  
+				   on-correct="question.markAsCorrect();		          
+				  ">
+				</div>	
+				<div class="ib">&pi; radians.</div>	     	
+			</div>
+			<div>
+				<div class="ib">b) 1&deg; =</div>
+				<div class="ib inbook-fraction">
+					<div>&pi;</div>
+					<div class="fraction-line-thin"></div>
+					<div attempts="3" inbook-answerbox-fill="180"  
+					   on-correct="question.markAsCorrect();		          
+					  ">
+					</div>
+				</div>	
+				<div class="ib">radian.</div>	     	
+			</div>
+		</li>
+	</ol>
+</div>	
+			
+			
+			
+			
+			
+			
+			
+			
+			

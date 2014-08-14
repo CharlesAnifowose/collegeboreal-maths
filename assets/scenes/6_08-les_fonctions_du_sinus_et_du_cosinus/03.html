@@ -1,4 +1,7 @@
-<div class="page-layout">
+<div  class="page-layout" 
+    ng-init="
+       imgUrl = 'http://d3mw5hjf8nr5ry.cloudfront.net/collegeboreal-sample/images/6_08-les_fonctions_du_sinus_et_du_cosinus/';
+    ">
 
 	<div class="header-section"> 	
 		MESURE D’ANGLES EN DEGRÉS ET EN RADIANS
@@ -15,7 +18,7 @@
 	</div>
 
 	<div class="para">
-		<img ng-src="{{imgUrl}}diagram_01.png" />
+		<img ng-src="{{imgUrl}}01.png" />
 	</div>
 
 	<div class="para">
@@ -25,16 +28,49 @@
 		c’est donc dire que dans un cercle il y a environ 6,28318530718 radians. En effet,
 		il y a exactement 2&#120529; radians dans un cercle; 2 × &#120529; = 6,28318530718 radians.
 	</div>
-
+	
 	<div class="para">
-		
+		<img ng-src="{{imgUrl}}02.PNG" />
+	</div>
+	
+	<div class="para">
+		Puisqu’un cercle mesure 360&deg; et contient 2&pi; radians, nous avons :
 	</div>
 
+	
+	<div class="para center">
+		360&#186; = 2&pi; radians
+	</div>
 
+    <div class="para center">
+		180&#186; = &pi; radians
+	</div>
+    
+    <div class="para center">
+		<div class="ib">90&#186;</div>
+        <div class="ib">=</div> 
+        <div class="ib">
+            <div class=" inbook-fraction">
+                <div>&pi;</div>
+                <div class="fraction-line-thin"></div>
+                <div>2</div>           
+            </div>
+        </div>
+        <div class="ib">radians</div> 
+	</div>
 
-
-
-
-
+    <div class="para center">
+		<div class="ib">1&#186;</div>
+        <div class="ib">=</div> 
+        <div class="ib">
+            <div class=" inbook-fraction">
+                <div>&pi;</div>
+                <div class="fraction-line-thin"></div>
+                <div>180</div>           
+            </div>
+        </div>
+        <div class="ib">radians</div> 
+	</div>
+	
 
 </div>
