@@ -39,6 +39,7 @@
 .page-layout {
   .inbook-grid-layout;
   width:600px;
+  padding-bottom:  4 * @sizer-base;
 }
 
 
@@ -90,44 +91,150 @@ ul.basic-list   {
     }
 }
 
-.exercise-info  {
 
-  width:        600px;
-  margin:       0 auto;
+
+/*  !!!!EXERCISE STYLES!!!!  */
+
+.exercise-num  {
+  .header-module;
+}
+
+.exercise-header  {
+  .type-xxsmall;
+  .bold;
+  margin-top:      3 * @sizer-base;
+  margin-bottom:   4 * @sizer-base;
+}
+.exercise-text   {
+  .type-xxsmall;
+  .para;
+}
+
+.exercise-box    {
+  .paper-shadow;
+  padding:      4 * @sizer-base;
+  box-sizing:   border-box;
+}
+
+.solution-header  {
+  .type-xxsmall;
+  .bold;
+}
+
+.solution-body  {
+  .type-xxsmall;
+  
+  margin-top:   3 * @sizer-base;
+  padding-left: 4 * @sizer-base;
+
+}
+
+.show-solution-btn  {
+    .softbtn;
+    .type-xxsmall;
+    .green;
+    margin-left:   4 * @sizer-base;
+}
+
+.question-divider  {
+
+  margin-top:      8 * @sizer-base;
+  margin-bottom:   8 * @sizer-base;
+
+}
+
+
+
+.workbook-input     {
+  z-index:  auto;
+  .input-ans-icon {
+      display:      inline-block;
+      vertical-align:       middle;
+      background-color:     #ddd;
+      border-radius:        100px;
+      padding:              8px;
+      
+      border:              1px solid #ddd;
+      position:           relative;
+      left:               20px;
+      z-index:            2;
+      box-shadow:         inset 0 1px 1px rgba(0,0,0,0.075),
+                          0 0 8px rgba(82,168,236,0.6);
+
+      &.input-icon {
+        transform:            rotate(180deg);
+        -ms-transform:        rotate(180deg);
+        -webkit-transform:    rotate(180deg);
+      }
+
+
+  }
+  input{
+      padding:            3px 0 3px 20px;
+      margin:             25px auto;
+      border-radius:      2px;
+      border:             1px solid #ddd;
+      display:            inline-block;
+      vertical-align:     middle;
+      z-index:            1;
+
+  }
+  .draw-text  {
+      padding:            5px 8px 5px 25px;
+      display:            inline-block;
+      vertical-align:      middle;
+      // border:             1px solid #ddd;
+      // border-radius:      3px;
+      color:              #ddd;
+  }
+
+}
+
+
+
+  
+
+/*=====================*/
+
+
+
+
+/*NOT ACTUALLY USED... */
+.exercise-info  {
+  width:         100%;
+  max-width:        600px;
+  margin:       -10px auto 0;
   text-align:    center;
   z-index:      auto;
 
   .pencil {
-    width:              80px;
-    height:             70px;
+    width:              60px;
+    height:             50px;
     padding:            10px 0 0;
     margin:             0 auto;
-    border-radius:      120px;
+    border-radius:      60px;
     background-color:   #ddd;
     color:              #333;
-    box-shadow:         0 0 10px #333;
-    font-size:          60px;
+    box-shadow:         0 0 8px #333;
+    font-size:          40px;
     z-index:            2;
     cursor:              pointer;
     position:           relative;
-    top:                80px / 2;
+    top:                60px / 2;
   }
 
   .exercise-info-inner {
     width:              100%;
+    // margin:             0 auto;
     // padding:            50px 0 25px;
-    background-color:   #ddd; 
+    background-color:   #F3F3F3; 
     z-index:            1;
-    font-size:          18px;
+    border-top:         1px solid #ccc;
 
     .inner-margin   {
-      padding:          50px 0 25px;
+      padding:          40px 0 25px;
     }
 
   }
 
-
-
-
 }
-
