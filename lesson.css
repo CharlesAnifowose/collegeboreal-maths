@@ -1,3 +1,4 @@
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css);
 input.clear-input,
 input[type=text].clear-input,
 input[type=text].clear-input:hover,
@@ -7,6 +8,7 @@ input[type=text].clear-input:active {
   border-radius: none;
   outline: none;
   outline-offset: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   height: 100%;
@@ -270,12 +272,34 @@ ul.basic-list {
 .vert-add .term.last {
   border-bottom: 1px solid #333;
 }
-.bottom {
-   position:relative; 
-   top:2px;
+.exercise-info {
+  width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  z-index: auto;
 }
-
-.top {
- position:relative;
- top:-2px;
+.exercise-info .pencil {
+  width: 80px;
+  height: 70px;
+  padding: 10px 0 0;
+  margin: 0 auto;
+  border-radius: 120px;
+  background-color: #ddd;
+  color: #333;
+  -webkit-box-shadow: 0 0 10px #333;
+  box-shadow: 0 0 10px #333;
+  font-size: 60px;
+  z-index: 2;
+  cursor: pointer;
+  position: relative;
+  top: 40px;
+}
+.exercise-info .exercise-info-inner {
+  width: 100%;
+  background-color: #ddd;
+  z-index: 1;
+  font-size: 18px;
+}
+.exercise-info .exercise-info-inner .inner-margin {
+  padding: 50px 0 25px;
 }
