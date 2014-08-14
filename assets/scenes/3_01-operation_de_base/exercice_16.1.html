@@ -4,28 +4,33 @@
 
 			ans.input1 = {
 				showSolution: false,
-				solution 	: '1'
+				solution 	: '140'
 			};
 			ans.input2 = {
 				showSolution: false,
-				solution : '4'
+				solution 	: '1 558'
 			};
 			ans.input3 = {
 				showSolution: false,
-				solution : '5'
+				solution 	: '65'
+			};
+			ans.input4 = {
+				showSolution: false,
+				solution 	: '597'
 			};
 		">
 
 		<div class="exercise-num">
-			EXERCICE 3
+			EXERCICE 16
 		</div>
 
 		<div class="exercise-header">
-			Dans le nombre 245 318,
+			Résolvez.
 		</div>
 
 		<div class="exercise-text">
-			quel chiffre représente les dizaines?
+			M. Poulin a 165 poules. Il en garde 25 et il vend le reste. Combien de
+			poules vend-t-il ?
 		</div>
 
 		<div class="exercise-box">
@@ -53,9 +58,11 @@
 		</div>
 
 	<hr class="question-divider" />
-		
+
 		<div class="exercise-text">
-			quel chiffre représente les dizaines de mille?
+			L’inscription au collège Boréal est de 2 055 apprenants et apprenantes.
+			Si ce nombre représente une augmentation de 497 par rapport à l’an
+			dernier, combien d’inscriptions y avait-il l’an passé ?
 		</div>
 
 		<div class="exercise-box">
@@ -83,9 +90,10 @@
 		</div>
 
 	<hr class="question-divider" />
-		
+
 		<div class="exercise-text">
-			quel chiffre représente les unités de mille?
+			Samuel de Champlain est né en 1570 et il est mort en 1635. À quel âge
+			est-il mort ?
 		</div>
 
 		<div class="exercise-box">
@@ -111,5 +119,36 @@
 			</div>
 
 		</div>
+
+	<hr class="question-divider" />
+
+		<div class="exercise-text">
+			Vous avez 856 timbres-poste et votre ami en a 259. Combien de
+			timbres-poste avez-vous de plus que votre ami ?
+		</div>
+
+		<div class="exercise-box">
+
+			<div inbook-workbook-input persist-to="input4"></div>
 	
-</div>	
+			<div vcollapse="ans.input4.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input4.showSolution = true">
+		            Afficher Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input4.showSolution">
+
+				<div class="solution-header">
+					La solution:
+				</div>
+
+				<div class="solution-body">
+					{{ans.input4.solution}}
+				</div>
+
+			</div>
+
+		</div>
+
+</div>
