@@ -1,0 +1,83 @@
+<div 	class="page-layout" 
+		ng-init="
+			ans={};
+
+			ans.input1 = {
+				showSolution: false,
+				solution:	  'faux (zéro est aussi un nombre naturel)'
+			};
+			ans.input2 = {
+				showSolution: false,
+				solution:	  faux
+			};
+		">
+
+		<div class="exercise-num">
+			EXERCICE 1
+		</div>
+
+		<div class="exercise-header">
+			Répondez par vrai ou faux
+		</div>
+
+		<div class="exercise-text">
+			Tous les nombres entiers plus grands que 0 sont des nombres naturels.
+		</div>
+
+		<div class="exercise-box">
+
+			<div inbook-workbook-input persist-to="input1"></div>
+	
+			<div vcollapse="ans.input1.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input1.showSolution = true">
+		            Afficher Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input1.showSolution">
+
+				<div class="solution-header">
+					La solution:
+				</div>
+
+				<div class="solution-body">
+					{{ans.input1.solution}}
+				</div>
+
+			</div>
+
+		</div>		
+
+	<hr class="question-divider" />
+
+		<div class="exercise-text">
+			0 n'est pas un nombre naturel
+		</div>
+
+		<div class="exercise-box">
+
+			<div inbook-workbook-input persist-to="input2">
+			</div>
+
+			<div vcollapse="ans.input2.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input2.showSolution = true">
+		            Afficher Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input2.showSolution">
+
+				<div class="solution-header">
+					La solution:
+				</div>
+
+				<div class="solution-body">
+					{{ans.input2.solution}}
+				</div>
+
+			</div>
+
+		</div>
+
+
+</div>

@@ -1,3 +1,4 @@
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css);
 input.clear-input,
 input[type=text].clear-input,
 input[type=text].clear-input:hover,
@@ -7,6 +8,7 @@ input[type=text].clear-input:active {
   border-radius: none;
   outline: none;
   outline-offset: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   height: 100%;
@@ -137,6 +139,7 @@ input[type=text].clear-input:active {
   margin-left: auto;
   margin-right: auto;
   width: 600px;
+  padding-bottom: 24px;
 }
 .page-layout .col1 {
   width: 10%;
@@ -270,12 +273,424 @@ ul.basic-list {
 .vert-add .term.last {
   border-bottom: 1px solid #333;
 }
-.bottom {
-   position:relative; 
-   top:2px;
+/*  !!!!EXERCISE STYLES!!!!  */
+.exercise-num {
+  font-size: 12px;
+  line-height: 100%;
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
-
-.top {
- position:relative;
- top:-2px;
+.exercise-num .input-xxxsmall {
+  width: 7.5px;
+}
+.exercise-num .input-xxsmall {
+  width: 15px;
+}
+.exercise-num .input-xsmall {
+  width: 30px;
+}
+.exercise-num .input-small {
+  width: 45px;
+}
+.exercise-num .input-medium {
+  width: 75px;
+}
+.exercise-num .input-large {
+  width: 120px;
+}
+.exercise-num .input-xlarge {
+  width: 150px;
+}
+.exercise-num .input-xxlarge {
+  width: 210px;
+}
+.exercise-num .input-xxxlarge {
+  width: 300px;
+}
+.exercise-num .digit-block {
+  width: 7.5px;
+}
+.exercise-num .diagram-row {
+  height: 12px 2;
+}
+.exercise-num .btn {
+  font-size: 9px;
+  height: 30px;
+}
+.exercise-num input {
+  text-align: center;
+}
+.exercise-header {
+  font-size: 20px;
+  line-height: 100%;
+  font-weight: bold;
+  letter-spacing: -0.02em;
+  margin-top: 18px;
+  margin-bottom: 24px;
+}
+.exercise-header .input-xxxsmall {
+  width: 12.5px;
+}
+.exercise-header .input-xxsmall {
+  width: 25px;
+}
+.exercise-header .input-xsmall {
+  width: 50px;
+}
+.exercise-header .input-small {
+  width: 75px;
+}
+.exercise-header .input-medium {
+  width: 125px;
+}
+.exercise-header .input-large {
+  width: 200px;
+}
+.exercise-header .input-xlarge {
+  width: 250px;
+}
+.exercise-header .input-xxlarge {
+  width: 350px;
+}
+.exercise-header .input-xxxlarge {
+  width: 500px;
+}
+.exercise-header .digit-block {
+  width: 12.5px;
+}
+.exercise-header .diagram-row {
+  height: 20px 2;
+}
+.exercise-header .btn {
+  font-size: 15px;
+  height: 38px;
+}
+.exercise-header input {
+  font-weight: bold;
+  letter-spacing: -0.02em;
+}
+.exercise-header .unbold {
+  font-weight: 300;
+  letter-spacing: 0em;
+}
+.exercise-text {
+  font-size: 20px;
+  line-height: 100%;
+  margin-top: 12px;
+  margin-bottom: 18px;
+}
+.exercise-text .input-xxxsmall {
+  width: 12.5px;
+}
+.exercise-text .input-xxsmall {
+  width: 25px;
+}
+.exercise-text .input-xsmall {
+  width: 50px;
+}
+.exercise-text .input-small {
+  width: 75px;
+}
+.exercise-text .input-medium {
+  width: 125px;
+}
+.exercise-text .input-large {
+  width: 200px;
+}
+.exercise-text .input-xlarge {
+  width: 250px;
+}
+.exercise-text .input-xxlarge {
+  width: 350px;
+}
+.exercise-text .input-xxxlarge {
+  width: 500px;
+}
+.exercise-text .digit-block {
+  width: 12.5px;
+}
+.exercise-text .diagram-row {
+  height: 20px 2;
+}
+.exercise-text .btn {
+  font-size: 15px;
+  height: 38px;
+}
+.exercise-box {
+  -webkit-box-shadow: 1px 1px 3px #ccc;
+  box-shadow: 1px 1px 3px #ccc;
+  padding: 24px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.solution-header {
+  font-size: 20px;
+  line-height: 100%;
+  font-weight: bold;
+  letter-spacing: -0.02em;
+}
+.solution-header .input-xxxsmall {
+  width: 12.5px;
+}
+.solution-header .input-xxsmall {
+  width: 25px;
+}
+.solution-header .input-xsmall {
+  width: 50px;
+}
+.solution-header .input-small {
+  width: 75px;
+}
+.solution-header .input-medium {
+  width: 125px;
+}
+.solution-header .input-large {
+  width: 200px;
+}
+.solution-header .input-xlarge {
+  width: 250px;
+}
+.solution-header .input-xxlarge {
+  width: 350px;
+}
+.solution-header .input-xxxlarge {
+  width: 500px;
+}
+.solution-header .digit-block {
+  width: 12.5px;
+}
+.solution-header .diagram-row {
+  height: 20px 2;
+}
+.solution-header .btn {
+  font-size: 15px;
+  height: 38px;
+}
+.solution-header input {
+  font-weight: bold;
+  letter-spacing: -0.02em;
+}
+.solution-header .unbold {
+  font-weight: 300;
+  letter-spacing: 0em;
+}
+.solution-body {
+  font-size: 20px;
+  line-height: 100%;
+  margin-top: 18px;
+  padding-left: 24px;
+}
+.solution-body .input-xxxsmall {
+  width: 12.5px;
+}
+.solution-body .input-xxsmall {
+  width: 25px;
+}
+.solution-body .input-xsmall {
+  width: 50px;
+}
+.solution-body .input-small {
+  width: 75px;
+}
+.solution-body .input-medium {
+  width: 125px;
+}
+.solution-body .input-large {
+  width: 200px;
+}
+.solution-body .input-xlarge {
+  width: 250px;
+}
+.solution-body .input-xxlarge {
+  width: 350px;
+}
+.solution-body .input-xxxlarge {
+  width: 500px;
+}
+.solution-body .digit-block {
+  width: 12.5px;
+}
+.solution-body .diagram-row {
+  height: 20px 2;
+}
+.solution-body .btn {
+  font-size: 15px;
+  height: 38px;
+}
+.show-solution-btn {
+  color: #ccc;
+  background-color: #333;
+  border-radius: 10px;
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px;
+  -webkit-transition: fill 0.3s, background-color 0.3s, color 0.3s, top 0.3s;
+  transition: fill 0.3s, background-color 0.3s, color 0.3s, top 0.3s;
+  -webkit-box-shadow: 1px 1px 3px #ccc;
+  box-shadow: 1px 1px 3px #ccc;
+  font-size: 20px;
+  line-height: 100%;
+  color: #fff;
+  background-color: #38b86d;
+  margin-left: 24px;
+}
+.show-solution-btn.circle {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+  vertical-align: middle;
+}
+.show-solution-btn.endoflevel-btn {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  display: block;
+  border-radius: 0px;
+}
+.show-solution-btn:hover {
+  color: #fff;
+  background-color: #222;
+}
+.show-solution-btn.full {
+  width: 100%;
+  border-radius: 0px;
+  display: block;
+}
+.show-solution-btn.bluegreen {
+  color: #fff;
+  background-color: #0ac;
+}
+.show-solution-btn.green {
+  color: #fff;
+  background-color: #38b86d;
+}
+.show-solution-btn.orange {
+  color: #fff;
+  background-color: #f07851;
+}
+.show-solution-btn.red {
+  color: #fee;
+  background-color: #f66;
+}
+.show-solution-btn.blue {
+  color: #d8f4f5;
+  background-color: #00aacc;
+}
+.show-solution-btn .input-xxxsmall {
+  width: 12.5px;
+}
+.show-solution-btn .input-xxsmall {
+  width: 25px;
+}
+.show-solution-btn .input-xsmall {
+  width: 50px;
+}
+.show-solution-btn .input-small {
+  width: 75px;
+}
+.show-solution-btn .input-medium {
+  width: 125px;
+}
+.show-solution-btn .input-large {
+  width: 200px;
+}
+.show-solution-btn .input-xlarge {
+  width: 250px;
+}
+.show-solution-btn .input-xxlarge {
+  width: 350px;
+}
+.show-solution-btn .input-xxxlarge {
+  width: 500px;
+}
+.show-solution-btn .digit-block {
+  width: 12.5px;
+}
+.show-solution-btn .diagram-row {
+  height: 20px 2;
+}
+.show-solution-btn .btn {
+  font-size: 15px;
+  height: 38px;
+}
+.show-solution-btn:hover {
+  background-color: #0d9b48;
+}
+.question-divider {
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+.workbook-input {
+  z-index: auto;
+}
+.workbook-input .input-ans-icon {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #ddd;
+  border-radius: 100px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  position: relative;
+  left: 20px;
+  z-index: 2;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+.workbook-input .input-ans-icon.input-icon {
+  transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+}
+.workbook-input input {
+  padding: 3px 0 3px 20px;
+  margin: 25px auto;
+  border-radius: 2px;
+  border: 1px solid #ddd;
+  display: inline-block;
+  vertical-align: middle;
+  z-index: 1;
+}
+.workbook-input .draw-text {
+  padding: 5px 8px 5px 25px;
+  display: inline-block;
+  vertical-align: middle;
+  color: #ddd;
+}
+/*=====================*/
+/*NOT ACTUALLY USED... */
+.exercise-info {
+  width: 100%;
+  max-width: 600px;
+  margin: -10px auto 0;
+  text-align: center;
+  z-index: auto;
+}
+.exercise-info .pencil {
+  width: 60px;
+  height: 50px;
+  padding: 10px 0 0;
+  margin: 0 auto;
+  border-radius: 60px;
+  background-color: #ddd;
+  color: #333;
+  -webkit-box-shadow: 0 0 8px #333;
+  box-shadow: 0 0 8px #333;
+  font-size: 40px;
+  z-index: 2;
+  cursor: pointer;
+  position: relative;
+  top: 30px;
+}
+.exercise-info .exercise-info-inner {
+  width: 100%;
+  background-color: #F3F3F3;
+  z-index: 1;
+  border-top: 1px solid #ccc;
+}
+.exercise-info .exercise-info-inner .inner-margin {
+  padding: 40px 0 25px;
 }

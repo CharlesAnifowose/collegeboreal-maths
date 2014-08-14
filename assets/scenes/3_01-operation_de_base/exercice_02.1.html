@@ -1,0 +1,183 @@
+<div 	class="page-layout" 
+		ng-init="
+			ans={};
+
+			ans.input1 = {
+				showSolution: false,
+				solution : '82 475'
+			};
+			ans.input2 = {
+				showSolution: false,
+				solution : '1 842'
+			};
+			ans.input3 = {
+				showSolution: false,
+				solution : '23 700 684'
+			};
+			ans.input4 = {
+				showSolution: false,
+				solution : '865 406'
+			};
+			ans.input5 = {
+				showSolution: false,
+				solution : '23 687 935'
+			};
+		">
+
+		<div class="exercise-num">
+			EXERCICE 1
+		</div>
+
+		<div class="exercise-header">
+			Écrivez correctement les nombres en laissant les espaces nécessaires
+		</div>
+
+		<div class="exercise-text">
+			82475
+		</div>
+
+		<div class="exercise-box">
+
+			<div inbook-workbook-input persist-to="input1"></div>
+	
+			<div vcollapse="ans.input1.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input1.showSolution = true">
+		            Afficher Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input1.showSolution">
+
+				<div class="solution-header">
+					La solution:
+				</div>
+
+				<div class="solution-body">
+					{{ans.input1.solution}}
+				</div>
+
+			</div>
+
+		</div>
+
+	<hr class="question-divider" />
+
+		<div class="exercise-text">
+			1842
+		</div>
+
+		<div class="exercise-box">
+
+			<div inbook-workbook-input persist-to="input2"></div>
+	
+			<div vcollapse="ans.input2.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input2.showSolution = true">
+		            Afficher Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input2.showSolution">
+
+				<div class="solution-header">
+					La solution:
+				</div>
+
+				<div class="solution-body">
+					{{ans.input2.solution}}
+				</div>
+
+			</div>
+
+		</div>
+
+	<hr class="question-divider" />
+
+		<div class="exercise-text">
+			23700684
+		</div>
+
+		<div class="exercise-box">
+
+			<div inbook-workbook-input persist-to="input3"></div>
+	
+			<div vcollapse="ans.input3.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input3.showSolution = true">
+		            Afficher Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input3.showSolution">
+
+				<div class="solution-header">
+					La solution:
+				</div>
+
+				<div class="solution-body">
+					{{ans.input3.solution}}
+				</div>
+
+			</div>
+
+		</div>
+
+	<hr class="question-divider" />
+
+		<div class="exercise-text">
+			865406
+		</div>
+
+		<div class="exercise-box">
+
+			<div inbook-workbook-input persist-to="input4"></div>
+	
+			<div vcollapse="ans.input4.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input4.showSolution = true">
+		            Afficher Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input4.showSolution">
+
+				<div class="solution-header">
+					La solution:
+				</div>
+
+				<div class="solution-body">
+					{{ans.input4.solution}}
+				</div>
+
+			</div>
+
+		</div>
+
+	<hr class="question-divider" />
+
+		<div class="exercise-text">
+			23687935
+		</div>
+
+		<div class="exercise-box">
+
+			<div inbook-workbook-input persist-to="input5"></div>
+	
+			<div vcollapse="ans.input5.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input5.showSolution = true">
+		            Afficher Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input5.showSolution">
+
+				<div class="solution-header">
+					La solution:
+				</div>
+
+				<div class="solution-body">
+					{{ans.input5.solution}}
+				</div>
+
+			</div>
+
+		</div>
+
+</div>

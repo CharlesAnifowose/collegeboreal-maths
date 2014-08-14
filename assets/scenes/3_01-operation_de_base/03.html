@@ -1,45 +1,38 @@
 <div 	class="page-layout" 
 		ng-init="
-			imgUrl = 'http://d3mw5hjf8nr5ry.cloudfront.net/collegeboreal-sample/images/3_01-operation_de_base/';
+			ans.input1 = {
+				solution: 'naturels'
+			};
 		">
 
-		<div 	inbook-questionseries
-				on-complete="scene.markAsCompleted();"
-  				ordered=true
-  				no-remove=true>
+		<div class="header-module">
+			EXERCICE 1
+		</div>
 
-  				<div inbook-questionseries-item level="1">
+		<div class="type-xxsmall bold mt3">
+			Complétez les phrases:
+		</div>
 
-	  				<div class="header-section"> 
-	  					Complétez les phrases.
-	  				</div>
+		<div class="type-xxsmall para">
+			L'ensemble symbolisé par N = { 0,1,2,3,4, ... } s'appelle l'ensemble des nombres:
+		</div>
 
-  				</div>
+		<div class="paper-shadow pa4">
 
-  				<div inbook-questionseries-item level="2">
+			<div inbook-workbook-input persist-to="input1">
+			</div>
+	
+			<div class="pl4" vcollapse="!ans.showSolution">
 
-	  				<div class="header-section"> 
-	  					Placez les nombres 6, 10 et 12 sur la droite numérique.
-	  				</div>
+				<div class="type-xxsmall bold">
+					La solution:
+				</div>
 
-  				</div>
+				<div class="type-xxsmall mt3 pl4">
+					{{ans.solution}}
+				</div>
 
-  				<div inbook-questionseries-item level="3">
-
-	  				<div class="header-section"> 
-	  					Placez les nombres 15, 30 et 35 sur la droite numérique.
-	  				</div>
-
-  				</div>
-
-  				<div inbook-questionseries-item level="4">
-
-	  				<div class="header-section"> 
-	  					Répondez par vrai ou faux.
-	  				</div>
-
-  				</div>
-
+			</div>
 
 		</div>
 </div>

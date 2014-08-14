@@ -1,0 +1,34 @@
+<div 	class="exercise-info" 
+		ng-init="
+			scenario.openInfo = false;
+		">
+
+	<div class="pencil" ng-click="scenario.openInfo = !scenario.openInfo;">
+		<i class="fa fa-pencil"></i>
+	</div>
+	<div class="exercise-info-inner" vcollapse="!scenario.openInfo">
+
+		<div class="inner-margin type-xxxsmall">
+			<div>
+				Essayez de compléter cet exercice sur le papier!
+			</div>
+
+			<div class="mt4">
+				<div>
+					Une fois que vous avez donné le problème une chance, vous pouvez 
+				</div>
+				<div>
+					cliquez sur le bouton "Afficher Solution 'pour voir si vous avez raison!
+				</div>
+			</div>
+
+			<div class="mt4">
+				<div class="softbtn blue" ng-click="scenario.showSolution = true; scenario.openInfo = !scenario.openInfo;">
+					Afficher Solution
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+</div>

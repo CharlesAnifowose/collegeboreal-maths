@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Module 6.05</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css" />
+        <link rel="stylesheet" type="text/css" href="assets/stylesheets/lesson.css" />
+    </head>
+    <body>
+        <div class="page-layout">
+            
+            <div class="para">
+                <div>
+                    Considérons les points A (x1, y1) et B (x2, y2) et construisons un triangle 
+                    rectangle à partir de ces points.  
+                </div>
+                <div>
+                    <img ng-src="{{imgUrl}}m6-1.png" />
+                </div>
+                <div>
+                    La longueur horizontale AC est représentée par la différence des x.
+                </div> 
+                <div class="ml1">Soit AC = x2 - x1</div>
+                <div>
+                    D’après le théorème de Pythagore, nous avons
+                </div>
+                <div class="ml1"><span math>(AB)^2</span>= <span math>(AC)^2</span>+<span math>(BC)^2</span></div>
+                <div class="ml1"><span math>(AB)^2</span>= <span math>(x2 -x1)^2</span>+ <span math>(y2 -y1)^2</span></div>
+                <div class="ml1">d’où</div>
+                <div>
+                    <img ng-src="{{imgUrl}}m6-3.png" />
+                </div>
+                <div>
+                    Si nous désignons d la distance entre les points A (x1, y1) et B (x2, y2), nous 
+                    avons la formule suivante : 
+                </div>
+                <div>
+                    <img ng-src="{{imgUrl}}m6-4.png" />
+                </div>
+                <div>
+                    Cette formule nous permet de déterminer la distance entre deux points 
+                    quelconques. 
+                </div>
+            </div>
+
+            <div class="exemple-frame">
+                <div class="bold">Voici un exemple.</div>
+                <div class="bold">A. Trouver la distance entre (5, 4) et (8, 8).</div>
+                <div class="bold">Solution: </div>
+                <ol>
+                    <li>
+                        <p>
+                            Établir l’un des points comme étant (x1, y1) et l’autre (x2, y2). 
+                            Si nous choisissons (5, 4) comme étant (x1, y1), nous avons : 
+                            <span math>x1 = 5, y1 = 4 et x2 = 8, y2 = 8.</span> 
+                        </p>
+                    </li>
+                    <li>
+                        Remplacer ces coordonnées dans la formule. 
+                        <img ng-src="{{imgUrl}}m6-5.png" />
+                        <p>
+                            La distance entre les deux points est 5 unités. 
+                        </p>
+                    </li>
+                </ol>
+                <div class="bold">Remarquez : </div>
+                <div>
+                    Si nous choisissons (8, 8) comme étant (x1, y1), le 
+                    résultat est le même. 
+                </div>
+                <img ng-src="{{imgUrl}}m6-6.png" />
+                <div class="bold">Voici un autre exemple :</div>
+                <div class="bold">B. Trouver la distance entre (3, -6) et (-8, 2).</div>
+                <div class="bold">Solution: </div>
+                <ol>
+                    <li>
+                        <p>
+                            Établir l’un des points comme étant (x1, y1) et l’autre (x2, y2). 
+                            Soit (-8, 2) = (x1 , y1). 
+                        </p>
+                        <p>
+                            Nous avons : <span math>x1 = -8, y1 = 2 et x2 = 3, y2 = -6.</span> 
+                        </p>
+                    </li>
+                    <li>
+                        Remplacer ces coordonnées dans la formule. 
+                        <img ng-src="{{imgUrl}}m6-7.png" />
+                        <p>
+                            La distance entre les deux points est d’environ 13,6 unités. 
+                        </p>
+                    </li>
+                </ol>
+                <div class="bold">Un autre exemple : </div>
+                <div class="bold">C. Trouver la distance entre (0, 0) et (6, 8). </div>
+                <div class="bold">Solution: </div>
+                <ol>
+                    <li>
+                        <p>
+                            Établir l’un des points comme étant (x1, y1) et l’autre (x2, y2). 
+                            Soit (0, 0) = (x1 , y1). 
+                        </p>
+                        <p>
+                            Nous avons : <span math>x1 = 0, y1 = 0 et x2 = 6, y2 = 8.</span>  
+                        </p>
+                    </li>
+                    <li>
+                        Remplacer ces coordonnées dans la formule. 
+                        <img ng-src="{{imgUrl}}m6-8.png" />
+                        <p>
+                            La distance entre les deux points est 10 unités. 
+                        </p>
+                    </li>
+                </ol>
+            </div>
+<!--            <div class="bold center mt10">EXERCISE 1</div>
+            <div>
+                <ol>
+                    <li>
+                        Déterminez la distance horizontale et verticale de chacun des points 
+                        apparaissant dans le plan suivant et donnez-en les coordonnées.
+                    </li>
+                    <img ng-src="{{imgUrl}}m7-1.png" />
+                    <li>
+                        Placez les points suivants dans un plan cartésien.
+                        <p>
+                            <span class="mr1">A (0, 8)</span> 
+                            <span class="mr1">B (-6, 3)</span>
+                            <span class="mr1">C (4, 0)</span>
+                            <span class="mr1">D (-2, -5)</span>
+                            <span class="mr1">E (-1, 0)</span>
+                        </p>
+                        <p>
+                            <span class="mr1">F (0, 0)</span> 
+                            <span class="mr1">G (7, 2)</span>
+                            <span class="mr1">H (3, -5)</span>
+                            <span class="mr1">I (0, -4)</span>
+                            <span class="mr1">J (-4, 6).</span>
+                        </p>
+                    </li>
+                    <li>
+                        Trouvez la longueur des segments situés entre les points suivants. 
+                        <ul style="list-style-type: lower-alpha">
+                            <li>(8, 2) et (4, 3)</li>
+                            <li>(2, 2) et (7, 5)</li>
+                            <li>(3, -6) et (-4, 2)</li>
+                            <li>(-2, 4) et (-2, -5)</li>
+                            <li>(-6, 0) et (2, 6)</li>
+                            <li>(0, 0) et (4, 6)</li>
+                            <li>(0, 5) et (0, 0)</li>
+                            <li>(6, 0) et (2, 8)</li>
+                            <li>(1/2, 1/2) et (3/2, 2)</li>
+                            <li>(1/2, 3/2) et (0, -3/2)</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>-->
+<!--        <span math>
+                3^2
+            </span>-->
+        </div>
+    </body>
+</html>
