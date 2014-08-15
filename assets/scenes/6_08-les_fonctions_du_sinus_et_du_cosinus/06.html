@@ -61,7 +61,7 @@
 		</li>
 		<li class="para">
 			<div	ng-resettable-init="
-					ans.locked = false;
+					ans.locked1 = false;
 					ans.c = '';
 					ans.d = '';
 					feedback.reveal = false;
@@ -72,7 +72,7 @@
 				  solution.cNumbersMatch1 = equal(solution.c, ans.c);
 				  solution.dNumbersMatch1 = equal(solution.d, ans.d);
 				  ans.isCorrect1 = and(solution.cNumbersMatch1, solution.dNumbersMatch1);
-				  ans.isCorrectFlag1 = ifElse(ans.isCorrect, 1, 0);
+				  ans.isCorrectFlag1 = ifElse(ans.isCorrect1, 1, 0);
 				  ">
 			<div class="ib">Un radian est la mesure d’un angle au centre sous-tendu par un</div>
 			<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
@@ -114,22 +114,62 @@
 		<li class="para">
 			<div>
 				<div class="ib">a) Dans un cercle, il y a exactement</div>
-				<div class="ib" attempts="3" inbook-answerbox-fill="2"  
+				<div class="ib" attempts="3" type="text" inbook-answerbox-fill="'2&pi;'"  
 				   on-correct="question.markAsCorrect();		          
 				  ">
 				</div>	
-				<div class="ib">&pi; radians.</div>	     	
+				<div class="ib">radians.</div>	     	
 			</div>
-			<div>
+			<div	ng-resettable-init="
+					ans.locked2 = false;
+					ans.s = '';
+					ans.ss = '';
+					feedback.reveal = false;
+					"
+				ng-equate="
+				  solution.s = '&pi;';
+				  solution.ss = 180;
+				  solution.sNumbersMatch2 = equal(solution.s, ans.s);
+				  solution.ssNumbersMatch2 = equal(solution.ss, ans.ss);
+				  ans.isCorrect2 = and(solution.sNumbersMatch2, solution.ssNumbersMatch2);
+				  ans.isCorrectFlag2 = ifElse(ans.isCorrect2, 1, 0);
+				  ">
 				<div class="ib">b) 1&deg; =</div>
 				<div class="ib inbook-fraction">
-					<div>&pi;</div>
+					<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
+						ng-model="ans.s" 
+						ng-disabled="ans.locked2"
+						ng-enter-key="ans.remoteTrigger2=true;"
+						/>
+					</div>
 					<div class="fraction-line-thin"></div>
-					<div attempts="3" inbook-answerbox-fill="180"  
-					   on-correct="question.markAsCorrect();		          
-					  ">
+					<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
+						ng-model="ans.ss" 
+						ng-disabled="ans.locked2"
+						ng-enter-key="ans.remoteTrigger2=true;"
+						/>
 					</div>
 				</div>	
+				<div class="type-xxxsmall mb2 ib">
+					<div inbook-answer-submit="1"				
+						 ng-model="ans.isCorrectFlag2" 
+						 attempts="1" simple-ui="1"
+						 remote-trigger="ans.remoteTrigger2" 
+						 remote-trigger-reset="ans.remoteTrigger2 = false;"
+						 on-correct=   "question.markAsCorrect();														
+						"
+						 on-incorrect= "
+							storedAns.s = ans.s;
+							storedAns.ss = ans.ss;
+							feedback.reveal = true;
+							question.markAsIncorrect();
+						 "
+						 on-complete="
+							ans.locked2=false; 										
+							track({description:'question', calc:calc, ans:ans})
+						 ">
+					</div>
+				</div>
 				<div class="ib">radian.</div>	     	
 			</div>
 		</li>

@@ -1,199 +1,42 @@
 <div  class="page-layout">
 		<div class="para"> 
-			Trouvez l’amplitude, la période et le déphasage des fonctions suivantes.
+			Calculez le déphasage pour chacune des fonctions données et dites dans quel
+			sens s’effectue le déplacement de la courbe.
 		</div>
-		<div 	inbook-questionseries
+			<div inbook-questionseries
 				on-complete="scene.markAsCompleted();"
   				ordered=true
   				no-remove=true>
-
-  				<div inbook-questionseries-item level="1">  	
+			<div inbook-questionseries-item level="1">  	
 					<div   ng-resettable-init="
 								ans.locked = false;
 								ans.a = '';
 								ans.b = '';
 								ans.c = '';
-								ans.d = '';
 								feedback.reveal = false;
 								"
 							ng-equate="
-							  solution.a = 2;
-							  solution.b = '2&pi;';
-							  solution.c = '&pi;';
-							  solution.d = 3;
+							  solution.a = '-&pi;';
+							  solution.b = 6;
+							  solution.c = 'gauche';
 							  solution.aNumbersMatch = equal(solution.a, ans.a);
 							  solution.bNumbersMatch = equal(solution.b, ans.b);
 							  solution.cNumbersMatch = equal(solution.c, ans.c);
-							  solution.dNumbersMatch = equal(solution.d, ans.d);
-							  ans.isCorrect = and(solution.aNumbersMatch, solution.bNumbersMatch, solution.cNumbersMatch, solution.dNumbersMatch);
+							  ans.isCorrect = and(solution.aNumbersMatch, solution.bNumbersMatch, solution.cNumbersMatch);
 							  ans.isCorrectFlag = ifElse(ans.isCorrect, 1, 0);
 							  ">
   					<div class="mt3">
 						<div>
-							<div class="ib">y = 2 sin (θ -</div>
+							<div class="ib">y = 2 sin (θ &plus;</div>
 							<div class="inbook-fraction ib">
 								<div>&pi;</div>
 								<div class="fraction-line-thin"></div>
-								<div>3</div>
+								<div>6</div>
 							</div>	
 							<div class="ib">)</div>
 						</div>
 						<div>
-							<div class="ib">Amplitude:</div>
-							<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
-								ng-model="ans.a" 
-								ng-disabled="ans.locked"
-								ng-enter-key="ans.remoteTrigger=true;"
-								/>
-							</div>
-						</div>
-						<div>
-							<div class="ib">Période:</div>
-							<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
-								ng-model="ans.b" 
-								ng-disabled="ans.locked"
-								ng-enter-key="ans.remoteTrigger=true;"
-								/>
-							</div>
-						</div>
-						<div>
 							<div class="ib">Déphasage:</div>
-							<div class="inbook-fraction ib">
-								<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
-									ng-model="ans.c" 
-									ng-disabled="ans.locked"
-									ng-enter-key="ans.remoteTrigger=true;"
-									/>
-								</div>
-								<div class="fraction-line-thin mb1"></div>
-								<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
-									ng-model="ans.d" 
-									ng-disabled="ans.locked"
-									ng-enter-key="ans.remoteTrigger=true;"
-									/>
-								</div>
-							</div>
-							<div class="type-xxxsmall mb2 ib">
-								<div inbook-answer-submit="1"				
-									 ng-model="ans.isCorrectFlag" 
-									 attempts="1" simple-ui="1"
-									 remote-trigger="ans.remoteTrigger" 
-									 remote-trigger-reset="ans.remoteTrigger = false;"
-									 on-correct=   "question.markAsCorrect();														
-									"
-									 on-incorrect= "
-										storedAns.a = ans.a;
-										storedAns.b = ans.b;
-										storedAns.c = ans.c;
-										storedAns.d = ans.d;
-										feedback.reveal = true;
-										question.markAsIncorrect();
-									 "
-									 on-complete="
-										ans.locked=false; 										
-										track({description:'question', calc:calc, ans:ans})
-									 ">
-								</div>
-							</div>
-						</div>
-					</div>			      	
-				 </div>
-			</div>
-				 
-				 <div inbook-questionseries-item level="2">  
-					<div   ng-resettable-init="
-								ans.locked = false;
-								ans.a = '';
-								ans.b = '';
-								feedback.reveal = false;
-								"
-							ng-equate="
-							  solution.a = 1;
-							  solution.b = '&pi;';
-							  solution.aNumbersMatch = equal(solution.a, ans.a);
-							  solution.bNumbersMatch = equal(solution.b, ans.b);
-							  ans.isCorrect = and(solution.aNumbersMatch, solution.bNumbersMatch);
-							  ans.isCorrectFlag = ifElse(ans.isCorrect, 1, 0);
-							  ">
-  					<div class="mt3">
-						<div>
-							<div class="ib">y = cos 2 θ</div>
-						</div>
-						<div>
-							<div class="ib">Amplitude:</div>
-							<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
-								ng-model="ans.a" 
-								ng-disabled="ans.locked"
-								ng-enter-key="ans.remoteTrigger=true;"
-								/>
-							</div>
-						</div>
-						<div>
-							<div class="ib">Période:</div>
-							<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
-								ng-model="ans.b" 
-								ng-disabled="ans.locked"
-								ng-enter-key="ans.remoteTrigger=true;"
-								/>
-							</div>
-							<div class="type-xxxsmall mb2 ib">
-								<div inbook-answer-submit="1"				
-									 ng-model="ans.isCorrectFlag" 
-									 attempts="1" simple-ui="1"
-									 remote-trigger="ans.remoteTrigger" 
-									 remote-trigger-reset="ans.remoteTrigger = false;"
-									 on-correct=   "question.markAsCorrect();														
-									"
-									 on-incorrect= "
-										storedAns.a = ans.a;
-										storedAns.b = ans.b;
-										feedback.reveal = true;
-										question.markAsIncorrect();
-									 "
-									 on-complete="
-										ans.locked=false; 										
-										track({description:'question', calc:calc, ans:ans})
-										 ">
-								</div>
-							</div>	 
-						</div>
-					</div>			      	
-				 </div>
-			</div>
-				 
-				 <div inbook-questionseries-item level="3">  
-					<div   ng-resettable-init="
-							ans.locked = false;
-							ans.a = '';
-							ans.b = '';
-							ans.c = '';
-							ans.d = '';
-							feedback.reveal = false;
-							"
-						ng-equate="
-						  solution.a = 1;
-						  solution.b = 2;
-						  solution.c = '2&pi;';
-						  solution.d = '&pi;';
-						  solution.aNumbersMatch = equal(solution.a, ans.a);
-						  solution.bNumbersMatch = equal(solution.b, ans.b);
-						  solution.cNumbersMatch = equal(solution.c, ans.c);
-						  solution.dNumbersMatch = equal(solution.d, ans.d);
-						  ans.isCorrect = and(solution.aNumbersMatch, solution.bNumbersMatch, solution.cNumbersMatch, solution.dNumbersMatch);
-						  ans.isCorrectFlag = ifElse(ans.isCorrect, 1, 0);
-						  ">
-  					<div class="mt3">
-						<div>
-							<div class="ib">y =</div>
-							<div class="inbook-fraction ib">
-								<div>-1</div>
-								<div class="fraction-line-thin"></div>
-								<div>2</div>
-							</div>	
-							<div class="ib">sin (θ - &pi;)</div>
-						</div>
-						<div>
-							<div class="ib">Amplitude:</div>
 							<div class="inbook-fraction ib">
 								<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
 									ng-model="ans.a" 
@@ -208,25 +51,16 @@
 									ng-enter-key="ans.remoteTrigger=true;"
 									/>
 								</div>
-							</div>	
+							</div>
 						</div>
 						<div>
-							<div class="ib">Période:</div>
+							<div class="ib">vers la </div>
 							<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
 								ng-model="ans.c" 
 								ng-disabled="ans.locked"
 								ng-enter-key="ans.remoteTrigger=true;"
 								/>
 							</div>
-						</div>
-						<div>
-							<div class="ib">Déphasage:</div>
-							<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
-								ng-model="ans.d" 
-								ng-disabled="ans.locked"
-								ng-enter-key="ans.remoteTrigger=true;"
-								/>
-							</div>
 							<div class="type-xxxsmall mb2 ib">
 								<div inbook-answer-submit="1"				
 									 ng-model="ans.isCorrectFlag" 
@@ -239,7 +73,6 @@
 										storedAns.a = ans.a;
 										storedAns.b = ans.b;
 										storedAns.c = ans.c;
-										storedAns.d = ans.d;
 										feedback.reveal = true;
 										question.markAsIncorrect();
 									 "
@@ -247,119 +80,24 @@
 										ans.locked=false; 										
 										track({description:'question', calc:calc, ans:ans})
 									 ">
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>			      	
-				 </div>
 				</div>
-				 
-				<div inbook-questionseries-item level="4">  	
+					<div inbook-questionseries-item level="2">  	
 					<div   ng-resettable-init="
 								ans.locked = false;
 								ans.a = '';
 								ans.b = '';
 								ans.c = '';
-								ans.d = '';
 								feedback.reveal = false;
 								"
 							ng-equate="
-							  solution.a = 2;
-							  solution.b = '&pi;';
-							  solution.c = '-&pi;';
-							  solution.d = 8;
-							  solution.aNumbersMatch = equal(solution.a, ans.a);
-							  solution.bNumbersMatch = equal(solution.b, ans.b);
-							  solution.cNumbersMatch = equal(solution.c, ans.c);
-							  solution.dNumbersMatch = equal(solution.d, ans.d);
-							  ans.isCorrect = and(solution.aNumbersMatch, solution.bNumbersMatch, solution.cNumbersMatch, solution.dNumbersMatch);
-							  ans.isCorrectFlag = ifElse(ans.isCorrect, 1, 0);
-							  ">
-  					<div class="mt3">
-						<div>
-							<div class="ib">y = -2 cos (2θ +</div>
-							<div class="inbook-fraction ib">
-								<div>&pi;</div>
-								<div class="fraction-line-thin"></div>
-								<div>4</div>
-							</div>	
-							<div class="ib">)</div>
-						</div>
-						<div>
-							<div class="ib">Amplitude:</div>
-							<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
-								ng-model="ans.a" 
-								ng-disabled="ans.locked"
-								ng-enter-key="ans.remoteTrigger=true;"
-								/>
-							</div>
-						</div>
-						<div>
-							<div class="ib">Période:</div>
-							<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
-								ng-model="ans.b" 
-								ng-disabled="ans.locked"
-								ng-enter-key="ans.remoteTrigger=true;"
-								/>
-							</div>
-						</div>
-						<div>
-							<div class="ib">Déphasage:</div>
-							<div class="inbook-fraction ib">
-								<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
-									ng-model="ans.c" 
-									ng-disabled="ans.locked"
-									ng-enter-key="ans.remoteTrigger=true;"
-									/>
-								</div>
-								<div class="fraction-line-thin mb1"></div>
-								<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
-									ng-model="ans.d" 
-									ng-disabled="ans.locked"
-									ng-enter-key="ans.remoteTrigger=true;"
-									/>
-								</div>
-							</div>
-							<div class="type-xxxsmall mb2 ib">
-								<div inbook-answer-submit="1"				
-									 ng-model="ans.isCorrectFlag" 
-									 attempts="1" simple-ui="1"
-									 remote-trigger="ans.remoteTrigger" 
-									 remote-trigger-reset="ans.remoteTrigger = false;"
-									 on-correct=   "question.markAsCorrect();														
-									"
-									 on-incorrect= "
-										storedAns.a = ans.a;
-										storedAns.b = ans.b;
-										storedAns.c = ans.c;
-										storedAns.d = ans.d;
-										feedback.reveal = true;
-										question.markAsIncorrect();
-									 "
-									 on-complete="
-										ans.locked=false; 										
-										track({description:'question', calc:calc, ans:ans})
-									 ">
-								</div>
-							</div>
-						</div>
-					</div>			      	
-				 </div>
-			</div> 
-				
-			<div inbook-questionseries-item level="5">  	
-					<div   ng-resettable-init="
-								ans.locked = false;
-								ans.a = '';
-								ans.b = '';
-								ans.c = '';
-								ans.d = '';
-								feedback.reveal = false;
-								"
-							ng-equate="
-							  solution.a = 4;
-							  solution.b = '4&pi;';
-							  solution.c = '4&pi;';
+							  solution.a = '-&pi;';
+							  solution.b = 2;
+							  solution.c = 'gauche';
 							  solution.aNumbersMatch = equal(solution.a, ans.a);
 							  solution.bNumbersMatch = equal(solution.b, ans.b);
 							  solution.cNumbersMatch = equal(solution.c, ans.c);
@@ -368,132 +106,39 @@
 							  ">
   					<div class="mt3">
 						<div>
-							<div class="ib">y = 4 cos (</div>	
-							<div class="inbook-fraction ib">
-								<div>θ</div>
-								<div class="fraction-line-thin"></div>
-								<div>2</div>
-							</div>	
-							<div class="ib">- 2&pi;)</div>
-						</div>
-						<div>
-							<div class="ib">Amplitude:</div>
-							<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
-								ng-model="ans.a" 
-								ng-disabled="ans.locked"
-								ng-enter-key="ans.remoteTrigger=true;"
-								/>
-							</div>
-						</div>
-						<div>
-							<div class="ib">Période:</div>
-							<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
-								ng-model="ans.b" 
-								ng-disabled="ans.locked"
-								ng-enter-key="ans.remoteTrigger=true;"
-								/>
-							</div>
-						</div>
-						<div>
-							<div class="ib">Déphasage:</div>
-							<div class="ib">
-								<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
-									ng-model="ans.c" 
-									ng-disabled="ans.locked"
-									ng-enter-key="ans.remoteTrigger=true;"
-									/>
-								</div>
-							</div>
-							<div class="type-xxxsmall mb2 ib">
-								<div inbook-answer-submit="1"				
-									 ng-model="ans.isCorrectFlag" 
-									 attempts="1" simple-ui="1"
-									 remote-trigger="ans.remoteTrigger" 
-									 remote-trigger-reset="ans.remoteTrigger = false;"
-									 on-correct=   "question.markAsCorrect();														
-									"
-									 on-incorrect= "
-										storedAns.a = ans.a;
-										storedAns.b = ans.b;
-										storedAns.c = ans.c;
-										feedback.reveal = true;
-										question.markAsIncorrect();
-									 "
-									 on-complete="
-										ans.locked=false; 										
-										track({description:'question', calc:calc, ans:ans})
-									 ">
-								</div>
-							</div>
-						</div>
-					</div>			      	
-				 </div>
-			</div> 	
-				 
-				<div inbook-questionseries-item level="6">  	
-					<div   ng-resettable-init="
-								ans.locked = false;
-								ans.a = '';
-								ans.b = '';
-								ans.c = '';
-								ans.d = '';
-								feedback.reveal = false;
-								"
-							ng-equate="
-							  solution.a = 1;
-							  solution.b = '&pi;';
-							  solution.c = '-&pi;';
-							  solution.d = 4;
-							  solution.aNumbersMatch = equal(solution.a, ans.a);
-							  solution.bNumbersMatch = equal(solution.b, ans.b);
-							  solution.cNumbersMatch = equal(solution.c, ans.c);
-							  solution.dNumbersMatch = equal(solution.d, ans.d);
-							  ans.isCorrect = and(solution.aNumbersMatch, solution.bNumbersMatch, solution.cNumbersMatch, solution.dNumbersMatch);
-							  ans.isCorrectFlag = ifElse(ans.isCorrect, 1, 0);
-							  ">
-  					<div class="mt3">
-						<div>
-							<div class="ib">y = sin (2θ +</div>	
+							<div class="ib">y = 2 cos (θ &plus;</div>
 							<div class="inbook-fraction ib">
 								<div>&pi;</div>
 								<div class="fraction-line-thin"></div>
 								<div>2</div>
 							</div>	
-						</div>
-						<div>
-							<div class="ib">Amplitude:</div>
-							<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
-								ng-model="ans.a" 
-								ng-disabled="ans.locked"
-								ng-enter-key="ans.remoteTrigger=true;"
-								/>
-							</div>
-						</div>
-						<div>
-							<div class="ib">Période:</div>
-							<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
-								ng-model="ans.b" 
-								ng-disabled="ans.locked"
-								ng-enter-key="ans.remoteTrigger=true;"
-								/>
-							</div>
+							<div class="ib">)</div>
 						</div>
 						<div>
 							<div class="ib">Déphasage:</div>
 							<div class="inbook-fraction ib">
 								<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
-									ng-model="ans.c" 
+									ng-model="ans.a" 
 									ng-disabled="ans.locked"
 									ng-enter-key="ans.remoteTrigger=true;"
 									/>
 								</div>
 								<div class="fraction-line-thin mb1"></div>
 								<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
-									ng-model="ans.d" 
+									ng-model="ans.b" 
 									ng-disabled="ans.locked"
 									ng-enter-key="ans.remoteTrigger=true;"
 									/>
 								</div>
+							</div>
+						</div>
+						<div>
+							<div class="ib">vers la </div>
+							<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
+								ng-model="ans.c" 
+								ng-disabled="ans.locked"
+								ng-enter-key="ans.remoteTrigger=true;"
+								/>
 							</div>
 							<div class="type-xxxsmall mb2 ib">
 								<div inbook-answer-submit="1"				
@@ -507,7 +152,6 @@
 										storedAns.a = ans.a;
 										storedAns.b = ans.b;
 										storedAns.c = ans.c;
-										storedAns.d = ans.d;
 										feedback.reveal = true;
 										question.markAsIncorrect();
 									 "
@@ -515,14 +159,244 @@
 										ans.locked=false; 										
 										track({description:'question', calc:calc, ans:ans})
 									 ">
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>			      	
-				 </div>
-			</div>
-				 
-		<div class="mt4">
+				</div>
+					<div inbook-questionseries-item level="3">  	
+					<div   ng-resettable-init="
+								ans.locked = false;
+								ans.a = '';
+								ans.b = '';
+								ans.c = '';
+								feedback.reveal = false;
+								"
+							ng-equate="
+							  solution.a = '3&pi;';
+							  solution.b = 2;
+							  solution.c = 'droite';
+							  solution.aNumbersMatch = equal(solution.a, ans.a);
+							  solution.bNumbersMatch = equal(solution.b, ans.b);
+							  solution.cNumbersMatch = equal(solution.c, ans.c);
+							  ans.isCorrect = and(solution.aNumbersMatch, solution.bNumbersMatch, solution.cNumbersMatch);
+							  ans.isCorrectFlag = ifElse(ans.isCorrect, 1, 0);
+							  ">
+  					<div class="mt3">
+						<div>
+							<div class="ib">y = 5 sin (2θ - 3 &pi;)</div>
+						</div>
+						<div>
+							<div class="ib">Déphasage:</div>
+							<div class="inbook-fraction ib">
+								<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
+									ng-model="ans.a" 
+									ng-disabled="ans.locked"
+									ng-enter-key="ans.remoteTrigger=true;"
+									/>
+								</div>
+								<div class="fraction-line-thin mb1"></div>
+								<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
+									ng-model="ans.b" 
+									ng-disabled="ans.locked"
+									ng-enter-key="ans.remoteTrigger=true;"
+									/>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="ib">vers la </div>
+							<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
+								ng-model="ans.c" 
+								ng-disabled="ans.locked"
+								ng-enter-key="ans.remoteTrigger=true;"
+								/>
+							</div>
+							<div class="type-xxxsmall mb2 ib">
+								<div inbook-answer-submit="1"				
+									 ng-model="ans.isCorrectFlag" 
+									 attempts="1" simple-ui="1"
+									 remote-trigger="ans.remoteTrigger" 
+									 remote-trigger-reset="ans.remoteTrigger = false;"
+									 on-correct=   "question.markAsCorrect();														
+									"
+									 on-incorrect= "
+										storedAns.a = ans.a;
+										storedAns.b = ans.b;
+										storedAns.c = ans.c;
+										feedback.reveal = true;
+										question.markAsIncorrect();
+									 "
+									 on-complete="
+										ans.locked=false; 										
+										track({description:'question', calc:calc, ans:ans})
+									 ">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>			      	
+				</div>
+					<div inbook-questionseries-item level="4">  	
+					<div   ng-resettable-init="
+								ans.locked = false;
+								ans.a = '';
+								ans.b = '';
+								ans.c = '';
+								feedback.reveal = false;
+								"
+							ng-equate="
+							  solution.a = '-&pi;';
+							  solution.b = 2;
+							  solution.c = 'gauche';
+							  solution.aNumbersMatch = equal(solution.a, ans.a);
+							  solution.bNumbersMatch = equal(solution.b, ans.b);
+							  solution.cNumbersMatch = equal(solution.c, ans.c);
+							  ans.isCorrect = and(solution.aNumbersMatch, solution.bNumbersMatch, solution.cNumbersMatch);
+							  ans.isCorrectFlag = ifElse(ans.isCorrect, 1, 0);
+							  ">
+  					<div class="mt3">
+						<div>
+							<div class="ib">y = -3 cos (4θ + 2 &pi;)</div>
+						</div>
+						<div>
+							<div class="ib">Déphasage:</div>
+							<div class="inbook-fraction ib">
+								<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
+									ng-model="ans.a" 
+									ng-disabled="ans.locked"
+									ng-enter-key="ans.remoteTrigger=true;"
+									/>
+								</div>
+								<div class="fraction-line-thin mb1"></div>
+								<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
+									ng-model="ans.b" 
+									ng-disabled="ans.locked"
+									ng-enter-key="ans.remoteTrigger=true;"
+									/>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="ib">vers la </div>
+							<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
+								ng-model="ans.c" 
+								ng-disabled="ans.locked"
+								ng-enter-key="ans.remoteTrigger=true;"
+								/>
+							</div>
+							<div class="type-xxxsmall mb2 ib">
+								<div inbook-answer-submit="1"				
+									 ng-model="ans.isCorrectFlag" 
+									 attempts="1" simple-ui="1"
+									 remote-trigger="ans.remoteTrigger" 
+									 remote-trigger-reset="ans.remoteTrigger = false;"
+									 on-correct=   "question.markAsCorrect();														
+									"
+									 on-incorrect= "
+										storedAns.a = ans.a;
+										storedAns.b = ans.b;
+										storedAns.c = ans.c;
+										feedback.reveal = true;
+										question.markAsIncorrect();
+									 "
+									 on-complete="
+										ans.locked=false; 										
+										track({description:'question', calc:calc, ans:ans})
+									 ">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>			      	
+				</div>
+				<div inbook-questionseries-item level="5">  	
+					<div   ng-resettable-init="
+								ans.locked = false;
+								ans.a = '';
+								ans.b = '';
+								ans.c = '';
+								feedback.reveal = false;
+								"
+							ng-equate="
+							  solution.a = '-&pi;';
+							  solution.b = 8;
+							  solution.c = 'gauche';
+							  solution.aNumbersMatch = equal(solution.a, ans.a);
+							  solution.bNumbersMatch = equal(solution.b, ans.b);
+							  solution.cNumbersMatch = equal(solution.c, ans.c);
+							  ans.isCorrect = and(solution.aNumbersMatch, solution.bNumbersMatch, solution.cNumbersMatch);
+							  ans.isCorrectFlag = ifElse(ans.isCorrect, 1, 0);
+							  ">
+  					<div class="mt3">
+						<div>
+							<div class="ib">y =</div>
+							<div class="inbook-fraction ib">
+								<div>1</div>
+								<div class="fraction-line-thin"></div>
+								<div>2</div>
+							</div>	
+							<div class="ib">sin (2θ +</div>
+							<div class="inbook-fraction ib">
+								<div>&pi;</div>
+								<div class="fraction-line-thin"></div>
+								<div>4</div>
+							</div>
+							<div class="ib">)</div>
+						</div>
+						<div>
+							<div class="ib">Déphasage:</div>
+							<div class="inbook-fraction ib">
+								<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
+									ng-model="ans.a" 
+									ng-disabled="ans.locked"
+									ng-enter-key="ans.remoteTrigger=true;"
+									/>
+								</div>
+								<div class="fraction-line-thin mb1"></div>
+								<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
+									ng-model="ans.b" 
+									ng-disabled="ans.locked"
+									ng-enter-key="ans.remoteTrigger=true;"
+									/>
+								</div>
+							</div>
+						</div>
+						<div>
+							<div class="ib">vers la </div>
+							<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
+								ng-model="ans.c" 
+								ng-disabled="ans.locked"
+								ng-enter-key="ans.remoteTrigger=true;"
+								/>
+							</div>
+							<div class="type-xxxsmall mb2 ib">
+								<div inbook-answer-submit="1"				
+									 ng-model="ans.isCorrectFlag" 
+									 attempts="1" simple-ui="1"
+									 remote-trigger="ans.remoteTrigger" 
+									 remote-trigger-reset="ans.remoteTrigger = false;"
+									 on-correct=   "question.markAsCorrect();														
+									"
+									 on-incorrect= "
+										storedAns.a = ans.a;
+										storedAns.b = ans.b;
+										storedAns.c = ans.c;
+										feedback.reveal = true;
+										question.markAsIncorrect();
+									 "
+									 on-complete="
+										ans.locked=false; 										
+										track({description:'question', calc:calc, ans:ans})
+									 ">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>			      	
+				</div>
+			<div class="mt4">
 				<div inbook-nextbtn="question"></div>
 			</div>
 		</div>
