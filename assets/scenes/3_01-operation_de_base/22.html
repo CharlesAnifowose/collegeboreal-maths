@@ -12,10 +12,6 @@
 					EXERCICE 12
 				</div>
 
-				<div class="exercise-header">
-					Additionnez dans les deux sens puis vérifiez à l'aide de la calculatrice
-				</div>
-
 				<div 	inbook-questionseries-item level="1"
 	  					ng-init="
 	  						ans				=	{};
@@ -26,51 +22,59 @@
 	  						ans.showSolution = false;
 	  					">
 
-	  					<div class="mt2 type-small bold">
-							<div class="vert-add">
-								<div class="term">
+	  					<div class="exercise-box">
+
+				  			<div class="exercise-header">
+								Additionnez dans les deux sens puis vérifiez à l'aide de la calculatrice
+							</div>
+
+		  					<div class="mt2 type-small bold">
+								<div class="vert-add">
+									<div class="term">
+										<div class="ib">
+											&nbsp;		
+										</div>
+										<div class="ib">
+											{{ans.num1}}
+										</div>
+									</div>
+									<div class="term last">
+										<div class="ib">
+											+		
+										</div>
+										<div class="ib">
+											{{ans.num2}}
+										</div>
+									</div>
+								</div>
+								<div>
 									<div class="ib">
 										&nbsp;		
 									</div>
 									<div class="ib">
-										{{ans.num1}}
+										<div 	inbook-answerbox-fill="ans.val"
+												class="type-small"
+												input-class="type-small"
+												on-correct="question.markAsCorrect()"
+												on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
 									</div>
 								</div>
-								<div class="term last">
-									<div class="ib">
-										+		
-									</div>
-									<div class="ib">
-										{{ans.num2}}
-									</div>
-								</div>
-							</div>
-							<div>
-								<div class="ib">
-									&nbsp;		
-								</div>
-								<div class="ib">
-									<div 	inbook-answerbox-fill="ans.val"
-											class="type-small"
-											input-class="type-small"
-											on-correct="question.markAsCorrect()"
-											on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
-								</div>
-							</div>
 
-							<div vcollapse="!ans.showSolution">
-								<div class="mt4">
-									<div class="solution-header">
-										La solution:
-									</div>
-									<div class="solution-body">
-										{{ans.val}}
+								<div vcollapse="!ans.showSolution">
+									<div class="mt4">
+										<div class="solution-header">
+											La solution:
+										</div>
+										<div class="solution-body">
+											{{ans.val}}
+										</div>
 									</div>
 								</div>
-							</div>
 
-							<div class="mt4">
-								<div inbook-nextbtn="question"></div>
+								<div class="mt4 center">
+									<div inbook-nextbtn="question"></div>
+								</div>
+
 							</div>
 						</div>
   				</div>
@@ -85,51 +89,58 @@
 	  						ans.showSolution = false;
 	  					">
 
-	  					<div class="mt2 type-small bold">
-							<div class="vert-add">
-								<div class="term">
+	  					<div class="exercise-box">
+
+				  			<div class="exercise-header">
+								Additionnez dans les deux sens puis vérifiez à l'aide de la calculatrice
+							</div>
+
+		  					<div class="mt2 type-small bold">
+								<div class="vert-add">
+									<div class="term">
+										<div class="ib">
+											&nbsp;		
+										</div>
+										<div class="ib">
+											{{ans.num1}}
+										</div>
+									</div>
+									<div class="term last">
+										<div class="ib">
+											+		
+										</div>
+										<div class="ib">
+											{{ans.num2}}
+										</div>
+									</div>
+								</div>
+								<div>
 									<div class="ib">
 										&nbsp;		
 									</div>
 									<div class="ib">
-										{{ans.num1}}
+										<div 	inbook-answerbox-fill="ans.val"
+												class="type-small"
+												input-class="type-small"
+												on-correct="question.markAsCorrect()"
+												on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
 									</div>
 								</div>
-								<div class="term last">
-									<div class="ib">
-										+		
-									</div>
-									<div class="ib">
-										{{ans.num2}}
-									</div>
-								</div>
-							</div>
-							<div>
-								<div class="ib">
-									&nbsp;		
-								</div>
-								<div class="ib">
-									<div 	inbook-answerbox-fill="ans.val"
-											class="type-small"
-											input-class="type-small"
-											on-correct="question.markAsCorrect()"
-											on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
-								</div>
-							</div>
 
-							<div vcollapse="!ans.showSolution">
-								<div class="mt4">
-									<div class="solution-header">
-										La solution:
-									</div>
-									<div class="solution-body">
-										{{ans.val}}
+								<div vcollapse="!ans.showSolution">
+									<div class="mt4">
+										<div class="solution-header">
+											La solution:
+										</div>
+										<div class="solution-body">
+											{{ans.val}}
+										</div>
 									</div>
 								</div>
-							</div>
 
-							<div class="mt4">
-								<div inbook-nextbtn="question"></div>
+								<div class="mt4 center">
+									<div inbook-nextbtn="question"></div>
+								</div>
 							</div>
 						</div>
   				</div>
@@ -144,51 +155,58 @@
 	  						ans.showSolution = false;
 	  					">
 
-	  					<div class="mt2 type-small bold">
-							<div class="vert-add">
-								<div class="term">
+	  					<div class="exercise-box">
+
+				  			<div class="exercise-header">
+								Additionnez dans les deux sens puis vérifiez à l'aide de la calculatrice
+							</div>
+
+		  					<div class="mt2 type-small bold">
+								<div class="vert-add">
+									<div class="term">
+										<div class="ib">
+											&nbsp;		
+										</div>
+										<div class="ib">
+											{{ans.num1}}
+										</div>
+									</div>
+									<div class="term last">
+										<div class="ib">
+											+		
+										</div>
+										<div class="ib">
+											{{ans.num2}}
+										</div>
+									</div>
+								</div>
+								<div>
 									<div class="ib">
 										&nbsp;		
 									</div>
 									<div class="ib">
-										{{ans.num1}}
+										<div 	inbook-answerbox-fill="ans.val"
+												class="type-small"
+												input-class="type-small"
+												on-correct="question.markAsCorrect()"
+												on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
 									</div>
 								</div>
-								<div class="term last">
-									<div class="ib">
-										+		
-									</div>
-									<div class="ib">
-										{{ans.num2}}
-									</div>
-								</div>
-							</div>
-							<div>
-								<div class="ib">
-									&nbsp;		
-								</div>
-								<div class="ib">
-									<div 	inbook-answerbox-fill="ans.val"
-											class="type-small"
-											input-class="type-small"
-											on-correct="question.markAsCorrect()"
-											on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
-								</div>
-							</div>
 
-							<div vcollapse="!ans.showSolution">
-								<div class="mt4">
-									<div class="solution-header">
-										La solution:
-									</div>
-									<div class="solution-body">
-										{{ans.val}}
+								<div vcollapse="!ans.showSolution">
+									<div class="mt4">
+										<div class="solution-header">
+											La solution:
+										</div>
+										<div class="solution-body">
+											{{ans.val}}
+										</div>
 									</div>
 								</div>
-							</div>
 
-							<div class="mt4">
-								<div inbook-nextbtn="question"></div>
+								<div class="mt4 center">
+									<div inbook-nextbtn="question"></div>
+								</div>
 							</div>
 						</div>
   				</div>
@@ -204,59 +222,66 @@
 	  						ans.showSolution = false;
 	  					">
 
-	  					<div class="mt2 type-small bold">
-							<div class="vert-add">
-								<div class="term">
+	  					<div class="exercise-box">
+
+				  			<div class="exercise-header">
+								Additionnez dans les deux sens puis vérifiez à l'aide de la calculatrice
+							</div>
+
+		  					<div class="mt2 type-small bold">
+								<div class="vert-add">
+									<div class="term">
+										<div class="ib">
+											&nbsp;		
+										</div>
+										<div class="ib">
+											{{ans.num1}}
+										</div>
+									</div>
+									<div class="term">
+										<div class="ib">
+											&nbsp;		
+										</div>
+										<div class="ib">
+											{{ans.num2}}
+										</div>
+									</div>
+									<div class="term last">
+										<div class="ib">
+											+		
+										</div>
+										<div class="ib">
+											{{ans.num3}}
+										</div>
+									</div>
+								</div>
+								<div>
 									<div class="ib">
 										&nbsp;		
 									</div>
 									<div class="ib">
-										{{ans.num1}}
+										<div 	inbook-answerbox-fill="ans.val"
+												class="type-small"
+												input-class="type-small"
+												on-correct="question.markAsCorrect()"
+												on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
 									</div>
 								</div>
-								<div class="term">
-									<div class="ib">
-										&nbsp;		
-									</div>
-									<div class="ib">
-										{{ans.num2}}
-									</div>
-								</div>
-								<div class="term last">
-									<div class="ib">
-										+		
-									</div>
-									<div class="ib">
-										{{ans.num3}}
-									</div>
-								</div>
-							</div>
-							<div>
-								<div class="ib">
-									&nbsp;		
-								</div>
-								<div class="ib">
-									<div 	inbook-answerbox-fill="ans.val"
-											class="type-small"
-											input-class="type-small"
-											on-correct="question.markAsCorrect()"
-											on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
-								</div>
-							</div>
 
-							<div vcollapse="!ans.showSolution">
-								<div class="mt4">
-									<div class="solution-header">
-										La solution:
-									</div>
-									<div class="solution-body">
-										{{ans.val}}
+								<div vcollapse="!ans.showSolution">
+									<div class="mt4">
+										<div class="solution-header">
+											La solution:
+										</div>
+										<div class="solution-body">
+											{{ans.val}}
+										</div>
 									</div>
 								</div>
-							</div>
 
-							<div class="mt4">
-								<div inbook-nextbtn="question"></div>
+								<div class="mt4 center">
+									<div inbook-nextbtn="question"></div>
+								</div>
 							</div>
 						</div>
   				</div>
@@ -272,59 +297,66 @@
 	  						ans.showSolution = false;
 	  					">
 
-	  					<div class="mt2 type-small bold">
-							<div class="vert-add">
-								<div class="term">
+	  					<div class="exercise-box">
+
+				  			<div class="exercise-header">
+								Additionnez dans les deux sens puis vérifiez à l'aide de la calculatrice
+							</div>
+
+		  					<div class="mt2 type-small bold">
+								<div class="vert-add">
+									<div class="term">
+										<div class="ib">
+											&nbsp;		
+										</div>
+										<div class="ib">
+											{{ans.num1}}
+										</div>
+									</div>
+									<div class="term">
+										<div class="ib">
+											&nbsp;		
+										</div>
+										<div class="ib">
+											{{ans.num2}}
+										</div>
+									</div>
+									<div class="term last">
+										<div class="ib">
+											+		
+										</div>
+										<div class="ib">
+											{{ans.num3}}
+										</div>
+									</div>
+								</div>
+								<div>
 									<div class="ib">
 										&nbsp;		
 									</div>
 									<div class="ib">
-										{{ans.num1}}
+										<div 	inbook-answerbox-fill="ans.val"
+												class="type-small"
+												input-class="type-small"
+												on-correct="question.markAsCorrect()"
+												on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
 									</div>
 								</div>
-								<div class="term">
-									<div class="ib">
-										&nbsp;		
-									</div>
-									<div class="ib">
-										{{ans.num2}}
-									</div>
-								</div>
-								<div class="term last">
-									<div class="ib">
-										+		
-									</div>
-									<div class="ib">
-										{{ans.num3}}
-									</div>
-								</div>
-							</div>
-							<div>
-								<div class="ib">
-									&nbsp;		
-								</div>
-								<div class="ib">
-									<div 	inbook-answerbox-fill="ans.val"
-											class="type-small"
-											input-class="type-small"
-											on-correct="question.markAsCorrect()"
-											on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
-								</div>
-							</div>
 
-							<div vcollapse="!ans.showSolution">
-								<div class="mt4">
-									<div class="solution-header">
-										La solution:
-									</div>
-									<div class="solution-body">
-										{{ans.val}}
+								<div vcollapse="!ans.showSolution">
+									<div class="mt4">
+										<div class="solution-header">
+											La solution:
+										</div>
+										<div class="solution-body">
+											{{ans.val}}
+										</div>
 									</div>
 								</div>
-							</div>
 
-							<div class="mt4">
-								<div inbook-nextbtn="question"></div>
+								<div class="mt4 center">
+									<div inbook-nextbtn="question"></div>
+								</div>
 							</div>
 						</div>
   				</div>
@@ -340,59 +372,67 @@
 	  						ans.showSolution = false;
 	  					">
 
-	  					<div class="mt2 type-small bold">
-							<div class="vert-add">
-								<div class="term">
+	  					<div class="exercise-box">
+
+				  			<div class="exercise-header">
+								Additionnez dans les deux sens puis vérifiez à l'aide de la calculatrice
+							</div>
+
+		  					<div class="mt2 type-small bold">
+								<div class="vert-add">
+									<div class="term">
+										<div class="ib">
+											&nbsp;		
+										</div>
+										<div class="ib">
+											{{ans.num1}}
+										</div>
+									</div>
+									<div class="term">
+										<div class="ib">
+											&nbsp;		
+										</div>
+										<div class="ib">
+											{{ans.num2}}
+										</div>
+									</div>
+									<div class="term last">
+										<div class="ib">
+											+		
+										</div>
+										<div class="ib">
+											{{ans.num3}}
+										</div>
+									</div>
+								</div>
+								<div>
 									<div class="ib">
 										&nbsp;		
 									</div>
 									<div class="ib">
-										{{ans.num1}}
+										<div 	inbook-answerbox-fill="ans.val"
+												class="type-small"
+												input-class="type-small"
+												on-correct="question.markAsCorrect()"
+												on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
 									</div>
-								</div>
-								<div class="term">
-									<div class="ib">
-										&nbsp;		
-									</div>
-									<div class="ib">
-										{{ans.num2}}
-									</div>
-								</div>
-								<div class="term last">
-									<div class="ib">
-										+		
-									</div>
-									<div class="ib">
-										{{ans.num3}}
-									</div>
-								</div>
-							</div>
-							<div>
-								<div class="ib">
-									&nbsp;		
-								</div>
-								<div class="ib">
-									<div 	inbook-answerbox-fill="ans.val"
-											class="type-small"
-											input-class="type-small"
-											on-correct="question.markAsCorrect()"
-											on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
-								</div>
-							</div>	
+								</div>	
 
-							<div vcollapse="!ans.showSolution">
-								<div class="mt4">
-									<div class="solution-header">
-										La solution:
-									</div>
-									<div class="solution-body">
-										{{ans.val}}
+								<div vcollapse="!ans.showSolution">
+									<div class="mt4">
+										<div class="solution-header">
+											La solution:
+										</div>
+										<div class="solution-body">
+											{{ans.val}}
+										</div>
 									</div>
 								</div>
-							</div>
 
-							<div class="mt4">
-								<div inbook-nextbtn="question"></div>
+								<div class="mt4 center">
+									<div inbook-nextbtn="question"></div>
+								</div>
+
 							</div>
 						</div>
   				</div>
@@ -407,51 +447,58 @@
 	  						ans.showSolution = false;
 	  					">
 
-	  					<div class="mt2 type-small bold">
-							<div class="vert-add">
-								<div class="term">
+	  					<div class="exercise-box">
+
+				  			<div class="exercise-header">
+								Additionnez dans les deux sens puis vérifiez à l'aide de la calculatrice
+							</div>
+
+		  					<div class="mt2 type-small bold">
+								<div class="vert-add">
+									<div class="term">
+										<div class="ib">
+											&nbsp;		
+										</div>
+										<div class="ib">
+											{{ans.num1}}
+										</div>
+									</div>
+									<div class="term last">
+										<div class="ib">
+											+		
+										</div>
+										<div class="ib">
+											{{ans.num2}}
+										</div>
+									</div>
+								</div>
+								<div>
 									<div class="ib">
 										&nbsp;		
 									</div>
 									<div class="ib">
-										{{ans.num1}}
+										<div 	inbook-answerbox-fill="ans.val"
+												class="type-small"
+												input-class="type-small"
+												on-correct="question.markAsCorrect()"
+												on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
 									</div>
 								</div>
-								<div class="term last">
-									<div class="ib">
-										+		
-									</div>
-									<div class="ib">
-										{{ans.num2}}
-									</div>
-								</div>
-							</div>
-							<div>
-								<div class="ib">
-									&nbsp;		
-								</div>
-								<div class="ib">
-									<div 	inbook-answerbox-fill="ans.val"
-											class="type-small"
-											input-class="type-small"
-											on-correct="question.markAsCorrect()"
-											on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
-								</div>
-							</div>
 
-							<div vcollapse="!ans.showSolution">
-								<div class="mt4">
-									<div class="solution-header">
-										La solution:
-									</div>
-									<div class="solution-body">
-										{{ans.val}}
+								<div vcollapse="!ans.showSolution">
+									<div class="mt4">
+										<div class="solution-header">
+											La solution:
+										</div>
+										<div class="solution-body">
+											{{ans.val}}
+										</div>
 									</div>
 								</div>
-							</div>
 
-							<div class="mt4">
-								<div inbook-nextbtn="question"></div>
+								<div class="mt4 center">
+									<div inbook-nextbtn="question"></div>
+								</div>
 							</div>
 						</div>
   				</div>
@@ -467,59 +514,66 @@
 	  						ans.showSolution = false;
 	  					">
 
-	  					<div class="mt2 type-small bold">
-							<div class="vert-add">
-								<div class="term">
+	  					<div class="exercise-box">
+
+				  			<div class="exercise-header">
+								Additionnez dans les deux sens puis vérifiez à l'aide de la calculatrice
+							</div>
+
+		  					<div class="mt2 type-small bold">
+								<div class="vert-add">
+									<div class="term">
+										<div class="ib">
+											&nbsp;		
+										</div>
+										<div class="ib">
+											{{ans.num1}}
+										</div>
+									</div>
+									<div class="term">
+										<div class="ib">
+											&nbsp;		
+										</div>
+										<div class="ib">
+											{{ans.num2}}
+										</div>
+									</div>
+									<div class="term last">
+										<div class="ib">
+											+		
+										</div>
+										<div class="ib">
+											{{ans.num3}}
+										</div>
+									</div>
+								</div>
+								<div>
 									<div class="ib">
 										&nbsp;		
 									</div>
 									<div class="ib">
-										{{ans.num1}}
+										<div 	inbook-answerbox-fill="ans.val"
+												class="type-small"
+												input-class="type-small"
+												on-correct="question.markAsCorrect()"
+												on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
 									</div>
 								</div>
-								<div class="term">
-									<div class="ib">
-										&nbsp;		
-									</div>
-									<div class="ib">
-										{{ans.num2}}
-									</div>
-								</div>
-								<div class="term last">
-									<div class="ib">
-										+		
-									</div>
-									<div class="ib">
-										{{ans.num3}}
-									</div>
-								</div>
-							</div>
-							<div>
-								<div class="ib">
-									&nbsp;		
-								</div>
-								<div class="ib">
-									<div 	inbook-answerbox-fill="ans.val"
-											class="type-small"
-											input-class="type-small"
-											on-correct="question.markAsCorrect()"
-											on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
-								</div>
-							</div>
 
-							<div vcollapse="!ans.showSolution">
-								<div class="mt4">
-									<div class="solution-header">
-										La solution:
-									</div>
-									<div class="solution-body">
-										{{ans.val}}
+								<div vcollapse="!ans.showSolution">
+									<div class="mt4">
+										<div class="solution-header">
+											La solution:
+										</div>
+										<div class="solution-body">
+											{{ans.val}}
+										</div>
 									</div>
 								</div>
-							</div>
 
-							<div class="mt4">
-								<div inbook-nextbtn="question"></div>
+								<div class="mt4 center">
+									<div inbook-nextbtn="question"></div>
+								</div>
 							</div>
 						</div>
   				</div>
@@ -535,59 +589,66 @@
 	  						ans.showSolution = false;
 	  					">
 
-	  					<div class="mt2 type-small bold">
-							<div class="vert-add">
-								<div class="term">
+	  					<div class="exercise-box">
+
+				  			<div class="exercise-header">
+								Additionnez dans les deux sens puis vérifiez à l'aide de la calculatrice
+							</div>
+
+		  					<div class="mt2 type-small bold">
+								<div class="vert-add">
+									<div class="term">
+										<div class="ib">
+											&nbsp;		
+										</div>
+										<div class="ib">
+											{{ans.num1}}
+										</div>
+									</div>
+									<div class="term">
+										<div class="ib">
+											&nbsp;		
+										</div>
+										<div class="ib">
+											{{ans.num2}}
+										</div>
+									</div>
+									<div class="term last">
+										<div class="ib">
+											+		
+										</div>
+										<div class="ib">
+											{{ans.num3}}
+										</div>
+									</div>
+								</div>
+								<div>
 									<div class="ib">
 										&nbsp;		
 									</div>
 									<div class="ib">
-										{{ans.num1}}
+										<div 	inbook-answerbox-fill="ans.val"
+												class="type-small"
+												input-class="type-small"
+												on-correct="question.markAsCorrect()"
+												on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
 									</div>
 								</div>
-								<div class="term">
-									<div class="ib">
-										&nbsp;		
-									</div>
-									<div class="ib">
-										{{ans.num2}}
-									</div>
-								</div>
-								<div class="term last">
-									<div class="ib">
-										+		
-									</div>
-									<div class="ib">
-										{{ans.num3}}
-									</div>
-								</div>
-							</div>
-							<div>
-								<div class="ib">
-									&nbsp;		
-								</div>
-								<div class="ib">
-									<div 	inbook-answerbox-fill="ans.val"
-											class="type-small"
-											input-class="type-small"
-											on-correct="question.markAsCorrect()"
-											on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
-								</div>
-							</div>
 
-							<div vcollapse="!ans.showSolution">
-								<div class="mt4">
-									<div class="solution-header">
-										La solution:
-									</div>
-									<div class="solution-body">
-										{{ans.val}}
+								<div vcollapse="!ans.showSolution">
+									<div class="mt4">
+										<div class="solution-header">
+											La solution:
+										</div>
+										<div class="solution-body">
+											{{ans.val}}
+										</div>
 									</div>
 								</div>
-							</div>
 
-							<div class="mt4">
-								<div inbook-nextbtn="question"></div>
+								<div class="mt4 center">
+									<div inbook-nextbtn="question"></div>
+								</div>
 							</div>
 						</div>
   				</div>
@@ -603,43 +664,51 @@
 	  					"ng-resettable-init="
 	  						ans.showSolution = false;
 	  					">
-	  					<div class="mt2 type-small bold">
-		  					<div class="ib">
-			  					{{ans.num1}}
-		  					</div>
-		  					<div class="ib">
-			  					{{ans.num2}}
-		  					</div>
-		  					<div class="ib">
-			  					{{ans.num3}}
-		  					</div>
-		  					<div class="ib">
-		  						{{ans.num4}}	
-		  					</div>
-		  					<div class="ib">
-		  						<div class="ml2 mr2">&equals;</div>
-		  					</div>
-		  					<div class="ib">
-		  						<div 	inbook-answerbox-fill="ans.val"
-										class="type-small"
-										input-class="type-small"
-										on-correct="question.markAsCorrect()"
-										on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
-		  					</div>
 
-		  					<div vcollapse="!ans.showSolution">
-								<div class="mt4">
-									<div class="solution-header">
-										La solution:
-									</div>
-									<div class="solution-body">
-										{{ans.val}}
-									</div>
-								</div>
+	  					<div class="exercise-box">
+
+				  			<div class="exercise-header">
+								Additionnez dans les deux sens puis vérifiez à l'aide de la calculatrice
 							</div>
 
-	  						<div class="mt4">
-								<div inbook-nextbtn="question"></div>
+		  					<div class="mt2 type-small bold">
+			  					<div class="ib">
+				  					{{ans.num1}}
+			  					</div>
+			  					<div class="ib">
+				  					{{ans.num2}}
+			  					</div>
+			  					<div class="ib">
+				  					{{ans.num3}}
+			  					</div>
+			  					<div class="ib">
+			  						{{ans.num4}}	
+			  					</div>
+			  					<div class="ib">
+			  						<div class="ml2 mr2">&equals;</div>
+			  					</div>
+			  					<div class="ib">
+			  						<div 	inbook-answerbox-fill="ans.val"
+											class="type-small"
+											input-class="type-small"
+											on-correct="question.markAsCorrect()"
+											on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
+			  					</div>
+
+			  					<div vcollapse="!ans.showSolution">
+									<div class="mt4">
+										<div class="solution-header">
+											La solution:
+										</div>
+										<div class="solution-body">
+											{{ans.val}}
+										</div>
+									</div>
+								</div>
+
+		  						<div class="mt4 center">
+									<div inbook-nextbtn="question"></div>
+								</div>
 							</div>
 	  					</div>
 	  			</div>
@@ -655,43 +724,50 @@
 	  					"ng-resettable-init="
 	  						ans.showSolution = false;
 	  					">
-	  					<div class="mt2 type-small bold">
-		  					<div class="ib">
-			  					{{ans.num1}}
-		  					</div>
-		  					<div class="ib">
-			  					{{ans.num2}}
-		  					</div>
-		  					<div class="ib">
-			  					{{ans.num3}}
-		  					</div>
-		  					<div class="ib">
-		  						{{ans.num4}}	
-		  					</div>
-		  					<div class="ib">
-		  						<div class="ml2 mr2">&equals;</div>
-		  					</div>
-		  					<div class="ib">
-		  						<div 	inbook-answerbox-fill="ans.val"
-										class="type-small"
-										input-class="type-small"
-										on-correct="question.markAsCorrect()"
-										on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
-		  					</div>
+	  					<div class="exercise-box">
 
-		  					<div vcollapse="!ans.showSolution">
-								<div class="mt4">
-									<div class="solution-header">
-										La solution:
-									</div>
-									<div class="solution-body">
-										{{ans.val}}
-									</div>
-								</div>
+				  			<div class="exercise-header">
+								Additionnez dans les deux sens puis vérifiez à l'aide de la calculatrice
 							</div>
 
-	  						<div class="mt4">
-								<div inbook-nextbtn="question"></div>
+		  					<div class="mt2 type-small bold">
+			  					<div class="ib">
+				  					{{ans.num1}}
+			  					</div>
+			  					<div class="ib">
+				  					{{ans.num2}}
+			  					</div>
+			  					<div class="ib">
+				  					{{ans.num3}}
+			  					</div>
+			  					<div class="ib">
+			  						{{ans.num4}}	
+			  					</div>
+			  					<div class="ib">
+			  						<div class="ml2 mr2">&equals;</div>
+			  					</div>
+			  					<div class="ib">
+			  						<div 	inbook-answerbox-fill="ans.val"
+											class="type-small"
+											input-class="type-small"
+											on-correct="question.markAsCorrect()"
+											on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
+			  					</div>
+
+			  					<div vcollapse="!ans.showSolution">
+									<div class="mt4">
+										<div class="solution-header">
+											La solution:
+										</div>
+										<div class="solution-body">
+											{{ans.val}}
+										</div>
+									</div>
+								</div>
+
+		  						<div class="mt4 center">
+									<div inbook-nextbtn="question"></div>
+								</div>
 							</div>
 	  					</div>
 	  			</div>
@@ -706,40 +782,49 @@
 	  					"ng-resettable-init="
 	  						ans.showSolution = false;
 	  					">
-	  					<div class="mt2 type-small bold">
-		  					<div class="ib">
-			  					{{ans.num1}}
-		  					</div>
-		  					<div class="ib">
-			  					{{ans.num2}}
-		  					</div>
-		  					<div class="ib">
-			  					{{ans.num3}}
-		  					</div>
-		  					<div class="ib">
-		  						<div class="ml2 mr2">&equals;</div>
-		  					</div>
-		  					<div class="ib">
-		  						<div 	inbook-answerbox-fill="ans.val"
-										class="type-small"
-										input-class="type-small"
-										on-correct="question.markAsCorrect()"
-										on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
-		  					</div>
 
-		  					<div vcollapse="!ans.showSolution">
-								<div class="mt4">
-									<div class="solution-header">
-										La solution:
-									</div>
-									<div class="solution-body">
-										{{ans.val}}
-									</div>
-								</div>
+	  					<div class="exercise-box">
+
+				  			<div class="exercise-header">
+								Additionnez dans les deux sens puis vérifiez à l'aide de la calculatrice
 							</div>
 
-	  						<div class="mt4">
-								<div inbook-nextbtn="question"></div>
+		  					<div class="mt2 type-small bold">
+			  					<div class="ib">
+				  					{{ans.num1}}
+			  					</div>
+			  					<div class="ib">
+				  					{{ans.num2}}
+			  					</div>
+			  					<div class="ib">
+				  					{{ans.num3}}
+			  					</div>
+			  					<div class="ib">
+			  						<div class="ml2 mr2">&equals;</div>
+			  					</div>
+			  					<div class="ib">
+			  						<div 	inbook-answerbox-fill="ans.val"
+											class="type-small"
+											input-class="type-small"
+											on-correct="question.markAsCorrect()"
+											on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
+			  					</div>
+
+			  					<div vcollapse="!ans.showSolution">
+									<div class="mt4">
+										<div class="solution-header">
+											La solution:
+										</div>
+										<div class="solution-body">
+											{{ans.val}}
+										</div>
+									</div>
+								</div>
+
+		  						<div class="mt4 center">
+									<div inbook-nextbtn="question"></div>
+								</div>
+
 							</div>
 	  					</div>
 	  			</div>
@@ -755,43 +840,52 @@
 	  					"ng-resettable-init="
 	  						ans.showSolution = false;
 	  					">
-	  					<div class="mt2 type-small bold">
-		  					<div class="ib">
-			  					{{ans.num1}}
-		  					</div>
-		  					<div class="ib">
-			  					{{ans.num2}}
-		  					</div>
-		  					<div class="ib">
-			  					{{ans.num3}}
-		  					</div>
-		  					<div class="ib">
-		  						{{ans.num4}}	
-		  					</div>
-		  					<div class="ib">
-		  						<div class="ml2 mr2">&equals;</div>
-		  					</div>
-		  					<div class="ib">
-		  						<div 	inbook-answerbox-fill="ans.val"
-										class="type-small"
-										input-class="type-small"
-										on-correct="question.markAsCorrect()"
-										on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
-		  					</div>
 
-		  					<div vcollapse="!ans.showSolution">
-								<div class="mt4">
-									<div class="solution-header">
-										La solution:
-									</div>
-									<div class="solution-body">
-										{{ans.val}}
-									</div>
-								</div>
+	  					<div class="exercise-box">
+
+				  			<div class="exercise-header">
+								Additionnez dans les deux sens puis vérifiez à l'aide de la calculatrice
 							</div>
 
-	  						<div class="mt4">
-								<div inbook-nextbtn="question"></div>
+		  					<div class="mt2 type-small bold">
+			  					<div class="ib">
+				  					{{ans.num1}}
+			  					</div>
+			  					<div class="ib">
+				  					{{ans.num2}}
+			  					</div>
+			  					<div class="ib">
+				  					{{ans.num3}}
+			  					</div>
+			  					<div class="ib">
+			  						{{ans.num4}}	
+			  					</div>
+			  					<div class="ib">
+			  						<div class="ml2 mr2">&equals;</div>
+			  					</div>
+			  					<div class="ib">
+			  						<div 	inbook-answerbox-fill="ans.val"
+											class="type-small"
+											input-class="type-small"
+											on-correct="question.markAsCorrect()"
+											on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
+			  					</div>
+
+			  					<div vcollapse="!ans.showSolution">
+									<div class="mt4">
+										<div class="solution-header">
+											La solution:
+										</div>
+										<div class="solution-body">
+											{{ans.val}}
+										</div>
+									</div>
+								</div>
+
+		  						<div class="mt4 center">
+									<div inbook-nextbtn="question"></div>
+								</div>
+
 							</div>
 	  					</div>
 	  			</div>
@@ -807,43 +901,51 @@
 	  					"ng-resettable-init="
 	  						ans.showSolution = false;
 	  					">
-	  					<div class="mt2 type-small bold">
-		  					<div class="ib">
-			  					{{ans.num1}}
-		  					</div>
-		  					<div class="ib">
-			  					{{ans.num2}}
-		  					</div>
-		  					<div class="ib">
-			  					{{ans.num3}}
-		  					</div>
-		  					<div class="ib">
-		  						{{ans.num4}}	
-		  					</div>
-		  					<div class="ib">
-		  						<div class="ml2 mr2">&equals;</div>
-		  					</div>
-		  					<div class="ib">
-		  						<div 	inbook-answerbox-fill="ans.val"
-										class="type-small"
-										input-class="type-small"
-										on-correct="question.markAsCorrect()"
-										on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
-		  					</div>
 
-		  					<div vcollapse="!ans.showSolution">
-								<div class="mt4">
-									<div class="solution-header">
-										La solution:
-									</div>
-									<div class="solution-body">
-										{{ans.val}}
-									</div>
-								</div>
+	  					<div class="exercise-box">
+
+				  			<div class="exercise-header">
+								Additionnez dans les deux sens puis vérifiez à l'aide de la calculatrice
 							</div>
 
-	  						<div class="mt4">
-								<div inbook-nextbtn="question"></div>
+		  					<div class="mt2 type-small bold">
+			  					<div class="ib">
+				  					{{ans.num1}}
+			  					</div>
+			  					<div class="ib">
+				  					{{ans.num2}}
+			  					</div>
+			  					<div class="ib">
+				  					{{ans.num3}}
+			  					</div>
+			  					<div class="ib">
+			  						{{ans.num4}}	
+			  					</div>
+			  					<div class="ib">
+			  						<div class="ml2 mr2">&equals;</div>
+			  					</div>
+			  					<div class="ib">
+			  						<div 	inbook-answerbox-fill="ans.val"
+											class="type-small"
+											input-class="type-small"
+											on-correct="question.markAsCorrect()"
+											on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
+			  					</div>
+
+			  					<div vcollapse="!ans.showSolution">
+									<div class="mt4">
+										<div class="solution-header">
+											La solution:
+										</div>
+										<div class="solution-body">
+											{{ans.val}}
+										</div>
+									</div>
+								</div>
+
+		  						<div class="mt4 center">
+									<div inbook-nextbtn="question"></div>
+								</div>
 							</div>
 	  					</div>
 	  			</div>
@@ -857,37 +959,44 @@
 	  					"ng-resettable-init="
 	  						ans.showSolution = false;
 	  					">
-	  					<div class="mt2 type-small bold">
-		  					<div class="ib">
-			  					{{ans.num1}}
-		  					</div>
-		  					<div class="ib">
-			  					{{ans.num2}}
-		  					</div>
-		  					<div class="ib">
-		  						<div class="ml2 mr2">&equals;</div>
-		  					</div>
-		  					<div class="ib">
-		  						<div 	inbook-answerbox-fill="ans.val"
-										class="type-small"
-										input-class="type-small"
-										on-correct="question.markAsCorrect()"
-										on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
-		  					</div>
+	  					<div class="exercise-box">
 
-		  					<div vcollapse="!ans.showSolution">
-								<div class="mt4">
-									<div class="solution-header">
-										La solution:
-									</div>
-									<div class="solution-body">
-										{{ans.val}}
-									</div>
-								</div>
+				  			<div class="exercise-header">
+								Additionnez dans les deux sens puis vérifiez à l'aide de la calculatrice
 							</div>
 
-	  						<div class="mt4">
-								<div inbook-nextbtn="question"></div>
+		  					<div class="mt2 type-small bold">
+			  					<div class="ib">
+				  					{{ans.num1}}
+			  					</div>
+			  					<div class="ib">
+				  					{{ans.num2}}
+			  					</div>
+			  					<div class="ib">
+			  						<div class="ml2 mr2">&equals;</div>
+			  					</div>
+			  					<div class="ib">
+			  						<div 	inbook-answerbox-fill="ans.val"
+											class="type-small"
+											input-class="type-small"
+											on-correct="question.markAsCorrect()"
+											on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
+			  					</div>
+
+			  					<div vcollapse="!ans.showSolution">
+									<div class="mt4">
+										<div class="solution-header">
+											La solution:
+										</div>
+										<div class="solution-body">
+											{{ans.val}}
+										</div>
+									</div>
+								</div>
+
+		  						<div class="mt4 center">
+									<div inbook-nextbtn="question"></div>
+								</div>
 							</div>
 	  					</div>
 	  			</div>
@@ -901,37 +1010,45 @@
 	  					"ng-resettable-init="
 	  						ans.showSolution = false;
 	  					">
-	  					<div class="mt2 type-small bold">
-		  					<div class="ib">
-			  					{{ans.num1}}
-		  					</div>
-		  					<div class="ib">
-			  					{{ans.num2}}
-		  					</div>
-		  					<div class="ib">
-		  						<div class="ml2 mr2">&equals;</div>
-		  					</div>
-		  					<div class="ib">
-		  						<div 	inbook-answerbox-fill="ans.val"
-										class="type-small"
-										input-class="type-small"
-										on-correct="question.markAsCorrect()"
-										on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
-		  					</div>
 
-		  					<div vcollapse="!ans.showSolution">
-								<div class="mt4">
-									<div class="solution-header">
-										La solution:
-									</div>
-									<div class="solution-body">
-										{{ans.val}}
-									</div>
-								</div>
+	  					<div class="exercise-box">
+
+				  			<div class="exercise-header">
+								Additionnez dans les deux sens puis vérifiez à l'aide de la calculatrice
 							</div>
 
-	  						<div class="mt4">
-								<div inbook-nextbtn="question"></div>
+		  					<div class="mt2 type-small bold">
+			  					<div class="ib">
+				  					{{ans.num1}}
+			  					</div>
+			  					<div class="ib">
+				  					{{ans.num2}}
+			  					</div>
+			  					<div class="ib">
+			  						<div class="ml2 mr2">&equals;</div>
+			  					</div>
+			  					<div class="ib">
+			  						<div 	inbook-answerbox-fill="ans.val"
+											class="type-small"
+											input-class="type-small"
+											on-correct="question.markAsCorrect()"
+											on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
+			  					</div>
+
+			  					<div vcollapse="!ans.showSolution">
+									<div class="mt4">
+										<div class="solution-header">
+											La solution:
+										</div>
+										<div class="solution-body">
+											{{ans.val}}
+										</div>
+									</div>
+								</div>
+
+		  						<div class="mt4 center">
+									<div inbook-nextbtn="question"></div>
+								</div>
 							</div>
 	  					</div>
 	  			</div>
@@ -946,40 +1063,47 @@
 	  					"ng-resettable-init="
 	  						ans.showSolution = false;
 	  					">
-	  					<div class="mt2 type-small bold">
-		  					<div class="ib">
-			  					{{ans.num1}}
-		  					</div>
-		  					<div class="ib">
-			  					{{ans.num2}}
-		  					</div>
-		  					<div class="ib">
-			  					{{ans.num3}}
-		  					</div>
-		  					<div class="ib">
-		  						<div class="ml2 mr2">&equals;</div>
-		  					</div>
-		  					<div class="ib">
-		  						<div 	inbook-answerbox-fill="ans.val"
-										class="type-small"
-										input-class="type-small"
-										on-correct="question.markAsCorrect()"
-										on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
-		  					</div>
+	  					<div class="exercise-box">
 
-		  					<div vcollapse="!ans.showSolution">
-								<div class="mt4">
-									<div class="solution-header">
-										La solution:
-									</div>
-									<div class="solution-body">
-										{{ans.val}}
-									</div>
-								</div>
+				  			<div class="exercise-header">
+								Additionnez dans les deux sens puis vérifiez à l'aide de la calculatrice
 							</div>
 
-	  						<div class="mt4">
-								<div inbook-nextbtn="question"></div>
+		  					<div class="mt2 type-small bold">
+			  					<div class="ib">
+				  					{{ans.num1}}
+			  					</div>
+			  					<div class="ib">
+				  					{{ans.num2}}
+			  					</div>
+			  					<div class="ib">
+				  					{{ans.num3}}
+			  					</div>
+			  					<div class="ib">
+			  						<div class="ml2 mr2">&equals;</div>
+			  					</div>
+			  					<div class="ib">
+			  						<div 	inbook-answerbox-fill="ans.val"
+											class="type-small"
+											input-class="type-small"
+											on-correct="question.markAsCorrect()"
+											on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
+			  					</div>
+
+			  					<div vcollapse="!ans.showSolution">
+									<div class="mt4">
+										<div class="solution-header">
+											La solution:
+										</div>
+										<div class="solution-body">
+											{{ans.val}}
+										</div>
+									</div>
+								</div>
+
+		  						<div class="mt4 center">
+									<div inbook-nextbtn="question"></div>
+								</div>
 							</div>
 	  					</div>
 	  			</div>

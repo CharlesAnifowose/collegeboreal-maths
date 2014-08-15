@@ -1,28 +1,37 @@
 <div class="mt2">
 
-	<div class="exercise-text">
-		{{ans.written}}
-	</div>
+	<div class="exercise-box">
 
-	<div class="mt2 mb4">
-		<div 	inbook-answerbox-fill="ans.num"
-				class="type-small"
-				input-class="type-small"
-				on-correct="question.markAsCorrect()"
-				on-incorrect="question.markAsIncorrect();ans.showSolution = true;"></div>
-	</div>
-
-	<div vcollapse="!ans.showSolution">
-		<div class="solution-header">
-			La solution:
+		<div class="exercise-header">
+			Écrivez les nombres en chiffres
 		</div>
-		<div class="solution-body">
-			{{ans.num}}
+
+		<div class="exercise-text">
+			{{ans.written}}
 		</div>
-	</div>
 
-	<div class="mt4">
-		<div inbook-nextbtn="question"></div>
-	</div>
+		<div class="mt2 mb4">
+			<div 	inbook-answerbox-fill="ans.num"
+					class="type-small"
+					input-class="type-small"
+					on-correct="question.markAsCorrect()"
+					on-incorrect="question.markAsIncorrect();ans.showSolution = true;"></div>
+		</div>
 
+    <hr class="mt3 mb3" />
+
+		<div vcollapse="!ans.showSolution">
+			<div class="solution-header">
+				La solution:
+			</div>
+			<div class="solution-body">
+				{{ans.num}}
+			</div>
+		</div>
+
+		<div class="mt4 center">
+			<div inbook-nextbtn="question"></div>
+		</div>
+
+	</div>
 </div>

@@ -1,37 +1,44 @@
 <div class="type-small bold">
 
-	<div class="ib">
-		{{ans.num1}}
-	</div>
-	<div class="ib">
-		<div class="ml2 mr2">&times;</div>
-	</div>
-	<div class="ib">
-		{{ans.num2}}
-	</div>
-	<div class="ib">
-		<div class="ml2 mr2">&equals;</div>
-	</div>
-	<div class="ib">
-		<div 	inbook-answerbox-fill="ans.val"
-				class="type-small"
-				input-class="type-small"
-				on-correct="question.markAsCorrect()"
-				on-incorrect="question.markAsIncorrect();ans.showSolution = true;"></div>
-	</div>
+	<div class="exercise-box">
 
-	<div vcollapse="!ans.showSolution">
-		<div class="mt4">
-			<div class="solution-header">
-				La solution:
-			</div>
-			<div class="solution-body">
-				{{ans.val}}
+		<div class="exercise-header">
+			Calculez mentalement
+		</div>
+
+		<div class="ib">
+			{{ans.num1}}
+		</div>
+		<div class="ib">
+			<div class="ml2 mr2">&times;</div>
+		</div>
+		<div class="ib">
+			{{ans.num2}}
+		</div>
+		<div class="ib">
+			<div class="ml2 mr2">&equals;</div>
+		</div>
+		<div class="ib">
+			<div 	inbook-answerbox-fill="ans.val"
+					class="type-small"
+					input-class="type-small"
+					on-correct="question.markAsCorrect()"
+					on-incorrect="question.markAsIncorrect();ans.showSolution = true;"></div>
+		</div>
+
+		<div vcollapse="!ans.showSolution">
+			<div class="mt4">
+				<div class="solution-header">
+					La solution:
+				</div>
+				<div class="solution-body">
+					{{ans.val}}
+				</div>
 			</div>
 		</div>
-	</div>
 
-	<div class="mt4">
-		<div inbook-nextbtn="question"></div>
+		<div class="mt4 center">
+			<div inbook-nextbtn="question"></div>
+		</div>
 	</div>
 </div>

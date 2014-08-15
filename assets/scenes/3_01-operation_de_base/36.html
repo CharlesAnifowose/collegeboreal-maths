@@ -12,11 +12,6 @@
                     EXERCICE 18
                 </div>
 
-                <div class="exercise-header">
-  					Effectuez les multiplications
-  				</div>
-
-
   				<div    inbook-questionseries-item level="1"
                         ng-init="
                             ans={};
@@ -238,31 +233,38 @@
                             ans.showSolution = false;
                         ">
 
-                        <div class="para">
-                        	Trouvez le produit de {{ans.num1}} et {{ans.num2}}
-                        </div>
-                        <div>
-							<div 	inbook-answerbox-fill="ans.val"
-									class="type-small"
-									input-class="type-small"
-									on-correct="question.markAsCorrect()"
-									on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
-						</div>
+                        <div class="exercise-box">
 
-                        <div vcollapse="!ans.showSolution">
-                            <div class="mt4">
-                                <div class="solution-header">
-                                    La solution:
-                                </div>
-                                <div class="solution-body">
-                                    {{ans.val}}
+                            <div class="exercise-header">
+                                Effectuez les multiplications
+                            </div>
+
+                            <div class="para">
+                            	Trouvez le produit de {{ans.num1}} et {{ans.num2}}
+                            </div>
+                            <div>
+    							<div 	inbook-answerbox-fill="ans.val"
+    									class="type-small"
+    									input-class="type-small"
+    									on-correct="question.markAsCorrect()"
+    									on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
+    						</div>
+
+                            <div vcollapse="!ans.showSolution">
+                                <div class="mt4">
+                                    <div class="solution-header">
+                                        La solution:
+                                    </div>
+                                    <div class="solution-body">
+                                        {{ans.val}}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="mt4">
-							<div inbook-nextbtn="question"></div>
-						</div>
+                            <div class="mt4 center">
+    							<div inbook-nextbtn="question"></div>
+    						</div>
+                        </div>
                 </div>
 
                 <div    inbook-questionseries-item level="17"
@@ -276,32 +278,39 @@
                         "ng-resettable-init="
                             ans.showSolution = false;
                         ">
+                        
+                        <div class="exercise-box">
 
-                        <div class="para">
-                        	Trouvez le produit de {{ans.num1}} &times; {{ans.num2}} &times; {{ans.num3}}
-                        </div>
-                        <div>
-							<div 	inbook-answerbox-fill="ans.val"
-									class="type-small"
-									input-class="type-small"
-									on-correct="question.markAsCorrect()"
-									on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
-						</div>
+                            <div class="exercise-header">
+                                Effectuez les multiplications
+                            </div>
 
-                        <div vcollapse="!ans.showSolution">
-                            <div class="mt4">
-                                <div class="solution-header">
-                                    La solution:
-                                </div>
-                                <div class="solution-body">
-                                    {{ans.val}}
+                            <div class="para">
+                            	Trouvez le produit de {{ans.num1}} &times; {{ans.num2}} &times; {{ans.num3}}
+                            </div>
+                            <div>
+    							<div 	inbook-answerbox-fill="ans.val"
+    									class="type-small"
+    									input-class="type-small"
+    									on-correct="question.markAsCorrect()"
+    									on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
+    						</div>
+
+                            <div vcollapse="!ans.showSolution">
+                                <div class="mt4">
+                                    <div class="solution-header">
+                                        La solution:
+                                    </div>
+                                    <div class="solution-body">
+                                        {{ans.val}}
+                                    </div>
                                 </div>
                             </div>
+                            
+                            <div class="mt4 center">
+    							<div inbook-nextbtn="question"></div>
+    						</div>
                         </div>
-                        
-                        <div class="mt4">
-							<div inbook-nextbtn="question"></div>
-						</div>
                 </div>
   		</div>
 </div>
