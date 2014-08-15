@@ -24,6 +24,8 @@
                             ans.num2    = 32;
 
                             ans.val     = ans.num1 * ans.num2;
+                        "ng-resettable-init="
+                            ans.showSolution = false;
                         ">
 
                         <div inbook-include="assets/scenes/3_01-operation_de_base/exercise-18-template.html"></div>
@@ -36,6 +38,8 @@
                             ans.num2    = 8;
 
                             ans.val     = ans.num1 * ans.num2;
+                        "ng-resettable-init="
+                            ans.showSolution = false;
                         ">
 
                         <div inbook-include="assets/scenes/3_01-operation_de_base/exercise-18-template.html"></div>
@@ -48,6 +52,8 @@
                             ans.num2    = 54;
 
                             ans.val     = ans.num1 * ans.num2;
+                        "ng-resettable-init="
+                            ans.showSolution = false;
                         ">
 
                         <div inbook-include="assets/scenes/3_01-operation_de_base/exercise-18-template.html"></div>
@@ -60,6 +66,8 @@
                             ans.num2    = 19;
 
                             ans.val     = ans.num1 * ans.num2;
+                        "ng-resettable-init="
+                            ans.showSolution = false;
                         ">
 
                         <div inbook-include="assets/scenes/3_01-operation_de_base/exercise-18-template.html"></div>
@@ -72,6 +80,8 @@
                             ans.num2    = 6;
 
                             ans.val     = ans.num1 * ans.num2;
+                        "ng-resettable-init="
+                            ans.showSolution = false;
                         ">
 
                         <div inbook-include="assets/scenes/3_01-operation_de_base/exercise-18-template.html"></div>
@@ -84,6 +94,8 @@
                             ans.num2    = 7;
 
                             ans.val     = ans.num1 * ans.num2;
+                        "ng-resettable-init="
+                            ans.showSolution = false;
                         ">
 
                         <div inbook-include="assets/scenes/3_01-operation_de_base/exercise-18-template.html"></div>
@@ -96,6 +108,8 @@
                             ans.num2    = 95;
 
                             ans.val     = ans.num1 * ans.num2;
+                        "ng-resettable-init="
+                            ans.showSolution = false;
                         ">
 
                         <div inbook-include="assets/scenes/3_01-operation_de_base/exercise-18-template.html"></div>
@@ -108,6 +122,8 @@
                             ans.num2    = 503;
 
                             ans.val     = ans.num1 * ans.num2;
+                        "ng-resettable-init="
+                            ans.showSolution = false;
                         ">
 
                         <div inbook-include="assets/scenes/3_01-operation_de_base/exercise-18-template.html"></div>
@@ -120,6 +136,8 @@
                             ans.num2    = 200;
 
                             ans.val     = ans.num1 * ans.num2;
+                        "ng-resettable-init="
+                            ans.showSolution = false;
                         ">
 
                         <div inbook-include="assets/scenes/3_01-operation_de_base/exercise-18-template.html"></div>
@@ -132,6 +150,8 @@
                             ans.num2    = 725;
 
                             ans.val     = ans.num1 * ans.num2;
+                        "ng-resettable-init="
+                            ans.showSolution = false;
                         ">
 
                         <div inbook-include="assets/scenes/3_01-operation_de_base/exercise-18-template.html"></div>
@@ -144,6 +164,8 @@
                             ans.num2    = 503;
 
                             ans.val     = ans.num1 * ans.num2;
+                        "ng-resettable-init="
+                            ans.showSolution = false;
                         ">
 
                         <div inbook-include="assets/scenes/3_01-operation_de_base/exercise-18-template.html"></div>
@@ -156,6 +178,8 @@
                             ans.num2    = 82;
 
                             ans.val     = ans.num1 * ans.num2;
+                        "ng-resettable-init="
+                            ans.showSolution = false;
                         ">
 
                         <div inbook-include="assets/scenes/3_01-operation_de_base/exercise-18-template.html"></div>
@@ -168,6 +192,8 @@
                             ans.num2    = 30;
 
                             ans.val     = ans.num1 * ans.num2;
+                        "ng-resettable-init="
+                            ans.showSolution = false;
                         ">
 
                         <div inbook-include="assets/scenes/3_01-operation_de_base/exercise-18-template.html"></div>
@@ -180,6 +206,8 @@
                             ans.num2    = 25;
 
                             ans.val     = ans.num1 * ans.num2;
+                        "ng-resettable-init="
+                            ans.showSolution = false;
                         ">
 
                         <div inbook-include="assets/scenes/3_01-operation_de_base/exercise-18-template.html"></div>
@@ -192,6 +220,8 @@
                             ans.num2    = 72;
 
                             ans.val     = ans.num1 * ans.num2;
+                        "ng-resettable-init="
+                            ans.showSolution = false;
                         ">
 
                         <div inbook-include="assets/scenes/3_01-operation_de_base/exercise-18-template.html"></div>
@@ -204,6 +234,8 @@
                             ans.num2    = 15;
 
                             ans.val     = ans.num1 * ans.num2;
+                        "ng-resettable-init="
+                            ans.showSolution = false;
                         ">
 
                         <div class="para">
@@ -214,8 +246,20 @@
 									class="type-small"
 									input-class="type-small"
 									on-correct="question.markAsCorrect()"
-									on-incorrect="question.markAsIncorrect()"></div>
+									on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
 						</div>
+
+                        <div vcollapse="!ans.showSolution">
+                            <div class="mt4">
+                                <div class="solution-header">
+                                    La solution:
+                                </div>
+                                <div class="solution-body">
+                                    {{ans.val}}
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="mt4">
 							<div inbook-nextbtn="question"></div>
 						</div>
@@ -229,6 +273,8 @@
                             ans.num3    = 2;
 
                             ans.val     = ans.num1 * ans.num2 * ans.num3;
+                        "ng-resettable-init="
+                            ans.showSolution = false;
                         ">
 
                         <div class="para">
@@ -239,8 +285,20 @@
 									class="type-small"
 									input-class="type-small"
 									on-correct="question.markAsCorrect()"
-									on-incorrect="question.markAsIncorrect()"></div>
+									on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
 						</div>
+
+                        <div vcollapse="!ans.showSolution">
+                            <div class="mt4">
+                                <div class="solution-header">
+                                    La solution:
+                                </div>
+                                <div class="solution-body">
+                                    {{ans.val}}
+                                </div>
+                            </div>
+                        </div>
+                        
                         <div class="mt4">
 							<div inbook-nextbtn="question"></div>
 						</div>

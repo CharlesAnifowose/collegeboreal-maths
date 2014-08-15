@@ -9,7 +9,7 @@
   				no-remove=true>
 
           <div class="exercise-num">
-            EXERCICE 15
+            EXERCICE 14
           </div>
 
           <div class="exercise-header">
@@ -23,7 +23,9 @@
   							ans.num1 	=	563;
   							ans.num2	=	21;
   							ans.val		=	ans.num1 - ans.num2;
-  						">
+  						"ng-resettable-init="
+                ans.showSolution = false;
+              ">
 					<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-14.2-template.html"></div>
   				</div>
 
@@ -33,7 +35,9 @@
   							ans.num1 	=	2887;
   							ans.num2	=	34;
   							ans.val		=	ans.num1 - ans.num2;
-  						">
+  						"ng-resettable-init="
+                ans.showSolution = false;
+              ">
 					<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-14.2-template.html"></div>
   				</div>
 
@@ -43,7 +47,9 @@
   							ans.num1 	=	38;
   							ans.num2	=	7;
   							ans.val		=	ans.num1 - ans.num2;
-  						">
+  						"ng-resettable-init="
+                ans.showSolution = false;
+              ">
 					<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-14.2-template.html"></div>
   				</div>
 
@@ -53,7 +59,9 @@
   							ans.num1 	=	148;
   							ans.num2	=	33;
   							ans.val		=	ans.num1 - ans.num2;
-  						">
+  						"ng-resettable-init="
+                ans.showSolution = false;
+              ">
 					<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-14.2-template.html"></div>
   				</div>
 
@@ -63,7 +71,9 @@
   							ans.num1 	=	153;
   							ans.num2	=	21;
   							ans.val		=	ans.num1 - ans.num2;
-  						">
+  						"ng-resettable-init="
+                ans.showSolution = false;
+              ">
 					<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-14.2-template.html"></div>
   				</div>
 
@@ -73,7 +83,9 @@
   							ans.num1 	=	987;
   							ans.num2	=	353;
   							ans.val		=	ans.num1 - ans.num2;
-  						">
+  						"ng-resettable-init="
+                ans.showSolution = false;
+              ">
 					<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-14.2-template.html"></div>
   				</div>
 
@@ -83,7 +95,9 @@
   							ans.num1 	=	5328;
   							ans.num2	=	4217;
   							ans.val		=	ans.num1 - ans.num2;
-  						">
+  						"ng-resettable-init="
+                ans.showSolution = false;
+              ">
 					<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-14.2-template.html"></div>
   				</div>
 
@@ -95,7 +109,9 @@
   							ans.num1 	=	26;
   							ans.num2	=	249;
   							ans.val		=	ans.num2 - ans.num1;
-  						">
+  						"ng-resettable-init="
+                ans.showSolution = false;
+              ">
 
   						<div class="para">
 	  						Soustrayez {{ans.num1}} de {{ans.num2}}
@@ -109,8 +125,19 @@
 									class="type-small"
 									input-class="type-small"
 									on-correct="question.markAsCorrect()"
-									on-incorrect="question.markAsIncorrect()"></div>
+									on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
   						</div>
+
+              <div vcollapse="!ans.showSolution">
+                <div class="mt4">
+                  <div class="solution-header">
+                    La solution:
+                  </div>
+                  <div class="solution-body">
+                    {{ans.val}}
+                  </div>
+                </div>
+              </div>
 
   						<div class="mt4">
 							<div inbook-nextbtn="question"></div>
@@ -123,7 +150,9 @@
   							ans.num1 	=	806;
   							ans.num2	=	1999;
   							ans.val		=	ans.num2 - ans.num1;
-  						">
+  						"ng-resettable-init="
+                ans.showSolution = false;
+              ">
 
   						<div class="para">
 	  						Soustrayez {{ans.num1}} de {{ans.num2}}
@@ -137,8 +166,19 @@
 									class="type-small"
 									input-class="type-small"
 									on-correct="question.markAsCorrect()"
-									on-incorrect="question.markAsIncorrect()"></div>
+									on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
   						</div>
+
+              <div vcollapse="!ans.showSolution">
+                <div class="mt4">
+                  <div class="solution-header">
+                    La solution:
+                  </div>
+                  <div class="solution-body">
+                    {{ans.val}}
+                  </div>
+                </div>
+              </div>
 
   						<div class="mt4">
 							<div inbook-nextbtn="question"></div>
@@ -151,7 +191,9 @@
   							ans.num1 	=	65;
   							ans.num2	=	169;
   							ans.val		=	ans.num2 - ans.num1;
-  						">
+  						"ng-resettable-init="
+                ans.showSolution = false;
+              ">
 
   						<div class="para">
 	  						Soustrayez {{ans.num1}} et {{ans.num2}}
@@ -165,12 +207,25 @@
 									class="type-small"
 									input-class="type-small"
 									on-correct="question.markAsCorrect()"
-									on-incorrect="question.markAsIncorrect()"></div>
+									on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
   						</div>
 
+              <div vcollapse="!ans.showSolution">
+                <div class="mt4">
+                  <div class="solution-header">
+                    La solution:
+                  </div>
+                  <div class="solution-body">
+                    {{ans.val}}
+                  </div>
+                </div>
+              </div>
+
+
+
   						<div class="mt4">
-							<div inbook-nextbtn="question"></div>
-						</div>
+  							<div inbook-nextbtn="question"></div>
+  						</div>
   				</div>
 
   		</div>

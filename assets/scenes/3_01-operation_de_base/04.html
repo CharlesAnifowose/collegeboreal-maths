@@ -1,7 +1,8 @@
-<div 	class="page-layout" 
-		ng-init="
-			imgUrl = 'http://d3mw5hjf8nr5ry.cloudfront.net/collegeboreal-sample/images/3_01-operation_de_base/';
-		">
+<div 	class="page-layout" style="width: 700px;">
+
+		<div class="header-section"> 
+			Un grand nombre
+		</div>
 
 		<div class="para">
 			Un nombre est composé de chiffres. Ainsi, le nombre 243 est
@@ -11,11 +12,10 @@
 		</div>
 
 		<div class="exemple-frame">
-
-			<div class="ib vtop">
+			<div class="exemple-header">
 				Exemple :
 			</div>
-			<div class="ib vtop">
+			<div>
 				<div>7 200 (sept mille deux cents)</div>
 				<div>23 440 (vingt-trois mille quatre cent quarante)</div>
 			</div>
@@ -32,9 +32,79 @@
 			position qu'il occupe dans un nombre.
 		</div>
 
-		<div class="center">
-			<img ng-src="{{imgUrl}}diagram_02.png" />
-		</div>
+		<div id="place-value-table" class="place-value-table">
+	        <table>
+	        	<tr>
+		            <td colspan="3">
+		            	<div>Millions</div>
+		            </td>
+		            <td colspan="3">
+		            	<div>Milliers</div>
+		            </td>
+		            <td colspan="3">
+		            	<div>Unités</div>
+		            </td>
+	       		</tr>
+	            <tr>
+	            	<td>
+		            	<div>centaines de millions</div>
+		            </td>
+		            <td>
+		            	<div>dizaines de millions</div>
+		            </td>
+		            <td>
+		            	<div>unités de millions</div>
+		            </td>
+	                <td>
+	                    <div>centaines de mille</div>
+	                </td>
+	                <td>
+	                    <div>dizaines de mille</div>
+	                </td>
+	                <td>
+	                    <div>unités de mille</div>
+	                </td>
+	                <td>
+	                    <div>centaines</div>
+	                </td>
+	                <td>
+	                    <div>dizaines</div>
+	                </td>
+	                <td>
+	                    <div>unités</div>
+	                </td>
+	       		</tr>
+	       		<tr>
+	            	<td>
+		            	<div></div>
+		            </td>
+		            <td>
+		            	<div></div>
+		            </td>
+		            <td>
+		            	<div></div>
+		            </td>
+	                <td>
+	                    <div>4</div>
+	                </td>
+	                <td>
+	                    <div>2</div>
+	                </td>
+	                <td>
+	                    <div>8</div>
+	                </td>
+	                <td>
+	                    <div>5</div>
+	                </td>
+	                <td>
+	                    <div>7</div>
+	                </td>
+	                <td>
+	                    <div>3</div>
+	                </td>
+	       		</tr>
+	       	</table>
+	    </div>
 
 		<div class="para">
 			Ainsi, dans le nombre 428 573,
@@ -44,4 +114,9 @@
 				<li>le chiffre 7 occupe la position des dizaines; sa valeur est 70.</li>
 			</ul>
 		</div>
+
+		<div id="continue" class="mt6 center">
+			<div inbook-nextbtn="scene"></div>
+		</div>
+		
 </div>

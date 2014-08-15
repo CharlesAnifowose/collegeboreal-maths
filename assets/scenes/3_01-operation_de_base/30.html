@@ -22,7 +22,9 @@
   							ans.num1 	=	72;
   							ans.num2	=	36;
   							ans.val		=	ans.num1 - ans.num2;
-  						">
+  						"ng-resettable-init="
+                ans.showSolution = false;
+              ">
 					<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-15.2-template.html"></div>
   				</div>
 
@@ -32,7 +34,9 @@
   							ans.num1 	=	17;
   							ans.num2	=	8;
   							ans.val		=	ans.num1 - ans.num2;
-  						">
+  						"ng-resettable-init="
+                ans.showSolution = false;
+              ">
 					<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-15.2-template.html"></div>
   				</div>
 
@@ -42,7 +46,9 @@
   							ans.num1 	=	46;
   							ans.num2	=	29;
   							ans.val		=	ans.num1 - ans.num2;
-  						">
+  						"ng-resettable-init="
+                ans.showSolution = false;
+              ">
 					<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-15.2-template.html"></div>
   				</div>
 
@@ -52,7 +58,9 @@
   							ans.num1 	=	105;
   							ans.num2	=	57;
   							ans.val		=	ans.num1 - ans.num2;
-  						">
+  						"ng-resettable-init="
+                ans.showSolution = false;
+              ">
 					<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-15.2-template.html"></div>
   				</div>
 
@@ -62,7 +70,9 @@
   							ans.num1 	=	62;
   							ans.num2	=	53;
   							ans.val		=	ans.num1 - ans.num2;
-  						">
+  						"ng-resettable-init="
+                ans.showSolution = false;
+              ">
 					<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-15.2-template.html"></div>
   				</div>
 
@@ -72,7 +82,9 @@
   							ans.num1 	=	129;
   							ans.num2	=	39;
   							ans.val		=	ans.num1 - ans.num2;
-  						">
+  						"ng-resettable-init="
+                ans.showSolution = false;
+              ">
 					<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-15.2-template.html"></div>
   				</div>
 
@@ -82,7 +94,9 @@
   							ans.num1 	=	984;
   							ans.num2	=	92;
   							ans.val		=	ans.num1 - ans.num2;
-  						">
+  						"ng-resettable-init="
+                ans.showSolution = false;
+              ">
 					<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-15.2-template.html"></div>
   				</div>
 
@@ -92,7 +106,9 @@
   							ans.num1 	=	347;
   							ans.num2	=	26;
   							ans.val		=	ans.num1 - ans.num2;
-  						">
+  						"ng-resettable-init="
+                ans.showSolution = false;
+              ">
 					<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-15.2-template.html"></div>
   				</div>
 
@@ -102,7 +118,9 @@
   							ans.num1 	=	2350;
   							ans.num2	=	5;
   							ans.val		=	ans.num1 - ans.num2;
-  						">
+  						"ng-resettable-init="
+                ans.showSolution = false;
+              ">
 					<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-15.2-template.html"></div>
   				</div>
 
@@ -112,7 +130,9 @@
   							ans.num1 	=	1200;
   							ans.num2	=	29;
   							ans.val		=	ans.num1 - ans.num2;
-  						">
+  						"ng-resettable-init="
+                ans.showSolution = false;
+              ">
 					<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-15.2-template.html"></div>
   				</div>
 
@@ -122,7 +142,9 @@
   							ans.num1 	=	965;
   							ans.num2	=	368;
   							ans.val		=	ans.num1 - ans.num2;
-  						">
+  						"ng-resettable-init="
+                ans.showSolution = false;
+              ">
 						<div class="type-small">
 							
 							<div class="para">
@@ -134,8 +156,19 @@
 										class="type-small bold"
 										input-class="type-small bold"
 										on-correct="question.markAsCorrect()"
-										on-incorrect="question.markAsIncorrect()"></div>
+										on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
 							</div>
+
+              <div vcollapse="!ans.showSolution">
+                <div class="mt4">
+                  <div class="solution-header">
+                    La solution:
+                  </div>
+                  <div class="solution-body">
+                    {{ans.val}}
+                  </div>
+                </div>
+              </div>
 
 							<div class="mt4">
 								<div inbook-nextbtn="question"></div>
@@ -149,7 +182,9 @@
   							ans.num1 	=	198;
   							ans.num2	=	341;
   							ans.val		=	ans.num1 - ans.num2;
-  						">
+  						"ng-resettable-init="
+                ans.showSolution = false;
+              ">
 						<div class="type-small">
 							
 							<div class="para">
@@ -161,8 +196,19 @@
 										class="type-small bold"
 										input-class="type-small bold"
 										on-correct="question.markAsCorrect()"
-										on-incorrect="question.markAsIncorrect()"></div>
+										on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
 							</div>
+
+              <div vcollapse="!ans.showSolution">
+                <div class="mt4">
+                  <div class="solution-header">
+                    La solution:
+                  </div>
+                  <div class="solution-body">
+                    {{ans.val}}
+                  </div>
+                </div>
+              </div>
 
 							<div class="mt4">
 								<div inbook-nextbtn="question"></div>
@@ -176,7 +222,9 @@
   							ans.num1 	=	472;
   							ans.num2	=	1080;
   							ans.val		=	ans.num2 - ans.num1;
-  						">
+  						"ng-resettable-init="
+                ans.showSolution = false;
+              ">
 						<div class="type-small">
 							
 							<div class="para">
@@ -188,16 +236,25 @@
 										class="type-small bold"
 										input-class="type-small bold"
 										on-correct="question.markAsCorrect()"
-										on-incorrect="question.markAsIncorrect()"></div>
+										on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
 							</div>
+
+              <div vcollapse="!ans.showSolution">
+                <div class="mt4">
+                  <div class="solution-header">
+                    La solution:
+                  </div>
+                  <div class="solution-body">
+                    {{ans.val}}
+                  </div>
+                </div>
+              </div>
 
 							<div class="mt4">
 								<div inbook-nextbtn="question"></div>
 							</div>
 						</div>
   				</div>
-
-
 
   		</div>
 </div>

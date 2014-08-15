@@ -12,29 +12,31 @@
 			contient 2 chiffres ou plus, on procède comme suit :
 		</div>
 
-		<div class="inbook-grid-layout">
+		<div class="para">
 
-			<div>
-				<div class="col3 bold">
+			<div class="bold">
+				<div class="ib vbottom" style="width:25%;">
 					Étapes de l'opération
 				</div>
-				<div class="col7 bold">
+				<div class="ib vbottom" style="width:70%;">
 					Description
 				</div>
 			</div>
+
 			<div>
-				<div class="col3">
+				<div class="ib vtop" style="width:25%;">
 					<img ng-src="{{imgUrl}}diagram_10.png" />
 				</div>
-				<div class="col7">
+				<div class="ib vtop" style="width:70%;">
 					Comme dans l'exemple précédent, on commence par multiplier 32 par 3; on obtient 96
 				</div>
 			</div>
+
 			<div>
-				<div class="col3">
+				<div class="ib vtop" style="width:25%;">
 					<img ng-src="{{imgUrl}}diagram_11.png" />
 				</div>
-				<div class="col7">
+				<div class="ib vtop" style="width:70%;">
 					<div class="mt1">
 						On multiplie ensuite 32 par 1; on obtient 32.
 					</div>
@@ -43,14 +45,20 @@
 					</div>
 				</div>
 			</div>
+
 			<div>
-				<div class="col3">
+				<div class="ib vtop" style="width:25%;">
 					<img ng-src="{{imgUrl}}diagram_12.png" />
 				</div>
-				<div class="col7">
+				<div class="ib vtop" style="width:70%;">
 					On additionne les 2 produits.
 				</div>
 			</div>
 
 		</div>
+
+		<div id="continue" class="mt6 center">
+			<div inbook-nextbtn="scene"></div>
+		</div>
+
 </div>

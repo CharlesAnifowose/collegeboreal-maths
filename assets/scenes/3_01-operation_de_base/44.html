@@ -16,7 +16,6 @@
   					Résoudre. Attention à l'ordre des opérations!
   				</div>
 
-
   				<div    inbook-questionseries-item level="1"
                   class="type-small bold"
                   ng-init="
@@ -27,6 +26,8 @@
                   	ans.num3 = 12;
 
                   	ans.val = ans.num1 * ans.num2 + ans.num3;
+                  "ng-resettable-init="
+                    ans.showSolution = false;
                   ">
 
                   <div class="ib">
@@ -52,8 +53,20 @@
                         class="type-small"
                         input-class="type-small"
                         on-correct="question.markAsCorrect()"
-                        on-incorrect="question.markAsIncorrect()"></div>
+                        on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
                   </div>
+
+                  <div vcollapse="!ans.showSolution">
+                      <div class="mt4">
+                          <div class="solution-header">
+                              La solution:
+                          </div>
+                          <div class="solution-body">
+                              {{ans.val}}
+                          </div>
+                      </div>
+                  </div>
+
                   <div class="mt4">
                     <div inbook-nextbtn="question"></div>
                   </div>  
@@ -69,6 +82,8 @@
                     ans.num3 = 2;
 
                     ans.val = ans.num1 / ans.num2 + ans.num3;
+                  "ng-resettable-init="
+                    ans.showSolution = false;
                   ">
 
                   <div class="ib">
@@ -94,8 +109,20 @@
                         class="type-small"
                         input-class="type-small"
                         on-correct="question.markAsCorrect()"
-                        on-incorrect="question.markAsIncorrect()"></div>
+                        on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
                   </div>
+
+                  <div vcollapse="!ans.showSolution">
+                      <div class="mt4">
+                          <div class="solution-header">
+                              La solution:
+                          </div>
+                          <div class="solution-body">
+                              {{ans.val}}
+                          </div>
+                      </div>
+                  </div>
+
                   <div class="mt4">
                     <div inbook-nextbtn="question"></div>
                   </div>  
@@ -111,6 +138,8 @@
                     ans.num3 = 4;
 
                     ans.val = ans.num1 / ans.num2 - ans.num3;
+                  "ng-resettable-init="
+                    ans.showSolution = false;
                   ">
 
                   <div class="ib">
@@ -136,8 +165,20 @@
                         class="type-small"
                         input-class="type-small"
                         on-correct="question.markAsCorrect()"
-                        on-incorrect="question.markAsIncorrect()"></div>
+                        on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
                   </div>
+
+                  <div vcollapse="!ans.showSolution">
+                      <div class="mt4">
+                          <div class="solution-header">
+                              La solution:
+                          </div>
+                          <div class="solution-body">
+                              {{ans.val}}
+                          </div>
+                      </div>
+                  </div>
+
                   <div class="mt4">
                     <div inbook-nextbtn="question"></div>
                   </div>  
@@ -154,6 +195,8 @@
                     ans.num4 = 6;
 
                     ans.val = ans.num1 + ans.num2 + ans.num3 * ans.num4;
+                  "ng-resettable-init="
+                    ans.showSolution = false;
                   ">
 
                   <div class="ib">
@@ -185,8 +228,20 @@
                         class="type-small"
                         input-class="type-small"
                         on-correct="question.markAsCorrect()"
-                        on-incorrect="question.markAsIncorrect()"></div>
+                        on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
                   </div>
+
+                  <div vcollapse="!ans.showSolution">
+                      <div class="mt4">
+                          <div class="solution-header">
+                              La solution:
+                          </div>
+                          <div class="solution-body">
+                              {{ans.val}}
+                          </div>
+                      </div>
+                  </div>
+
                   <div class="mt4">
                     <div inbook-nextbtn="question"></div>
                   </div>  
@@ -203,6 +258,8 @@
                     ans.num4 = 4;
 
                     ans.val = ans.num1 - ans.num2 / ans.num3 + ans.num4;
+                  "ng-resettable-init="
+                    ans.showSolution = false;
                   ">
 
                   <div class="ib">
@@ -234,8 +291,20 @@
                         class="type-small"
                         input-class="type-small"
                         on-correct="question.markAsCorrect()"
-                        on-incorrect="question.markAsIncorrect()"></div>
+                        on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
                   </div>
+
+                  <div vcollapse="!ans.showSolution">
+                      <div class="mt4">
+                          <div class="solution-header">
+                              La solution:
+                          </div>
+                          <div class="solution-body">
+                              {{ans.val}}
+                          </div>
+                      </div>
+                  </div>
+
                   <div class="mt4">
                     <div inbook-nextbtn="question"></div>
                   </div>  
@@ -251,6 +320,8 @@
                     ans.num3 = 12;
 
                     ans.val = ans.num1 * ans.num2 + ans.num3;
+                  "ng-resettable-init="
+                    ans.showSolution = false;
                   ">
 
                   <div class="ib">
@@ -276,8 +347,20 @@
                         class="type-small"
                         input-class="type-small"
                         on-correct="question.markAsCorrect()"
-                        on-incorrect="question.markAsIncorrect()"></div>
+                        on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
                   </div>
+
+                  <div vcollapse="!ans.showSolution">
+                      <div class="mt4">
+                          <div class="solution-header">
+                              La solution:
+                          </div>
+                          <div class="solution-body">
+                              {{ans.val}}
+                          </div>
+                      </div>
+                  </div>
+
                   <div class="mt4">
                     <div inbook-nextbtn="question"></div>
                   </div>  
@@ -293,6 +376,8 @@
                     ans.num3 = 2;
 
                     ans.val = ans.num1 / ans.num2 - ans.num3;
+                  "ng-resettable-init="
+                    ans.showSolution = false;
                   ">
 
                   <div class="ib">
@@ -318,8 +403,20 @@
                         class="type-small"
                         input-class="type-small"
                         on-correct="question.markAsCorrect()"
-                        on-incorrect="question.markAsIncorrect()"></div>
+                        on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
                   </div>
+
+                  <div vcollapse="!ans.showSolution">
+                      <div class="mt4">
+                          <div class="solution-header">
+                              La solution:
+                          </div>
+                          <div class="solution-body">
+                              {{ans.val}}
+                          </div>
+                      </div>
+                  </div>
+
                   <div class="mt4">
                     <div inbook-nextbtn="question"></div>
                   </div>  
@@ -336,6 +433,8 @@
                     ans.num4 = 3;
 
                     ans.val = ans.num1 * ans.num2 + ans.num3 - ans.num4;
+                  "ng-resettable-init="
+                    ans.showSolution = false;
                   ">
 
                   <div class="ib">
@@ -367,8 +466,20 @@
                         class="type-small"
                         input-class="type-small"
                         on-correct="question.markAsCorrect()"
-                        on-incorrect="question.markAsIncorrect()"></div>
+                        on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
                   </div>
+
+                  <div vcollapse="!ans.showSolution">
+                      <div class="mt4">
+                          <div class="solution-header">
+                              La solution:
+                          </div>
+                          <div class="solution-body">
+                              {{ans.val}}
+                          </div>
+                      </div>
+                  </div>
+
                   <div class="mt4">
                     <div inbook-nextbtn="question"></div>
                   </div>  
@@ -384,6 +495,8 @@
                     ans.num3 = 12;
 
                     ans.val = ans.num1 + ans.num2 / ans.num3;
+                  "ng-resettable-init="
+                    ans.showSolution = false;
                   ">
 
                   <div class="ib">
@@ -409,8 +522,20 @@
                         class="type-small"
                         input-class="type-small"
                         on-correct="question.markAsCorrect()"
-                        on-incorrect="question.markAsIncorrect()"></div>
+                        on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
                   </div>
+
+                  <div vcollapse="!ans.showSolution">
+                      <div class="mt4">
+                          <div class="solution-header">
+                              La solution:
+                          </div>
+                          <div class="solution-body">
+                              {{ans.val}}
+                          </div>
+                      </div>
+                  </div>
+
                   <div class="mt4">
                     <div inbook-nextbtn="question"></div>
                   </div>  
@@ -427,6 +552,8 @@
                     ans.num4 = 5;
 
                     ans.val = ans.num1 / ans.num2 + ans.num3 / ans.num4;
+                  "ng-resettable-init="
+                    ans.showSolution = false;
                   ">
 
                   <div class="ib">
@@ -458,8 +585,20 @@
                         class="type-small"
                         input-class="type-small"
                         on-correct="question.markAsCorrect()"
-                        on-incorrect="question.markAsIncorrect()"></div>
+                        on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
                   </div>
+
+                    <div vcollapse="!ans.showSolution">
+                        <div class="mt4">
+                            <div class="solution-header">
+                                La solution:
+                            </div>
+                            <div class="solution-body">
+                                {{ans.val}}
+                            </div>
+                        </div>
+                    </div>
+
                   <div class="mt4">
                     <div inbook-nextbtn="question"></div>
                   </div>  

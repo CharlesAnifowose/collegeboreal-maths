@@ -1,7 +1,31 @@
-<div 	class="page-layout" 
+<div 	gseq gscroll
+		class="page-layout" 
 		ng-init="
 			imgUrl = 'http://d3mw5hjf8nr5ry.cloudfront.net/collegeboreal-sample/images/3_01-operation_de_base/';
 		">
+
+	<div gdirections>
+		<div el=".header-module" 	 duration="1" 			     ease="power4-in-out" presets="[fromTransparent,fromBottom]"></div>
+		<div el=".header-module-sub" duration="1" offset="-=0.3" ease="power4-in-out" presets="[fromTransparent,fromBottom]"></div>		
+		<div el=".header-section" 	 duration="1" offset="-=0.6" ease="power4-in-out" presets="[fromTransparent,fromBottom]"></div>
+
+		<div duration="0.85"></div>
+
+		<div el=".anim-01" duration="0.9" offset="-=0.4" presets="[fromTransparent]"></div>
+			
+		<div duration="2.5"></div>
+
+		<div el=".anim-02" duration="0.9" offset="-=0.9" presets="[fromTransparent]"></div>
+
+		<div duration="2.5"></div>
+
+		<div el=".anim-03" duration="0.9" offset="-=0.4" presets="[fromTransparent]"></div>
+
+		<div duration="2.5"></div>
+
+		<div el="#continue" duration="0.8" presets="[fromTransparent,fromBottom,fromRotation]"></div>
+
+	</div>
 		
 	<div class="header-module">	
 		Module 1
@@ -15,35 +39,52 @@
 		Les nombres naturels
 	</div>
 
-	<div class="para">
+	<div class="para anim-01">
 		Les nombres que nous utilisons tous les jours, par exemple pour compter, s'appellent nombres naturels.
 	</div>
 
-	<div class="para">
+	<div class="para anim-01">
 		Les nombres naturels comprennent 0 et tous les autres nombres entiers plus
 		grands que 0 c'est-à-dire 1, 2, 3, 4, ...jusqu'à l'infini.
 	</div>
 
-	<div class="para">
+	<div class="para anim-02">
 		On note l'ensemble des nombres naturels ainsi :
 	</div>
 
-	<div class="center">
-		<img ng-src="{{imgUrl}}diagram_01.png" />
+	<div class="formula-box anim-02">
+		<!-- <img ng-src="{{imgUrl}}diagram_01.png" /> -->
+		<div class="ib">
+			<span math>N = {</span>
+		</div>
+		<div class="ib type-small">
+			<span math>0,1,2,3,4 ...</span>
+		</div>
+		<div class="ib">
+			<span math> } </span>
+		</div>
 	</div>
 
-	<div class="para">
+	<div class="para anim-03">
 		Les trois petits points, que l'on appelle points de suspension, nous indiquent
 		que les nombres continuent jusqu'à l'infini.
 	</div>
 
-	<div class="para">
-		On peut représenter les nombres naturels sur une droite.
+	<div class="para anim-03">
+		On peut représenter les nombres naturels sur une droite:
 	</div>
 
-	<div class="para">
+	<div class="para center anim-03">
+		<img ng-src="{{imgUrl}}diagram_30.png" />
+	</div>
+
+	<div class="para anim-03">
 		Cette droite se nomme <span class="bold">droite numérique</span>. La pointe de flèche nous indique
 		qu'on peut énumérer les nombres jusqu'à l'infini.
+	</div>
+
+	<div id="continue" class="mt6 center">
+		<div inbook-nextbtn="scene"></div>
 	</div>
 
 </div>

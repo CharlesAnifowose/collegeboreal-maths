@@ -22,6 +22,8 @@
 	  						ans.num1 		=  	57;
 	  						ans.num2 		=  	62;
 	  						ans.val 		=	ans.num1 + ans.num2; 
+	  					"ng-resettable-init="
+	  						ans.showSolution = false;
 	  					">
 
 	  					<div class="mt2 type-small bold">
@@ -52,10 +54,20 @@
 											class="type-small"
 											input-class="type-small"
 											on-correct="question.markAsCorrect()"
-											on-incorrect="question.markAsIncorrect()"></div>
+											on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
 								</div>
 							</div>
 
+							<div vcollapse="!ans.showSolution">
+								<div class="mt4">
+									<div class="solution-header">
+										La solution:
+									</div>
+									<div class="solution-body">
+										{{ans.val}}
+									</div>
+								</div>
+							</div>
 
 							<div class="mt4">
 								<div inbook-nextbtn="question"></div>
@@ -69,6 +81,8 @@
 	  						ans.num1 		=  	73;
 	  						ans.num2 		=  	47;
 	  						ans.val 		=	ans.num1 + ans.num2; 
+	  					"ng-resettable-init="
+	  						ans.showSolution = false;
 	  					">
 
 	  					<div class="mt2 type-small bold">
@@ -99,7 +113,18 @@
 											class="type-small"
 											input-class="type-small"
 											on-correct="question.markAsCorrect()"
-											on-incorrect="question.markAsIncorrect()"></div>
+											on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
+								</div>
+							</div>
+
+							<div vcollapse="!ans.showSolution">
+								<div class="mt4">
+									<div class="solution-header">
+										La solution:
+									</div>
+									<div class="solution-body">
+										{{ans.val}}
+									</div>
 								</div>
 							</div>
 
@@ -115,6 +140,8 @@
 	  						ans.num1 		=  	617;
 	  						ans.num2 		=  	329;
 	  						ans.val 		=	ans.num1 + ans.num2; 
+	  					"ng-resettable-init="
+	  						ans.showSolution = false;
 	  					">
 
 	  					<div class="mt2 type-small bold">
@@ -145,10 +172,20 @@
 											class="type-small"
 											input-class="type-small"
 											on-correct="question.markAsCorrect()"
-											on-incorrect="question.markAsIncorrect()"></div>
+											on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
 								</div>
 							</div>
 
+							<div vcollapse="!ans.showSolution">
+								<div class="mt4">
+									<div class="solution-header">
+										La solution:
+									</div>
+									<div class="solution-body">
+										{{ans.val}}
+									</div>
+								</div>
+							</div>
 
 							<div class="mt4">
 								<div inbook-nextbtn="question"></div>
@@ -163,6 +200,8 @@
 	  						ans.num2 		=  	709;
 	  						ans.num3 		=  	86;
 	  						ans.val 		=	ans.num1 + ans.num2 + ans.num3; 
+	  					"ng-resettable-init="
+	  						ans.showSolution = false;
 	  					">
 
 	  					<div class="mt2 type-small bold">
@@ -201,7 +240,18 @@
 											class="type-small"
 											input-class="type-small"
 											on-correct="question.markAsCorrect()"
-											on-incorrect="question.markAsIncorrect()"></div>
+											on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
+								</div>
+							</div>
+
+							<div vcollapse="!ans.showSolution">
+								<div class="mt4">
+									<div class="solution-header">
+										La solution:
+									</div>
+									<div class="solution-body">
+										{{ans.val}}
+									</div>
 								</div>
 							</div>
 
@@ -218,6 +268,8 @@
 	  						ans.num2 		=  	28;
 	  						ans.num3 		=  	691;
 	  						ans.val 		=	ans.num1 + ans.num2 + ans.num3; 
+	  					"ng-resettable-init="
+	  						ans.showSolution = false;
 	  					">
 
 	  					<div class="mt2 type-small bold">
@@ -256,7 +308,18 @@
 											class="type-small"
 											input-class="type-small"
 											on-correct="question.markAsCorrect()"
-											on-incorrect="question.markAsIncorrect()"></div>
+											on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
+								</div>
+							</div>
+
+							<div vcollapse="!ans.showSolution">
+								<div class="mt4">
+									<div class="solution-header">
+										La solution:
+									</div>
+									<div class="solution-body">
+										{{ans.val}}
+									</div>
 								</div>
 							</div>
 
@@ -273,6 +336,8 @@
 	  						ans.num2 		=  	537;
 	  						ans.num3 		=  	372;
 	  						ans.val 		=	ans.num1 + ans.num2 + ans.num3; 
+	  					"ng-resettable-init="
+	  						ans.showSolution = false;
 	  					">
 
 	  					<div class="mt2 type-small bold">
@@ -311,7 +376,18 @@
 											class="type-small"
 											input-class="type-small"
 											on-correct="question.markAsCorrect()"
-											on-incorrect="question.markAsIncorrect()"></div>
+											on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
+								</div>
+							</div>	
+
+							<div vcollapse="!ans.showSolution">
+								<div class="mt4">
+									<div class="solution-header">
+										La solution:
+									</div>
+									<div class="solution-body">
+										{{ans.val}}
+									</div>
 								</div>
 							</div>
 
@@ -327,6 +403,8 @@
 	  						ans.num1 		=  	3816;
 	  						ans.num2 		=  	427;
 	  						ans.val 		=	ans.num1 + ans.num2; 
+	  					"ng-resettable-init="
+	  						ans.showSolution = false;
 	  					">
 
 	  					<div class="mt2 type-small bold">
@@ -357,7 +435,18 @@
 											class="type-small"
 											input-class="type-small"
 											on-correct="question.markAsCorrect()"
-											on-incorrect="question.markAsIncorrect()"></div>
+											on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
+								</div>
+							</div>
+
+							<div vcollapse="!ans.showSolution">
+								<div class="mt4">
+									<div class="solution-header">
+										La solution:
+									</div>
+									<div class="solution-body">
+										{{ans.val}}
+									</div>
 								</div>
 							</div>
 
@@ -374,6 +463,8 @@
 	  						ans.num2 		=  	4927;
 	  						ans.num3 		=  	6939;
 	  						ans.val 		=	ans.num1 + ans.num2 + ans.num3; 
+	  					"ng-resettable-init="
+	  						ans.showSolution = false;
 	  					">
 
 	  					<div class="mt2 type-small bold">
@@ -412,7 +503,18 @@
 											class="type-small"
 											input-class="type-small"
 											on-correct="question.markAsCorrect()"
-											on-incorrect="question.markAsIncorrect()"></div>
+											on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
+								</div>
+							</div>
+
+							<div vcollapse="!ans.showSolution">
+								<div class="mt4">
+									<div class="solution-header">
+										La solution:
+									</div>
+									<div class="solution-body">
+										{{ans.val}}
+									</div>
 								</div>
 							</div>
 
@@ -429,6 +531,8 @@
 	  						ans.num2 		=  	4188;
 	  						ans.num3 		=  	7667;
 	  						ans.val 		=	ans.num1 + ans.num2 + ans.num3; 
+	  					"ng-resettable-init="
+	  						ans.showSolution = false;
 	  					">
 
 	  					<div class="mt2 type-small bold">
@@ -467,7 +571,18 @@
 											class="type-small"
 											input-class="type-small"
 											on-correct="question.markAsCorrect()"
-											on-incorrect="question.markAsIncorrect()"></div>
+											on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
+								</div>
+							</div>
+
+							<div vcollapse="!ans.showSolution">
+								<div class="mt4">
+									<div class="solution-header">
+										La solution:
+									</div>
+									<div class="solution-body">
+										{{ans.val}}
+									</div>
 								</div>
 							</div>
 
@@ -485,6 +600,8 @@
 	  						ans.num3 		=  	2986;
 	  						ans.num4 		=  	37;
 	  						ans.val 		=	ans.num1 + ans.num2 + ans.num3 + ans.num4; 
+	  					"ng-resettable-init="
+	  						ans.showSolution = false;
 	  					">
 	  					<div class="mt2 type-small bold">
 		  					<div class="ib">
@@ -507,8 +624,20 @@
 										class="type-small"
 										input-class="type-small"
 										on-correct="question.markAsCorrect()"
-										on-incorrect="question.markAsIncorrect()"></div>
+										on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
 		  					</div>
+
+		  					<div vcollapse="!ans.showSolution">
+								<div class="mt4">
+									<div class="solution-header">
+										La solution:
+									</div>
+									<div class="solution-body">
+										{{ans.val}}
+									</div>
+								</div>
+							</div>
+
 	  						<div class="mt4">
 								<div inbook-nextbtn="question"></div>
 							</div>
@@ -523,6 +652,8 @@
 	  						ans.num3 		=  	892;
 	  						ans.num4 		=  	295;
 	  						ans.val 		=	ans.num1 + ans.num2 + ans.num3 + ans.num4; 
+	  					"ng-resettable-init="
+	  						ans.showSolution = false;
 	  					">
 	  					<div class="mt2 type-small bold">
 		  					<div class="ib">
@@ -545,8 +676,20 @@
 										class="type-small"
 										input-class="type-small"
 										on-correct="question.markAsCorrect()"
-										on-incorrect="question.markAsIncorrect()"></div>
+										on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
 		  					</div>
+
+		  					<div vcollapse="!ans.showSolution">
+								<div class="mt4">
+									<div class="solution-header">
+										La solution:
+									</div>
+									<div class="solution-body">
+										{{ans.val}}
+									</div>
+								</div>
+							</div>
+
 	  						<div class="mt4">
 								<div inbook-nextbtn="question"></div>
 							</div>
@@ -560,6 +703,8 @@
 	  						ans.num2 		=  	8921;
 	  						ans.num3 		=  	4294;
 	  						ans.val 		=	ans.num1 + ans.num2 + ans.num3; 
+	  					"ng-resettable-init="
+	  						ans.showSolution = false;
 	  					">
 	  					<div class="mt2 type-small bold">
 		  					<div class="ib">
@@ -579,8 +724,20 @@
 										class="type-small"
 										input-class="type-small"
 										on-correct="question.markAsCorrect()"
-										on-incorrect="question.markAsIncorrect()"></div>
+										on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
 		  					</div>
+
+		  					<div vcollapse="!ans.showSolution">
+								<div class="mt4">
+									<div class="solution-header">
+										La solution:
+									</div>
+									<div class="solution-body">
+										{{ans.val}}
+									</div>
+								</div>
+							</div>
+
 	  						<div class="mt4">
 								<div inbook-nextbtn="question"></div>
 							</div>
@@ -595,6 +752,8 @@
 	  						ans.num3 		=  	6;
 	  						ans.num4 		=  	2;
 	  						ans.val 		=	ans.num1 + ans.num2 + ans.num3 + ans.num4; 
+	  					"ng-resettable-init="
+	  						ans.showSolution = false;
 	  					">
 	  					<div class="mt2 type-small bold">
 		  					<div class="ib">
@@ -617,8 +776,20 @@
 										class="type-small"
 										input-class="type-small"
 										on-correct="question.markAsCorrect()"
-										on-incorrect="question.markAsIncorrect()"></div>
+										on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
 		  					</div>
+
+		  					<div vcollapse="!ans.showSolution">
+								<div class="mt4">
+									<div class="solution-header">
+										La solution:
+									</div>
+									<div class="solution-body">
+										{{ans.val}}
+									</div>
+								</div>
+							</div>
+
 	  						<div class="mt4">
 								<div inbook-nextbtn="question"></div>
 							</div>
@@ -633,6 +804,8 @@
 	  						ans.num3 		=  	45;
 	  						ans.num4 		=  	8;
 	  						ans.val 		=	ans.num1 + ans.num2 + ans.num3 + ans.num4; 
+	  					"ng-resettable-init="
+	  						ans.showSolution = false;
 	  					">
 	  					<div class="mt2 type-small bold">
 		  					<div class="ib">
@@ -655,8 +828,20 @@
 										class="type-small"
 										input-class="type-small"
 										on-correct="question.markAsCorrect()"
-										on-incorrect="question.markAsIncorrect()"></div>
+										on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
 		  					</div>
+
+		  					<div vcollapse="!ans.showSolution">
+								<div class="mt4">
+									<div class="solution-header">
+										La solution:
+									</div>
+									<div class="solution-body">
+										{{ans.val}}
+									</div>
+								</div>
+							</div>
+
 	  						<div class="mt4">
 								<div inbook-nextbtn="question"></div>
 							</div>
@@ -669,6 +854,8 @@
 	  						ans.num1 		=  	5847;
 	  						ans.num2 		=  	589;
 	  						ans.val 		=	ans.num1 + ans.num2; 
+	  					"ng-resettable-init="
+	  						ans.showSolution = false;
 	  					">
 	  					<div class="mt2 type-small bold">
 		  					<div class="ib">
@@ -685,8 +872,20 @@
 										class="type-small"
 										input-class="type-small"
 										on-correct="question.markAsCorrect()"
-										on-incorrect="question.markAsIncorrect()"></div>
+										on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
 		  					</div>
+
+		  					<div vcollapse="!ans.showSolution">
+								<div class="mt4">
+									<div class="solution-header">
+										La solution:
+									</div>
+									<div class="solution-body">
+										{{ans.val}}
+									</div>
+								</div>
+							</div>
+
 	  						<div class="mt4">
 								<div inbook-nextbtn="question"></div>
 							</div>
@@ -699,6 +898,8 @@
 	  						ans.num1 		=  	228;
 	  						ans.num2 		=  	12406;
 	  						ans.val 		=	ans.num1 + ans.num2; 
+	  					"ng-resettable-init="
+	  						ans.showSolution = false;
 	  					">
 	  					<div class="mt2 type-small bold">
 		  					<div class="ib">
@@ -715,8 +916,20 @@
 										class="type-small"
 										input-class="type-small"
 										on-correct="question.markAsCorrect()"
-										on-incorrect="question.markAsIncorrect()"></div>
+										on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
 		  					</div>
+
+		  					<div vcollapse="!ans.showSolution">
+								<div class="mt4">
+									<div class="solution-header">
+										La solution:
+									</div>
+									<div class="solution-body">
+										{{ans.val}}
+									</div>
+								</div>
+							</div>
+
 	  						<div class="mt4">
 								<div inbook-nextbtn="question"></div>
 							</div>
@@ -730,6 +943,8 @@
 	  						ans.num2 		=  	409;
 	  						ans.num3 		=  	17443;
 	  						ans.val 		=	ans.num1 + ans.num2 + ans.num3; 
+	  					"ng-resettable-init="
+	  						ans.showSolution = false;
 	  					">
 	  					<div class="mt2 type-small bold">
 		  					<div class="ib">
@@ -749,8 +964,20 @@
 										class="type-small"
 										input-class="type-small"
 										on-correct="question.markAsCorrect()"
-										on-incorrect="question.markAsIncorrect()"></div>
+										on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
 		  					</div>
+
+		  					<div vcollapse="!ans.showSolution">
+								<div class="mt4">
+									<div class="solution-header">
+										La solution:
+									</div>
+									<div class="solution-body">
+										{{ans.val}}
+									</div>
+								</div>
+							</div>
+
 	  						<div class="mt4">
 								<div inbook-nextbtn="question"></div>
 							</div>

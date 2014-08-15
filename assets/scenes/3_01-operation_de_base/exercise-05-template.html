@@ -4,12 +4,21 @@
 		{{ans.written}}
 	</div>
 
-	<div class="mt2">
+	<div class="mt2 mb4">
 		<div 	inbook-answerbox-fill="ans.num"
 				class="type-small"
 				input-class="type-small"
 				on-correct="question.markAsCorrect()"
-				on-incorrect="question.markAsIncorrect()"></div>
+				on-incorrect="question.markAsIncorrect();ans.showSolution = true;"></div>
+	</div>
+
+	<div vcollapse="!ans.showSolution">
+		<div class="solution-header">
+			La solution:
+		</div>
+		<div class="solution-body">
+			{{ans.num}}
+		</div>
 	</div>
 
 	<div class="mt4">
