@@ -1,17 +1,41 @@
-<div 	class="page-layout" style="width: 700px;">
+<div 	gseq gscroll
+		class="page-layout"
+		style="width: 700px;">
+
+		<div gdirections>
+			<div el=".header-section" 	 duration="1" ease="power2-in-out" presets="[fromTransparent]"></div>
+
+			<div duration="0.85"></div>
+
+			<div el=".anim-01" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+				
+			<div duration="2"></div>
+
+			<div el=".anim-02" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+			<div duration="2"></div>
+
+			<div el=".anim-03" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+			<div duration="2"></div>
+
+			<div el="#continue" duration="1.2" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]"></div>
+
+		</div>
+
 
 		<div class="header-section"> 
 			Un grand nombre
 		</div>
 
-		<div class="para">
+		<div class="para anim-01">
 			Un nombre est composé de chiffres. Ainsi, le nombre 243 est
 			composé des chiffres 2, 4 et 3. Les chiffres sont groupés par tranches de 3
 			chiffres à partir de la droite et en se déplaçant vers la gauche. On laisse un
 			espace entre chaque tranche.
 		</div>
 
-		<div class="exemple-frame">
+		<div class="exemple-frame anim-01">
 			<div class="exemple-header">
 				Exemple :
 			</div>
@@ -22,17 +46,17 @@
 
 		</div>
 
-		<div class="para">
+		<div class="para anim-02">
 			Les chiffres peuvent prendre différentes valeurs selon la place qu'ils
 			occupent dans un nombre.
 		</div>
 
-		<div class="para">
+		<div class="para anim-02">
 			Voici un tableau qui nous aidera à identifier la valeur d'un chiffre selon la
 			position qu'il occupe dans un nombre.
 		</div>
 
-		<div id="place-value-table" class="place-value-table">
+		<div id="place-value-table" class="place-value-table anim-03">
 	        <table>
 	        	<tr>
 		            <td colspan="3">
@@ -106,7 +130,7 @@
 	       	</table>
 	    </div>
 
-		<div class="para">
+		<div class="para anim-03">
 			Ainsi, dans le nombre 428 573,
 			<ul class="basic-list">
 				<li>le chiffre 8 occupe la position des unités de mille; sa valeur est 8 000</li>

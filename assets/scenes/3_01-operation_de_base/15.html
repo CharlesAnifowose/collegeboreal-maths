@@ -1,20 +1,35 @@
-<div 	class="page-layout" 
-		ng-init="
-			imgUrl = 'http://d3mw5hjf8nr5ry.cloudfront.net/collegeboreal-sample/images/3_01-operation_de_base/';
-		">
+<div  	gseq gscroll
+	    class="page-layout">
+
+	    <div gdirections>
+			<div el=".header-section" 	 duration="1" ease="power2-in-out" presets="[fromTransparent]"></div>
+
+	      <div duration="0.85"></div>
+
+	      <div el=".anim-01" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+	        
+	      <div duration="2"></div>
+
+	      <div el=".anim-02" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+	      <div duration="2"></div>
+
+	      <div el="#continue" duration="1.2" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]"></div>
+
+	    </div>
 
 		<div class="header-section"> 
 			Compter par intervalle de 2, de 3, jusqu'à 12
 		</div>
 
-		<div class="para">
+		<div class="para anim-01">
 			Pour compter par intervalle de 2, on additionne 2 à un nombre donné;
 			ensuite, à la somme obtenue, on ajoute encore 2. On répète cette opération
 			jusqu'à ce qu'on atteigne le résultat désiré. On procède de la même façon
 			pour compter par intervalle de 3, de 4, etc.
 		</div>
 
-		<div class="exemple-frame">
+		<div class="exemple-frame anim-02">
 
 			<div class="exemple-header">
 				Exemple : Compter par 2 de 134 à 142.
@@ -43,4 +58,10 @@
 			</div>
 
 		</div>
+
+
+		<div id="continue" class="mt6 center">
+			<div inbook-nextbtn="scene"></div>
+		</div>
+
 </div>

@@ -1,13 +1,28 @@
-<div 	class="page-layout" 
-		ng-init="
-			imgUrl = 'http://d3mw5hjf8nr5ry.cloudfront.net/collegeboreal-sample/images/3_01-operation_de_base/';
-		">
+<div  	gseq gscroll
+	    class="page-layout">
+
+	    <div gdirections>
+			<div el=".header-section" 	 duration="1" ease="power2-in-out" presets="[fromTransparent]"></div>
+
+	      <div duration="0.85"></div>
+
+	      <div el=".anim-01" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+	        
+	      <div duration="2"></div>
+
+	      <div el=".anim-02" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+	      <div duration="2"></div>
+
+	      <div el="#continue" duration="1.2" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]"></div>
+
+	    </div>
 
 		<div class="header-section"> 
 			Comparer les nombres à l'aide des symboles &gt;, &lt; ou =
 		</div>
 
-		<div class="para">
+		<div class="para anim-01">
 			Pour comparer des nombres entre eux, on peut utiliser les symboles
 			mathématiques suivants :
 
@@ -18,7 +33,7 @@
 			</ul>
 		</div>
 
-		<div class="para">
+		<div class="para anim-01">
 			Si l'on veut comparer 12 et 20, on peut le noter ainsi :
 
 			<div class="mt1">
@@ -45,12 +60,12 @@
 			</div>
 		</div>
 
-		<div class="para">
+		<div class="para anim-02">
 			Remarquez que le nombre le plus petit est placé du côté fermé (ou pointu)
 			alors que le plus grand nombre est placé du côté ouvert.
 		</div>
 
-		<div class="exemple-frame">
+		<div class="exemple-frame anim-02">
 			<div class="exemple-header">
 				Exemple : Comparer les nombres suivants : 
 			</div>
@@ -60,6 +75,10 @@
 			<div class="mt1">
 				34 &gt; 12 (34 est plus grand que 12)
 			</div>
+		</div>
+
+		<div id="continue" class="mt6 center">
+			<div inbook-nextbtn="scene"></div>
 		</div>
 
 </div>
