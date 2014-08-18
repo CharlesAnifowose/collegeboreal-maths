@@ -7,6 +7,7 @@
     ng-equate="	  
 	  ans.isCorrect = equal(calc.numSelected, a);
 	  ans.isCorrectFlag = ifElse(ans.isCorrect, 1, 0);
+	  answer = calc1.numSelected + calc2.numSelected + calc3.numSelected + calc4.numSelected + calc5.numSelected + calc6.numSelected + calc7.numSelected; 
 	  ">
 	
 	<div class="type-small bold">
@@ -25,7 +26,7 @@
 		</div>
 		<div class="ib unbold ml2 mr2">&equals;</div>
 		<div class="inbook-fraction ib">
-			<div inbook-num-scrub ng-model="calc1.numSelected" min="0" max="100"></div>
+			<div inbook-num-scrub min="0" max="100">{{answer}}</div>
 			<div class="fraction-line-thin mb1"></div>
 			<div>{{y}}</div>
 		</div>
