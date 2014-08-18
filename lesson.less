@@ -185,13 +185,11 @@ ul.basic-list   {
     padding:        8px 0;
     padding-left:   6 * @sizer-base;
     background:     #eee;      
-    margin:         6px 0;
-    .trans400;
-
-    transition:     padding-left 200ms;
+    margin:         (1*@sizer-base) 0;
+    transition:     800ms;
     &:hover  {  
       background-color:  darken(#eee, 10%);
-      padding-left:     7 * @sizer-base;
+      margin-bottom:     2 * @sizer-base;
     }
   }
 
