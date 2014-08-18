@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Module 6.05</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css" />
+        <link rel="stylesheet" type="text/css" href="assets/stylesheets/lesson.css" />
+    </head>
+    <body>
+        <div class="page-layout">
+
+            <div class="exemple-frame">
+                <div>
+                    Voici d’autres exemples :
+                </div>
+                </br>
+                <div>
+                    <span math>A. m^2 + 8m + 15 </span>
+                </div>
+                <div>
+                    On déduit que si l’on veut décomposer un trinôme du type <span math>m^2 + 8m + 15</span> en
+                </div>
+                <div>
+                    facteurs, on doit chercher deux facteurs de 15 dont la somme est 8. 
+                </div>
+                <div>
+                    <span math> m^2 + 8m + 15 = (m + ?) (m + ?) </span>
+                </div>
+                </br>
+                <div class="bold">
+                    Possibilités :  
+                </div>
+                <div>
+                    15 × 1 = 15 mais 15 + 1 = 16; donc, 15 et 1 ne sont pas les nombres recherchés. 
+                </div>
+                <div>
+                    3 × 5 = 15 et 3 + 5 = 8; donc, 3 et 5 sont les nombres recherchés
+                </div>
+                <div>
+                    <span math>  Donc m^2 + 8m + 15 = (m + 3) (m + 5). </span>
+                </div>
+                </br>
+                <div class="bold">
+                    Vérification : 
+                </div>
+                <div>
+                    <span math>  (m + 3) (m + 5) = m^2 + 5m + 3m + 15 = m^2 + 8m + 15 </span>
+                </div>
+                <div>
+                    <span math> B. x^2- 5x + 4 = (x - ?) (x - ?)</span>
+                </div>
+                <div>
+                    Dans cet exemple, le produit est positif et la somme est négative; on doit donc 
+                </div>
+                <div>
+                    repérer deux nombres négatifs. 
+                </div>
+                <div>
+                    Les facteurs de 4 sont 1 × 4 et 2 × 2. 
+                </div>
+                <div>
+                    Puisqu’on recherche un produit de 4 et une somme de -5, on choisit -4 et -1 
+                </div>
+                <div>
+                    parce que (-4) × (-1) = 4 et -4 + (-1) = -5. 
+                </div>
+                <div>
+                    <span mat>Donc x^2 - 5x + 4 = (x - 4) (x - 1).  </span>
+                </div>
+                <div>
+                    On peut vérifier les facteurs trouvés en les multipliant. On peut faire la 
+                </div>
+                <div>
+                    multiplication en colonne, 
+                </div>
+                <div>
+                    x - 4 
+                </div>
+                <img ng-src="{{imgUrl}}mm2-7.png"/>
+                <div>
+                    ou, on peut faire la multiplication en ligne, c’est-à-dire
+                </div>
+                <div>
+                    (x - 4) (x - 1) = x² - 1x - 4x + 4 = x² -5x + 4 
+                </div>
+                </br>
+                <div>
+                    <span math>C. a^2 + 3a - 10 = (a - ?) (a + ?) </span>
+                </div>
+                <div>
+                    Dans cet exemple, le produit étant -10, on conclut que l’un des nombres est 
+                </div>
+                <div>
+                    négatif et l’autre positif. 
+                </div>
+                <div>
+                    On doit rechercher deux facteurs dont le produit est -10 et la somme 3
+                </div>
+                <div>
+                    Possibilités : -1 et 10, 1 et -10, -2 et 5, 2 et -5 
+                </div>
+                <div>
+                            <div style="width: 50%;float: left">Produit</div>
+                            <div style="width: 50%;float: right">Somme</div>
+                            <div style="width: 50%;float: left">(-1) (10) = -10 </div>
+                            <div style="width: 50%;float: right">(-1) + (10) = 9  </div>
+                            <div style="width: 50%;float: left">(1) (-10) = -10 </div>
+                            <div style="width: 50%;float: right">(1) + (-10) = -9 </div>
+                            <div style="width: 50%;float: left">(-2) (5) = -10 </div>
+                            <div style="width: 50%;float: right">(-2) + (5) = 3</div>
+                            <div style="width: 50%;float: left">(2) (-5) = -10  </div>
+                            <div style="width: 50%;float: right">(2) + (-5) = -3  </div>
+                            <div style="clear: both"></div>
+                </div>
+                <div>
+                    Les facteurs sont donc : -2 et 5. 
+                </div>
+                <div>
+                    <span math>Donc, a^2 + 3a - 10 = (a - 2) (a + 5). </span>
+                </div>
+                <div>
+                    Vérification : a - 2 
+                </div>
+                <img ng-src="{{imgUrl}}mm2-8.png"/>
+                <div>
+                    <span math>ou (a - 2) (a + 5) = a^2 + 5a - 2a - 10 = a^2 + 3a - 10</span>
+                </div>
+                <div>
+                    <span math>D. x^2- 5xy - 14y^2 = ( x + ?y) (x - ?y) </span>
+                </div>
+                <div>
+                    <span math>Dans cet exemple, le dernier terme du trinôme (-14y^2) contient la variable y^2 </span>
+                </div>
+                <div>
+                    qu’il faut aussi factoriser. 
+                </div>
+                <img ng-src="{{imgUrl}}mm2-9.png"/>
+                <div>
+                    Dans cet exemple, le produit étant négatif, soit -14y2
+                    , on conclut que l’un des 
+                </div>
+                <div>
+                    nombres est positif et l’autre négatif. 
+                </div>
+                <div>
+                    On doit rechercher deux facteurs dont le produit est -14 et la somme -5. 
+                </div>
+                <div>
+                    Possibilités : -1 et 14, 1 et -14, -2 et 7, 2 et -7 
+                </div>
+                <div>
+                            <div style="width: 50%;float: left">Produit</div>
+                            <div style="width: 50%;float: right">Somme</div>
+                            <div style="width: 50%;float: left">(-1) (14) = -14 </div>
+                            <div style="width: 50%;float: right">(-1) + (14) = 13  </div>
+                            <div style="width: 50%;float: left">(1) (-14) = -14  </div>
+                            <div style="width: 50%;float: right">(1) + (-14) = -13  </div>
+                            <div style="width: 50%;float: left">(-2) (7) = -14  </div>
+                            <div style="width: 50%;float: right">(-2) + (7) = 5 </div>
+                            <div style="width: 50%;float: left">(2) (-7) = -14   </div>
+                            <div style="width: 50%;float: right">(2) + (-7) = -5</div>
+                            <div style="clear: both"></div>
+                </div>
+                <div>
+                    Les facteurs sont : 2 et -7.
+                </div>
+                <div>
+                    <span math>Donc, x^2 - 5xy - 14y^2 = (x + 2y) (x - 7y). </span>
+                </div>
+                <div>
+                    Vérification : x - 7y 
+                </div>
+                <img ng-src="{{imgUrl}}mm3-1.png"/>
+            </div>
+        </div>
+    </body>
+</html>

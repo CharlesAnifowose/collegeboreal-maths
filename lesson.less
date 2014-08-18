@@ -2,11 +2,83 @@
 @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css);
 
 
+.page-layout {
+  .inbook-grid-layout;
+  width:600px;
+  padding-bottom:  4 * @sizer-base;
+  padding-top:     4 * @sizer-base;
+}
+
+
 .table-of-contents{
   a.notready{
     opacity:0.2;
   }
 }
+
+
+//  Title page styles
+
+
+
+.title-page-info  {
+    margin-top: 1 * @sizer-base;
+    color:      #fff;
+    .module-num  {
+      .type-small;
+      .bold;
+
+    }
+    .section-type  {
+      .type-medium;
+      .bold;
+      margin-bottom:   1 * @sizer-base;
+    }
+     .module-name  {
+      .type-xxsmall;
+      margin-top:   1 * @sizer-base;
+          
+    }
+
+} 
+
+.anim-area  {
+  color:      #fff;
+  padding-left:     4 * @sizer-base;
+  padding-right:    4 * @sizer-base;
+  // padding-top:      2 * @sizer-base;
+  // padding-bottom:   2 * @sizer-base;
+}
+.big-operators  {
+  font-size:     200px;
+  line-height:    80%;
+  padding-bottom:    4 * @sizer-base;
+  .bold; 
+  .center;
+}
+
+.credits   {
+  color:      #fff;
+  .cred  { 
+    padding:     10px 0;
+      .title  { 
+        .type-xxsmall;
+        .bold;
+        // border-bottom:    1px solid #fff;
+        padding-top:      2 * @sizer-base;            
+        padding-bottom:   1 * @sizer-base;      
+        width:            50%;
+
+      }
+
+  }
+
+}
+
+
+
+/////////////////
+
 
 .header-module {
   .type-xxxxsmall;
@@ -17,7 +89,9 @@
 .header-module-sub {
   .center;
   padding: 2 * @sizer-base;
-  background-color: #53B3E5;
+
+  background:   #ff6666;
+  // background-color: #53B3E5;
   color: #fff;
   margin-top: 2 * @sizer-base;
   margin-bottom: 4 * @sizer-base;
@@ -25,12 +99,13 @@
 .header-section {
   .type-small;
   .bold;
+  .center;
   margin-bottom: 3 * @sizer-base;
 }
 
 
 .inbook-grid-layout.narrow {
-  width:600px;
+  width:650px;
 }
 
 .page-container {
@@ -40,12 +115,12 @@
   .inbook-grid-layout;
   width:600px;
   padding-bottom:  4 * @sizer-base;
+  padding-top:     4 * @sizer-base;
 }
 
-
 .para {
-  margin-top:12px;
-  margin-bottom:18px;
+  margin-top:       5 * @sizer-base;
+  margin-bottom:    5 * @sizer-base;
 }
 
 .exemple-frame {
@@ -53,10 +128,24 @@
   padding:12px;
   margin-top: 1 * @sizer-base;
   margin-bottom: 2 * @sizer-base;
+  
+  // background: #0ac;
+  // color:      #fff;
+  .paper-shadow;
+
+
   .exemple-header {
-    .para;
     .bold;
+    font-size:  120%;
+    margin-bottom: 2 * @sizer-base;   
+
   }
+
+  .para  {
+    margin-top:       2 * @sizer-base;
+    margin-bottom:    2 * @sizer-base;
+  }
+
 }
 
 .note-frame {
@@ -72,13 +161,42 @@
   display: inline-block;
 }
 
+.formula-box {
+  .term-box;
+  .center;
+  .type-medium;
+  padding:    4 * @sizer-base;
+  display:    block;
+}
+
+
+
 tr.tr-underline td {
   border-bottom: 1px solid #999;
 }
 ol.basic-list,
 ul.basic-list   {
-  margin:   12px 0;
-  padding:  0 0 0 12px;
+  margin:         0;
+  padding:        2 * @sizer-base;
+  padding-right:  0;
+  padding-left:   4 * @sizer-base;
+  
+  li { 
+    padding:        8px 0;
+    padding-left:   6 * @sizer-base;
+    background:     #eee;      
+    margin:         (1*@sizer-base) 0;
+    transition:     800ms;
+    &:hover  {  
+      background-color:  darken(#eee, 10%);
+      margin-bottom:     2 * @sizer-base;
+    }
+  }
+
+}
+ul.basic-list   {  
+  list-style-type: none;
+
 }
 
 .vert-add  {
@@ -90,6 +208,75 @@ ul.basic-list   {
       }
     }
 }
+
+.basic-table  {
+  border-collapse: collapse;
+  td {
+      border:1px solid #ccc; 
+      padding:6px 8px;
+      width:  100px;
+      vertical-align: bottom;
+  }
+  &.unbordered {
+    td {
+      border: none;
+      vertical-align:  middle;
+    }
+  }
+
+  &.cells-small {
+    td{
+      width: 75px;
+    }
+  }
+  &.cells-medium {
+    td{
+      width: 125px;
+    }
+  }
+  &.cells-large {
+    td{
+      width: 175px;
+    }
+  }
+
+
+
+
+} 
+
+
+
+.place-value-table    {
+  display:  inline-block;
+  table { 
+    border-collapse: collapse;
+    td {
+      border:1px solid #ccc; 
+      padding:6px 8px;
+      width:  75px;
+      vertical-align: bottom;
+      font-size:    18px;
+      line-height:  20px;
+    }
+    tr:first-child{
+      td {
+        font-weight:  bold;
+        border-top:   none;
+      }
+    }
+    tr:nth-of-type(2){
+      td{
+        font-size:    12px;
+        line-height:  14px;
+      }
+    }
+  }
+
+}
+
+
+
 
 
 
@@ -113,6 +300,7 @@ ul.basic-list   {
 
 .exercise-box    {
   .paper-shadow;
+  border:       1px solid #ccc;
   padding:      4 * @sizer-base;
   box-sizing:   border-box;
 }
@@ -151,21 +339,29 @@ ul.basic-list   {
   .input-ans-icon {
       display:      inline-block;
       vertical-align:       middle;
-      background-color:     #ddd;
+      background-color:     #333;
+      color:                #fff;
       border-radius:        100px;
-      padding:              8px;
       
       border:              1px solid #ddd;
       position:           relative;
       left:               20px;
       z-index:            2;
-      box-shadow:         inset 0 1px 1px rgba(0,0,0,0.075),
-                          0 0 8px rgba(82,168,236,0.6);
+      box-shadow:         inset 0 1px 1px rgba(0,0,0,0.1);
+
+      width:              21px;
+      height:             25px;
+      padding:            8px 10px;
+      font-size:          110%;
 
       &.input-icon {
         transform:            rotate(180deg);
         -ms-transform:        rotate(180deg);
         -webkit-transform:    rotate(180deg);
+        padding:              8px;
+        width:                25px;
+        height:               25px;
+        font-size:            100%;
       }
 
 
@@ -174,10 +370,11 @@ ul.basic-list   {
       padding:            3px 0 3px 20px;
       margin:             25px auto;
       border-radius:      2px;
-      border:             1px solid #ddd;
+      border:             1px solid #787878;
       display:            inline-block;
       vertical-align:     middle;
       z-index:            1;
+      width:              82%;
 
   }
   .draw-text  {
@@ -187,10 +384,10 @@ ul.basic-list   {
       // border:             1px solid #ddd;
       // border-radius:      3px;
       color:              #ddd;
+      cursor:             pointer;
   }
 
 }
-
 
 
   

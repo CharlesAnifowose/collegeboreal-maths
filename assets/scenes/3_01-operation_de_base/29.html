@@ -1,7 +1,28 @@
-<div 	class="page-layout" 
-		ng-init="
-			imgUrl = 'http://d3mw5hjf8nr5ry.cloudfront.net/collegeboreal-sample/images/3_01-operation_de_base/';
-		">
+<div    gseq gscroll
+        class="page-layout">
+
+        <div gdirections>
+          <div el=".header-module"   duration="1" ease="power4-in-out" presets="[fromTransparent,fromBottom]"></div>
+          <div el=".header-module-sub" duration="1" offset="-=0.3" ease="power4-in-out" presets="[fromTransparent,fromBottom]"></div>   
+          <div el=".header-section"    duration="1" offset="-=0.6" ease="power4-in-out" presets="[fromTransparent,fromBottom]"></div>
+
+          <div duration="0.85"></div>
+
+          <div el=".anim-01" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+            
+          <div duration="2"></div>
+
+          <div el=".anim-02" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+          <div duration="2"></div>
+
+          <div el=".anim-03" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+          <div duration="2"></div>
+
+          <div el="#continue" duration="1.2" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]"></div>
+
+        </div>
 
 		<div 	inbook-questionseries
 				on-complete="scene.markAsCompleted();"
@@ -12,17 +33,15 @@
                     EXERCICE 15
                 </div>
 
-                <div class="exercise-header">
-  					Soustrayez et faites la preuve à l’aide de la calculatrice
-  				</div>
-
   				<div 	inbook-questionseries-item level="1"
   						ng-init="
   							ans={};
   							ans.num1 	=	56;
   							ans.num2	=	27;
   							ans.val		=	ans.num1 - ans.num2;
-  						">
+  						"ng-resettable-init="
+                            ans.showSolution = false;
+                        ">
 					<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-15.1-template.html"></div>
   				</div>
 
@@ -32,6 +51,8 @@
                             ans.num1    =   27;
                             ans.num2    =   19;
                             ans.val     =   ans.num1 - ans.num2;
+                        "ng-resettable-init="
+                            ans.showSolution = false;
                         ">
                     <div inbook-include="assets/scenes/3_01-operation_de_base/exercise-15.1-template.html"></div>
                 </div>
@@ -42,6 +63,8 @@
                             ans.num1    =   84;
                             ans.num2    =   58;
                             ans.val     =   ans.num1 - ans.num2;
+                        "ng-resettable-init="
+                            ans.showSolution = false;
                         ">
                     <div inbook-include="assets/scenes/3_01-operation_de_base/exercise-15.1-template.html"></div>
                 </div>
@@ -52,6 +75,8 @@
                             ans.num1    =   104;
                             ans.num2    =   28;
                             ans.val     =   ans.num1 - ans.num2;
+                        "ng-resettable-init="
+                            ans.showSolution = false;
                         ">
                     <div inbook-include="assets/scenes/3_01-operation_de_base/exercise-15.1-template.html"></div>
                 </div>
@@ -62,6 +87,8 @@
                             ans.num1    =   566;
                             ans.num2    =   39;
                             ans.val     =   ans.num1 - ans.num2;
+                        "ng-resettable-init="
+                            ans.showSolution = false;
                         ">
                     <div inbook-include="assets/scenes/3_01-operation_de_base/exercise-15.1-template.html"></div>
                 </div>
@@ -72,6 +99,8 @@
                             ans.num1    =   510;
                             ans.num2    =   190;
                             ans.val     =   ans.num1 - ans.num2;
+                        "ng-resettable-init="
+                            ans.showSolution = false;
                         ">
                     <div inbook-include="assets/scenes/3_01-operation_de_base/exercise-15.1-template.html"></div>
                 </div>
@@ -82,6 +111,8 @@
                             ans.num1    =   500;
                             ans.num2    =   398;
                             ans.val     =   ans.num1 - ans.num2;
+                        "ng-resettable-init="
+                            ans.showSolution = false;
                         ">
                     <div inbook-include="assets/scenes/3_01-operation_de_base/exercise-15.1-template.html"></div>
                 </div>
@@ -92,6 +123,8 @@
                             ans.num1    =   583;
                             ans.num2    =   276;
                             ans.val     =   ans.num1 - ans.num2;
+                        "ng-resettable-init="
+                            ans.showSolution = false;
                         ">
                     <div inbook-include="assets/scenes/3_01-operation_de_base/exercise-15.1-template.html"></div>
                 </div>
@@ -102,6 +135,8 @@
                             ans.num1    =   1004;
                             ans.num2    =   875;
                             ans.val     =   ans.num1 - ans.num2;
+                        "ng-resettable-init="
+                            ans.showSolution = false;
                         ">
                     <div inbook-include="assets/scenes/3_01-operation_de_base/exercise-15.1-template.html"></div>
                 </div>
@@ -112,6 +147,8 @@
                             ans.num1    =   4825;
                             ans.num2    =   699;
                             ans.val     =   ans.num1 - ans.num2;
+                        "ng-resettable-init="
+                            ans.showSolution = false;
                         ">
                     <div inbook-include="assets/scenes/3_01-operation_de_base/exercise-15.1-template.html"></div>
                 </div>
@@ -122,6 +159,8 @@
                             ans.num1    =   8072;
                             ans.num2    =   987;
                             ans.val     =   ans.num1 - ans.num2;
+                        "ng-resettable-init="
+                            ans.showSolution = false;
                         ">
                     <div inbook-include="assets/scenes/3_01-operation_de_base/exercise-15.1-template.html"></div>
                 </div>
@@ -132,11 +171,11 @@
                             ans.num1    =   1990;
                             ans.num2    =   998;
                             ans.val     =   ans.num1 - ans.num2;
+                        "ng-resettable-init="
+                            ans.showSolution = false;
                         ">
                     <div inbook-include="assets/scenes/3_01-operation_de_base/exercise-15.1-template.html"></div>
                 </div>
-
-
 
         </div>
 </div>

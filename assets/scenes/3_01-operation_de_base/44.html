@@ -1,8 +1,28 @@
-<div 	class="page-layout" 
-		ng-init="
-			imgUrl = 'http://d3mw5hjf8nr5ry.cloudfront.net/collegeboreal-sample/images/3_01-operation_de_base/';
-		">
+<div    gseq gscroll
+      class="page-layout">
 
+      <div gdirections>
+        <div el=".header-module"   duration="1" ease="power4-in-out" presets="[fromTransparent,fromBottom]"></div>
+        <div el=".header-module-sub" duration="1" offset="-=0.3" ease="power4-in-out" presets="[fromTransparent,fromBottom]"></div>   
+        <div el=".header-section"    duration="1" offset="-=0.6" ease="power4-in-out" presets="[fromTransparent,fromBottom]"></div>
+
+        <div duration="0.85"></div>
+
+        <div el=".anim-01" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+          
+        <div duration="2"></div>
+
+        <div el=".anim-02" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+        <div duration="2"></div>
+
+        <div el=".anim-03" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+        <div duration="2"></div>
+
+        <div el="#continue" duration="1.2" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]"></div>
+
+      </div>
 		<div 	inbook-questionseries
 				on-complete="scene.markAsCompleted();"
   				ordered=true
@@ -11,11 +31,6 @@
           <div class="exercise-num">
             EXERCICE 22
           </div>
-
-          <div class="exercise-header">
-  					Résoudre. Attention à l'ordre des opérations!
-  				</div>
-
 
   				<div    inbook-questionseries-item level="1"
                   class="type-small bold"
@@ -27,36 +42,57 @@
                   	ans.num3 = 12;
 
                   	ans.val = ans.num1 * ans.num2 + ans.num3;
+                  "ng-resettable-init="
+                    ans.showSolution = false;
                   ">
 
-                  <div class="ib">
-                    {{ans.num1}}
+                  <div class="exercise-box">
+                    <div class="exercise-header">
+                      Résoudre. Attention à l'ordre des opérations!
+                    </div>
+
+                    <div class="ib">
+                      {{ans.num1}}
+                    </div>
+                    <div class="ib">
+                      <div class="ml2 mr2">&times;</div>
+                    </div>
+                    <div class="ib">
+                      {{ans.num2}}
+                    </div>
+                    <div class="ib">
+                      <div class="ml2 mr2">+</div>
+                    </div>
+                    <div class="ib">
+                      {{ans.num3}}
+                    </div>
+                    <div class="ib">
+                      <div class="ml2 mr2">&equals;</div>
+                    </div>
+                    <div class="ib">
+                      <div  inbook-answerbox-fill="ans.val"
+                          class="type-small"
+                          input-class="type-small"
+                          on-correct="question.markAsCorrect()"
+                          on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
+                    </div>
+
+                    <div vcollapse="!ans.showSolution">
+                        <div class="mt4">
+                            <div class="solution-header">
+                                La solution:
+                            </div>
+                            <div class="solution-body">
+                                {{ans.val}}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt4 center">
+                      <div inbook-nextbtn="question"></div>
+                    </div>  
+
                   </div>
-                  <div class="ib">
-                    <div class="ml2 mr2">&times;</div>
-                  </div>
-                  <div class="ib">
-                    {{ans.num2}}
-                  </div>
-                  <div class="ib">
-                    <div class="ml2 mr2">+</div>
-                  </div>
-                  <div class="ib">
-                    {{ans.num3}}
-                  </div>
-                  <div class="ib">
-                    <div class="ml2 mr2">&equals;</div>
-                  </div>
-                  <div class="ib">
-                    <div  inbook-answerbox-fill="ans.val"
-                        class="type-small"
-                        input-class="type-small"
-                        on-correct="question.markAsCorrect()"
-                        on-incorrect="question.markAsIncorrect()"></div>
-                  </div>
-                  <div class="mt4">
-                    <div inbook-nextbtn="question"></div>
-                  </div>  
           </div>
           
           <div    inbook-questionseries-item level="2"
@@ -69,35 +105,54 @@
                     ans.num3 = 2;
 
                     ans.val = ans.num1 / ans.num2 + ans.num3;
+                  "ng-resettable-init="
+                    ans.showSolution = false;
                   ">
+                  <div class="exercise-box">
+                    <div class="exercise-header">
+                      Résoudre. Attention à l'ordre des opérations!
+                    </div>
 
-                  <div class="ib">
-                    {{ans.num1}}
-                  </div>
-                  <div class="ib">
-                    <div class="ml2 mr2">&divide;</div>
-                  </div>
-                  <div class="ib">
-                    {{ans.num2}}
-                  </div>
-                  <div class="ib">
-                    <div class="ml2 mr2">+</div>
-                  </div>
-                  <div class="ib">
-                    {{ans.num3}}
-                  </div>
-                  <div class="ib">
-                    <div class="ml2 mr2">&equals;</div>
-                  </div>
-                  <div class="ib">
-                    <div  inbook-answerbox-fill="ans.val"
-                        class="type-small"
-                        input-class="type-small"
-                        on-correct="question.markAsCorrect()"
-                        on-incorrect="question.markAsIncorrect()"></div>
-                  </div>
-                  <div class="mt4">
-                    <div inbook-nextbtn="question"></div>
+                    <div class="ib">
+                      {{ans.num1}}
+                    </div>
+                    <div class="ib">
+                      <div class="ml2 mr2">&divide;</div>
+                    </div>
+                    <div class="ib">
+                      {{ans.num2}}
+                    </div>
+                    <div class="ib">
+                      <div class="ml2 mr2">+</div>
+                    </div>
+                    <div class="ib">
+                      {{ans.num3}}
+                    </div>
+                    <div class="ib">
+                      <div class="ml2 mr2">&equals;</div>
+                    </div>
+                    <div class="ib">
+                      <div  inbook-answerbox-fill="ans.val"
+                          class="type-small"
+                          input-class="type-small"
+                          on-correct="question.markAsCorrect()"
+                          on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
+                    </div>
+
+                    <div vcollapse="!ans.showSolution">
+                        <div class="mt4">
+                            <div class="solution-header">
+                                La solution:
+                            </div>
+                            <div class="solution-body">
+                                {{ans.val}}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt4 center">
+                      <div inbook-nextbtn="question"></div>
+                    </div>
                   </div>  
           </div>
 
@@ -111,36 +166,55 @@
                     ans.num3 = 4;
 
                     ans.val = ans.num1 / ans.num2 - ans.num3;
+                  "ng-resettable-init="
+                    ans.showSolution = false;
                   ">
+                  <div class="exercise-box">
+                    <div class="exercise-header">
+                      Résoudre. Attention à l'ordre des opérations!
+                    </div>
 
-                  <div class="ib">
-                    {{ans.num1}}
+                    <div class="ib">
+                      {{ans.num1}}
+                    </div>
+                    <div class="ib">
+                      <div class="ml2 mr2">&divide;</div>
+                    </div>
+                    <div class="ib">
+                      {{ans.num2}}
+                    </div>
+                    <div class="ib">
+                      <div class="ml2 mr2">&minus;</div>
+                    </div>
+                    <div class="ib">
+                      {{ans.num3}}
+                    </div>
+                    <div class="ib">
+                      <div class="ml2 mr2">&equals;</div>
+                    </div>
+                    <div class="ib">
+                      <div  inbook-answerbox-fill="ans.val"
+                          class="type-small"
+                          input-class="type-small"
+                          on-correct="question.markAsCorrect()"
+                          on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
+                    </div>
+
+                    <div vcollapse="!ans.showSolution">
+                        <div class="mt4">
+                            <div class="solution-header">
+                                La solution:
+                            </div>
+                            <div class="solution-body">
+                                {{ans.val}}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt4 center">
+                      <div inbook-nextbtn="question"></div>
+                    </div>  
                   </div>
-                  <div class="ib">
-                    <div class="ml2 mr2">&divide;</div>
-                  </div>
-                  <div class="ib">
-                    {{ans.num2}}
-                  </div>
-                  <div class="ib">
-                    <div class="ml2 mr2">&minus;</div>
-                  </div>
-                  <div class="ib">
-                    {{ans.num3}}
-                  </div>
-                  <div class="ib">
-                    <div class="ml2 mr2">&equals;</div>
-                  </div>
-                  <div class="ib">
-                    <div  inbook-answerbox-fill="ans.val"
-                        class="type-small"
-                        input-class="type-small"
-                        on-correct="question.markAsCorrect()"
-                        on-incorrect="question.markAsIncorrect()"></div>
-                  </div>
-                  <div class="mt4">
-                    <div inbook-nextbtn="question"></div>
-                  </div>  
           </div>
 
           <div    inbook-questionseries-item level="4"
@@ -154,42 +228,62 @@
                     ans.num4 = 6;
 
                     ans.val = ans.num1 + ans.num2 + ans.num3 * ans.num4;
-                  ">
+                  "ng-resettable-init="
+                    ans.showSolution = false;
+                  ">  
 
-                  <div class="ib">
-                    {{ans.num1}}
+                  <div class="exercise-box">
+                    <div class="exercise-header">
+                      Résoudre. Attention à l'ordre des opérations!
+                    </div>
+
+                    <div class="ib">
+                      {{ans.num1}}
+                    </div>
+                    <div class="ib">
+                      <div class="ml2 mr2">+</div>
+                    </div>
+                    <div class="ib">
+                      {{ans.num2}}
+                    </div>
+                    <div class="ib">
+                      <div class="ml2 mr2">+</div>
+                    </div>
+                    <div class="ib">
+                      {{ans.num3}}
+                    </div>
+                    <div class="ib">
+                      <div class="ml2 mr2">&times;</div>
+                    </div>
+                    <div class="ib">
+                      {{ans.num4}}
+                    </div>
+                    <div class="ib">
+                      <div class="ml2 mr2">&equals;</div>
+                    </div>
+                    <div class="ib">
+                      <div  inbook-answerbox-fill="ans.val"
+                          class="type-small"
+                          input-class="type-small"
+                          on-correct="question.markAsCorrect()"
+                          on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
+                    </div>
+
+                    <div vcollapse="!ans.showSolution">
+                        <div class="mt4">
+                            <div class="solution-header">
+                                La solution:
+                            </div>
+                            <div class="solution-body">
+                                {{ans.val}}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt4 center">
+                      <div inbook-nextbtn="question"></div>
+                    </div>  
                   </div>
-                  <div class="ib">
-                    <div class="ml2 mr2">+</div>
-                  </div>
-                  <div class="ib">
-                    {{ans.num2}}
-                  </div>
-                  <div class="ib">
-                    <div class="ml2 mr2">+</div>
-                  </div>
-                  <div class="ib">
-                    {{ans.num3}}
-                  </div>
-                  <div class="ib">
-                    <div class="ml2 mr2">&times;</div>
-                  </div>
-                  <div class="ib">
-                    {{ans.num4}}
-                  </div>
-                  <div class="ib">
-                    <div class="ml2 mr2">&equals;</div>
-                  </div>
-                  <div class="ib">
-                    <div  inbook-answerbox-fill="ans.val"
-                        class="type-small"
-                        input-class="type-small"
-                        on-correct="question.markAsCorrect()"
-                        on-incorrect="question.markAsIncorrect()"></div>
-                  </div>
-                  <div class="mt4">
-                    <div inbook-nextbtn="question"></div>
-                  </div>  
           </div>
 
           <div    inbook-questionseries-item level="5"
@@ -203,42 +297,62 @@
                     ans.num4 = 4;
 
                     ans.val = ans.num1 - ans.num2 / ans.num3 + ans.num4;
+                  "ng-resettable-init="
+                    ans.showSolution = false;
                   ">
 
-                  <div class="ib">
-                    {{ans.num1}}
+                  <div class="exercise-box">
+                    <div class="exercise-header">
+                      Résoudre. Attention à l'ordre des opérations!
+                    </div>
+
+                    <div class="ib">
+                      {{ans.num1}}
+                    </div>
+                    <div class="ib">
+                      <div class="ml2 mr2">&minus;</div>
+                    </div>
+                    <div class="ib">
+                      {{ans.num2}}
+                    </div>
+                    <div class="ib">
+                      <div class="ml2 mr2">&divide;</div>
+                    </div>
+                    <div class="ib">
+                      {{ans.num3}}
+                    </div>
+                    <div class="ib">
+                      <div class="ml2 mr2">+</div>
+                    </div>
+                    <div class="ib">
+                      {{ans.num4}}
+                    </div>
+                    <div class="ib">
+                      <div class="ml2 mr2">&equals;</div>
+                    </div>
+                    <div class="ib">
+                      <div  inbook-answerbox-fill="ans.val"
+                          class="type-small"
+                          input-class="type-small"
+                          on-correct="question.markAsCorrect()"
+                          on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
+                    </div>
+
+                    <div vcollapse="!ans.showSolution">
+                        <div class="mt4">
+                            <div class="solution-header">
+                                La solution:
+                            </div>
+                            <div class="solution-body">
+                                {{ans.val}}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt4 center">
+                      <div inbook-nextbtn="question"></div>
+                    </div>  
                   </div>
-                  <div class="ib">
-                    <div class="ml2 mr2">&minus;</div>
-                  </div>
-                  <div class="ib">
-                    {{ans.num2}}
-                  </div>
-                  <div class="ib">
-                    <div class="ml2 mr2">&divide;</div>
-                  </div>
-                  <div class="ib">
-                    {{ans.num3}}
-                  </div>
-                  <div class="ib">
-                    <div class="ml2 mr2">+</div>
-                  </div>
-                  <div class="ib">
-                    {{ans.num4}}
-                  </div>
-                  <div class="ib">
-                    <div class="ml2 mr2">&equals;</div>
-                  </div>
-                  <div class="ib">
-                    <div  inbook-answerbox-fill="ans.val"
-                        class="type-small"
-                        input-class="type-small"
-                        on-correct="question.markAsCorrect()"
-                        on-incorrect="question.markAsIncorrect()"></div>
-                  </div>
-                  <div class="mt4">
-                    <div inbook-nextbtn="question"></div>
-                  </div>  
           </div>
 
           <div    inbook-questionseries-item level="6"
@@ -251,36 +365,56 @@
                     ans.num3 = 12;
 
                     ans.val = ans.num1 * ans.num2 + ans.num3;
+                  "ng-resettable-init="
+                    ans.showSolution = false;
                   ">
 
-                  <div class="ib">
-                    {{ans.num1}}
+                  <div class="exercise-box">
+                    <div class="exercise-header">
+                      Résoudre. Attention à l'ordre des opérations!
+                      </div>
+
+                    <div class="ib">
+                      {{ans.num1}}
+                    </div>
+                    <div class="ib">
+                      <div class="ml2 mr2">&divide;</div>
+                    </div>
+                    <div class="ib">
+                      {{ans.num2}}
+                    </div>
+                    <div class="ib">
+                      <div class="ml2 mr2">&minus;</div>
+                    </div>
+                    <div class="ib">
+                      {{ans.num3}}
+                    </div>
+                    <div class="ib">
+                      <div class="ml2 mr2">&equals;</div>
+                    </div>
+                    <div class="ib">
+                      <div  inbook-answerbox-fill="ans.val"
+                          class="type-small"
+                          input-class="type-small"
+                          on-correct="question.markAsCorrect()"
+                          on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
+                    </div>
+
+                    <div vcollapse="!ans.showSolution">
+                        <div class="mt4">
+                            <div class="solution-header">
+                                La solution:
+                            </div>
+                            <div class="solution-body">
+                                {{ans.val}}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt4 center">
+                      <div inbook-nextbtn="question"></div>
+                    </div>  
                   </div>
-                  <div class="ib">
-                    <div class="ml2 mr2">&divide;</div>
-                  </div>
-                  <div class="ib">
-                    {{ans.num2}}
-                  </div>
-                  <div class="ib">
-                    <div class="ml2 mr2">&minus;</div>
-                  </div>
-                  <div class="ib">
-                    {{ans.num3}}
-                  </div>
-                  <div class="ib">
-                    <div class="ml2 mr2">&equals;</div>
-                  </div>
-                  <div class="ib">
-                    <div  inbook-answerbox-fill="ans.val"
-                        class="type-small"
-                        input-class="type-small"
-                        on-correct="question.markAsCorrect()"
-                        on-incorrect="question.markAsIncorrect()"></div>
-                  </div>
-                  <div class="mt4">
-                    <div inbook-nextbtn="question"></div>
-                  </div>  
           </div>
 
           <div    inbook-questionseries-item level="7"
@@ -293,36 +427,55 @@
                     ans.num3 = 2;
 
                     ans.val = ans.num1 / ans.num2 - ans.num3;
+                  "ng-resettable-init="
+                    ans.showSolution = false;
                   ">
+                  <div class="exercise-box">
+                    <div class="exercise-header">
+                      Résoudre. Attention à l'ordre des opérations!
+                      </div>
 
-                  <div class="ib">
-                    {{ans.num1}}
+                      <div class="ib">
+                        {{ans.num1}}
+                      </div>
+                      <div class="ib">
+                        <div class="ml2 mr2">&divide;</div>
+                      </div>
+                      <div class="ib">
+                        {{ans.num2}}
+                      </div>
+                      <div class="ib">
+                        <div class="ml2 mr2">&minus;</div>
+                      </div>
+                      <div class="ib">
+                        {{ans.num3}}
+                      </div>
+                      <div class="ib">
+                        <div class="ml2 mr2">&equals;</div>
+                      </div>
+                      <div class="ib">
+                        <div  inbook-answerbox-fill="ans.val"
+                            class="type-small"
+                            input-class="type-small"
+                            on-correct="question.markAsCorrect()"
+                            on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
+                      </div>
+
+                      <div vcollapse="!ans.showSolution">
+                          <div class="mt4">
+                              <div class="solution-header">
+                                  La solution:
+                              </div>
+                              <div class="solution-body">
+                                  {{ans.val}}
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="mt4 center">
+                        <div inbook-nextbtn="question"></div>
+                      </div>  
                   </div>
-                  <div class="ib">
-                    <div class="ml2 mr2">&divide;</div>
-                  </div>
-                  <div class="ib">
-                    {{ans.num2}}
-                  </div>
-                  <div class="ib">
-                    <div class="ml2 mr2">&minus;</div>
-                  </div>
-                  <div class="ib">
-                    {{ans.num3}}
-                  </div>
-                  <div class="ib">
-                    <div class="ml2 mr2">&equals;</div>
-                  </div>
-                  <div class="ib">
-                    <div  inbook-answerbox-fill="ans.val"
-                        class="type-small"
-                        input-class="type-small"
-                        on-correct="question.markAsCorrect()"
-                        on-incorrect="question.markAsIncorrect()"></div>
-                  </div>
-                  <div class="mt4">
-                    <div inbook-nextbtn="question"></div>
-                  </div>  
           </div>
 
           <div    inbook-questionseries-item level="8"
@@ -336,42 +489,62 @@
                     ans.num4 = 3;
 
                     ans.val = ans.num1 * ans.num2 + ans.num3 - ans.num4;
+                  "ng-resettable-init="
+                    ans.showSolution = false;
                   ">
 
-                  <div class="ib">
-                    {{ans.num1}}
+                  <div class="exercise-box">
+                    <div class="exercise-header">
+                      Résoudre. Attention à l'ordre des opérations!
+                    </div>
+
+                      <div class="ib">
+                        {{ans.num1}}
+                      </div>
+                      <div class="ib">
+                        <div class="ml2 mr2">&times;</div>
+                      </div>
+                      <div class="ib">
+                        {{ans.num2}}
+                      </div>
+                      <div class="ib">
+                        <div class="ml2 mr2">+</div>
+                      </div>
+                      <div class="ib">
+                        {{ans.num3}}
+                      </div>
+                      <div class="ib">
+                        <div class="ml2 mr2">&minus;</div>
+                      </div>
+                      <div class="ib">
+                        {{ans.num4}}
+                      </div>
+                      <div class="ib">
+                        <div class="ml2 mr2">&equals;</div>
+                      </div>
+                      <div class="ib">
+                        <div  inbook-answerbox-fill="ans.val"
+                            class="type-small"
+                            input-class="type-small"
+                            on-correct="question.markAsCorrect()"
+                            on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
+                      </div>
+
+                      <div vcollapse="!ans.showSolution">
+                          <div class="mt4">
+                              <div class="solution-header">
+                                  La solution:
+                              </div>
+                              <div class="solution-body">
+                                  {{ans.val}}
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="mt4 center">
+                        <div inbook-nextbtn="question"></div>
+                      </div>  
                   </div>
-                  <div class="ib">
-                    <div class="ml2 mr2">&times;</div>
-                  </div>
-                  <div class="ib">
-                    {{ans.num2}}
-                  </div>
-                  <div class="ib">
-                    <div class="ml2 mr2">+</div>
-                  </div>
-                  <div class="ib">
-                    {{ans.num3}}
-                  </div>
-                  <div class="ib">
-                    <div class="ml2 mr2">&minus;</div>
-                  </div>
-                  <div class="ib">
-                    {{ans.num4}}
-                  </div>
-                  <div class="ib">
-                    <div class="ml2 mr2">&equals;</div>
-                  </div>
-                  <div class="ib">
-                    <div  inbook-answerbox-fill="ans.val"
-                        class="type-small"
-                        input-class="type-small"
-                        on-correct="question.markAsCorrect()"
-                        on-incorrect="question.markAsIncorrect()"></div>
-                  </div>
-                  <div class="mt4">
-                    <div inbook-nextbtn="question"></div>
-                  </div>  
           </div>
 
            <div    inbook-questionseries-item level="9"
@@ -384,7 +557,14 @@
                     ans.num3 = 12;
 
                     ans.val = ans.num1 + ans.num2 / ans.num3;
+                  "ng-resettable-init="
+                    ans.showSolution = false;
                   ">
+
+                  <div class="exercise-box">
+                    <div class="exercise-header">
+                      Résoudre. Attention à l'ordre des opérations!
+                    </div>
 
                   <div class="ib">
                     {{ans.num1}}
@@ -409,11 +589,24 @@
                         class="type-small"
                         input-class="type-small"
                         on-correct="question.markAsCorrect()"
-                        on-incorrect="question.markAsIncorrect()"></div>
+                        on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
                   </div>
-                  <div class="mt4">
-                    <div inbook-nextbtn="question"></div>
-                  </div>  
+
+                  <div vcollapse="!ans.showSolution">
+                      <div class="mt4">
+                          <div class="solution-header">
+                              La solution:
+                          </div>
+                          <div class="solution-body">
+                              {{ans.val}}
+                          </div>
+                      </div>
+                  </div>
+
+                    <div class="mt4 center">
+                      <div inbook-nextbtn="question"></div>
+                    </div>         
+                 </div>
           </div>
 
           <div    inbook-questionseries-item level="10"
@@ -427,41 +620,60 @@
                     ans.num4 = 5;
 
                     ans.val = ans.num1 / ans.num2 + ans.num3 / ans.num4;
+                  "ng-resettable-init="
+                    ans.showSolution = false;
                   ">
+                  <div class="exercise-box">
+                    <div class="exercise-header">
+                      Résoudre. Attention à l'ordre des opérations!
+                    </div>
 
-                  <div class="ib">
-                    {{ans.num1}}
+                    <div class="ib">
+                      {{ans.num1}}
+                    </div>
+                    <div class="ib">
+                      <div class="ml2 mr2">&divide;</div>
+                    </div>
+                    <div class="ib">
+                      {{ans.num2}}
+                    </div>
+                    <div class="ib">
+                      <div class="ml2 mr2">+</div>
+                    </div>
+                    <div class="ib">
+                      {{ans.num3}}
+                    </div>
+                    <div class="ib">
+                      <div class="ml2 mr2">&divide;</div>
+                    </div>
+                    <div class="ib">
+                      {{ans.num4}}
+                    </div>
+                    <div class="ib">
+                      <div class="ml2 mr2">&equals;</div>
+                    </div>
+                    <div class="ib">
+                      <div  inbook-answerbox-fill="ans.val"
+                          class="type-small"
+                          input-class="type-small"
+                          on-correct="question.markAsCorrect()"
+                          on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
+                    </div>
+
+                      <div vcollapse="!ans.showSolution">
+                          <div class="mt4">
+                              <div class="solution-header">
+                                  La solution:
+                              </div>
+                              <div class="solution-body">
+                                  {{ans.val}}
+                              </div>
+                          </div>
+                      </div>
+
+                    <div class="mt4 center">
+                      <div inbook-nextbtn="question"></div>
+                    </div>  
                   </div>
-                  <div class="ib">
-                    <div class="ml2 mr2">&divide;</div>
-                  </div>
-                  <div class="ib">
-                    {{ans.num2}}
-                  </div>
-                  <div class="ib">
-                    <div class="ml2 mr2">+</div>
-                  </div>
-                  <div class="ib">
-                    {{ans.num3}}
-                  </div>
-                  <div class="ib">
-                    <div class="ml2 mr2">&divide;</div>
-                  </div>
-                  <div class="ib">
-                    {{ans.num4}}
-                  </div>
-                  <div class="ib">
-                    <div class="ml2 mr2">&equals;</div>
-                  </div>
-                  <div class="ib">
-                    <div  inbook-answerbox-fill="ans.val"
-                        class="type-small"
-                        input-class="type-small"
-                        on-correct="question.markAsCorrect()"
-                        on-incorrect="question.markAsIncorrect()"></div>
-                  </div>
-                  <div class="mt4">
-                    <div inbook-nextbtn="question"></div>
-                  </div>  
           </div>
 </div>

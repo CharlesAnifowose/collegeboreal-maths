@@ -1,4 +1,5 @@
-<div 	class="page-layout" 
+<div 	gseq
+		class="page-layout" 
 		ng-init="
 			ans={};
 
@@ -28,25 +29,58 @@
 			};
 		">
 
+		<div gdirections>
+			<div el=".exercise-num"   duration="0.8" ease="power4-in-out" presets="[fromTransparent]"></div>
+
+			<div duration="0.45"></div>
+
+			<div el=".anim-01" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+				
+			<div duration="1"></div>
+
+			<div el=".anim-02" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-03" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-04" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-05" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-06" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+	      	<div el="#continue" duration="1" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]" disable-scroll-focus="true"></div>
+			
+		</div>
+
 		<div class="exercise-num">
 			EXERCICE 8
 		</div>
 
-		<div class="exercise-header">
-			Placez les nombres en ordre décroissant
-		</div>
+		<div class="exercise-box anim-01 anim-02">
 
-		<div class="exercise-text">
-			75, 57, 34 609, 321, 876
-		</div>
+			<div class="exercise-header">
+				Placez les nombres en ordre décroissant
+			</div>
 
-		<div class="exercise-box">
+			<div class="exercise-text">
+				75, 57, 34 609, 321, 876
+			</div>
 
 			<div inbook-workbook-input persist-to="input1"></div>
 	
 			<div vcollapse="ans.input1.showSolution">
 		        <div class="show-solution-btn" ng-click="ans.input1.showSolution = true">
-		            Afficher Solution
+		            Vérifier Solution
 		        </div>
 		    </div>  
 
@@ -64,19 +98,23 @@
 
 		</div>
 
-	<hr class="question-divider" />
+	<hr class="question-divider anim-02" />
 
-		<div class="exercise-text">
-			8 380, 573 541, 87, 9, 864, 54 545, 45 454
-		</div>
+		<div class="exercise-box anim-02">
 
-		<div class="exercise-box">
+			<div class="exercise-header">
+				Placez les nombres en ordre décroissant
+			</div>
+
+			<div class="exercise-text">
+				8 380, 573 541, 87, 9, 864, 54 545, 45 454
+			</div>
 
 			<div inbook-workbook-input persist-to="input2"></div>
 	
 			<div vcollapse="ans.input2.showSolution">
 		        <div class="show-solution-btn" ng-click="ans.input2.showSolution = true">
-		            Afficher Solution
+		            Vérifier Solution
 		        </div>
 		    </div>  
 
@@ -94,19 +132,23 @@
 
 		</div>
 
-	<hr class="question-divider" />
+	<hr class="question-divider anim-03" />
 
-		<div class="exercise-text">
-			2, 90, 709, 98, 314 581, 879 809
-		</div>
+		<div class="exercise-box anim-03">
 
-		<div class="exercise-box">
+			<div class="exercise-header">
+				Placez les nombres en ordre décroissant
+			</div>
+
+			<div class="exercise-text">
+				2, 90, 709, 98, 314 581, 879 809
+			</div>
 
 			<div inbook-workbook-input persist-to="input3"></div>
 	
 			<div vcollapse="ans.input3.showSolution">
 		        <div class="show-solution-btn" ng-click="ans.input3.showSolution = true">
-		            Afficher Solution
+		            Vérifier Solution
 		        </div>
 		    </div>  
 
@@ -124,19 +166,23 @@
 
 		</div>
 
-	<hr class="question-divider" />
+	<hr class="question-divider anim-04" />
 
-		<div class="exercise-text">
-			45 693, 54 897, 43, 9, 654, 342 544
-		</div>
+		<div class="exercise-box anim-04">
 
-		<div class="exercise-box">
+			<div class="exercise-header">
+				Placez les nombres en ordre décroissant
+			</div>
+
+			<div class="exercise-text">
+				45 693, 54 897, 43, 9, 654, 342 544
+			</div>
 
 			<div inbook-workbook-input persist-to="input4"></div>
 	
 			<div vcollapse="ans.input4.showSolution">
 		        <div class="show-solution-btn" ng-click="ans.input4.showSolution = true">
-		            Afficher Solution
+		            Vérifier Solution
 		        </div>
 		    </div>  
 
@@ -154,19 +200,23 @@
 
 		</div>
 
-	<hr class="question-divider" />
+	<hr class="question-divider anim-05" />
 
-		<div class="exercise-text">
-			978 009, 109 900, 1 909, 1 090, 909 909
-		</div>
+		<div class="exercise-box anim-05">
 
-		<div class="exercise-box">
+			<div class="exercise-header">
+				Placez les nombres en ordre décroissant
+			</div>
+
+			<div class="exercise-text">
+				978 009, 109 900, 1 909, 1 090, 909 909
+			</div>
 
 			<div inbook-workbook-input persist-to="input5"></div>
 	
 			<div vcollapse="ans.input5.showSolution">
 		        <div class="show-solution-btn" ng-click="ans.input5.showSolution = true">
-		            Afficher Solution
+		            Vérifier Solution
 		        </div>
 		    </div>  
 
@@ -184,19 +234,23 @@
 
 		</div>
 
-	<hr class="question-divider" />
+	<hr class="question-divider anim-06" />
 
-		<div class="exercise-text">
-			6 820, 934 672, 201 347, 60 749, 327 533
-		</div>
+		<div class="exercise-box anim-06">
 
-		<div class="exercise-box">
+			<div class="exercise-header">
+				Placez les nombres en ordre décroissant
+			</div>
+
+			<div class="exercise-text">
+				6 820, 934 672, 201 347, 60 749, 327 533
+			</div>
 
 			<div inbook-workbook-input persist-to="input6"></div>
 	
 			<div vcollapse="ans.input6.showSolution">
 		        <div class="show-solution-btn" ng-click="ans.input6.showSolution = true">
-		            Afficher Solution
+		            Vérifier Solution
 		        </div>
 		    </div>  
 
@@ -214,5 +268,8 @@
 
 		</div>
 
+		<div id="continue" class="mt6 center">
+			<div inbook-nextbtn="scene"></div>
+		</div>
 
 </div>

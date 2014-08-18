@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Module 6.05</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css" />
+        <link rel="stylesheet" type="text/css" href="assets/stylesheets/lesson.css" />
+    </head>
+    <body>
+        <div class="page-layout">
+
+            <div class="header-section"> 
+                Les facteurs d’un trinôme de la forme 
+                <span math>3x^2
+                    + 8x + 4
+                </span>
+            </div>
+
+            <div class="para">
+                <div>
+                    Ce trinôme est différent du précédent. Le coefficient numérique du premier terme
+                </div>
+                <div>
+                    du trinôme est autre que 1. 
+                </div>
+                <img ng-src="{{imgUrl}}mm3-2.png"/>
+                <div>
+                    Lorsqu’on décompose <span math>3x^2
+                        + 8x + 4</span> pour déterminer les facteurs, on obtient 
+                </div>
+                <div>
+                    (x + 2) (3x + 2). Voici les étapes à suivre pour décomposer ce trinôme en facteurs
+                </div>
+            </div>
+
+            <div class="exemple-frame">
+                <div>
+                    Exemples :
+                </div>
+                <div>
+                    A. Décomposer en facteurs <span math>3x^2 + 8x + 4</span>.
+                </div>
+                <ol>
+                    <li>
+                        <div>
+                            multiplier les coefficients du premier terme et du dernier terme, soit 
+                        </div>
+                        <div>
+                            3 × 4 = 12; 
+                        </div>
+                        <img ng-src="{{imgUrl}}mm3-3.png"/>
+                    </li>
+                    <li>
+                        <div>
+                            trouver les deux nombres dont le produit est 12 et dont la somme est égale 
+                        </div>
+                        <div>
+                            au coefficient du <span math>2^e</span>
+                            terme, soit 8; 
+                        </div>
+                        <div>
+                            (Le produit et la somme sont positifs; on doit donc repérer 2 nombres 
+                        </div>
+                        <div>
+                            positifs.)
+                        </div>
+                        <div>
+                            <div style="width: 50%;float: left">Produit</div>
+                            <div style="width: 50%;float: right">Somme</div>
+                            <div style="width: 50%;float: left">(1) (12) = 12  </div>
+                            <div style="width: 50%;float: right">(1) + (12) = 13   </div>
+                            <div style="width: 50%;float: left">(2) (6) = 12 </div>
+                            <div style="width: 50%;float: right">(2) + (6) = 8 </div>
+                            <div style="width: 50%;float: left">(3) (4) = 12 </div>
+                            <div style="width: 50%;float: right">(3) + (4) = 7 </div>
+                            <div style="clear: both"></div>
+                        </div>
+                        <div>
+                            Donc, 2 et 6 sont les nombres recherchés.
+                        </div>
+                    </li>
+                    <li>
+                        écrire le trinôme en remplaçant le terme du milieu par les facteurs 
+                        <div>
+                            trouvés, soit 2x et 6x (des coefficients 2 et 6 retrouvés) 
+                        </div>
+                        <img ng-src="{{imgUrl}}mm3-3.png"/>
+                    </li>
+                    <li>
+                        faire des groupes de deux termes et mettre en évidence un facteur 
+                        <div>
+                            commun de chaque groupe; 
+                        </div>
+                        <img ng-src="{{imgUrl}}mm3-3.png"/>
+                        <div>
+                            Donc, les facteurs de <span math>3x^2
+                                + 8x + 4 sont (x + 2) (3x + 2)</span>. 
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            vérifier en multipliant; 
+                        </div>
+                        <div>
+                            <span math>(x + 2) (3x + 2) = 3x^2
+                                + 2x + 6x + 4 = 3x^2
+                                + 8x + 4
+                            </span>
+                        </div>
+                        <div>
+                            B. Décomposer en facteurs <span math>10x^2 - 9x + 2</span>. 
+                        </div>
+                    </li>
+                </ol>
+                <ol>
+                    <li>
+                        <div>
+                            multiplier les coefficients du premier termes et du dernier terme,
+                        </div>
+                        <div>
+                            soit 10 × 2 = 20; 
+                        </div>
+                    </li>
+                    <li>
+                        rouver les deux nombres dont le produit est 20 et dont la somme est 
+                        <div>
+                            -9; 
+                        </div>
+                        <div>
+                            (Le produit est positif et la somme est négative; on doit donc repérer 
+                        </div>
+                        <div>
+                            deux nombres négatifs.) 
+                        </div>
+                        <div>
+                            <div style="width: 50%;float: left">Produit</div>
+                            <div style="width: 50%;float: right">Somme</div>
+                            <div style="width: 50%;float: left">(-1) (-20) = 20   </div>
+                            <div style="width: 50%;float: right">(-1) + (-20) = -21    </div>
+                            <div style="width: 50%;float: left">(-2) (-10) = 20 </div>
+                            <div style="width: 50%;float: right">(-2) + (-10) = -12 </div>
+                            <div style="width: 50%;float: left">(-4) (-5) = 20 </div>
+                            <div style="width: 50%;float: right">(-4 ) + (-5) = -9 </div>
+                            <div style="clear: both"></div>
+                        </div>
+                        <div>
+                            Donc, -4 et -5 sont les nombres recherchés. 
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            écrire le trinôme en remplaçant le terme du milieu par les deux termes
+                        </div>
+                        <div>
+                            (-4 et -5), soit -4x et –5x; 
+                        </div>
+                        <div>
+                            <span math>
+                                10x^2 - 9x + 2 = 10x^2
+                                - 4x - 5x + 2 ou 10x^2
+                                -5x - 4x + 2
+                            </span>
+                        </div>
+                        <div>
+                            (Il est quelquefois utile de changer l’ordre des termes de façon à ce que 
+                        </div>
+                        <div>
+                            chaque paire contienne un facteur commun.) 
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            grouper les termes par deux et mettre en évidence le facteur commun; 
+                        </div>
+                        <div>
+                            <span math>
+                                10x^2
+                                - 5x - 4x + 2 
+                            </span>
+                        </div>
+                        <div>
+                            <span>
+                                = (10x^2
+                                - 5x) - (4x - 2) 
+                            </span>
+                        </div>
+                        <div>
+                            = 5x (2x - 1) - 2 (2x - 1)
+                        </div>
+                        <div>
+                            <span math>
+                                Donc, les facteurs de 10x^2
+                                - 9x + 2 sont (5x - 2) (2x - 1)
+                            </span>. 
+                        </div>
+                    </li>
+                    <li>
+                        vérifier en multipliant; 
+                        <div>
+                            <span math>(5x - 2) (2x - 1) = 10x^2 - 5x - 4x + 2 </span>
+                        </div>
+                        <div>
+                            <span>
+                                = 10x^2 -9x + 2
+                            </span>
+                        </div>
+                        <div>
+                            C. Décomposer en facteurs <span math>3a^2</span>
+                            + 7a – 6. 
+                        </div>
+                    </li>
+                </ol>
+                <ol>
+                    <li>
+                        <div>
+                            multiplier les coefficients du premier terme et du dernier terme, soit 
+                            3 × (-6) = -18; 
+                        </div>
+                    </li>
+                    <li>
+                        trouver un nombre négatif et un nombre positif dont le produit égale -
+                        18 et dont la somme égale 7;
+                        <div>
+                            <div style="width: 50%;float: left">Produit</div>
+                            <div style="width: 50%;float: right">Somme</div>
+                            <div style="width: 50%;float: left">(1) (-18) = -18  </div>
+                            <div style="width: 50%;float: right">(1) + (-18) = -17    </div>
+                            <div style="width: 50%;float: left">(-1) (18) = -18  </div>
+                            <div style="width: 50%;float: right">(-1) + (18) = 17  </div>
+                            <div style="width: 50%;float: left">(2) (-9) = -18  </div>
+                            <div style="width: 50%;float: right">(2) + (-9) = -7  </div>
+                            <div style="width: 50%;float: left">(-2) (9) = -18  </div>
+                            <div style="width: 50%;float: right">(-2) + (9) = 7 </div>
+                            <div style="clear: both"></div>
+                        </div>
+                        <div>
+                            Donc, -2 et 9 sont les nombres recherchés. 
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            écrire le trinôme en remplaçant le terme du milieu;
+                        </div>
+                        <div>
+                            3a^2
+                            + 7a - 6 = 3a^2
+                            - 2a + 9a - 6 
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            grouper certains termes et mettre en évidence le facteur commun; 
+                        </div>
+                        <div>
+                            <span math>(3a^2
+                                - 2a) + (9a - 6) </span> 
+                        </div>
+                        <div>
+                            = a(3a - 2) + 3 (3a - 2) 
+                        </div>
+                        <div>
+                            Donc, les facteurs sont (a + 3) (3a - 2). 
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            vérifier; 
+                        </div>
+                        <div>
+                            <span math>(a + 3) (3a - 2) = 3a^2
+                                - 2a + 9a - 6 </span>
+                        </div>
+                        <div>
+                            <span>
+                                (a + 3) (3a - 2) = 3a^2
+                                7a - 6 
+                            </span>
+                        </div>
+                        <div>
+                            D. Décomposer en facteurs 2b2
+                            - 15b + 7. 
+                        </div>
+                    </li>
+                </ol>
+                <ol>
+                    <li>
+                        <div>
+                            multiplier les coefficients du premier terme et du dernier terme, soit 
+                        </div>
+                        <div>
+                            (2) (7) = 14 
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            trouver 2 nombres dont le produit est 14 et la somme -15 
+                        </div>
+                        <div>
+                            <div style="width: 50%;float: left">Produit</div>
+                            <div style="width: 50%;float: right">Somme</div>
+                            <div style="width: 50%;float: left">(-1) (-14) = 14  </div>
+                            <div style="width: 50%;float: right">(-1) + (-14) = -15 </div>
+                            <div style="clear: both"></div>
+                        </div>
+                        <div>
+                            Donc, les nombres recherchés sont -1 et -14. 
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            écrire le trinôme en remplaçant le terme du milieu;
+                        </div>
+                        <div>
+                            <span math> 2b^2
+                                - 15b + 7 = 2b^2
+                                - b - 14b + 7
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            grouper certains termes et mettre en évidence le facteur commun; 
+                        </div>
+                        <div>
+                            <span math>  2b^2
+                                - b - 14b + 7</span>
+                        </div>
+                        <div>
+                            <span math>  2b^2
+                                - b - 14b - 7</span>
+                        </div>
+                        <div>
+                            b (2b - 1) - 7 (2b - 1) 
+                        </div>
+                        <div>
+                            Donc, les facteurs sont (b - 7) (2b - 1). 
+                        </div>
+                        <div>
+                            On aurait pu grouper les termes autrement et, on aurait obtenu les
+                        </div>
+                        <div>
+                            mêmes facteurs. 
+                        </div>
+                        <div>
+                            Ainsi, au lieu de <span math>2b^2
+                                - b - 14b + 7, on peut obtenir 2b^2 - 14b - b + 7 </span>ou 
+                        </div>
+                        <div>
+                            <span math>
+                                (2b^2
+                                - 14b) - (b - 7). 
+                            </span>
+                        </div>
+                        <div>
+                            Puisque 2b est le facteur commun aux termes du <span math>1^e^r</span> groupe et que 1 est 
+                        </div>
+                        <div>
+                            le facteur commun aux termes du <span math>2^e</span>
+                            groupe, on obtient
+                        </div>
+                        <div>
+                            (<span math>2b^2</span>
+                            - 14b) - (b - 7) 
+                        </div>
+                        <div>
+                            2b (b - 7) - 1 (b - 7) 
+                        </div>
+                        <div>
+                            (2b - 1) (b - 7). 
+                        </div>
+                        <div>
+                            Les facteurs sont donc (2b - 1) (b - 7). 
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <span math>
+                                vérifier : (b - 7) (2b - 1) = 2b^2
+                                - b - 14b + 7 
+                            </span>
+                        </div>
+                        <div>
+                            <span math>= 2b^2
+                                - 15b + 7 </span>
+                        </div>
+                        </br>
+                        <div>
+                            E. Factoriser 4a2
+                            + 12ab + 9b2
+                            . 
+                        </div>
+                    </li>
+                </ol>
+                <ol>
+                    <li>
+                        <div>
+                            (4) (9) = 36 
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <div style="width: 50%;float: left">Produit</div>
+                            <div style="width: 50%;float: right">Somme</div>
+                            <div style="width: 50%;float: left">(1) (36) = 36  </div>
+                            <div style="width: 50%;float: right">(1) + (36) = 37    </div>
+                            <div style="width: 50%;float: left">(2) (18) = 36   </div>
+                            <div style="width: 50%;float: right">(2) + (18) = 20   </div>
+                            <div style="width: 50%;float: left">(3) (12) = 36  </div>
+                            <div style="width: 50%;float: right">(3) + (12) = 15   </div>
+                            <div style="width: 50%;float: left">(4) (9) = 36  </div>
+                            <div style="width: 50%;float: right">(4) + (9) = 13  </div>
+                            <div style="width: 50%;float: left">(6) (6) = 36  </div>
+                            <div style="width: 50%;float: right">(6) + (6) = 12   </div>
+                            <div style="clear: both"></div>
+                        </div>
+                        <div>
+                            Les deux nombres sont 6 et 6. 
+                        </div>
+                    </li>
+                    <li>
+                        <span math>4a^2
+                            + 12ab + 9b^2
+                            = 4a^2
+                            + 6ab + 6ab + 9b^2</span>
+                    </li>
+                    <li>
+                        <span math>(4a^2
+                            + 6ab) + (6ab + 9b^2
+                            ) </span>
+                        <div>
+                            2a (2a + 3b) + 3b (2a + 3b) 
+                        </div>
+                        <div>
+                            Les facteurs sont (2a + 3b) (2a + 3b). 
+                        </div>
+                    </li>
+                    <li>
+                        <span>
+                            (2a + 3b) (2a + 3b) = 4a^2 + 6ab + 6ab + 9b^2
+                            = 4a^2
+                            + 12ab + 9b^2
+                        </span>
+                        <div>
+                            F. Décomposer en facteurs 10a2
+                            + 3a - 4. 
+                        </div>
+                    </li>
+                </ol>
+                <ol>
+                    <li>
+                        (10) (-4) = -40 
+                    </li>
+                    <li>
+                        Les facteurs de -40 sont -5 et 8; leur somme est 3. 
+                    </li>
+                    <li>
+                        <span>
+                            10a^2
+                            + 3a - 4 = 10a^2
+                            - 5a + 8a - 4 
+                        </span>
+                    </li>
+                    <li>
+                        5a (2a - 1) + 4 (2a - 1) 
+                        <div>
+                            Les facteurs de <span math>10a^2</span>
+                            + 3a - 4 sont (5a + 4) (2a - 1). 
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <span math>
+                                (5a + 4) (2a - 1) = 10a^2
+                                - 5a + 8a - 4
+                            </span>
+                        </div>
+                        <div>
+                            <span math>
+                                10a^2
+                                3a - 4
+                            </span>
+                        </div>
+                        <div>
+                            G. Décomposer en facteurs <span math>2x^2</span>
+                            + 13x + 21. 
+                        </div>
+                    </li>
+                </ol>
+                <ol>
+                    <li>
+                        <div>
+                            (2) (21) = 42 
+                        </div>
+                    </li>
+                    <li>
+                        Les facteurs de 42 sont 6 et 7. 
+                    </li>
+                    <li>
+                        <span math>
+                            2x^2
+                            + 13x + 21 = 2x^2
+                            + 6x + 7x + 21 
+                        </span>
+                    </li>
+                    <li>
+                        2x (________) + ____ (________) 
+                        <div>
+                            <span math>
+                                Les facteurs de 2x^2
+                                + 13x - 21 sont (________) (________). 
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <span math>
+                            (________) (________) = 2x^2
+                            + 6x + 7x + 21 
+                        </span>
+                        <div>
+                            <span math>
+                                = 2x^2
+                                + 13x - 21 
+                            </span>
+                        </div>
+                        <div>
+                            H. Décomposer en facteurs <span math>12x^2
+                                - 5x - 3. </span>
+                        </div>
+                    </li>
+                </ol>
+                <ol>
+                    <li>
+                        <div>
+                            (12) (-3) = -36 
+                        </div>
+                    </li>
+                    <li>
+                        Les facteurs de -36 sont _____ et _____ 
+                    </li>
+                    <li>
+                        <div>
+                            <span math>
+                                12x^2
+                                - 5x - 3 = _______________________________ 
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        4x (________) - 3 (________) 
+                        <div>
+                            <span math>
+                                Les facteurs de 12x^2
+                                - 5x - 3 sont (________) (________). 
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            (________) (________) = _________________________ 
+                        </div>
+                        <div>
+                            = _________________________ 
+                        </div>
+                        <div class="bold underline">
+                            Solutions aux problèmes précédents
+                        </div>
+                        <div>
+                            G. 2x(x + 3) + 7(x + 3) 
+                        </div>
+                        <div>
+                            (2x + 7) (x + 3)
+                        </div>
+                        <div>
+                            H. 4, -9; 
+                        </div>
+                        <div>
+                            <span math>
+                                12x^2 + 4x - 9x - 3
+                            </span>
+                        </div>
+                        <div>
+                            4x (3x + 1) - 3(3x + 1); 
+                        </div>
+                        <div>
+                            (4x - 3) (3x + 1) 
+                        </div>
+                        <div>
+                            <span math>
+                                (4x - 3) (3x + 1) = 12x^2 + 4x - 9x - 3 = 12x^2 - 5x - 3 
+                            </span>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,247 @@
+<div 	gseq
+		class="page-layout" 
+		ng-init="
+			ans={};
+
+			ans.input1 = {
+				showSolution: false,
+				solution 	: '24 douzaines'
+			};
+			ans.input2 = {
+				showSolution: false,
+				solution 	: '3 biscuits'
+			};
+			ans.input3 = {
+				showSolution: false,
+				solution 	: '33, 60$'
+			};
+			ans.input4 = {
+				showSolution: false,
+				solution 	: '42 planches'
+			};
+			ans.input5 = {
+				showSolution: false,
+				solution 	: 'Ordi offre le meilleur prix : 2 544$ ; La différence est 81$.'
+			};
+		">
+
+		<div gdirections>
+			<div el=".exercise-num"   duration="0.8" ease="power4-in-out" presets="[fromTransparent]"></div>
+
+			<div duration="0.45"></div>
+
+			<div el=".anim-01" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+				
+			<div duration="1"></div>
+
+			<div el=".anim-02" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-03" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-04" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-05" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+	      	<div el="#continue" duration="1" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]" disable-scroll-focus="true"></div>
+
+		</div>
+
+		<div class="exercise-num">
+			EXERCICE 23
+		</div>
+
+		<div class="exercise-box anim-01">
+
+			<div class="exercise-header">
+				Résoudre les problèmes suivants. Attention! Un problème pourrait
+				comporter plus qu'une opération.
+			</div>
+
+			<div class="exercise-text">
+				Combien de douzaines de crayons y a-t-il dans une boîte de 288 crayons ?
+			</div>
+
+			<div inbook-workbook-input persist-to="input1"></div>
+	
+			<div vcollapse="ans.input1.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input1.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input1.showSolution">
+
+				<div class="solution-header">
+					La solution:
+				</div>
+
+				<div class="solution-body">
+					{{ans.input1.solution}}
+				</div>
+
+			</div>
+
+		</div>
+
+	<hr class="question-divider anim-02" />
+
+		<div class="exercise-box anim-02">
+
+			<div class="exercise-header">
+				Résoudre les problèmes suivants. Attention! Un problème pourrait
+				comporter plus qu'une opération.
+			</div>
+
+			<div class="exercise-text">
+				D’une boîte de 108 biscuits, 12 ont été mangés. On veut distribuer les
+				biscuits qui restent à 32 enfants. Combien de biscuits recevra chaque
+				enfant ?
+			</div>
+
+			<div inbook-workbook-input persist-to="input2"></div>
+	
+			<div vcollapse="ans.input2.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input2.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input2.showSolution">
+
+				<div class="solution-header">
+					La solution:
+				</div>
+
+				<div class="solution-body">
+					{{ans.input2.solution}}
+				</div>
+
+			</div>
+
+		</div>
+
+	<hr class="question-divider anim-03" />
+
+		<div class="exercise-box anim-03">
+
+			<div class="exercise-header">
+				Résoudre les problèmes suivants. Attention! Un problème pourrait
+				comporter plus qu'une opération.
+			</div>
+
+			<div class="exercise-text">
+				Si une gomme à effacer coûte 8¢, combien coûteront 35 douzaines de gommes ?
+			</div>
+
+			<div inbook-workbook-input persist-to="input3"></div>
+	
+			<div vcollapse="ans.input3.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input3.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input3.showSolution">
+
+				<div class="solution-header">
+					La solution:
+				</div>
+
+				<div class="solution-body">
+					{{ans.input3.solution}}
+				</div>
+
+			</div>
+
+		</div>
+
+	<hr class="question-divider anim-04" />
+
+		<div class="exercise-box anim-04">
+
+			<div class="exercise-header">
+				Résoudre les problèmes suivants. Attention! Un problème pourrait
+				comporter plus qu'une opération.
+			</div>
+
+			<div class="exercise-text">
+				Pour construire une clôture, on a payé les planches 126$. Si chaque
+				planche coûte 3$, combien y a-t-il de planches ?
+			</div>
+
+			<div inbook-workbook-input persist-to="input4"></div>
+	
+			<div vcollapse="ans.input4.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input4.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input4.showSolution">
+
+				<div class="solution-header">
+					La solution:
+				</div>
+
+				<div class="solution-body">
+					{{ans.input4.solution}}
+				</div>
+
+			</div>
+
+		</div>
+
+	<hr class="question-divider anim-05" />
+
+		<div class="exercise-box anim-05">
+
+			<div class="exercise-header">
+				Résoudre les problèmes suivants. Attention! Un problème pourrait
+				comporter plus qu'une opération.
+			</div>
+
+			<div class="exercise-text">
+				La boutique Ordi vend un système d’ordinateur au coût de 24
+				paiements de 106$. La boutique Techni vend le même système au
+				coût de 15 paiements de 175$.
+				<ul>
+					<li>Quelle boutique offre le meilleur prix ?</li>
+					<li>Quelle est la différence de prix entre les deux ?</li>
+				</ul>
+			</div>
+
+			<div inbook-workbook-input persist-to="input5"></div>
+	
+			<div vcollapse="ans.input5.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input5.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input5.showSolution">
+
+				<div class="solution-header">
+					La solution:
+				</div>
+
+				<div class="solution-body">
+					{{ans.input5.solution}}
+				</div>
+
+			</div>
+
+		</div>
+
+		<div id="continue" class="mt6 center">
+			<div inbook-nextbtn="scene"></div>
+		</div>
+
+</div>

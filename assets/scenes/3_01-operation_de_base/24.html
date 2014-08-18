@@ -1,23 +1,50 @@
-<div 	class="page-layout" 
-		ng-init="
-			imgUrl = 'http://d3mw5hjf8nr5ry.cloudfront.net/collegeboreal-sample/images/3_01-operation_de_base/';
-		">
+<div  	gseq gscroll
+	    class="page-layout">
+
+	    <div gdirections>
+			<div el=".header-section" 	 duration="1" ease="power2-in-out" presets="[fromTransparent]"></div>
+
+	      <div duration="0.85"></div>
+
+	      <div el=".anim-01" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+	        
+	      <div duration="2"></div>
+
+	      <div el=".anim-02" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+	      <div duration="2"></div>
+
+	      <div el=".anim-03" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+	      <div duration="2"></div>
+
+	      <div el=".anim-04" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+	      <div duration="2"></div>
+
+	      <div el=".anim-05" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+	      <div duration="2"></div>
+
+	      <div el="#continue" duration="1.2" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]"></div>
+
+	    </div>
 
 		<div class="header-section"> 
 			La soustraction
 		</div>
 
-		<div class="para">
+		<div class="para anim-01">
 			La soustraction est l'opération qui permet de retrancher un nombre
 			d'un autre nombre. Le symbole de la soustraction est − et se lit "moins".
 			La réponse d'une soustraction s'appelle la DIFFÉRENCE.
 		</div>
 
-		<div class="para">
+		<div class="para anim-02">
 			Comme pour l'addition, il est important de bien placer les termes qu'on veut soustraire.
 		</div>
 
-		<div class="para">
+		<div class="para anim-03">
 			On aligne:
 			<ul class="basic-list">
 				<li>les unités sous les unités</li>
@@ -26,8 +53,8 @@
 			</ul>
 		</div>
 
-		<div class="exemple-frame">
-			<div class="mt1">
+		<div class="exemple-frame anim-04">
+			<div class="exemple-header">
 				Exemple 1 : Soustraire 24 de 39
 			</div>
 			<div class="mt1">
@@ -73,8 +100,8 @@
 			</div>
 		</div>
 
-		<div class="exemple-frame">
-			<div class="mt1">
+		<div class="exemple-frame anim-05">
+			<div class="exemple-header">
 				Exemple 2 : Soustraire 32 de 176
 			</div>
 			<div class="mt1">
@@ -217,7 +244,8 @@
 			</div>
 		</div>
 
-
-
+		<div id="continue" class="mt6 center">
+			<div inbook-nextbtn="scene"></div>
+		</div>
 
 </div>

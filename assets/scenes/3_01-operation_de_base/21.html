@@ -1,125 +1,149 @@
-<div 	class="page-layout" 
-		ng-init="
-			imgUrl = 'http://d3mw5hjf8nr5ry.cloudfront.net/collegeboreal-sample/images/3_01-operation_de_base/';
-		">
+<div  	gseq gscroll
+	    class="page-layout">
+
+	    <div gdirections>
+			<div el=".header-section" 	 duration="1" ease="power2-in-out" presets="[fromTransparent]"></div>
+
+	      <div duration="0.85"></div>
+
+	      <div el=".anim-01" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+	        
+	      <div duration="2"></div>
+
+	      <div el=".anim-02" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+	      <div duration="2"></div>
+
+	      <div el=".anim-03" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+	      <div duration="2"></div>
+
+	      <div el=".anim-04" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+	      <div duration="2"></div>
+
+	      <div el=".anim-05" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+	      <div duration="2"></div>
+
+	      <div el="#continue" duration="1.2" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]"></div>
+
+	    </div>
 
 		<div class="header-section"> 
 			Additions de nombres avec retenues
 		</div>
 
-		<div class="inbook-grid-layout">
-
-			<div>
-				<div class="col3 bold">
-					Étapes de l'opération
-				</div>
-				<div class="col7 bold">
-					Description
-				</div>
+		<div class="anim-01">
+			<div class="ib bold" style="width:30%">
+				Étapes de l'opération
 			</div>
-
-			<div>
-				<div class="col3">
-					<div class="vert-add">
-						<div class="term">
-							<div class="ib">
-								&nbsp;		
-							</div>
-							<div class="ib">
-								37
-							</div>
-						</div>
-						<div class="term last">
-							<div class="ib">
-								+		
-							</div>
-							<div class="ib">
-								45
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col7">
-					On additionne les unités : 7 + 5 = 12;
-					12 signifie qu'on a 2 unités et 1 dizaine.
-				</div>
-			</div>
-
-			<div>
-				<div class="col3">
-					<div class="vert-add">
-						<div class="term">
-							<div class="ib">
-								&nbsp;		
-							</div>
-							<div class="ib">
-								37
-							</div>
-						</div>
-						<div class="term last">
-							<div class="ib">
-								+		
-							</div>
-							<div class="ib">
-								45
-							</div>
-						</div>
-						<div class="term">
-							<div class="ib">
-								&nbsp;		
-							</div>
-							<div class="ib">
-								2
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col7">
-					On inscrit 2 sous la colonne des unités puisqu’il s’agit
-					de 2 unités et, on reporte la dizaine, soit 1, au-dessus du
-					3, dans la colonne des dizaines.
-				</div>
-			</div>
-
-			<div>
-				<div class="col3">
-					<div class="vert-add">
-						<div class="term">
-							<div class="ib">
-								&nbsp;		
-							</div>
-							<div class="ib">
-								37
-							</div>
-						</div>
-						<div class="term last">
-							<div class="ib">
-								+		
-							</div>
-							<div class="ib">
-								45
-							</div>
-						</div>
-						<div class="term">
-							<div class="ib">
-								&nbsp;		
-							</div>
-							<div class="ib">
-								82
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col7">
-					On additionne les dizaines : 4 + 3 + 1 = 8.
-					Le résultat, c'est-à-dire la somme, est 82.
-				</div>
+			<div  class="ib bold" style="width:60%">
+				Description
 			</div>
 		</div>
 
-		<div class="exemple-frame">
+		<div class="anim-01 para">
+			<div class="ib" style="width:30%">
+				<div class="vert-add">
+					<div class="term">
+						<div class="ib">
+							&nbsp;		
+						</div>
+						<div class="ib">
+							37
+						</div>
+					</div>
+					<div class="term last">
+						<div class="ib">
+							+		
+						</div>
+						<div class="ib">
+							45
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ib" style="width:60%">
+				On additionne les unités : 7 + 5 = 12;
+				12 signifie qu'on a 2 unités et 1 dizaine.
+			</div>
+		</div>
 
-			<div>
+		<div class="anim-02 para">
+			<div class="ib" style="width:30%">
+				<div class="vert-add">
+					<div class="term">
+						<div class="ib">
+							&nbsp;		
+						</div>
+						<div class="ib">
+							37
+						</div>
+					</div>
+					<div class="term last">
+						<div class="ib">
+							+		
+						</div>
+						<div class="ib">
+							45
+						</div>
+					</div>
+					<div class="term">
+						<div class="ib">
+							&nbsp;		
+						</div>
+						<div class="ib">
+							2
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ib" style="width:60%">
+				On inscrit 2 sous la colonne des unités puisqu’il s’agit
+				de 2 unités et, on reporte la dizaine, soit 1, au-dessus du
+				3, dans la colonne des dizaines.
+			</div>
+		</div>
+
+		<div class="anim-03 para">
+			<div class="ib" style="width:30%">
+				<div class="vert-add">
+					<div class="term">
+						<div class="ib">
+							&nbsp;		
+						</div>
+						<div class="ib">
+							37
+						</div>
+					</div>
+					<div class="term last">
+						<div class="ib">
+							+		
+						</div>
+						<div class="ib">
+							45
+						</div>
+					</div>
+					<div class="term">
+						<div class="ib">
+							&nbsp;		
+						</div>
+						<div class="ib">
+							82
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ib" style="width:60%">
+				On additionne les dizaines : 4 + 3 + 1 = 8.
+				Le résultat, c'est-à-dire la somme, est 82.
+			</div>
+		</div>
+		
+
+		<div class="exemple-frame anim-04">
+			<div class="exemple-header">
 				Exemple 1 : 795 + 458
 			</div>
 			<div class="vert-add">
@@ -151,9 +175,8 @@
 
 		</div>
 
-		<div class="exemple-frame">
-
-			<div>
+		<div class="exemple-frame anim-05">
+			<div class="exemple-header">
 				Exemple 1 : 795 + 458
 			</div>
 			<div class="vert-add">
@@ -194,5 +217,8 @@
 		</div>
 
 
+		<div id="continue" class="mt6 center">
+			<div inbook-nextbtn="scene"></div>
+		</div>
 
 </div>

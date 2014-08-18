@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Module 6.02</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css" />
+        <link rel="stylesheet" type="text/css" href="assets/stylesheets/lesson.css" />
+    </head>
+    <body>
+        <div class="page-layout">
+
+            <div class="header-module-sub"> 
+                Équation quadratique irrationnelle
+            </div>
+            <div class="para">
+                <div>
+                    Une équation quadratique irrationnelle est une équation quadratique dont l'une des 
+                    variables est sous radical. 
+                </div>
+                <div class="mt5">
+                    Pour résoudre une telle équation, il s’agit d’isoler le radical d’un côté de l'équation; 
+                    on élève ensuite les deux membres de l'équation à une puissance égale à l'indice du 
+                    radical et on résout l'équation. 
+                </div>
+            </div>
+
+            <div class="exemple-frame">
+                <div class="bold">Voici un exemple.</div>
+                <img class="ml10" src="assets/images/mm4-9.png">
+                <div class="bold">A. Résoudre.</div>
+                <div class="bold">Solution: </div>
+                <ol>
+                    <li>
+                        <p>
+                            Isolons le radical d’un côté de l'équation. 
+                        </p>
+                        <img ng-src="{{imgUrl}}mm5-1.png" />
+                    </li>
+                    <li>
+                        <p>
+                            Élevons les deux côtés de l'équation au carré.
+                        </p>
+                        <img class="ml15" src="assets/images/mm5-2.png" />
+                    </li>
+                    <li>
+                        <p>
+                            Résolvons l'équation. On doit premièrement additionner les termes semblables. 
+                        </p>
+                        <div><span math>x + 4 = 4x^2 - 28x + 49</span></div>
+                        <div><span math>x + 4 - 4x^2 + 28x - 49 = 0</span></div>
+                        <div><span math>-4x^2 + 29x - 45 = 0</span></div>
+                        <div>ou <span math class="ml5">4x^2 - 29x + 45 = 0</span></div>
+                    </li>
+                    <li>
+                        <p>
+                            Appliquons la formule quadratique. 
+                            Nous avons <span math>a = 4, b = -29 et c = 45</span>. 
+                        </p>
+                        <div>Puisque</div>
+                        <img class="ml15" style="margin-top: -20px" src="assets/images/mm5-3.png">
+                        <div>
+                            Les racines sont est {5, 9/4.}
+                        </div>
+                    </li>
+                    <li>
+                        <p>
+                            Ces deux racines satisfont-elles toutes deux l'équation donnée? 
+                        </p>
+                    </li>
+                </ol>
+                <div class="mt5">
+                    Dans l'équation donnée, substituons x par chacune de ces deux valeurs et résolvons. 
+                </div>
+                <img style="margin-left: 100px" src="assets/images/mm5-4.png">
+                <div class="mt5">
+                    Comme le membre de droite n'égale pas le membre de gauche, 9/4 est une racine à rejeter.  
+                </div>
+                <img style="margin-left: 100px" src="assets/images/mm5-5.png">
+                <div class="mt5">
+                    Comme le membre de droite égale celui de gauche, 5 est la seule racine de 
+                </div>
+                <div class="mt5">
+                    l'équation donnée.
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

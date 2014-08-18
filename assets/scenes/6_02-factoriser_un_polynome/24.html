@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Module 6.05</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css" />
+        <link rel="stylesheet" type="text/css" href="assets/stylesheets/lesson.css" />
+    </head>
+    <body>
+        <div class="page-layout">
+
+            <div class="para">
+                <div class="header-module">
+                    Résolution d’une équation quadratique incomplète
+                </div>
+                <div class="mt5">
+                    L’équation quadratique incomplète peut se résoudre soit en utilisant le même 
+                    procédé que pour résoudre une équation du premier degré, c’est-à-dire en isolant 
+                    l’inconnue soit par factorisation. 
+                </div>
+                <div class="exemple-frame mt5">
+                   <div class="bold">Voici un exemple.</div>
+                    <div class="bold">
+                        A. Résoudre <span math>3x^2 - 75 = 0</span> 
+                    </div>
+                    <div class="bold">Solution: </div>
+                    <ol>
+                        <li>
+                            <p>
+                               Isolons le terme contenant l’inconnue et cherchons la valeur de x^2.
+                            </p>
+                            <div>3x^2= 75</div>
+                            <div>x^2 = 75/3 = 25</div>
+                            <div>x^2 = 5</div>
+                        </li>
+                        <li>
+                            <p>
+                                Extrayons la racine carrée de part et d’autre de l’expression. 
+                            </p>
+                            <div>x^2 = 25</div>
+                            <div>
+                                <img ng-src="{{imgUrl}}mm3-8.png">
+                            </div>
+                            <div>x = ± 5</div>
+                            <div>L’ensemble-solution est {5, -5}.</div>
+                        </li>
+                    </ol>
+                    <div>
+                        Notons qui’il est impossible d’extraire la racine carrée d’un nombre négatif. Une 
+                        telle racine est dite «imaginaire».
+                    </div>
+                </div>
+                <div class="mt5">
+                    Nous remarquons que l’ensemble-solution d’une équation quadratique se compose 
+                    de deux racines : l’une positive et l’autre négative. Ces deux racines vont-elles 
+                    toutes deux satisfaire l’équation? Pour le savoir, effectuons la vérification en 
+                    employant la méthode de substitution.
+                </div>
+                <div class="mt5">
+                    <div style="width: 50%;float: left">Si <span math>x = 5 </span></div>
+                    <div style="width: 50%;float: right">Si <span math>x = -5 </span></div>
+                    <div style="width: 50%;float: left"><span math>3x^2 = 75</span></div>
+                    <div style="width: 50%;float: right"><span math>3x^2 = 75</span></div>
+                    <div style="width: 50%;float: left"><span math>3 (5)^2 = 75</span></div>
+                    <div style="width: 50%;float: right"><span math>3 (-5)^2 = 75</span></div>
+                    <div style="width: 50%;float: left"><span math>3 (25 = 75</span></div>
+                    <div style="width: 50%;float: right"><span math>3 (25) = 75</span></div>
+                    <div style="width: 50%;float: left"><span math>75 = 75</span></div>
+                    <div style="width: 50%;float: right"><span math>75 = 75</span></div>
+                    <div style="clear: both"></div>
+                </div>
+                <div class="mt5">
+                    Dans les deux cas, il y a égalité entre chacun des membres de l’équation; les deux 
+                    racines satisfont donc l’équation. 
+                </div> 
+            </div>
+        </div>
+    </body>
+</html>

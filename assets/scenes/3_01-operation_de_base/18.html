@@ -1,7 +1,28 @@
-<div 	class="page-layout" 
-		ng-init="
-			imgUrl = 'http://d3mw5hjf8nr5ry.cloudfront.net/collegeboreal-sample/images/3_01-operation_de_base/';
-		">
+<div  	gseq gscroll
+	    class="page-layout">
+
+	    <div gdirections>
+	      <div el=".header-module"   duration="1" ease="power4-in-out" presets="[fromTransparent,fromBottom]"></div>
+	      <div el=".header-module-sub" duration="1" offset="-=0.3" ease="power4-in-out" presets="[fromTransparent,fromBottom]"></div>   
+	      <div el=".header-section"    duration="1" offset="-=0.6" ease="power4-in-out" presets="[fromTransparent,fromBottom]"></div>
+
+	      <div duration="0.85"></div>
+
+	      <div el=".anim-01" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+	        
+	      <div duration="2"></div>
+
+	      <div el=".anim-02" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+	      <div duration="2"></div>
+
+	      <div el=".anim-03" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+	      <div duration="2"></div>
+
+	      <div el="#continue" duration="1.2" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]"></div>
+
+	    </div>
 
 		<div 	inbook-questionseries
 				on-complete="scene.markAsCompleted();"
@@ -12,15 +33,13 @@
 					EXERCICE 10
 				</div>
 
-				<div class="exercise-header">
-					Additionnez dans les deux sens puis vérifiez à l'aide de la calculatrice
-				</div>
-
   				<div 	inbook-questionseries-item level="1"
 	  					ng-init="
 	  						ans				=	{};
 	  						ans.equation 	=	'8 + 6 + 0 + 4';
 	  						ans.val 		=	18; 
+	  					"ng-resettable-init="
+	  						ans.showSolution = false;
 	  					">
 
 					<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-10-template.html"></div>
@@ -31,6 +50,8 @@
 	  						ans				=	{};
 	  						ans.equation 	=	'2 + 4 + 6 + 9 + 8 + 2';
 	  						ans.val 		=	29; 
+	  					"ng-resettable-init="
+	  						ans.showSolution = false;
 	  					">
 
 					<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-10-template.html"></div>
@@ -41,6 +62,8 @@
 	  						ans				=	{};
 	  						ans.equation 	=	'6 + 9 + 7';
 	  						ans.val 		=	22; 
+	  					"ng-resettable-init="
+	  						ans.showSolution = false;
 	  					">
 
 					<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-10-template.html"></div>
@@ -51,6 +74,8 @@
 	  						ans				=	{};
 	  						ans.equation 	=	'1 + 8 + 3 + 7 + 4 + 5';
 	  						ans.val 		=	28; 
+	  					"ng-resettable-init="
+	  						ans.showSolution = false;
 	  					">
 
 					<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-10-template.html"></div>
@@ -61,6 +86,8 @@
 	  						ans				=	{};
 	  						ans.equation 	=	'6 + 6 + 4 + 4 + 7';
 	  						ans.val 		=	27; 
+	  					"ng-resettable-init="
+	  						ans.showSolution = false;
 	  					">
 
 					<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-10-template.html"></div>
@@ -71,6 +98,8 @@
 	  						ans				=	{};
 	  						ans.equation 	=	'7 + 5 + 5 + 8 + 8 + 2';
 	  						ans.val 		=	35; 
+	  					"ng-resettable-init="
+	  						ans.showSolution = false;
 	  					">
 
 					<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-10-template.html"></div>

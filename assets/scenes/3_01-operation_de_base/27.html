@@ -1,142 +1,104 @@
-<div 	class="page-layout" 
-		ng-init="
-			imgUrl = 'http://d3mw5hjf8nr5ry.cloudfront.net/collegeboreal-sample/images/3_01-operation_de_base/';
-		">
+<div  	gseq gscroll
+	    class="page-layout">
+
+	    <div gdirections>
+			<div el=".header-section" 	 duration="1" ease="power2-in-out" presets="[fromTransparent]"></div>
+
+	      <div duration="0.85"></div>
+
+	      <div el=".anim-01" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+	        
+	      <div duration="2"></div>
+
+	      <div el=".anim-02" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+	      <div duration="2"></div>
+
+	      <div el=".anim-03" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+	      <div duration="2"></div>
+
+	      <div el=".anim-04" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+	      <div duration="2"></div>
+
+	      <div el=".anim-05" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+	      <div duration="2"></div>
+
+	      <div el="#continue" duration="1.2" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]"></div>
+
+	    </div>
 
 		<div class="header-section"> 
 			Soustractions de nombres avec emprunts
 		</div>
 
-		<div class="para">
+		<div class="para anim-01">
 			Lorsque le chiffre à soustraire est plus grand que le chiffre duquel il est
 			soustrait, on doit emprunter.
 		</div>
 
-		<div class="note-frame">
+		<div class="note-frame anim-02">
 			Rappel:
 			<div>1 dizaine = 10 unités</div>
 			<div>1 centaine = 10 dizaines</div>
 		</div>
 
-
-		<div class="inbook-grid-layout">
-
-			<div>
-				<div class="col3 bold">
+		<div class="para anim-03">
+			<div class="bold">
+				<div class="ib vbottom" style="width:25%;">
 					Étapes de l'opération
 				</div>
-				<div class="col7 bold">
+				<div class="ib vbottom" style="width:70%;">
 					Description
 				</div>
-			</div>
+			</div>	
 
 			<div>
-				<div class="col3">
-					<div class="vert-add">
-						<div class="term">
-							<div class="ib">
-								&nbsp;		
-							</div>
-							<div class="ib">
-								32
-							</div>
-						</div>
-						<div class="term last">
-							<div class="ib">
-								&minus;		
-							</div>
-							<div class="ib">
-								15
-							</div>
-						</div>
-					</div>
+				<div class="ib vtop" style="width:25%;">
+					<img ng-src="{{imgUrl}}diagram_27.png" />
 				</div>
-				<div class="col7">
-					On remarque qu'il est impossible de soustraire 5 unités de 2 unités.
+				<div class="ib vtop pt2" style="width:70%;">
+					On remarque qu'il est impossible de soustraire 5 unités de 2 unités
 				</div>
 			</div>
 
 			<div>
-				<div class="col3">
-					<div class="vert-add">
-						<div class="term">
-							<div class="ib">
-								&nbsp;		
-							</div>
-							<div class="ib">
-								32
-							</div>
-						</div>
-						<div class="term last">
-							<div class="ib">
-								&minus;		
-							</div>
-							<div class="ib">
-								15
-							</div>
-						</div>
-						<div class="term">
-							<div class="ib">
-								&nbsp;		
-							</div>
-							<div class="ib">
-								7
-							</div>
-						</div>
-					</div>
+				<div class="ib vtop" style="width:25%;">
+					<img ng-src="{{imgUrl}}diagram_28.png" />
 				</div>
-				<div class="col7">
+				<div class="ib vtop pt2" style="width:70%;">
 					<div>
-						On emprunte donc une dizaine de 3, on ajoute la dizaine empruntée, soit 10 unités, à 2; on obtient un total de 12.
+						On emprunte donc une dizaine de 3, on ajoute la
+						dizaine empruntée, soit 10 unités, à 2; on obtient un total de 12.
 					</div>
 					<div class="mt1">
 						On soustrait ensuite 5 de 12 et on inscrit la réponse 7 en dessous du 5.
 					</div>
 				</div>
 			</div>
+		
 			<div>
-				<div class="col3">
-					<div class="vert-add">
-						<div class="term">
-							<div class="ib">
-								&nbsp;		
-							</div>
-							<div class="ib">
-								32
-							</div>
-						</div>
-						<div class="term last">
-							<div class="ib">
-								&minus;		
-							</div>
-							<div class="ib">
-								15
-							</div>
-						</div>
-						<div class="term">
-							<div class="ib">
-								&nbsp;		
-							</div>
-							<div class="ib">
-								17
-							</div>
-						</div>
-					</div>
+				<div class="ib vtop" style="width:25%;">
+					<img ng-src="{{imgUrl}}diagram_29.png" />
 				</div>
-				<div class="col7">
+				<div class="ib vtop pt2" style="width:70%;">
 					<div>
-						On soustrait ensuite les dizaines; puisqu'on avait emprunté une dizaine, il en reste 2. Nous avons donc 2 − 1
+						On soustrait ensuite les dizaines; puisqu'on avait
+						emprunté une dizaine, il en reste 2. Nous avons donc
+						2 − 1.
 					</div>
 					<div>
-						Le résultat, soit la différence, est 17
+						Le résultat, soit la différence, est 17.
 					</div>
 				</div>
 			</div>
 
 		</div>
 
-		<div class="exemple-frame">
-			<div class="mt1">
+		<div class="exemple-frame anim-04">
+			<div class="exemple-header">
 				Exemple 1 : Soustraire 68 de 555
 			</div>
 			<div class="mt1">
@@ -147,8 +109,8 @@
 			</div>
 		</div>
 
-		<div class="exemple-frame">
-			<div class="mt1">
+		<div class="exemple-frame anim-05">
+			<div class="exemple-header">
 				Exemple 2 : Soustraire 128 de 604.
 			</div>
 			<div class="mt1">
@@ -175,6 +137,10 @@
 				</div>
 			</div>
 
+		</div>
+
+		<div id="continue" class="mt6 center">
+			<div inbook-nextbtn="scene"></div>
 		</div>
 
 </div>
