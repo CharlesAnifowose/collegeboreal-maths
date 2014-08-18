@@ -1,4 +1,5 @@
-<div 	class="page-layout" 
+<div 	gseq
+		class="page-layout" 
 		ng-init="
 			ans={};
 
@@ -32,11 +33,48 @@
 			};
 		">
 
+		<div gdirections>
+			<div el=".exercise-num"   duration="1" ease="power4-in-out" presets="[fromTransparent]"></div>
+
+			<div duration="0.85"></div>
+
+			<div el=".anim-01" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+				
+			<div duration="2"></div>
+
+			<div el=".anim-02" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+			<div duration="2"></div>
+
+			<div el=".anim-03" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+			<div duration="2"></div>
+
+			<div el=".anim-04" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+			<div duration="2"></div>
+
+			<div el=".anim-05" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+			<div duration="2"></div>
+
+			<div el=".anim-06" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+			<div duration="2"></div>
+
+			<div el=".anim-07" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+			<div duration="2"></div>
+
+	      	<div el="#continue" duration="1.2" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]"></div>
+			
+		</div>
+
 		<div class="exercise-num">
 			EXERCICE 9
 		</div>
 
-		<div class="exercise-box">
+		<div class="exercise-box anim-01">
 
 			<div class="exercise-text">
 				Comptez par 2 de 345 à 367
@@ -64,9 +102,9 @@
 
 		</div>
 
-	<hr class="question-divider" />
+	<hr class="question-divider anim-02" />
 
-		<div class="exercise-box">
+		<div class="exercise-box anim-02">
 
 			<div class="exercise-text">
 				Comptez par 3 de 4 986 à 5 010
@@ -94,9 +132,9 @@
 
 		</div>
 
-	<hr class="question-divider" />
+	<hr class="question-divider anim-03" />
 
-		<div class="exercise-box">
+		<div class="exercise-box anim-03">
 
 			<div class="exercise-text">
 				Comptez par 5 de 54 à 114
@@ -124,9 +162,9 @@
 
 		</div>
 
-	<hr class="question-divider" />
+	<hr class="question-divider anim-04" />
 
-		<div class="exercise-box">
+		<div class="exercise-box anim-04">
 
 			<div class="exercise-text">
 				Comptez par 8 de 86 à 134
@@ -154,9 +192,9 @@
 
 		</div>
 
-	<hr class="question-divider" />
+	<hr class="question-divider anim-05" />
 
-		<div class="exercise-box">
+		<div class="exercise-box anim-05">
 
 			<div class="exercise-text">
 				Comptez par 10 de 1 000 à 1 080
@@ -184,9 +222,9 @@
 
 		</div>
 
-	<hr class="question-divider" />
+	<hr class="question-divider anim-06" />
 
-		<div class="exercise-box">
+		<div class="exercise-box anim-06">
 
 			<div class="exercise-text">
 				Comptez par 13 de 26 à 78
@@ -214,9 +252,9 @@
 
 		</div>
 
-	<hr class="question-divider" />
+	<hr class="question-divider anim-07" />
 
-		<div class="exercise-box">
+		<div class="exercise-box anim-07">
 
 			<div class="exercise-text">
 				Comptez par 15 de 15 à 105
@@ -242,6 +280,10 @@
 
 			</div>
 
+		</div>
+
+		<div id="continue" class="mt6 center">
+			<div inbook-nextbtn="scene"></div>
 		</div>
 
 

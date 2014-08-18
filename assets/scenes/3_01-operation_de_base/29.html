@@ -1,7 +1,28 @@
-<div 	class="page-layout" 
-		ng-init="
-			imgUrl = 'http://d3mw5hjf8nr5ry.cloudfront.net/collegeboreal-sample/images/3_01-operation_de_base/';
-		">
+<div    gseq gscroll
+        class="page-layout">
+
+        <div gdirections>
+          <div el=".header-module"   duration="1" ease="power4-in-out" presets="[fromTransparent,fromBottom]"></div>
+          <div el=".header-module-sub" duration="1" offset="-=0.3" ease="power4-in-out" presets="[fromTransparent,fromBottom]"></div>   
+          <div el=".header-section"    duration="1" offset="-=0.6" ease="power4-in-out" presets="[fromTransparent,fromBottom]"></div>
+
+          <div duration="0.85"></div>
+
+          <div el=".anim-01" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+            
+          <div duration="2"></div>
+
+          <div el=".anim-02" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+          <div duration="2"></div>
+
+          <div el=".anim-03" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+          <div duration="2"></div>
+
+          <div el="#continue" duration="1.2" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]"></div>
+
+        </div>
 
 		<div 	inbook-questionseries
 				on-complete="scene.markAsCompleted();"

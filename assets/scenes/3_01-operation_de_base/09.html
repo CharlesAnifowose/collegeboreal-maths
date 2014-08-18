@@ -1,7 +1,10 @@
-<div 	class="page-layout" 
-		ng-init="
-			imgUrl = 'http://d3mw5hjf8nr5ry.cloudfront.net/collegeboreal-sample/images/3_01-operation_de_base/';
-		">
+<div  gseq gscroll
+    class="page-layout">
+
+    <div gdirections>
+      <div el=".exercise-num"   duration="1" ease="power4-in-out" presets="[fromTransparent]"></div>
+
+    </div>
 
     <div class="exercise-num">
       EXERCICE 5
@@ -12,7 +15,8 @@
   				ordered=true
   				no-remove=true>
 
-				<div 	inbook-questionseries-item level="1" 
+				<div 	gseq
+              inbook-questionseries-item level="1" 
   						ng-init="
   							ans 		= 	{};
   							ans.num 	=  	408;
@@ -20,13 +24,19 @@
   						"ng-resettable-init="
                 ans.showSolution = false;
               ">
+              <div gdirections>
+                <div duration="0.6"></div>
+              
+                <div el="#fade" duration="1" presets="[fromTransparent]"></div>
+              </div>
 
-  						<div>
+  						<div id="fade">
 	  						<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-05-template.html"></div>
   						</div>
   				</div>
 
-  				<div 	inbook-questionseries-item level="2" 
+  				<div 	gseq
+                inbook-questionseries-item level="2" 
   						ng-init="
   							ans 		= 	{};
   							ans.num 	=  	704;
@@ -34,13 +44,19 @@
   						"ng-resettable-init="
                 ans.showSolution = false;
               ">
+              <div gdirections>
+                <div duration="0.6"></div>
 
-  						<div>
+                <div el="#fade" duration="1" presets="[fromTransparent]"></div>
+              </div>
+
+              <div id="fade">
 	  						<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-05-template.html"></div>
   						</div>
   				</div>
 
-  				<div 	inbook-questionseries-item level="3" 
+  				<div gseq	
+              inbook-questionseries-item level="3" 
   						ng-init="
   							ans 		= 	{};
   							ans.num 	=  	6001;
@@ -49,12 +65,19 @@
                 ans.showSolution = false;
               ">
 
-  						<div>
+  						<div gdirections> 
+                <div duration="0.6"></div>
+
+                <div el="#fade" duration="1" presets="[fromTransparent]"></div>
+              </div>
+
+              <div id="fade">
 	  						<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-05-template.html"></div>
   						</div>
   				</div>
 
-  				<div 	inbook-questionseries-item level="4" 
+  				<div 	gseq
+               inbook-questionseries-item level="4" 
   						ng-init="
   							ans 		= 	{};
   							ans.num 	=  	8080;
@@ -63,12 +86,19 @@
                 ans.showSolution = false;
               ">
 
-  						<div>
+  						<div gdirections>
+                <div duration="0.6"></div>
+
+                <div el="#fade" duration="1" presets="[fromTransparent]"></div>
+              </div>
+
+              <div id="fade">
 	  						<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-05-template.html"></div>
   						</div>
   				</div>
 
-  				<div 	inbook-questionseries-item level="5" 
+  				<div 	gseq
+                inbook-questionseries-item level="5" 
   						ng-init="
   							ans 		= 	{};
   							ans.num 	=  	2560;
@@ -77,12 +107,19 @@
                 ans.showSolution = false;
               ">
 
-  						<div>
+  						<div gdirections>
+                <div duration="0.6"></div>
+
+                <div el="#fade" duration="1" presets="[fromTransparent]"></div>
+              </div>
+
+              <div id="fade">
 	  						<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-05-template.html"></div>
   						</div>
   				</div>
 
-  				<div 	inbook-questionseries-item level="6" 
+  				<div 	gseq
+                inbook-questionseries-item level="6" 
   						ng-init="
   							ans 		= 	{};
   							ans.num 	=  	1200;
@@ -91,12 +128,19 @@
                 ans.showSolution = false;
               ">
 
-  						<div>
+  						<div gdirections>
+                <div duration="0.6"></div>
+
+                <div el="#fade" duration="1" presets="[fromTransparent]"></div>
+              </div>
+
+              <div id="fade">
 	  						<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-05-template.html"></div>
   						</div>
   				</div>
 
-  				<div 	inbook-questionseries-item level="7" 
+  				<div 	gseq 
+                inbook-questionseries-item level="7" 
   						ng-init="
   							ans 		= 	{};
   							ans.num 	=  	93;
@@ -105,13 +149,20 @@
                 ans.showSolution = false;
               ">
 
-  						<div>
+  						<div gdirections>
+                <div duration="0.6"></div>
+
+                <div el="#fade" duration="1" presets="[fromTransparent]"></div>
+              </div>
+
+              <div id="fade">
 	  						<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-05-template.html"></div>
   						</div>
   				</div>
 
-  				<div 	inbook-questionseries-item level="8" 
-  						ng-init="
+  				<div 	gseq
+                inbook-questionseries-item level="8" 
+  						  ng-init="
   							ans 		= 	{};
   							ans.num 	=  	9505;
   							ans.written = 	'neuf mille cinq cent cinq';
@@ -119,13 +170,20 @@
                 ans.showSolution = false;
               ">
 
-  						<div>
+  						<div gdirections>
+                <div duration="0.6"></div>
+
+                <div el="#fade" duration="1" presets="[fromTransparent]"></div>
+              </div>
+
+              <div id="fade">
 	  						<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-05-template.html"></div>
   						</div>
   				</div>
 
-  				<div 	inbook-questionseries-item level="9" 
-  						ng-init="
+  				<div 	gseq
+                inbook-questionseries-item level="9" 
+  						  ng-init="
   							ans 		= 	{};
   							ans.num 	=  	1775;
   							ans.written = 	'mille sept cent soixante-quinze';
@@ -133,12 +191,19 @@
                 ans.showSolution = false;
               ">
 
-  						<div>
+  						<div gdirections>
+                <div duration="0.6"></div>
+
+                <div el="#fade" duration="1" presets="[fromTransparent]"></div>
+              </div>
+
+              <div id="fade">
 	  						<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-05-template.html"></div>
   						</div>
   				</div>
 
-  				<div 	inbook-questionseries-item level="10" 
+  				<div 	gseq
+                inbook-questionseries-item level="10" 
     						ng-init="
     							ans 		= 	{};
     							ans.num 	=  	375;
@@ -147,12 +212,19 @@
                   ans.showSolution = false;
                 ">
 
-  						<div>
+  						<div gdirections>
+                <div duration="0.6"></div>
+
+                <div el="#fade" duration="1" presets="[fromTransparent]"></div>
+              </div>
+
+              <div id="fade">
 	  						<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-05-template.html"></div>
   						</div>
   				</div>
 
-  				<div 	inbook-questionseries-item level="11" 
+  				<div 	gseq
+                inbook-questionseries-item level="11" 
     						ng-init="
     							ans 		= 	{};
     							ans.num 	=  	205460;
@@ -161,12 +233,19 @@
                   ans.showSolution = false;
                 ">
 
-  						<div>
+  					  <div gdirections>
+                <div duration="0.6"></div>
+
+                <div el="#fade" duration="1" presets="[fromTransparent]"></div>
+              </div>
+
+              <div id="fade">
 	  						<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-05-template.html"></div>
   						</div>
   				</div>
 
-  				<div 	inbook-questionseries-item level="12" 
+  				<div 	gseq
+                inbook-questionseries-item level="12" 
     						ng-init="
     							ans 		= 	{};
     							ans.num 	=  	50820;
@@ -175,12 +254,19 @@
                   ans.showSolution = false;
                 ">
 
-  						<div>
+  						<div gdirections>
+                <div duration="0.6"></div>
+
+                <div el="#fade" duration="1" presets="[fromTransparent]"></div>
+              </div>
+
+              <div id="fade">
 	  						<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-05-template.html"></div>
   						</div>
   				</div>
 
-  				<div 	inbook-questionseries-item level="13" 
+  				<div 	gseq
+                inbook-questionseries-item level="13" 
     						ng-init="
     							ans 		= 	{};
     							ans.num 	=  	543;
@@ -189,12 +275,19 @@
                   ans.showSolution = false;
                 ">
 
-  						<div>
+  						<div gdirections>
+                <div duration="0.6"></div>
+
+                <div el="#fade" duration="1" presets="[fromTransparent]"></div>
+              </div>
+
+              <div id="fade">
 	  						<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-05-template.html"></div>
   						</div>
   				</div>
 
-  				<div 	inbook-questionseries-item level="14" 
+  				<div 	gseq
+                inbook-questionseries-item level="14" 
     						ng-init="
     							ans 		= 	{};
     							ans.num 	=  	853972;
@@ -203,12 +296,19 @@
                   ans.showSolution = false;
                 ">
 
-  						<div>
+  						<div gdirections>
+                <div duration="0.6"></div>
+
+                <div el="#fade" duration="1" presets="[fromTransparent]"></div>
+              </div>
+
+              <div id="fade">
 	  						<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-05-template.html"></div>
   						</div>
   				</div>
 
-  				<div 	inbook-questionseries-item level="15" 
+  				<div 	gseq
+                inbook-questionseries-item level="15" 
     						ng-init="
     							ans 		= 	{};
     							ans.num 	=  	719032;
@@ -217,7 +317,12 @@
                   ans.showSolution = false;
                 ">
 
-  						<div>
+  						<div gdirections>
+                <div duration="0.6"></div>
+                <div el="#fade" duration="1" presets="[fromTransparent]"></div>
+              </div>
+
+              <div id="fade">
 	  						<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-05-template.html"></div>
   						</div>
   				</div>

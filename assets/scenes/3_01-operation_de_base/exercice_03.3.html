@@ -1,4 +1,5 @@
-<div 	class="page-layout" 
+<div 	gseq
+		class="page-layout" 
 		ng-init="
 			ans={};
 
@@ -40,11 +41,56 @@
 			};
 		">
 
+		<div gdirections>
+			<div el=".exercise-num"   duration="1" ease="power4-in-out" presets="[fromTransparent]"></div>
+
+			<div duration="0.85"></div>
+
+			<div el=".anim-01" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+				
+			<div duration="2"></div>
+
+			<div el=".anim-02" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+			<div duration="2"></div>
+
+			<div el=".anim-03" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+			<div duration="2"></div>
+
+			<div el=".anim-04" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+			<div duration="2"></div>
+
+			<div el=".anim-05" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+			<div duration="2"></div>
+
+			<div el=".anim-06" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+			<div duration="2"></div>
+
+			<div el=".anim-07" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+			<div duration="2"></div>
+
+			<div el=".anim-08" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+			<div duration="2"></div>
+
+			<div el=".anim-09" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+			<div duration="2"></div>
+
+	      	<div el="#continue" duration="1.2" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]"></div>
+
+		</div>
+
 		<div class="exercise-num">
 			EXERCICE 3
 		</div>	
 
-		<div class="exercise-box">
+		<div class="exercise-box anim-01">
 
 			<div class="exercise-header">
 				Donnez la position et la valeur de chacun des chiffres qui composent les nombres suivants.
@@ -76,9 +122,9 @@
 
 		</div>
 
-	<hr class="question-divider" />
+	<hr class="question-divider anim-02" />
 
-		<div class="exercise-box">
+		<div class="exercise-box anim-02">
 
 			<div class="exercise-header">
 				Donnez la position et la valeur de chacun des chiffres qui composent les nombres suivants.
@@ -110,9 +156,9 @@
 
 		</div>
 
-	<hr class="question-divider" />
+	<hr class="question-divider anim-03" />
 
-		<div class="exercise-box">
+		<div class="exercise-box anim-03">
 
 			<div class="exercise-header">
 				Donnez la position et la valeur de chacun des chiffres qui composent les nombres suivants.
@@ -144,9 +190,9 @@
 
 		</div>
 
-	<hr class="question-divider" />
+	<hr class="question-divider anim-04" />
 
-		<div class="exercise-box">
+		<div class="exercise-box anim-04">
 
 			<div class="exercise-header">
 				Donnez la position et la valeur de chacun des chiffres qui composent les nombres suivants.
@@ -178,9 +224,9 @@
 
 		</div>
 
-	<hr class="question-divider" />
+	<hr class="question-divider anim-05" />
 
-		<div class="exercise-box">
+		<div class="exercise-box anim-05">
 
 			<div class="exercise-header">
 				Donnez la position et la valeur de chacun des chiffres qui composent les nombres suivants.
@@ -212,9 +258,9 @@
 
 		</div>
 
-	<hr class="question-divider" />
+	<hr class="question-divider anim-06" />
 
-		<div class="exercise-box">
+		<div class="exercise-box anim-06">
 
 			<div class="exercise-header">
 				Donnez la position et la valeur de chacun des chiffres qui composent les nombres suivants.
@@ -246,9 +292,9 @@
 
 		</div>
 
-	<hr class="question-divider" />
+	<hr class="question-divider anim-07" />
 
-		<div class="exercise-box">
+		<div class="exercise-box anim-07">
 
 			<div class="exercise-header">
 				Donnez la position et la valeur de chacun des chiffres qui composent les nombres suivants.
@@ -280,9 +326,9 @@
 
 		</div>
 
-	<hr class="question-divider" />
+	<hr class="question-divider anim-08" />
 
-		<div class="exercise-box">
+		<div class="exercise-box anim-08">
 
 			<div class="exercise-header">
 				Donnez la position et la valeur de chacun des chiffres qui composent les nombres suivants.
@@ -314,9 +360,9 @@
 
 		</div>
 
-	<hr class="question-divider" />
+	<hr class="question-divider anim-09" />
 
-		<div class="exercise-box">
+		<div class="exercise-box anim-09">
 
 			<div class="exercise-header">
 				Donnez la position et la valeur de chacun des chiffres qui composent les nombres suivants.
@@ -346,6 +392,10 @@
 
 			</div>
 
+		</div>
+
+		<div id="continue" class="mt6 center">
+			<div inbook-nextbtn="scene"></div>
 		</div>
 
 </div>

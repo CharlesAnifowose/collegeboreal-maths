@@ -1,23 +1,42 @@
-<div 	class="page-layout" 
-		ng-init="
-			imgUrl = 'http://d3mw5hjf8nr5ry.cloudfront.net/collegeboreal-sample/images/3_01-operation_de_base/';
-		">
+<div  	gseq gscroll
+	    class="page-layout">
+
+	    <div gdirections>
+			<div el=".header-section" 	 duration="1" ease="power2-in-out" presets="[fromTransparent]"></div>
+
+	      <div duration="0.85"></div>
+
+	      <div el=".anim-01" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+	        
+	      <div duration="2"></div>
+
+	      <div el=".anim-02" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+	      <div duration="2"></div>
+
+	      <div el=".anim-03" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+	      <div duration="2"></div>
+
+	      <div el="#continue" duration="1.2" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]"></div>
+
+	    </div>
 
 		<div class="header-section"> 
 			L'addition
 		</div>
 
-		<div class="para">
+		<div class="para anim-01">
 			L'addition est l'opération qui permet d'ajouter un nombre à un autre.
 			Son symbole est + et se lit "plus". Le résultat d'une addition se nomme la
 			<span class="bold">somme</span>.
 		</div>
 
-		<div class="para">
+		<div class="para anim-02">
 			Dans une addition, si l'on inverse l'ordre des termes, la somme ne change pas.
 		</div>
 
-		<div class="exemple-frame">
+		<div class="exemple-frame anim-03">
 			<div class="exemple-header">
 				Exemples
 			</div>
@@ -32,5 +51,8 @@
 			</div>
 		</div>
 
+		<div id="continue" class="mt6 center">
+			<div inbook-nextbtn="scene"></div>
+		</div>
 
 </div>

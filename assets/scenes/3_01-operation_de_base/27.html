@@ -1,24 +1,51 @@
-<div 	class="page-layout" 
-		ng-init="
-			imgUrl = 'http://d3mw5hjf8nr5ry.cloudfront.net/collegeboreal-sample/images/3_01-operation_de_base/';
-		">
+<div  	gseq gscroll
+	    class="page-layout">
+
+	    <div gdirections>
+			<div el=".header-section" 	 duration="1" ease="power2-in-out" presets="[fromTransparent]"></div>
+
+	      <div duration="0.85"></div>
+
+	      <div el=".anim-01" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+	        
+	      <div duration="2"></div>
+
+	      <div el=".anim-02" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+	      <div duration="2"></div>
+
+	      <div el=".anim-03" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+	      <div duration="2"></div>
+
+	      <div el=".anim-04" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+	      <div duration="2"></div>
+
+	      <div el=".anim-05" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+	      <div duration="2"></div>
+
+	      <div el="#continue" duration="1.2" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]"></div>
+
+	    </div>
 
 		<div class="header-section"> 
 			Soustractions de nombres avec emprunts
 		</div>
 
-		<div class="para">
+		<div class="para anim-01">
 			Lorsque le chiffre à soustraire est plus grand que le chiffre duquel il est
 			soustrait, on doit emprunter.
 		</div>
 
-		<div class="note-frame">
+		<div class="note-frame anim-02">
 			Rappel:
 			<div>1 dizaine = 10 unités</div>
 			<div>1 centaine = 10 dizaines</div>
 		</div>
 
-		<div class="para">
+		<div class="para anim-03">
 			<div class="bold">
 				<div class="ib vbottom" style="width:25%;">
 					Étapes de l'opération
@@ -70,7 +97,7 @@
 
 		</div>
 
-		<div class="exemple-frame">
+		<div class="exemple-frame anim-04">
 			<div class="exemple-header">
 				Exemple 1 : Soustraire 68 de 555
 			</div>
@@ -82,7 +109,7 @@
 			</div>
 		</div>
 
-		<div class="exemple-frame">
+		<div class="exemple-frame anim-05">
 			<div class="exemple-header">
 				Exemple 2 : Soustraire 128 de 604.
 			</div>

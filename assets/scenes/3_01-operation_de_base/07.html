@@ -1,18 +1,45 @@
-<div 	class="page-layout" 
-		ng-init="
-			imgUrl = 'http://d3mw5hjf8nr5ry.cloudfront.net/collegeboreal-sample/images/3_01-operation_de_base/';
-		">
+<div 	gseq gscroll
+		class="page-layout">
+
+		<div gdirections>
+			<div el=".header-section" 	 duration="1" ease="power2-in-out" presets="[fromTransparent]"></div>
+
+			<div duration="0.85"></div>
+
+			<div el=".anim-01" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+				
+			<div duration="2"></div>
+
+			<div el=".anim-02" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+			<div duration="2"></div>
+
+			<div el=".anim-03" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+			<div duration="2"></div>
+
+			<div el=".anim-04" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+			<div duration="2"></div>
+
+			<div el=".anim-05" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+
+			<div duration="2"></div>
+
+			<div el="#continue" duration="1.2" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]"></div>
+
+		</div>
 
 		<div class="header-section"> 
 			Lire et écrire les nombres
 		</div>	
 
-		<div class="para">
+		<div class="para anim-01">
 			Pour lire un nombre et l'écrire en lettres, on commence à lire le nombre à
 			partir de la gauche et on considère chaque tranche séparément.
 		</div>
 
-		<div class="exemple-frame">
+		<div class="exemple-frame anim-01">
 			<div class="exemple-header">
 				Exemple :
 			</div>
@@ -28,11 +55,11 @@
 			</div>
 		</div>
 
-		<div class="para">
+		<div class="para anim-02">
 			On procède de même pour écrire un nombre en chiffres.
 		</div>
 
-		<div class="exemple-frame">
+		<div class="exemple-frame anim-02">
 			<div class="exemple-header">
 				Exemple :
 			</div>
@@ -56,15 +83,15 @@
 			</div>
 		</div>
 
-		<div class="para">
+		<div class="para anim-03">
 			Rappel : N'oubliez pas l'espace qui sépare chaque tranche de trois chiffres!
 		</div>
 
-		<div class="para bold">
+		<div class="para bold anim-03">
 			Voici les nombres de 1 à 20 :
 		</div>
 
-		<div class="para">
+		<div class="para anim-03">
 			<table class="basic-table unbordered cells-medium">
 			    <tr>
 			        <td>1 - un</td>
@@ -99,11 +126,11 @@
 			</table>
 		</div>
 
-		<div class="para bold">
+		<div class="para bold anim-04">
 			Voici les nombres par 10 de 10 à 90 :
 		</div>
 
-		<div class="para">
+		<div class="para anim-04">
 			<table class="basic-table unbordered cells-medium">
 			    <tr>
 			    	<td>10 - dix</td>
@@ -123,19 +150,19 @@
 			</table>
 		</div>
 
-		<div class="para">
+		<div class="para anim-04">
 			Notez que les nombres composés qui viennent avant 100 prennent toujours
 			un trait d'union sauf pour : vingt et un, trente et un, quarante et un, cinquante
 			et un, soixante et un et soixante et onze.
 		</div>
 
-		<div class="para">
+		<div class="para anim-04">
 			Remarque : Les adjectifs numéraux vingt et cent prennent la marque du
 			pluriel s’ils sont multipliés par un nombre et s’ils ne sont pas suivis d’un
 			autre adjectif de nombre.
 		</div>
 
-		<div class="exemple-frame">
+		<div class="exemple-frame anim-04">
 			<div class="exemple-header">
 				Exemples:
 			</div>
@@ -146,11 +173,11 @@
 			</div>
 		</div>
 
-		<div class="para bold">
+		<div class="para bold anim-04">
 			Voici les nombres de 100 à 90 :
 		</div>
 
-		<div class="para">
+		<div class="para anim-04">
 			<table class="basic-table unbordered cells-medium">
 			    <tr>
 			    	<td>100 - cent</td>
@@ -170,11 +197,11 @@
 			</table>
 		</div>
 
-		<div class="para bold">
+		<div class="para bold anim-05">
 			Voici les nombres de 1000 à 9000 :
 		</div>
 
-		<div class="para">
+		<div class="para anim-05">
 			<table class="basic-table unbordered cells-medium">
 			    <tr>
 			    	<td>1000 - mille</td>
@@ -194,11 +221,11 @@
 			</table>
 		</div>
 
-		<div class="para bold">
+		<div class="para bold anim-05">
 			Voici les nombres de 10 000 à 100 000 :
 		</div>
 
-		<div class="para">
+		<div class="para anim-05">
 			<table class="basic-table unbordered cells-medium">
 			    <tr>
 			        <td>10 000 - dix mille</td>
@@ -223,8 +250,12 @@
 			</table>
 		</div>
 
-		<div class="para">
+		<div class="para anim-05">
 			Notez que lorsque mille désigne un nombre, il reste invariable.
+		</div>
+
+		<div id="continue" class="mt6 center">
+			<div inbook-nextbtn="scene"></div>
 		</div>
 
 </div>
