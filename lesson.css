@@ -389,7 +389,7 @@ input[type=text].clear-input:active {
 .header-module-sub {
   text-align: center;
   padding: 12px;
-  background: #ff6666;
+  background-color: #53B3E5;
   color: #fff;
   margin-top: 12px;
   margin-bottom: 24px;
@@ -660,7 +660,7 @@ ul.basic-list li {
 ol.basic-list li:hover,
 ul.basic-list li:hover {
   background-color: #d5d5d5;
-  margin-bottom: 12px;
+  margin-left: 12px;
 }
 ul.basic-list {
   list-style-type: none;
