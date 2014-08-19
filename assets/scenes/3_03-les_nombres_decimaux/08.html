@@ -1,81 +1,260 @@
-<div class="center">
-	<div class="page-layout">
-		<div class="para">
-			Convertissez les fractions décimales en nombres décimaux.
+<div 	gseq
+		class="page-layout" 
+		ng-init="
+			ans={};
+
+			ans.input1 = {
+				showSolution: false,
+				solution 	: '0,2'
+			};
+			ans.input2 = {
+				showSolution: false,
+				solution 	: '0,30'
+			};
+			ans.input3 = {
+				showSolution: false,
+				solution 	: '0,6'
+			};
+			ans.input4 = {
+				showSolution: false,
+				solution 	: '0,37'
+			};
+			ans.input5 = {
+				showSolution: false,
+				solution 	: '0,9'
+			};
+			ans.input6 = {
+				showSolution: false,
+				solution 	: '0,02'
+			};
+
+		">
+
+		<div gdirections>
+			<div el=".exercise-num"   duration="0.8" ease="power4-in-out" presets="[fromTransparent]"></div>
+
+			<div duration="0.45"></div>
+
+			<div el=".anim-01" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+				
+			<div duration="1"></div>
+
+			<div el=".anim-02" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-03" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-04" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-05" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-06" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+	      	<div el="#continue" duration="1" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]" disable-scroll-focus="true"></div>	
+
 		</div>
-		<div inbook-questionseries on-complete="scene.markAsCompleted();"
-				ordered=true
-				no-remove=true>
-			<div id="question-dots" inbook-questionseries-dots class="mb3"></div> 	
-							
-				<div inbook-questionseries-item  level="1" >		
-					<div
-						ng-init=""
-						ng-resettable-init="x = 2;
-											y = 10;"
-						ng-equate="a = 0.2;"
-						></div>
 
-					<div inbook-include="assets/templates/exercises/exercice17a.html"></div>			
-				</div>
-				
-				<div inbook-questionseries-item  level="2">
-					<div
-						ng-init=""
-						ng-resettable-init="x = 30;
-											y = 100;"
-						ng-equate="a = 0.3;"
-						></div>
+	    <div class="exercise-num">
+	      EXERCICE 5
+	    </div>
 
-					<div inbook-include="assets/templates/exercises/exercice17a.html"></div>				
-				</div>
-				
-				<div inbook-questionseries-item  level="3">
-					<div
-						ng-init=""
-						ng-resettable-init="x = 6;
-											y = 10;"
-						ng-equate="a = 0.6;"
-						></div>
+		<div class="exercise-box anim-01">
 
-					<div inbook-include="assets/templates/exercises/exercice17a.html"></div>				
-				</div>
-				
-				<div inbook-questionseries-item  level="4">
-					<div
-						ng-init=""
-						ng-resettable-init="x = 37;
-											y = 100;"
-						ng-equate="a = 0.37;"
-						></div>
-					
-					<div inbook-include="assets/templates/exercises/exercice17a.html"></div>				
-				</div>
-				
-				<div inbook-questionseries-item  level="5">
-					<div
-						ng-init=""
-						ng-resettable-init="x = 9;
-											y = 10;
-											"
-						ng-equate="a = 0.9;"
-						></div>
-					
-					<div inbook-include="assets/templates/exercises/exercice17a.html"></div>				
-				</div>
-				
-				<div inbook-questionseries-item  level="6">
-					<div
-						ng-init=""
-						ng-resettable-init="x = 2;
-											y = 100;"
-						ng-equate="a = 0.02;"
-						></div>
-
-					<div inbook-include="assets/templates/exercises/exercice17a.html"></div>				
-				</div>
-				
+			<div class="exercise-header">
+				Écrivez en chiffres
 			</div>
 
-	</div>
+			<div class="exercise-text">
+				<div class="inbook-fraction">
+					<div>2</div>
+					<div class="fraction-line"></div>
+					<div>10</div>
+				</div>
+			</div>
+
+			<div inbook-workbook-input persist-to="input1"></div>
+
+			<div vcollapse="ans.input1.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input1.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input1.showSolution">
+				<div class="solution-body">
+					{{ans.input1.solution}}
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-02" />
+
+		<div class="exercise-box anim-02">
+
+			<div class="exercise-header">
+				Écrivez en chiffres
+			</div>
+
+			<div class="exercise-text">
+				<div class="inbook-fraction">
+					<div>30</div>
+					<div class="fraction-line"></div>
+					<div>100</div>
+				</div>
+			</div>
+
+			<div inbook-workbook-input persist-to="input2"></div>
+
+			<div vcollapse="ans.input2.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input2.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input2.showSolution">
+				<div class="solution-body">
+					{{ans.input2.solution}}
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-03" />
+
+		<div class="exercise-box anim-03">
+
+			<div class="exercise-header">
+				Écrivez en chiffres
+			</div>
+
+			<div class="exercise-text">
+				<div class="inbook-fraction">
+					<div>6</div>
+					<div class="fraction-line"></div>
+					<div>10</div>
+				</div>
+			</div>
+
+			<div inbook-workbook-input persist-to="input3"></div>
+
+			<div vcollapse="ans.input3.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input3.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input3.showSolution">
+				<div class="solution-body">
+					{{ans.input3.solution}}
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-04" />
+
+		<div class="exercise-box anim-04">
+
+			<div class="exercise-header">
+				Écrivez en chiffres
+			</div>
+
+			<div class="exercise-text">
+				<div class="inbook-fraction">
+					<div>37</div>
+					<div class="fraction-line"></div>
+					<div>100</div>
+				</div>
+			</div>
+
+			<div inbook-workbook-input persist-to="input4"></div>
+
+			<div vcollapse="ans.input4.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input4.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input4.showSolution">
+				<div class="solution-body">
+					{{ans.input4.solution}}
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-05" />
+
+		<div class="exercise-box anim-05">
+
+			<div class="exercise-header">
+				Écrivez en chiffres
+			</div>
+
+			<div class="exercise-text">
+				<div class="inbook-fraction">
+					<div>9</div>
+					<div class="fraction-line"></div>
+					<div>10</div>
+				</div>
+			</div>
+
+			<div inbook-workbook-input persist-to="input5"></div>
+
+			<div vcollapse="ans.input5.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input5.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input5.showSolution">
+				<div class="solution-body">
+					{{ans.input5.solution}}
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-06" />
+
+		<div class="exercise-box anim-06">
+
+			<div class="exercise-header">
+				Écrivez en chiffres
+			</div>
+
+			<div class="exercise-text">
+				<div class="inbook-fraction">
+					<div>2</div>
+					<div class="fraction-line"></div>
+					<div>100</div>
+				</div>
+			</div>
+
+			<div inbook-workbook-input persist-to="input6"></div>
+
+			<div vcollapse="ans.input6.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input6.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input6.showSolution">
+				<div class="solution-body">
+					{{ans.input6.solution}}
+				</div>
+			</div>
+				
+		</div> 
+
 </div>
