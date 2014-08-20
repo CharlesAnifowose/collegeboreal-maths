@@ -1,156 +1,161 @@
-<div 	class="center pa4" 
-		ng-init="
-			imgUrl = 'http://d3mw5hjf8nr5ry.cloudfront.net/collegeboreal-sample/images/3_08-les_figures_a_trois_dimensions_les_systemes_de_coordonnees_et_les_transformations/';
-		">
+<div 	class="page-layout">
+	<div 	class="center pa4" 
+			ng-init="
+				imgUrl = 'http://d3mw5hjf8nr5ry.cloudfront.net/collegeboreal-sample/images/3_08-les_figures_a_trois_dimensions_les_systemes_de_coordonnees_et_les_transformations/';
+			">
 
-		<div class="inbook-grid-layout" style="width:600px; margin: 0 auto; text-align: left;">
-			<div class="col10 type-xxsmall">
+			<div class="inbook-grid-layout" style="width:600px; margin: 0 auto; text-align: left;">
+				<div class="col10 type-xxsmall">
 
-				<div class="pa2 center" style="background-color: #ddd;">
-					Les systèmes de coordonnées
-				</div>
-
-				<div class="mt3">
-					Pour repérer un point ou un objet sur une surface ou dans l'espace, on utilise des coordonnées.
-				</div>
-
-				<div class="mt3">
-					Il existe différents types de coordonnées et différentes façons de les noter. Les coordonnées peuvent être des chiffres, des lettres ou une combinaison de chiffres et de lettres.
-				</div>
-
-				<div class="mt3">
-					À la page suivante, on retrouve une carte routière d'une partie de la ville d'Ottawa. Supposons que l'on veuille localiser la rue Stillwater.
-				</div>
-
-				<div class="mt3">
-					Démarche :
-					<ul class="pa2">
-						<li>On consulte d'abord l'index des rues; celui-ci nous indique que la rueStillwater est située dans la zone D-4.</li>
-						<li>En examinant la carte routière, on retrouve la rue Stillwater sous la colonne D, dans la rangée 4.</li>
-					</ul>
-				</div>
-
-				<div class="pa5 center">
-					<img ng-src="{{imgUrl}}diagram_33.png" />
-				</div>
-
-				<div class="mt3">
-					Voici un polygone tracé sur un plan. On veut identifier les coordonnées de chaque sommet du polygone.
-				</div>
-				
-				<div class="pa5 center">
-					<img ng-src="{{imgUrl}}diagram_34.png" />
-				</div>				
-
-
-				<div class="mt3">
-					Démarche :
-					<ul class="pa2">
-						<li>On indique tout d’abord dans quelle colonne se situe le sommet.</li>
-						<li>On note ensuite la rangée correspondante</li>
-					</ul>
-				</div>
-
-
-				<div class="mt3">
-					Voici les coordonnées des sommets du polygone :
-
-					<div class="type-xxxsmall mt1">
-						<div class="ib ml1 mr1">
-							A: (G-2)
-						</div>
-						<div class="ib ml1 mr1">
-							B: (M-3)
-						</div>
-						<div class="ib ml1 mr1">
-							C: (R-9)
-						</div>
+					<div class="pa2 center" style="background-color: #ddd;">
+						Les systèmes de coordonnées
 					</div>
-					<div class="type-xxxsmall mt1">
-						<div class="ib ml1 mr1">
-							D: (O-14)
-						</div>
-						<div class="ib ml1 mr1">
-							E: (M-10)
-						</div>
-						<div class="ib ml1 mr1">
-							F: (H-15)
-						</div>
-					</div>
-					<div class="type-xxxsmall mt1">
-						<div class="ib ml1 mr1">
-							G: (E-12)
-						</div>
-						<div class="ib ml1 mr1">
-							H: (F-8)
-						</div>
-						<div class="ib ml1 mr1">
-							I: (C-5)
-						</div>
-					</div>
-				</div>
 
-				<div class="mt3">
-					Le Soleil et les planètes sont indiqués sur un plan. On veut déterminer les coordonnées de chacun des astres.
-				</div>
+					<div class="mt3">
+						Pour repérer un point ou un objet sur une surface ou dans l'espace, on utilise des coordonnées.
+					</div>
 
-				<div class="pa5 center">
-					<img ng-src="{{imgUrl}}diagram_35.png" />
-				</div>
+					<div class="mt3">
+						Il existe différents types de coordonnées et différentes façons de les noter. Les coordonnées peuvent être des chiffres, des lettres ou une combinaison de chiffres et de lettres.
+					</div>
 
-				<div class="mt3">
-					Voici les coordonnées du Soleil et des planètes. Ils sont placés en ordre décroissant de diamètre.
+					<div class="mt3">
+						À la page suivante, on retrouve une carte routière d'une partie de la ville d'Ottawa. Supposons que l'on veuille localiser la rue Stillwater.
+					</div>
 
-					<div class="type-xxxsmall mt1">
-						<div class="ib">
-							le Soleil (I-8)
-						</div>
-						<div class="ib">
-							la Terre (J-7)
-						</div>
+					<div class="mt3">
+						Démarche :
+						<ul class="pa2">
+							<li>On consulte d'abord l'index des rues; celui-ci nous indique que la rueStillwater est située dans la zone D-4.</li>
+							<li>En examinant la carte routière, on retrouve la rue Stillwater sous la colonne D, dans la rangée 4.</li>
+						</ul>
 					</div>
-					<div class="type-xxxsmall mt1">
-						<div class="ib">
-							Jupiter (M-12)
-						</div>
-						<div class="ib">
-							Vénus (H-7)
-						</div>
+
+					<div class="pa5 center">
+						<img ng-src="{{imgUrl}}diagram_33.png" />
 					</div>
-					<div class="type-xxxsmall mt1">
-						<div class="ib">
-							Saturne (I-14)
-						</div>
-						<div class="ib">
-							Mars (L-8)
-						</div>
+
+					<div class="mt3">
+						Voici un polygone tracé sur un plan. On veut identifier les coordonnées de chaque sommet du polygone.
 					</div>
-					<div class="type-xxxsmall mt1">
-						<div class="ib">
-							Uranus (D-12)
-						</div>
-						<div class="ib">
-							Mercure (L-10)
-						</div>
+					
+					<div class="pa5 center">
+						<img ng-src="{{imgUrl}}diagram_34.png" />
+					</div>				
+
+
+					<div class="mt3">
+						Démarche :
+						<ul class="pa2">
+							<li>On indique tout d’abord dans quelle colonne se situe le sommet.</li>
+							<li>On note ensuite la rangée correspondante</li>
+						</ul>
 					</div>
-					<div class="type-xxxsmall mt1">
-						<div class="ib">
-							Neptune (B-7)
+
+
+					<div class="mt3">
+						Voici les coordonnées des sommets du polygone :
+
+						<div class="type-xxxsmall mt1">
+							<div class="ib ml1 mr1">
+								A: (G-2)
+							</div>
+							<div class="ib ml1 mr1">
+								B: (M-3)
+							</div>
+							<div class="ib ml1 mr1">
+								C: (R-9)
+							</div>
 						</div>
-						<div class="ib">
-							Pluton (F-2)
+						<div class="type-xxxsmall mt1">
+							<div class="ib ml1 mr1">
+								D: (O-14)
+							</div>
+							<div class="ib ml1 mr1">
+								E: (M-10)
+							</div>
+							<div class="ib ml1 mr1">
+								F: (H-15)
+							</div>
+						</div>
+						<div class="type-xxxsmall mt1">
+							<div class="ib ml1 mr1">
+								G: (E-12)
+							</div>
+							<div class="ib ml1 mr1">
+								H: (F-8)
+							</div>
+							<div class="ib ml1 mr1">
+								I: (C-5)
+							</div>
 						</div>
 					</div>
 
-				</div>
-
-				<div class="mt3">
-					<span class="bold">Saviez-vous que</span> l'on peut aligner les planètes le long de l'Équateur du Soleil (diamètre : 1 392 000 km) 3 fois (3X) et encore avoir de la place pour une planète Saturne, 4 Terres et une planète Mercure?
-					<div class="pa2 center">
-						<img ng-src="{{imgUrl}}diagram_36.png" />
+					<div class="mt3">
+						Le Soleil et les planètes sont indiqués sur un plan. On veut déterminer les coordonnées de chacun des astres.
 					</div>
-				</div>
 
+					<div class="pa5 center">
+						<img ng-src="{{imgUrl}}diagram_35.png" />
+					</div>
+
+					<div class="mt3">
+						Voici les coordonnées du Soleil et des planètes. Ils sont placés en ordre décroissant de diamètre.
+
+						<div class="type-xxxsmall mt1">
+							<div class="ib">
+								le Soleil (I-8)
+							</div>
+							<div class="ib">
+								la Terre (J-7)
+							</div>
+						</div>
+						<div class="type-xxxsmall mt1">
+							<div class="ib">
+								Jupiter (M-12)
+							</div>
+							<div class="ib">
+								Vénus (H-7)
+							</div>
+						</div>
+						<div class="type-xxxsmall mt1">
+							<div class="ib">
+								Saturne (I-14)
+							</div>
+							<div class="ib">
+								Mars (L-8)
+							</div>
+						</div>
+						<div class="type-xxxsmall mt1">
+							<div class="ib">
+								Uranus (D-12)
+							</div>
+							<div class="ib">
+								Mercure (L-10)
+							</div>
+						</div>
+						<div class="type-xxxsmall mt1">
+							<div class="ib">
+								Neptune (B-7)
+							</div>
+							<div class="ib">
+								Pluton (F-2)
+							</div>
+						</div>
+
+					</div>
+
+					<div class="mt3">
+						<span class="bold">Saviez-vous que</span> l'on peut aligner les planètes le long de l'Équateur du Soleil (diamètre : 1 392 000 km) 3 fois (3X) et encore avoir de la place pour une planète Saturne, 4 Terres et une planète Mercure?
+						<div class="pa2 center">
+							<img ng-src="{{imgUrl}}diagram_36.png" />
+						</div>
+					</div>
+
+				</div>
 			</div>
-		</div>
+	</div>
+	<div id="continue" class="mt6 center">
+  <div inbook-nextbtn="scene"></div>
+  </div>
 </div>

@@ -1,109 +1,114 @@
-<div    inbook-questionseries 
-		class="pa8"
-		on-complete="scene.markAsCompleted();"
-		ordered=true
-		no-remove=true
-		ng-init="
-			imgUrl = 'http://d3mw5hjf8nr5ry.cloudfront.net/collegeboreal-sample/images/3_10-les_suites/';
-		">
+<div 	class="page-layout">
+	<div    inbook-questionseries 
+			class="pa8"
+			on-complete="scene.markAsCompleted();"
+			ordered=true
+			no-remove=true
+			ng-init="
+				imgUrl = 'http://d3mw5hjf8nr5ry.cloudfront.net/collegeboreal-sample/images/3_10-les_suites/';
+			">
 
-		<div class="inbook-grid-layout" style="width:600px; margin: 0 auto;">
-			<div class="col10">
-				<div class="mt2 mb4 type-xxsmall">
-					Connaisssant le premier nombre et la règle de la suite, trouvez les 3 nombres suivants
+			<div class="inbook-grid-layout" style="width:600px; margin: 0 auto;">
+				<div class="col10">
+					<div class="mt2 mb4 type-xxsmall">
+						Connaisssant le premier nombre et la règle de la suite, trouvez les 3 nombres suivants
+					</div>
+
+					<div inbook-questionseries-item level="1">
+						<div class="mt2 type-small bold">
+							1, ...
+						</div>
+						<div class="mt1 type-xxsmall">
+							(règle: &times; 2 suivi par + 1)
+						</div>
+
+						<div class="mt4">
+							<div inbook-nextbtn="question"></div>
+						</div>
+					</div>
+
+					<div inbook-questionseries-item level="2">
+						<div class="mt2 type-small bold">
+							4, ...
+						</div>
+						<div class="mt1 type-xxsmall">
+							(règle: + 5 suivi par &times; 2)
+						</div>
+
+						<div class="mt4">
+							<div inbook-nextbtn="question"></div>
+						</div>
+					</div>
+
+					<div inbook-questionseries-item level="3">
+						<div class="mt2 type-small bold">
+							5, ...
+						</div>
+						<div class="mt1 type-xxsmall">
+							(règle: &times; 10 suivi par + 5)
+						</div>	
+
+						<div class="mt4">
+							<div inbook-nextbtn="question"></div>
+						</div>
+					</div>
+
+					<div inbook-questionseries-item level="4">
+						<div class="mt2 type-small bold">
+							13, ...
+						</div>
+						<div class="mt1 type-xxsmall">
+							(règle: + 13 suivi par &times; 2)
+						</div>
+
+						<div class="mt4">
+							<div inbook-nextbtn="question"></div>
+						</div>
+					</div>
+
+					<div inbook-questionseries-item level="5">
+						<div class="mt2 type-small bold">
+							27, ...
+						</div>
+						<div class="mt1 type-xxsmall">
+							(règle: + 10 suivi par &times; 1)
+						</div>
+
+						<div class="mt4">
+							<div inbook-nextbtn="question"></div>
+						</div>
+					</div>
+
+					<div inbook-questionseries-item level="6">
+						<div class="mt2 type-small bold">
+							100, ...
+						</div>
+						<div class="mt1 type-xxsmall">
+							(règle: &times; 8 suivi par + 2)
+						</div>
+
+						<div class="mt4">n
+							<div inbook-nextbtn="question"></div>
+						</div>
+					</div>
+
+					<div inbook-questionseries-item level="7">
+						<div class="mt2 type-small bold">
+							25, ...
+						</div>
+						<div class="mt1 type-xxsmall">
+							(règle: + 2 suivi par &times; 12)
+						</div>	
+
+						<div class="mt4">
+							<div inbook-nextbtn="question"></div>
+						</div>
+					</div>
+
 				</div>
-
-				<div inbook-questionseries-item level="1">
-					<div class="mt2 type-small bold">
-						1, ...
-					</div>
-					<div class="mt1 type-xxsmall">
-						(règle: &times; 2 suivi par + 1)
-					</div>
-
-					<div class="mt4">
-						<div inbook-nextbtn="question"></div>
-					</div>
-				</div>
-
-				<div inbook-questionseries-item level="2">
-					<div class="mt2 type-small bold">
-						4, ...
-					</div>
-					<div class="mt1 type-xxsmall">
-						(règle: + 5 suivi par &times; 2)
-					</div>
-
-					<div class="mt4">
-						<div inbook-nextbtn="question"></div>
-					</div>
-				</div>
-
-				<div inbook-questionseries-item level="3">
-					<div class="mt2 type-small bold">
-						5, ...
-					</div>
-					<div class="mt1 type-xxsmall">
-						(règle: &times; 10 suivi par + 5)
-					</div>	
-
-					<div class="mt4">
-						<div inbook-nextbtn="question"></div>
-					</div>
-				</div>
-
-				<div inbook-questionseries-item level="4">
-					<div class="mt2 type-small bold">
-						13, ...
-					</div>
-					<div class="mt1 type-xxsmall">
-						(règle: + 13 suivi par &times; 2)
-					</div>
-
-					<div class="mt4">
-						<div inbook-nextbtn="question"></div>
-					</div>
-				</div>
-
-				<div inbook-questionseries-item level="5">
-					<div class="mt2 type-small bold">
-						27, ...
-					</div>
-					<div class="mt1 type-xxsmall">
-						(règle: + 10 suivi par &times; 1)
-					</div>
-
-					<div class="mt4">
-						<div inbook-nextbtn="question"></div>
-					</div>
-				</div>
-
-				<div inbook-questionseries-item level="6">
-					<div class="mt2 type-small bold">
-						100, ...
-					</div>
-					<div class="mt1 type-xxsmall">
-						(règle: &times; 8 suivi par + 2)
-					</div>
-
-					<div class="mt4">n
-						<div inbook-nextbtn="question"></div>
-					</div>
-				</div>
-
-				<div inbook-questionseries-item level="7">
-					<div class="mt2 type-small bold">
-						25, ...
-					</div>
-					<div class="mt1 type-xxsmall">
-						(règle: + 2 suivi par &times; 12)
-					</div>	
-
-					<div class="mt4">
-						<div inbook-nextbtn="question"></div>
-					</div>
-				</div>
-
 			</div>
-		</div>
+	</div>
+	<div id="continue" class="mt6 center">
+  <div inbook-nextbtn="scene"></div>
+  </div>
 </div>

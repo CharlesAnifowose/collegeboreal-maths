@@ -1,49 +1,54 @@
-<div 	class="center pa4" 
-		ng-init="
-			imgUrl = 'http://d3mw5hjf8nr5ry.cloudfront.net/collegeboreal-sample/images/3_07-les_segments_de_droite_et_les_angles/';
-		">
+<div 	class="page-layout">
+	<div 	class="center pa4" 
+			ng-init="
+				imgUrl = 'http://d3mw5hjf8nr5ry.cloudfront.net/collegeboreal-sample/images/3_07-les_segments_de_droite_et_les_angles/';
+			">
 
-		<div class="inbook-grid-layout" style="width:600px; text-align: left;">
-			<div class="col10 type-xxsmall">
+			<div class="inbook-grid-layout" style="width:600px; text-align: left;">
+				<div class="col10 type-xxsmall">
 
-				<div class="mt2 type-small bold">
-					Les polygones concaves et convexes
+					<div class="mt2 type-small bold">
+						Les polygones concaves et convexes
+					</div>
+
+					<div class="mt5 type-xsmall bold">
+						Polygone concave
+					</div>
+
+					<div class="mt3">
+						Un polygone est dit concave lorsqu'un de ses sommets entre à l'intérieur de la figure. L'angle de ce sommet est plus grand que 180&deg;
+					</div>
+
+					<div class="pa5 center">
+						<img ng-src="{{imgUrl}}diagram_39.png" />
+					</div>
+
+				<hr class="mt4 mb4"/>
+
+					<div class="mt2 type-xsmall bold">
+						Polygone convexe
+					</div>
+
+					<div class="mt3">
+						Un polygone est dit convexe si tous ses angles intérieurs sont inférieurs à 180&deg;, c'est-à-dire que tous les sommets des angle pointent vers l'extérieur du polygone.
+					</div>
+
+					<div class="pa5 center">
+						<img ng-src="{{imgUrl}}diagram_40.png" />
+					</div>
+
+					<div class="mt3">
+						True Un moyen de déterminer si un polygone est concave est de tenter de cacher deux objet à l'intérieur de polygone
+					</div>
+
+					<div class="pa5 center">
+						<img ng-src="{{imgUrl}}diagram_41.png" />
+					</div>
+
 				</div>
-
-				<div class="mt5 type-xsmall bold">
-					Polygone concave
-				</div>
-
-				<div class="mt3">
-					Un polygone est dit concave lorsqu'un de ses sommets entre à l'intérieur de la figure. L'angle de ce sommet est plus grand que 180&deg;
-				</div>
-
-				<div class="pa5 center">
-					<img ng-src="{{imgUrl}}diagram_39.png" />
-				</div>
-
-			<hr class="mt4 mb4"/>
-
-				<div class="mt2 type-xsmall bold">
-					Polygone convexe
-				</div>
-
-				<div class="mt3">
-					Un polygone est dit convexe si tous ses angles intérieurs sont inférieurs à 180&deg;, c'est-à-dire que tous les sommets des angle pointent vers l'extérieur du polygone.
-				</div>
-
-				<div class="pa5 center">
-					<img ng-src="{{imgUrl}}diagram_40.png" />
-				</div>
-
-				<div class="mt3">
-					True Un moyen de déterminer si un polygone est concave est de tenter de cacher deux objet à l'intérieur de polygone
-				</div>
-
-				<div class="pa5 center">
-					<img ng-src="{{imgUrl}}diagram_41.png" />
-				</div>
-
 			</div>
-		</div>
+	</div>
+	<div id="continue" class="mt6 center">
+  <div inbook-nextbtn="scene"></div>
+  </div>
 </div>
