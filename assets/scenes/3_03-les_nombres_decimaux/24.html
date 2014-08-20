@@ -1,87 +1,96 @@
 <div class="page-layout">
 
-	<div class="header-module-sub">
+	<div class="header-module">	
 		La multiplication et la division de décimaux par les multiples de 10
 	</div>
 	
 	<div class="para">
 		On peut éviter d'avoir à effectuer la multiplication et la division au long lorsque :
 	</div>
+		
+
+	<div class="para">
+		un des deux facteurs d'une multiplication est un multiple de 10, soit 10, 100, 1000, etc.
+	</div>
 	
-	<ul>
-		<li>un des deux facteurs d'une multiplication est un multiple de 10, soit 10, 100, 1000, etc.</li>
-		
-		<div class="exemple-frame" style="width:160px; margin:20px auto;">
-			Exemple : 6,27 × 100
-		</div>
-		
-		<li>dans une division, le diviseur est un multiple de 10, soit 10, 100, 1000, etc.</li>
-		
-		<div class="exemple-frame" style="width:160px; margin: 20px auto;">
-			Exemple : 6,27 × 100
-		</div>
-		
-		<div class="para">
-			Pour multiplier ou diviser un nombre décimal par 10, 100, 1000, etc., il s'agit tout simplement :
-		</div>
-		
-		<li>de déplacer la virgule vers la droite pour une multiplication ; </li>
-		
-		<div class="exemple-frame" style="width:260px; margin:20px auto;">
-			<img ng-src="{{imgUrl}}52.PNG" />
-		</div>
-		
-		<li>de déplacer la virgule vers la gauche pour une division.</li>
-		
-		<div class="exemple-frame" style="width:260px; margin:20px auto;">
-			<img ng-src="{{imgUrl}}53.PNG" />
-		</div>
-	</ul>
+	<div class="exemple-frame">
+		Exemple : 6,27 × 100
+	</div>
 	
+	<div class="para">
+		dans une division, le diviseur est un multiple de 10, soit 10, 100, 1000, etc.
+	</div>
+	
+	<div class="exemple-frame">
+		Exemple : 6,27 × 100
+	</div>
+	
+	<div class="para">
+		Pour multiplier ou diviser un nombre décimal par 10, 100, 1000, etc., il s'agit tout simplement :
+	</div>
+	
+	<div class="para">
+		de déplacer la virgule vers la droite pour une multiplication ;
+	</div>
+	
+	<div class="exemple-frame">
+		<img ng-src="{{imgUrl}}52.PNG" />
+	</div>
+	
+	<div class="para">
+		de déplacer la virgule vers la gauche pour une division.
+	</div>
+	
+	<div class="exemple-frame">
+		<img ng-src="{{imgUrl}}53.PNG" />
+	</div>
+
 	<div class="para">
 		On détermine le nombre de places de la façon suivante :
 	</div>
-		
-	<table class="center" rules="all" style="width:600px; height:300px; border:1px solid black;">
-		<tr class="bold">
-			<td></td>
-			<td>Multiplication</td>
-			<td>Division</td>
-		</tr>
-		<tr>
-			<td class="bold shiftdown2">par 10</td>
-			<td>
-				<div>on avance d'une place</div>
-				<div>31,24 × 10 = 312,4</div>
-			</td>
-			<td>
-				<div>on recule d'une place</div>
-				<div>31,24 ÷ 10 = 3,124</div>
-			</td>
-		</tr>
-		<tr>
-			<td class="bold shiftdown2">par 100</td>
-			<td>
-				<div>on avance de deux places</div>
-				<div>31,24 × 100 = 3 124</div>
-			</td>
-			<td>
-				<div>on recule de deux places</div>
-				<div>31,24 ÷ 100 = 0,312 4</div>
-			</td>
-		</tr>
-		<tr>
-			<td class="bold shiftdown2">par 1 000</td>
-			<td>
-				<div>on avance de trois places</div>
-				<div>31,24 × 1 000 = 31 240*</div>
-			</td>
-			<td>
-				<div>on recule de trois places</div>
-				<div>31,24 ÷ 1 000 = 0,031 24*</div>
-			</td>
-		</tr>
-	</table>
+	
+	<div class="para">
+		<table class="basic-table cells-large">
+			<tr class="bold">
+				<td></td>
+				<td>Multiplication</td>
+				<td>Division</td>
+			</tr>
+			<tr>
+				<td class="bold">par 10</td>
+				<td>
+					<div>on avance d'une place</div>
+					<div>31,24 × 10 = 312,4</div>
+				</td>
+				<td>
+					<div>on recule d'une place</div>
+					<div>31,24 ÷ 10 = 3,124</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="bold">par 100</td>
+				<td>
+					<div>on avance de deux places</div>
+					<div>31,24 × 100 = 3 124</div>
+				</td>
+				<td>
+					<div>on recule de deux places</div>
+					<div>31,24 ÷ 100 = 0,312 4</div>
+				</td>
+			</tr>
+			<tr>
+				<td class="bold shiftdown2">par 1 000</td>
+				<td>
+					<div>on avance de trois places</div>
+					<div>31,24 × 1 000 = 31 240*</div>
+				</td>
+				<td>
+					<div>on recule de trois places</div>
+					<div>31,24 ÷ 1 000 = 0,031 24*</div>
+				</td>
+			</tr>
+		</table>
+	</div>
 	
 	<div class="note-frame">
 		* Remarquez qu’il a fallu ajouter un zéro.
