@@ -1,229 +1,295 @@
 
-	<div class="page-layout">
-		<div class="center para">
-			Effectuez. Simplifiez s'il y a lieu.
-		</div>
-		<div inbook-questionseries on-complete="scene.markAsCompleted();"
+
+<div class="center para">
+	Effectuez. Simplifiez s'il y a lieu.
+</div>
+<div inbook-questionseries on-complete="scene.markAsCompleted();">
+	<div  	gseq gscroll
+	class="page-layout">
+	    <div gdirections>
+	      <div el=".exercise-num"   duration="1" ease="power4-in-out" presets="[fromTransparent]"></div>
+	    </div>
+
+	    <div class="exercise-num">
+	      EXERCICE 25
+	    </div>
+
+		<div 	inbook-questionseries 
+				on-complete="scene.markAsCompleted();"
 				ordered=true
 				no-remove=true>
-			<div id="question-dots" inbook-questionseries-dots class="mb3"></div> 	
-							
-				<div inbook-questionseries-item  level="1" >		
-					<div
-						ng-init=""
-						ng-resettable-init="x = 2;
-											y = 3;
-											z = 1;
-											j = 7;
-											k = 5;
-											p = '&minus;';
-											"
-						ng-equate=" a = 1;
-									b = 3;
-									w = 2;"
-						></div>
 						
-					<div inbook-include="assets/templates/exercises/exercice19w.html"></div>			
-				</div>
-				
-				<div inbook-questionseries-item  level="2" >		
-					<div
-						ng-init=""
-						ng-resettable-init="x = 4;
-											y = 9;
-											z = 3;
-											j = 8;
-											k = 2;
-											p = '&minus;';
-											"
-						ng-equate=" a = 1;
-									b = 9;
-									w = 6;"
-						></div>
-						
-					<div inbook-include="assets/templates/exercises/exercice19w.html"></div>			
-				</div>
-				
-				<div inbook-questionseries-item  level="3" >		
-					<div
-						ng-init=""
-						ng-resettable-init="x = 2;
-											y = 4;
-											z = 1;
-											j = 9;
-											k = 4;
-											p = '&minus;';
-											"
-						ng-equate=" a = 1;
-									b = 4;
-									w = 5;"
-						></div>
-						
-					<div inbook-include="assets/templates/exercises/exercice19w.html"></div>			
-				</div>
-				
-				<div inbook-questionseries-item  level="4">
-					<div
-						ng-init=""
-						ng-resettable-init="
-											y = 8;
-											z = 7;
-											j = 11;
-											k = 9;
-											p = '&minus;';
-											"
-						ng-equate=" a = 1;
-									b = 8;
-									w = 1;"
-						></div>
-					
-					<div inbook-include="assets/templates/exercises/exercice21a.html"></div>				
-				</div>
-				
-				<div inbook-questionseries-item  level="5" >		
-					<div
-						ng-init=""
-						ng-resettable-init="x = 8;
-											y = 13;
-											z = 1;
-											j = 3;
-											k = 1;
-											p = '&minus;';
-											"
-						ng-equate=" a = 7;
-									b = 13;
-									w = 2;"
-						></div>
-						
-					<div inbook-include="assets/templates/exercises/exercice19w.html"></div>			
-				</div>
-				
-				<div inbook-questionseries-item  level="6" >		
-					<div
-						ng-init=""
-						ng-resettable-init="x = 5;
-											y = 8;
-											z = 3;
-											j = 9;
-											k = 6;
-											p = '&minus;';
-											"
-						ng-equate=" a = 1;
-									b = 4;
-									w = 3;"
-						></div>
-						
-					<div inbook-include="assets/templates/exercises/exercice19w.html"></div>			
-				</div>
-				
-				<div inbook-questionseries-item  level="7">
-					<div
-						ng-init=""
-						ng-resettable-init="x = 7;
-											y = 20;
-											j = 4;
-											k = 2;
-											p = '&minus;';
-											"
-						ng-equate=" a = 7;
-									b = 20;
-									w = 2;"
-						></div>
-					<div inbook-include="assets/templates/exercises/exercice21.html"></div>				
-				</div>
-				
-				<div inbook-questionseries-item  level="8" >		
-					<div
-						ng-init=""
-						ng-resettable-init="x = 2;
-											y = 3;
-											z = 1;
-											j = 18;
-											k = 8;
-											p = '&minus;';
-											"
-						ng-equate=" a = 1;
-									b = 3;
-									w = 10;"
-						></div>
-						
-					<div inbook-include="assets/templates/exercises/exercice19w.html"></div>			
-				</div>
-						
-				<div inbook-questionseries-item  level="9">
-					<div
-						ng-init=""
-						ng-resettable-init="
-											y = 5;
-											z = 3;
-											j = 5;
-											p = '&minus;';
-											"
-						ng-equate=" a = 2;
-									b = 5;
-									w = 4;"
-						></div>
-					
-					<div inbook-include="assets/templates/exercises/exercice21a.html"></div>				
-				</div>
-				
-								
-				<div inbook-questionseries-item  level="10">
-					<div
-						ng-init=""
-						ng-resettable-init="
-											y = 7;
-											z = 6;
-											j = 8;
-											k = 3;
-											p = '&minus;';
-											"
-						ng-equate=" a = 1;
-									b = 7;
-									w = 4;"
-						></div>
-					
-					<div inbook-include="assets/templates/exercises/exercice21a.html"></div>				
-				</div>
-				
-								
-				<div inbook-questionseries-item  level="11">
-					<div
-						ng-init=""
-						ng-resettable-init="
-											y = 9;
-											z = 6;
-											j = 23;
-											k = 13;
-											p = '&minus;';
-											"
-						ng-equate=" a = 1;
-									b = 3;
-									w = 9;"
-						></div>
-					
-					<div inbook-include="assets/templates/exercises/exercice21a.html"></div>				
-				</div>
-				
-				<div inbook-questionseries-item  level="12">
-					<div
-						ng-init=""
-						ng-resettable-init="x = 1;
-											y = 2;
-											z = 1;
-											j = 15;
-											k = 4;
-											p = '&minus;';
-											"
-						ng-equate=" a = 11;
-									"
-						></div>
-					
-					<div inbook-include="assets/templates/exercises/exercice19wb.html"></div>				
-				</div>
-				
+			<div inbook-questionseries-item  level="1" >		
+				<div
+					ng-init=""
+					ng-resettable-init="x = 2;
+										y = 3;
+										z = 1;
+										j = 7;
+										k = 5;
+										p = '&minus;';
+										"
+					ng-equate=" a = 1;
+								b = 3;
+								w = 2;"
+					></div>	
+					<div class="exercise-box">
+						<div class="exercise-header">
+							Effectuez. Simplifiez s'il y a lieu.
+						</div>
+						<div inbook-include="assets/templates/exercises/exercice19w.html"></div>	
+					</div>		
 			</div>
-			<div id="continue" class="mt6 center">
-			<div inbook-nextbtn="scene"></div>
+			
+			<div inbook-questionseries-item  level="2" >		
+				<div
+					ng-init=""
+					ng-resettable-init="x = 4;
+										y = 9;
+										z = 3;
+										j = 8;
+										k = 2;
+										p = '&minus;';
+										"
+					ng-equate=" a = 1;
+								b = 9;
+								w = 6;"
+					></div>
+					<div class="exercise-box">
+						<div class="exercise-header">
+							Effectuez. Simplifiez s'il y a lieu.
+						</div>
+						<div inbook-include="assets/templates/exercises/exercice19w.html"></div>
+					</div>			
 			</div>
+			
+			<div inbook-questionseries-item  level="3" >		
+				<div
+					ng-init=""
+					ng-resettable-init="x = 2;
+										y = 4;
+										z = 1;
+										j = 9;
+										k = 4;
+										p = '&minus;';
+										"
+					ng-equate=" a = 1;
+								b = 4;
+								w = 5;"
+					></div>
+					<div class="exercise-box">
+						<div class="exercise-header">
+							Effectuez. Simplifiez s'il y a lieu.
+						</div>
+						<div inbook-include="assets/templates/exercises/exercice19w.html"></div>	
+					</div>		
+			</div>
+			
+			<div inbook-questionseries-item  level="4">
+				<div
+					ng-init=""
+					ng-resettable-init="
+										y = 8;
+										z = 7;
+										j = 11;
+										k = 9;
+										p = '&minus;';
+										"
+					ng-equate=" a = 1;
+								b = 8;
+								w = 1;"
+					></div>
+					<div class="exercise-box">
+						<div class="exercise-header">
+							Effectuez. Simplifiez s'il y a lieu.
+						</div>
+						<div inbook-include="assets/templates/exercises/exercice21a.html"></div>		
+					</div>		
+			</div>
+			
+			<div inbook-questionseries-item  level="5" >		
+				<div
+					ng-init=""
+					ng-resettable-init="x = 8;
+										y = 13;
+										z = 1;
+										j = 3;
+										k = 1;
+										p = '&minus;';
+										"
+					ng-equate=" a = 7;
+								b = 13;
+								w = 2;"
+					></div>
+					<div class="exercise-box">
+						<div class="exercise-header">
+							Effectuez. Simplifiez s'il y a lieu.
+						</div>
+						<div inbook-include="assets/templates/exercises/exercice19w.html"></div>	
+					</div>		
+			</div>
+			
+			<div inbook-questionseries-item  level="6" >		
+				<div
+					ng-init=""
+					ng-resettable-init="x = 5;
+										y = 8;
+										z = 3;
+										j = 9;
+										k = 6;
+										p = '&minus;';
+										"
+					ng-equate=" a = 1;
+								b = 4;
+								w = 3;"
+					></div>
+					<div class="exercise-box">
+						<div class="exercise-header">
+							Effectuez. Simplifiez s'il y a lieu.
+						</div>
+
+						<div inbook-include="assets/templates/exercises/exercice19w.html"></div>	
+					</div>		
+			</div>
+			
+			<div inbook-questionseries-item  level="7">
+				<div
+					ng-init=""
+					ng-resettable-init="x = 7;
+										y = 20;
+										j = 4;
+										k = 2;
+										p = '&minus;';
+										"
+					ng-equate=" a = 7;
+								b = 20;
+								w = 2;"
+					></div>
+					<div class="exercise-box">
+						<div class="exercise-header">
+							Effectuez. Simplifiez s'il y a lieu.
+						</div>
+						<div inbook-include="assets/templates/exercises/exercice21.html"></div>	
+					</div>			
+			</div>
+			
+			<div inbook-questionseries-item  level="8" >		
+				<div
+					ng-init=""
+					ng-resettable-init="x = 2;
+										y = 3;
+										z = 1;
+										j = 18;
+										k = 8;
+										p = '&minus;';
+										"
+					ng-equate=" a = 1;
+								b = 3;
+								w = 10;"
+					></div>
+					<div class="exercise-box">
+						<div class="exercise-header">
+							Effectuez. Simplifiez s'il y a lieu.
+						</div>
+						<div inbook-include="assets/templates/exercises/exercice19w.html"></div>
+					</div>			
+			</div>
+					
+			<div inbook-questionseries-item  level="9">
+				<div
+					ng-init=""
+					ng-resettable-init="
+										y = 5;
+										z = 3;
+										j = 5;
+										p = '&minus;';
+										"
+					ng-equate=" a = 2;
+								b = 5;
+								w = 4;"
+					></div>
+					<div class="exercise-box">
+						<div class="exercise-header">
+							Effectuez. Simplifiez s'il y a lieu.
+						</div>
+						<div inbook-include="assets/templates/exercises/exercice21a.html"></div>			
+					</div>	
+			</div>
+
+			
 	</div>
+
+			
+							
+			<div inbook-questionseries-item  level="10">
+				<div
+					ng-init=""
+					ng-resettable-init="
+										y = 7;
+										z = 6;
+										j = 8;
+										k = 3;
+										p = '&minus;';
+										"
+					ng-equate=" a = 1;
+								b = 7;
+								w = 4;"
+					></div>
+					<div class="exercise-box">
+						<div class="exercise-header">
+							Effectuez. Simplifiez s'il y a lieu.
+						</div>
+						<div inbook-include="assets/templates/exercises/exercice21a.html"></div>
+					</div>				
+			</div>
+			
+							
+			<div inbook-questionseries-item  level="11">
+				<div
+					ng-init=""
+					ng-resettable-init="
+										y = 9;
+										z = 6;
+										j = 23;
+										k = 13;
+										p = '&minus;';
+										"
+					ng-equate=" a = 1;
+								b = 3;
+								w = 9;"
+					></div>
+					<div class="exercise-box">
+						<div class="exercise-header">
+							Effectuez. Simplifiez s'il y a lieu.
+						</div>
+						<div inbook-include="assets/templates/exercises/exercice21a.html"></div>
+					</div>				
+			</div>
+			
+			<div inbook-questionseries-item  level="12">
+				<div
+					ng-init=""
+					ng-resettable-init="x = 1;
+										y = 2;
+										z = 1;
+										j = 15;
+										k = 4;
+										p = '&minus;';
+										"
+					ng-equate=" a = 11;
+								"
+					></div>
+					<div class="exercise-box">
+						<div class="exercise-header">
+							Effectuez. Simplifiez s'il y a lieu.
+						</div
+						<div inbook-include="assets/templates/exercises/exercice19wb.html"></div>	
+					</div>			
+					<div id="continue" class="mt6 center">
+					<div inbook-nextbtn="scene"></div>
+					</div>
+			</div>
+			
+		</div>
+	
+

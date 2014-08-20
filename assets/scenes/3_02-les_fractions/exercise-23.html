@@ -1,11 +1,23 @@
-	<div class="page-layout">
+
 		<div class="center para">
 			Effectuez. Simplifiez s'il y a lieu.
 		</div>
 		<div inbook-questionseries on-complete="scene.markAsCompleted();"
+<div  	gseq gscroll
+    	class="page-layout">
+
+	    <div gdirections>
+	      <div el=".exercise-num"   duration="1" ease="power4-in-out" presets="[fromTransparent]"></div>
+	    </div>
+
+	    <div class="exercise-num">
+	      EXERCICE 23
+	    </div>
+
+		<div 	inbook-questionseries 
+				on-complete="scene.markAsCompleted();"
 				ordered=true
 				no-remove=true>
-			<div id="question-dots" inbook-questionseries-dots class="mb3"></div> 	
 							
 				<div inbook-questionseries-item  level="1" >		
 					<div
@@ -18,8 +30,12 @@
 						ng-equate=" a = 3;
 									b = 8;"
 						></div>
-						
-					<div inbook-include="assets/templates/exercises/exercice19.html"></div>			
+						<div class="exercise-box">
+							<div class="exercise-header">
+								Effectuez. Simplifiez s'il y a lieu.
+							</div>
+							<div inbook-include="assets/templates/exercises/exercice19.html"></div>	
+						</div>		
 				</div>
 				
 				<div inbook-questionseries-item  level="2" >		
@@ -33,8 +49,12 @@
 						ng-equate=" a = 1;
 									b = 6;"
 						></div>
-						
-					<div inbook-include="assets/templates/exercises/exercice19.html"></div>			
+						<div class="exercise-box">
+							<div class="exercise-header">
+								Effectuez. Simplifiez s'il y a lieu.
+							</div>
+							<div inbook-include="assets/templates/exercises/exercice19.html"></div>	
+						</div>			
 				</div>
 				
 				<div inbook-questionseries-item  level="3" >		
@@ -48,8 +68,12 @@
 						ng-equate=" a = 1;
 									b = 3;"
 						></div>
-						
-					<div inbook-include="assets/templates/exercises/exercice19.html"></div>			
+						<div class="exercise-box">
+							<div class="exercise-header">
+								Effectuez. Simplifiez s'il y a lieu.
+							</div>
+							<div inbook-include="assets/templates/exercises/exercice19.html"></div>	
+						</div>		
 				</div>
 				
 				<div inbook-questionseries-item  level="4" >		
@@ -63,8 +87,12 @@
 						ng-equate=" a = 1;
 									b = 5;"
 						></div>
-						
-					<div inbook-include="assets/templates/exercises/exercice19.html"></div>			
+						<div class="exercise-box">
+							<div class="exercise-header">
+								Effectuez. Simplifiez s'il y a lieu.
+							</div>
+							<div inbook-include="assets/templates/exercises/exercice19.html"></div>		
+						</div>	
 				</div>
 				
 				<div inbook-questionseries-item  level="5">
@@ -78,9 +106,13 @@
 											"
 						ng-equate=" a = 4;
 									b = 9;"
-						></div>
-					
-					<div inbook-include="assets/templates/exercises/exercice19a.html"></div>				
+						></div>	
+						<div class="exercise-box">
+							<div class="exercise-header">
+								Effectuez. Simplifiez s'il y a lieu.
+							</div>
+							<div inbook-include="assets/templates/exercises/exercice19a.html"></div>
+						</div>				
 				</div>
 				
 				<div inbook-questionseries-item  level="6" >		
@@ -94,8 +126,12 @@
 						ng-equate=" a = 4;
 									b = 21;"
 						></div>
-						
-					<div inbook-include="assets/templates/exercises/exercice19.html"></div>			
+						<div class="exercise-box">
+							<div class="exercise-header">
+								Effectuez. Simplifiez s'il y a lieu.
+							</div>
+							<div inbook-include="assets/templates/exercises/exercice19.html"></div>		
+						</div>	
 				</div>
 				
 				<div inbook-questionseries-item  level="7">		
@@ -109,8 +145,12 @@
 						ng-equate=" a = 3;
 									b = 10;"
 						></div>
-						
-					<div inbook-include="assets/templates/exercises/exercice19.html"></div>			
+						<div class="exercise-box">
+							<div class="exercise-header">
+								Effectuez. Simplifiez s'il y a lieu.
+							</div>
+							<div inbook-include="assets/templates/exercises/exercice19.html"></div>	
+						</div>		
 				</div>
 				
 				<div inbook-questionseries-item  level="8" >		
@@ -124,8 +164,12 @@
 						ng-equate=" a = 2;
 									b = 5;"
 						></div>
-						
-					<div inbook-include="assets/templates/exercises/exercice19.html"></div>			
+						<div class="exercise-box">
+							<div class="exercise-header">
+								Effectuez. Simplifiez s'il y a lieu.
+							</div>
+							<div inbook-include="assets/templates/exercises/exercice19.html"></div>	
+						</div>		
 				</div>
 				
 				<div inbook-questionseries-item  level="9" >		
@@ -140,8 +184,13 @@
 									b = 5;
 									w = 1;"
 						></div>
-						
-					<div inbook-include="assets/templates/exercises/exercice19w.html"></div>			
+						<div class="exercise-box">
+							<div class="exercise-header">
+								Effectuez. Simplifiez s'il y a lieu.
+							</div>
+		
+							<div inbook-include="assets/templates/exercises/exercice19w.html"></div>	
+						</div>		
 				</div>
 				
 				<div inbook-questionseries-item  level="10">
@@ -157,13 +206,17 @@
 									b = 7;
 									w = 1;"
 						></div>
-					
-					<div inbook-include="assets/templates/exercises/exercice19aw.html"></div>				
+						<div class="exercise-box">
+							<div class="exercise-header">
+								Effectuez. Simplifiez s'il y a lieu.
+							</div>
+							<div inbook-include="assets/templates/exercises/exercice19aw.html"></div>	
+						</div>			
 				</div>
 				
+
 		</div>
 		<div id="continue" class="mt6 center">
 		<div inbook-nextbtn="scene"></div>
 		</div>
 	</div>
-

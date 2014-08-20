@@ -1,8 +1,395 @@
-<div 	class="page-layout">
+
+<div 	gseq
+		class="page-layout" 
+		ng-init="
+			ans={};
+
+			ans.input1 = {
+				showSolution: false,
+				question	: '273,04',
+				solution 	: '273,04 (2 centaines, 7 dizaines, 3 unités, 0 dixième, 4 centièmes)'
+			};
+			ans.input2 = {
+				showSolution: false,
+				question	: '80,35',
+				solution 	: '80,35 (8 dizaines, 0 unité, 3 dixièmes, 5 centièmes)'
+			};
+			ans.input3 = {
+				showSolution: false,
+				question	: '280 000',
+				solution 	: '280 000 (2 centaines de mille, 8 dizaines de mille, 0 unité de mille, 0 centaine, 0 dizaine, 0 unité)'
+			};
+			ans.input4 = {
+				showSolution: false,
+				question: '0,20',
+				solution : '0,20 (0 unité, 2 dixièmes, 0 centième)'
+			};
+			ans.input5 = {
+				showSolution: false,
+				question: '38 025',
+				solution : '38 025 (3 dizaines de mille, 8 unités de mille, 0 centaine, 2 dizaines, 5 unités)'
+			};
+			ans.input6 = {
+				showSolution: false,
+				question: '32,5',
+				solution : '32,5 (3 dizaines, 2 unités, 5 dixièmes)'
+			};
+			ans.input7 = {
+				showSolution: false,
+				question: '402,07',
+				solution : '402,07 (4 centaines, 0 dizaine, 2 unités, 0 dixième, 7 centièmes)'
+			};
+			ans.input8 = {
+				showSolution: false,
+				question: '81,2',
+				solution : '81,2 (8 dizaines, 1 unité, 2 dixièmes)'
+			};
+			ans.input9 = {
+				showSolution: false,
+				question: '901,40',
+				solution : '901,40 (9 centaines, 0 dizaine, 1 unité, 4 dixièmes, 0 centième)'
+			};
+			ans.input10 = {
+				showSolution: false,
+				question: '30 734,1',
+				solution : '30 734,1 (3 dizaines de mille, 0 unité de mille, 7 centaines, 3 dizaines, 4 unités, 1 dixième)'
+			};"
 
 
-Décomposez en indiquant la position de chaque chiffre.
-	<div id="continue" class="mt6 center">
-  <div inbook-nextbtn="scene"></div>
-  </div>
+		>Décomposez en indiquant la position de chaque chiffre.
+
+		<div gdirections>
+			<div el=".exercise-num"   duration="0.8" ease="power4-in-out" presets="[fromTransparent]"></div>
+
+			<div duration="0.45"></div>
+
+			<div el=".anim-01" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+				
+			<div duration="1"></div>
+
+			<div el=".anim-02" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-03" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-04" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-05" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-06" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-07" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-08" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-09" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-10" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+	      	<div el="#continue" duration="1" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]" disable-scroll-focus="true"></div>	
+
+		</div>
+
+	    <div class="exercise-num">
+	      EXERCICE 2
+	    </div>
+
+		<div class="exercise-box anim-01">
+
+			<div class="exercise-header">
+				Décomposez en indiquant la position de chaque chiffre.
+			</div>
+
+			<div class="exercise-text">
+				{{ans.input1.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input1"></div>
+
+			<div vcollapse="ans.input1.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input1.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input1.showSolution">
+				<div class="solution-body">
+					{{ans.input1.solution}}
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-02" />
+
+		<div class="exercise-box anim-02">
+
+			<div class="exercise-header">
+				Décomposez en indiquant la position de chaque chiffre.
+			</div>
+
+			<div class="exercise-text">
+				{{ans.input2.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input2"></div>
+
+			<div vcollapse="ans.input2.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input2.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input2.showSolution">
+				<div class="solution-body">
+					{{ans.input2.solution}}
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-03" />
+
+		<div class="exercise-box anim-03">
+
+			<div class="exercise-header">
+				Décomposez en indiquant la position de chaque chiffre.
+			</div>
+
+			<div class="exercise-text">
+				{{ans.input3.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input3"></div>
+
+			<div vcollapse="ans.input3.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input3.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input3.showSolution">
+				<div class="solution-body">
+					{{ans.input3.solution}}
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-04" />
+
+		<div class="exercise-box anim-04">
+
+			<div class="exercise-header">
+				Décomposez en indiquant la position de chaque chiffre.
+			</div>
+
+			<div class="exercise-text">
+				{{ans.input4.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input4"></div>
+
+			<div vcollapse="ans.input4.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input4.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input4.showSolution">
+				<div class="solution-body">
+					{{ans.input4.solution}}
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-05" />
+
+		<div class="exercise-box anim-05">
+
+			<div class="exercise-header">
+				Décomposez en indiquant la position de chaque chiffre.
+			</div>
+
+			<div class="exercise-text">
+				{{ans.input5.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input5"></div>
+
+			<div vcollapse="ans.input5.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input5.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input5.showSolution">
+				<div class="solution-body">
+					{{ans.input5.solution}}
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-06" />
+
+		<div class="exercise-box anim-06">
+
+			<div class="exercise-header">
+				Décomposez en indiquant la position de chaque chiffre.
+			</div>
+
+			<div class="exercise-text">
+				{{ans.input6.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input6"></div>
+
+			<div vcollapse="ans.input6.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input6.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input6.showSolution">
+				<div class="solution-body">
+					{{ans.input6.solution}}
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-07" />
+
+		<div class="exercise-box anim-07">
+
+			<div class="exercise-header">
+				Décomposez en indiquant la position de chaque chiffre.
+			</div>
+
+			<div class="exercise-text">
+				{{ans.input7.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input7"></div>
+
+			<div vcollapse="ans.input7.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input7.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input7.showSolution">
+				<div class="solution-body">
+					{{ans.input7.solution}}
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-08" />
+
+		<div class="exercise-box anim-08">
+
+			<div class="exercise-header">
+				Décomposez en indiquant la position de chaque chiffre.
+			</div>
+
+			<div class="exercise-text">
+				{{ans.input8.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input8"></div>
+
+			<div vcollapse="ans.input8.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input8.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input8.showSolution">
+				<div class="solution-body">
+					{{ans.input8.solution}}
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-09" />
+
+		<div class="exercise-box anim-09">
+
+			<div class="exercise-header">
+				Décomposez en indiquant la position de chaque chiffre.
+			</div>
+
+			<div class="exercise-text">
+				{{ans.input9.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input9"></div>
+
+			<div vcollapse="ans.input9.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input9.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input9.showSolution">
+				<div class="solution-body">
+					{{ans.input9.solution}}
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-10" />
+
+		<div class="exercise-box anim-10">
+
+			<div class="exercise-header">
+				Décomposez en indiquant la position de chaque chiffre.
+			</div>
+
+			<div class="exercise-text">
+				{{ans.input10.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input10"></div>
+
+			<div vcollapse="ans.input10.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input10.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input10.showSolution">
+				<div class="solution-body">
+					{{ans.input10.solution}}
+				</div>
+			</div>
+				
+		</div> 
+
+		<div id="continue" class="mt6 center">
+	  <div inbook-nextbtn="scene"></div>
+	  </div>
 </div>
