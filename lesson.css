@@ -1110,3 +1110,6 @@ ul.basic-list {
 .exercise-info .exercise-info-inner .inner-margin {
   padding: 40px 0 25px;
 }
+.fraction-line-thin {
+  opacity: 0.5;
+}
