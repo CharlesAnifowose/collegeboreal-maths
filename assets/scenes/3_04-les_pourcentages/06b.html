@@ -1,0 +1,213 @@
+<div 	gseq
+		class="page-layout" 
+		ng-init="
+			ans={};
+
+			ans.input1 = {
+				showSolution: false,
+				question: '',
+				solution 	: '22/100'
+			};
+			ans.input2 = {
+				showSolution: false,
+				question: '',
+				solution : '22%'
+			};
+			ans.input3 = {
+				showSolution: false,
+				question: '',
+				solution : '13/100'
+			};
+			ans.input4 = {
+				showSolution: false,
+				question: '',
+				solution : '13%'
+			};
+			ans.input5 = {
+				showSolution: false,
+				question: '',
+				solution : '10/100'
+			};
+			ans.input6 = {
+				showSolution: false,
+				question: '',
+				solution : '10%'
+			};
+
+		">
+
+		<div gdirections>
+			<div el=".exercise-num"   duration="0.8" ease="power4-in-out" presets="[fromTransparent]"></div>
+
+			<div duration="0.45"></div>
+
+			<div el=".anim-01" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+				
+			<div duration="1"></div>
+
+			<div el=".anim-02" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-03" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-04" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-05" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-06" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-07" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-08" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-09" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-10" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-11" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-12" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+	      	<div el="#continue" duration="1" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]" disable-scroll-focus="true"></div>	
+
+		</div>
+
+	    <div class="exercise-num">
+	      EXERCICE 4
+	    </div>
+	
+		<div class="exercise-box anim-01">
+
+			<div class="exercise-header">
+				Établissez le pourcentage de la grille recouverte par les trois dessins. 
+				<img ng-src="{{activeSceneSection.imgUrl}}000011.jpg" />				
+			</div>
+
+		  <table class="table">
+			<tr class="exercise-text">
+			  <th>dessin </th>
+			  <th>fraction </br> dénominateur 100 </th>
+			  <th>pourcentage</th>
+			</tr>
+			<tr>
+			  <td><img ng-src="{{activeSceneSection.imgUrl}}000012.jpg" /></td>
+			  <td>
+					  <div inbook-workbook-draw persist-to="input1"></div>
+					  <div vcollapse="ans.input1.showSolution">
+						<div class="show-solution-btn" ng-click="ans.input1.showSolution = true">
+							Vérifier Solution
+						</div>
+					 </div>  
+
+					 <div class="pl4" vcollapse="!ans.input1.showSolution">
+						<div class="solution-body">
+							{{ans.input1.solution}}
+						</div>
+					 </div>
+			  </td>
+			  <td>
+					  <div inbook-workbook-draw persist-to="input2"></div>
+					  <div vcollapse="ans.input2.showSolution">
+						<div class="show-solution-btn" ng-click="ans.input2.showSolution = true">
+							Vérifier Solution
+						</div>
+					 </div>  
+
+					<div class="pl4" vcollapse="!ans.input2.showSolution">
+						<div class="solution-body">
+							{{ans.input2.solution}}
+						</div>
+					</div>
+			 </td>
+			</tr>
+			<tr>
+			  <td><img ng-src="{{activeSceneSection.imgUrl}}000013.jpg" /></td>
+			  <td>
+					<div inbook-workbook-draw persist-to="input3"></div>
+					<div vcollapse="ans.input3.showSolution">
+						<div class="show-solution-btn" ng-click="ans.input3.showSolution = true">
+							Vérifier Solution
+						</div>
+					</div>  
+
+					<div class="pl4" vcollapse="!ans.input3.showSolution">
+						<div class="solution-body">
+							{{ans.input3.solution}}
+						</div>
+					</div>
+			  </td>
+			  <td>
+					<div inbook-workbook-draw persist-to="input4"></div>
+					<div vcollapse="ans.input4.showSolution">
+						<div class="show-solution-btn" ng-click="ans.input4.showSolution = true">
+							Vérifier Solution
+						</div>
+					</div>  
+
+					<div class="pl4" vcollapse="!ans.input4.showSolution">
+						<div class="solution-body">
+							{{ans.input4.solution}}
+						</div>
+					</div>
+			  </td>
+			</tr>
+			<tr>
+			  <td><img ng-src="{{activeSceneSection.imgUrl}}000014.jpg" /></td>
+			  <td>
+					<div inbook-workbook-draw persist-to="input5"></div>
+					<div vcollapse="ans.input5.showSolution">
+						<div class="show-solution-btn" ng-click="ans.input5.showSolution = true">
+							Vérifier Solution
+						</div>
+					</div>  
+
+					<div class="pl4" vcollapse="!ans.input5.showSolution">
+						<div class="solution-body">
+							{{ans.input5.solution}}
+						</div>
+					</div>
+			  </td>
+			  <td>
+				  <div inbook-workbook-draw persist-to="input6"></div>
+				  <div vcollapse="ans.input6.showSolution">
+						<div class="show-solution-btn" ng-click="ans.input6.showSolution = true">
+							Vérifier Solution
+						</div>
+					</div>  
+
+					<div class="pl4" vcollapse="!ans.input6.showSolution">
+						<div class="solution-body">
+							{{ans.input6.solution}}
+					    </div>
+				  </div>
+			  </td>
+			</tr>
+		  </table>
+		  
+	  </div> 
+	  
+	  <div id="continue" class="mt6 center">
+		<div inbook-nextbtn="scene"></div>
+	  </div>
+</div>

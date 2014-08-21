@@ -1,45 +1,47 @@
 <div 	class="page-layout" >
-	<div ng-init="imgUrl = 'http://vretta-inbook-assets.s3.amazonaws.com/collegeboreal-sample/images/3_06-la_geometrie_de_base/';">
-		<div class="inbook-grid-layout" style="width: 600px; margin: 30px auto;">
-			<u class="type-xxsmall">
-				Le périmètre du rectangle
-			</u>
+
+	<div class="header-section"> 	
+		Le périmètre du rectangle
+	</div>
+
+	<div class="para">
+		 <div>Dans un rectangle, les côtés opposés sont égaux :</div> 
+	</div>
 		
-			<div class="mt5 mb3 center">
-				 <div>Dans un rectangle, les côtés opposés sont égaux :</div> 
-			</div>
-			
-			<ul class="ib">
-				<li>
-					<div>
-						 les deux longueurs sont égales
-					</div>
-				</li>
-				<li>
-					<div>
-						les deux largeurs sont égales
-					</div>
-				</li>
-			</ul>
-			
-			<div class="mt5 mb5">
-				 <div>Le côté long désigne la longueur et le côté court désigne la largeur.</div> 
-			</div>
-			
-			<div class="mt5">
-				<div class="center ib mr5"><img ng-src="{{imgUrl}}23.png" /></div>
-				<div class="ib">
-					 <div class="ml5 mb1">Pour calculer le périmètre du rectangle on utilise la</div> 
-					 <div>formule suivante :</div>
-				   	<div class="center mt3 mb3"><img ng-src="{{imgUrl}}24.png" /></div>
-					 <div>où L est la longueur et l est la largeur.</div>
+
+	<div class="para">
+		<ul class="basic-list">
+			<li>
+				<div>
+					 les deux longueurs sont égales
 				</div>
-			</div>
-			 <div class="center"><img ng-src="{{imgUrl}}25.PNG" /></div>
-			<div class="center"><img ng-src="{{imgUrl}}26.PNG" /></div>
+			</li>
+			<li>
+				<div>
+					les deux largeurs sont égales
+				</div>
+			</li>
+		</ul>
+	</div>
+	
+	<div class="mt5 mb5">
+		 <div>Le côté long désigne la longueur et le côté court désigne la largeur.</div> 
+	</div>
+	
+	<div class="mt5">
+		<div class="center ib mr5"><img ng-src="{{imgUrl}}23.png" /></div>
+		<div class="ib">
+			 <div class="ml5 mb1">Pour calculer le périmètre du rectangle on utilise la</div> 
+			 <div>formule suivante :</div>
+		   	<div class="center mt3 mb3"><img ng-src="{{imgUrl}}24.png" /></div>
+			 <div>où L est la longueur et l est la largeur.</div>
 		</div>
 	</div>
+	 <div class="center"><img ng-src="{{imgUrl}}25.PNG" /></div>
+	<div class="center"><img ng-src="{{imgUrl}}26.PNG" /></div>
+
 	<div id="continue" class="mt6 center">
-  <div inbook-nextbtn="scene"></div>
-  </div>
+		<div inbook-nextbtn="scene"></div>
+	</div>
+
 </div>

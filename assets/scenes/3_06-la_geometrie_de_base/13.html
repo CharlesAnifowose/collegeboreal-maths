@@ -1,46 +1,187 @@
-<div 	class="page-layout" >
-	<div class="">
-		<div class="center type-xsmall mt10 bold">EXERCICE 6</div>
-		<div class="inbook-grid-layout" style="width:600px; margin: 10px auto;">
-			<div inbook-questionseries on-complete="scene.markAsCompleted();"
-					ordered=true
-					no-remove=true>
-				<div id="question-dots" inbook-questionseries-dots class="mb3"></div> 
-					<div id="questions">		
-								
-					<div inbook-questionseries-item  level="1" >
-						<div>a) Dessinez un cadre de 18 cm2.</div>
-					</div>
-					
-					<div inbook-questionseries-item  level="2" >
-						<div>b) Dessinez la façade d’un édifice de 24 cm2.</div>
-					</div>
-					
-					<div inbook-questionseries-item  level="3" >
-						<div>c) Dessinez un carré de 81 cm2.</div>
-					</div>
-					
-					<div inbook-questionseries-item  level="4" >
-						<div>d) Dessinez une figure irrégulière de 52 cm2.</div>
-					</div>
-					
-					<div inbook-questionseries-item  level="5" >
-						<div>e) Dessinez la façade d'un édifice de 36 cm2.</div>
-					</div>
-					
-				<div class="mt5 type-small" vcollapse="!questionseries.questionComplete;">
-					<div inbook-nextbtn="question"></div>
-				</div>
+<div 	gseq
+		class="page-layout" 
+		ng-init="
+			ans={};
 
-				<div class="mt5" vcollapse="!questionseries.seriesCompleted">
-					<div inbook-nextbtn="series"></div>
-				</div>
+			ans.input1 = {
+				showSolution: false,
+				question	: 'Dessinez un cadre de 18 cm2',
+				solution 	: ''
+			};
+			ans.input2 = {
+				showSolution: false,
+				question 	: 'Dessinez la façade d’un édifice de 24 cm2',
+				solution 	: ''
+			};
+			ans.input3 = {
+				showSolution: false,
+				question	: 'Dessinez un carré de 81 cm2',
+				solution 	: ''
+			};
+			ans.input4 = {
+				showSolution: false,
+				question	: 'Dessinez une figure irrégulière de 52 cm2',
+				solution 	: ''
+			};
+			ans.input5 = {
+				showSolution: false,
+				question	: 'Dessinez la façade d'un édifice de 36 cm2',
+				solution	: ''
+			};
+		">
+
+		<div gdirections>
+			<div el=".exercise-num"   duration="0.8" ease="power4-in-out" presets="[fromTransparent]"></div>
+
+			<div duration="0.45"></div>
+
+			<div el=".anim-01" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
 				
+			<div duration="1"></div>
+
+			<div el=".anim-02" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-03" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-04" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-05" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+	      	<div el="#continue" duration="1" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]" disable-scroll-focus="true"></div>	
+
+		</div>
+
+	    <div class="exercise-num">
+	      EXERCICE 6
+	    </div>
+
+		<div class="exercise-box anim-01">
+
+			<div class="exercise-text">
+				{{ans.input1.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input1"></div>
+
+			<div vcollapse="ans.input1.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input1.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input1.showSolution">
+				<div class="solution-body">
+					<img ng-src="{{imgUrl}}exercise-06-01.png" />
 				</div>
 			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-02" />
+
+		<div class="exercise-box anim-02">
+
+			<div class="exercise-text">
+				{{ans.input2.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input2"></div>
+
+			<div vcollapse="ans.input2.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input2.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input2.showSolution">
+				<div class="solution-body">
+					<img ng-src="{{imgUrl}}exercise-06-02.png" />
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-03" />
+
+		<div class="exercise-box anim-03">
+
+			<div class="exercise-text">
+				{{ans.input3.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input3"></div>
+
+			<div vcollapse="ans.input3.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input3.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input3.showSolution">
+				<div class="solution-body">
+					<img ng-src="{{imgUrl}}exercise-06-03.png" />
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-04" />
+
+		<div class="exercise-box anim-04">
+
+			<div class="exercise-text">
+				{{ans.input4.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input4"></div>
+
+			<div vcollapse="ans.input4.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input4.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input4.showSolution">
+				<div class="solution-body">
+					<img ng-src="{{imgUrl}}exercise-06-04.png" />
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-05" />
+
+		<div class="exercise-box anim-05">
+
+			<div class="exercise-text">
+				{{ans.input5.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input5"></div>
+
+			<div vcollapse="ans.input5.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input5.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input5.showSolution">
+				<div class="solution-body">
+					<img ng-src="{{imgUrl}}exercise-06-05.png" />	
+				</div>
+			</div>
+				
+		</div> 
+
+		<div id="continue" class="mt6 center">
+			<div inbook-nextbtn="scene"></div>
 		</div>
-	</div>
-	<div id="continue" class="mt6 center">
-  <div inbook-nextbtn="scene"></div>
-  </div>
 </div>

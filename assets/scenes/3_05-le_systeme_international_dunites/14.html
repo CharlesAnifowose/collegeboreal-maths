@@ -11,8 +11,11 @@
   </div>
 
   <div class="exemple-frame">
-    <div>Exemples :</div>
-    <table>
+    <div class="exemple-header">
+      Exemples :
+    </div>
+
+    <table class="basic-table cells-large unbordered">
       <tr>
         <td>température à laquelle l'eau gèle : </td>
         <td>0 °C </td>
@@ -47,20 +50,29 @@
       </tr>
     </table>
   </div>
-  <div>
+  <div class="module-header">
     * Pour obtenir des Kelvins, on ajoute 273 aux degrés Celsius. 
   </div>
 
   <div class="para">
-    <img ng-src="{{imgUrl}}000053.jpg" />
-    Notez que le symbole (-) devant une température se lit "moins" 
-  et signifie que cette température est plus froide que zéro. 
+    <div class="para center">
+      <img ng-src="{{imgUrl}}000053.jpg" />
+    </div>
+    <div class="para">
+      Notez que le symbole (-) devant une température se lit "moins" et signifie que cette température est plus froide que zéro. 
+    </div>
   </div>
-  <div class="para">
-    Exemple : -20 °C se lit moins 20 degrés Celsius 
-    et signifie 20 °C au-dessous de 0 °C . 
+  
+  <div class="exemple-frame">
+    <div class="exemple-header">
+      Exemple :  
+    </div>
+    <div class="para">
+      -20 °C se lit moins 20 degrés Celsius et signifie 20 °C au-dessous de 0 °C .
+    </div>
   </div>
+  
   <div id="continue" class="mt6 center">
-  <div inbook-nextbtn="scene"></div>
+    <div inbook-nextbtn="scene"></div>
   </div>
 </div>

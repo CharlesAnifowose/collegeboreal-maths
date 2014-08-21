@@ -1,16 +1,174 @@
-<div class="page-layout">
+<div 	gseq
+		class="page-layout" 
+		ng-init="
+			ans={};
 
-	<pre>
-	  Illustrez à l'aide de diagrammes ou de dessins les pourcentages. 
-	  (a) La tasse est pleine à 20 %. Pour ceux qui sont plutôt pessimistes, 
-	  montrez que la tasse est 80 % vide. 
-	  (b) Les hommes représentent 60 % des apprenants de ta classe et les 
-	  femmes représentent l'autre 40 %. 
-	  (c) Il y a 10 voitures dans le terrain de stationnement. De ce nombre, 
-	  30 % sont noires, 20 % sont grises et les autres sont blanches. 
-	  (d) Il reste 75 % des cornichons dans le bocal. 
-	</pre>
+			ans.input1 = {
+				showSolution: false,
+				question: '',
+				solution 	: ''
+			};
+			ans.input2 = {
+				showSolution: false,
+				question: '',
+				solution : ''
+			};
+			ans.input3 = {
+				showSolution: false,
+				question: '',
+				solution : ''
+			};
+			ans.input4 = {
+				showSolution: false,
+				question: '',
+				solution : ''
+			};
+		
+		">
+
+		<div gdirections>
+			<div el=".exercise-num"   duration="0.8" ease="power4-in-out" presets="[fromTransparent]"></div>
+
+			<div duration="0.45"></div>
+
+			<div el=".anim-01" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+				
+			<div duration="1"></div>
+
+			<div el=".anim-02" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-03" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-04" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+	      	<div el="#continue" duration="1" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]" disable-scroll-focus="true"></div>	
+
+		</div>
+
+	    <div class="exercise-num">
+	      EXERCICE 1
+	    </div>
+		
+		<div class="exercise-box anim-01">
+
+			<div class="exercise-header">
+				Illustrez à l'aide de diagrammes ou de dessins les pourcentages. 
+			</div>
+			
+			<div class="exercise-text">
+				 La tasse est pleine à 20 %. Pour ceux qui sont plutôt pessimistes, 
+				 montrez que la tasse est 80 % vide. 
+			</div>
+
+			<div inbook-workbook-draw persist-to="input1"></div>
+
+			<div vcollapse="ans.input1.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input1.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input1.showSolution">
+				<div class="solution-body">
+					{{ans.input1.solution}}
+				</div>
+			</div>
+				
+		</div> 
+		
+		<hr class="question-divider anim-02" />
+
+		<div class="exercise-box anim-02">
+
+			<div class="exercise-header">
+				Illustrez à l'aide de diagrammes ou de dessins les pourcentages. 
+			</div>
+
+			<div class="exercise-text">
+				Les hommes représentent 60 % des apprenants de ta classe et les 
+				femmes représentent l'autre 40 %. 
+			</div>
+
+			<div inbook-workbook-draw persist-to="input2"></div>
+
+			<div vcollapse="ans.input2.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input2.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input2.showSolution">
+				<div class="solution-body">
+					{{ans.input2.solution}}
+				</div>
+			</div>
+				
+		</div> 
+		
+		<hr class="question-divider anim-03" />
+
+		<div class="exercise-box anim-03">
+
+			<div class="exercise-header">
+				 Illustrez à l'aide de diagrammes ou de dessins les pourcentages. 
+			</div>
+
+			<div class="exercise-text">
+				Il y a 10 voitures dans le terrain de stationnement. De ce nombre, 
+				30 % sont noires, 20 % sont grises et les autres sont blanches. 
+			</div>
+
+			<div inbook-workbook-draw persist-to="input3"></div>
+
+			<div vcollapse="ans.input3.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input3.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input3.showSolution">
+				<div class="solution-body">
+					{{ans.input3.solution}}
+				</div>
+			</div>
+				
+		</div> 
+		
+		<hr class="question-divider anim-04" />
+
+		<div class="exercise-box anim-04">
+
+			<div class="exercise-header">
+				Illustrez à l'aide de diagrammes ou de dessins les pourcentages. 
+			</div>
+
+			<div class="exercise-text">
+				Il reste 75 % des cornichons dans le bocal. 
+			</div>
+
+			<div inbook-workbook-draw persist-to="input4"></div>
+
+			<div vcollapse="ans.input4.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input4.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input4.showSolution">
+				<div class="solution-body">
+					{{ans.input4.solution}}
+				</div>
+			</div>
+				
+		</div> 
+
 	<div id="continue" class="mt6 center">
-	<div inbook-nextbtn="scene"></div>
+		<div inbook-nextbtn="scene"></div>
 	</div>
 </div>
