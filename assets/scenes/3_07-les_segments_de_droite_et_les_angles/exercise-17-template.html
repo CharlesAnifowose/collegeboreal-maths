@@ -1,25 +1,24 @@
-<div 	class="page-layout">
-	<div class="mt2 center">
+<div class="exercise-box">
 
-		<div class="ib vtop">
-			<img ng-src="{{imgUrl + ans.shape}}.png" />
-		</div>
-
-		<div class="ib vtop">
-			<div 	inbook-answerbox-fill="ans.val"
-					pattern="'.*'"
-					class="type-xxxsmall"
-					input-class="type-xxxsmall"
-					on-correct="question.markAsCorrect()"
-					on-incorrect="question.markAsIncorrect()"></div>
-		</div>
-
-		<div class="mt4">
-			<div inbook-nextbtn="question"></div>
-		</div>
-		
+	<div class="exercise-header">
+		Classfiez chacun des triangles à l'aide des qualificatifs suivants : rectangle, équlatéral, isocèle, scalène. (En cas de doute, mesurez les angles et les côtés du triangle)
 	</div>
-	<div id="continue" class="mt6 center">
-  <div inbook-nextbtn="scene"></div>
-  </div>
+
+
+	<div class="ib">
+		<img ng-src="{{imgUrl + ans.shape}}.png" />
+	</div>
+
+	<div class="ib">
+		<div 	inbook-answerbox-fill="ans.val"
+				type="text"
+				class="type-xsmall"
+				input-class="type-xsmall"
+				on-correct="question.markAsCorrect()"
+				on-incorrect="question.markAsIncorrect()"></div>
+	</div>
+
+	<div class="mt4">
+		<div inbook-nextbtn="question"></div>
+	</div>
 </div>
