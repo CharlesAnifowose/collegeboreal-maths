@@ -1,15 +1,19 @@
-<div class="type-small bold mt3">
+<div 	class="page-layout">
+	<div class="type-small bold mt3">
 
-	<div class="ib">
-		{{ans.city}}
+		<div class="ib">
+			{{ans.city}}
+		</div>
+		<div class="ib">
+			<div 	inbook-answerbox-fill="ans.cords"
+					pattern="'.*'"
+					class="type-xxxsmall"
+					input-class="type-xxxsmall"
+					on-correct="question.markAsCorrect()"
+					on-incorrect="question.markAsIncorrect()"></div>
+		</div>	
 	</div>
-	<div class="ib">
-		<div 	inbook-answerbox-fill="ans.cords"
-				pattern="'.*'"
-				class="type-xxxsmall"
-				input-class="type-xxxsmall"
-				on-correct="question.markAsCorrect()"
-				on-incorrect="question.markAsIncorrect()"></div>
-	</div>	
-
+	<div id="continue" class="mt6 center">
+  <div inbook-nextbtn="scene"></div>
+  </div>
 </div>

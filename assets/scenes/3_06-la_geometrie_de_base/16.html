@@ -1,14 +1,19 @@
-<div ng-init="imgUrl = 'http://vretta-inbook-assets.s3.amazonaws.com/collegeboreal-sample/images/3_06-la_geometrie_de_base/';">
-	<div class="inbook-grid-layout" style="width: 600px; margin: 30px auto;">
-		<u class="type-xxsmall">L’aire du carré</u>
-		<div class="mt3">
-			 <div class="ml5 mb1">Pour calculer l’aire d'un carré, on multiplie la longueur du côté (c) par</div> 
-			 <div>
-				<div class="text-block mr5">lui-même. La formule est la suivante :</div>
-				<div class="text-block"><img ng-src="{{imgUrl}}52.png" /></div>
+<div 	class="page-layout" >
+	<div ng-init="imgUrl = 'http://vretta-inbook-assets.s3.amazonaws.com/collegeboreal-sample/images/3_06-la_geometrie_de_base/';">
+		<div class="inbook-grid-layout" style="width: 600px; margin: 30px auto;">
+			<u class="type-xxsmall">L’aire du carré</u>
+			<div class="mt3">
+				 <div class="ml5 mb1">Pour calculer l’aire d'un carré, on multiplie la longueur du côté (c) par</div> 
+				 <div>
+					<div class="text-block mr5">lui-même. La formule est la suivante :</div>
+					<div class="text-block"><img ng-src="{{imgUrl}}52.png" /></div>
+				</div>
 			</div>
+			<div><img ng-src="{{imgUrl}}53.PNG" /></div>
+			 <div class="mt1">* Notez que 1 cm multiplié avec 1 cm donne comme résultat 1 cm2.</div> 
 		</div>
-		<div><img ng-src="{{imgUrl}}53.PNG" /></div>
-		 <div class="mt1">* Notez que 1 cm multiplié avec 1 cm donne comme résultat 1 cm2.</div> 
 	</div>
+	<div id="continue" class="mt6 center">
+  <div inbook-nextbtn="scene"></div>
+  </div>
 </div>

@@ -1,224 +1,229 @@
-<div    inbook-questionseries 
-		class="pa8"
-		on-complete="scene.markAsCompleted();"
-		ordered=true
-		no-remove=true
-		ng-scope
-		ng-init="
-			imgUrl = 'http://d3mw5hjf8nr5ry.cloudfront.net/collegeboreal-sample/images/3_08-les_figures_a_trois_dimensions_les_systemes_de_coordonnees_et_les_transformations/exercise03/';
-		">
+<div 	class="page-layout">
+	<div    inbook-questionseries 
+			class="pa8"
+			on-complete="scene.markAsCompleted();"
+			ordered=true
+			no-remove=true
+			ng-scope
+			ng-init="
+				imgUrl = 'http://d3mw5hjf8nr5ry.cloudfront.net/collegeboreal-sample/images/3_08-les_figures_a_trois_dimensions_les_systemes_de_coordonnees_et_les_transformations/exercise03/';
+			">
 
-		<div class="inbook-grid-layout" style="width:600px; margin: 0 auto;">			
-			<div class="col10 type-xxsmall">
+			<div class="inbook-grid-layout" style="width:600px; margin: 0 auto;">			
+				<div class="col10 type-xxsmall">
 
-				<div class="type-xsmall mt3 mb3">
-					Identifiez le nombre d'arêtes, le nombre de faces et le nombre de sommets de chacun des prismes ci-dessous.
+					<div class="type-xsmall mt3 mb3">
+						Identifiez le nombre d'arêtes, le nombre de faces et le nombre de sommets de chacun des prismes ci-dessous.
+					</div>
+
+					<div 	inbook-questionseries-item level="1"
+							ng-init="
+								ans={};
+								
+								ans.aretes 	= 9;
+								ans.faces 	= 5;
+								ans.sommets = 6;
+
+								ans.shape = 'shape01';
+							">
+
+							<div>
+								<div inbook-include="assets/scenes/3_08-les_figures_a_trois_dimensions_les_systemes_de_coordonnees_et_les_transformations/exercise-03-template.html"></div>
+							</div>
+						
+					</div>
+
+					<div 	inbook-questionseries-item level="2"
+							ng-init="
+								ans={};
+								
+								ans.aretes 	= 18;
+								ans.faces 	= 8;
+								ans.sommets = 12;
+
+								ans.shape = 'shape02';
+							">
+
+							<div>
+								<div inbook-include="assets/scenes/3_08-les_figures_a_trois_dimensions_les_systemes_de_coordonnees_et_les_transformations/exercise-03-template.html"></div>
+							</div>
+						
+					</div>
+
+					<div 	inbook-questionseries-item level="3"
+							ng-init="
+								ans={};
+								
+								ans.aretes 	= 15;
+								ans.faces 	= 7;
+								ans.sommets = 10;
+
+								ans.shape = 'shape03';
+							">
+
+							<div>
+								<div inbook-include="assets/scenes/3_08-les_figures_a_trois_dimensions_les_systemes_de_coordonnees_et_les_transformations/exercise-03-template.html"></div>
+							</div>
+						
+					</div>
+
+					<div 	inbook-questionseries-item level="4"
+							ng-init="
+								ans={};
+								
+								ans.aretes 	= 12;
+								ans.faces 	= 6;
+								ans.sommets = 8;
+
+								ans.shape = 'shape04';
+							">
+
+							<div>
+								<div inbook-include="assets/scenes/3_08-les_figures_a_trois_dimensions_les_systemes_de_coordonnees_et_les_transformations/exercise-03-template.html"></div>
+							</div>
+						
+					</div>
+
+					<div 	inbook-questionseries-item level="5"
+							ng-init="
+								ans={};
+								
+								ans.aretes 	= 12;
+								ans.faces 	= 6;
+								ans.sommets = 8;
+
+								ans.shape = 'shape05';
+							">
+
+							<div>
+								<div inbook-include="assets/scenes/3_08-les_figures_a_trois_dimensions_les_systemes_de_coordonnees_et_les_transformations/exercise-03-template.html"></div>
+							</div>
+						
+					</div>
+
+					<div 	inbook-questionseries-item level="6"
+							ng-init="
+								ans={};
+								
+								ans.aretes 	= 9;
+								ans.faces 	= 5;
+								ans.sommets = 6;
+
+								ans.shape = 'shape06';
+							">
+
+							<div>
+								<div inbook-include="assets/scenes/3_08-les_figures_a_trois_dimensions_les_systemes_de_coordonnees_et_les_transformations/exercise-03-template.html"></div>
+							</div>
+						
+					</div>
+
+					<div 	inbook-questionseries-item level="7"
+							ng-init="
+								ans={};
+								
+								ans.aretes 	= 18;
+								ans.faces 	= 8;
+								ans.sommets = 12;
+
+								ans.shape = 'shape07';
+							">
+
+							<div>
+								<div inbook-include="assets/scenes/3_08-les_figures_a_trois_dimensions_les_systemes_de_coordonnees_et_les_transformations/exercise-03-template.html"></div>
+							</div>
+						
+					</div>
+
+					<div 	inbook-questionseries-item level="8"
+							ng-init="
+								ans={};
+								
+								ans.aretes 	= 18;
+								ans.faces 	= 8;
+								ans.sommets = 12;
+
+								ans.shape = 'shape08';
+							">
+
+							<div>
+								<div inbook-include="assets/scenes/3_08-les_figures_a_trois_dimensions_les_systemes_de_coordonnees_et_les_transformations/exercise-03-template.html"></div>
+							</div>
+						
+					</div>
+
+					<div 	inbook-questionseries-item level="9"
+							ng-init="
+								ans={};
+								
+								ans.aretes 	= 15;
+								ans.faces 	= 7;
+								ans.sommets = 10;
+
+								ans.shape = 'shape09';
+							">
+
+							<div>
+								<div inbook-include="assets/scenes/3_08-les_figures_a_trois_dimensions_les_systemes_de_coordonnees_et_les_transformations/exercise-03-template.html"></div>
+							</div>
+						
+					</div>
+
+					<div 	inbook-questionseries-item level="10"
+							ng-init="
+								ans={};
+								
+								ans.aretes 	= 12;
+								ans.faces 	= 6;
+								ans.sommets = 8;
+
+								ans.shape = 'shape10';
+							">
+
+							<div>
+								<div inbook-include="assets/scenes/3_08-les_figures_a_trois_dimensions_les_systemes_de_coordonnees_et_les_transformations/exercise-03-template.html"></div>
+							</div>
+						
+					</div>
+
+					<div 	inbook-questionseries-item level="11"
+							ng-init="
+								ans={};
+								
+								ans.aretes 	= 15;
+								ans.faces 	= 7;
+								ans.sommets = 10;
+
+								ans.shape = 'shape11';
+							">
+
+							<div>
+								<div inbook-include="assets/scenes/3_08-les_figures_a_trois_dimensions_les_systemes_de_coordonnees_et_les_transformations/exercise-03-template.html"></div>
+							</div>
+						
+					</div>
+
+					<div 	inbook-questionseries-item level="12"
+							ng-init="
+								ans={};
+								
+								ans.aretes 	= 12;
+								ans.faces 	= 6;
+								ans.sommets = 8;
+
+								ans.shape = 'shape12';
+							">
+
+							<div>
+								<div inbook-include="assets/scenes/3_08-les_figures_a_trois_dimensions_les_systemes_de_coordonnees_et_les_transformations/exercise-03-template.html"></div>
+							</div>
+						
+					</div>
+
 				</div>
-
-				<div 	inbook-questionseries-item level="1"
-						ng-init="
-							ans={};
-							
-							ans.aretes 	= 9;
-							ans.faces 	= 5;
-							ans.sommets = 6;
-
-							ans.shape = 'shape01';
-						">
-
-						<div>
-							<div inbook-include="assets/scenes/3_08-les_figures_a_trois_dimensions_les_systemes_de_coordonnees_et_les_transformations/exercise-03-template.html"></div>
-						</div>
-					
-				</div>
-
-				<div 	inbook-questionseries-item level="2"
-						ng-init="
-							ans={};
-							
-							ans.aretes 	= 18;
-							ans.faces 	= 8;
-							ans.sommets = 12;
-
-							ans.shape = 'shape02';
-						">
-
-						<div>
-							<div inbook-include="assets/scenes/3_08-les_figures_a_trois_dimensions_les_systemes_de_coordonnees_et_les_transformations/exercise-03-template.html"></div>
-						</div>
-					
-				</div>
-
-				<div 	inbook-questionseries-item level="3"
-						ng-init="
-							ans={};
-							
-							ans.aretes 	= 15;
-							ans.faces 	= 7;
-							ans.sommets = 10;
-
-							ans.shape = 'shape03';
-						">
-
-						<div>
-							<div inbook-include="assets/scenes/3_08-les_figures_a_trois_dimensions_les_systemes_de_coordonnees_et_les_transformations/exercise-03-template.html"></div>
-						</div>
-					
-				</div>
-
-				<div 	inbook-questionseries-item level="4"
-						ng-init="
-							ans={};
-							
-							ans.aretes 	= 12;
-							ans.faces 	= 6;
-							ans.sommets = 8;
-
-							ans.shape = 'shape04';
-						">
-
-						<div>
-							<div inbook-include="assets/scenes/3_08-les_figures_a_trois_dimensions_les_systemes_de_coordonnees_et_les_transformations/exercise-03-template.html"></div>
-						</div>
-					
-				</div>
-
-				<div 	inbook-questionseries-item level="5"
-						ng-init="
-							ans={};
-							
-							ans.aretes 	= 12;
-							ans.faces 	= 6;
-							ans.sommets = 8;
-
-							ans.shape = 'shape05';
-						">
-
-						<div>
-							<div inbook-include="assets/scenes/3_08-les_figures_a_trois_dimensions_les_systemes_de_coordonnees_et_les_transformations/exercise-03-template.html"></div>
-						</div>
-					
-				</div>
-
-				<div 	inbook-questionseries-item level="6"
-						ng-init="
-							ans={};
-							
-							ans.aretes 	= 9;
-							ans.faces 	= 5;
-							ans.sommets = 6;
-
-							ans.shape = 'shape06';
-						">
-
-						<div>
-							<div inbook-include="assets/scenes/3_08-les_figures_a_trois_dimensions_les_systemes_de_coordonnees_et_les_transformations/exercise-03-template.html"></div>
-						</div>
-					
-				</div>
-
-				<div 	inbook-questionseries-item level="7"
-						ng-init="
-							ans={};
-							
-							ans.aretes 	= 18;
-							ans.faces 	= 8;
-							ans.sommets = 12;
-
-							ans.shape = 'shape07';
-						">
-
-						<div>
-							<div inbook-include="assets/scenes/3_08-les_figures_a_trois_dimensions_les_systemes_de_coordonnees_et_les_transformations/exercise-03-template.html"></div>
-						</div>
-					
-				</div>
-
-				<div 	inbook-questionseries-item level="8"
-						ng-init="
-							ans={};
-							
-							ans.aretes 	= 18;
-							ans.faces 	= 8;
-							ans.sommets = 12;
-
-							ans.shape = 'shape08';
-						">
-
-						<div>
-							<div inbook-include="assets/scenes/3_08-les_figures_a_trois_dimensions_les_systemes_de_coordonnees_et_les_transformations/exercise-03-template.html"></div>
-						</div>
-					
-				</div>
-
-				<div 	inbook-questionseries-item level="9"
-						ng-init="
-							ans={};
-							
-							ans.aretes 	= 15;
-							ans.faces 	= 7;
-							ans.sommets = 10;
-
-							ans.shape = 'shape09';
-						">
-
-						<div>
-							<div inbook-include="assets/scenes/3_08-les_figures_a_trois_dimensions_les_systemes_de_coordonnees_et_les_transformations/exercise-03-template.html"></div>
-						</div>
-					
-				</div>
-
-				<div 	inbook-questionseries-item level="10"
-						ng-init="
-							ans={};
-							
-							ans.aretes 	= 12;
-							ans.faces 	= 6;
-							ans.sommets = 8;
-
-							ans.shape = 'shape10';
-						">
-
-						<div>
-							<div inbook-include="assets/scenes/3_08-les_figures_a_trois_dimensions_les_systemes_de_coordonnees_et_les_transformations/exercise-03-template.html"></div>
-						</div>
-					
-				</div>
-
-				<div 	inbook-questionseries-item level="11"
-						ng-init="
-							ans={};
-							
-							ans.aretes 	= 15;
-							ans.faces 	= 7;
-							ans.sommets = 10;
-
-							ans.shape = 'shape11';
-						">
-
-						<div>
-							<div inbook-include="assets/scenes/3_08-les_figures_a_trois_dimensions_les_systemes_de_coordonnees_et_les_transformations/exercise-03-template.html"></div>
-						</div>
-					
-				</div>
-
-				<div 	inbook-questionseries-item level="12"
-						ng-init="
-							ans={};
-							
-							ans.aretes 	= 12;
-							ans.faces 	= 6;
-							ans.sommets = 8;
-
-							ans.shape = 'shape12';
-						">
-
-						<div>
-							<div inbook-include="assets/scenes/3_08-les_figures_a_trois_dimensions_les_systemes_de_coordonnees_et_les_transformations/exercise-03-template.html"></div>
-						</div>
-					
-				</div>
-
 			</div>
-		</div>
+	</div>
+	<div id="continue" class="mt6 center">
+  <div inbook-nextbtn="scene"></div>
+  </div>
 </div>

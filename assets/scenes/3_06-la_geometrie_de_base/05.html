@@ -1,90 +1,95 @@
-<div class="center">
-	<div class="type-xsmall mt10 bold">EXERCICE 2</div>
-	<div class="inbook-grid-layout" style="width:600px; margin: 10px auto;">
-		<div>
-			Trouvez le périmètre des carrés à l'aide de la formule suivante : P = 4c
-		</div>
-		<div inbook-questionseries on-complete="scene.markAsCompleted();"
-				ordered=true
-				no-remove=true>
-			<div id="question-dots" inbook-questionseries-dots class="mb3"></div> 
-				<div id="questions" class="bold">		
-							
-				<div inbook-questionseries-item  level="1" >
-					
-					<div class="center"><img ng-src="{{imgUrl}}18.PNG" /></div>
-					<div class="ib">P =</div>
-					<div class="ib">
-						<div attempts="3" inbook-answerbox-fill="12"  
-						 on-correct="question.markAsCorrect();
-										
-						"></div>
-					</div>
-					<div class="ib">cm</div>
-				</div>
-				
-				<div inbook-questionseries-item  level="2" >
-					
-					<div class="center"><img ng-src="{{imgUrl}}19.PNG" /></div>
-					<div class="ib">P =</div>
-					<div class="ib">
-						<div attempts="3" inbook-answerbox-fill="16.8"  
-						 on-correct="question.markAsCorrect();
-										
-						"></div>
-					</div>
-					<div class="ib">cm</div>
-				</div>
-				
-				<div inbook-questionseries-item  level="3" >
-					
-				<div class="center"><img ng-src="{{imgUrl}}20.PNG" /></div>
-					<div class="ib">P =</div>
-					<div class="ib">
-						<div attempts="3" inbook-answerbox-fill="4"  
-						 on-correct="question.markAsCorrect();
-										
-						"></div>
-					</div>
-					<div class="ib">km</div>
-				</div>
-				
-				<div inbook-questionseries-item  level="4" >
-					
-				<div class="center"><img ng-src="{{imgUrl}}21.PNG" /></div>
-					<div class="ib">P =</div>
-					<div class="ib">
-						<div attempts="3" inbook-answerbox-fill="50"  
-						 on-correct="question.markAsCorrect();
-										
-						"></div>
-					</div>
-					<div class="ib">cm</div>
-				</div>	
-				
-				<div inbook-questionseries-item  level="5" >
-					
-					<div class="center"><img ng-src="{{imgUrl}}22.PNG" /></div>
-					<div class="ib">P =</div>
-					<div class="ib">
-						<div attempts="3" inbook-answerbox-fill="2"  
-						 on-correct="question.markAsCorrect();
-										
-						"></div>
-					</div>
-					<div class="ib">m</div>
-				</div>
-				
-			<div class="mt5 type-small" vcollapse="!questionseries.questionComplete;">
-				<div inbook-nextbtn="question"></div>
+<div 	class="page-layout">
+	<div class="center">
+		<div class="type-xsmall mt10 bold">EXERCICE 2</div>
+		<div class="inbook-grid-layout" style="width:600px; margin: 10px auto;">
+			<div>
+				Trouvez le périmètre des carrés à l'aide de la formule suivante : P = 4c
 			</div>
+			<div inbook-questionseries on-complete="scene.markAsCompleted();"
+					ordered=true
+					no-remove=true>
+				<div id="question-dots" inbook-questionseries-dots class="mb3"></div> 
+					<div id="questions" class="bold">		
+								
+					<div inbook-questionseries-item  level="1" >
+						
+						<div class="center"><img ng-src="{{imgUrl}}18.PNG" /></div>
+						<div class="ib">P =</div>
+						<div class="ib">
+							<div attempts="3" inbook-answerbox-fill="12"  
+							 on-correct="question.markAsCorrect();
+											
+							"></div>
+						</div>
+						<div class="ib">cm</div>
+					</div>
+					
+					<div inbook-questionseries-item  level="2" >
+						
+						<div class="center"><img ng-src="{{imgUrl}}19.PNG" /></div>
+						<div class="ib">P =</div>
+						<div class="ib">
+							<div attempts="3" inbook-answerbox-fill="16.8"  
+							 on-correct="question.markAsCorrect();
+											
+							"></div>
+						</div>
+						<div class="ib">cm</div>
+					</div>
+					
+					<div inbook-questionseries-item  level="3" >
+						
+					<div class="center"><img ng-src="{{imgUrl}}20.PNG" /></div>
+						<div class="ib">P =</div>
+						<div class="ib">
+							<div attempts="3" inbook-answerbox-fill="4"  
+							 on-correct="question.markAsCorrect();
+											
+							"></div>
+						</div>
+						<div class="ib">km</div>
+					</div>
+					
+					<div inbook-questionseries-item  level="4" >
+						
+					<div class="center"><img ng-src="{{imgUrl}}21.PNG" /></div>
+						<div class="ib">P =</div>
+						<div class="ib">
+							<div attempts="3" inbook-answerbox-fill="50"  
+							 on-correct="question.markAsCorrect();
+											
+							"></div>
+						</div>
+						<div class="ib">cm</div>
+					</div>	
+					
+					<div inbook-questionseries-item  level="5" >
+						
+						<div class="center"><img ng-src="{{imgUrl}}22.PNG" /></div>
+						<div class="ib">P =</div>
+						<div class="ib">
+							<div attempts="3" inbook-answerbox-fill="2"  
+							 on-correct="question.markAsCorrect();
+											
+							"></div>
+						</div>
+						<div class="ib">m</div>
+					</div>
+					
+				<div class="mt5 type-small" vcollapse="!questionseries.questionComplete;">
+					<div inbook-nextbtn="question"></div>
+				</div>
 
-			<div class="mt5" vcollapse="!questionseries.seriesCompleted">
-				<div inbook-nextbtn="series"></div>
-			</div>
+				<div class="mt5" vcollapse="!questionseries.seriesCompleted">
+					<div inbook-nextbtn="series"></div>
+				</div>
 
-				
+					
+				</div>
 			</div>
 		</div>
 	</div>
+	<div id="continue" class="mt6 center">
+  <div inbook-nextbtn="scene"></div>
+  </div>
 </div>

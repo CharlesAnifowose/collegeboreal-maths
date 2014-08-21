@@ -1,0 +1,259 @@
+<div 	gseq
+		class="page-layout" 
+		ng-init="
+			ans={};
+
+			ans.input1 = {
+				showSolution: false,
+				solution 	: '16,16 cm'
+			};
+			ans.input2 = {
+				showSolution: false,
+				solution 	: '109,72 kg'
+			};
+			ans.input3 = {
+				showSolution: false,
+				solution 	: '228,45$'
+			};
+			ans.input4 = {
+				showSolution: false,
+				solution 	: '79,5'
+			};
+		">
+
+		<div gdirections>
+			<div el=".exercise-num"   duration="0.8" ease="power4-in-out" presets="[fromTransparent]"></div>
+
+			<div duration="0.45"></div>
+
+			<div el=".anim-01" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+				
+			<div duration="1"></div>
+
+			<div el=".anim-02" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-03" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-04" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+	      	<div el="#continue" duration="1" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]" disable-scroll-focus="true"></div>	
+
+		</div>
+
+	    <div class="exercise-num">
+	      EXERCICE 15
+	    </div>
+
+		<div class="exercise-box anim-01">
+
+			<div class="exercise-header">
+				Combien de pluie est-il tombé au mois de juin
+			</div>
+
+			<div class="exercise-text">
+				<div class="mt2">
+					<div class="ib" style="width:30%">
+						le 4 juin
+					</div>
+					<div class="ib">
+						12 cm
+					</div>
+				</div>
+				<div class="mt2">
+					<div class="ib" style="width:30%">
+						le 6 juin
+					</div>
+					<div class="ib">
+						1,29 cm
+					</div>
+				</div>
+				<div class="mt2">
+					<div class="ib" style="width:30%">
+						le 12 juin
+					</div>
+					<div class="ib">
+						0,07 cm
+					</div>
+				</div>
+				<div class="mt2">
+					<div class="ib" style="width:30%">
+						le 13 juin
+					</div>
+					<div class="ib">
+						0,26 cm
+					</div>
+				</div>
+				<div class="mt2">
+					<div class="ib" style="width:30%">
+						le 20 juin
+					</div>
+					<div class="ib">
+						0,45 cm
+					</div>
+				</div>
+				<div class="mt2">
+					<div class="ib" style="width:30%">
+						le 27 juin
+					</div>
+					<div class="ib">
+						0,57 cm
+					</div>
+				</div>
+				<div class="mt2">
+					<div class="ib" style="width:30%">
+						le 28 juin
+					</div>
+					<div class="ib">
+						1,52 cm
+					</div>
+				</div>
+			</div>
+
+			<div inbook-workbook-input persist-to="input1"></div>
+
+			<div vcollapse="ans.input1.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input1.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input1.showSolution">
+				<div class="solution-body">
+					{{ans.input1.solution}}
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-02" />
+
+		<div class="exercise-box anim-02">
+
+			<div class="exercise-text">
+				Dans un entrepôt, un homme a chargé un camion de boîtes de marchandises qui pesaient 50,15 kg; 18,32 kg; 17,5 kg et 23,75 kg. Quelle est la masse totale de la charge ?
+			</div>
+
+			<div inbook-workbook-input persist-to="input2"></div>
+
+			<div vcollapse="ans.input2.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input2.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input2.showSolution">
+				<div class="solution-body">
+					{{ans.input2.solution}}
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-03" />
+
+		<div class="exercise-box anim-03">
+
+			<div class="exercise-text">
+				Vos factures d'électricité s'élèvent à 25,68$, 45,12$, 90,45$ et 67,20$ pour les mois de décembre à mars. Combien vous coûte ce service pour un hiver?
+			</div>
+
+			<div inbook-workbook-input persist-to="input3"></div>
+
+			<div vcollapse="ans.input3.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input3.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input3.showSolution">
+				<div class="solution-body">
+					{{ans.input3.solution}}
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-04" />
+
+		<div class="exercise-box anim-04">
+
+			<div class="exercise-header">
+				En mathématiques, vous avez cumulé les notes qui figurent au
+				tableau suivant. Si on exige une note d'au moins 50 sur 100,
+				allez-vous réussir le cours?
+			</div>
+
+			<div class="exercise-text">
+				<div class="mt2 bold">
+					<div class="ib" style="width:30%">
+						Épreuve
+					</div>
+					<div class="ib">
+						Note
+					</div>
+				</div>
+				<div class="mt2">
+					<div class="ib" style="width:30%">
+						test #1
+					</div>
+					<div class="ib">
+						10,5
+					</div>
+				</div>
+				<div class="mt2">
+					<div class="ib" style="width:30%">
+						devoir #1
+					</div>
+					<div class="ib">
+						12
+					</div>
+				</div>
+				<div class="mt2">
+					<div class="ib" style="width:30%">
+						devoir #2
+					</div>
+					<div class="ib">
+						8
+					</div>
+				</div>
+				<div class="mt2">
+					<div class="ib" style="width:30%">
+						test #2
+					</div>
+					<div class="ib">
+						18,75
+					</div>
+				</div>
+				<div class="mt2">
+					<div class="ib" style="width:30%">
+						épreuve finale
+					</div>
+					<div class="ib">
+						30,25
+					</div>
+				</div>
+			</div>
+
+			<div inbook-workbook-input persist-to="input4"></div>
+
+			<div vcollapse="ans.input4.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input4.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input4.showSolution">
+				<div class="solution-body">
+					{{ans.input4.solution}}
+				</div>
+			</div>
+				
+		</div> 
+
+</div>
