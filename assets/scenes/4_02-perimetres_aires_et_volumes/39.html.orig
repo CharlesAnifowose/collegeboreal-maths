@@ -1,0 +1,26 @@
+        <link rel='stylesheet' type='text/css' href="lesson.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+<<<<<<< HEAD
+<div class="page-layout">
+
+  <div class="exemple-frame">
+  <div class="para">Exemple 3 : Calculer la circonférence d’un cercle ayant un diamètre de 70 m.</div>
+
+  <img ng-src="{{imgUrl}}4-02-39.png" />
+
+
+</div>
+</div>
+
+<div id="continue" class="mt6 center">
+	<div inbook-nextbtn="scene"></div>
+=======
+
+
+
+
+>>>>>>> 5cdde9f59d450b125fefe4c506a0e109d2d87527
+</div>

@@ -1,24 +1,342 @@
-<div 	class="page-layout">
-	<div    inbook-questionseries 
-			class="pa8"
-			on-complete="scene.markAsCompleted();"
-			ordered=true
-			no-remove=true
-			ng-scope
-			ng-init="
-				imgUrl = 'http://d3mw5hjf8nr5ry.cloudfront.net/collegeboreal-sample/images/3_07-les_segments_de_droite_et_les_angles/exercise08/';
-			">
+<div 	gseq
+		class="page-layout" 
+		ng-init="
+			ans={};
 
-			<div class="inbook-grid-layout" style="width:600px">			
-				<div class="col10 type-xxsmall">
+			ans.input1 = {
+				showSolution: false,
+				question	: 'angle A',
+				solution 	: '37'
+			};
+			ans.input2 = {
+				showSolution: false,
+				question 	: 'angle B',
+				solution 	: '84'
+			};
+			ans.input3 = {
+				showSolution: false,
+				question	: 'angle C',
+				solution 	: '145'
+			};
+			ans.input4 = {
+				showSolution: false,
+				question	: 'angle D',
+				solution 	: '97'
+			};
+			ans.input5 = {
+				showSolution: false,
+				question	: 'angle E',
+				solution	: '116'
+			};
+			ans.input6 = {
+				showSolution: false,
+				question	: 'angle F',
+				solution 	: '180'
+			};
+			ans.input7 = {
+				showSolution: false,
+				question	: 'angle G',
+				solution 	: '49'
+			};
+			ans.input8 = {
+				showSolution: false,
+				question	: 'angle H',
+				solution 	: '106'
+			};
 
-					<div class="mt3">
-						Mesurez les angles entre les segments de droite qui séparent cet homme de son épouse
-					</div>
+		">
+
+		<div gdirections>
+			<div el=".exercise-num"   duration="0.8" ease="power4-in-out" presets="[fromTransparent]"></div>
+
+			<div duration="0.45"></div>
+
+			<div el=".anim-01" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+				
+			<div duration="1"></div>
+
+			<div el=".anim-02" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-03" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-04" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-05" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-06" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-07" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-08" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+	      	<div el="#continue" duration="1" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]" disable-scroll-focus="true"></div>	
+
+		</div>
+
+	    <div class="exercise-num">
+	      EXERCICE 9
+	    </div>
+
+		<div class="exercise-box anim-01">
+
+			<div class="exercise-header">
+				Mesurez les angles entre les segments de droite qui séparent cet homme de son épouse
+				<div class="center">
+					<img ng-src="{{imgUrl}}exercise09.png" />
 				</div>
 			</div>
-	</div>
-	<div id="continue" class="mt6 center">
-  <div inbook-nextbtn="scene"></div>
-  </div>
+
+			<div class="exercise-text">
+				{{ans.input1.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input1"></div>
+
+			<div vcollapse="ans.input1.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input1.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div><!-- 
+			--><div vcollapse="!ans.input1.showSolution">
+				<div class="solution-body">
+					{{ans.input1.solution}}&deg;
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-02" />
+
+		<div class="exercise-box anim-02">
+
+			<div class="exercise-header">
+				Mesurez les angles entre les segments de droite qui séparent cet homme de son épouse
+				<div class="center">
+					<img ng-src="{{imgUrl}}exercise09.png" />
+				</div>
+			</div>
+
+			<div class="exercise-text">
+				{{ans.input2.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input2"></div>
+
+			<div vcollapse="ans.input2.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input2.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div vcollapse="!ans.input2.showSolution">
+				<div class="solution-body">
+					{{ans.input2.solution}}&deg;
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-03" />
+
+		<div class="exercise-box anim-03">
+
+			<div class="exercise-header">
+				Mesurez les angles entre les segments de droite qui séparent cet homme de son épouse
+				<div class="center">
+					<img ng-src="{{imgUrl}}exercise09.png" />
+				</div>
+			</div>
+
+			<div class="exercise-text">
+				{{ans.input3.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input3"></div>
+
+			<div vcollapse="ans.input3.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input3.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div vcollapse="!ans.input3.showSolution">
+				<div class="solution-body">
+					{{ans.input3.solution}}&deg;
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-04" />
+
+		<div class="exercise-box anim-04">
+
+			<div class="exercise-header">
+				Mesurez les angles entre les segments de droite qui séparent cet homme de son épouse
+				<div class="center">
+					<img ng-src="{{imgUrl}}exercise09.png" />
+				</div>
+			</div>
+
+			<div class="exercise-text">
+				{{ans.input4.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input4"></div>
+
+			<div vcollapse="ans.input4.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input4.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div vcollapse="!ans.input4.showSolution">
+				<div class="solution-body">
+					{{ans.input4.solution}}&deg;
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-05" />
+
+		<div class="exercise-box anim-05">
+
+			<div class="exercise-header">
+				Mesurez les angles entre les segments de droite qui séparent cet homme de son épouse
+				<div class="center">
+					<img ng-src="{{imgUrl}}exercise09.png" />
+				</div>
+			</div>
+
+			<div class="exercise-text">
+				{{ans.input5.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input5"></div>
+
+			<div vcollapse="ans.input5.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input5.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div vcollapse="!ans.input5.showSolution">
+				<div class="solution-body">
+					{{ans.input5.solution}}&deg;
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-06" />
+
+		<div class="exercise-box anim-06">
+
+			<div class="exercise-header">
+				Mesurez les angles entre les segments de droite qui séparent cet homme de son épouse
+				<div class="center">
+					<img ng-src="{{imgUrl}}exercise09.png" />
+				</div>
+			</div>
+
+			<div class="exercise-text">
+				{{ans.input6.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input6"></div>
+
+			<div vcollapse="ans.input6.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input6.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div vcollapse="!ans.input6.showSolution">
+				<div class="solution-body">
+					{{ans.input6.solution}}&deg;
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-07" />
+
+		<div class="exercise-box anim-07">
+
+			<div class="exercise-header">
+				Mesurez les angles entre les segments de droite qui séparent cet homme de son épouse
+				<div class="center">
+					<img ng-src="{{imgUrl}}exercise09.png" />
+				</div>
+			</div>
+
+			<div class="exercise-text">
+				{{ans.input7.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input7"></div>
+
+			<div vcollapse="ans.input7.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input7.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div vcollapse="!ans.input7.showSolution">
+				<div class="solution-body">
+					{{ans.input7.solution}}&deg;
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-08" />
+
+		<div class="exercise-box anim-08">
+
+			<div class="exercise-header">
+				Mesurez les angles entre les segments de droite qui séparent cet homme de son épouse
+				<div class="center">
+					<img ng-src="{{imgUrl}}exercise09.png" />
+				</div>
+			</div>
+
+			<div class="exercise-text">
+				{{ans.input8.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input8"></div>
+
+			<div vcollapse="ans.input8.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input8.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div vcollapse="!ans.input8.showSolution">
+				<div class="solution-body">
+					{{ans.input8.solution}}&deg;
+				</div>
+			</div>
+				
+		</div>
+		
+		<div id="continue" class="mt6 center">
+			<div inbook-nextbtn="scene"></div>
+		</div>
 </div>

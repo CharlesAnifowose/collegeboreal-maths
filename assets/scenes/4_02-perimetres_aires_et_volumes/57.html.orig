@@ -1,0 +1,54 @@
+        <link rel='stylesheet' type='text/css' href="lesson.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+<div class="page-layout">
+
+
+  <div class="header-section">Calculer le côté d’un carré si l’aire est donnée</div>
+
+  <div class="para">Pour trouver le côté d’un carré si l’aire est donnée, on extrait la racine carrée de l’aire.</div>
+
+  <div class="exemple-frame"><span math>c = sqrt(A)</span></div>
+
+<br><br>
+
+  <div class="note-frame">
+  <div class="para">Rappel : Extraire une racine carrée veut dire trouver le nombre qui a été mis au carré.</div>
+
+  <div class="para">Exemple : Trouvez la racine carrée de 9 : <span math>sqrt(9) = 3</span></div>
+
+  <div class="para">Vérification : <span math>3^2 = 9</span></div>
+
+</div>
+
+<br><br>
+
+  <div class="exemple-frame">
+  <div class="para">Exemple : Trouvez le côté du carré dont l’aire est de <span math>25 m^2</span>.</div>
+
+  <img ng-src="{{imgUrl}}4-02-57-1.png" />
+
+  <div class="para">Pour effectuer ce calcul à la calculatrice on procède comme suit :</div>
+
+  <img ng-src="{{imgUrl}}4-02-57-2.png" />
+
+</div>
+
+<<<<<<< HEAD
+</div>
+
+<div id="continue" class="mt6 center">
+	<div inbook-nextbtn="scene"></div>
+=======
+
+  <div class="note-frame">
+  <div class="para">Notez que lorsque l'on extrait la racine carrée d'une unité au carré on obtient tout simplement l'unité à la puissance de 1.</div>
+
+  <div class="para">Exemple : La racine carré de <span math>sqrt(4 cm^2) "est : " 2 cm</span>.</div>
+
+
+
+>>>>>>> 5cdde9f59d450b125fefe4c506a0e109d2d87527
+</div>
