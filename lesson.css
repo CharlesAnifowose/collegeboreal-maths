@@ -8,7 +8,6 @@ input[type=text].clear-input:active {
   border-radius: none;
   outline: none;
   outline-offset: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   height: 100%;
@@ -556,7 +555,6 @@ input[type=text].clear-input:active {
   padding: 12px;
   margin-top: 6px;
   margin-bottom: 12px;
-  -webkit-box-shadow: 1px 1px 3px #ccc;
   box-shadow: 1px 1px 3px #ccc;
 }
 .exemple-frame .exemple-header {
@@ -654,7 +652,6 @@ ul.basic-list li {
   padding-left: 36px;
   background: #eee;
   margin: 6px 0;
-  -webkit-transition: 800ms;
   transition: 800ms;
 }
 ol.basic-list li:hover,
@@ -681,7 +678,7 @@ ul.basic-list {
   border: 1px solid #ccc;
   padding: 6px 8px;
   width: 100px;
-  vertical-align: bottom;
+  vertical-align: top;
 }
 .basic-table.unbordered td {
   border: none;
@@ -864,13 +861,10 @@ ul.basic-list {
   height: 38px;
 }
 .exercise-box {
-  -webkit-box-shadow: 1px 1px 3px #ccc;
   box-shadow: 1px 1px 3px #ccc;
   text-align: center;
   border: 1px solid #ccc;
   padding: 24px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 .exercise-box input {
@@ -978,8 +972,9 @@ ul.basic-list {
   cursor: pointer;
   padding: 10px;
   -webkit-transition: fill 0.3s, background-color 0.3s, color 0.3s, top 0.3s;
+  -moz-transition: fill 0.3s, background-color 0.3s, color 0.3s, top 0.3s;
+  -o-transition: fill 0.3s, background-color 0.3s, color 0.3s, top 0.3s;
   transition: fill 0.3s, background-color 0.3s, color 0.3s, top 0.3s;
-  -webkit-box-shadow: 1px 1px 3px #ccc;
   box-shadow: 1px 1px 3px #ccc;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -994,9 +989,10 @@ ul.basic-list {
   margin-left: 24px;
 }
 .show-solution-btn.circle {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
   border-radius: 100%;
   width: 150px;
   height: 150px;
@@ -1098,7 +1094,6 @@ ul.basic-list {
   border-radius: 60px;
   background-color: #ddd;
   color: #333;
-  -webkit-box-shadow: 0 0 8px #333;
   box-shadow: 0 0 8px #333;
   font-size: 40px;
   z-index: 2;
