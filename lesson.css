@@ -715,6 +715,9 @@ ul.basic-list {
   font-size: 12px;
   line-height: 14px;
 }
+.workbook-textarea .input-ans-icon textarea {
+  width: 100%;
+}
 /*  !!!!EXERCISE STYLES!!!!  */
 .exercise-num {
   font-size: 12px;
@@ -925,7 +928,6 @@ ul.basic-list {
   font-size: 20px;
   line-height: 100%;
   margin-top: 18px;
-  padding-left: 24px;
 }
 .solution-body .input-xxxsmall {
   width: 12.5px;
@@ -986,7 +988,6 @@ ul.basic-list {
   line-height: 100%;
   color: #fff;
   background-color: #38b86d;
-  margin-left: 24px;
 }
 .show-solution-btn.circle {
   box-sizing: border-box;
@@ -1109,4 +1110,7 @@ ul.basic-list {
 }
 .exercise-info .exercise-info-inner .inner-margin {
   padding: 40px 0 25px;
+}
+.fraction-line-thin {
+  opacity: 0.5;
 }

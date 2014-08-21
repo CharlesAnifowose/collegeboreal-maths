@@ -1,15 +1,15 @@
 <div 	class="page-layout">
 	<div class="mt2 center">
 
-		<div>
+		<div class="ib">
 			<img ng-src="{{imgUrl + ans.angle}}.png" />
 		</div>
 
-		<div>
+		<div class="ib">
 			<div 	inbook-answerbox-fill="ans.val"
 					pattern="'.*'"
-					class="type-xxxsmall"
-					input-class="type-xxxsmall"
+					class="type-xxsmall"
+					input-class="type-xxsmall"
 					on-correct="question.markAsCorrect()"
 					on-incorrect="question.markAsIncorrect()"></div>
 		</div>
@@ -18,7 +18,4 @@
 			<div inbook-nextbtn="question"></div>
 		</div>
 	</div>
-	<div id="continue" class="mt6 center">
-  <div inbook-nextbtn="scene"></div>
-  </div>
 </div>
