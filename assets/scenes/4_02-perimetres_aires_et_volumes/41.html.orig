@@ -1,0 +1,35 @@
+        <link rel='stylesheet' type='text/css' href="lesson.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+<div class="page-layout">
+
+
+  <div class="header-section">EXERCICE 14</div>
+
+  <div class="para">Calculez la circonférence des cercles en vous servant de la calculatrice et de la touche   <img ng-src="{{imgUrl}}4-02-41-01.png" /> . Arrondissez votre réponse au <span math>100^e</span> près.</div>
+
+  <div class="para">(a) d = 23,6mm</div>
+  <div class="para">(b) d = 65m</div>
+  <div class="para">(c) r = 8,23cm</div>
+  <div class="para">(d) r = 0,5m</div>
+  <div class="para">(e) d = 122km</div>
+  <div class="para">(f) r = 34,86cm</div>
+  <div class="para">(g) r = 1900m</div>
+  <div class="para">(h) d = 0,03mm</div>
+
+<<<<<<< HEAD
+<br>
+  <div class="header-section">EXERCICE 15</div>
+
+  <div class="para">Mesurez le diamètre des cercles et calculez leurs circonférences.</div>
+
+  <img ng-src="{{imgUrl}}4-02-41-02.png" />
+
+</div>
+<div id="continue" class="mt6 center">
+	<div inbook-nextbtn="scene"></div>
+=======
+>>>>>>> 5cdde9f59d450b125fefe4c506a0e109d2d87527
+</div>

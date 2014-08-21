@@ -13,12 +13,15 @@
   <div class="para"><img ng-src="{{imgUrl}}4-02-22-2.png" /></div>
   <div class="para"><img ng-src="{{imgUrl}}4-02-22-3.png" /></div>
 
-  <div class="para"><img ng-src="{{imgUrl}}4-02-23-1.png" /></div>
-  <div class="para"><img ng-src="{{imgUrl}}4-02-23-2.png" /></div>
-  <div class="para"><img ng-src="{{imgUrl}}4-02-23-3.png" /></div>
-
+<<<<<<< HEAD
 </div>
 
 <div id="continue" class="mt6 center">
 	<div inbook-nextbtn="scene"></div>
+=======
+  <div class="para"><img ng-src="{{imgUrl}}4-02-23-1.png" /></div>
+  <div class="para"><img ng-src="{{imgUrl}}4-02-23-2.png" /></div>
+  <div class="para"><img ng-src="{{imgUrl}}4-02-23-3.png" /></div>
+
+>>>>>>> 5cdde9f59d450b125fefe4c506a0e109d2d87527
 </div>

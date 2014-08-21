@@ -1,0 +1,38 @@
+        <link rel='stylesheet' type='text/css' href="lesson.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+
+<div class="page-layout">
+
+
+<<<<<<< HEAD
+  <div class="exemple-frame">
+  <div class="para">Exemple 3 : Calculer le périmètre de la figure irrégulière.</div>
+
+<img ng-src="{{imgUrl}}4-02-21-1.png" />
+
+
+  <div class="para">On trace des lignes pointillées pour diviser la figure irrégulière en figures simples. On inscrit les mesures de chaque segment de droite.
+</div>
+
+<img ng-src="{{imgUrl}}4-02-21-2.png" />
+
+  <div class="para">On additionne tous les segments de droite autour de la figure.</div>
+
+  <div class="para">
+P = 40 cm + 6,5 cm + 5,5 cm + 3 cm + 8 cm + 3 cm + 12 cm + 5,5 cm + 40 - (12 cm + 8 cm + 7 cm) + (5,5 cm + 3 cm) + 7 cm + (5,5 cm + 3 cm) + 6,5cm
+<br><br>
+P= 83,5cm+40cm - (27cm)+(8,5cm)+7cm+(8,5cm)+6,5cm<br>
+P = 127 cm <b>(Le périmètre de la figure irrégulière est 127 cm.)</b>
+</div>
+
+</div>
+
+</div>
+
+<div id="continue" class="mt6 center">
+	<div inbook-nextbtn="scene"></div>
+=======
+>>>>>>> 5cdde9f59d450b125fefe4c506a0e109d2d87527
+</div>
