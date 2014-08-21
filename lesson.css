@@ -8,6 +8,7 @@ input[type=text].clear-input:active {
   border-radius: none;
   outline: none;
   outline-offset: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   height: 100%;
@@ -260,7 +261,7 @@ input[type=text].clear-input:active {
   padding-right: 24px;
 }
 .big-operators {
-  font-size: 200px;
+  font-size: 170px;
   line-height: 80%;
   padding-bottom: 24px;
   font-weight: bold;
@@ -388,7 +389,7 @@ input[type=text].clear-input:active {
 .header-module-sub {
   text-align: center;
   padding: 12px;
-  background: #ff6666;
+  background-color: #53B3E5;
   color: #fff;
   margin-top: 12px;
   margin-bottom: 24px;
@@ -555,6 +556,7 @@ input[type=text].clear-input:active {
   padding: 12px;
   margin-top: 6px;
   margin-bottom: 12px;
+  -webkit-box-shadow: 1px 1px 3px #ccc;
   box-shadow: 1px 1px 3px #ccc;
 }
 .exemple-frame .exemple-header {
@@ -652,12 +654,13 @@ ul.basic-list li {
   padding-left: 36px;
   background: #eee;
   margin: 6px 0;
+  -webkit-transition: 800ms;
   transition: 800ms;
 }
 ol.basic-list li:hover,
 ul.basic-list li:hover {
   background-color: #d5d5d5;
-  margin-bottom: 12px;
+  margin-left: 12px;
 }
 ul.basic-list {
   list-style-type: none;
@@ -861,10 +864,17 @@ ul.basic-list {
   height: 38px;
 }
 .exercise-box {
+  -webkit-box-shadow: 1px 1px 3px #ccc;
   box-shadow: 1px 1px 3px #ccc;
+  text-align: center;
   border: 1px solid #ccc;
   padding: 24px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
+}
+.exercise-box input {
+  text-align: center;
 }
 .solution-header {
   font-size: 20px;
@@ -968,9 +978,8 @@ ul.basic-list {
   cursor: pointer;
   padding: 10px;
   -webkit-transition: fill 0.3s, background-color 0.3s, color 0.3s, top 0.3s;
-  -moz-transition: fill 0.3s, background-color 0.3s, color 0.3s, top 0.3s;
-  -o-transition: fill 0.3s, background-color 0.3s, color 0.3s, top 0.3s;
   transition: fill 0.3s, background-color 0.3s, color 0.3s, top 0.3s;
+  -webkit-box-shadow: 1px 1px 3px #ccc;
   box-shadow: 1px 1px 3px #ccc;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -985,10 +994,9 @@ ul.basic-list {
   margin-left: 24px;
 }
 .show-solution-btn.circle {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
-  -webkit-border-radius: 100%;
-  -moz-border-radius: 100%;
   border-radius: 100%;
   width: 150px;
   height: 150px;
@@ -1073,51 +1081,6 @@ ul.basic-list {
   margin-top: 48px;
   margin-bottom: 48px;
 }
-.workbook-input {
-  z-index: auto;
-}
-.workbook-input .input-ans-icon {
-  display: inline-block;
-  vertical-align: middle;
-  background-color: #333;
-  color: #fff;
-  border-radius: 100px;
-  border: 1px solid #ddd;
-  position: relative;
-  left: 20px;
-  z-index: 2;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
-  width: 21px;
-  height: 25px;
-  padding: 8px 10px;
-  font-size: 110%;
-}
-.workbook-input .input-ans-icon.input-icon {
-  transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
-  padding: 8px;
-  width: 25px;
-  height: 25px;
-  font-size: 100%;
-}
-.workbook-input input {
-  padding: 3px 0 3px 20px;
-  margin: 25px auto;
-  border-radius: 2px;
-  border: 1px solid #787878;
-  display: inline-block;
-  vertical-align: middle;
-  z-index: 1;
-  width: 82%;
-}
-.workbook-input .draw-text {
-  padding: 5px 8px 5px 25px;
-  display: inline-block;
-  vertical-align: middle;
-  color: #ddd;
-  cursor: pointer;
-}
 /*=====================*/
 /*NOT ACTUALLY USED... */
 .exercise-info {
@@ -1135,6 +1098,7 @@ ul.basic-list {
   border-radius: 60px;
   background-color: #ddd;
   color: #333;
+  -webkit-box-shadow: 0 0 8px #333;
   box-shadow: 0 0 8px #333;
   font-size: 40px;
   z-index: 2;

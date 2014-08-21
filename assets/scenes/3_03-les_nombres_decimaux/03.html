@@ -1,66 +1,145 @@
-<div class="">	
-	<div class="page-layout">
-		<div class="para">
-			Dans le nombre 401,25 quel chiffre occupe la position des
+<div  	gseq gscroll
+    	class="page-layout">
+
+	    <div gdirections>
+	      <div el=".exercise-num"   duration="1" ease="power4-in-out" presets="[fromTransparent]"></div>
+	    </div>
+
+	    <div class="exercise-num">
+	      EXERCICE 1
+	    </div>
+
+		<div 	inbook-questionseries
+				on-complete="scene.markAsCompleted();"
+  				ordered=true
+  				no-remove=true>
+
+
+				<div 	inbook-questionseries-item level="1"
+						ng-init="
+							ans={};
+							ans.question = 'centaines';
+							ans.val 	 = 4;
+						">
+
+						<div class="exercise-box">
+
+							<div class="exercise-text">
+								Dans le nombre 401,25 quel chiffre occupe la position des {{ans.question}}?
+			  				</div>
+
+			  				<div class="para">
+				  				<div inbook-workbook-qseries="ans.val"></div>
+			  				</div>
+
+			  				<div class="mt4">
+								<div inbook-nextbtn="question"></div>
+							</div>
+
+						</div>
+
+				</div>
+
+				<div 	inbook-questionseries-item level="2"
+						ng-init="
+							ans={};
+							ans.question = 'dizaines';
+							ans.val 	 = 0;
+						">
+
+						<div class="exercise-box">
+
+							<div class="exercise-text">
+								Dans le nombre 401,25 quel chiffre occupe la position des {{ans.question}}?
+			  				</div>
+
+			  				<div class="para">
+				  				<div inbook-workbook-qseries="ans.val"></div>
+				  			</div>
+
+			  				<div class="mt4">
+								<div inbook-nextbtn="question"></div>
+							</div>
+
+						</div>
+				</div>
+
+				<div 	inbook-questionseries-item level="3"
+						ng-init="
+							ans={};
+							ans.question = 'unités';
+							ans.val 	 = 1;
+						">
+
+						<div class="exercise-box">
+
+							<div class="exercise-text">
+								Dans le nombre 401,25 quel chiffre occupe la position des {{ans.question}}?
+			  				</div>
+
+			  				<div class="para">
+				  				<div inbook-workbook-qseries="ans.val"></div>
+				  			</div>
+
+			  				<div class="mt4">
+								<div inbook-nextbtn="question"></div>
+							</div>
+
+						</div>
+				</div>
+
+				<div 	inbook-questionseries-item level="4"
+						ng-init="
+							ans={};
+							ans.question = 'dixièmes';
+							ans.val 	 = 2;
+						">
+
+						<div class="exercise-box">
+
+							<div class="exercise-text">
+								Dans le nombre 401,25 quel chiffre occupe la position des {{ans.question}}?
+			  				</div>
+
+							<div class="para">
+				  				<div inbook-workbook-qseries="ans.val"></div>
+				  			</div>
+
+			  				<div class="mt4">
+								<div inbook-nextbtn="question"></div>
+							</div>
+
+						</div>
+				</div>
+
+				<div 	inbook-questionseries-item level="5"
+						ng-init="
+							ans={};
+							ans.question = 'centièmes';
+							ans.val 	 = 5;
+						">
+
+
+						<div class="exercise-box">
+
+							<div class="exercise-text">
+								Dans le nombre 401,25 quel chiffre occupe la position des {{ans.question}}?
+			  				</div>
+
+			  				<div class="para">
+				  				<div inbook-workbook-qseries="ans.val">
+					  			</div>
+				  			</div>
+
+			  				<div class="mt4">
+								<div inbook-nextbtn="question"></div>
+							</div>
+							
+						</div>
+				</div>
+
 		</div>
-		<ol class="ib" type="a">
-			<li class="">
-				<div class="ib">centaines</div>
-			</li>
-			<li class="mb2 mt2">
-				<div class="ib">dizaines</div>
-			</li>
-			<li>
-				<div class="ib">unités</div>
-			</li>
-			<li class="mb2 mt3">
-				<div class="ib">dixièmes</div>
-			</li>
-			<li class="">
-				<div class="ib">centièmes</div>
-			</li>
-		</ol>
-		<ul style="list-style: none;" class="ib">
-			<li>
-				<div class="ib">
-					<div attempts="3" inbook-answerbox-fill="4"  
-					 on-correct="question.markAsCorrect();
-								 	
-					"></div>
-				</div>
-			</li>
-			<li class="mb1 mt1">
-				<div class="ib">
-					<div attempts="3" inbook-answerbox-fill="0"  
-					 on-correct="question.markAsCorrect();
-								 	
-					"></div>
-				</div>
-			</li>
-			<li>
-				<div class="ib">
-					<div attempts="3" inbook-answerbox-fill="1"  
-					 on-correct="question.markAsCorrect();
-								 	
-					"></div>
-				</div>
-			</li>
-			<li class="mb1 mt1">
-			<div class="ib">
-					<div attempts="3" inbook-answerbox-fill="2"  
-					 on-correct="question.markAsCorrect();
-								 	
-					"></div>
-				</div>
-			</li>
-			<li>
-				<div class="ib">
-					<div attempts="3" inbook-answerbox-fill="5"  
-					 on-correct="question.markAsCorrect();
-								 	
-					"></div>
-				</div>
-			</li>
-		</ul>
-	</div>
+		<div id="continue" class="mt6 center">
+		<div inbook-nextbtn="scene"></div>
+		</div>
 </div>

@@ -1,0 +1,73 @@
+<div class="page-layout">
+
+	<div class="header-section">
+		L'ordre des opérations avec les décimaux
+	</div>
+	
+	<div class="para">
+		Lorsqu'il y a plus d'une opération à effectuer, on procède dans l'ordre suivant :
+	</div>
+	
+	<div class="para">
+		On commence d'abord par multiplier et diviser, s'il y a lieu, à partir de la gauche vers la droite ;
+	</div>
+	
+	<div class="para">
+		Ensuite, on additionne et on soustrait à partir de la gauche vers la droite.
+	</div>
+	
+	<div class="exemple-frame">
+		<div class="exemple-header">
+			Exemple 1 : Résoudre
+		</div>
+		<div class="para">
+			<span math>3.4 + 4,4 ÷ 2</span>
+		</div>
+		<div class="para">
+			Étape 1 : On divise 4,4 par 2.
+		</div>
+		<div class="para">
+			<img ng-src="{{imgUrl}}62a.png" />
+		</div>
+		<div class="para">
+			Étape 2 : On additionne le résultat à 3,4.
+		</div>
+		<div class="para">
+			<img ng-src="{{imgUrl}}62b.png" />
+		</div>
+		<div class="bold">
+			La réponse est : 5,6.
+		</div>
+	</div>
+	
+	<div class="exemple-frame">
+		<div class="exemple-header">
+			Exemple 2 : Résoudre
+		</div>
+		<div class="para">
+			<span math>6,78 * 4 − 0,39</span>
+		</div>
+		<div class="para">
+			Étape 1 : On multiplie 6,78 &times; 4.
+		</div>
+		<div class="para" style="text-align:right;">
+			<div>6,78</div>
+			<div style="border-bottom: 1px solid black"><span class="mr4">&times;</span> 4</div>
+			<div class="bold">27,12</div>
+		</div>
+		<div class="para">
+			Étape 2 : On soustrait 0,39 du produit 27,12.
+		</div>
+		<div class="para" style="text-align:right;">
+			<div>27,12</div>
+			<div style="border-bottom: 1px solid black"><span class="mr2">&minus;</span> 0,39</div>
+			<div class="bold">26,73</div>
+		</div>
+		<div class="bold">
+			La réponse est : 26,73.
+		</div>
+	</div>
+	<div id="continue" class="mt6 center">
+	<div inbook-nextbtn="scene"></div>
+	</div>
+</div>

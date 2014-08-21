@@ -1,56 +1,81 @@
-<div  class="center pa4" 
-    ng-init="
-      imgUrl = 'http://d3mw5hjf8nr5ry.cloudfront.net/collegeboreal-sample/images/';
-      align={};
-    ">
+<div    gseq gscroll
+        class="minfullheight fullheight" 
+        style="background: #009688;" 
+        ng-init="
+
+        ">
+       <!-- You can change each of the background colors so that each one is a little different. -->
 
 
-  <div class="ib">
-    <img ng-src="{{imgUrl}}logo.png"/>
-  </div>
+        <!-- <div inbook-timeline></div> -->
+        <div gdirections>
 
+ 		<!--This is animation code. Leave as is.-->	
+            <div el="#page-info .module-num" duration="0.8" ease="back-out" presets="[fromTransparent,fromLeft]"></div>
+            <div el="#page-info .section-type" duration="1" offset="-=0.4" ease="back-out" presets="[fromTransparent,fromLeft]"></div>
+            <div el="#page-info .module-name" duration="1.2" offset="-=0.4" ease="back-out" presets="[fromTransparent,fromLeft]"></div>
+            
+            <div duration="0.25"></div>  
 
-  <div class="bold">
-    <div class="type-medium mt6">
-      Module 6.07
+            <div el=".line" duration="1.2" offset="-=1.2" from="{'width':'0%'}" to="{'width':'100%'}" ease="power2-in-out" presets="[fromTransparent]"></div>
+
+            <div el=".credits .cred" duration="0.8" offset="-=0.5" presets="[fromTransparent, fromBottom]"></div>
+
+        </div>
+
+ 	<div  class="page-layout" style="width:  800px;">
+
+ 		<!--insert the appropreate info here-->
+		<div id="page-info" class="title-page-info">
+			<div class="module-num">
+				Module 6.07
+			</div> 
+
+			<div class="module-name">
+				(Connaître les propriétés d’un triangle oblique) 
+			</div>
+	    </div>
+			
+	    <hr class="line"/>
+
+	    <div class="anim-area">
+
+	    	<!-- Later, animations are going to be devloped for here but for now just leave this -->
+	    	<div class="type-xlarge" style="height:300px;">
+		    	&nbsp;
+	    	</div>
+
+	    </div>
+
+	    <hr class="line"/>
+
+	    <!-- The following tends to change slightly module to module so make sure it is correct -->
+		<div class="credits">
+			<div class="cred">
+				<div class="title">
+					Rédaction
+				</div>
+				<div class="name">
+					Francine Bertrand 
+				</div>
+			</div>
+			<div class="cred">
+				<div class="title">
+					Révision 
+				</div>
+				<div class="name">
+					 Julie Gratton 
+				</div>
+			</div>
+			<div class="cred">
+				<div class="title">
+					Subventionné par
+				</div>
+				<div class="name">
+					<div>Le ministère de la Formation et des Collèges et Universités</div>
+					<div>de l’Ontario et le Secrétariat national à l’alphabétisation.</div>
+				</div>
+			</div>
+		</div>  
     </div>
-    <div class="type-xxsmall mt2 mb2">
-      (Connaître les propriétés d’un triangle oblique) 
-    </div>
-  </div>
-
-  <div class="ib mt6">
-    <img ng-src="{{imgUrl}}6_07-connaître_les_proprietes_dun_triangle_oblique/intro-img.png"/>
-  </div>
-
-  <div class="type-xxxsmall" style="text-align:left; width: 610px; margin: 0 auto;">
-
-    <div class="mt2">
-      <div class="ib vtop" inbook-width="align.left" align="left">
-        <div class="mr6">Rédaction</div>
-      </div>
-      <div class="ib vtop" inbook-width="align.right" align="left">
-        Francine Bertrand
-      </div>
-    </div>
-    <div class="mt2">
-      <div class="ib vtop" inbook-width="align.left" align="left">
-        <div class="mr6">Révision</div>
-      </div>
-      <div class="ib vtop" inbook-width="align.right" align="left">
-        Julie Gratton
-      </div>
-    </div>
-    <div class="mt2">
-      <div class="ib vtop" inbook-width="align.left" align="left">
-        <div class="mr6">Subventionné par</div>
-      </div>
-      <div class="ib vtop" inbook-width="align.right" align="left">
-        <div>Le ministère de la Formation et des Collèges et Universités</div>
-        <div>de l’Ontario et le Secrétariat national à l’alphabétisation.</div>
-      </div>
-    </div>
-
-  </div>
-
 </div>

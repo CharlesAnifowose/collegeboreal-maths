@@ -1,77 +1,93 @@
-<div class="">
-	<div class="page-layout">
-		<div class="para">
+<div  	gseq gscroll
+    	class="page-layout">
+
+	    <div gdirections>
+	      <div el=".exercise-num"   duration="1" ease="power4-in-out" presets="[fromTransparent]"></div>
+	    </div>
+
+	    <div class="exercise-num">
+	      EXERCICE 11
+	    </div>
+
+	<div class="exercise-box">
+
+		<div class="exercise-text">
 			Calculez approximativement le coût des achats suivants et inscrivez vos résultats dans le tableau.
 		</div>
-		<table width="600" height="250" style="border:1px solid black; margin:30px auto;" rules="all">
+
+		<table class="basic-table cells-large type-xxsmall">
 			<tr class="center bold">
-				<td class="pl2" >Article</td>
-				<td class="pl2" >Coût (chacun)</td>
-				<td class="pl2" >Estimation</td>
+				<td>Article</td>
+				<td>Coût (chacun)</td>
+				<td>Estimation</td>
 			</tr>
 			<tr>
-				<td class="pl2" >gant de golf</td>
-				<td class="pl2" >12,95$</td>
-				<td class="pl2" >
+				<td>gant de golf</td>
+				<td>12,95$</td>
+				<td>
 					<div class="ib">
-						<div attempts="3" inbook-answerbox-fill="13"  
-						 on-correct="question.markAsCorrect();
-										
-						"></div>
+						<div 	inbook-answerbox-fill="13"  
+						 		on-correct="question.markAsCorrect();"
+								suffix="$"	
+						></div>
 					</div>
-					<div class="ib">$</div>
+					
 				</td>
 			</tr>
 			<tr>
-				<td class="pl2" >souliers de golf</td>
-				<td class="pl2" >56,49$</td>
-				<td class="pl2" >
+				<td>souliers de golf</td>
+				<td>56,49$</td>
+				<td>
 					<div class="ib">
-						<div attempts="3" inbook-answerbox-fill="57"  
-						 on-correct="question.markAsCorrect();
-										
-						"></div>
+						<div 	inbook-answerbox-fill="57"  
+						 		on-correct="question.markAsCorrect();"
+								suffix="$"	
+						></div>
 					</div>
-					<div class="ib">$</div>
+					
 				</td>
 			</tr>
 			<tr>
-				<td class="pl2" >balles (boîte de 12)</td>
-				<td class="pl2" >35,98$</td>
-				<td class="pl2" >
+				<td>balles (boîte de 12)</td>
+				<td>35,98$</td>
+				<td>
 					<div class="ib">
-						<div attempts="3" inbook-answerbox-fill="36"  
-						 on-correct="question.markAsCorrect();
-										
-						"></div>
+						<div 	inbook-answerbox-fill="36"  
+						 		on-correct="question.markAsCorrect();"
+								suffix="$"	
+						></div>
 					</div>
-					<div class="ib">$</div>
+					
 				</td>
 			</tr>
 			<tr>
-				<td class="pl2" >essuie-mains</td>
-				<td class="pl2" >6,75$</td>
-				<td class="pl2" >
+				<td>essuie-mains</td>
+				<td>6,75$</td>
+				<td>
 					<div class="ib">
-						<div attempts="3" inbook-answerbox-fill="7"  
-						 on-correct="question.markAsCorrect();
-										
-						"></div>
+						<div 	inbook-answerbox-fill="7"  
+						 		on-correct="question.markAsCorrect();"
+								suffix="$"	
+						></div>
 					</div>
-					<div class="ib">$</div>
+					
 				</td>
 			</tr>
 			<tr>
-				<td class="pl2" >Total</td>
-				<td class="pl2" ></td>
-				<td class="pl2" >
+				<td class="bold">Total</td>
+				<td></td>
+				<td>
 					<div class="ib">
-						<div attempts="3" inbook-answerbox-fill="113"  
-						 on-correct="question.markAsCorrect();
-										
-						"></div>
+						<div 	inbook-answerbox-fill="113"  
+						 		on-correct="question.markAsCorrect();"
+								suffix="$"	
+						></div>
 					</div>
-					<div class="ib">$</div>
 				</td>
 			</tr>
 		</table>
+	</div>
+	<div id="continue" class="mt6 center">
+	<div inbook-nextbtn="scene"></div>
+	</div>
+</div>

@@ -1,143 +1,465 @@
-<div class="">
-	<div class="page-layout">
-		<div class="para">
-			Écrivez en chiffres.
+<div 	gseq
+		class="page-layout" 
+		ng-init="
+			ans={};
+
+			ans.input1 = {
+				showSolution: false,
+				question	: 'huit dixièmes',
+				solution 	: '0,8'
+			};
+			ans.input2 = {
+				showSolution: false,
+				question	: 'six et trois dixièmes',
+				solution 	: '6,3'
+			};
+			ans.input3 = {
+				showSolution: false,
+				question	: 'cent quatre-vingts',
+				solution 	: '180'
+			};
+			ans.input4 = {
+				showSolution: false,
+				question	: 'cinq centièmes',
+				solution 	: '0,05'
+			};
+			ans.input5 = {
+				showSolution: false,
+				question	: 'quarante-trois mille deux cents',
+				solution 	: '43 200'
+			};
+			ans.input6 = {
+				showSolution: false,
+				question	: 'trente-neuf centièmes',
+				solution 	: '0,39'
+			};
+			ans.input7 = {
+				showSolution: false,
+				question	: 'cent vingt-six et cinquante et un centièmes',
+				solution 	: '126,51'
+			};
+			ans.input8 = {
+				showSolution: false,
+				question	: 'quatre centièmes',
+				solution 	: '0,04'
+			};
+			ans.input9 = {
+				showSolution: false,
+				question	: 'mille huit cent quarante et un dixième',
+				solution 	: '1 840,1'
+			};
+			ans.input10 = {
+				showSolution: false,
+				question	: 'soixante-sept centièmes',
+				solution 	: '0,67'
+			};
+			ans.input11 = {
+				showSolution: false,
+				question	: 'huit cent trente et un centième',
+				solution 	: '830,01'
+			};
+			ans.input12 = {
+				showSolution: false,
+				question	: 'un et un centième',
+				solution 	: '1,01'
+			};
+		">
+
+		<div gdirections>
+			<div el=".exercise-num"   duration="0.8" ease="power4-in-out" presets="[fromTransparent]"></div>
+
+			<div duration="0.45"></div>
+
+			<div el=".anim-01" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+				
+			<div duration="1"></div>
+
+			<div el=".anim-02" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-03" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-04" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-05" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-06" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-07" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-08" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-09" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-10" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-11" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-12" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+	      	<div el="#continue" duration="1" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]" disable-scroll-focus="true"></div>	
+
 		</div>
-		<ol class="ib" type="a">
-			<li>
-				<div class="ib">huit dixièmes</div>
-			</li>
-			<li class="mb2 mt2">
-				<div class="ib">six et trois dixièmes</div>
-			</li>
-			<li>
-				<div class="ib">cent quatre-vingts</div>
-			</li>
-			<li class="mb2 mt3">
-				<div class="ib">cinq centièmes</div>
-			</li>
-			<li class="mb2">
-				<div class="ib">quarante-trois mille deux cents</div>
-			</li>
-			<li class="">
-				<div class="ib">trente-neuf centièmes</div>
-			</li>
-			<li class="mb2 mt2">
-				<div class="ib">cent vingt-six et cinquante et un centièmes</div>
-			</li>
-			<li>
-				<div class="ib">quatre centièmes</div>
-			</li>
-			<li class="mb2 mt3">
-				<div class="ib">mille huit cent quarante et un dixième</div>
-			</li>
-			<li class="">
-				<div class="ib">soixante-sept centièmes</div>
-			</li>
-			<li class="mb2 mt2">
-				<div class="ib">huit cent trente et un centième</div>
-			</li>
-			<li class="">
-				<div class="ib">un et un centième</div>
-			</li>
-		</ol>
-		<ul style="list-style: none;" class="ib">
-			<li>
-				<div class="ib">
-					<div attempts="3" inbook-answerbox-fill="0.8"  
-					 on-correct="question.markAsCorrect();
-								 	
-					"></div>
+
+	    <div class="exercise-num">
+	      EXERCICE 4
+	    </div>
+
+		<div class="exercise-box anim-01">
+
+			<div class="exercise-header">
+				Écrivez en chiffres
+			</div>
+
+			<div class="exercise-text">
+				{{ans.input1.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input1"></div>
+
+			<div vcollapse="ans.input1.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input1.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input1.showSolution">
+				<div class="solution-body">
+					{{ans.input1.solution}}
 				</div>
-			</li>
-			<li class="mb1 mt1">
-				<div class="ib">
-					<div attempts="3" inbook-answerbox-fill="6.3"  
-					 on-correct="question.markAsCorrect();
-								 	
-					"></div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-02" />
+
+		<div class="exercise-box anim-02">
+
+			<div class="exercise-header">
+				Écrivez en chiffres
+			</div>
+
+			<div class="exercise-text">
+				{{ans.input2.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input2"></div>
+
+			<div vcollapse="ans.input2.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input2.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input2.showSolution">
+				<div class="solution-body">
+					{{ans.input2.solution}}
 				</div>
-			</li>
-			<li>
-				<div class="ib">
-					<div attempts="3" inbook-answerbox-fill="180"  
-					 on-correct="question.markAsCorrect();
-								 	
-					"></div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-03" />
+
+		<div class="exercise-box anim-03">
+
+			<div class="exercise-header">
+				Écrivez en chiffres
+			</div>
+
+			<div class="exercise-text">
+				{{ans.input3.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input3"></div>
+
+			<div vcollapse="ans.input3.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input3.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input3.showSolution">
+				<div class="solution-body">
+					{{ans.input3.solution}}
 				</div>
-			</li>
-			<li class="mb1 mt1">
-			<div class="ib">
-					<div attempts="3" inbook-answerbox-fill="0.05"  
-					 on-correct="question.markAsCorrect();
-								 	
-					"></div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-04" />
+
+		<div class="exercise-box anim-04">
+
+			<div class="exercise-header">
+				Écrivez en chiffres
+			</div>
+
+			<div class="exercise-text">
+				{{ans.input4.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input4"></div>
+
+			<div vcollapse="ans.input4.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input4.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input4.showSolution">
+				<div class="solution-body">
+					{{ans.input4.solution}}
 				</div>
-			</li>
-			<li>
-				<div class="ib mb1">
-					<div attempts="3" inbook-answerbox-fill="43200"  
-					 on-correct="question.markAsCorrect();
-								 	
-					"></div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-05" />
+
+		<div class="exercise-box anim-05">
+
+			<div class="exercise-header">
+				Écrivez en chiffres
+			</div>
+
+			<div class="exercise-text">
+				{{ans.input5.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input5"></div>
+
+			<div vcollapse="ans.input5.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input5.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input5.showSolution">
+				<div class="solution-body">
+					{{ans.input5.solution}}
 				</div>
-			</li>
-			<li>
-				<div class="ib">
-					<div attempts="3" inbook-answerbox-fill="0.39"  
-					 on-correct="question.markAsCorrect();
-								 	
-					"></div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-06" />
+
+		<div class="exercise-box anim-06">
+
+			<div class="exercise-header">
+				Écrivez en chiffres
+			</div>
+
+			<div class="exercise-text">
+				{{ans.input6.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input6"></div>
+
+			<div vcollapse="ans.input6.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input6.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input6.showSolution">
+				<div class="solution-body">
+					{{ans.input6.solution}}
 				</div>
-			</li>
-			<li class="mb1 mt1">
-				<div class="ib">
-					<div attempts="3" inbook-answerbox-fill="126.51"  
-					 on-correct="question.markAsCorrect();
-								 	
-					"></div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-07" />
+
+		<div class="exercise-box anim-07">
+
+			<div class="exercise-header">
+				Écrivez en chiffres
+			</div>
+
+			<div class="exercise-text">
+				{{ans.input7.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input7"></div>
+
+			<div vcollapse="ans.input7.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input7.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input7.showSolution">
+				<div class="solution-body">
+					{{ans.input7.solution}}
 				</div>
-			</li>
-			<li>
-				<div class="ib">
-					<div attempts="3" inbook-answerbox-fill="0.04"  
-					 on-correct="question.markAsCorrect();
-								 	
-					"></div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-08" />
+
+		<div class="exercise-box anim-08">
+
+			<div class="exercise-header">
+				Écrivez en chiffres
+			</div>
+
+			<div class="exercise-text">
+				{{ans.input8.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input8"></div>
+
+			<div vcollapse="ans.input8.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input8.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input8.showSolution">
+				<div class="solution-body">
+					{{ans.input8.solution}}
 				</div>
-			</li>
-			<li class="mb1 mt1">
-				<div class="ib">
-					<div attempts="3" inbook-answerbox-fill="18401"  
-					 on-correct="question.markAsCorrect();
-								 	
-					"></div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-09" />
+
+		<div class="exercise-box anim-09">
+
+			<div class="exercise-header">
+				Écrivez en chiffres
+			</div>
+
+			<div class="exercise-text">
+				{{ans.input9.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input9"></div>
+
+			<div vcollapse="ans.input9.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input9.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input9.showSolution">
+				<div class="solution-body">
+					{{ans.input9.solution}}
 				</div>
-			</li>
-			<li>
-				<div class="ib">
-					<div attempts="3" inbook-answerbox-fill="0.67"  
-					 on-correct="question.markAsCorrect();
-								 	
-					"></div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-10" />
+
+		<div class="exercise-box anim-10">
+
+			<div class="exercise-header">
+				Écrivez en chiffres
+			</div>
+
+			<div class="exercise-text">
+				{{ans.input10.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input10"></div>
+
+			<div vcollapse="ans.input10.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input10.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input10.showSolution">
+				<div class="solution-body">
+					{{ans.input10.solution}}
 				</div>
-			</li>
-			<li class="mb1 mt1">
-			<div class="ib">
-					<div attempts="3" inbook-answerbox-fill="830.01"  
-					 on-correct="question.markAsCorrect();
-								 	
-					"></div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-11" />
+
+		<div class="exercise-box anim-11">
+
+			<div class="exercise-header">
+				Écrivez en chiffres
+			</div>
+
+			<div class="exercise-text">
+				{{ans.input11.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input11"></div>
+
+			<div vcollapse="ans.input11.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input11.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input11.showSolution">
+				<div class="solution-body">
+					{{ans.input11.solution}}
 				</div>
-			</li>
-			<li>
-				<div class="ib">
-					<div attempts="3" inbook-answerbox-fill="1.01"  
-					 on-correct="question.markAsCorrect();
-								 	
-					"></div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-12" />
+
+		<div class="exercise-box anim-12">
+
+			<div class="exercise-header">
+				Écrivez en chiffres
+			</div>
+
+			<div class="exercise-text">
+				{{ans.input12.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input12"></div>
+
+			<div vcollapse="ans.input12.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input12.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input12.showSolution">
+				<div class="solution-body">
+					{{ans.input12.solution}}
 				</div>
-			</li>
-		</ul>
-	</div>
+			</div>
+				
+		</div> 
+		<div id="continue" class="mt6 center">
+		<div inbook-nextbtn="scene"></div>
+		</div>
 </div>

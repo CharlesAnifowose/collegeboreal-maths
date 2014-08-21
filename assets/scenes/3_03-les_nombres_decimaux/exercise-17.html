@@ -1,0 +1,183 @@
+<div 	gseq
+		class="page-layout" 
+		ng-init="
+			ans={};
+
+			ans.input1 = {
+				showSolution: false,
+				solution 	: 'Il épargne 9,20$'
+			};
+			ans.input2 = {
+				showSolution: false,
+				solution 	: 'Il lui restera 4,21$ après cet achat'
+			};
+			ans.input3 = {
+				showSolution: false,
+				solution 	: 'Martine aura le plus de monnaie à déposer dans sa tirelire?'
+			};
+			ans.input4 = {
+				showSolution: false,
+				solution 	: 'Camille a perdu 6,1 kg.'
+			};
+
+		">
+
+		<div gdirections>
+			<div el=".exercise-num"   duration="0.8" ease="power4-in-out" presets="[fromTransparent]"></div>
+
+			<div duration="0.45"></div>
+
+			<div el=".anim-01" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+				
+			<div duration="1"></div>
+
+			<div el=".anim-02" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-03" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-04" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+	      	<div el="#continue" duration="1" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]" disable-scroll-focus="true"></div>	
+
+		</div>
+
+	    <div class="exercise-num">
+	      EXERCICE 17
+	    </div>
+
+		<div class="exercise-box anim-01">
+
+			<div class="exercise-text">
+				Sébastien désire s'acheter un baladeur. La boutique Musico vend le
+				baladeur au prix de 165,89$. La boutique Disco vend le même
+				baladeur au prix de 156,69$. Combien Sébastien peut-il épargner s'il
+				achète le baladeur chez Disco?
+			</div>
+
+			<div inbook-workbook-input persist-to="input1"></div>
+
+			<div vcollapse="ans.input1.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input1.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input1.showSolution">
+				<div class="solution-body">
+					{{ans.input1.solution}}
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-02" />
+
+		<div class="exercise-box anim-02">
+
+			<div class="exercise-text">
+				Pour sa fête, Cassandra a reçu un chèque de 50$ de sa grandmère.
+				Avec l'argent, elle désire s'acheter un chandail qui se
+				vend au prix de 45,79$. Quelle somme d'argent lui restera t-il
+				après cet achat?
+			</div>
+
+			<div inbook-workbook-input persist-to="input2"></div>
+
+			<div vcollapse="ans.input2.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input2.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input2.showSolution">
+				<div class="solution-body">
+					{{ans.input2.solution}}
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-03" />
+
+		<div class="exercise-box anim-03">
+
+			<div class="exercise-text">
+				Martine et Émilie ont 3$ chacune. Les deux filles désirent s'acheter des
+				friandises. Quelle fille aura le plus de monnaie à déposer dans sa
+				tirelire?
+			</div>
+
+			<div class="exercise-text center">
+				<table class="basic-table cells-medium">
+					<tr class="bold">
+						<td>Friandise</td>
+						<td>Émilie</td>
+						<td>Martine</td>
+					</tr>
+					<tr>
+						<td>suçon</td>
+						<td>0,50$</td>
+						<td>1,00$</td>
+					</tr>
+					<tr>
+						<td>jujubes</td>
+						<td>0,75$</td>
+						<td>0,25$</td>
+					</tr>
+					<tr>
+						<td>chocolat</td>
+						<td>1,25$</td>
+						<td>0,75$</td>
+					</tr>
+				</table>
+			</div>
+
+			<div inbook-workbook-input persist-to="input3"></div>
+
+			<div vcollapse="ans.input3.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input3.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input3.showSolution">
+				<div class="solution-body">
+					{{ans.input3.solution}}
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-04" />
+
+		<div class="exercise-box anim-04">
+
+			<div class="exercise-text">
+				Avant de commencer son régime alimentaire, Camille pesait
+				75,45 kg. Six mois plus tard, Camille pèse 69,35 kg.
+				Combien de kg Camille a-t-elle perdu?
+			</div>
+
+			<div inbook-workbook-input persist-to="input4"></div>
+
+			<div vcollapse="ans.input4.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input4.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input4.showSolution">
+				<div class="solution-body">
+					{{ans.input4.solution}}
+				</div>
+			</div>
+				
+		</div>
+
+</div>

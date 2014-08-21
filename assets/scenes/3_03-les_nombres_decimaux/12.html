@@ -1,0 +1,438 @@
+
+<div 	gseq
+		class="page-layout" 
+		ng-init="
+			ans={};
+
+			ans.input1 = {
+				showSolution: false,
+				question	: '34,79 ___ 21,79',
+				solution 	: '34,79 > 21,79'
+			};
+			ans.input2 = {
+				showSolution: false,
+				question 	: '0,69 ___ 0,9',
+				solution 	: '0,69 < 0,9'
+			};
+			ans.input3 = {
+				showSolution: false,
+				question	: '4,6 ___ 4,66',
+				solution 	: '4,6 < 4,66'
+			};
+			ans.input4 = {
+				showSolution: false,
+				question	: '0,33 ___ 0,33',
+				solution 	: '0,33 = 0,33'
+			};
+			ans.input5 = {
+				showSolution: false,
+				question	: '6,57 ___ 6',
+				solution	: '6,57 > 6'
+			};
+			ans.input6 = {
+				showSolution: false,
+				question	: '85 ___ 45,94',
+				solution 	: '85 > 45,94'
+			};
+			ans.input7 = {
+				showSolution: false,
+				question	: '8,4 ___ 8,43',
+				solution 	: '8,4 < 8,43'
+			};
+			ans.input8 = {
+				showSolution: false,
+				question	: '6,04 ___ 6,7',
+				solution 	: '6,04 < 6,7'
+			};
+
+		">
+
+		<div class="exercise-num">
+		   	EXERCICE 7
+		</div>
+
+		<div gdirections>
+			<div el=".exercise-num"   duration="0.8" ease="power4-in-out" presets="[fromTransparent]"></div>
+
+			<div duration="0.45"></div>
+
+			<div el=".anim-01" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+				
+			<div duration="1"></div>
+
+			<div el=".anim-02" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-03" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-04" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-05" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-06" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-07" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-08" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+	      	<div el="#continue" duration="1" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]" disable-scroll-focus="true"></div>	
+
+		</div>
+
+	    <div class="exercise-num">
+	      EXERCICE 7
+	    </div>
+
+		<div class="exercise-box anim-01">
+
+			<div class="exercise-header">
+				Inscrivez l’un des symboles : < = >
+			</div>
+
+			<div class="exercise-text">
+				{{ans.input1.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input1"></div>
+
+			<div vcollapse="ans.input1.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input1.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input1.showSolution">
+				<div class="solution-body">
+					{{ans.input1.solution}}
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-02" />
+
+		<div class="exercise-box anim-02">
+
+			<div class="exercise-header">
+				Inscrivez l’un des symboles : < = >
+			</div>
+
+			<div class="exercise-text">
+				{{ans.input2.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input2"></div>
+
+			<div vcollapse="ans.input2.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input2.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input2.showSolution">
+				<div class="solution-body">
+					{{ans.input2.solution}}
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-03" />
+
+		<div class="exercise-box anim-03">
+
+			<div class="exercise-header">
+				Inscrivez l’un des symboles : < = >
+			</div>
+
+			<div class="exercise-text">
+				{{ans.input3.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input3"></div>
+
+			<div vcollapse="ans.input3.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input3.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input3.showSolution">
+				<div class="solution-body">
+					{{ans.input3.solution}}
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-04" />
+
+		<div class="exercise-box anim-04">
+
+			<div class="exercise-header">
+				Inscrivez l’un des symboles : < = >
+			</div>
+
+			<div class="exercise-text">
+				{{ans.input4.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input4"></div>
+
+			<div vcollapse="ans.input4.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input4.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input4.showSolution">
+				<div class="solution-body">
+					{{ans.input4.solution}}
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-05" />
+
+		<div class="exercise-box anim-05">
+
+			<div class="exercise-header">
+				Inscrivez l’un des symboles : < = >
+			</div>
+
+			<div class="exercise-text">
+				{{ans.input5.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input5"></div>
+
+			<div vcollapse="ans.input5.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input5.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input5.showSolution">
+				<div class="solution-body">
+					{{ans.input5.solution}}
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-06" />
+
+		<div class="exercise-box anim-06">
+
+			<div class="exercise-header">
+				Inscrivez l’un des symboles : < = >
+			</div>
+
+			<div class="exercise-text">
+				{{ans.input6.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input6"></div>
+
+			<div vcollapse="ans.input6.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input6.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input6.showSolution">
+				<div class="solution-body">
+					{{ans.input6.solution}}
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-07" />
+
+		<div class="exercise-box anim-07">
+
+			<div class="exercise-header">
+				Inscrivez l’un des symboles : < = >
+			</div>
+
+			<div class="exercise-text">
+				{{ans.input7.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input7"></div>
+
+			<div vcollapse="ans.input7.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input7.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input7.showSolution">
+				<div class="solution-body">
+					{{ans.input7.solution}}
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-08" />
+
+		<div class="exercise-box anim-08">
+
+			<div class="exercise-header">
+				Inscrivez l’un des symboles : < = >
+			</div>
+
+			<div class="exercise-text">
+				{{ans.input8.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input8"></div>
+
+			<div vcollapse="ans.input8.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input8.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input8.showSolution">
+				<div class="solution-body">
+					{{ans.input8.solution}}
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-09" />
+
+		<div class="exercise-box anim-09">
+
+			<div class="exercise-header">
+				Inscrivez l’un des symboles : < = >
+			</div>
+
+			<div class="exercise-text">
+				{{ans.input9.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input9"></div>
+
+			<div vcollapse="ans.input9.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input9.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input9.showSolution">
+				<div class="solution-body">
+					{{ans.input9.solution}}
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-10" />
+
+		<div class="exercise-box anim-10">
+
+			<div class="exercise-header">
+				Inscrivez l’un des symboles : < = >
+			</div>
+
+			<div class="exercise-text">
+				{{ans.input10.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input10"></div>
+
+			<div vcollapse="ans.input10.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input10.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input10.showSolution">
+				<div class="solution-body">
+					{{ans.input10.solution}}
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-11" />
+
+		<div class="exercise-box anim-11">
+
+			<div class="exercise-header">
+				Inscrivez l’un des symboles : < = >
+			</div>
+
+			<div class="exercise-text">
+				{{ans.input11.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input11"></div>
+
+			<div vcollapse="ans.input11.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input11.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input11.showSolution">
+				<div class="solution-body">
+					{{ans.input11.solution}}
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-12" />
+
+		<div class="exercise-box anim-12">
+
+			<div class="exercise-header">
+				Inscrivez l’un des symboles : < = >
+			</div>
+
+			<div class="exercise-text">
+				{{ans.input12.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input12"></div>
+
+			<div vcollapse="ans.input12.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input12.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input12.showSolution">
+				<div class="solution-body">
+					{{ans.input12.solution}}
+				</div>
+			</div>
+				
+		</div> 
+
+		<div class="exercise-num">
+		   	EXERCICE 9
+		</div>
+
+
+</div>
