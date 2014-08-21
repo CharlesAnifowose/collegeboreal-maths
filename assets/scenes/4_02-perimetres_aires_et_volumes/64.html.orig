@@ -5,12 +5,7 @@
 
 <div class="page-layout">
 
-  <div class="header-section">EXERCICE 25</div>
-
-  <div class="para">Trouvez quatre rectangles équivalents ayant une aire de <span math>10 cm^2</span>. Construisez vos rectangles à l'aide d'une règle.</div>
-
 </div>
-
 <div id="continue" class="mt6 center">
 	<div inbook-nextbtn="scene"></div>
 </div>
