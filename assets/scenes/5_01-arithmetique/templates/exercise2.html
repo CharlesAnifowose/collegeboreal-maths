@@ -1,0 +1,80 @@
+<div class="ib">
+	<div class="ib">{{calc.whole}}</div>
+	<div class="inbook-fraction ib">
+		<div>{{calc.nume}}</div>
+		<div class="fraction-line"></div>
+		<div>{{calc.deno}}</div>
+	</div>
+</div>
+<div class="ib" hcollapse="!ans.showHint">=</div>
+<div class="ib fraction-notation-box" hcollapse="!ans.showHint">
+	<div class="ib">
+		<div><span hcollapse="!ans.showHint2">{{calc.deno}} &times; </span>{{calc.whole}}</div>
+		<div vcollapse="!ans.showHint2" class="fraction-line"></div>
+		<div vcollapse="!ans.showHint2">{{calc.deno}}</div>
+	</div>
+	<div class="ib">+</div>
+	<div class="inbook-fraction ib">
+		<div>{{calc.nume}}</div>
+		<div class="fraction-line"></div>
+		<div>{{calc.deno}}</div>
+	</div>
+</div>
+<div class="ib" hcollapse="!ans.showHint3">=</div>
+<div class="ib" hcollapse="!ans.showHint3">
+	<div class="inbook-fraction fraction-notation-box ib">
+		<div>{{calc.deno}} &times; {{calc.whole}} + {{calc.nume}}</div>
+		<div class="fraction-line"></div>
+		<div>{{calc.deno}}</div>
+	</div>
+</div>
+<div class="ib">=</div>
+<div class="inbook-fraction ib">
+		<div class="fraction-notation-box">
+			<div>
+				<span auto-size-input>
+					<input type="text" class="input-xsmall" 
+							ng-model="ans.nume" 
+							ng-disabled="ans.locked"
+							ng-enter-key="ans.remoteTrigger=true;"
+							/>
+				</span>
+			</div>
+			<div class="fraction-line"></div>
+			<div>
+				<span auto-size-input>
+					<input 	type="text" class="input-xsmall"
+							ng-model="ans.deno" 
+							ng-disabled="ans.locked"
+							ng-enter-key="ans.remoteTrigger=true;" 
+							 />
+				</span>
+			</div>
+		</div>
+</div>
+<div class="ib">
+	<div>
+		<div inbook-answer-submit="1" 
+				 ng-model="ans.isCorrectFlag" 
+				 attempts="1" simple-ui="1"
+				 remote-trigger="ans.remoteTrigger" 
+				 remote-trigger-reset="ans.remoteTrigger = false;"
+				 on-correct=   "question.markAsCorrect();"
+				 on-incorrect= "question.markAsIncorrect();"
+				 on-complete="ans.locked=true;"></div>
+	</div>
+
+	<div class="type-xxsmall mt1" vcollapse="ans.showHint">
+		<div class="softbtn orange" ng-click="ans.showHint=true; question.markAsHinted()">Hint</div>
+	</div>
+	<div class="type-xxsmall mt1" vcollapse="!ans.showHint||ans.showHint2">
+		<div class="softbtn orange" ng-click="ans.showHint2=true; question.markAsHinted()">Hint</div>
+	</div>
+	<div class="type-xxsmall mt1" vcollapse="!ans.showHint||!ans.showHint2||ans.showHint3">
+		<div class="softbtn orange" ng-click="ans.showHint3=true; question.markAsHinted()">Hint</div>
+	</div>
+</div>
+<div class="mt4">
+	<div inbook-nextbtn="question"></div>
+	<div inbook-next-btn="series"></div>
+</div>
