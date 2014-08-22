@@ -5,9 +5,6 @@
 			ordered=true
 			no-remove=true>
 
-		<div class="para">
-			Placez l’un des symboles: > <
-		</div>
 
 		<div 	inbook-questionseries-item level="1"
 				ng-init="
@@ -17,29 +14,37 @@
 
 					ans.val = '>';
 				">
+				<div class="exercise-box">
 
-				<div class="type-small bold">
+					<div class="exercise-header">
+						Placez l’un des symboles: > ou <
+					</div>
 
-					<div class="ib">
-						{{ans.num1}}
+					<div class="exercise-text">
+
+						<div class="ib">
+							{{ans.num1}}
+						</div>
+						<div class="ib">
+							<div 	inbook-answerbox-fill="ans.val"
+									type="text"
+									type="text"
+									class="type-small"
+									input-class="type-small"
+									on-correct="question.markAsCorrect()"
+									on-incorrect="question.markAsIncorrect()"></div>
+						</div>
+						<div class="ib">
+							{{ans.num2}}
+						</div>
+
 					</div>
-					<div class="ib">
-						<div 	inbook-answerbox-fill="ans.val"
-								class="type-small"
-								input-class="type-small"
-								on-correct="question.markAsCorrect()"
-								on-incorrect="question.markAsIncorrect()"></div>
-					</div>
-					<div class="ib">
-						{{ans.num2}}
+
+					<div class="mt4">
+						<div inbook-nextbtn="question"></div>
 					</div>
 
 				</div>
-
-				<div class="mt4">
-					<div inbook-nextbtn="question"></div>
-				</div>
-
 		</div>
 
 		<div 	inbook-questionseries-item level="2"
@@ -50,14 +55,19 @@
 
 					ans.val = '>';
 				">
+				<div class="exercise-box">
+					<div class="exercise-header">
+						Placez l’un des symboles: > ou <
+					</div>
 
-				<div class="type-small bold">
+				<div class="exercise-text">
 
 					<div class="ib">
 						{{ans.num1}}
 					</div>
 					<div class="ib">
 						<div 	inbook-answerbox-fill="ans.val"
+								type="text"
 								class="type-small"
 								input-class="type-small"
 								on-correct="question.markAsCorrect()"
@@ -71,6 +81,7 @@
 
 				<div class="mt4">
 					<div inbook-nextbtn="question"></div>
+				</div>
 				</div>
 
 		</div>
@@ -82,15 +93,20 @@
 					ans.num2 = -15;
 
 					ans.val = '<';
-				">
+				">	
+				<div class="exercise-box">
+					<div class="exercise-header">
+						Placez l’un des symboles: > ou <
+					</div>
 
-				<div class="type-small bold">
+				<div class="exercise-text">
 
 					<div class="ib">
 						{{ans.num1}}
 					</div>
 					<div class="ib">
 						<div 	inbook-answerbox-fill="ans.val"
+								type="text"
 								class="type-small"
 								input-class="type-small"
 								on-correct="question.markAsCorrect()"
@@ -104,6 +120,7 @@
 
 				<div class="mt4">
 					<div inbook-nextbtn="question"></div>
+				</div>
 				</div>
 
 		</div>
@@ -116,14 +133,19 @@
 
 					ans.val = '<';
 				">
+				<div class="exercise-box">
+					<div class="exercise-header">
+						Placez l’un des symboles: > ou <
+					</div>
 
-				<div class="type-small bold">
+				<div class="exercise-text">
 
 					<div class="ib">
 						{{ans.num1}}
 					</div>
 					<div class="ib">
 						<div 	inbook-answerbox-fill="ans.val"
+								type="text"
 								class="type-small"
 								input-class="type-small"
 								on-correct="question.markAsCorrect()"
@@ -137,6 +159,7 @@
 
 				<div class="mt4">
 					<div inbook-nextbtn="question"></div>
+				</div>
 				</div>
 
 		</div>
@@ -149,14 +172,19 @@
 
 					ans.val = '>';
 				">
+				<div class="exercise-box">
+					<div class="exercise-header">
+						Placez l’un des symboles: > ou <
+					</div>
 
-				<div class="type-small bold">
+				<div class="exercise-text">
 
 					<div class="ib">
 						{{ans.num1}}
 					</div>
 					<div class="ib">
 						<div 	inbook-answerbox-fill="ans.val"
+								type="text"
 								class="type-small"
 								input-class="type-small"
 								on-correct="question.markAsCorrect()"
@@ -170,6 +198,7 @@
 
 				<div class="mt4">
 					<div inbook-nextbtn="question"></div>
+				</div>
 				</div>
 
 		</div>
@@ -182,14 +211,19 @@
 
 					ans.val = '>';
 				">
+				<div class="exercise-box">
 
-				<div class="type-small bold">
+					<div class="exercise-header">
+						Placez l’un des symboles: > ou <
+					</div>
+				<div class="exercise-text">
 
 					<div class="ib">
 						{{ans.num1}}
 					</div>
 					<div class="ib">
 						<div 	inbook-answerbox-fill="ans.val"
+								type="text"
 								class="type-small"
 								input-class="type-small"
 								on-correct="question.markAsCorrect()"
@@ -203,6 +237,7 @@
 
 				<div class="mt4">
 					<div inbook-nextbtn="question"></div>
+				</div>
 				</div>
 		</div>
 

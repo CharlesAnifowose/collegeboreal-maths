@@ -1,15 +1,54 @@
-<div class="page-layout">
+<div 	 gseq 
+		 class="page-layout"
+		 ng-init="
+		 ans={};
+		 ans.input1 = {
+			 showSolution: false,
+				solution 	: 'Sondages téléphoniques; Questionnaires; Données recueillies à partir de dossiers'
+		};
 
+	">
 
-	<div 	inbook-questionseries
-			on-complete="scene.markAsCompleted();"
-			ordered=true
-			no-remove=true>
+	<div gdirections>
+		<div el=".exercise-num" duration="0.8" ease="power4-in-out" presets="[fromTransparent]"></div>
 
-			<div class="para">
-				Donnez quelques-unes des méthodes qui sont utilisées en statistiques pour recueillir des données.
+		<div duration="0.45"></div>
+
+		<div el=".anim-01" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+		<div duration="1"></div>
+
+		<div el="#continue" duration="1" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]" disable-scroll-focus="true"></div>
+
+	</div>
+
+	<div class="exercise-num">
+		EXERCISE 7
+	</div>
+
+	<div class="exercise-box anim-01">
+
+		<div class="exercise-header">
+			Donnez quelques-unes des méthodes qui sont utilisées en statistiques pour recueillir des données.
+		</div>
+
+		<div inbook-workbook-input persist-to="input1"></div>
+
+		<div vcollapse="ans.input1.showSolution">
+			<div class="show-solution-btn" ng-click="ans.input1.showSolution = true">
+				Vérifier Solution
 			</div>
-			
+		</div>
 
+		<div vcollapse="!ans.input1.showSolution">
+			<div class="solution-body">
+				{{ans.input1.solution}}
+			</div>
+		</div>
+
+	</div>
+
+	<div id="continue" class="mt6 center">
+		<div inbook-nextbtn="scene"></div>
 	</div>
 </div>

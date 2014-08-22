@@ -1,2 +1,2 @@
-var clientVersion = '2.0002';
-clientVersion = 'latest';
+var clientVersion = '2.0006';
+clientVersion = '2.0006';

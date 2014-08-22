@@ -1,26 +1,208 @@
-        <link rel='stylesheet' type='text/css' href="lesson.css">
-        <link rel="stylesheet" type="text/css" href="style.css">
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<div 	 gseq 
+		 class="page-layout"
+		 ng-init="
+		 ans={};
+		 ans.input1 = {
+			 showSolution: false,
+				solution 	: '150 cm de largeur'
+		};
+		 ans.input2 = {
+			 showSolution: false,
+				solution 	: 'hauteur de 2,4 m'
+		};
+		 ans.input3 = {
+			 showSolution: false,
+				solution 	: 'a = 7,5 m'
+		};
+		 ans.input4 = {
+			 showSolution: false,
+				solution 	: '11 apprenants, 16 apprenants et 15 apprenants'
+		};
+		 ans.input5 = {
+			 showSolution: false,
+				solution 	: '95 km/h'
+		};
 
+	">
 
-<div class="page-layout">
+	<div gdirections>
+		<div el=".exercise-num" duration="0.8" ease="power4-in-out" presets="[fromTransparent]"></div>
 
-  <div class="header-section">EXERCICE 2</div>
+		<div duration="0.45"></div>
 
+		<div el=".anim-01" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
 
-  <div class="para">(a) Combien coûte 6 mètres de tissu de 150 cm de largeur s’il coûte 8,79 $ le mètre ?</div>
+		<div duration="1"></div>
 
-  <div class="para">(b) Combien de mètres de moulure a-t-on besoin si on veut poser celle-ci au plafond de 4 murs dont la hauteur est de 2,4 m et la largeur est de 5,2 m ?</div>
+		<div el=".anim-02" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
 
-  <div class="para">(c) Quelle est l’aire du triangle ci-dessous, si Aire = <span math>1/2</span> bh et que<br>
-b = base<br>
-h = hauteur</div>
+		<div duration="1"></div>
 
-  <img ng-src="{{imgUrl}}5-02-08.png" />
+		<div el=".anim-03" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
 
-  <div class="para">(d) Dans le local A, il y a 11 apprenants et 15 apprenantes ; dans le local B, il y a 12 apprenantes et 16 apprenants ; dans le local C, il y a 15 apprenants et 13 apprenantes. Combien y a-t-il, en moyenne, d’apprenantes par local ?</div>
+		<div duration="1"></div>
 
-  <div class="para">(e) Une voiture fait 58 km/L. Le chauffeur parcourt 230 km à une vitesse moyenne de 95 km/h. Combien l’essence lui a-t-il coûté si l’essence coûte 0,56 $ le litre ?</div>
+		<div el=".anim-04" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
 
+		<div duration="1"></div>
 
+		<div el=".anim-05" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+		<div duration="1"></div>
+
+		<div el="#continue" duration="1" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]" disable-scroll-focus="true"></div>
+
+	</div>
+
+	<div class="exercise-num">
+		EXERCISE 2
+	</div>
+
+	<div class="exercise-box anim-01">
+
+		<div class="exercise-header">
+			Identifiez les données qui sont inutiles à la résolution du problème.
+		</div>
+
+		<div class="exercise-text">
+			Combien coûte 6 mètres de tissu de 150 cm de largeur s’il coûte 8,79 $ le mètre ?
+		</div>
+
+		<div inbook-workbook-input persist-to="input1"></div>
+
+		<div vcollapse="ans.input1.showSolution">
+			<div class="show-solution-btn" ng-click="ans.input1.showSolution = true">
+				Vérifier Solution
+			</div>
+		</div>
+
+		<div vcollapse="!ans.input1.showSolution">
+			<div class="solution-body">
+				{{ans.input1.solution}}
+			</div>
+		</div>
+
+	</div>
+
+	<hr class="question-divider anim-02" />
+
+	<div class="exercise-box anim-02">
+
+		<div class="exercise-header">
+			Identifiez les données qui sont inutiles à la résolution du problème.
+		</div>
+
+		<div class="exercise-text">
+			Combien de mètres de moulure a-t-on besoin si on veut poser celle-ci au plafond de 4 murs dont la hauteur est de 2,4 m et la largeur est de 5,2 m ?
+		</div>
+
+		<div inbook-workbook-input persist-to="input2"></div>
+
+		<div vcollapse="ans.input2.showSolution">
+			<div class="show-solution-btn" ng-click="ans.input2.showSolution = true">
+				Vérifier Solution
+			</div>
+		</div>
+
+		<div vcollapse="!ans.input2.showSolution">
+			<div class="solution-body">
+				{{ans.input2.solution}}
+			</div>
+		</div>
+
+	</div>
+
+	<hr class="question-divider anim-03" />
+
+	<div class="exercise-box anim-03">
+
+		<div class="exercise-header">
+			Identifiez les données qui sont inutiles à la résolution du problème.
+		</div>
+
+		<div class="exercise-text">
+			Quelle est l’aire du triangle ci-dessous, si Aire = <span math>1/2</span> bh et que
+			<div>
+				b = base
+			</div>
+			<div>
+				h = hauteur
+			</div>
+		</div>
+
+		<div inbook-workbook-input persist-to="input3"></div>
+
+		<div vcollapse="ans.input3.showSolution">
+			<div class="show-solution-btn" ng-click="ans.input3.showSolution = true">
+				Vérifier Solution
+			</div>
+		</div>
+
+		<div vcollapse="!ans.input3.showSolution">
+			<div class="solution-body">
+				{{ans.input3.solution}}
+			</div>
+		</div>
+
+	</div>
+
+	<hr class="question-divider anim-04" />
+
+	<div class="exercise-box anim-04">
+
+		<div class="exercise-header">
+			Identifiez les données qui sont inutiles à la résolution du problème.
+		</div>
+
+		<div class="exercise-text">
+			Dans le local A, il y a 11 apprenants et 15 apprenantes ; dans le local B, il y a 12 apprenantes et 16 apprenants ; dans le local C, il y a 15 apprenants et 13 apprenantes. Combien y a-t-il, en moyenne, d’apprenantes par local ?
+		</div>
+
+		<div inbook-workbook-input persist-to="input4"></div>
+
+		<div vcollapse="ans.input4.showSolution">
+			<div class="show-solution-btn" ng-click="ans.input4.showSolution = true">
+				Vérifier Solution
+			</div>
+		</div>
+
+		<div vcollapse="!ans.input4.showSolution">
+			<div class="solution-body">
+				{{ans.input4.solution}}
+			</div>
+		</div>
+
+	</div>
+
+	<hr class="question-divider anim-05" />
+
+	<div class="exercise-box anim-05">
+
+		<div class="exercise-header">
+			Identifiez les données qui sont inutiles à la résolution du problème.
+		</div>
+
+		<div class="exercise-text">
+			Une voiture fait 58 km/L. Le chauffeur parcourt 230 km à une vitesse moyenne de 95 km/h. Combien l’essence lui a-t-il coûté si l’essence coûte 0,56 $ le litre ?
+		</div>
+
+		<div inbook-workbook-input persist-to="input5"></div>
+
+		<div vcollapse="ans.input5.showSolution">
+			<div class="show-solution-btn" ng-click="ans.input5.showSolution = true">
+				Vérifier Solution
+			</div>
+		</div>
+
+		<div vcollapse="!ans.input5.showSolution">
+			<div class="solution-body">
+				{{ans.input5.solution}}
+			</div>
+		</div>
+
+	</div>
+
+	<div id="continue" class="mt6 center">
+		<div inbook-nextbtn="scene"></div>
+	</div>
 </div>

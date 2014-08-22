@@ -177,7 +177,10 @@ ul.basic-list   {
   padding:        2 * @sizer-base;
   padding-right:  0;
   padding-left:   4 * @sizer-base;
-  
+}
+
+ul.basic-list   {  
+  list-style-type: none;
   li { 
     padding:        8px 0;
     padding-left:   6 * @sizer-base;
@@ -189,11 +192,6 @@ ul.basic-list   {
       margin-left:     2 * @sizer-base;
     }
   }
-
-}
-ul.basic-list   {  
-  list-style-type: none;
-
 }
 
 .vert-add  {
@@ -213,6 +211,17 @@ ul.basic-list   {
       padding:6px 8px;
       width:  100px;
       vertical-align: top;
+
+      &.small-cell{
+        width: 75px;
+      }
+      &.medium-cell{
+        width: 125px;
+      }
+      &.large-cell{
+        width: 175px;
+      }
+
   }
   &.unbordered {
     td {
