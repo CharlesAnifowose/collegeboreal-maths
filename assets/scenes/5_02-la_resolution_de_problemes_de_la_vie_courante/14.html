@@ -1,20 +1,131 @@
-        <link rel='stylesheet' type='text/css' href="lesson.css">
-        <link rel="stylesheet" type="text/css" href="style.css">
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<div 	 gseq 
+		 class="page-layout"
+		 ng-init="
+		 ans={};
+		 ans.input1 = {
+			 showSolution: false,
+				solution 	: '6 pommes ; 3 branches de céleri ; 3 échalotes ; 270 g de tofu ; 375 mL de noix de Grenoble ; 48 mL de persil ; 45 mL de jus de citron ; 187,5 mL de mayonnaise ; 90 mL de crème'
+		};
+		 ans.input2 = {
+			 showSolution: false,
+				solution 	: '481,62 $'
+		};
+		 ans.input3 = {
+			 showSolution: false,
+				solution 	: '641,33 $ par mois'
+		};
 
+	">
 
-<div class="page-layout">
+	<div gdirections>
+		<div el=".exercise-num" duration="0.8" ease="power4-in-out" presets="[fromTransparent]"></div>
 
-  <div class="header-section">EXERCICE 3</div>
+		<div duration="0.45"></div>
 
+		<div el=".anim-01" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
 
-  <div class="para">Résolvez en appliquant les étapes de la résolution de problèmes.</div>
+		<div duration="1"></div>
 
-  <div class="para">(a) Trouvez la quantité de chaque ingrédient nécessaire pour faire la recette suivante si on veut l’augmenter d’une fois et demie. La recette exige quatre pommes rouges coupées en dés, deux branches de céleri coupées en julienne, deux échalotes hachées, 180 grammes de tofu coupé en petits cubes, 250 mL de noix Grenoble, 32 mL de persil frais haché, 30 mL de jus de citron, 125 mL de mayonnaise et 60 mL de crème sûre.</div>
+		<div el=".anim-02" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
 
-  <div class="para">(b) Les achats suivants ont été faits à New York. Que représentent-ils en argent canadien si le dollar canadien vaut 0,7052 $ américain ?<br>Des espadrilles : 37,95 $ ; des souliers : 28,49 $ ; une robe : 65,29 $ ; une blouse: 18,79$;unmanteau: 127,45$etunsacàmain: 39,45$. La taxe est de 7 %.</div>
+		<div duration="1"></div>
 
-  <div class="para">(c) Une personne s’achète une auto neuve dont le prix est de 18 545 $. Calculez le coût mensuel pour son auto en tenant compte que les taxes s’élèvent à 15 %. Après avoir fait un dépôt, elle doit emprunter 15 000 $ à 8,5 % d’intérêt, ce qui représente des paiements de 472,50 $ par mois pendant 3 ans ; les assurances coûtent 1 150 $ par année ; le stationnement au travail lui coûte 55 $ par mois ; elle roule en moyenne 20 000 km par année, sa voiture fait 50 km/L et l’essence coûte en moyenne 0,54 $ le litre.</div>
+		<div el=".anim-03" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
 
+		<div duration="1"></div>
 
+		<div el="#continue" duration="1" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]" disable-scroll-focus="true"></div>
+
+	</div>
+
+	<div class="exercise-num">
+		EXERCISE 3
+	</div>
+
+	<div class="exercise-box anim-01">
+
+		<div class="exercise-header">
+			Résolvez en appliquant les étapes de la résolution de problèmes.
+		</div>
+
+		<div class="exercise-text">
+			Trouvez la quantité de chaque ingrédient nécessaire pour faire la recette suivante si on veut l’augmenter d’une fois et demie. La recette exige quatre pommes rouges coupées en dés, deux branches de céleri coupées en julienne, deux échalotes hachées, 180 grammes de tofu coupé en petits cubes, 250 mL de noix Grenoble, 32 mL de persil frais haché, 30 mL de jus de citron, 125 mL de mayonnaise et 60 mL de crème sûre.
+		</div>
+
+		<div inbook-workbook-input persist-to="input1"></div>
+
+		<div vcollapse="ans.input1.showSolution">
+			<div class="show-solution-btn" ng-click="ans.input1.showSolution = true">
+				Vérifier Solution
+			</div>
+		</div>
+
+		<div vcollapse="!ans.input1.showSolution">
+			<div class="solution-body">
+				{{ans.input1.solution}}
+			</div>
+		</div>
+
+	</div>
+
+	<hr class="question-divider anim-02" />
+
+	<div class="exercise-box anim-02">
+
+		<div class="exercise-header">
+			Résolvez en appliquant les étapes de la résolution de problèmes.
+		</div>
+
+		<div class="exercise-text">
+			Les achats suivants ont été faits à New York. Que représentent-ils en argent canadien si le dollar canadien vaut 0,7052 $ américain ?<br>
+			Des espadrilles : 37,95 $ ; des souliers : 28,49 $ ; une robe : 65,29 $ ; une blouse: 18,79$;unmanteau: 127,45$etunsacàmain: 39,45$. La taxe est de 7 %.
+		</div>
+
+		<div inbook-workbook-input persist-to="input2"></div>
+
+		<div vcollapse="ans.input2.showSolution">
+			<div class="show-solution-btn" ng-click="ans.input2.showSolution = true">
+				Vérifier Solution
+			</div>
+		</div>
+
+		<div vcollapse="!ans.input2.showSolution">
+			<div class="solution-body">
+				{{ans.input2.solution}}
+			</div>
+		</div>
+
+	</div>
+
+	<hr class="question-divider anim-03" />
+
+	<div class="exercise-box anim-03">
+
+		<div class="exercise-header">
+			Résolvez en appliquant les étapes de la résolution de problèmes.
+		</div>
+
+		<div class="exercise-text">
+			Une personne s’achète une auto neuve dont le prix est de 18 545 $. Calculez le coût mensuel pour son auto en tenant compte que les taxes s’élèvent à 15 %. Après avoir fait un dépôt, elle doit emprunter 15 000 $ à 8,5 % d’intérêt, ce qui représente des paiements de 472,50 $ par mois pendant 3 ans ; les assurances coûtent 1 150 $ par année ; le stationnement au travail lui coûte 55 $ par mois ; elle roule en moyenne 20 000 km par année, sa voiture fait 50 km/L et l’essence coûte en moyenne 0,54 $ le litre.
+		</div>
+
+		<div inbook-workbook-input persist-to="input3"></div>
+
+		<div vcollapse="ans.input3.showSolution">
+			<div class="show-solution-btn" ng-click="ans.input3.showSolution = true">
+				Vérifier Solution
+			</div>
+		</div>
+
+		<div vcollapse="!ans.input3.showSolution">
+			<div class="solution-body">
+				{{ans.input3.solution}}
+			</div>
+		</div>
+
+	</div>
+
+	<div id="continue" class="mt6 center">
+		<div inbook-nextbtn="scene"></div>
+	</div>
 </div>

@@ -1,20 +1,115 @@
-        <link rel='stylesheet' type='text/css' href="lesson.css">
-        <link rel="stylesheet" type="text/css" href="style.css">
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<div 	 gseq 
+		 class="page-layout"
+		 ng-init="
+		 ans={};
+		 ans.input1 = {
+			 showSolution: false
+		};
+		 ans.input2 = {
+			 showSolution: false
+		};
 
+	">
 
-<div class="page-layout">
+	<div gdirections>
+		<div el=".exercise-num" duration="0.8" ease="power4-in-out" presets="[fromTransparent]"></div>
 
-  <div class="header-section">EXERCICE 1</div>
+		<div duration="0.45"></div>
 
+		<div el=".anim-01" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
 
-  <div class="para">Interprétez les problèmes en langage mathématique en organisant les données sous forme de tableau. Faites toujours une estimation de la réponse avant d’effectuer les calculs avec la calculatrice.</div>
+		<div duration="1"></div>
 
-  <div class="para">(a) Un homme à sa retraite qui s’intéresse aux oiseaux décide de s’équiper de mangeoires et de maisons d’oiseaux. Il veut construire lui-même 4 maisons. Il commence par dessiner un plan.</div>
+		<div el=".anim-02" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
 
-  <img ng-src="{{imgUrl}}5-02-05.png" />
+		<div duration="1"></div>
 
+		<div el="#continue" duration="1" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]" disable-scroll-focus="true"></div>
 
-  <div class="para">Il sait que le cèdre est le meilleur choix de bois. Il achètera des planches de 19 cm de largeur et 1,8 m de longueur. Le cèdre coûte 15,00 $ la planche. Il aura aussi besoin d’une boîte de clous d’aluminium qui coûte 4,89 $. Il achètera 2 mangeoires, une de 14,95 $ et l’autre de 8,99 $. Il achètera aussi un sac de nourriture de 18 kg qu’il payera 12,49 $. Il croit que ce projet lui coûtera environ 150,00 $. A-t-il raison ? Calculez la quantité de bois nécessaire en m2 et ajouter 10 % pour la perte. N’oubliez pas d’ajouter les taxes de 15%.</div>
+	</div>
 
+	<div class="exercise-num">
+		EXERCISE 1
+	</div>
+
+	<div class="exercise-box anim-01">
+
+		<div class="exercise-header">
+			Interprétez les problèmes en langage mathématique en organisant les données sous forme de tableau. Faites toujours une estimation de la réponse avant d’effectuer les calculs avec la calculatrice.
+		</div>
+
+		<div class="exercise-text">
+			Un homme à sa retraite qui s’intéresse aux oiseaux décide de s’équiper de mangeoires et de maisons d’oiseaux. Il veut construire lui-même 4 maisons. Il commence par dessiner un plan.
+		</div>
+
+		<div class="exercise-text">
+		  <img ng-src="{{imgUrl}}5-02-05.png" />
+		</div>
+
+		<div class="exercise-text">
+			Il sait que le cèdre est le meilleur choix de bois. Il achètera des planches de 19 cm de largeur et 1,8 m de longueur. Le cèdre coûte 15,00 $ la planche. Il aura aussi besoin d’une boîte de clous d’aluminium qui coûte 4,89 $. Il achètera 2 mangeoires, une de 14,95 $ et l’autre de 8,99 $. Il achètera aussi un sac de nourriture de 18 kg qu’il payera 12,49 $. Il croit que ce projet lui coûtera environ 150,00 $. A-t-il raison ? Calculez la quantité de bois nécessaire en m2 et ajouter 10 % pour la perte. N’oubliez pas d’ajouter les taxes de 15%.
+		</div>
+
+		<div inbook-workbook-input persist-to="input1"></div>
+
+		<div vcollapse="ans.input1.showSolution">
+			<div class="show-solution-btn" ng-click="ans.input1.showSolution = true">
+				Vérifier Solution
+			</div>
+		</div>
+
+		<div vcollapse="!ans.input1.showSolution">
+			<div class="solution-body">
+				116,52 $
+			</div>
+		</div>
+
+	</div>
+
+	<hr class="question-divider anim-02" />
+
+	<div class="exercise-box anim-02">
+
+		<div class="exercise-header">
+			Interprétez les problèmes en langage mathématique en organisant les données sous forme de tableau. Faites toujours une estimation de la réponse avant d’effectuer les calculs avec la calculatrice.
+		</div>
+
+		<div class="exercise-text">
+			Trouvez le coût d’un projet ou d’une activité de votre choix. Voici quelques exemples :
+		</div>
+
+		<div class="exercise-text">
+			<ul class="basic-list" style="text-align: left">
+				<li>un projet de construction : une niche, un patio, un meuble, etc.</li>
+				<li>un projet de rénovation</li>
+				<li>un projet de couture</li>
+				<li>l’organisation d’une activité : une fête, un voyage, etc.</li>
+				<li>l’ameublement d’une pièce</li>
+			</ul>
+		</div>
+
+		<div class="exercise-text">
+			Vous n’êtes pas tenu de choisir parmi ces exemples. Vérifiez avec un formateur si vous n’êtes pas sûr de votre choix. Vous pouvez vous inspirer de catalogues, de revues ou de dépliants publicitaires.
+		</div>
+
+		<div inbook-workbook-input persist-to="input2"></div>
+
+		<div vcollapse="ans.input2.showSolution">
+			<div class="show-solution-btn" ng-click="ans.input2.showSolution = true">
+				Vérifier Solution
+			</div>
+		</div>
+
+		<div vcollapse="!ans.input2.showSolution">
+			<div class="solution-body">
+				Fait corriger par un formateur
+			</div>
+		</div>
+
+	</div>
+
+	<div id="continue" class="mt6 center">
+		<div inbook-nextbtn="scene"></div>
+	</div>
 </div>
+
