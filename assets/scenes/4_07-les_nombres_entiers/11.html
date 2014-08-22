@@ -5,10 +5,6 @@
 			ordered=true
 			no-remove=true>
 
-		<div class="para">
-			Nommez l’opposé de chacun des nombres suivants
-		</div>
-
 		<div 	inbook-questionseries-item level="1"
 				ng-init="
 					ans={};
@@ -17,28 +13,35 @@
 					ans.val = 27;
 				">
 
-				<div class="type-small bold">
+				<div class="exercise-box">
+					<div class="exercise-header">
+						Nommez l’opposé de chacun des nombres suivants
+					</div>
 
-					<div class="ib">
-						{{ans.num}}
+
+					<div class="exercise-text">
+
+						<div class="ib">
+							{{ans.num}}
+						</div>
+						<div class="ib">
+							<div class="ml2 mr2">&equals;</div>
+						</div>
+						<div class="ib">
+							<div 	inbook-answerbox-fill="ans.val"
+									class="type-small"
+									input-class="type-small"
+									on-correct="question.markAsCorrect()"
+									on-incorrect="question.markAsIncorrect()"></div>
+						</div>
+
 					</div>
-					<div class="ib">
-						<div class="ml2 mr2">&equals;</div>
-					</div>
-					<div class="ib">
-						<div 	inbook-answerbox-fill="ans.val"
-								class="type-small"
-								input-class="type-small"
-								on-correct="question.markAsCorrect()"
-								on-incorrect="question.markAsIncorrect()"></div>
+
+					<div class="mt4">
+						<div inbook-nextbtn="question"></div>
 					</div>
 
 				</div>
-
-				<div class="mt4">
-					<div inbook-nextbtn="question"></div>
-				</div>
-
 		</div>
 
 		<div 	inbook-questionseries-item level="2"
@@ -48,8 +51,12 @@
 					ans.num = 27;
 					ans.val = -27;
 				">
+				<div class="exercise-box">
+					<div class="exercise-header">
+						Nommez l’opposé de chacun des nombres suivants
+					</div>
 
-				<div class="type-small bold">
+				<div class="exercise-text">
 
 					<div class="ib">
 						{{ans.num}}
@@ -69,6 +76,8 @@
 
 				<div class="mt4">
 					<div inbook-nextbtn="question"></div>
+				</div>
+
 				</div>
 
 		</div>
@@ -80,8 +89,12 @@
 					ans.num = -40;
 					ans.val = 40;
 				">
+				<div class="exercise-box">
+					<div class="exercise-header">
+						Nommez l’opposé de chacun des nombres suivants
+					</div>
 
-				<div class="type-small bold">
+				<div class="exercise-text">
 
 					<div class="ib">
 						{{ans.num}}
@@ -101,6 +114,8 @@
 
 				<div class="mt4">
 					<div inbook-nextbtn="question"></div>
+				</div>
+
 				</div>
 
 		</div>
@@ -112,8 +127,12 @@
 					ans.num = 0;
 					ans.val = 0;
 				">
+				<div class="exercise-box">
+					<div class="exercise-header">
+						Nommez l’opposé de chacun des nombres suivants
+					</div>
 
-				<div class="type-small bold">
+				<div class="exercise-text">
 
 					<div class="ib">
 						{{ans.num}}
@@ -133,6 +152,8 @@
 
 				<div class="mt4">
 					<div inbook-nextbtn="question"></div>
+				</div>
+
 				</div>
 
 		</div>
@@ -144,8 +165,12 @@
 					ans.num = -198;
 					ans.val = 198;
 				">
+				<div class="exercise-box">
+					<div class="exercise-header">
+						Nommez l’opposé de chacun des nombres suivants
+					</div>
 
-				<div class="type-small bold">
+				<div class="exercise-text">
 
 					<div class="ib">
 						{{ans.num}}
@@ -165,6 +190,8 @@
 
 				<div class="mt4">
 					<div inbook-nextbtn="question"></div>
+				</div>
+
 				</div>
 
 		</div>
@@ -176,8 +203,12 @@
 					ans.num = 39;
 					ans.val = -39;
 				">
+				<div class="exercise-box">
+					<div class="exercise-header">
+						Nommez l’opposé de chacun des nombres suivants
+					</div>
 
-				<div class="type-small bold">
+				<div class="exercise-text">
 
 					<div class="ib">
 						{{ans.num}}
@@ -199,6 +230,7 @@
 					<div inbook-nextbtn="question"></div>
 				</div>
 
+				</div>
 		</div>
 
 	</div>

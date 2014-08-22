@@ -1,152 +1,244 @@
-<div class="page-layout">
-	
-	<div 	inbook-questionseries
-			on-complete="scene.markAsCompleted();"
-			ordered=true
-			no-remove=true>
+<div 	 gseq 
+		 class="page-layout"
+		 ng-init="
+		 ans={};
+		 ans.input1 = {
+			 showSolution: false,
+				question	: '38 °C ou 84 °C',
+				solution 	: '84°C'
+		};
+		 ans.input2 = {
+			 showSolution: false,
+				question	: '0 °C ou -23 °C',
+				solution 	: '0 °C'
+		};
+		 ans.input3 = {
+			 showSolution: false,
+				question	: '-18 °C ou -8 °C',
+				solution 	: '-8 °C'
+		};
+		 ans.input4 = {
+			 showSolution: false,
+				question	: '50 °C ou -5 °C',
+				solution 	: '50 °C'
+		};
+		 ans.input5 = {
+			 showSolution: false,
+				question	: '-12°C ou -21°C',
+				solution 	: '-12°C'
+		};
+		 ans.input6 = {
+			 showSolution: false,
+				question	: '15 °C ou 51 °C',
+				solution 	: '51 °C'
+		};
 
-		<div class="para">
-			Identifiez la température la plus élevée.
+	">
+
+	<div gdirections>
+		<div el=".exercise-num" duration="0.8" ease="power4-in-out" presets="[fromTransparent]"></div>
+
+		<div duration="0.45"></div>
+
+		<div el=".anim-01" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+		<div duration="1"></div>
+
+		<div el=".anim-02" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+		<div duration="1"></div>
+
+		<div el=".anim-03" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+		<div duration="1"></div>
+
+		<div el=".anim-04" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+		<div duration="1"></div>
+
+		<div el=".anim-05" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+		<div duration="1"></div>
+
+		<div el=".anim-06" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+		<div duration="1"></div>
+
+		<div el="#continue" duration="1" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]" disable-scroll-focus="true"></div>
+
+	</div>
+
+	<div class="exercise-num">
+		EXERCISE 1.3
+	</div>
+
+	<div class="exercise-box anim-01">
+
+		<div class="exercise-header">
+			Mettez en ordre croissant.
 		</div>
 
-		<div 	inbook-questionseries-item level="1"
-				ng-init="
-					ans={};
-					ans.temp1 = 38;
-					ans.temp2 = 84;
-				">
-
-				<div class="type-small bold">
-
-					<div class="ib">
-						{{ans.temp1}}&deg;C
-					</div>
-					<div class="ib">
-						<div class="ml2 mr2">ou</div>
-					</div>
-					<div class="ib">
-						{{ans.temp2}}&deg;C
-					</div>
-
-				</div>
-
+		<div class="exercise-text">
+			{{ans.input1.question}}
 		</div>
 
-		<div 	inbook-questionseries-item level="2"
-				ng-init="
-					ans={};
-					ans.temp1 = 0;
-					ans.temp2 = -23;
-				">
+		<div inbook-workbook-input persist-to="input1"></div>
 
-				<div class="type-small bold">
-
-					<div class="ib">
-						{{ans.temp1}}&deg;C
-					</div>
-					<div class="ib">
-						<div class="ml2 mr2">ou</div>
-					</div>
-					<div class="ib">
-						{{ans.temp2}}&deg;C
-					</div>
-
-				</div>
-
+		<div vcollapse="ans.input1.showSolution">
+			<div class="show-solution-btn" ng-click="ans.input1.showSolution = true">
+				Vérifier Solution
+			</div>
 		</div>
 
-		<div 	inbook-questionseries-item level="3"
-				ng-init="
-					ans={};
-					ans.temp1 = -18;
-					ans.temp2 = -8;
-				">
-
-				<div class="type-small bold">
-
-					<div class="ib">
-						{{ans.temp1}}&deg;C
-					</div>
-					<div class="ib">
-						<div class="ml2 mr2">ou</div>
-					</div>
-					<div class="ib">
-						{{ans.temp2}}&deg;C
-					</div>
-
-				</div>
-
-		</div>
-
-		<div 	inbook-questionseries-item level="4"
-				ng-init="
-					ans={};
-					ans.temp1 = 50;
-					ans.temp2 = -5;
-				">
-
-				<div class="type-small bold">
-
-					<div class="ib">
-						{{ans.temp1}}&deg;C
-					</div>
-					<div class="ib">
-						<div class="ml2 mr2">ou</div>
-					</div>
-					<div class="ib">
-						{{ans.temp2}}&deg;C
-					</div>
-
-				</div>
-
-		</div>
-
-		<div 	inbook-questionseries-item level="5"
-				ng-init="
-					ans={};
-					ans.temp1 = -12;
-					ans.temp2 = -21;
-				">
-
-				<div class="type-small bold">
-
-					<div class="ib">
-						{{ans.temp1}}&deg;C
-					</div>
-					<div class="ib">
-						<div class="ml2 mr2">ou</div>
-					</div>
-					<div class="ib">
-						{{ans.temp2}}&deg;C
-					</div>
-
-				</div>
-
-		</div>
-
-		<div 	inbook-questionseries-item level="6"
-				ng-init="
-					ans={};
-					ans.temp1 = 15;
-					ans.temp2 = 51;
-				">
-
-				<div class="type-small bold">
-
-					<div class="ib">
-						{{ans.temp1}}&deg;C
-					</div>
-					<div class="ib">
-						<div class="ml2 mr2">ou</div>
-					</div>
-					<div class="ib">
-						{{ans.temp2}}&deg;C
-					</div>
-
-				</div>
-
+		<div vcollapse="!ans.input1.showSolution">
+			<div class="solution-body">
+				{{ans.input1.solution}}
+			</div>
 		</div>
 
 	</div>
 
+	<hr class="question-divider anim-02" />
+
+	<div class="exercise-box anim-02">
+
+		<div class="exercise-header">
+			Mettez en ordre croissant.
+		</div>
+
+		<div class="exercise-text">
+			{{ans.input2.question}}
+		</div>
+
+		<div inbook-workbook-input persist-to="input2"></div>
+
+		<div vcollapse="ans.input2.showSolution">
+			<div class="show-solution-btn" ng-click="ans.input2.showSolution = true">
+				Vérifier Solution
+			</div>
+		</div>
+
+		<div vcollapse="!ans.input2.showSolution">
+			<div class="solution-body">
+				{{ans.input2.solution}}
+			</div>
+		</div>
+
+	</div>
+
+	<hr class="question-divider anim-03" />
+
+	<div class="exercise-box anim-03">
+
+		<div class="exercise-header">
+			Mettez en ordre croissant.
+		</div>
+
+		<div class="exercise-text">
+			{{ans.input3.question}}
+		</div>
+
+		<div inbook-workbook-input persist-to="input3"></div>
+
+		<div vcollapse="ans.input3.showSolution">
+			<div class="show-solution-btn" ng-click="ans.input3.showSolution = true">
+				Vérifier Solution
+			</div>
+		</div>
+
+		<div vcollapse="!ans.input3.showSolution">
+			<div class="solution-body">
+				{{ans.input3.solution}}
+			</div>
+		</div>
+
+	</div>
+
+	<hr class="question-divider anim-04" />
+
+	<div class="exercise-box anim-04">
+
+		<div class="exercise-header">
+			Mettez en ordre croissant.
+		</div>
+
+		<div class="exercise-text">
+			{{ans.input4.question}}
+		</div>
+
+		<div inbook-workbook-input persist-to="input4"></div>
+
+		<div vcollapse="ans.input4.showSolution">
+			<div class="show-solution-btn" ng-click="ans.input4.showSolution = true">
+				Vérifier Solution
+			</div>
+		</div>
+
+		<div vcollapse="!ans.input4.showSolution">
+			<div class="solution-body">
+				{{ans.input4.solution}}
+			</div>
+		</div>
+
+	</div>
+
+	<hr class="question-divider anim-05" />
+
+	<div class="exercise-box anim-05">
+
+		<div class="exercise-header">
+			Mettez en ordre croissant.
+		</div>
+
+		<div class="exercise-text">
+			{{ans.input5.question}}
+		</div>
+
+		<div inbook-workbook-input persist-to="input5"></div>
+
+		<div vcollapse="ans.input5.showSolution">
+			<div class="show-solution-btn" ng-click="ans.input5.showSolution = true">
+				Vérifier Solution
+			</div>
+		</div>
+
+		<div vcollapse="!ans.input5.showSolution">
+			<div class="solution-body">
+				{{ans.input5.solution}}
+			</div>
+		</div>
+
+	</div>
+
+	<hr class="question-divider anim-06" />
+
+	<div class="exercise-box anim-06">
+
+		<div class="exercise-header">
+			Mettez en ordre croissant.
+		</div>
+
+		<div class="exercise-text">
+			{{ans.input6.question}}
+		</div>
+
+		<div inbook-workbook-input persist-to="input6"></div>
+
+		<div vcollapse="ans.input6.showSolution">
+			<div class="show-solution-btn" ng-click="ans.input6.showSolution = true">
+				Vérifier Solution
+			</div>
+		</div>
+
+		<div vcollapse="!ans.input6.showSolution">
+			<div class="solution-body">
+				{{ans.input6.solution}}
+			</div>
+		</div>
+
+	</div>
+
+	<div id="continue" class="mt6 center">
+		<div inbook-nextbtn="scene"></div>
+	</div>
 </div>
