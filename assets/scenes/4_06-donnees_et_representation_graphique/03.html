@@ -1,4 +1,5 @@
-<div 	class="page-layout" 
+<div 	 gseq 
+		class="page-layout"
 		ng-init="
 
 			testResults = [
@@ -9,93 +10,178 @@
 				58, 70, 46, 67, 42, 84, 87, 78, 38, 45, 58, 61, 25, 55
 			];
 
+			ans.input1 = {
+				 showSolution: false,
+					question	: '',
+					solution 	: ''
+			};
+			 ans.input2 = {
+				 showSolution: false,
+					question	: '',
+					solution 	: ''
+			};
+			 ans.input3 = {
+				 showSolution: false,
+					question	: '',
+					solution 	: ''
+			};
+
+		"ng-resettable-init="
+
+			ans={
+				input1:{
+					showSolution: false;
+				};
+			};
+
 		">
 
-	<div 	inbook-questionseries
-			on-complete="scene.markAsCompleted();"
-			ordered=true
-			no-remove=true>
+		<div gdirections>
+			<div el=".exercise-num" duration="0.8" ease="power4-in-out" presets="[fromTransparent]"></div>
 
-			<div class="para">
+			<div duration="0.45"></div>
+
+			<div el=".anim-01" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-02" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div el="#continue" duration="1" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]" disable-scroll-focus="true"></div>	
+
+		</div>
+
+		<script type="text/inbook-javascript" inbook-javascript>
+		var grid = scope.grid = [
+		   ['20-30',   	7,       	'10'	]
+		  ,['30-40',   	12,       	'17,14'	]
+		  ,['40-50',   	8,       	'11,43'	]
+		  ,['50-60',   	8,       	'11,43' ]
+		  ,['60-70',   	8,       	'11,43'	]
+		  ,['70-80',   	9,       	'12,86'	]
+		  ,['80-90',   	9,       	'12,86'	]
+		  ,['90-100',  	9,       	'12,86'	]
+		];
+		</script>
+
+
+		<div class="exercise-num">
+			EXERCISE 1
+		</div>
+
+
+		<div class="exercise-box anim-01">
+
+			<div class="exercise-text">
 				Voici les résultats d’un test de chimie obtenus par 70 étudiants :
 			</div>
 
-			<div class="para">
-				<span ng-repeat="result in testResults">{{testResults[$index]}}, </span>
+			<div class="exercise-text">
+				<div class="mt2 mb2" style="width:68%;margin:0 auto;">
+					<div class="ib" ng-repeat="result in testResults track by $index">
+						{{testResults[$index]}}, 
+					</div>
+				</div>
 			</div>
 
-			<div class="para">
+			<div class="exercise-text">
 				Organisez les données en ordre croissant et ensuite remplissez le tableau de
 				fréquences et de fréquences relatives.
 			</div>
 
-			<div class="para">
-
-				<table>
+			<div class="exercise-text">
+				<table class="basic-table cells-medium" style="margin: 0 auto;">
 					<tr>
 						<td class="bold" colspan="3">
 							Résultat du test de chimie
 						</td>
-					</tr>
+					</tr>	
 					<tr style="background-color:#ddd">
-						<td>
-							Note (%)
+					  <td>Note (%)</td>
+					  <td>Fréquences</td>
+					  <td>Fréquences Relatives (%)</td>
+					</tr>
+					<tr ng-repeat="row in grid track by $index">
+					  	<td>
+					   		{{grid[$index][0]}}
+					  	</td>
+					  	<td>
+					 		<input type="text" class="clear-input"  />
+					 		<!-- ng-model="grid[$index][1]" -->
 						</td>
 						<td>
-							Fréquences
-						</td>
-						<td>
-							Fréquences Relatives (%)
+					 		<input type="text" class="clear-input"/>
+					 		 <!-- ng-model="grid[$index][2]"  -->
 						</td>
 					</tr>
-					<tr>
-						<td>20 - 30</td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>30 - 40</td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>40 - 50</td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>50 - 60</td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>60 - 70</td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>70 - 80</td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>90 - 100</td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>20 - 30</td>
-						<td></td>
-						<td></td>
-					</tr>
-				</table>	
-
+				</table>
 			</div>
 
-			<div class="para">
+			<div vcollapse="ans.input3.showSolution">
+				<div class="show-solution-btn mt6" ng-click="ans.input3.showSolution = true">
+					Vérifier Solution
+				</div>
+			</div>
+
+			<div vcollapse="!ans.input3.showSolution">
+				<div class="solution-body">
+
+				<table class="basic-table cells-medium" style="margin: 0 auto;">
+					<tr>
+						<td class="bold" colspan="3">
+							Résultat du test de chimie
+						</td>
+					</tr>	
+					<tr style="background-color:#ddd">
+					  <td>Note (%)</td>
+					  <td>Fréquences</td>
+					  <td>Fréquences Relatives (%)</td>
+					</tr>
+					<tr ng-repeat="row in grid track by $index">
+					  	<td>
+					   		{{grid[$index][0]}}
+					  	</td>
+					  	<td>
+					 		{{grid[$index][1]}}
+						</td>
+						<td>
+					 		{{grid[$index][2]}}
+						</td>
+					</tr>
+				</table>
+
+				</div>
+			</div>
+
+
+		</div>
+
+		<hr class="question-divider anim-02" />
+
+		<div class="exercise-box anim-02">
+
+			<div class="exercise-header">
 				Construisez un histogramme à partir du tableau de fréquences cidessus.
 			</div>
 
-	</div>
+			<div inbook-workbook-draw persist-to="input1"></div>
 
+			<div vcollapse="ans.input1.showSolution">
+				<div class="show-solution-btn" ng-click="ans.input1.showSolution = true">
+					Vérifier Solution
+				</div>
+			</div>
+
+			<div vcollapse="!ans.input1.showSolution">
+				<div class="solution-body">
+					<img ng-src="{{imgUrl}}exercise-01-01.png" />
+ 				</div>
+			</div>
+
+		</div>
+
+			
+		<div id="continue" class="mt6 center">
+			<div inbook-nextbtn="scene"></div>
+		</div>
 </div>

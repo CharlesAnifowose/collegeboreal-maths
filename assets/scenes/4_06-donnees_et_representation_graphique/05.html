@@ -1,79 +1,186 @@
-<div 	class="page-layout" 
+<div 	 gseq 
+		class="page-layout" 
 		ng-init="
 
-			responses = [
+			results = [
 				S, S, T, T, S, I, I, P, S, P, S, T,
 				P, S, P, P, P, S, T, S, I, I, S, S,
 				I, I, T, T, S, P, T, S, I, T, T, I,
 				T, P, S, S, I, I, P, T, S
 			];
 
+			ans.input1 = {
+				 showSolution: false,
+					question	: '',
+					solution 	: ''
+			};
+			 ans.input2 = {
+				 showSolution: false,
+					question	: '',
+					solution 	: ''
+			};
+
+		"ng-resettable-init="
+
+			ans={
+				input1:{
+					showSolution: false;
+				};
+			};
+
 		">
 
-	<div 	inbook-questionseries
-			on-complete="scene.markAsCompleted();"
-			ordered=true
-			no-remove=true>
+		<div gdirections>
+			<div el=".exercise-num" duration="0.8" ease="power4-in-out" presets="[fromTransparent]"></div>
 
-			<div class="para">
+			<div duration="0.45"></div>
+
+			<div el=".anim-01" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-02" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-03" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div el="#continue" duration="1" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]" disable-scroll-focus="true"></div>	
+
+		</div>
+
+		<script type="text/inbook-javascript" inbook-javascript>
+		var grid = scope.grid = [
+		   ['Très satisfait',   	7,       	'10'	]
+		  ,['Satisfait',   			12,       	'17,14'	]
+		  ,['Peu satisfait',   		8,       	'11,43'	]
+		  ,['Insatisfait',   		8,       	'11,43' ]
+		];
+		</script>
+
+
+		<div class="exercise-num">
+			EXERCISE 3
+		</div>
+
+
+		<div class="exercise-box anim-01">
+
+			<div class="exercise-text">
 				Pour connaître le résultat d’un nouveau produit de beauté sur le marché, on a
 				fait un sondage auprès de 45 femmes choisies au hasard. Les résultats
 				obtenus sont les suivants :
 			</div>
 
-			<div class="para">
-				<div class="mt1">
-					(T = très satisfait, S = satisfait, P = peu satisfait, I = insatisfait)
-				</div>
-				<div>
-					<span ng-repeat="response in responses">{{responses}}, </span>
+			<div class="exercise-text">
+				(T = très satisfait, S = satisfait, P = peu satisfait, I = insatisfait)
+				<div class="mt2 mb2" style="width:68%;margin:0 auto;">
+					S, S, T, T, S, I, I, P, S, P, S, T,
+					P, S, P, P, P, S, T, S, I, I, S, S,
+					I, I, T, T, S, P, T, S, I, T, T, I,
+					T, P, S, S, I, I, P, T, S
+					<!-- <div class="ib" ng-repeat="item in results track by $index">
+						{{responses[$index]}},
+					</div> -->
 				</div>
 			</div>
 
-			<div class="para">
+			<div class="exercise-text">
 				Utilisez la liste pour compléter le tableau de distribution de fréquences
 				et de fréquences relatives.
 			</div>
 
-			<div class="para">
-				<table>
-					<tr>
-						<td class="bold" colspan="3">
-							Répartition des bébés selon leurs tailles
-						</td>
-					</tr>
-					<tr>
-						<td>Tailles</td>
-						<td>Fréquences</td>
-						<td>Fréquences relatives (%)</td>
-					</tr>
-					<tr>
-						<td>Très satisfait</td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Satisfait</td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Peu satisfait</td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>Insatisfait</td>
-						<td></td>
-						<td></td>
-					</tr>
-				</table>
+			<table class="basic-table cells-medium" style="margin: 0 auto;">
+				<tr>
+					<td class="bold" colspan="3">
+						Répartition des bébés selon leurs tailles
+					</td>
+				</tr>	
+				<tr style="background-color:#ddd">
+				 	<td>Degré de satisfaction</td>
+					<td>Fréquences</td>
+					<td>Fréquences relatives (%)</td>
+				</tr>
+				<tr ng-repeat="row in grid track by $index">
+				  	<td>
+				   		{{grid[$index][0]}}
+				  	</td>
+				  	<td>
+				 		<input type="text" class="clear-input"  />
+				 		<!-- ng-model="grid[$index][1]" -->
+					</td>
+					<td>
+				 		<input type="text" class="clear-input"/>
+				 		 <!-- ng-model="grid[$index][2]"  -->
+					</td>
+				</tr>
+			</table>	
+
+			<div inbook-workbook-input persist-to="input1"></div>
+
+			<div vcollapse="ans.input1.showSolution">
+				<div class="show-solution-btn mt6" ng-click="ans.input1.showSolution = true">
+					Vérifier Solution
+				</div>
 			</div>
-			
-			<div class="para">
+
+			<div vcollapse="!ans.input1.showSolution">
+				<div class="solution-body">
+					
+					<table class="basic-table cells-medium" style="margin: 0 auto;">
+						<tr>
+							<td class="bold" colspan="3">
+								Répartition des bébés selon leurs tailles
+							</td>
+						</tr>	
+						<tr style="background-color:#ddd">
+						 	<td>Degré de satisfaction</td>
+							<td>Fréquences</td>
+							<td>Fréquences relatives (%)</td>
+						</tr>
+						<tr ng-repeat="row in grid track by $index">
+						  	<td>
+						   		{{grid[$index][0]}}
+						  	</td>
+						  	<td>
+						 		{{grid[$index][1]}}
+							</td>
+							<td>
+						 		{{grid[$index][2]}}
+							</td>
+						</tr>
+					</table>	
+
+ 				</div>
+			</div>
+		</div>
+
+		<hr class="question-divider anim-02" />
+
+		<div class="exercise-box anim-02">
+
+			<div class="exercise-header">
 				Quelle est la fréquence relative de la modalité «Peu satisfait»?
 			</div>
-			
-	</div>
 
+			<div inbook-workbook-input persist-to="input2"></div>
+
+			<div vcollapse="ans.input2.showSolution">
+				<div class="show-solution-btn" ng-click="ans.input2.showSolution = true">
+					Vérifier Solution
+				</div>
+			</div>
+
+			<div vcollapse="!ans.input2.showSolution">
+				<div class="solution-body">
+					20
+ 				</div>
+			</div>
+
+		</div>
+
+			
+		<div id="continue" class="mt6 center">
+			<div inbook-nextbtn="scene"></div>
+		</div>
 </div>
