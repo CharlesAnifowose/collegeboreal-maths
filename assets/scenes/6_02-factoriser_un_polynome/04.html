@@ -1,82 +1,184 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Module 6.05</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css" />
-        <link rel="stylesheet" type="text/css" href="assets/stylesheets/lesson.css" />
-    </head>
-    <body>
+<div class="page-layout">
 
-        <div class="exemple-frame">
-            <div>
-                Voici un autre exemple : 
-            </div>
-            </br>
-            <div>
-                B. Pour décomposer
-                <span math>21x^4</span>
-                <span math>y + 6x^3</span>
-                <span math>y^2</span>
-                <span math>+ 15x^2</span>
-                <span math>y^3</span>
-                par la mise en évidence d’un facteur 
-            </div>
-            <div>
-                commun, on doit : 
-            </div>
-            <ol>
+    <div class="header-section">
+        La mise en évidence du facteur commun
+    </div>
+
+    <div class="para">
+        On peut décomposer en facteurs un polynôme en mettant en évidence le facteur commun. 
+    </div>
+
+    <div class="exemple-frame">
+        <div class="exemple-header">
+            Exemples : 
+        </div>
+
+        <div class="para">
+            A. Pour décomposer en facteurs le polynôme <span math>10x^4</span>
+            <span math>- 15x^3</span>
+            <span math>+ 5x^2</span>
+            , on doit : 
+        </div>
+
+        <div class="para">
+            <ol class="basic-list">
                 <li>
+                    <div class="para">
+                        trouver le plus grand facteur commun (Ici, le signe de multiplication utilisé est le point.)
+                    </div>
+
+                    <div class="para">
+                        <img ng-src="{{imgUrl}}mm1-2.png"/>
+                    </div>
+                </li>
+                <div class="para">
+                    Donc, le plus grand facteur commun est 5 &sdot; x &sdot; x soit <span math>5x^2</span>. 
+                </div>
+                <li>
+                    <div class="para">
+                        diviser chaque terme du polynôme par le plus grand facteur commun, 
+                        soit <span math>5x^2</span>
+                    </div>
+                    <div class="para">
+                        <div class="ib ml2 mr2">
+                            <span math>(10x^4)/(5x^2)</span>
+                        </div>
+                        <div class="ib ml2 mr2">
+                            <span math>(15x^3)/(5x^2)</span>
+                        </div>
+                        <div class="ib ml2 mr2">
+                            <span math>(5x^2)/(5x^2)</span>
+                        </div>
+                        <div class="ib ml2 mr2">
+                            <span math>= (2x^2) - 3x + 1</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="para">
+                        écrire le plus grand facteur commun, soit <span math>5x^2</span>
+                        , suivi du quotient entre parenthèses 
+                    </div>
+                    <div class="para">
+                        Facteur commun (facteur trouvé après la division) 
+                    </div>
                     <div>
+                        <span math>5x^2</span>
+                        (<span math> 2x^2</span>
+                        - 3x + 1). 
+                    </div>
+                </li>
+            </ol>
+            <div class="para">
+                On vient donc de décomposer le polynôme <span math>10x^4 - 15x^3 + 5x^2</span>
+                par la mise en évidence d’un facteur commun. Pour vérifier on peut multiplier le facteur commun aux autres facteurs dans la parenthèse. Cette étape nous ramène à l’expression initiale <span math> 10x^4 - 15x^3 + 5x^2</span>
+            </div>
+        </div>
+    
+        <div class="exemple-header">
+            Voici un autre exemple : 
+        </div>
+        
+        <div class="para">
+            B. Pour décomposer <span math>(21x^4)y + (6x^3)y^2 + (15x^2)y^3</span>
+            par la mise en évidence d’un facteur commun, on doit :
+        </div>
+
+        <div class="para">
+            <ol class="basic-list">
+                <li>
+                    <div class="para">
                         trouver le plus grand facteur commun 
                     </div>
-                    <img ng-src="{{imgUrl}}mm1-3.png"/>
-                    <div>
-                        Donc, le plus grand facteur commun est <span math>3 ' x ' x ' y</span> soit <span math>3x^2</span>
-                        y; 
+
+                    <div class="para">
+                        <img ng-src="{{imgUrl}}mm1-3.png"/>
+                    </div>
+
+                    <div class="para">
+                        Donc, le plus grand facteur commun est <span math>2 "&sdot;" * "&sdot;" * "&sdot;" y</span> soit <span math>(3x^2)y</span>
                     </div>
                 </li>
                 <li>
-                    <div>
-                        diviser chaque terme du polynôme par le plus grand facteur commun, soit
+                    <div class="para">
+                        diviser chaque terme du polynôme par le plus grand facteur commun, soit <span math>3x^2y</span>
                     </div>
-                    <div>
-                        <span math> 3x^2y</span>
+                    <div class="para">
+                        <img ng-src="{{imgUrl}}mm1-4.png"/>
                     </div>
-                    <img ng-src="{{imgUrl}}mm1-4.png"/>
                 </li>
                 <li>
-                    <div>
+                    <div class="para">
                         écrire le plus grand facteur commun, soit <span math>3x^2y</span>
-                        , suivi du quotient entre 
+                        , suivi du quotient entre parenthèses <span math>3x^2y ( 7x^2 + 2xy + 5y^2 )</span>
                     </div>
-                    <div>
-                        parenthèses 
-                    </div>
-                    <div>
-                        <span math>3x^2y </span>
-                        (<span math>7x^2</span>
-                        <span math>+ 2xy + 5y^2</span>
-                        ). 
-                    </div>
-                    <div>
-                        Pour vérifier l’exactitude de la décomposition en facteurs d’un polynôme donné, on 
-                    </div>
-                    <div>
-                        multiplie les facteurs trouvés; le produit doit être égal au polynôme donné 
-                    </div>
-                    <div>
-                        initialement. 
-                    </div>
-                    <div>
-                        Ainsi, dans l’exemple précédent, on multiplie <span math>7x^2</span>
-                        + 2xy + <span math>5y^2</span>
-                        par <span math>3x^2y</span>
-                    </div>
-                    <img ng-src="{{imgUrl}}mm-5.png"/>
                 </li>
             </ol>
         </div>
-    </body>
-</html>
+
+        <div class="para">
+            Pour vérifier l’exactitude de la décomposition en facteurs d’un polynôme donné, on multiplie les facteurs trouvés; le produit doit être égal au polynôme donné initialement. 
+        </div>
+        <div class="para">
+            Ainsi, dans l’exemple précédent, on multiplie <span math>7x^2</span>
+            + 2xy + <span math>5y^2</span>
+            par <span math>3x^2y</span>
+        </div>
+        <div class="para">
+            <img ng-src="{{imgUrl}}mm1-5.png"/>
+        </div>
+        
+        <div class="exemple-header">
+            Voici d’autres exemples : 
+        </div>
+        </br>
+        <div>
+            A. 6x + 6y
+        </div>
+        <div>
+            6 est le plus grand facteur commun. 
+        </div>
+        <div> <span math>6x_6 + 6y_6</span> = x + y </div>
+        <div>
+            Les facteurs sont 6 (x + y). 
+        </div>
+        <div>
+            Vérification : 6 (x + y) = 6x + 6y 
+        </div>
+        </br>
+        <div>
+            B. Ka + K 
+        </div>
+        <div>
+            K est le facteur commun. 
+        </div>
+        <div>
+            <span math>Ka_K + K_K = a + 1 </span>
+        </div>
+        <div>
+            Les facteurs sont K (a + 1) 
+        </div>
+        <div>
+            Vérification : K (a + 1) = Ka + K 
+        </div>
+        </br>
+        <div>
+           C.<span math>15a^2x^2-30a^2x^3-75a^2x^5</span>
+        </div>
+        <div>
+            <span math>15a^2x^</span> est le plus grand facteur commun.
+        </div>
+        <img ng-src="{{imgUrl}}mm1-5.png"/>
+        <div>
+        Les facteurs sont : <span math>15a^2x^2 (1 - 2x - 5x^3) </span>
+        </div>
+        <div>
+            Vérification : 1 - 2x - <span math>5x^3</span> 
+        </div>
+        <div>
+            × <span math>15a^2x^2_15a^2x^2 - 30a^2x^3 - 75a^2x^5 </span> facteur commun
+                                                                         polynôme donné initialement 
+        </div>
+    </div>
+
+</div>
