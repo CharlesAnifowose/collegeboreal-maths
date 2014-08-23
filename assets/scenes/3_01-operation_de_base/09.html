@@ -2,7 +2,7 @@
     class="page-layout">
 
     <div gdirections>
-      <div el=".exercise-num"   duration="1" ease="power4-in-out" presets="[fromTransparent]"></div>
+      <div el=".exercise-num"   duration="1" ease="power4-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
 
     </div>
 
@@ -27,7 +27,7 @@
               <div gdirections>
                 <div duration="0.6"></div>
               
-                <div el="#fade" duration="1" presets="[fromTransparent]"></div>
+                <div el="#fade" duration="1" presets="[fromTransparent]" disable-scroll-focus="true"></div>
               </div>
 
   						<div id="fade">
@@ -309,6 +309,7 @@
 
   				<div 	gseq
                 inbook-questionseries-item level="15" 
+                key="true"
     						ng-init="
     							ans 		= 	{};
     							ans.num 	=  	719032;
@@ -329,7 +330,4 @@
 
 
 		</div>
-  <div id="continue" class="mt6 center">
-  <div inbook-nextbtn="scene"></div>
-  </div>
 </div>

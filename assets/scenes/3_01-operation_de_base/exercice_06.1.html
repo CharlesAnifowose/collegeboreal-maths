@@ -1,356 +1,83 @@
-<div 	gseq
-		class="page-layout" 
+<div 	class="page-layout" 
 		ng-init="
 			ans={};
 
-			ans.input1 = {
-				showSolution: false,
-				solution 	: '>'
-			};
-			ans.input2 = {
-				showSolution: false,
+			questions = [
+				{
+					num1:'6 000', num2:'5 400',
+					solution 	: '>'
+				},
+				{
+					num1:'3 999', num2:'4000',
 				solution 	: '<'
-			};
-			ans.input3 = {
-				showSolution: false,
+				},
+				{
+					num1:'652', num2:'652',
 				solution 	: '='
-			};
-			ans.input4 = {
-				showSolution: false,
+				},
+				{
+					num1:'5 900', num2:'6 000',
 				solution 	: '<'
-			};
-			ans.input5 = {
-				showSolution: false,
+				},
+				{
+					num1:'92', num2:'72',
 				solution 	: '>'
-			};
-			ans.input6 = {
-				showSolution: false,
+				},
+				{
+					num1:'7 000', num2:'8 000',
 				solution 	: '<'
-			};
-			ans.input7 = {
-				showSolution: false,
+				},
+				{
+					num1:'982', num2:'982',
 				solution 	: '='
-			};
-			ans.input8 = {
-				showSolution: false,
+				},
+				{
+					num1:'8 457', num2:'5 457',
 				solution 	: '>'
-			};
+				}
+			]
 		">
 
-		<div gdirections>
-			<div el=".exercise-num"   duration="0.8" ease="power4-in-out" presets="[fromTransparent]"></div>
-
-			<div duration="0.45"></div>
-
-			<div el=".anim-01" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
-				
-			<div duration="1"></div>
-
-			<div el=".anim-02" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
-
-			<div duration="1"></div>
-
-			<div el=".anim-03" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
-
-			<div duration="1"></div>
-
-			<div el=".anim-04" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
-
-			<div duration="1"></div>
-
-			<div el=".anim-05" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
-
-			<div duration="1"></div>
-
-			<div el=".anim-06" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
-
-			<div duration="1"></div>
-
-			<div el=".anim-07" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
-
-			<div duration="1"></div>
-
-			<div el=".anim-08" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
-
-			<div duration="1"></div>
-
-	      	<div el="#continue" duration="1" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]" disable-scroll-focus="true"></div>
-
-		</div>
 
 		<div class="exercise-num">
 			EXERCICE 6
 		</div>
 
-		<div class="exercise-box anim-01">
+		<div ng-repeat="question in questions">
 
-			<div class="exercise-header">
-				Comparez les nombres en insérant entre eux un des symboles : &gt;, &lt; ou =
-			</div>
+			<div class="exercise-box" >
 
-			<div class="exercise-text">
-				6 000 et 5 400
-			</div>
-
-			<div inbook-workbook-input persist-to="input1"></div>
-	
-			<div vcollapse="ans.input1.showSolution">
-		        <div class="show-solution-btn" ng-click="ans.input1.showSolution = true">
-		            Vérifier Solution
-		        </div>
-		    </div>  
-
-			<div class="pl4" vcollapse="!ans.input1.showSolution">
-
-				<div class="solution-header">
-					La solution:
+				<div class="exercise-header">
+					Comparez les nombres en insérant entre eux un des symboles : &gt;, &lt; ou =
 				</div>
 
-				<div class="solution-body">
-					{{ans.input1.solution}}
+				<div class="exercise-text">
+					{{question.num1}} et {{question.num2}}
+				</div>
+
+				<div inbook-workbook-input persist-to="input1"></div>
+		
+				<div vcollapse="question.showSolution">
+			        <div class="show-solution-btn" ng-click="question.showSolution = true">
+			            Vérifier Solution
+			        </div>
+			    </div>  
+
+				<div class="pl4" vcollapse="!question.showSolution">
+
+					<div class="solution-body">
+						{{question.num1}} {{question.solution}} {{question.num2}}
+					</div>
+
 				</div>
 
 			</div>
+
+			<hr class="question-divider" />
 
 		</div>
 
-	<hr class="question-divider anim-02" />
 
-		<div class="exercise-box anim-02">
-
-			<div class="exercise-header">
-				Comparez les nombres en insérant entre eux un des symboles : &gt;, &lt; ou =
-			</div>
-
-			<div class="exercise-text">
-				3 999 et 4 000			
-			</div>
-
-			<div inbook-workbook-input persist-to="input2"></div>
-	
-			<div vcollapse="ans.input2.showSolution">
-		        <div class="show-solution-btn" ng-click="ans.input2.showSolution = true">
-		            Vérifier Solution
-		        </div>
-		    </div>  
-
-			<div class="pl4" vcollapse="!ans.input2.showSolution">
-
-				<div class="solution-header">
-					La solution:
-				</div>
-
-				<div class="solution-body">
-					{{ans.input2.solution}}
-				</div>
-
-			</div>
-
-		</div>
-
-	<hr class="question-divider anim-03" />
-
-		<div class="exercise-box anim-03">
-
-			<div class="exercise-header">
-				Comparez les nombres en insérant entre eux un des symboles : &gt;, &lt; ou =
-			</div>
-
-			<div class="exercise-text">
-				652 et 652
-			</div>
-
-			<div inbook-workbook-input persist-to="input3"></div>
-	
-			<div vcollapse="ans.input3.showSolution">
-		        <div class="show-solution-btn" ng-click="ans.input3.showSolution = true">
-		            Vérifier Solution
-		        </div>
-		    </div>  
-
-			<div class="pl4" vcollapse="!ans.input3.showSolution">
-
-				<div class="solution-header">
-					La solution:
-				</div>
-
-				<div class="solution-body">
-					{{ans.input3.solution}}
-				</div>
-
-			</div>
-
-		</div>
-
-	<hr class="question-divider anim-04" />	
-
-		<div class="exercise-box anim-04">
-
-			<div class="exercise-header">
-				Comparez les nombres en insérant entre eux un des symboles : &gt;, &lt; ou =
-			</div>
-
-			<div class="exercise-text">
-				5 900 et 6 000
-			</div>
-
-			<div inbook-workbook-input persist-to="input4"></div>
-	
-			<div vcollapse="ans.input4.showSolution">
-		        <div class="show-solution-btn" ng-click="ans.input4.showSolution = true">
-		            Vérifier Solution
-		        </div>
-		    </div>  
-
-			<div class="pl4" vcollapse="!ans.input4.showSolution">
-
-				<div class="solution-header">
-					La solution:
-				</div>
-
-				<div class="solution-body">
-					{{ans.input4.solution}}
-				</div>
-
-			</div>
-
-		</div>
-
-	<hr class="question-divider anim-05" />
-
-		<div class="exercise-box anim-05">
-
-			<div class="exercise-header">
-				Comparez les nombres en insérant entre eux un des symboles : &gt;, &lt; ou =
-			</div>
-
-			<div class="exercise-text">
-				92 et 72
-			</div>
-
-			<div inbook-workbook-input persist-to="input5"></div>
-	
-			<div vcollapse="ans.input5.showSolution">
-		        <div class="show-solution-btn" ng-click="ans.input5.showSolution = true">
-		            Vérifier Solution
-		        </div>
-		    </div>  
-
-			<div class="pl4" vcollapse="!ans.input5.showSolution">
-
-				<div class="solution-header">
-					La solution:
-				</div>
-
-				<div class="solution-body">
-					{{ans.input5.solution}}
-				</div>
-
-			</div>
-
-		</div>
-
-	<hr class="question-divider anim-06" />
-
-		<div class="exercise-box anim-06">
-
-			<div class="exercise-header">
-				Comparez les nombres en insérant entre eux un des symboles : &gt;, &lt; ou =
-			</div>
-
-			<div class="exercise-text">
-				7 000 et 8 000
-			</div>
-
-			<div inbook-workbook-input persist-to="input6"></div>
-	
-			<div vcollapse="ans.input6.showSolution">
-		        <div class="show-solution-btn" ng-click="ans.input6.showSolution = true">
-		            Vérifier Solution
-		        </div>
-		    </div>  
-
-			<div class="pl4" vcollapse="!ans.input6.showSolution">
-
-				<div class="solution-header">
-					La solution:
-				</div>
-
-				<div class="solution-body">
-					{{ans.input6.solution}}
-				</div>
-
-			</div>
-
-		</div>
-
-	<hr class="question-divider anim-07" />
-
-		<div class="exercise-box anim-07">
-
-			<div class="exercise-header">
-				Comparez les nombres en insérant entre eux un des symboles : &gt;, &lt; ou =
-			</div>
-
-			<div class="exercise-text">
-				982 et 982
-			</div>
-
-			<div inbook-workbook-input persist-to="input7"></div>
-	
-			<div vcollapse="ans.input7.showSolution">
-		        <div class="show-solution-btn" ng-click="ans.input7.showSolution = true">
-		            Vérifier Solution
-		        </div>
-		    </div>  
-
-			<div class="pl4" vcollapse="!ans.input7.showSolution">
-
-				<div class="solution-header">
-					La solution:
-				</div>
-
-				<div class="solution-body">
-					{{ans.input7.solution}}
-				</div>
-
-			</div>
-
-		</div>
-
-	<hr class="question-divider anim-08" />
-
-		<div class="exercise-box anim-08">
-
-			<div class="exercise-header">
-				Comparez les nombres en insérant entre eux un des symboles : &gt;, &lt; ou =
-			</div>
-
-			<div class="exercise-text">
-				8 457 et 5 457
-			</div>
-
-			<div inbook-workbook-input persist-to="input8"></div>
-	
-			<div vcollapse="ans.input8.showSolution">
-		        <div class="show-solution-btn" ng-click="ans.input8.showSolution = true">
-		            Vérifier Solution
-		        </div>
-		    </div>  
-
-			<div class="pl4" vcollapse="!ans.input8.showSolution">
-
-				<div class="solution-header">
-					La solution:
-				</div>
-
-				<div class="solution-body">
-					{{ans.input8.solution}}
-				</div>
-
-			</div>
-
-		</div>
 
 		<div id="continue" class="mt6 center">
 			<div inbook-nextbtn="scene"></div>

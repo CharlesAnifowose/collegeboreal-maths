@@ -2,25 +2,25 @@
 	    class="page-layout">
 
 	    <div gdirections>
-	      <div el=".header-module"   duration="1" ease="power4-in-out" presets="[fromTransparent,fromBottom]"></div>
-	      <div el=".header-module-sub" duration="1" offset="-=0.3" ease="power4-in-out" presets="[fromTransparent,fromBottom]"></div>   
-	      <div el=".header-section"    duration="1" offset="-=0.6" ease="power4-in-out" presets="[fromTransparent,fromBottom]"></div>
+	      <div el=".header-module"   duration="1" ease="power4-in-out" presets="[fromTransparent,fromBottom]" disable-scroll-focus="true"></div>
+	      <div el=".header-module-sub" duration="1" offset="-=0.3" ease="power4-in-out" presets="[fromTransparent,fromBottom]" disable-scroll-focus="true"></div>   
+	      <div el=".header-section"    duration="1" offset="-=0.6" ease="power4-in-out" presets="[fromTransparent,fromBottom]" disable-scroll-focus="true"></div>
 
-	      <div duration="0.85"></div>
+	      <div duration="0.85" disable-scroll-focus="true"></div>
 
-	      <div el=".anim-01" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+	      <div el=".anim-01" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]" disable-scroll-focus="true"></div>
 	        
-	      <div duration="2"></div>
+	      <div duration="2" disable-scroll-focus="true"></div>
 
-	      <div el=".anim-02" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+	      <div el=".anim-02" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]" disable-scroll-focus="true"></div>
 
-	      <div duration="2"></div>
+	      <div duration="2" disable-scroll-focus="true"></div>
 
-	      <div el=".anim-03" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]"></div>
+	      <div el=".anim-03" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]" disable-scroll-focus="true"></div>
 
-	      <div duration="2"></div>
+	      <div duration="2" disable-scroll-focus="true"></div>
 
-	      <div el="#continue" duration="1.2" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]"></div>
+	      <div el="#continue" duration="1.2" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]" disable-scroll-focus="true"></div>
 
 	    </div>
 
@@ -1075,6 +1075,7 @@
 	  			</div>
 
 	  			<div 	inbook-questionseries-item level="17"
+	  					key="true"
 	  					ng-init="
 	  						ans				=	{};
 	  						ans.num1 		=  	1053;
@@ -1130,7 +1131,5 @@
 	  			</div>
 
   		</div>
-  		<div id="continue" class="mt6 center">
-			<div inbook-nextbtn="scene"></div>
-			</div>
+
 </div>
