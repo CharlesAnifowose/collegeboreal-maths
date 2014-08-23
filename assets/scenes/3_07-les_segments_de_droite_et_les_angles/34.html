@@ -1,0 +1,127 @@
+<div 	gseq
+		class="page-layout" 
+		ng-init="
+			ans={};
+
+			ans.input1 = {
+				showSolution: false
+			};
+			ans.input2 = {
+				showSolution: false
+			};
+			ans.input3 = {
+				showSolution: false
+			};
+		">
+
+		<div gdirections>
+			<div el=".exercise-num"   duration="0.8" ease="power4-in-out" presets="[fromTransparent]"></div>
+
+			<div duration="0.45"></div>
+
+			<div el=".anim-01" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+				
+			<div duration="1"></div>
+
+			<div el=".anim-02" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-03" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+	      	<div el="#continue" duration="1" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]" disable-scroll-focus="true"></div>	
+
+		</div>
+
+	    <div class="exercise-num">
+	      EXERCICE 20
+	    </div>
+
+		<div class="exercise-box anim-01">
+
+			<div class="exercise-header">
+				Construisez une figure congruente à chacun des polygones
+			</div>
+
+			<div class="exercise-text">
+				<img ng-src="{{imgUrl}}exercise20/01.png" />
+			</div>
+
+			<div inbook-workbook-draw persist-to="input1"></div>
+
+			<div vcollapse="ans.input1.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input1.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div vcollapse="!ans.input1.showSolution">
+				<div class="solution-body">
+					<img ng-src="{{imgUrl}}exercise20/04.png" />
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-02" />
+
+		<div class="exercise-box anim-02">
+
+			<div class="exercise-header">
+				Construisez une figure congruente à chacun des polygones
+			</div>
+
+			<div class="exercise-text">
+				<img ng-src="{{imgUrl}}exercise20/02.png" />
+			</div>
+
+			<div inbook-workbook-draw persist-to="input2"></div>
+
+			<div vcollapse="ans.input2.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input2.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div vcollapse="!ans.input2.showSolution">
+				<div class="solution-body">
+					<img ng-src="{{imgUrl}}exercise20/05.png" />
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-03" />
+
+		<div class="exercise-box anim-03">
+
+			<div class="exercise-header">
+				Construisez une figure congruente à chacun des polygones
+			</div>
+
+			<div class="exercise-text">
+				<img ng-src="{{imgUrl}}exercise20/03.png" />
+			</div>
+
+			<div inbook-workbook-draw persist-to="input3"></div>
+
+			<div vcollapse="ans.input3.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input3.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div vcollapse="!ans.input3.showSolution">
+				<div class="solution-body">
+					<img ng-src="{{imgUrl}}exercise20/06.png" />
+				</div>
+			</div>
+
+		</div> 
+
+		<div id="continue" class="mt6 center">
+			<div inbook-nextbtn="scene"></div>
+		</div>
+</div>

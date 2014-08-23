@@ -1,0 +1,83 @@
+<div  	gseq gscroll
+	    class="page-layout">
+
+	    <div gdirections>
+			<div el=".header-section" 	 duration="1" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+	      <div duration="0.85" disable-scroll-focus="true"></div>
+
+	      <div el=".anim-01" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+	        
+	      <div duration="2" disable-scroll-focus="true"></div>
+
+	      <div el=".anim-02" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+	      <div duration="2" disable-scroll-focus="true"></div>
+
+	      <div el="#continue" duration="1.2" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]" disable-scroll-focus="true"></div>
+
+	    </div>
+
+		<div class="header-section"> 
+			Comparer les nombres à l'aide des symboles &gt;, &lt; ou =
+		</div>
+
+		<div class="para anim-01">
+			Pour comparer des nombres entre eux, on peut utiliser les symboles
+			mathématiques suivants :
+
+			<ul class="basic-list">
+				<li>&gt; est plus grand que</li>
+				<li>&lt; est plus petit que</li>
+				<li>= est égal à</li>
+			</ul>
+		</div>
+
+		<div class="para anim-01">
+			Si l'on veut comparer 12 et 20, on peut le noter ainsi :
+
+			<div class="mt1">
+				<div class="ib">
+					12 &lt; 20 
+				</div>
+				<div class="ib ml2 mr2">
+					ou
+				</div>
+				<div class="ib">
+					20 &gt; 12
+				</div>
+			</div>
+			<div class="mt1">
+				<div class="ib">
+					12 est plus petit que 20
+				</div>
+				<div class="ib ml2 mr2">
+					ou
+				</div>
+				<div class="ib">
+					20 est plus grand que 12
+				</div>
+			</div>
+		</div>
+
+		<div class="para anim-02">
+			Remarquez que le nombre le plus petit est placé du côté fermé (ou pointu)
+			alors que le plus grand nombre est placé du côté ouvert.
+		</div>
+
+		<div class="exemple-frame anim-02">
+			<div class="exemple-header">
+				Exemple : Comparer les nombres suivants : 
+			</div>
+			<div class="mt1">
+				237 &lt; 585 (237 est plus petit que 585)
+			</div>
+			<div class="mt1">
+				34 &gt; 12 (34 est plus grand que 12)
+			</div>
+		</div>
+	
+		<div id="continue" class="mt6 center">
+		<div inbook-nextbtn="scene"></div>
+		</div>
+</div>

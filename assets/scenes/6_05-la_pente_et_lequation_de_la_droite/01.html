@@ -1,0 +1,139 @@
+
+
+    
+        <title>Module 6.05</title>
+        
+        
+        
+        
+    
+    
+        <div class="page-layout">
+
+            <div class="header-module">	
+                    Module 5
+            </div>
+
+            <div class="header-module-sub"> 
+                    La pente et l’équation de la droite
+            </div>
+
+            <div class="header-section"> 
+                    Distance entre deux points donnés
+            </div>
+
+            <div class="para">
+                <div>
+                    Distance entre deux points donnés
+                    Nous pouvons déterminer la distance entre deux points donnés à partir du 
+                    théorème de Pythagore selon lequel l’hypoténuse au carrée est égale à la somme 
+                    des deux autres côtés au carré, c² = a² + b². 
+                </div>
+                <div>
+                    <img ng-src="{{imgUrl}}m5-1.png" />
+                </div>
+                <div>
+                    Supposons une figure où l’un des côtés mesure 3 cm et l’autre 4 cm, cherchons 
+                    l’hypoténuse. 
+                </div>
+                <div>
+                    <img ng-src="{{imgUrl}}m5-2.png" />
+                </div>
+                <div>
+                    L’hypoténuse est 5 cm; c’est la distance entre B et A.
+                </div>
+                <div>
+                    Dans le cas précédent, la valeur de deux côtés était donnée. De même, si l’on 
+                    nous donne les coordonnées de deux points, nous pouvons trouver la distance 
+                    séparant ces deux points. 
+                </div>
+            </div>
+
+            <div class="exemple-frame">
+                <div class="bold">Voici un exemple.</div>
+                <div class="bold">A. Trouver la distance entre les points A (1, 1) et B (5, 4). </div>
+                <div class="bold">Solution: </div>
+                <ol>
+                    <li>
+                        <p>
+                            Tracer un triangle rectangle à partir des coordonnées (1, 1) et (5, 4). 
+                            En abaissant à partir du point B une perpendiculaire à l’axe des x et 
+                            en traçant, à partir de A, une droite parallèle à l’axe des x qui coupe 
+                            la perpendiculaire que nous venons d’abaisser, ces droites se 
+                            rencontrent en C. 
+                        </p>
+                        <img ng-src="{{imgUrl}}m5-3.png" />
+                    </li>
+                    <li>
+                        Déterminer la longueur horizontale AC, représentée par la différence 
+                        des x et la longueur verticale BC, représentée par la différence des y. 
+                        longueur horizontale AC = différence des x
+                        <div>=<span math>x^2</span> − <span math>x^1</span></div>
+                        <div>= 5 − 1 </div>
+                        <div>= 4</div>
+                        <div>longueur verticale BC = différence des y</div>
+                        <div>= <span math>y^2</span> − <span math>y^1</span></div>
+                        <div>= 4 − 1 = 3 </div>
+                        <img ng-src="{{imgUrl}}m5-4.png" />
+                    </li>
+                    <li>
+                        Trouver la distance AB en appliquant le théorème de Pythagore.
+                        <div>
+                            <img ng-src="{{imgUrl}}m5-5.png"/>
+                        </div>
+                        <div class="ml1">(AB)² = (AC)² + (BC)²</div> 
+                        <div class="ml1">(AB)² = 4² + 3² </div>
+                        <div class="ml1">(AB)² = 25 </div>
+                        <div>si on prend la racine carrée des deux membres, on obtient </div>
+                        <div class="ml1">AB = 5</div> 
+                        <div>La distance entre les points A (1, 1) et B (5, 4) est 5 unités.</div>
+                    </li>
+                </ol>
+                <div class="bold">Voici un autre exemple.</div>
+                <div class="bold">B. Trouver la distance entre A (0, 0) et B (-2, 5). </div>
+                <div class="bold">Solution: </div>
+                <ol>
+                    <li>
+                        <p>Tracer un triangle rectangle à partir des coordonnées (0, 0) et (-2, 5). </p>
+                    </li>
+                    <img ng-src="{{imgUrl}}m5-6.png"/>
+                    <li>
+                        Déterminer la longueur horizontale AC et la longueur verticale BC. 
+                    </li>
+                    <div>
+                        <div>longueur horizontale AC = différence des x </div>
+                        <div class="ml1"> = x2 − x1</div>
+                        <div class="ml1">= 2 − 0 </div>
+                        <div class="ml1">= 2 </div>
+                        <div>longueur verticale BC = différence des y </div>
+                        <div class="ml1"> = y2 − y1 </div>
+                        <div class="ml1"> = 5 − 0 </div>
+                        <div class="ml1"> = 5</div>
+                        <img ng-src="{{imgUrl}}m5-7.png"/>
+                    </div>
+                    <li>
+                        Trouver la distance AB en appliquant le théorème de Pythagore.
+                    </li>
+                    <div>
+                        <div class="ml1"><span math>(AB)^2</span>=<span math>(BC)^2</span> + <span math>(AC)^2</span></div>
+                        <div class="ml1"><span math>(AB)^2</span>= <span math>5^2</span><span math>+2^2</span></div>
+                        <div class="ml1"><span math>(AB)^2</span>= 25 + 4 </div>
+                        <div class="ml1"><span math>(AB^2</span> = 29 </div>
+                        <div>si on prend la racine carrée des deux membres, on obtient</div> 
+                        <div class="ml1">AB = 5,385164807135 ≈ 5,4 (arrondi au dixième près)</div> 
+                        <div>La distance entre les points A (0, 0) et B (-2, 5) est environ 5,4 unités.</div> 
+                    </div>
+                </ol>
+            </div>
+
+            <div class="note-frame">
+                    La distance entre deux points donnés peut-être déterminée à partir d’une formule. 
+            </div>
+
+<!--            <span math>
+                    3^2
+            </span>-->
+
+        </div>
+    
+

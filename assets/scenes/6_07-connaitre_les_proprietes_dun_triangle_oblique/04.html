@@ -1,0 +1,406 @@
+<div class="page-layout">
+
+	<div class="header-module-sub"> 
+		Résoudre un triangle à l’aide des lois des sinus et des cosinus
+	</div>
+
+	<div class="para">
+		<div class="bold">Loi des sinus</div>
+		<div class="mt1">
+			La loi des sinus stipule que dans un triangle, les côtés sont proportionnels aux sinus
+			des angles opposés ; il s’ensuit que :
+		</div>
+	</div>
+
+	<div class="note-frame">
+		<img ng-src="{{imgUrl}}diagram_07.png" />
+	</div>
+
+	<div class="para">
+		ou inversement
+	</div>
+
+	<div class="note-frame">
+		<img ng-src="{{imgUrl}}diagram_08.png" />
+	</div>
+
+	<div class="para">
+		Pour résoudre les triangles en déterminant les inconnus, on peut utiliser les
+		proportions suivantes :
+	</div>
+
+	<div class="para">
+		<div class="mt1">
+			<img ng-src="{{imgUrl}}diagram_09.png" />
+		</div>
+		<div class="mt1">
+			ou leurs réciproques
+		</div>
+		<div class="mt1">
+			<img ng-src="{{imgUrl}}diagram_10.png" />
+		</div>
+	</div>
+
+	<div class="para">
+		On choisit une proportion selon les données du problème. Trois des membres de la
+		proportion sont connus et le quatrième est celui que l’on recherche.
+	</div>	
+
+	<div class="note-frame">
+		Si dans un triangle on connaît les angles A et B, ainsi que le côté b et
+		qu’on cherche le côté a, alors on utilisera la proportion suivante :
+
+		<div class="mt1">
+			<img ng-src="{{imgUrl}}diagram_11.png" />		
+		</div>
+		<div class="mt1">
+			Remarquez qu’on peut également utiliser le réciproque de cette
+			proportion, qui donnera le même résultat.
+		</div>
+		<div class="mt1">
+			<img ng-src="{{imgUrl}}diagram_12.png" />
+		</div>
+		<div class="mt1">
+			<span class="bold">Remarquez:</span> Il y a toujours six éléments dans un triangle, les trois angles et les
+			trois côtés. Pour résoudre un triangle, on doit toujours fournir au
+			moins trois des éléments.
+		</div>
+	</div>
+
+	<div class="para">
+		<div class="bold">
+			Déterminer le «sinus» d’un angle
+		</div>
+		<div class="mt1">
+			Les proportions exigent de connaître les sinus des angles <span class="bold">A, B ou C.</span> Par exemple,
+			le sinus d’un angle <span class="bold">A</span> de 40&deg; est de 0,6427876096865. Pour obtenir cette réponse, on utilise les touches suivantes sur la calculatrice :
+		</div>
+		<div class="mt1">
+			<img ng-src="{{imgUrl}}diagram_13.png" />
+		</div>
+	</div>
+
+	<div class="para">
+		On peut utiliser la loi des sinus pour trouver les angles et les côtés manquant d’un
+		triangle lorsque :
+	</div>
+
+	<div class="para">
+		<div class="italic">
+			1<sup>er</sup> cas : Un côté et deux angles sont donnés.
+		</div>
+		<div>
+			<img ng-src="{{imgUrl}}diagram_14.png" />
+		</div>
+		<div class="mt1">
+			Remarquez qu’on peut fournir n’importe quel des côtés, et n’importe
+			quels deux des trois angles.
+		</div>
+	</div>
+
+	<div class="para">
+		<div class="italic">
+			2<sup>e</sup> cas : Deux côtés et l’angle opposé à l’un de ces deux côtés sont donnés.
+		</div>
+		<div>
+			<img ng-src="{{imgUrl}}diagram_15.png" />
+		</div>
+	</div>
+
+	<div class="para">
+		<div class="bold">
+			Voici des exemples
+		</div>
+		<div class="italic mt1">
+			1<sup>er</sup> cas : Un côté et deux angles sont connus.
+		</div>
+		<div class="mt1">
+			A. Résoudre le triangle <span class="bold">ABC.</span> Ce triangle est du premier cas, car on donne un côté et deux angles.
+		</div>
+		<div class="mt1">
+			<img ng-src="{{imgUrl}}diagram_16.png" />
+		</div>
+		<div class="mt1">
+			Pour résoudre le triangle, il faut donc déterminer l’angle C, ainsi que les côtés a et c.
+		</div>
+		<div class="mt1">
+			<div class="bold">Solution:</div>
+			<ol class="basic-list">
+				<li>
+					Trouvons d’abord la valeur de l’angle C. Remarquez que pour cette
+					étape on n’utilise pas la loi des sinus ou des cosinus.
+					Le troisième angle d’un triangle peut facilement être déterminé si on
+					connaît déjà les deux autres angles. On se rappelle que la somme des
+					angles d’un triangle est de 180&deg;, peu importe le type de triangle.
+					Alors A + B + C = 180&deg;.
+					<div class="mt1">
+						<div>Si on isole le C, alors,</div>
+						<div>C = 180&deg; - A - B</div>
+						<div>C = 180&deg; - 100&deg; - 50&deg;C = 180&deg; - 150&deg;</div>
+						<div>C = 30&deg;</div>
+					</div>
+				</li>
+				<li>
+					Pour trouver la valeur des côtés <span class="bold">a</span> et <span class="bold">c</span>, nous utilisons la loi des sinus.
+					<div class="mt1">
+						Si on détermine premièrement le côté <span class="bold">a</span>, on utilise la proportion suivante,
+					</div>
+					<div>
+						<img ng-src="{{imgUrl}}diagram_17.png" />
+					</div>
+					<div class="mt1">
+						Pour simplifier le texte, nous avons arrondi les valeurs des sin 100&deg; et
+						sin 50&deg; dans l’équation précédente, cependant lorsque vous faites les
+						calculs on vous encourage de faire ceux-ci d’un trait afin de garder la
+						valeur juste et non la valeur arrondie. De cette façon, la solution sera
+						plus juste.
+					</div>
+					<div class="mt1">
+						Si on détermine maintenant la valeur du côté c, on utilise la proportion suivante:
+					</div>
+					<div>
+						<img ng-src="{{imgUrl}}diagram_18.png" />
+					</div>
+					<div class="mt1">
+						<img ng-src="{{imgUrl}}diagram_19.png" />
+					</div>
+				</li>
+			</ol>
+			<div class="mt1">
+				<span class="bold">Remarquez:</span> Lorsque deux angles et un côté sont connus, une seule solution existe, c’est-à-dire qu’il y a un et seulement un triangle qui peut être formé.
+			</div>
+		</div>
+	</div>
+
+	<div class="para">
+		<div class="italic mt1">
+			2<sup>e</sup> cas : Deux côtés et l’angle opposé à l’un d’eux sont donnés.
+		</div>
+		<div class="mt1">
+			B. Résoudre le triangle ABC suivant, sachant que B = 30&deg;, b = 27 et c = 36 .
+		</div>
+		<div class="mt1">
+			<div class="bold">Solution :</div>
+			<ol class="basic-list">
+				<li>
+					Faisons un croquis à l’aide des données.
+					<div>
+						<img ng-src="{{imgUrl}}diagram_20.png" />
+					</div>
+				</li>
+				<li>	
+					Trouvons la valeur de l’angle C. Étant donné qu’on connaît
+					seulement un angle, on doit utiliser la loi des sinus pour trouver
+					l’angle <span class="bold">C</span>.
+					<div>
+						<img ng-src="{{imgUrl}}diagram_21.png" />
+					</div>
+				</li>
+			</ol>
+		</div>
+		<div class="mt1">
+			On connaît trois des membres de cette proportion, on peut donc déterminer le quatrième.
+		</div>
+		<div class="mt1">
+			<img ng-src="{{imgUrl}}diagram_22.png" />	
+		</div>
+		<div class="mt1">
+			<span class="bold">Remarquez:</span> On a la valeur de sin C, mais on veut la valeur de C seulement,
+			donc on doit prendre l’inverse du sin. Avec la calculatrice, on
+			utilise les touches suivantes :
+		</div>
+		<div class="mt1">
+			<img ng-src="{{imgUrl}}diagram_23.png" />		
+		</div>
+		<div class="mt1">
+			<span class="bold">Remarquez:</span> On vient de déterminer que l’angle C est 41,81031489578&deg; ≈ 42&deg;. Cependant, cette angle peut prendre une autre valeur, celle de son
+			angle supplémentaire. Voici l’explication :
+		</div>
+		<div class="mt1">
+			Les angles 42&deg; et 138&deg; sont des <span class="bold">angles supplémentaires</span>, parce que
+			leur somme est de 180&deg;.
+			<div>
+				<img ng-src="{{imgUrl}}diagram_24.png" />	
+			</div>
+		</div>
+		<div class="mt1">
+			Également les angles 41,81031489578&deg; et 138,1896851042&deg; sont des angles
+			supplémentaires parce que leur somme est de 180&deg;.
+		</div>
+		<div>
+			<img ng-src="{{imgUrl}}diagram_25.png" />		
+		</div>
+		<div class="mt1">
+			La valeur du sinus de deux angles supplémentaires est la même
+		</div>
+		<div class="mt1">
+			Preuve : sin 42&deg; = 0,6691306063589	
+			<div>
+				sin 138&deg; = 0,6691306063589
+			</div>		
+		</div>
+		<div class="mt1">
+			Également,
+			<div>
+				sin 41,81031489578&deg; = 0,66666666667
+			</div>
+			<div>
+				sin 138,1896851042&deg; = 0,66666666667
+			</div>
+		</div>
+	</div>
+
+	<div class="para">
+		Lorsqu’on obtient un angle en utilisant la calculatrice, il faut toujours considérer
+		l’angle supplémentaire qui a la même valeur de sinus.
+	</div>
+
+	<div class="para bold">
+		Donc,
+		<div>
+			l’angle C = 41,81031489578&deg; ≈ 42&deg; ,
+		</div>
+		<div class="mt1 mb1">
+			ou
+		</div>
+		<div>
+			l’angle C = 138,1896851042&deg; ≈ 138&deg;
+		</div>
+	</div>
+
+	<div class="para">
+		Puisque l’angle C peut être ≈ 42&deg; ou ≈ 138&deg;, parce que ces angles
+		ont la même valeur de sinus, <span class="bold">il est donc possible de construire deux
+		triangles.</span>
+	</div>
+
+	<div class="para">
+		3. Trouvons la valeur du côté a.
+		<table>
+			<tr>
+				<td>
+					<div class="bold">
+						Si l’angle C ≈ 42&deg;
+					</div>
+					<div>
+						B = 30&deg;
+					</div>
+					<div>
+						C ≈ 42&deg;
+					</div>
+					<div>
+						A ≈ 180&deg; - 30&deg; - 42&deg; ≈ 108&deg;
+					</div>
+				</td>
+				<td>
+					<div class="bold">
+						Si l’angle C ≈ 138&deg;
+					</div>
+					<div>
+						B = 30&deg;
+					</div>
+					<div>
+						C ≈ 138&deg;
+					</div>
+					<div>
+						A ≈ 180&deg; - 30&deg; - 138&deg; ≈ 12&deg;
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div>
+						<img ng-src="{{imgUrl}}diagram_26.png" />		
+					</div>
+					<div>
+						<img ng-src="{{imgUrl}}diagram_27.png" />		
+					</div>
+					<div>
+						<img ng-src="{{imgUrl}}diagram_28.png" />		
+					</div>
+					<div>
+						a ≈ 51,35705187994 cm
+					</div>
+					<div>
+						a ≈ 51,4 cm
+					</div>
+				</td>
+				<td>
+					<div>
+						<img ng-src="{{imgUrl}}diagram_26.png" />		
+					</div>
+					<div>
+						<img ng-src="{{imgUrl}}diagram_27.png" />		
+					</div>
+					<div>
+						<img ng-src="{{imgUrl}}diagram_29.png" />		
+					</div>
+					<div>
+						a ≈ 11,22723130416 cm
+					</div>
+					<div>
+						a ≈ 11,2 cm
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<div class="para">
+		Les données des deux triangles sont :
+		<div>
+			<div class="ib">
+				A ≈ 108&deg;
+			</div>
+			<div class="ib">
+				A ≈ 12&deg;
+			</div>
+		</div>
+		<div>
+			<div class="ib">
+				B = 30&deg;
+			</div>
+			<div class="ib">
+				B = 30&deg;
+			</div>
+		</div>
+		<div>
+			<div class="ib">
+				C ≈ 42&deg;
+			</div>
+			<div class="ib">
+				C ≈ 138&deg;
+			</div>
+		</div>
+		<div>
+			<div class="ib">
+				a ≈ 51,4 cm
+			</div>
+			<div class="ib">
+				a ≈ 11,2 cm
+			</div>
+		</div>
+		<div>
+			<div class="ib">
+				b = 27 cm
+			</div>
+			<div class="ib">
+				b = 27 cm
+			</div>
+		</div>
+		<div>
+			<img ng-src="{{imgUrl}}diagram_30.png" />
+		</div>
+		<div class="mt1 mb1">
+			ou
+		</div>
+		<div>
+			<img ng-src="{{imgUrl}}diagram_31.png" />
+		</div>
+	</div>
+
+	<div class="para">
+		Remarquez que notre croquis initial représentait seulement une des
+		possibilités, alors qu’il y en a deux.
+	</div>
+</div>

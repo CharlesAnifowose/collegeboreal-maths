@@ -1,0 +1,116 @@
+<div    gseq gscroll
+        class="minfullheight" 
+        style="background: #bf360c" 
+        ng-init="
+
+            rollInLeft = {
+                from:{
+                    'position':'relative',
+                    'left'    :'-100px',
+                    rotation  : -110
+                },
+                to:{
+                  ease        :'elastic-out',    
+                  'left'      :'0px',
+                  rotation    :0  
+                }
+            };
+
+        ">
+        <!-- <div inbook-timeline></div> -->
+        <div gdirections>
+
+            <div el="#page-info .module-num" duration="0.8" ease="back-out" presets="[fromTransparent,fromLeft]"></div>
+            <div el="#page-info .section-type" duration="1" offset="-=0.4" ease="back-out" presets="[fromTransparent,fromLeft]"></div>
+            <div el="#page-info .module-name" duration="1.2" offset="-=0.4" ease="back-out" presets="[fromTransparent,fromLeft]"></div>
+            
+            <div duration="0.25"></div>  
+
+            <div el=".line" duration="1.2" offset="-=1.2" from="{'width':'0%'}" to="{'width':'100%'}" ease="power2-in-out" presets="[fromTransparent]"></div>
+            
+            <div el=".big-operators .op" duration="2.75" offset="-=2.35" presets="[fromTransparent,rollInLeft]"></div>
+
+
+            <div el=".credits .cred" duration="0.8" offset="-=0.5" presets="[fromTransparent, fromBottom]"></div>
+            <div el="#continue" duration="0.8" offset="-=0.5" presets="[fromTransparent, fromBottom]"></div>
+
+
+        </div>
+
+  <div  class="page-layout" style="width:  600px;">
+
+
+   <!--  <div class="ib">
+      <img src="http://d3mw5hjf8nr5ry.cloudfront.net/collegeboreal-sample/images/logo.png"/>
+    </div> -->
+
+    <div id="page-info" class="title-page-info">
+      <div class="module-num">
+        Module 3.01
+      </div> 
+      <div class="section-type">
+        Arithmétique
+      </div>
+      <div class="module-name">
+        (Les quatre opérations de base sur les nombres naturels)
+      </div>
+    </div>
+
+    <hr class="line"/>
+
+    <div class="anim-area">
+
+      <div class="big-operators">
+
+        <div class="ib op">
+          +
+        </div>
+        <div class="ib op">
+          &minus;
+        </div>
+        <div class="ib op">
+          &times;
+        </div>
+        <div class="ib op">
+          &divide;
+        </div>
+
+      </div>
+
+    </div>
+
+    <hr class="line"/>
+
+    <div class="credits">
+      <div class="cred">
+          <div class="title">
+            Rédaction
+          </div>
+          <div class="name">
+            Julie Gratton, Collège Boréal
+          </div>
+      </div>
+      <div class="cred">
+        <div class="title">
+            En collaboration
+          </div>
+          <div class="name">
+            Francine Bertrand, La Cité collégiale
+          </div>
+      </div>
+      <div class="cred">
+          <div class="title">
+            Subventionné par
+          </div>
+          <div class="name">
+            <div>Le ministère de la Formation et des Collèges et Universités</div>
+            <div>de l’Ontario et le Secrétariat national à l’alphabétisation.</div>
+          </div>
+      </div>
+    </div>  
+    <div id="continue" class="mt6 center">
+      <div inbook-nextbtn="scene"></div>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,30 @@
+<div
+	ng-init=""
+	ng-resettable-init=""
+    ng-equate="">
+	
+	<div class="bold type-medium">
+		{{z}}<div class="inbook-fraction">
+			<div>{{x}}</div>
+			<div class="fraction-line-thin"></div>
+			<div>{{y}}</div>
+		</div>
+		<div style="width:300px; margin: 30px auto; text-align:left;">
+			<div inbook-multiplechoice on-correct="question.markAsCorrect();">				
+				<div inbook-mc-option="f1">fraction décimale</div>
+				<div inbook-mc-option="f2">fraction ordinaire</div>
+				<div inbook-mc-option="f3">fraction mixte</div>
+				<div inbook-mc-option="f4">expression fractionnaire</div>
+			</div>
+		</div>
+	</div>
+	<hr/>
+
+	<div class="mt5 type-small" vcollapse="!questionseries.questionComplete;">
+		<div inbook-nextbtn="question"></div>
+	</div>
+
+	<div class="mt5" vcollapse="!questionseries.seriesCompleted">
+		<div inbook-nextbtn="series"></div>
+	</div>
+</div>

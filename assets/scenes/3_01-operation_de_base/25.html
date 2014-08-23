@@ -1,0 +1,99 @@
+<div    gseq gscroll
+      class="page-layout">
+
+      <div gdirections>
+        <div el=".header-module"   duration="1" ease="power4-in-out" presets="[fromTransparent,fromBottom]" disable-scroll-focus="true"></div>
+        <div el=".header-module-sub" duration="1" offset="-=0.3" ease="power4-in-out" presets="[fromTransparent,fromBottom]" disable-scroll-focus="true"></div>   
+        <div el=".header-section"    duration="1" offset="-=0.6" ease="power4-in-out" presets="[fromTransparent,fromBottom]" disable-scroll-focus="true"></div>
+
+        <div duration="0.85" disable-scroll-focus="true"></div>
+
+        <div el=".anim-01" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+          
+        <div duration="2" disable-scroll-focus="true"></div>
+
+        <div el=".anim-02" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+        <div duration="2" disable-scroll-focus="true"></div>
+
+        <div el=".anim-03" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+        <div duration="2" disable-scroll-focus="true"></div>
+
+        <div el="#continue" duration="1.2" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]" disable-scroll-focus="true"></div>
+
+      </div>
+
+		<div 	inbook-questionseries
+				on-complete="scene.markAsCompleted();"
+  				ordered=true
+  				no-remove=true>
+
+          <div class="exercise-num">
+            EXERCICE 14
+          </div>
+
+  				<div 	inbook-questionseries-item level="1"
+  						ng-init="
+  							ans={};
+  							ans.num1 	=	148;
+  							ans.num2	=	33;
+  							ans.val		=	ans.num1 - ans.num2;
+  						"ng-resettable-init="
+                ans.showSolution = false;
+              ">
+					<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-14.1-template.html"></div>
+  				</div>
+
+  				<div 	inbook-questionseries-item level="2"
+  						ng-init="
+  							ans={};
+  							ans.num1 	=	153;
+  							ans.num2	=	21;
+  							ans.val		=	ans.num1 - ans.num2;
+  						"ng-resettable-init="
+                ans.showSolution = false;
+              ">
+					<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-14.1-template.html"></div>
+  				</div>
+
+  				<div 	inbook-questionseries-item level="3"
+  						ng-init="
+  							ans={};
+  							ans.num1 	=	8515;
+  							ans.num2	=	2304;
+  							ans.val		=	ans.num1 - ans.num2;
+  						"ng-resettable-init="
+                ans.showSolution = false;
+              ">
+					<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-14.1-template.html"></div>
+  				</div>
+
+  				<div 	inbook-questionseries-item level="4"
+  						ng-init="
+  							ans={};
+  							ans.num1 	=	35659;
+  							ans.num2	=	4127;
+  							ans.val		=	ans.num1 - ans.num2;
+  						"ng-resettable-init="
+                ans.showSolution = false;
+              ">
+					<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-14.1-template.html"></div>
+  				</div>
+
+  				<div 	inbook-questionseries-item level="5"
+  						key="true"
+              ng-init="
+  							ans={};
+  							ans.num1 	=	76543;
+  							ans.num2	=	2532;
+  							ans.val		=	ans.num1 - ans.num2;
+  						"ng-resettable-init="
+                ans.showSolution = false;
+              ">
+					<div inbook-include="assets/scenes/3_01-operation_de_base/exercise-14.1-template.html"></div>
+  				</div>
+
+  		</div>
+      
+</div>

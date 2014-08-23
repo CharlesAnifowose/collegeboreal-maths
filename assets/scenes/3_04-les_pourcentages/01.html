@@ -1,0 +1,85 @@
+<div    gseq gscroll
+        class="minfullheight" 
+        style="background: #009688;" 
+        ng-init="
+
+        ">
+       <!-- You can change each of the background colors so that each one is a little different. -->
+
+
+        <!-- <div inbook-timeline></div> -->
+        <div gdirections>
+
+ 		<!--This is animation code. Leave as is.-->	
+            <div el="#page-info .module-num" duration="0.8" ease="back-out" presets="[fromTransparent,fromLeft]"></div>
+            <div el="#page-info .section-type" duration="1" offset="-=0.4" ease="back-out" presets="[fromTransparent,fromLeft]"></div>
+            <div el="#page-info .module-name" duration="1.2" offset="-=0.4" ease="back-out" presets="[fromTransparent,fromLeft]"></div>
+            
+            <div duration="0.25"></div>  
+
+            <div el=".line" duration="1.2" offset="-=1.2" from="{'width':'0%'}" to="{'width':'100%'}" ease="power2-in-out" presets="[fromTransparent]"></div>
+
+            <div el=".credits .cred" duration="0.8" offset="-=0.5" presets="[fromTransparent, fromBottom]"></div>
+
+        </div>
+
+ 	<div  class="page-layout" style="width:  800px;">
+
+		<div id="page-info" class="title-page-info">
+			<div class="module-num">
+				Module 3.04
+			</div> 
+			<div class="section-type">
+				Arithmétique
+			</div>
+			<div class="module-name">
+				(Les pourcentages) 
+			</div>
+	    </div>
+			
+	    <hr class="line"/>
+
+	    <div class="anim-area">
+
+	    	<div class="type-xlarge" style="height:300px;">
+		    	&nbsp;
+	    	</div>
+
+	    </div>
+
+	    <hr class="line"/>
+
+		<div class="credits">
+			<div class="cred">
+				<div class="title">
+					Rédaction
+				</div>
+				<div class="name">
+					Julie Gratton, Collège Boréal
+				</div>
+			</div>
+			<div class="cred">
+				<div class="title">
+					En collaboration
+				</div>
+				<div class="name">
+					Francine Bertrand, La Cité collégiale
+				</div>
+			</div>
+			<div class="cred">
+				<div class="title">
+					Subventionné par
+				</div>
+				<div class="name">
+					<div>Le ministère de la Formation et des Collèges et Universités</div>
+					<div>de l’Ontario et le Secrétariat national à l’alphabétisation.</div>
+				</div>
+			</div>
+		</div> 
+
+		<div id="continue" class="mt6 center">
+			<div inbook-nextbtn="scene"></div>
+		</div>  
+
+    </div>
+</div>

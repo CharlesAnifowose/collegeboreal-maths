@@ -1,0 +1,96 @@
+<div 	class="page-layout">
+	<div    inbook-questionseries 
+			class="pa8"
+			on-complete="scene.markAsCompleted();"
+			ordered=true
+			no-remove=true
+			ng-init="
+				imgUrl = 'http://d3mw5hjf8nr5ry.cloudfront.net/collegeboreal-sample/images/3_10-les_suites/';
+			">
+
+			<div class="inbook-grid-layout" style="width: 600px; margin: 0 auto;">
+				<div class="col10">
+
+					<div class="mt2 mb4 type-xxsmall">
+						Identifiez la (les) caractéristique(s) qui gouvern(nt) les suites suivantes.
+					</div>
+
+					<div inbook-questionseries-item level="1">
+						<img ng-src="{{imgUrl}}diagram_14.png" style="margin: 0 auto;"/>
+
+						<div class="mt4">
+							<div inbook-nextbtn="question"></div>
+						</div>
+					</div>
+
+					<div inbook-questionseries-item level="2">
+						<img ng-src="{{imgUrl}}diagram_15.png" style="margin: 0 auto;"/>
+
+						<div class="mt4">
+							<div inbook-nextbtn="question"></div>
+						</div>
+					</div>
+
+					<div inbook-questionseries-item level="3">
+						<img ng-src="{{imgUrl}}diagram_16.png" style="margin: 0 auto;"/>
+						
+						<div class="mt4">
+							<div inbook-nextbtn="question"></div>
+						</div>
+					</div>
+
+					<div inbook-questionseries-item level="4">
+						
+						<div class="mt2 type-xxsmall">
+							Horaire pour la prise d'un sirop contre la toux:
+						</div>
+						<div class="mt2 bold type-xsmall">
+							<div>08h00</div>
+							<div>12h00</div>
+							<div>16h00</div>
+							<div>20h00</div>
+							<div>00h00</div>
+						</div>
+
+						<div class="mt4">
+							<div inbook-nextbtn="question"></div>
+						</div>
+					</div>
+
+					<div inbook-questionseries-item level="5">
+
+						<div class="mt2 type-xxsmall">
+							Horaire des leçons de natation:
+						</div>
+						<div class="mt2 bold type-xsmall">
+							<div>lundi 16h00 à 17h00</div>
+							<div>samedi 10h30 à 11h30</div>
+						</div>
+
+						<div class="mt4">
+							<div inbook-nextbtn="question"></div>
+						</div>
+					</div>
+
+					<div inbook-questionseries-item level="6">
+						<img ng-src="{{imgUrl}}diagram_17.png" style="margin: 0 auto;"/>
+						
+						<div class="mt4">
+							<div inbook-nextbtn="question"></div>
+						</div>
+					</div>
+
+					<div inbook-questionseries-item level="7">
+						<img ng-src="{{imgUrl}}diagram_18.png" style="margin: 0 auto;"/>
+						
+						<div class="mt4">
+							<div inbook-nextbtn="question"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+	<div id="continue" class="mt6 center">
+  <div inbook-nextbtn="scene"></div>
+  </div>
+</div>

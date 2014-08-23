@@ -1,0 +1,67 @@
+<div  	gseq gscroll
+    	class="page-layout">
+
+    <div gdirections>
+      <div el=".exercise-num"   duration="1" ease="power4-in-out" presets="[fromTransparent]"></div>
+    </div>
+
+    <div class="exercise-num">
+      EXERCICE 4
+    </div>
+
+	<div 	inbook-questionseries 
+			on-complete="scene.markAsCompleted();"
+			ordered=true
+			no-remove=true>
+			
+
+			<div inbook-questionseries-item  level="1" >		
+				<div
+					ng-init=""
+					ng-resettable-init=""
+					ng-equate="a = 2;
+							   b = 5;"
+					></div>
+					
+					<div class="exercise-box">
+						<div class="exercise-header">
+							Écrivez quelle fraction de l'ensemble est noircie.
+						</div>
+						<div class="para">
+							<img ng-src="{{imgUrl}}Untitled11.png" />
+						</div>
+
+						<div class="mt2">
+							<div inbook-include="assets/templates/exercises/exercice4.html"></div>		
+						</div>	
+					</div>
+			</div>
+			
+			<div inbook-questionseries-item  level="2">
+				<div
+					ng-init=""
+					ng-resettable-init=""
+					ng-equate="a = 3;
+							   b = 10;"
+					></div>
+
+					<div class="exercise-box">
+						<div class="exercise-header">
+							Écrivez quelle fraction de l'ensemble est noircie.
+						</div>
+						
+						<div class="para">
+							<img ng-src="{{imgUrl}}Untitled12.png" />
+						</div>
+
+						<div class="mt2">
+							<div inbook-include="assets/templates/exercises/exercice4.html"></div>	
+						</div>			
+					</div>
+			</div>
+
+	</div>
+	<div id="continue" class="mt6 center">
+	<div inbook-nextbtn="scene"></div>
+	</div>
+</div>

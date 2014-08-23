@@ -1,0 +1,102 @@
+<div  	gseq gscroll
+	    class="page-layout">
+
+	    <div gdirections>
+			<div el=".header-section" 	 duration="1" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+	      <div duration="0.85" disable-scroll-focus="true"></div>
+
+	      <div el=".anim-01" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+	        
+	      <div duration="2" disable-scroll-focus="true"></div>
+
+	      <div el=".anim-02" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+	      <div duration="2" disable-scroll-focus="true"></div>
+
+	      <div el=".anim-03" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+	      <div duration="2" disable-scroll-focus="true"></div>
+
+	      <div el=".anim-04" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+	      <div duration="2" disable-scroll-focus="true"></div>
+
+	      <div el="#continue" duration="1.2" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]" disable-scroll-focus="true"></div>
+
+	    </div>
+		<div class="header-section"> 
+			Multiplications dont le multiplicateur est composé d’un seul chiffre
+		</div>
+
+		<div class="para anim-01">
+			Comme pour l’addition et la soustraction, on procède de droite à
+			gauche pour effectuer une multiplication. On commence par multiplier les
+			unités, ensuite les dizaines, ensuite les centaines, etc. Le multiplicateur* est
+			toujours placé en dessous de l'autre facteur.
+		</div>
+
+		<div class="header-module anim-02">
+			* Le multiplicateur est le facteur par lequel on multiplie.
+		</div>
+
+		<div class="para anim-03">
+
+			<div class="bold">
+				<div class="ib vbottom" style="width:25%;">
+					Étapes de l'opération
+				</div>
+				<div class="ib vbottom" style="width:70%;">
+					Description
+				</div>
+			</div>
+
+			<div>
+				<div class="ib vtop" style="width:25%;">
+					<img ng-src="{{imgUrl}}diagram_08.png" />
+				</div>
+				<div class="ib vtop" style="width:70%;">
+					<div class="mt1">
+						On multiplie d’abord 3 par le chiffre des unités :
+						<div>
+							<span math>3 * 2 = 6</span>
+						</div>
+					</div>
+					<div class="mt1">
+						On multiplie ensuite 3 par le chiffre des dizaines : 
+						<div>
+							<span math>3 * 1 = 3</span>
+						</div>
+					</div>
+					<div class="mt1">
+						Le produit est <span math>36</span>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+
+		<div class="exemple-frame anim-04">
+			<div class="exemple-header">
+				Exemple 1 : Multiplier 15 &times; 5
+			</div>
+			<div class="mt1 center">
+				<img ng-src="{{imgUrl}}diagram_09.png" />
+			</div>
+			<div class="mt1">
+				<ul class="basic-list">
+					<li>On inscrit 5 et on reporte 2 dizain</li>
+					<li>On multiplie ensuite 5 par le chiffre des
+						dizaines, soit 5 × 1 = 5 et on ajoute la
+						retenue, soit 2 dizaines; on obtient 7.</li>
+					<li>Le résultat, soit le produit, est 75.</li>
+				</ul>
+			</div>
+		</div>
+
+
+		<div id="continue" class="mt6 center">
+		<div inbook-nextbtn="scene"></div>
+		</div>
+</div>

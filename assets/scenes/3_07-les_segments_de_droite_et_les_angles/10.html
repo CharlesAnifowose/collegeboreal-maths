@@ -1,0 +1,240 @@
+<div 	gseq
+		class="page-layout" 
+		ng-init="
+			ans={};
+
+			ans.input1 = {
+				showSolution: false
+			};
+			ans.input2 = {
+				showSolution: false
+			};
+			ans.input3 = {
+				showSolution: false
+			};
+			ans.input4 = {
+				showSolution: false
+			};
+			ans.input5 = {
+				showSolution: false
+			};
+		">
+
+		<div gdirections>
+			<div el=".exercise-num"   duration="0.8" ease="power4-in-out" presets="[fromTransparent]"></div>
+
+			<div duration="0.45"></div>
+
+			<div el=".anim-01" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+				
+			<div duration="1"></div>
+
+			<div el=".anim-02" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-03" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-04" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-05" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+	      	<div el="#continue" duration="1" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]" disable-scroll-focus="true"></div>	
+
+		</div>
+
+	    <div class="exercise-num">
+	      EXERCICE 5
+	    </div>
+
+		<div class="exercise-box anim-01">
+
+			<div class="exercise-header">
+				Identifiez les types de segments de droites : soit parallèles, perpendiculaires ou concourants que comporte chaque objet ou symbole ci-dessous.
+			</div>
+
+			<div class="exercise-text">
+				<div class="center">
+					<img ng-src="{{imgUrl}}exercise05/01.png" />
+				</div>
+			</div>
+
+			<div inbook-workbook-input persist-to="input1"></div>
+
+			<div vcollapse="ans.input1.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input1.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input1.showSolution">
+				<div class="solution-body">
+					2 segments de droite parallèles (côtes de l'échelle) et 6 segments de droite perpendiculaires (marches)
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-02" />
+
+		<div class="exercise-box anim-02">
+
+			<div class="exercise-header">
+				Identifiez les types de segments de droites : soit parallèles, perpendiculaires ou concourants que comporte chaque objet ou symbole ci-dessous.
+			</div>
+
+			<div class="exercise-text">
+				<div class="center">
+					<img ng-src="{{imgUrl}}exercise05/02.png" />
+				</div>
+			</div>
+
+			<div inbook-workbook-input persist-to="input2"></div>
+
+			<div vcollapse="ans.input2.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input2.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input2.showSolution">
+				<div class="solution-body">
+					2 segments d droite parallèles
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-03" />
+
+		<div class="exercise-box anim-03">
+
+			<div class="exercise-header">
+				Identifiez les types de segments de droites : soit parallèles, perpendiculaires ou concourants que comporte chaque objet ou symbole ci-dessous.
+			</div>
+
+			<div class="exercise-text">
+				<div class="center">
+					<img ng-src="{{imgUrl}}exercise05/03.png" />
+				</div>
+			</div>
+
+			<div inbook-workbook-input persist-to="input3"></div>
+
+			<div vcollapse="ans.input3.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input3.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input3.showSolution">
+				<div class="solution-body">
+					<div>
+						3 segmnets de droite parallèlles et 3 segments de droite perpendiculaires
+					</div>
+					<div class="mt1 mb1">
+						ou
+					</div>
+					<div>
+						au centre: 2 segments de droite concourants; horizontalment: 2 segments de droite parallèles; verticalement: 2 segments de droite parallèles
+					</div>
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-04" />
+
+		<div class="exercise-box anim-04">
+
+			<div class="exercise-header">
+				Identifiez les types de segments de droites : soit parallèles, perpendiculaires ou concourants que comporte chaque objet ou symbole ci-dessous.
+			</div>
+
+			<div class="exercise-text">
+				<div class="center">
+					<img ng-src="{{imgUrl}}exercise05/04.png" />
+				</div>
+			</div>
+
+			<div inbook-workbook-input persist-to="input4"></div>
+
+			<div vcollapse="ans.input4.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input4.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input4.showSolution">
+				<div class="solution-body">
+					<div class="mt1">
+						E : segments de droite parallèles et 1 segment de droite perpendiculaire
+					</div>
+					<div class="mt1">
+						H : 2 segments de droite parallèles et 1 segment droie perpendiculaire
+					</div>
+					<div class="mt1">
+						A : 3 segments de drote concourants
+					</div>
+					<div class="mt1">
+						V : 2 segments de drote concourants
+					</div>
+					<div class="mt1">
+						X : 2 segments de drote concourants
+					</div>
+					<div class="mt1">
+						X : 2 segments de drote concourants
+					</div>
+					<div class="mt1">
+						Y : 2 segments de drote concourants
+					</div>
+					<div class="mt1">
+						M : 2 segments de drote parallèles et 2 segments de drote concourants
+					</div>
+					<div class="mt1">
+						T : 2 segments de drote concourants
+					</div>
+				</div>
+			</div>
+		</div> 
+
+		<hr class="question-divider anim-05" />
+
+		<div class="exercise-box anim-05">
+
+			<div class="exercise-header">
+				Identifiez les types de segments de droites : soit parallèles, perpendiculaires ou concourants que comporte chaque objet ou symbole ci-dessous.
+			</div>
+
+			<div class="exercise-text">
+				<div class="center">
+					<img ng-src="{{imgUrl}}exercise05/05.png" />
+				</div>
+			</div>
+
+			<div inbook-workbook-input persist-to="input5"></div>
+
+			<div vcollapse="ans.input5.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input5.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input5.showSolution">
+				<div class="solution-body">
+					2 segments de drote concourants
+				</div>
+			</div>
+				
+		</div>
+		
+		<div id="continue" class="mt6 center">
+			<div inbook-nextbtn="scene"></div>
+		</div>
+</div>

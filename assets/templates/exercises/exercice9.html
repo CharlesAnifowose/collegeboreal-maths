@@ -1,0 +1,25 @@
+
+	
+	<div class="bold mb3 type-medium">
+		<div class="inbook fraction ib">
+			<div>{{x}}</div>
+			<div class="fraction-line-thin"></div>
+			<div>{{y}}</div>
+		</div>
+		<div class="ib unbold ml2 mr2">et</div>
+		<div class="inbook fraction ib">
+			<div>{{a}}</div>
+			<div class="fraction-line-thin"></div>
+			<div>{{b}}</div>
+		</div>
+	</div>
+	<div inbook-yesorno="equal((x/y),(a/b))" on-correct="question.markAsCorrect();"></div>
+	<hr/>
+
+	<div class="mt5 type-small" vcollapse="!questionseries.questionComplete;">
+		<div inbook-nextbtn="question"></div>
+	</div>
+
+	<div class="mt5" vcollapse="!questionseries.seriesCompleted">
+		<div inbook-nextbtn="series"></div>
+	</div>

@@ -1,0 +1,285 @@
+<div 	gseq
+		class="page-layout" 
+		ng-init="
+			ans={};
+
+			ans.input1 = {
+				showSolution: false,
+				solution 	: '5 040 enveloppes'
+			};
+			ans.input2 = {
+				showSolution: false,
+				solution 	: '789 apprenants'
+			};
+			ans.input3 = {
+				showSolution: false,
+				solution 	: '108$'
+			};
+			ans.input4 = {
+				showSolution: false,
+				solution 	: '27$'
+			};
+			ans.input5 = {
+				showSolution: false,
+				solution 	: '288 craies'
+			};
+			ans.input6 = {
+				showSolution: false,
+				solution 	: '60 tasses de café'
+			};
+		">
+
+		<div gdirections>
+			<div el=".exercise-num"   duration="0.8" ease="power4-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="0.45"></div>
+
+			<div el=".anim-01" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+				
+			<div duration="1"></div>
+
+			<div el=".anim-02" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-03" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-04" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-05" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-06" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+	      	<div el="#continue" duration="1" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]" disable-scroll-focus="true"></div>
+			
+		</div>
+
+		<div class="exercise-num">
+			EXERCICE 19
+		</div>
+
+		<div class="exercise-box anim-01">
+
+			<div class="exercise-header">
+				Résolvez à l’aide de la calculatrice.
+			</div>
+
+			<div class="exercise-text">
+				Une boîte contient 144 enveloppes. Combien d’enveloppes y a-t-il
+				dans 35 boîtes identiques ?
+			</div>
+
+			<div inbook-workbook-input persist-to="input1"></div>
+	
+			<div vcollapse="ans.input1.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input1.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input1.showSolution">
+
+				<div class="solution-header">
+					La solution:
+				</div>
+
+				<div class="solution-body">
+					{{ans.input1.solution}}
+				</div>
+
+			</div>
+
+		</div>
+
+	<hr class="question-divider anim-02" />
+
+		<div class="exercise-box anim-02">
+
+			<div class="exercise-header">
+				Résolvez à l’aide de la calculatrice.
+			</div>
+
+			<div class="exercise-text">
+				Dans un collège, on compte 5 classes de 30 apprenants et apprenantes,
+				12 classes de 22 apprenants et apprenantes et 15 classes de 25
+				apprenants et apprenantes. Trouvez le nombre total d’apprenants et
+				d’apprenantes dans ce collège.
+			</div>
+
+			<div inbook-workbook-input persist-to="input2"></div>
+	
+			<div vcollapse="ans.input2.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input2.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input2.showSolution">
+
+				<div class="solution-header">
+					La solution:
+				</div>
+
+				<div class="solution-body">
+					{{ans.input2.solution}}
+				</div>
+
+			</div>
+
+		</div>
+
+	<hr class="question-divider anim-03" />
+
+		<div class="exercise-box anim-03">
+
+			<div class="exercise-header">
+				Résolvez à l’aide de la calculatrice.
+			</div>
+
+			<div class="exercise-text">
+				Un étudiant travaille à temps partiel. Il gagne 9$ de l'heure. S'il
+				travaille 12 heures par semaine, combien gagne-t-il à chaque semaine?
+			</div>
+
+			<div inbook-workbook-input persist-to="input3"></div>
+	
+			<div vcollapse="ans.input3.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input3.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input3.showSolution">
+
+				<div class="solution-header">
+					La solution:
+				</div>
+
+				<div class="solution-body">
+					{{ans.input3.solution}}
+				</div>
+
+			</div>
+
+		</div>
+
+	<hr class="question-divider anim-04" />
+
+		<div class="exercise-box anim-04">
+
+			<div class="exercise-header">
+				Résolvez à l’aide de la calculatrice.
+			</div>
+
+			<div class="exercise-text">
+				Lucille achète des friandises pour une fête. Elle distribue à chaque
+				invité un sac surprise contenant 3$ de bonbons assortis. S'il y a 9
+				invités à la fête, à combien s'élève le coût des friandises?
+			</div>
+
+			<div inbook-workbook-input persist-to="input4"></div>
+	
+			<div vcollapse="ans.input4.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input4.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input4.showSolution">
+
+				<div class="solution-header">
+					La solution:
+				</div>
+
+				<div class="solution-body">
+					{{ans.input4.solution}}
+				</div>
+
+			</div>
+
+		</div>
+
+	<hr class="question-divider anim-05" />
+
+		<div class="exercise-box anim-05">
+
+			<div class="exercise-header">
+				Résolvez à l’aide de la calculatrice.
+			</div>
+
+			<div class="exercise-text">
+				Un boîte de craies contient 48 craies. Combien de craies y a-t-il dans
+				6 boîtes identiques?
+			</div>
+
+			<div inbook-workbook-input persist-to="input5"></div>
+	
+			<div vcollapse="ans.input5.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input5.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input5.showSolution">
+
+				<div class="solution-header">
+					La solution:
+				</div>
+
+				<div class="solution-body">
+					{{ans.input5.solution}}
+				</div>
+
+			</div>
+
+		</div>
+
+	<hr class="question-divider anim-06" />
+
+		<div class="exercise-box anim-06">
+
+			<div class="exercise-header">
+				Résolvez à l’aide de la calculatrice.
+			</div>
+
+			<div class="exercise-text">
+				Avec une cafetière, on peut faire 12 tasses de café. Combien de tasses
+				de café pourrions-nous faire, à la fois, si nous avions 5 cafetières
+				identiques?
+			</div>
+
+			<div inbook-workbook-input persist-to="input6"></div>
+	
+			<div vcollapse="ans.input6.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input6.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input6.showSolution">
+
+				<div class="solution-header">
+					La solution:
+				</div>
+
+				<div class="solution-body">
+					{{ans.input6.solution}}
+				</div>
+
+			</div>
+
+		</div>
+
+		<div id="continue" class="mt6 center">
+			<div inbook-nextbtn="scene"></div>
+		</div>
+
+</div>

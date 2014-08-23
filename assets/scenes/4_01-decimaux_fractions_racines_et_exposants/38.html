@@ -1,0 +1,105 @@
+<div 	class="page-layout" 
+		ng-init="
+			imgUrl = 'http://d3mw5hjf8nr5ry.cloudfront.net/collegeboreal-sample/images/4_01-decimaux_fractions_racines_et_exposants/';
+		">
+		
+		<div class="para"> 
+			Complétez les énoncés.
+		</div>
+		<div 	inbook-questionseries
+				on-complete="scene.markAsCompleted();"
+  				ordered=true
+  				no-remove=true>
+
+  				<div inbook-questionseries-item level="1">  				
+  					<div >
+  						<div class="ib">36 est la </div>
+				      	<div class="ib" attempts="3" type="text" inbook-answerbox-fill="'deuxième'"  
+				       	on-correct="question.markAsCorrect();		          
+				      "></div>	
+                       <div class="ib">puissance de 6. </div>			      	
+				     </div>
+  				</div>
+
+  				<div inbook-questionseries-item level="2">	  				
+  					<div >
+  						<div class="ib">144 est la </div>
+				      	<div class="ib" attempts="3" type="text" inbook-answerbox-fill="'deuxième'"  
+				       	on-correct="question.markAsCorrect();		          
+				      "></div>	
+                      <div class="ib">puissance de 12. </div>			      	
+				     </div>
+  				</div>
+
+  				<div inbook-questionseries-item level="3">	  				
+  					<div >  						
+				      	<div class="ib" attempts="3" type="text" inbook-answerbox-fill="16"  
+				       	on-correct="question.markAsCorrect();		          
+				      "></div>
+                      <div class="ib">est la quatrième puissance de 2.</div>				      	
+				     </div>
+  				</div>
+
+  				<div inbook-questionseries-item level="4">
+	  				<div >  						
+				      	<div class="ib" attempts="3" type="text" inbook-answerbox-fill="27"  
+				       	on-correct="question.markAsCorrect();		          
+				      "></div>
+                      <div class="ib">est la troisième puissance de 3.</div>				      	
+				     </div>
+  				</div>
+
+  				<div inbook-questionseries-item level="5">
+	  				<div >
+  						<div class="ib">8 est la</div>
+				      	<div class="ib" attempts="3" type="text" inbook-answerbox-fill="'troisième'"  
+				       	on-correct="question.markAsCorrect();		          
+				      "></div>
+                      <div class="ib">puissance de 2.</div>				      	
+				     </div>
+  				</div>
+
+
+				<div inbook-questionseries-item level="6">
+	  				<div >
+  						<div class="ib">32 est la</div>
+				      	<div class="ib" attempts="3" type="text" inbook-answerbox-fill="'cinquième'"  
+				       	on-correct="question.markAsCorrect();		          
+				      "></div>	
+                      <div class="ib">puissance de 2.</div>			      	
+				     </div>
+  				</div>
+
+				<div inbook-questionseries-item level="7">
+	  				<div >
+  						<div class="ib">3 à l’exposant 2 est</div>
+				      	<div class="ib" attempts="3" type="text" inbook-answerbox-fill="9"  
+				       	on-correct="question.markAsCorrect();		          
+				      "></div>				      	
+				     </div>
+  				</div>
+  					
+				<div inbook-questionseries-item level="8">
+	  				<div >
+  						<div class="ib">5 à l’exposant 3 est</div>
+				      	<div class="ib" attempts="3" type="text" inbook-answerbox-fill="125" 
+				       	on-correct="question.markAsCorrect();		          
+				      "></div>				      	
+				     </div>
+  				</div>
+
+
+				<div inbook-questionseries-item level="9">
+	  				<div >
+  						<div class="ib">10 à l’exposant 4 est</div>
+				      	<div class="ib" attempts="3" type="text" inbook-answerbox-fill="10000"  
+				       	on-correct="question.markAsCorrect();		          
+				      "></div>				      	
+				     </div>
+  				</div>
+
+  			<div class="mt4">
+				<div inbook-nextbtn="question"></div>
+			</div>
+		</div>
+</div>

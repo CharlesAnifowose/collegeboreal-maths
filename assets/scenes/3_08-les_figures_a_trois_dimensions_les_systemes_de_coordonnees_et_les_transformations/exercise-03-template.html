@@ -1,0 +1,56 @@
+<div 	class="page-layout">
+	<div ng-init="align={};" ng-equate="">
+
+		<div class="mb3">
+			<img ng-src="{{imgUrl + ans.shape}}.png" />
+		</div>
+
+		<div class="mb1">
+			<div class="ib type-xxsmall bold" inbook-width="align.left" align="left">
+				arêtes : 
+			</div>
+			<div class="ib" inbook-width="align.right" align="left">
+				<div 	inbook-answerbox-fill="ans.aretes"
+						class="type-xxxsmall"
+						input-class="type-xxxsmall"
+						on-correct="question.markAsCorrect()"
+						on-incorrect="question.markAsIncorrect()"></div>
+			</div>
+		</div>
+
+		<div class="mb1">
+			<div class="ib type-xxsmall bold" inbook-width="align.left" align="left">
+				faces : 
+			</div>
+			<div class="ib" inbook-width="align.right" align="left">
+				<div 	inbook-answerbox-fill="ans.faces"
+						class="type-xxxsmall"
+						input-class="type-xxxsmall"
+						on-correct="question.markAsCorrect()"
+						on-incorrect="question.markAsIncorrect()"></div>
+			</div>
+		</div>
+
+		<div class="mb1">
+			<div class="ib type-xxsmall bold" inbook-width="align.left" align="left">
+				sommets : 
+			</div>
+			<div class="ib" inbook-width="align.right" align="left">
+				<div 	inbook-answerbox-fill="ans.sommets"
+						class="type-xxxsmall"
+						input-class="type-xxxsmall"
+						on-correct="question.markAsCorrect()"
+						on-incorrect="question.markAsIncorrect()"></div>
+			</div>
+		</div>
+
+		<div class="mt4">
+			<div inbook-nextbtn="question"></div>
+		</div>
+
+	</div>
+
+	<div id="continue" class="mt6 center">
+  <div inbook-nextbtn="scene"></div>
+  </div>
+</div>

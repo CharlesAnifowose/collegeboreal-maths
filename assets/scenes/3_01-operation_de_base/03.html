@@ -1,0 +1,43 @@
+<div 	class="page-layout" 
+		ng-init="
+			ans.input1 = {
+				solution: 'naturels'
+			};
+		">
+
+		<div class="header-module">
+			EXERCICE 1
+		</div>
+
+		<div class="type-xxsmall bold mt3">
+			Complétez les phrases:
+		</div>
+
+		<div class="type-xxsmall para">
+			L'ensemble symbolisé par N = { 0,1,2,3,4, ... } s'appelle l'ensemble des nombres:
+		</div>
+
+		<div class="paper-shadow pa4">
+
+			<div inbook-workbook-input persist-to="input1">
+			</div>
+	
+			<div class="pl4" vcollapse="!ans.showSolution">
+
+				<div class="type-xxsmall bold">
+					La solution:
+				</div>
+
+				<div class="type-xxsmall mt3 pl4">
+					{{ans.solution}}
+				</div>
+
+			</div>
+
+		</div>
+
+		<div id="continue" class="mt6 center">
+			<div inbook-nextbtn="scene"></div>
+		</div>
+
+</div>

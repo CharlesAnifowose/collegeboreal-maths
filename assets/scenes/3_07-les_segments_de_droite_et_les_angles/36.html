@@ -1,0 +1,78 @@
+<div 	gseq
+		class="page-layout" 
+		ng-init="
+			ans={};
+
+			ans.input1 = {
+				showSolution: false
+			};
+
+		">
+
+		<div gdirections>
+			<div el=".exercise-num"   duration="0.8" ease="power4-in-out" presets="[fromTransparent]"></div>
+
+			<div duration="0.45"></div>
+
+			<div el=".anim-01" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+	      	<div el="#continue" duration="1" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]" disable-scroll-focus="true"></div>	
+
+		</div>
+
+		<div class="exercise-num">
+	      EXERCICE 22
+	    </div>
+
+	    <div class="exercise-box anim-01">
+
+			<div class="exercise-header">
+				Dans la figure, trouvex les segments de droite qui sont congrus à celui-ci segment de droite : 
+			</div>
+
+			<div class="exercise-text">
+				<img ng-src="{{imgUrl}}exercise22/01.png" />
+			</div>
+
+			<div class="exercise-text">
+				<img ng-src="{{imgUrl}}exercise22/02.png" />
+			</div>	
+
+			<div class="workbook-textarea">
+				<div class="input-ans-icon input-icon">
+		        	<i class="icon-reply"></i> 
+		        </div>	
+				<textarea  persist-to="input1"></textarea>
+			</div>
+
+			<div vcollapse="ans.input1.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input1.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div vcollapse="!ans.input1.showSolution">
+				<div class="solution-body">
+					Les segments de droite : PQ, OP, LM, KL, IJ, FG, et CD sont congrus
+				</div>
+			</div>
+		</div> 
+
+		<div id="continue" class="mt6 center">
+			<div inbook-nextbtn="scene"></div>
+		</div>
+
+		<script type="text/inbook-scoped-javascript" inbook-javascript>
+
+	        // var icon = el.find('.input-ans-icon');
+	        // el.find(".workbook-textarea textarea").on('focus',function(){
+	        //     var tl = gsapService.newTimeline();
+	            
+	        //     tl.add( gsapService.tweenTo( icon, 0.1, {'backgroundColor':'#0ac', rotation:190,'scale':'1.2'} ));
+	        //     tl.add( gsapService.tweenTo( icon, 0.7, {'scale':'1', rotation:180, 'ease':gsapService.ease('bounce-out')} ));
+	        // });
+
+    	</script>
+</div>	

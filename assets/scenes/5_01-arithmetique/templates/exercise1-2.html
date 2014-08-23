@@ -1,0 +1,90 @@
+<div class="inbook-fraction ib">
+	<div class="fraction-notation-box ">
+		<div class="ib">
+			<div>{{calc.frac1.nume}}</div>
+			<div class="fraction-line"></div>
+			<div>{{calc.frac1.deno}}</div>
+		</div>
+		<div class="ib">de</div>
+		<div class="ib">
+			<div>{{calc.frac2.nume}}</div>
+			<div class="fraction-line"></div>
+			<div>{{calc.frac2.deno}}</div>
+		</div>
+	</div>
+</div>
+<div class="ib" hcollapse="!ans.showHint">=</div>
+<div class="inbook-fraction ib" hcollapse="!ans.showHint">
+	<div class="fraction-notation-box ">
+		<div class="ib">
+			<div>{{calc.frac1.nume}}</div>
+			<div class="fraction-line"></div>
+			<div>{{calc.frac1.deno}}</div>
+		</div>
+		<div class="ib">&times;</div>
+		<div class="ib">
+			<div>{{calc.frac2.nume}}</div>
+			<div class="fraction-line"></div>
+			<div>{{calc.frac2.deno}}</div>
+		</div>
+	</div>
+</div>
+<div class="ib" hcollapse="!ans.showHint2">=</div>
+<div class="ib" hcollapse="!ans.showHint2">
+	<div class="inbook-fraction fraction-notation-box ">
+		<div>
+			{{calc.frac1.nume}} &times; {{calc.frac2.nume}}
+		</div>
+		<div class="fraction-line"></div>
+		<div>
+			{{calc.frac1.deno}} &times; {{calc.frac2.deno}}
+		</div>
+	</div>
+</div>
+<div class="ib">=</div>
+<div class="inbook-fraction ib">
+		<div class="fraction-notation-box">
+			<div>
+				<span auto-size-input>
+					<input type="text" class="input-xsmall" 
+							ng-model="ans.nume" 
+							ng-disabled="ans.locked"
+							ng-enter-key="ans.remoteTrigger=true;"
+							/>
+				</span>
+			</div>
+			<div class="fraction-line"></div>
+			<div>
+				<span auto-size-input>
+					<input 	type="text" class="input-xsmall"
+							ng-model="ans.deno" 
+							ng-disabled="ans.locked"
+							ng-enter-key="ans.remoteTrigger=true;" 
+							 />
+				</span>
+			</div>
+		</div>
+</div>
+<div class="ib">
+	<div>
+		<div inbook-answer-submit="1" 
+				 ng-model="ans.isCorrectFlag" 
+				 attempts="1" simple-ui="1"
+				 remote-trigger="ans.remoteTrigger" 
+				 remote-trigger-reset="ans.remoteTrigger = false;"
+				 on-correct=   "question.markAsCorrect();"
+				 on-incorrect= "question.markAsIncorrect();"
+				 on-complete="ans.locked=true;"></div>
+	</div>
+
+	<div class="type-xxsmall mt1" vcollapse="ans.showHint">
+		<div class="softbtn orange" ng-click="ans.showHint=true; question.markAsHinted()">Hint</div>
+	</div>
+	<div class="type-xxsmall mt1" vcollapse="!ans.showHint||ans.showHint2">
+		<div class="softbtn orange" ng-click="ans.showHint2=true; question.markAsHinted()">Hint</div>
+	</div>
+</div>
+<div class="mt4">
+	<div inbook-nextbtn="question"></div>
+	<div inbook-next-btn="series"></div>
+</div>

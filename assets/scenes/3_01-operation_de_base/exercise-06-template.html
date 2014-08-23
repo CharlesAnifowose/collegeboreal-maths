@@ -1,0 +1,34 @@
+<div class="page-layout">
+	<div class="mt2 type-small">
+
+		<div class="exercise-box">
+
+			
+			
+		
+			<div class="ib bold">
+				{{ans.num1}}
+			</div>
+			<div class="ib">
+				<div 	inbook-answerbox-fill="ans.val"
+						pattern="'*.'"
+						class="type-small bold"
+						input-class="type-small bold"
+						on-correct="question.markAsCorrect()"
+						on-incorrect="question.markAsIncorrect()"></div>
+			</div>
+			<div class="ib bold">
+				{{ans.num2}}
+			</div>
+
+			<div class="mt4">
+				<div inbook-nextbtn="question"></div>
+			</div>
+
+		</div>
+
+	</div>
+	<div id="continue" class="mt6 center">
+  <div inbook-nextbtn="scene"></div>
+  </div>
+</div>

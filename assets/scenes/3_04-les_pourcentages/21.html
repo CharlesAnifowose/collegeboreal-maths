@@ -1,0 +1,75 @@
+<div  	gseq gscroll
+    	class="page-layout">
+
+	    <div gdirections>
+	      <div el=".exercise-num"   duration="1" ease="power4-in-out" presets="[fromTransparent]"></div>
+	    </div>
+
+	    <div class="exercise-num">
+	      EXERCICE 12
+	    </div>
+	
+    <div 
+	ng-init="values = [
+        {rate: 5 ,   base: 200   },
+        {rate: 4 ,   base: 4000  },
+        {rate: 8 ,   base: 9000  },
+        {rate: 18 ,  base: 500   },
+        {rate: 32 ,  base: 2000  },
+        {rate: 50 ,  base: 84    },
+        {rate: 25 ,  base: 1000  },
+        {rate: 75 ,  base: 2000  },
+        {rate: 27 ,  base: 200   },
+        {rate: 65 ,  base: 840   },
+        {rate: 15 ,  base: 45    , dollar:true },
+        {rate: 15 ,  base: 185   , dollar:true },
+        {rate: 15 ,  base: 4670  , dollar:true },
+        {rate: 7 ,   base: 12    , dollar:true },
+        {rate: 7 ,   base: 138   , dollar:true },
+        {rate: 7 ,   base: 2900  , dollar:true },
+        {rate: 8 ,   base: 69    , dollar:true },
+        {rate: 8 ,   base: 470   , dollar:true },
+        {rate: 8 ,   base: 999   , dollar:true },
+        {rate: 15 ,  base: 7823  , dollar:true },
+      ]; valueIndex = 0;"
+	>
+      
+    </div>
+		<div class="exercise-box">
+			<div 	inbook-questionseries
+						on-complete="scene.markAsCompleted();"
+						ordered=true
+						no-remove=true>
+			<div  ng-repeat="value in values" ng-equate="values[$index].portion = values[$index].base * (values[$index].rate /100);">
+				
+				<div inbook-questionseries-item level="{{$index}}">
+					
+					
+						<div class="exercise-header">
+							Trouvez le pourcentage en variant vos stratégies de calcul.
+						</div>
+						
+						<div class="exercise-text">
+							<div>{{values[$index].rate}} % de {{values[$index].base}} </div>
+						</div>
+						<div class="para" inbook-answerbox-fill="values[$index].portion"
+							class="type-xxsmall"
+							on-correct="question.markAsCorrect()"
+							on-incorrect="question.markAsIncorrect()">
+						</div>
+						
+					</div>
+				</div> 
+			
+				<div class="mt4">
+					<div inbook-nextbtn="question"></div>
+				</div>
+			</div>
+		</div>
+
+	
+    <div id="continue" class="mt6 center">
+		<div inbook-nextbtn="scene"></div>
+    </div>
+	
+</div>

@@ -1,0 +1,150 @@
+<div 	gseq
+		class="page-layout" 
+		ng-init="
+			ans={};
+
+			ans.input1 = {
+				showSolution: false,
+				solution 	: '2'
+			};
+			ans.input2 = {
+				showSolution: false,
+				solution : '8'
+			};
+			ans.input3 = {
+				showSolution: false,
+				solution : '7'
+			};
+		">
+
+		<div gdirections>
+			<div el=".exercise-num"   duration="0.8" ease="power4-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="0.45"></div>
+
+			<div el=".anim-01" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+				
+			<div duration="1"></div>
+
+			<div el=".anim-02" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-03" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+	      	<div el="#continue" duration="1" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]" disable-scroll-focus="true"></div>
+
+		</div>
+
+
+		<div class="exercise-num">
+			EXERCICE 3
+		</div>
+
+		<div class="exercise-box anim-01">
+
+			<div class="exercise-header">
+				Dans le nombre 47 238,	
+			</div>
+
+			<div class="exercise-text">
+				quel chiffre représente les centaines?
+			</div>
+
+			<div inbook-workbook-input persist-to="input1"></div>
+	
+			<div vcollapse="ans.input1.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input1.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input1.showSolution">
+
+				<div class="solution-header">
+					La solution:
+				</div>
+
+				<div class="solution-body">
+					{{ans.input1.solution}}
+				</div>
+
+			</div>
+
+		</div>
+
+	<hr class="question-divider anim-02" />
+
+		<div class="exercise-box anim-02">	
+
+			<div class="exercise-header">
+				Dans le nombre 47 238,	
+			</div>
+
+			<div class="exercise-text">
+				quel chiffre représente les unités?
+			</div>
+
+			<div inbook-workbook-input persist-to="input2"></div>
+	
+			<div vcollapse="ans.input2.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input2.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input2.showSolution">
+
+				<div class="solution-header">
+					La solution:
+				</div>
+
+				<div class="solution-body">
+					{{ans.input2.solution}}
+				</div>
+
+			</div>
+
+		</div>
+
+	<hr class="question-divider anim-03" />
+
+		<div class="exercise-box anim-03">
+
+			<div class="exercise-header">
+				Dans le nombre 47 238,	
+			</div>
+
+			<div class="exercise-text">
+				quel chiffre représente les unités de mille?
+			</div>
+
+			<div inbook-workbook-input persist-to="input3"></div>
+	
+			<div vcollapse="ans.input3.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input3.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input3.showSolution">
+
+				<div class="solution-header">
+					La solution:
+				</div>
+
+				<div class="solution-body">
+					{{ans.input3.solution}}
+				</div>
+
+			</div>
+
+		</div>
+		
+		<div id="continue" class="mt6 center">
+			<div inbook-nextbtn="scene"></div>
+		</div>
+
+</div>	

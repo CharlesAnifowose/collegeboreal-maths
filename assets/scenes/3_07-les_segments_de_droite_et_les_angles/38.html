@@ -1,0 +1,237 @@
+<div 	gseq
+		class="page-layout" 
+		ng-init="
+			ans={};
+
+			ans.input1 = {
+				showSolution: false
+			};
+			ans.input2 = {
+				showSolution: false
+			};
+			ans.input3 = {
+				showSolution: false
+			};
+			ans.input4 = {
+				showSolution: false
+			};
+			ans.input5 = {
+				showSolution: false
+			};
+		">
+
+		<div gdirections>
+			<div el=".exercise-num"   duration="0.8" ease="power4-in-out" presets="[fromTransparent]"></div>
+
+			<div duration="0.45"></div>
+
+			<div el=".anim-01" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+				
+			<div duration="1"></div>
+
+			<div el=".anim-02" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-03" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-04" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-05" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+	      	<div el="#continue" duration="1" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]" disable-scroll-focus="true"></div>	
+
+		</div>
+
+	    <div class="exercise-num">
+	      EXERCICE 23
+	    </div>
+
+		<div class="exercise-box anim-01">
+
+			<div class="exercise-header">
+				Construisez les triangles à partir des mesures données
+			</div>
+
+			<div class="exercise-text">
+				<div class="ib">
+					AB = 3cm
+				</div>
+				<div class="ib ml2 mr2">
+					BC = 2,5cm
+				</div>
+				<div class="ib">
+					angle B = 90&deg;
+				</div>
+			</div>
+
+			<div inbook-workbook-draw persist-to="input1"></div>
+
+			<div vcollapse="ans.input1.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input1.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div vcollapse="!ans.input1.showSolution">
+				<div class="solution-body">
+					<img ng-src="{{imgUrl}}exercise23/01.png" />
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-02" />
+
+		<div class="exercise-box anim-02">
+
+			<div class="exercise-header">
+				Construisez les triangles à partir des mesures données
+			</div>
+
+			<div class="exercise-text">
+				<div class="ib">
+					EF = 8,2cm
+				</div>
+				<div class="ib ml2 mr2">
+					FG = 6,7cm
+				</div>
+				<div class="ib">
+					angle F = 45&deg;
+				</div>
+			</div>
+
+			<div inbook-workbook-draw persist-to="input2"></div>
+
+			<div vcollapse="ans.input2.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input2.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div vcollapse="!ans.input2.showSolution">
+				<div class="solution-body">
+					<img ng-src="{{imgUrl}}exercise23/02.png" />
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-03" />
+
+		<div class="exercise-box anim-03">
+
+			<div class="exercise-header">
+				Construisez les triangles à partir des mesures données
+			</div>
+
+			<div class="exercise-text">
+				<div class="ib">
+					ST = 7,1cm
+				</div>
+				<div class="ib ml2 mr2">
+					TU = 3cm
+				</div>
+				<div class="ib">
+					angle T = 30&deg;
+				</div>
+			</div>
+
+			<div inbook-workbook-draw persist-to="input3"></div>
+
+			<div vcollapse="ans.input3.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input3.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div vcollapse="!ans.input3.showSolution">
+				<div class="solution-body">
+					<img ng-src="{{imgUrl}}exercise23/03.png" />
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-04" />
+
+		<div class="exercise-box anim-04">
+
+			<div class="exercise-header">
+				Construisez les triangles à partir des mesures données
+			</div>
+
+			<div class="exercise-text">
+				<div class="ib">
+					XY = 9,5cm
+				</div>
+				<div class="ib ml2 mr2">
+					YZ = 7,2cm
+				</div>
+				<div class="ib">
+					angle Y = 105&deg;
+				</div>
+			</div>
+
+			<div inbook-workbook-draw persist-to="input4"></div>
+
+			<div vcollapse="ans.input4.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input4.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div vcollapse="!ans.input4.showSolution">
+				<div class="solution-body">
+					<img ng-src="{{imgUrl}}exercise23/04.png" />
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-05" />
+
+		<div class="exercise-box anim-05">
+
+			<div class="exercise-header">
+				Construisez les triangles à partir des mesures données
+			</div>
+
+			<div class="exercise-text">
+				<div class="ib">
+					GH = 4,1cm
+				</div>
+				<div class="ib ml2 mr2">
+					HI = 1,2cm
+				</div>
+				<div class="ib">
+					angle H = 75&deg;
+				</div>
+			</div>
+
+			<div inbook-workbook-draw persist-to="input5"></div>
+
+			<div vcollapse="ans.input5.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input5.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div vcollapse="!ans.input5.showSolution">
+				<div class="solution-body">
+					<img ng-src="{{imgUrl}}exercise23/05.png" />
+				</div>
+			</div>
+				
+		</div> 
+
+		<div id="continue" class="mt6 center">
+			<div inbook-nextbtn="scene"></div>
+		</div>
+</div>

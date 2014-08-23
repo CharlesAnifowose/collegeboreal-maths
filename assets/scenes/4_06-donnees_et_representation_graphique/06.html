@@ -1,0 +1,156 @@
+<div 	 gseq 
+		 class="page-layout"
+		 ng-init="
+		 ans={};
+		 ans.input1 = {
+			 showSolution: false
+		};
+		ans.input2 = {
+			 showSolution: false
+		};
+		ans.input3 = {
+			 showSolution: false
+		};
+
+	">
+
+	<div gdirections>
+			<div el=".exercise-num" duration="0.8" ease="power4-in-out" presets="[fromTransparent]"></div>
+
+			<div duration="0.45"></div>
+
+			<div el=".anim-01" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-02" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-03" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div el="#continue" duration="1" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]" disable-scroll-focus="true"></div>	
+
+		</div>
+
+	<script type="text/inbook-javascript" inbook-javascript>
+		var grid = scope.grid = [
+		   ['20-25',   			50, 	 ]
+		  ,['25-30',   			45,  ]
+		  ,['30-35',   			51,   ]
+		  ,['35-40',   			35,   ]
+		  ,['40-45',   			15,   ]
+		  ,['45-50',   			25,   ]
+		  ,['50-55',   			10,   ]
+		  ,['55-60',  			8,   ]
+		  ,['60-65',  			6,   ]
+		  ,['65-70',  			4,   ]
+		  ,['70 - et plus',  	2,   ]
+		];
+	</script>
+
+	<div class="exercise-num">
+		EXERCISE 4
+	</div>
+
+	<div class="exercise-box anim-01">
+
+		<div class="exercise-header">
+			Présentez dans un histogramme les informations contenues dans ce tableau.
+		</div>
+
+		<div class="exercise-text">
+
+			<table class="basic-table cells-large" style="margin: 0 auto;">
+				<tr>
+					<td class="bold" colspan="2">
+						<div>Répartition d’âge</div>
+						<div>selon la fréquentation d’une brasserie</div>
+					</td>
+				</tr>	
+				<tr style="background-color:#ddd">
+					<td>Groupes d’âges</td>
+					<td>Fréquences relatives (%)</td>
+				</tr>
+				<tr ng-repeat="row in grid track by $index">
+				  	<td>
+				  		
+				   		{{grid[$index][0]}}
+				  	</td>
+				  	<td>
+				 		{{grid[$index][1]}}
+					</td>
+				</tr>
+			</table>
+
+		</div>
+
+		<div inbook-workbook-draw persist-to="input1"></div>
+
+		<div vcollapse="ans.input1.showSolution">
+			<div class="show-solution-btn" ng-click="ans.input1.showSolution = true">
+				Vérifier Solution
+			</div>
+		</div>
+
+		<div vcollapse="!ans.input1.showSolution">
+			<div class="solution-body">
+				<img ng-src="{{imgUrl}}exercise-01-02.png" />
+			</div>
+		</div>
+
+	</div>
+
+	<hr class="question-divider anim-02" />
+
+	<div class="exercise-box anim-02">
+
+		<div class="exercise-header">
+			Quelle est la largeur de chaque classe?
+		</div>
+
+		<div inbook-workbook-input persist-to="input2"></div>
+
+		<div vcollapse="ans.input2.showSolution">
+			<div class="show-solution-btn" ng-click="ans.input2.showSolution = true">
+				Vérifier Solution
+			</div>
+		</div>
+
+		<div vcollapse="!ans.input2.showSolution">
+			<div class="solution-body">
+				Largeur des classes; 5
+			</div>
+		</div>
+
+	</div>
+
+	<hr class="question-divider anim-03" />
+
+	<div class="exercise-box anim-03">
+
+		<div class="exercise-header">
+			Quel est le milieu de la classe «45 - 50»?
+		</div>
+
+		<div inbook-workbook-input persist-to="input3"></div>
+
+		<div vcollapse="ans.input3.showSolution">
+			<div class="show-solution-btn" ng-click="ans.input3.showSolution = true">
+				Vérifier Solution
+			</div>
+		</div>
+
+		<div vcollapse="!ans.input3.showSolution">
+			<div class="solution-body">
+				Milieu de la classe «45-50» : 47,5
+			</div>
+		</div>
+
+	</div>
+
+
+	<div id="continue" class="mt6 center">
+		<div inbook-nextbtn="scene"></div>
+	</div>
+</div>

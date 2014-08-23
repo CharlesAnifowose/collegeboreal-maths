@@ -1,0 +1,1064 @@
+<div  	gseq gscroll
+    	class="page-layout">
+
+	    <div gdirections>
+	      <div el=".exercise-num"   duration="1" ease="power4-in-out" presets="[fromTransparent]"></div>
+	    </div>
+
+	    <div class="exercise-num">
+	      EXERCICE 7
+	    </div>
+
+		<div 	inbook-questionseries
+				on-complete="scene.markAsCompleted();"
+  				ordered=true
+  				no-remove=true>
+
+	 <div inbook-questionseries-item level="1"
+		 ng-resettable-init="
+			 calc = {};
+			 ans = {};
+			 calc.nume = 3;
+			 calc.deno = 100;
+			 
+			 "
+		ng-equate="
+			
+			ans.isNumeEqual = equal(calc.nume,ans.nume);
+			ans.isDenoEqual = equal(calc.deno,ans.deno);
+			ans.isCorrect = and(ans.isNumeEqual, ans.isDenoEqual);
+			ans.isCorrectFlag = ifElse(ans.isCorrect, 1, 0);
+			
+		">
+
+		<div class="exercise-box">
+
+			<div class="exercise-header">
+				Trouvez une expression équivalente ayant pour dénominateur 100.
+			</div>
+			
+			<div class="exercise-text">
+				 0,03
+			</div>
+
+			<div class="para">
+				<div class="inbook-fraction">
+					<div><span auto-size-input><input 
+					  type="text"
+					  ng-model="ans.nume" 
+					  class="type-xxsmall"
+					  input-class="type-xxsmall"
+					  ng-disabled="ans.locked"
+					  ng-enter-key="ans.remoteTrigger=true;"
+					/></span></div>
+					<div class="fraction-line mb1"></div>
+					<div><span auto-size-input><input 
+					  type="text"
+					  ng-model="ans.deno" 
+					  class="type-xxsmall"
+					  input-class="type-xxsmall"
+					  ng-disabled="ans.locked"
+					  ng-enter-key="ans.remoteTrigger=true;"
+					/></span></div>
+				  </div>
+				  <div 
+					class="ib type-xxsmall"
+					inbook-answer-submit="1" 
+					ng-model="ans.isCorrectFlag" 
+					attempts="1" simple-ui="1"
+					remote-trigger="ans.remoteTrigger"
+					remote-trigger-reset="ans.remoteTrigger = false;"
+					on-correct=   "question.markAsCorrect();"
+					on-incorrect= "question.markAsIncorrect();
+									storedAns.nume = ans.nume;
+									storedAns.deno = ans.deno;
+									feedback.reveal = true;					
+									"
+					on-complete="ans.locked=true; track({description:'question', calc:calc, ans:ans})"
+				  ></div>
+			</div>
+
+			<div class="mt4">
+				<div inbook-nextbtn="question"></div>
+			</div>
+			
+	   </div>
+	 </div>
+
+	<div inbook-questionseries-item level="2"
+		ng-init="
+			  calc = {};
+			  ans = {};
+			  calc.nume = 50;
+			  calc.deno = 100;
+			 "
+		ng-equate="
+			ans.isNumeEqual = equal(calc.nume,ans.nume);
+			ans.isDenoEqual = equal(calc.deno,ans.deno);
+			ans.isCorrect = and(ans.isNumeEqual, ans.isDenoEqual);
+			ans.isCorrectFlag = ifElse(ans.isCorrect, 1, 0);
+		">
+
+		<div class="exercise-box">
+
+			<div class="exercise-header">
+				Écrivez chaque rapport sous forme de pourcentage (%).
+			</div>
+			
+			<div class="exercise-text">
+				 0,5
+			</div>
+
+			<div class="para">
+				<div class="inbook-fraction">
+					<div><span auto-size-input><input 
+					  type="text"
+					  ng-model="ans.nume" 
+					  class="type-xxsmall"
+					  input-class="type-xxsmall"
+					  ng-disabled="ans.locked"
+					  ng-enter-key="ans.remoteTrigger=true;"
+					/></span></div>
+					<div class="fraction-line mb1"></div>
+					<div><span auto-size-input><input 
+					  type="text"
+					  ng-model="ans.deno" 
+					  class="type-xxsmall"
+					  input-class="type-xxsmall"
+					  ng-disabled="ans.locked"
+					  ng-enter-key="ans.remoteTrigger=true;"
+					/></span></div>
+				  </div>
+				  <div 
+					class="ib type-xxsmall"
+					inbook-answer-submit="1" 
+					ng-model="ans.isCorrectFlag" 
+					attempts="1" simple-ui="1"
+					remote-trigger="ans.remoteTrigger"
+					remote-trigger-reset="ans.remoteTrigger = false;"
+					on-correct=   "question.markAsCorrect();"
+					on-incorrect= "question.markAsIncorrect();
+									storedAns.nume = ans.nume;
+									storedAns.deno = ans.deno;
+									feedback.reveal = true;					
+									"
+					on-complete="ans.locked=true; track({description:'question', calc:calc, ans:ans})"
+				  ></div>
+			</div>
+
+			<div class="mt4">
+				<div inbook-nextbtn="question"></div>
+			</div>
+			
+	   </div>
+	 </div>
+	 
+	 <div inbook-questionseries-item level="3"
+		ng-init="
+			  calc = {};
+			  ans = {};
+			  calc.nume = 40;
+			  calc.deno = 100;"
+		ng-equate="
+			ans.isNumeEqual = equal(calc.nume,ans.nume);
+			ans.isDenoEqual = equal(calc.deno,ans.deno);
+			ans.isCorrect = and(ans.isNumeEqual, ans.isDenoEqual);
+			ans.isCorrectFlag = ifElse(ans.isCorrect, 1, 0);
+		">
+
+		<div class="exercise-box">
+
+			<div class="exercise-header">
+				Écrivez chaque rapport sous forme de pourcentage (%).
+			</div>
+			
+			<div class="exercise-text">
+				 0,4 
+			</div>
+
+			<div class="para">
+				<div class="inbook-fraction">
+					<div><span auto-size-input><input 
+					  type="text"
+					  ng-model="ans.nume" 
+					  class="type-xxsmall"
+					  input-class="type-xxsmall"
+					  ng-disabled="ans.locked"
+					  ng-enter-key="ans.remoteTrigger=true;"
+					/></span></div>
+					<div class="fraction-line mb1"></div>
+					<div><span auto-size-input><input 
+					  type="text"
+					  ng-model="ans.deno" 
+					  class="type-xxsmall"
+					  input-class="type-xxsmall"
+					  ng-disabled="ans.locked"
+					  ng-enter-key="ans.remoteTrigger=true;"
+					/></span></div>
+				  </div>
+				  <div 
+					class="ib type-xxsmall"
+					inbook-answer-submit="1" 
+					ng-model="ans.isCorrectFlag" 
+					attempts="1" simple-ui="1"
+					remote-trigger="ans.remoteTrigger"
+					remote-trigger-reset="ans.remoteTrigger = false;"
+					on-correct=   "question.markAsCorrect();"
+					on-incorrect= "question.markAsIncorrect();
+									storedAns.nume = ans.nume;
+									storedAns.deno = ans.deno;
+									feedback.reveal = true;					
+									"
+					on-complete="ans.locked=true; track({description:'question', calc:calc, ans:ans})"
+				  ></div>
+			</div>
+
+			<div class="mt4">
+				<div inbook-nextbtn="question"></div>
+			</div>
+			
+	   </div>
+	 </div>
+	
+	<div inbook-questionseries-item level="4"
+		ng-init="
+			  calc = {};
+			  ans = {};
+			  calc.nume = 9;
+			  calc.deno = 100;"
+		ng-equate="
+			ans.isNumeEqual = equal(calc.nume,ans.nume);
+			ans.isDenoEqual = equal(calc.deno,ans.deno);
+			ans.isCorrect = and(ans.isNumeEqual, ans.isDenoEqual);
+			ans.isCorrectFlag = ifElse(ans.isCorrect, 1, 0);
+		">
+
+		<div class="exercise-box">
+
+			<div class="exercise-header">
+				Écrivez chaque rapport sous forme de pourcentage (%).
+			</div>
+			
+			<div class="exercise-text">
+				0,09
+			</div>
+
+			<div class="para">
+				<div class="inbook-fraction">
+					<div><span auto-size-input><input 
+					  type="text"
+					  ng-model="ans.nume" 
+					  class="type-xxsmall"
+					  input-class="type-xxsmall"
+					  ng-disabled="ans.locked"
+					  ng-enter-key="ans.remoteTrigger=true;"
+					/></span></div>
+					<div class="fraction-line mb1"></div>
+					<div><span auto-size-input><input 
+					  type="text"
+					  ng-model="ans.deno" 
+					  class="type-xxsmall"
+					  input-class="type-xxsmall"
+					  ng-disabled="ans.locked"
+					  ng-enter-key="ans.remoteTrigger=true;"
+					/></span></div>
+				  </div>
+				  <div 
+					class="ib type-xxsmall"
+					inbook-answer-submit="1" 
+					ng-model="ans.isCorrectFlag" 
+					attempts="1" simple-ui="1"
+					remote-trigger="ans.remoteTrigger"
+					remote-trigger-reset="ans.remoteTrigger = false;"
+					on-correct=   "question.markAsCorrect();"
+					on-incorrect= "question.markAsIncorrect();
+									storedAns.nume = ans.nume;
+									storedAns.deno = ans.deno;
+									feedback.reveal = true;					
+									"
+					on-complete="ans.locked=true; track({description:'question', calc:calc, ans:ans})"
+				  ></div>
+			</div>
+
+			<div class="mt4">
+				<div inbook-nextbtn="question"></div>
+			</div>
+			
+	   </div>
+	 </div>
+	 
+	<div inbook-questionseries-item level="5"
+		ng-init="
+			  calc = {};
+			  ans = {};
+			  calc.nume = 95;
+			  calc.deno = 100;"
+		ng-equate="
+			ans.isNumeEqual = equal(calc.nume,ans.nume);
+			ans.isDenoEqual = equal(calc.deno,ans.deno);
+			ans.isCorrect = and(ans.isNumeEqual, ans.isDenoEqual);
+			ans.isCorrectFlag = ifElse(ans.isCorrect, 1, 0);
+		">
+
+		<div class="exercise-box">
+
+			<div class="exercise-header">
+				Écrivez chaque rapport sous forme de pourcentage (%).
+			</div>
+			
+			<div class="exercise-text">
+				 <div class="inbook-fraction">
+				   <div>19</div>
+				   <div class="fraction-line"></div>
+				   <div>20</div>
+				</div>
+			</div>
+
+			<div class="para">
+				<div class="inbook-fraction">
+					<div><span auto-size-input><input 
+					  type="text"
+					  ng-model="ans.nume" 
+					  class="type-xxsmall"
+					  input-class="type-xxsmall"
+					  ng-disabled="ans.locked"
+					  ng-enter-key="ans.remoteTrigger=true;"
+					/></span></div>
+					<div class="fraction-line mb1"></div>
+					<div><span auto-size-input><input 
+					  type="text"
+					  ng-model="ans.deno" 
+					  class="type-xxsmall"
+					  input-class="type-xxsmall"
+					  ng-disabled="ans.locked"
+					  ng-enter-key="ans.remoteTrigger=true;"
+					/></span></div>
+				  </div>
+				  <div 
+					class="ib type-xxsmall"
+					inbook-answer-submit="1" 
+					ng-model="ans.isCorrectFlag" 
+					attempts="1" simple-ui="1"
+					remote-trigger="ans.remoteTrigger"
+					remote-trigger-reset="ans.remoteTrigger = false;"
+					on-correct=   "question.markAsCorrect();"
+					on-incorrect= "question.markAsIncorrect();
+									storedAns.nume = ans.nume;
+									storedAns.deno = ans.deno;
+									feedback.reveal = true;					
+									"
+					on-complete="ans.locked=true; track({description:'question', calc:calc, ans:ans})"
+				  ></div>
+			</div>
+
+			<div class="mt4">
+				<div inbook-nextbtn="question"></div>
+			</div>
+			
+	   </div>
+	 </div>
+	 
+	 <div inbook-questionseries-item level="6"
+		ng-init="
+			  calc = {};
+			  ans = {};
+			  calc.nume = 80;
+			  calc.deno = 100;"
+		ng-equate="
+			ans.isNumeEqual = equal(calc.nume,ans.nume);
+			ans.isDenoEqual = equal(calc.deno,ans.deno);
+			ans.isCorrect = and(ans.isNumeEqual, ans.isDenoEqual);
+			ans.isCorrectFlag = ifElse(ans.isCorrect, 1, 0);
+		">
+
+		<div class="exercise-box">
+
+			<div class="exercise-header">
+				Écrivez chaque rapport sous forme de pourcentage (%).
+			</div>
+			
+			<div class="exercise-text">
+				0,8
+			</div>
+
+			<div class="para">
+				<div class="inbook-fraction">
+					<div><span auto-size-input><input 
+					  type="text"
+					  ng-model="ans.nume" 
+					  class="type-xxsmall"
+					  input-class="type-xxsmall"
+					  ng-disabled="ans.locked"
+					  ng-enter-key="ans.remoteTrigger=true;"
+					/></span></div>
+					<div class="fraction-line mb1"></div>
+					<div><span auto-size-input><input 
+					  type="text"
+					  ng-model="ans.deno" 
+					  class="type-xxsmall"
+					  input-class="type-xxsmall"
+					  ng-disabled="ans.locked"
+					  ng-enter-key="ans.remoteTrigger=true;"
+					/></span></div>
+				  </div>
+				  <div 
+					class="ib type-xxsmall"
+					inbook-answer-submit="1" 
+					ng-model="ans.isCorrectFlag" 
+					attempts="1" simple-ui="1"
+					remote-trigger="ans.remoteTrigger"
+					remote-trigger-reset="ans.remoteTrigger = false;"
+					on-correct=   "question.markAsCorrect();"
+					on-incorrect= "question.markAsIncorrect();
+									storedAns.nume = ans.nume;
+									storedAns.deno = ans.deno;
+									feedback.reveal = true;					
+									"
+					on-complete="ans.locked=true; track({description:'question', calc:calc, ans:ans})"
+				  ></div>
+			</div>
+
+			<div class="mt4">
+				<div inbook-nextbtn="question"></div>
+			</div>
+			
+	   </div>
+	 </div>
+	 
+	 <div inbook-questionseries-item level="7"
+		ng-init="
+			  calc = {};
+			  ans = {};
+			  calc.nume = 12;
+			  calc.deno = 100;"
+		ng-equate="
+			ans.isNumeEqual = equal(calc.nume,ans.nume);
+			ans.isDenoEqual = equal(calc.deno,ans.deno);
+			ans.isCorrect = and(ans.isNumeEqual, ans.isDenoEqual);
+			ans.isCorrectFlag = ifElse(ans.isCorrect, 1, 0);
+		">
+
+		<div class="exercise-box">
+
+			<div class="exercise-header">
+				Écrivez chaque rapport sous forme de pourcentage (%).
+			</div>
+			
+			<div class="exercise-text">
+				0,12
+			</div>
+
+			<div class="para">
+				<div class="inbook-fraction">
+					<div><span auto-size-input><input 
+					  type="text"
+					  ng-model="ans.nume" 
+					  class="type-xxsmall"
+					  input-class="type-xxsmall"
+					  ng-disabled="ans.locked"
+					  ng-enter-key="ans.remoteTrigger=true;"
+					/></span></div>
+					<div class="fraction-line mb1"></div>
+					<div><span auto-size-input><input 
+					  type="text"
+					  ng-model="ans.deno" 
+					  class="type-xxsmall"
+					  input-class="type-xxsmall"
+					  ng-disabled="ans.locked"
+					  ng-enter-key="ans.remoteTrigger=true;"
+					/></span></div>
+				  </div>
+				  <div 
+					class="ib type-xxsmall"
+					inbook-answer-submit="1" 
+					ng-model="ans.isCorrectFlag" 
+					attempts="1" simple-ui="1"
+					remote-trigger="ans.remoteTrigger"
+					remote-trigger-reset="ans.remoteTrigger = false;"
+					on-correct=   "question.markAsCorrect();"
+					on-incorrect= "question.markAsIncorrect();
+									storedAns.nume = ans.nume;
+									storedAns.deno = ans.deno;
+									feedback.reveal = true;					
+									"
+					on-complete="ans.locked=true; track({description:'question', calc:calc, ans:ans})"
+				  ></div>
+			</div>
+
+			<div class="mt4">
+				<div inbook-nextbtn="question"></div>
+			</div>
+			
+	   </div>
+	 </div>
+	 
+	  <div inbook-questionseries-item level="8"
+		ng-init="
+			  calc = {};
+			  ans = {};
+			  calc.nume = 30;
+			  calc.deno = 100;"
+		ng-equate="
+			ans.isNumeEqual = equal(calc.nume,ans.nume);
+			ans.isDenoEqual = equal(calc.deno,ans.deno);
+			ans.isCorrect = and(ans.isNumeEqual, ans.isDenoEqual);
+			ans.isCorrectFlag = ifElse(ans.isCorrect, 1, 0);
+		">
+
+		<div class="exercise-box">
+
+			<div class="exercise-header">
+				Écrivez chaque rapport sous forme de pourcentage (%).
+			</div>
+			
+			<div class="exercise-text">
+				 <div class="inbook-fraction">
+				  <div>3</div>
+				  <div class="fraction-line"></div>
+				  <div>10</div>
+				</div>
+			</div>
+
+			<div class="para">
+				<div class="inbook-fraction">
+					<div><span auto-size-input><input 
+					  type="text"
+					  ng-model="ans.nume" 
+					  class="type-xxsmall"
+					  input-class="type-xxsmall"
+					  ng-disabled="ans.locked"
+					  ng-enter-key="ans.remoteTrigger=true;"
+					/></span></div>
+					<div class="fraction-line mb1"></div>
+					<div><span auto-size-input><input 
+					  type="text"
+					  ng-model="ans.deno" 
+					  class="type-xxsmall"
+					  input-class="type-xxsmall"
+					  ng-disabled="ans.locked"
+					  ng-enter-key="ans.remoteTrigger=true;"
+					/></span></div>
+				  </div>
+				  <div 
+					class="ib type-xxsmall"
+					inbook-answer-submit="1" 
+					ng-model="ans.isCorrectFlag" 
+					attempts="1" simple-ui="1"
+					remote-trigger="ans.remoteTrigger"
+					remote-trigger-reset="ans.remoteTrigger = false;"
+					on-correct=   "question.markAsCorrect();"
+					on-incorrect= "question.markAsIncorrect();
+									storedAns.nume = ans.nume;
+									storedAns.deno = ans.deno;
+									feedback.reveal = true;					
+									"
+					on-complete="ans.locked=true; track({description:'question', calc:calc, ans:ans})"
+				  ></div>
+			</div>
+
+			<div class="mt4">
+				<div inbook-nextbtn="question"></div>
+			</div>
+			
+	   </div>
+	 </div>
+	 
+	  <div inbook-questionseries-item level="9"
+		ng-init="
+			  calc = {};
+			  ans = {};
+			  calc.nume = 1;
+			  calc.deno = 100;"
+		ng-equate="
+			ans.isNumeEqual = equal(calc.nume,ans.nume);
+			ans.isDenoEqual = equal(calc.deno,ans.deno);
+			ans.isCorrect = and(ans.isNumeEqual, ans.isDenoEqual);
+			ans.isCorrectFlag = ifElse(ans.isCorrect, 1, 0);
+		">
+
+		<div class="exercise-box">
+
+			<div class="exercise-header">
+				Écrivez chaque rapport sous forme de pourcentage (%).
+			</div>
+			
+			<div class="exercise-text">
+				  0,01 
+			</div>
+
+			<div class="para">
+				<div class="inbook-fraction">
+					<div><span auto-size-input><input 
+					  type="text"
+					  ng-model="ans.nume" 
+					  class="type-xxsmall"
+					  input-class="type-xxsmall"
+					  ng-disabled="ans.locked"
+					  ng-enter-key="ans.remoteTrigger=true;"
+					/></span></div>
+					<div class="fraction-line mb1"></div>
+					<div><span auto-size-input><input 
+					  type="text"
+					  ng-model="ans.deno" 
+					  class="type-xxsmall"
+					  input-class="type-xxsmall"
+					  ng-disabled="ans.locked"
+					  ng-enter-key="ans.remoteTrigger=true;"
+					/></span></div>
+				  </div>
+				  <div 
+					class="ib type-xxsmall"
+					inbook-answer-submit="1" 
+					ng-model="ans.isCorrectFlag" 
+					attempts="1" simple-ui="1"
+					remote-trigger="ans.remoteTrigger"
+					remote-trigger-reset="ans.remoteTrigger = false;"
+					on-correct=   "question.markAsCorrect();"
+					on-incorrect= "question.markAsIncorrect();
+									storedAns.nume = ans.nume;
+									storedAns.deno = ans.deno;
+									feedback.reveal = true;					
+									"
+					on-complete="ans.locked=true; track({description:'question', calc:calc, ans:ans})"
+				  ></div>
+			</div>
+
+			<div class="mt4">
+				<div inbook-nextbtn="question"></div>
+			</div>
+			
+	   </div>
+	 </div>
+	 
+	 <div inbook-questionseries-item level="10"
+		ng-init="
+			  calc = {};
+			  ans = {};
+			  calc.nume = 84;
+			  calc.deno = 100;"
+		ng-equate="
+			ans.isNumeEqual = equal(calc.nume,ans.nume);
+			ans.isDenoEqual = equal(calc.deno,ans.deno);
+			ans.isCorrect = and(ans.isNumeEqual, ans.isDenoEqual);
+			ans.isCorrectFlag = ifElse(ans.isCorrect, 1, 0);
+		">
+
+		<div class="exercise-box">
+
+			<div class="exercise-header">
+				Écrivez chaque rapport sous forme de pourcentage (%).
+			</div>
+			
+			<div class="exercise-text">
+				 <div class="inbook-fraction">
+				  <div>42</div>
+				  <div class="fraction-line"></div>
+				  <div>50</div>
+				</div>
+			</div>
+
+			<div class="para">
+				<div class="inbook-fraction">
+					<div><span auto-size-input><input 
+					  type="text"
+					  ng-model="ans.nume" 
+					  class="type-xxsmall"
+					  input-class="type-xxsmall"
+					  ng-disabled="ans.locked"
+					  ng-enter-key="ans.remoteTrigger=true;"
+					/></span></div>
+					<div class="fraction-line mb1"></div>
+					<div><span auto-size-input><input 
+					  type="text"
+					  ng-model="ans.deno" 
+					  class="type-xxsmall"
+					  input-class="type-xxsmall"
+					  ng-disabled="ans.locked"
+					  ng-enter-key="ans.remoteTrigger=true;"
+					/></span></div>
+				  </div>
+				  <div 
+					class="ib type-xxsmall"
+					inbook-answer-submit="1" 
+					ng-model="ans.isCorrectFlag" 
+					attempts="1" simple-ui="1"
+					remote-trigger="ans.remoteTrigger"
+					remote-trigger-reset="ans.remoteTrigger = false;"
+					on-correct=   "question.markAsCorrect();"
+					on-incorrect= "question.markAsIncorrect();
+									storedAns.nume = ans.nume;
+									storedAns.deno = ans.deno;
+									feedback.reveal = true;					
+									"
+					on-complete="ans.locked=true; track({description:'question', calc:calc, ans:ans})"
+				  ></div>
+			</div>
+
+			<div class="mt4">
+				<div inbook-nextbtn="question"></div>
+			</div>
+			
+	   </div>
+	 </div>
+	 
+	 <div inbook-questionseries-item level="11"
+		ng-init="
+			  calc = {};
+			  ans = {};
+			  calc.nume = 12;
+			  calc.deno = 100;"
+		ng-equate="
+			ans.isNumeEqual = equal(calc.nume,ans.nume);
+			ans.isDenoEqual = equal(calc.deno,ans.deno);
+			ans.isCorrect = and(ans.isNumeEqual, ans.isDenoEqual);
+			ans.isCorrectFlag = ifElse(ans.isCorrect, 1, 0);
+		">
+
+		<div class="exercise-box">
+
+			<div class="exercise-header">
+				Écrivez chaque rapport sous forme de pourcentage (%).
+			</div>
+			
+			<div class="exercise-text">
+				<div class="inbook-fraction">
+				  <div>3</div>
+				  <div class="fraction-line"></div>
+				  <div>25</div>
+				</div>
+			</div>
+
+			<div class="para">
+				<div class="inbook-fraction">
+					<div><span auto-size-input><input 
+					  type="text"
+					  ng-model="ans.nume" 
+					  class="type-xxsmall"
+					  input-class="type-xxsmall"
+					  ng-disabled="ans.locked"
+					  ng-enter-key="ans.remoteTrigger=true;"
+					/></span></div>
+					<div class="fraction-line mb1"></div>
+					<div><span auto-size-input><input 
+					  type="text"
+					  ng-model="ans.deno" 
+					  class="type-xxsmall"
+					  input-class="type-xxsmall"
+					  ng-disabled="ans.locked"
+					  ng-enter-key="ans.remoteTrigger=true;"
+					/></span></div>
+				  </div>
+				  <div 
+					class="ib type-xxsmall"
+					inbook-answer-submit="1" 
+					ng-model="ans.isCorrectFlag" 
+					attempts="1" simple-ui="1"
+					remote-trigger="ans.remoteTrigger"
+					remote-trigger-reset="ans.remoteTrigger = false;"
+					on-correct=   "question.markAsCorrect();"
+					on-incorrect= "question.markAsIncorrect();
+									storedAns.nume = ans.nume;
+									storedAns.deno = ans.deno;
+									feedback.reveal = true;					
+									"
+					on-complete="ans.locked=true; track({description:'question', calc:calc, ans:ans})"
+				  ></div>
+			</div>
+
+			<div class="mt4">
+				<div inbook-nextbtn="question"></div>
+			</div>
+			
+	   </div>
+	 </div>
+	 
+	  <div inbook-questionseries-item level="12"
+		ng-init="
+			  calc = {};
+			  ans = {};
+			  calc.nume = 60;
+			  calc.deno = 100;"
+		ng-equate="
+			ans.isNumeEqual = equal(calc.nume,ans.nume);
+			ans.isDenoEqual = equal(calc.deno,ans.deno);
+			ans.isCorrect = and(ans.isNumeEqual, ans.isDenoEqual);
+			ans.isCorrectFlag = ifElse(ans.isCorrect, 1, 0);
+		">
+
+		<div class="exercise-box">
+
+			<div class="exercise-header">
+				Écrivez chaque rapport sous forme de pourcentage (%).
+			</div>
+			
+			<div class="exercise-text">
+				 <div class="inbook-fraction">
+				  <div>12</div>
+				  <div class="fraction-line"></div>
+				  <div>20</div>
+				</div>
+			</div>
+
+			<div class="para">
+				<div class="inbook-fraction">
+					<div><span auto-size-input><input 
+					  type="text"
+					  ng-model="ans.nume" 
+					  class="type-xxsmall"
+					  input-class="type-xxsmall"
+					  ng-disabled="ans.locked"
+					  ng-enter-key="ans.remoteTrigger=true;"
+					/></span></div>
+					<div class="fraction-line mb1"></div>
+					<div><span auto-size-input><input 
+					  type="text"
+					  ng-model="ans.deno" 
+					  class="type-xxsmall"
+					  input-class="type-xxsmall"
+					  ng-disabled="ans.locked"
+					  ng-enter-key="ans.remoteTrigger=true;"
+					/></span></div>
+				  </div>
+				  <div 
+					class="ib type-xxsmall"
+					inbook-answer-submit="1" 
+					ng-model="ans.isCorrectFlag" 
+					attempts="1" simple-ui="1"
+					remote-trigger="ans.remoteTrigger"
+					remote-trigger-reset="ans.remoteTrigger = false;"
+					on-correct=   "question.markAsCorrect();"
+					on-incorrect= "question.markAsIncorrect();
+									storedAns.nume = ans.nume;
+									storedAns.deno = ans.deno;
+									feedback.reveal = true;					
+									"
+					on-complete="ans.locked=true; track({description:'question', calc:calc, ans:ans})"
+				  ></div>
+			</div>
+
+			<div class="mt4">
+				<div inbook-nextbtn="question"></div>
+			</div>
+			
+	   </div>
+	 </div>
+	 
+	 <div inbook-questionseries-item level="13"
+		ng-init="
+			  calc = {};
+			  ans = {};
+			  calc.nume = 40;
+			  calc.deno = 100;"
+		ng-equate="
+			ans.isNumeEqual = equal(calc.nume,ans.nume);
+			ans.isDenoEqual = equal(calc.deno,ans.deno);
+			ans.isCorrect = and(ans.isNumeEqual, ans.isDenoEqual);
+			ans.isCorrectFlag = ifElse(ans.isCorrect, 1, 0);
+		">
+
+		<div class="exercise-box">
+
+			<div class="exercise-header">
+				Écrivez chaque rapport sous forme de pourcentage (%).
+			</div>
+			
+			<div class="exercise-text">
+				<div class="inbook-fraction">
+					 <div>2</div>
+					 <div class="fraction-line"></div>
+					 <div>5</div>
+				</div>
+			</div>
+
+			<div class="para">
+				<div class="inbook-fraction">
+					<div><span auto-size-input><input 
+					  type="text"
+					  ng-model="ans.nume" 
+					  class="type-xxsmall"
+					  input-class="type-xxsmall"
+					  ng-disabled="ans.locked"
+					  ng-enter-key="ans.remoteTrigger=true;"
+					/></span></div>
+					<div class="fraction-line mb1"></div>
+					<div><span auto-size-input><input 
+					  type="text"
+					  ng-model="ans.deno" 
+					  class="type-xxsmall"
+					  input-class="type-xxsmall"
+					  ng-disabled="ans.locked"
+					  ng-enter-key="ans.remoteTrigger=true;"
+					/></span></div>
+				  </div>
+				  <div 
+					class="ib type-xxsmall"
+					inbook-answer-submit="1" 
+					ng-model="ans.isCorrectFlag" 
+					attempts="1" simple-ui="1"
+					remote-trigger="ans.remoteTrigger"
+					remote-trigger-reset="ans.remoteTrigger = false;"
+					on-correct=   "question.markAsCorrect();"
+					on-incorrect= "question.markAsIncorrect();
+									storedAns.nume = ans.nume;
+									storedAns.deno = ans.deno;
+									feedback.reveal = true;					
+									"
+					on-complete="ans.locked=true; track({description:'question', calc:calc, ans:ans})"
+				  ></div>
+			</div>
+
+			<div class="mt4">
+				<div inbook-nextbtn="question"></div>
+			</div>
+			
+	   </div>
+	 </div>
+	 
+	  <div inbook-questionseries-item level="14"
+		ng-init="
+			  calc = {};
+			  ans = {};
+			  calc.nume = 90;
+			  calc.deno = 100;"
+		ng-equate="
+			ans.isNumeEqual = equal(calc.nume,ans.nume);
+			ans.isDenoEqual = equal(calc.deno,ans.deno);
+			ans.isCorrect = and(ans.isNumeEqual, ans.isDenoEqual);
+			ans.isCorrectFlag = ifElse(ans.isCorrect, 1, 0);
+		">
+
+		<div class="exercise-box">
+
+			<div class="exercise-header">
+				Écrivez chaque rapport sous forme de pourcentage (%).
+			</div>
+			
+			<div class="exercise-text">
+			  <div class="inbook-fraction">
+				  <div>9</div>
+				  <div class="fraction-line"></div>
+				  <div>10</div>
+			   </div>
+			</div>
+
+			<div class="para">
+				<div class="inbook-fraction">
+					<div><span auto-size-input><input 
+					  type="text"
+					  ng-model="ans.nume" 
+					  class="type-xxsmall"
+					  input-class="type-xxsmall"
+					  ng-disabled="ans.locked"
+					  ng-enter-key="ans.remoteTrigger=true;"
+					/></span></div>
+					<div class="fraction-line mb1"></div>
+					<div><span auto-size-input><input 
+					  type="text"
+					  ng-model="ans.deno" 
+					  class="type-xxsmall"
+					  input-class="type-xxsmall"
+					  ng-disabled="ans.locked"
+					  ng-enter-key="ans.remoteTrigger=true;"
+					/></span></div>
+				  </div>
+				  <div 
+					class="ib type-xxsmall"
+					inbook-answer-submit="1" 
+					ng-model="ans.isCorrectFlag" 
+					attempts="1" simple-ui="1"
+					remote-trigger="ans.remoteTrigger"
+					remote-trigger-reset="ans.remoteTrigger = false;"
+					on-correct=   "question.markAsCorrect();"
+					on-incorrect= "question.markAsIncorrect();
+									storedAns.nume = ans.nume;
+									storedAns.deno = ans.deno;
+									feedback.reveal = true;					
+									"
+					on-complete="ans.locked=true; track({description:'question', calc:calc, ans:ans})"
+				  ></div>
+			</div>
+
+			<div class="mt4">
+				<div inbook-nextbtn="question"></div>
+			</div>
+			
+	   </div>
+	 </div>
+	 
+	 <div inbook-questionseries-item level="15"
+		ng-init="
+			  calc = {};
+			  ans = {};
+			  calc.nume = 50;
+			  calc.deno = 100;"
+		ng-equate="
+			ans.isNumeEqual = equal(calc.nume,ans.nume);
+			ans.isDenoEqual = equal(calc.deno,ans.deno);
+			ans.isCorrect = and(ans.isNumeEqual, ans.isDenoEqual);
+			ans.isCorrectFlag = ifElse(ans.isCorrect, 1, 0);
+		">
+
+		<div class="exercise-box">
+
+			<div class="exercise-header">
+				Écrivez chaque rapport sous forme de pourcentage (%).
+			</div>
+			
+			<div class="exercise-text">
+			  <div class="inbook-fraction">
+			    <div>1</div>
+			    <div class="fraction-line"></div>
+			    <div>2</div>
+			  </div>
+			</div>
+
+			<div class="para">
+				<div class="inbook-fraction">
+					<div><span auto-size-input><input 
+					  type="text"
+					  ng-model="ans.nume" 
+					  class="type-xxsmall"
+					  input-class="type-xxsmall"
+					  ng-disabled="ans.locked"
+					  ng-enter-key="ans.remoteTrigger=true;"
+					/></span></div>
+					<div class="fraction-line mb1"></div>
+					<div><span auto-size-input><input 
+					  type="text"
+					  ng-model="ans.deno" 
+					  class="type-xxsmall"
+					  input-class="type-xxsmall"
+					  ng-disabled="ans.locked"
+					  ng-enter-key="ans.remoteTrigger=true;"
+					/></span></div>
+				  </div>
+				  <div 
+					class="ib type-xxsmall"
+					inbook-answer-submit="1" 
+					ng-model="ans.isCorrectFlag" 
+					attempts="1" simple-ui="1"
+					remote-trigger="ans.remoteTrigger"
+					remote-trigger-reset="ans.remoteTrigger = false;"
+					on-correct=   "question.markAsCorrect();"
+					on-incorrect= "question.markAsIncorrect();
+									storedAns.nume = ans.nume;
+									storedAns.deno = ans.deno;
+									feedback.reveal = true;					
+									"
+					on-complete="ans.locked=true; track({description:'question', calc:calc, ans:ans})"
+				  ></div>
+			</div>
+
+			<div class="mt4">
+				<div inbook-nextbtn="question"></div>
+			</div>
+			
+	   </div>
+	 </div>
+	 
+    <div id="continue" class="mt6 center">
+		<div inbook-nextbtn="scene"></div>
+    </div>
+	
+  </div>
+</div>

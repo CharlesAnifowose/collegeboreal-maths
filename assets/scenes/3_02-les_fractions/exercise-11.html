@@ -1,0 +1,215 @@
+<div 	gseq
+		class="page-layout" 
+		ng-init="
+			ans={};
+
+			ans.input1 = {
+				showSolution: false
+			};
+			ans.input2 = {
+				showSolution: false
+			};
+			ans.input3 = {
+				showSolution: false
+			};
+		">
+
+		<div gdirections>
+			<div el=".exercise-num"   duration="0.8" ease="power4-in-out" presets="[fromTransparent]"></div>
+
+			<div duration="0.45"></div>
+
+			<div el=".anim-01" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+				
+			<div duration="1"></div>
+
+			<div el=".anim-02" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-03" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+	      	<div el="#continue" duration="1" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]" disable-scroll-focus="true"></div>	
+
+		</div>
+
+		<div class="exercise-num">
+			EXERCICE 11
+		</div>
+
+		<div class="exercise-box anim-01">
+
+			<div class="exercise-header">
+				Écrivez la fraction que représentent les sections ombragées et comparez les
+				fraction à l'aide des symboles &lt; et &gt;.
+			</div>
+
+			<div class="exercise-text center">
+				<div class="ib" style="width:45%;">
+					<img ng-src="{{imgUrl}}Untitled25.png" />
+				</div>
+				<div class="ib" style="width:45%;">
+					<img ng-src="{{imgUrl}}Untitled26.png" />
+				</div>
+			</div>
+
+			<div inbook-workbook-draw persist-to="input1"></div>	
+
+		    <div vcollapse="ans.input1.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input1.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+		    <div class="pl4" vcollapse="!ans.input1.showSolution">
+
+				<div class="solution-header">
+					Solution:
+				</div>
+
+				<div class="solution-body">
+						
+					<div class="ib">
+						<div class="inbook-fraction">
+							<div>4</div>
+							<div class="fraction-line-thin"></div>
+							<div>8</div>
+						</div>	
+					</div>	
+					<div class="ib">
+						<div class="ml2 mr2">&gt;</div>
+					</div>
+					<div class="ib">
+						<div class="inbook-fraction">
+							<div>2</div>
+							<div class="fraction-line-thin"></div>
+							<div>8</div>
+						</div>	
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>	
+
+	<hr class="question-divider anim-02" />
+
+		<div class="exercise-box anim-02">
+
+			<div class="exercise-header">
+				Écrivez la fraction que représentent les sections ombragées et comparez les
+				fraction à l'aide des symboles &lt; et &gt;.
+			</div>
+
+			<div class="exercise-text center">
+				<div class="ib" style="width:45%;">
+					<img ng-src="{{imgUrl}}Untitled27.png" />
+				</div>
+				<div class="ib" style="width:45%;">
+					<img ng-src="{{imgUrl}}Untitled28.png" />
+				</div>
+			</div>
+
+			<div inbook-workbook-draw persist-to="input2"></div>	
+
+		    <div vcollapse="ans.input2.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input2.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+		    <div class="pl4" vcollapse="!ans.input2.showSolution">
+
+				<div class="solution-header">
+					Solution:
+				</div>
+
+				<div class="solution-body">
+						
+					<div class="ib">
+						<div class="inbook-fraction">
+							<div>6</div>
+							<div class="fraction-line-thin"></div>
+							<div>9</div>
+						</div>	
+					</div>	
+					<div class="ib">
+						<div class="ml2 mr2">&gt;</div>
+					</div>
+					<div class="ib">
+						<div class="inbook-fraction">
+							<div>5</div>
+							<div class="fraction-line-thin"></div>
+							<div>9</div>
+						</div>	
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>	
+
+	<hr class="question-divider anim-03" />
+
+		<div class="exercise-box anim-03">
+
+			<div class="exercise-header">
+				Écrivez la fraction que représentent les sections ombragées et comparez les
+				fraction à l'aide des symboles &lt; et &gt;.
+			</div>
+
+			<div class="exercise-text center">
+				<div class="ib" style="width:45%;">
+					<img ng-src="{{imgUrl}}Untitled29.png" />
+				</div>
+				<div class="ib" style="width:45%;">
+					<img ng-src="{{imgUrl}}Untitled30.png" />
+				</div>
+			</div>
+
+			<div inbook-workbook-draw persist-to="input3"></div>	
+
+		    <div vcollapse="ans.input3.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input3.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+		    <div class="pl4" vcollapse="!ans.input3.showSolution">
+
+				<div class="solution-header">
+					Solution:
+				</div>
+
+				<div class="solution-body">
+						
+					<div class="ib">
+						<div class="inbook-fraction">
+							<div>8</div>
+							<div class="fraction-line-thin"></div>
+							<div>16</div>
+						</div>	
+					</div>	
+					<div class="ib">
+						<div class="ml2 mr2">&gt;</div>
+					</div>
+					<div class="ib">
+						<div class="inbook-fraction">
+							<div>6</div>
+							<div class="fraction-line-thin"></div>
+							<div>16</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>			
+			
+	</div>
+	<div id="continue" class="mt6 center">
+	<div inbook-nextbtn="scene"></div>
+	</div>
+</div>

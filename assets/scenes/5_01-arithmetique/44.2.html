@@ -1,0 +1,310 @@
+<div 	 gseq 
+		 class="page-layout"
+		 ng-init="
+		 ans={};
+		 ans.input1 = {
+			 showSolution: false,
+				solution 	: '2'
+		};
+		 ans.input2 = {
+			 showSolution: false,
+				solution 	: '-7'
+		};
+		 ans.input3 = {
+			 showSolution: false,
+				solution 	: '-4'
+		};
+		 ans.input4 = {
+			 showSolution: false,
+				solution 	: '-3'
+		};
+		 ans.input5 = {
+			 showSolution: false,
+				solution 	: '0'
+		};
+		 ans.input6 = {
+			 showSolution: false,
+				solution 	: '5'
+		};
+		 ans.input7 = {
+			 showSolution: false,
+				solution 	: '-3'
+		};
+		 ans.input8 = {
+			 showSolution: false,
+				solution 	: '2'
+		};
+
+	">
+
+	<div gdirections>
+		<div el=".exercise-num" duration="0.8" ease="power4-in-out" presets="[fromTransparent]"></div>
+
+		<div duration="0.45"></div>
+
+		<div el=".anim-01" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+		<div duration="1"></div>
+
+		<div el=".anim-02" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+		<div duration="1"></div>
+
+		<div el=".anim-03" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+		<div duration="1"></div>
+
+		<div el=".anim-04" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+		<div duration="1"></div>
+
+		<div el=".anim-05" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+		<div duration="1"></div>
+
+		<div el=".anim-06" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+		<div duration="1"></div>
+
+		<div el=".anim-07" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+		<div duration="1"></div>
+
+		<div el=".anim-08" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+		<div duration="1"></div>
+
+		<div el="#continue" duration="1" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]" disable-scroll-focus="true"></div>
+
+	</div>
+
+	<div class="exercise-num">
+		EXERCISE 11.2
+	</div>
+
+	<div class="exercise-box anim-01">
+
+		<div class="exercise-header">
+			Effectuez
+		</div>
+
+		<div class="exercise-text">
+			<span math>12 "÷" (3 + 9 - 6)</span>
+		</div>
+
+		<div inbook-workbook-input persist-to="input1"></div>
+
+		<div vcollapse="ans.input1.showSolution">
+			<div class="show-solution-btn" ng-click="ans.input1.showSolution = true">
+				Vérifier Solution
+			</div>
+		</div>
+
+		<div vcollapse="!ans.input1.showSolution">
+			<div class="solution-body">
+				{{ans.input1.solution}}
+			</div>
+		</div>
+
+	</div>
+
+	<hr class="question-divider anim-02" />
+
+	<div class="exercise-box anim-02">
+
+		<div class="exercise-header">
+			Effectuez
+		</div>
+
+		<div class="exercise-text">
+			<span math>(5 + 3 - 8 - 14) "÷" 2</span>
+		</div>
+
+		<div inbook-workbook-input persist-to="input2"></div>
+
+		<div vcollapse="ans.input2.showSolution">
+			<div class="show-solution-btn" ng-click="ans.input2.showSolution = true">
+				Vérifier Solution
+			</div>
+		</div>
+
+		<div vcollapse="!ans.input2.showSolution">
+			<div class="solution-body">
+				{{ans.input2.solution}}
+			</div>
+		</div>
+
+	</div>
+
+	<hr class="question-divider anim-03" />
+
+	<div class="exercise-box anim-03">
+
+		<div class="exercise-header">
+			Effectuez
+		</div>
+
+		<div class="exercise-text">
+			<span math>(15 - 20 - 3)/(6 + 5 - 9)</span>
+		</div>
+
+		<div inbook-workbook-input persist-to="input3"></div>
+
+		<div vcollapse="ans.input3.showSolution">
+			<div class="show-solution-btn" ng-click="ans.input3.showSolution = true">
+				Vérifier Solution
+			</div>
+		</div>
+
+		<div vcollapse="!ans.input3.showSolution">
+			<div class="solution-body">
+				{{ans.input3.solution}}
+			</div>
+		</div>
+
+	</div>
+
+	<hr class="question-divider anim-04" />
+
+	<div class="exercise-box anim-04">
+
+		<div class="exercise-header">
+			Effectuez
+		</div>
+
+		<div class="exercise-text">
+			<span math>(14 + 5 - 15)/2</span>
+		</div>
+
+		<div inbook-workbook-input persist-to="input4"></div>
+
+		<div vcollapse="ans.input4.showSolution">
+			<div class="show-solution-btn" ng-click="ans.input4.showSolution = true">
+				Vérifier Solution
+			</div>
+		</div>
+
+		<div vcollapse="!ans.input4.showSolution">
+			<div class="solution-body">
+				{{ans.input4.solution}}
+			</div>
+		</div>
+
+	</div>
+
+	<hr class="question-divider anim-05" />
+
+	<div class="exercise-box anim-05">
+
+		<div class="exercise-header">
+			Effectuez
+		</div>
+
+		<div class="exercise-text">
+			<span math>(8 + 2 - 8 -2)/5</span>
+		</div>
+
+		<div inbook-workbook-input persist-to="input5"></div>
+
+		<div vcollapse="ans.input5.showSolution">
+			<div class="show-solution-btn" ng-click="ans.input5.showSolution = true">
+				Vérifier Solution
+			</div>
+		</div>
+
+		<div vcollapse="!ans.input5.showSolution">
+			<div class="solution-body">
+				{{ans.input5.solution}}
+			</div>
+		</div>
+
+	</div>
+
+	<hr class="question-divider anim-06" />
+
+	<div class="exercise-box anim-06">
+
+		<div class="exercise-header">
+			Effectuez
+		</div>
+
+		<div class="exercise-text">
+			<span math>(-25)/(-15 + 10)</span>
+		</div>
+
+		<div inbook-workbook-input persist-to="input6"></div>
+
+		<div vcollapse="ans.input6.showSolution">
+			<div class="show-solution-btn" ng-click="ans.input6.showSolution = true">
+				Vérifier Solution
+			</div>
+		</div>
+
+		<div vcollapse="!ans.input6.showSolution">
+			<div class="solution-body">
+				{{ans.input6.solution}}
+			</div>
+		</div>
+
+	</div>
+
+	<hr class="question-divider anim-07" />
+
+	<div class="exercise-box anim-07">
+
+		<div class="exercise-header">
+			Effectuez
+		</div>
+
+		<div class="exercise-text">
+			<span math>(8 - 2 + 12) "÷" (-11 + 5)</span>
+		</div>
+
+		<div inbook-workbook-input persist-to="input7"></div>
+
+		<div vcollapse="ans.input7.showSolution">
+			<div class="show-solution-btn" ng-click="ans.input7.showSolution = true">
+				Vérifier Solution
+			</div>
+		</div>
+
+		<div vcollapse="!ans.input7.showSolution">
+			<div class="solution-body">
+				{{ans.input7.solution}}
+			</div>
+		</div>
+
+	</div>
+
+	<hr class="question-divider anim-08" />
+
+	<div class="exercise-box anim-08">
+
+		<div class="exercise-header">
+			Effectuez
+		</div>
+
+		<div class="exercise-text">
+			<span math>(18 - 6 + 4)/(5 + 9 - 2 -4)</span>
+		</div>
+
+		<div inbook-workbook-input persist-to="input8"></div>
+
+		<div vcollapse="ans.input8.showSolution">
+			<div class="show-solution-btn" ng-click="ans.input8.showSolution = true">
+				Vérifier Solution
+			</div>
+		</div>
+
+		<div vcollapse="!ans.input8.showSolution">
+			<div class="solution-body">
+				{{ans.input8.solution}}
+			</div>
+		</div>
+
+	</div>
+
+	<div id="continue" class="mt6 center">
+		<div inbook-nextbtn="scene"></div>
+	</div>
+</div>

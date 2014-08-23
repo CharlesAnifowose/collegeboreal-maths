@@ -1,0 +1,73 @@
+<div ng-init="imgUrl = 'http://vretta-inbook-assets.s3.amazonaws.com/collegeboreal-sample/images/3_03-les_nombres_decimaux/';">
+	<div class="page-layout">
+		<div class="header-section"> 
+			Estimer un résultat
+		</div>
+		
+		<div class="para">
+			Parfois il est utile d'arrondir des nombres afin de pouvoir faire une
+			estimation ou de faire un calcul approximatif. Pour montrer que l'on a fait
+			un calcul approximatif, on utilise le symbole ≈ plutôt que le symbole
+			d'égalité.
+		</div>
+		<div><img ng-src="{{imgUrl}}21.PNG" /></div>
+		<div class="para">
+			 Lorsqu'il est question d'une somme d'argent, il est plus commode dans
+			 certains cas d'arrondir à l'unité près ; dans d'autres cas, il est préférable
+			 d'arrondir à une autre position - tout dépend de la situation.
+		</div>
+		
+		<div class="para">
+			 <div class="text-block">Exemples :</div> 
+			 <div class="text-block">
+				<div>L'essence se vend 0,59$ le litre.</div> 
+				<div>Un téléviseur se vend 790,99$.</div> 
+			</div>
+		</div>
+		
+		<hr />
+		<div class="para">
+			 Pour arrondir au centième près, on vérifie le chiffre qui suit
+			 immédiatement le centième, c'est-à-dire le chiffre dans la position des
+			 millièmes. Si ce chiffre est égal ou supérieur à 5, on ajoute 1 aux centièmes.
+			 Si le chiffre dans la position des millièmes est 4 ou moins, on n'augmente
+			pas la valeur des centièmes.
+		</div>	
+		<div class="para">
+			 Dans ces 2 cas, même si on parle d'argent, on n'arrondirait pas à l'unité. 
+			 Voyez ce qu'il arriverait si l'on arrondissait à l'unité près!
+		</div>
+			
+		<div class="para">
+			<ul class="basic-list">
+				<li>
+					<div>
+						L’essence se vendrait 1$ le litre.
+					</div>
+				</li>
+				<li>
+					<div>
+						Le téléviseur se vendrait 791$. (On aurait plutôt tendance à dire 800$ ou 790$ même si le chiffre dans la position des dizaines est 9.)
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<div><img ng-src="{{imgUrl}}22.PNG" /></div>
+		<div class="para">
+			 Lorsqu'on estime un résultat, on peut aussi arrondir les nombres aux
+			 positions suivantes: à la dizaine près, à la centaine près, au mille près, etc.
+		</div>	
+		<div><img ng-src="{{imgUrl}}23.png" /></div>
+		<div class="mt3 mb3"><img ng-src="{{imgUrl}}24.png" /></div>
+		<div><img ng-src="{{imgUrl}}25.png" /></div>
+		<div class="mt3 mb3"><img ng-src="{{imgUrl}}26.png" /></div>
+		<div><img ng-src="{{imgUrl}}27.PNG" /></div>
+		<div class="mt3 mb3"><img ng-src="{{imgUrl}}28.PNG" /></div>
+		<div><img ng-src="{{imgUrl}}29.PNG" /></div>
+		<div id="continue" class="mt6 center">
+	  <div inbook-nextbtn="scene"></div>
+	  </div>
+	</div>
+
+</div>

@@ -1,0 +1,62 @@
+<div  	
+	gseq
+  class="page-layout"
+>
+
+  <div gdirections>
+		<div el=".header-section" 	 duration="1" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+    <div duration="0.85" disable-scroll-focus="true"></div>
+    <div el=".anim-01" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+    <div duration="2" disable-scroll-focus="true"></div>
+    <div el=".anim-02" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+    <div duration="2" disable-scroll-focus="true"></div>
+    <div el="#continue" duration="1.2" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]" disable-scroll-focus="true"></div>
+  </div>
+
+	<div class="header-section"> 
+		Compter par intervalle de 2, de 3, jusqu'à 12
+	</div>
+
+	<div class="para anim-01">
+		Pour compter par intervalle de 2, on additionne 2 à un nombre donné;
+		ensuite, à la somme obtenue, on ajoute encore 2. On répète cette opération
+		jusqu'à ce qu'on atteigne le résultat désiré. On procède de la même façon
+		pour compter par intervalle de 3, de 4, etc.
+	</div>
+
+	<div class="exemple-frame anim-02">
+
+		<div class="exemple-header">
+			Exemple : Compter par 2 de 134 à 142.
+		</div>
+
+		<div class="mt1">
+
+			<div class="ib vtop">
+				Procédure:
+			</div>
+			<div class="ib vtop">
+				<div>134 + 2 = 136</div>
+				<div>136 + 2 = 138</div>
+				<div>138 + 2 = 140</div>
+				<div>140 + 2 = 142</div>
+			</div>
+
+		</div>
+
+		<div class="mt1">
+			Habituellement, on fait l’addition mentalement et on n’inscrit que le résultat.
+		</div>
+
+		<div class="mt1">
+			Résultat : 134, 136, 138, 140, 142
+		</div>
+
+	</div>
+
+
+	<div id="continue" class="mt6 center">
+		<div inbook-nextbtn="scene"></div>
+	</div>
+
+</div>

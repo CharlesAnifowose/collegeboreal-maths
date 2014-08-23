@@ -1,0 +1,146 @@
+<div 	gseq gscroll
+		class="page-layout"
+		style="width: 700px;">
+
+		<div gdirections>
+			<div el=".header-section" 	 duration="1" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="0.85" disable-scroll-focus="true"></div>
+
+			<div el=".anim-01" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+				
+			<div duration="2" disable-scroll-focus="true"></div>
+
+			<div el=".anim-02" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="2" disable-scroll-focus="true"></div>
+
+			<div el=".anim-03" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="2" disable-scroll-focus="true"></div>
+
+			<div el="#continue" duration="1.2" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]" disable-scroll-focus="true"></div>
+
+		</div>
+
+
+		<div class="header-section"> 
+			Un grand nombre
+		</div>
+
+		<div class="para anim-01">
+			Un nombre est composé de chiffres. Ainsi, le nombre 243 est
+			composé des chiffres 2, 4 et 3. Les chiffres sont groupés par tranches de 3
+			chiffres à partir de la droite et en se déplaçant vers la gauche. On laisse un
+			espace entre chaque tranche.
+		</div>
+
+		<div class="exemple-frame anim-01">
+			<div class="exemple-header">
+				Exemple :
+			</div>
+			<div>
+				<div>7 200 (sept mille deux cents)</div>
+				<div>23 440 (vingt-trois mille quatre cent quarante)</div>
+			</div>
+
+		</div>
+
+		<div class="para anim-02">
+			Les chiffres peuvent prendre différentes valeurs selon la place qu'ils
+			occupent dans un nombre.
+		</div>
+
+		<div class="para anim-02">
+			Voici un tableau qui nous aidera à identifier la valeur d'un chiffre selon la
+			position qu'il occupe dans un nombre.
+		</div>
+
+		<div id="place-value-table" class="place-value-table anim-03">
+	        <table>
+	        	<tr>
+		            <td colspan="3">
+		            	<div>Millions</div>
+		            </td>
+		            <td colspan="3">
+		            	<div>Milliers</div>
+		            </td>
+		            <td colspan="3">
+		            	<div>Unités</div>
+		            </td>
+	       		</tr>
+	            <tr>
+	            	<td>
+		            	<div>centaines de millions</div>
+		            </td>
+		            <td>
+		            	<div>dizaines de millions</div>
+		            </td>
+		            <td>
+		            	<div>unités de millions</div>
+		            </td>
+	                <td>
+	                    <div>centaines de mille</div>
+	                </td>
+	                <td>
+	                    <div>dizaines de mille</div>
+	                </td>
+	                <td>
+	                    <div>unités de mille</div>
+	                </td>
+	                <td>
+	                    <div>centaines</div>
+	                </td>
+	                <td>
+	                    <div>dizaines</div>
+	                </td>
+	                <td>
+	                    <div>unités</div>
+	                </td>
+	       		</tr>
+	       		<tr>
+	            	<td>
+		            	<div></div>
+		            </td>
+		            <td>
+		            	<div></div>
+		            </td>
+		            <td>
+		            	<div></div>
+		            </td>
+	                <td>
+	                    <div>4</div>
+	                </td>
+	                <td>
+	                    <div>2</div>
+	                </td>
+	                <td>
+	                    <div>8</div>
+	                </td>
+	                <td>
+	                    <div>5</div>
+	                </td>
+	                <td>
+	                    <div>7</div>
+	                </td>
+	                <td>
+	                    <div>3</div>
+	                </td>
+	       		</tr>
+	       	</table>
+	    </div>
+
+		<div class="para anim-03">
+			Ainsi, dans le nombre 428 573,
+			<ul class="basic-list">
+				<li>le chiffre 8 occupe la position des unités de mille; sa valeur est 8 000</li>
+				<li>le chiffre 5 occupe la position des centaines; sa valeur est 500</li>
+				<li>le chiffre 7 occupe la position des dizaines; sa valeur est 70.</li>
+			</ul>
+		</div>
+
+		<div id="continue" class="mt6 center">
+			<div inbook-nextbtn="scene"></div>
+		</div>
+		
+</div>

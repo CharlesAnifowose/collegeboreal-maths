@@ -1,0 +1,145 @@
+<div  	gseq gscroll
+	    class="page-layout">
+
+	    <div gdirections>
+			<div el=".header-section" 	 duration="1" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+	      <div duration="0.85" disable-scroll-focus="true"></div>
+
+	      <div el=".anim-01" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+	        
+	      <div duration="2" disable-scroll-focus="true"></div>
+
+	      <div el=".anim-02" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+	      <div duration="2" disable-scroll-focus="true"></div>
+
+	      <div el=".anim-03" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+	      <div duration="2" disable-scroll-focus="true"></div>
+
+	      <div el=".anim-04" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+	      <div duration="2" disable-scroll-focus="true"></div>
+
+	      <div el=".anim-05" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+	      <div duration="2" disable-scroll-focus="true"></div>
+
+	      <div el="#continue" duration="1.2" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]" disable-scroll-focus="true"></div>
+
+	    </div>
+
+		<div class="header-section"> 
+			Soustractions de nombres avec emprunts
+		</div>
+
+		<div class="para anim-01">
+			Lorsque le chiffre à soustraire est plus grand que le chiffre duquel il est
+			soustrait, on doit emprunter.
+		</div>
+
+		<div class="note-frame anim-02">
+			Rappel:
+			<div>1 dizaine = 10 unités</div>
+			<div>1 centaine = 10 dizaines</div>
+		</div>
+
+		<div class="para anim-03">
+			<div class="bold">
+				<div class="ib vbottom" style="width:25%;">
+					Étapes de l'opération
+				</div>
+				<div class="ib vbottom" style="width:70%;">
+					Description
+				</div>
+			</div>	
+
+			<div>
+				<div class="ib vtop" style="width:25%;">
+					<img ng-src="{{imgUrl}}diagram_27.png" />
+				</div>
+				<div class="ib vtop pt2" style="width:70%;">
+					On remarque qu'il est impossible de soustraire 5 unités de 2 unités
+				</div>
+			</div>
+
+			<div>
+				<div class="ib vtop" style="width:25%;">
+					<img ng-src="{{imgUrl}}diagram_28.png" />
+				</div>
+				<div class="ib vtop pt2" style="width:70%;">
+					<div>
+						On emprunte donc une dizaine de 3, on ajoute la
+						dizaine empruntée, soit 10 unités, à 2; on obtient un total de 12.
+					</div>
+					<div class="mt1">
+						On soustrait ensuite 5 de 12 et on inscrit la réponse 7 en dessous du 5.
+					</div>
+				</div>
+			</div>
+		
+			<div>
+				<div class="ib vtop" style="width:25%;">
+					<img ng-src="{{imgUrl}}diagram_29.png" />
+				</div>
+				<div class="ib vtop pt2" style="width:70%;">
+					<div>
+						On soustrait ensuite les dizaines; puisqu'on avait
+						emprunté une dizaine, il en reste 2. Nous avons donc
+						2 − 1.
+					</div>
+					<div>
+						Le résultat, soit la différence, est 17.
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="exemple-frame anim-04">
+			<div class="exemple-header">
+				Exemple 1 : Soustraire 68 de 555
+			</div>
+			<div class="mt1">
+				Il arrive parfois que l’on doive faire plusieurs emprunts.
+			</div>
+			<div class="mt1">
+				<img ng-src="{{imgUrl}}diagram_03.png" />
+			</div>
+		</div>
+
+		<div class="exemple-frame anim-05">
+			<div class="exemple-header">
+				Exemple 2 : Soustraire 128 de 604.
+			</div>
+			<div class="mt1">
+				Si le nombre duquel on doit emprunter est un 0, on doit emprunter de la
+				colonne suivante du côté gauche.
+			</div>
+			<div class="mt1">
+				<div class="ib" style="width:30%">
+					<img ng-src="{{imgUrl}}diagram_04.png" />
+				</div>
+				<div class="ib">
+					Comme il est impossible de soustraire 8 unités de 4 unités, on doit emprunter 1 
+					dizaine. Ici, il n'y a pas de dizaines,
+					alors on emprunte 1 centaine. Une centaine est égale
+					à 10 dizaines.
+				</div>
+			</div>
+			<div class="mt1">
+				<div class="ib" style="width:30%">
+					<img ng-src="{{imgUrl}}diagram_05.png" />
+				</div>
+				<div class="ib">
+					On peut maintenant emprunter 1 dizaine laquelle est égale à 10 unités; on ajoute ces 10 unités aux 4 unités et on soustrait les unités, ensuite les dizaines et les centaines.
+				</div>
+			</div>
+
+		</div>
+
+		<div id="continue" class="mt6 center">
+		<div inbook-nextbtn="scene"></div>
+		</div>
+</div>

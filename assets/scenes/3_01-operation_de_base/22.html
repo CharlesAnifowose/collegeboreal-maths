@@ -1,0 +1,1135 @@
+<div  	gseq gscroll
+	    class="page-layout">
+
+	    <div gdirections>
+	      <div el=".header-module"   duration="1" ease="power4-in-out" presets="[fromTransparent,fromBottom]" disable-scroll-focus="true"></div>
+	      <div el=".header-module-sub" duration="1" offset="-=0.3" ease="power4-in-out" presets="[fromTransparent,fromBottom]" disable-scroll-focus="true"></div>   
+	      <div el=".header-section"    duration="1" offset="-=0.6" ease="power4-in-out" presets="[fromTransparent,fromBottom]" disable-scroll-focus="true"></div>
+
+	      <div duration="0.85" disable-scroll-focus="true"></div>
+
+	      <div el=".anim-01" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+	        
+	      <div duration="2" disable-scroll-focus="true"></div>
+
+	      <div el=".anim-02" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+	      <div duration="2" disable-scroll-focus="true"></div>
+
+	      <div el=".anim-03" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+	      <div duration="2" disable-scroll-focus="true"></div>
+
+	      <div el="#continue" duration="1.2" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]" disable-scroll-focus="true"></div>
+
+	    </div>
+
+		<div 	inbook-questionseries
+				on-complete="scene.markAsCompleted();"
+  				ordered=true
+  				no-remove=true>
+
+  				<div class="exercise-num">
+					EXERCICE 12
+				</div>
+
+				<div 	inbook-questionseries-item level="1"
+	  					ng-init="
+	  						ans				=	{};
+	  						ans.num1 		=  	57;
+	  						ans.num2 		=  	62;
+	  						ans.val 		=	ans.num1 + ans.num2; 
+	  					"ng-resettable-init="
+	  						ans.showSolution = false;
+	  					">
+
+	  					<div class="exercise-box">
+
+				  			<div class="exercise-header">
+								Additionnez dans les deux sens puis vérifiez à l'aide de la calculatrice
+							</div>
+
+		  					<div class="mt2 type-small bold">
+								<div class="vert-add">
+									<div class="term">
+										<div class="ib">
+											&nbsp;		
+										</div>
+										<div class="ib">
+											{{ans.num1}}
+										</div>
+									</div>
+									<div class="term last">
+										<div class="ib">
+											+		
+										</div>
+										<div class="ib">
+											{{ans.num2}}
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="ib">
+										&nbsp;		
+									</div>
+									<div class="ib">
+										<div 	inbook-answerbox-fill="ans.val"
+												class="type-small"
+												input-class="type-small"
+												on-correct="question.markAsCorrect()"
+												on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
+									</div>
+								</div>
+
+								<div vcollapse="!ans.showSolution">
+									<div class="mt4">
+										<div class="solution-header">
+											La solution:
+										</div>
+										<div class="solution-body">
+											{{ans.val}}
+										</div>
+									</div>
+								</div>
+
+								<div class="mt4 center">
+									<div inbook-nextbtn="question"></div>
+								</div>
+
+							</div>
+						</div>
+  				</div>
+
+  				<div 	inbook-questionseries-item level="2"
+	  					ng-init="
+	  						ans				=	{};
+	  						ans.num1 		=  	73;
+	  						ans.num2 		=  	47;
+	  						ans.val 		=	ans.num1 + ans.num2; 
+	  					"ng-resettable-init="
+	  						ans.showSolution = false;
+	  					">
+
+	  					<div class="exercise-box">
+
+				  			<div class="exercise-header">
+								Additionnez dans les deux sens puis vérifiez à l'aide de la calculatrice
+							</div>
+
+		  					<div class="mt2 type-small bold">
+								<div class="vert-add">
+									<div class="term">
+										<div class="ib">
+											&nbsp;		
+										</div>
+										<div class="ib">
+											{{ans.num1}}
+										</div>
+									</div>
+									<div class="term last">
+										<div class="ib">
+											+		
+										</div>
+										<div class="ib">
+											{{ans.num2}}
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="ib">
+										&nbsp;		
+									</div>
+									<div class="ib">
+										<div 	inbook-answerbox-fill="ans.val"
+												class="type-small"
+												input-class="type-small"
+												on-correct="question.markAsCorrect()"
+												on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
+									</div>
+								</div>
+
+								<div vcollapse="!ans.showSolution">
+									<div class="mt4">
+										<div class="solution-header">
+											La solution:
+										</div>
+										<div class="solution-body">
+											{{ans.val}}
+										</div>
+									</div>
+								</div>
+
+								<div class="mt4 center">
+									<div inbook-nextbtn="question"></div>
+								</div>
+							</div>
+						</div>
+  				</div>
+
+  				<div 	inbook-questionseries-item level="3"
+	  					ng-init="
+	  						ans				=	{};
+	  						ans.num1 		=  	617;
+	  						ans.num2 		=  	329;
+	  						ans.val 		=	ans.num1 + ans.num2; 
+	  					"ng-resettable-init="
+	  						ans.showSolution = false;
+	  					">
+
+	  					<div class="exercise-box">
+
+				  			<div class="exercise-header">
+								Additionnez dans les deux sens puis vérifiez à l'aide de la calculatrice
+							</div>
+
+		  					<div class="mt2 type-small bold">
+								<div class="vert-add">
+									<div class="term">
+										<div class="ib">
+											&nbsp;		
+										</div>
+										<div class="ib">
+											{{ans.num1}}
+										</div>
+									</div>
+									<div class="term last">
+										<div class="ib">
+											+		
+										</div>
+										<div class="ib">
+											{{ans.num2}}
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="ib">
+										&nbsp;		
+									</div>
+									<div class="ib">
+										<div 	inbook-answerbox-fill="ans.val"
+												class="type-small"
+												input-class="type-small"
+												on-correct="question.markAsCorrect()"
+												on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
+									</div>
+								</div>
+
+								<div vcollapse="!ans.showSolution">
+									<div class="mt4">
+										<div class="solution-header">
+											La solution:
+										</div>
+										<div class="solution-body">
+											{{ans.val}}
+										</div>
+									</div>
+								</div>
+
+								<div class="mt4 center">
+									<div inbook-nextbtn="question"></div>
+								</div>
+							</div>
+						</div>
+  				</div>
+
+  				<div 	inbook-questionseries-item level="4"
+	  					ng-init="
+	  						ans				=	{};
+	  						ans.num1 		=  	516;
+	  						ans.num2 		=  	709;
+	  						ans.num3 		=  	86;
+	  						ans.val 		=	ans.num1 + ans.num2 + ans.num3; 
+	  					"ng-resettable-init="
+	  						ans.showSolution = false;
+	  					">
+
+	  					<div class="exercise-box">
+
+				  			<div class="exercise-header">
+								Additionnez dans les deux sens puis vérifiez à l'aide de la calculatrice
+							</div>
+
+		  					<div class="mt2 type-small bold">
+								<div class="vert-add">
+									<div class="term">
+										<div class="ib">
+											&nbsp;		
+										</div>
+										<div class="ib">
+											{{ans.num1}}
+										</div>
+									</div>
+									<div class="term">
+										<div class="ib">
+											&nbsp;		
+										</div>
+										<div class="ib">
+											{{ans.num2}}
+										</div>
+									</div>
+									<div class="term last">
+										<div class="ib">
+											+		
+										</div>
+										<div class="ib">
+											{{ans.num3}}
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="ib">
+										&nbsp;		
+									</div>
+									<div class="ib">
+										<div 	inbook-answerbox-fill="ans.val"
+												class="type-small"
+												input-class="type-small"
+												on-correct="question.markAsCorrect()"
+												on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
+									</div>
+								</div>
+
+								<div vcollapse="!ans.showSolution">
+									<div class="mt4">
+										<div class="solution-header">
+											La solution:
+										</div>
+										<div class="solution-body">
+											{{ans.val}}
+										</div>
+									</div>
+								</div>
+
+								<div class="mt4 center">
+									<div inbook-nextbtn="question"></div>
+								</div>
+							</div>
+						</div>
+  				</div>
+
+  				<div 	inbook-questionseries-item level="5"
+	  					ng-init="
+	  						ans				=	{};
+	  						ans.num1 		=  	359;
+	  						ans.num2 		=  	28;
+	  						ans.num3 		=  	691;
+	  						ans.val 		=	ans.num1 + ans.num2 + ans.num3; 
+	  					"ng-resettable-init="
+	  						ans.showSolution = false;
+	  					">
+
+	  					<div class="exercise-box">
+
+				  			<div class="exercise-header">
+								Additionnez dans les deux sens puis vérifiez à l'aide de la calculatrice
+							</div>
+
+		  					<div class="mt2 type-small bold">
+								<div class="vert-add">
+									<div class="term">
+										<div class="ib">
+											&nbsp;		
+										</div>
+										<div class="ib">
+											{{ans.num1}}
+										</div>
+									</div>
+									<div class="term">
+										<div class="ib">
+											&nbsp;		
+										</div>
+										<div class="ib">
+											{{ans.num2}}
+										</div>
+									</div>
+									<div class="term last">
+										<div class="ib">
+											+		
+										</div>
+										<div class="ib">
+											{{ans.num3}}
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="ib">
+										&nbsp;		
+									</div>
+									<div class="ib">
+										<div 	inbook-answerbox-fill="ans.val"
+												class="type-small"
+												input-class="type-small"
+												on-correct="question.markAsCorrect()"
+												on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
+									</div>
+								</div>
+
+								<div vcollapse="!ans.showSolution">
+									<div class="mt4">
+										<div class="solution-header">
+											La solution:
+										</div>
+										<div class="solution-body">
+											{{ans.val}}
+										</div>
+									</div>
+								</div>
+
+								<div class="mt4 center">
+									<div inbook-nextbtn="question"></div>
+								</div>
+							</div>
+						</div>
+  				</div>
+
+  				<div 	inbook-questionseries-item level="6"
+	  					ng-init="
+	  						ans				=	{};
+	  						ans.num1 		=  	365;
+	  						ans.num2 		=  	537;
+	  						ans.num3 		=  	372;
+	  						ans.val 		=	ans.num1 + ans.num2 + ans.num3; 
+	  					"ng-resettable-init="
+	  						ans.showSolution = false;
+	  					">
+
+	  					<div class="exercise-box">
+
+				  			<div class="exercise-header">
+								Additionnez dans les deux sens puis vérifiez à l'aide de la calculatrice
+							</div>
+
+		  					<div class="mt2 type-small bold">
+								<div class="vert-add">
+									<div class="term">
+										<div class="ib">
+											&nbsp;		
+										</div>
+										<div class="ib">
+											{{ans.num1}}
+										</div>
+									</div>
+									<div class="term">
+										<div class="ib">
+											&nbsp;		
+										</div>
+										<div class="ib">
+											{{ans.num2}}
+										</div>
+									</div>
+									<div class="term last">
+										<div class="ib">
+											+		
+										</div>
+										<div class="ib">
+											{{ans.num3}}
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="ib">
+										&nbsp;		
+									</div>
+									<div class="ib">
+										<div 	inbook-answerbox-fill="ans.val"
+												class="type-small"
+												input-class="type-small"
+												on-correct="question.markAsCorrect()"
+												on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
+									</div>
+								</div>	
+
+								<div vcollapse="!ans.showSolution">
+									<div class="mt4">
+										<div class="solution-header">
+											La solution:
+										</div>
+										<div class="solution-body">
+											{{ans.val}}
+										</div>
+									</div>
+								</div>
+
+								<div class="mt4 center">
+									<div inbook-nextbtn="question"></div>
+								</div>
+
+							</div>
+						</div>
+  				</div>
+
+  				<div 	inbook-questionseries-item level="7"
+	  					ng-init="
+	  						ans				=	{};
+	  						ans.num1 		=  	3816;
+	  						ans.num2 		=  	427;
+	  						ans.val 		=	ans.num1 + ans.num2; 
+	  					"ng-resettable-init="
+	  						ans.showSolution = false;
+	  					">
+
+	  					<div class="exercise-box">
+
+				  			<div class="exercise-header">
+								Additionnez dans les deux sens puis vérifiez à l'aide de la calculatrice
+							</div>
+
+		  					<div class="mt2 type-small bold">
+								<div class="vert-add">
+									<div class="term">
+										<div class="ib">
+											&nbsp;		
+										</div>
+										<div class="ib">
+											{{ans.num1}}
+										</div>
+									</div>
+									<div class="term last">
+										<div class="ib">
+											+		
+										</div>
+										<div class="ib">
+											{{ans.num2}}
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="ib">
+										&nbsp;		
+									</div>
+									<div class="ib">
+										<div 	inbook-answerbox-fill="ans.val"
+												class="type-small"
+												input-class="type-small"
+												on-correct="question.markAsCorrect()"
+												on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
+									</div>
+								</div>
+
+								<div vcollapse="!ans.showSolution">
+									<div class="mt4">
+										<div class="solution-header">
+											La solution:
+										</div>
+										<div class="solution-body">
+											{{ans.val}}
+										</div>
+									</div>
+								</div>
+
+								<div class="mt4 center">
+									<div inbook-nextbtn="question"></div>
+								</div>
+							</div>
+						</div>
+  				</div>
+
+  				<div 	inbook-questionseries-item level="8"
+	  					ng-init="
+	  						ans				=	{};
+	  						ans.num1 		=  	5235;
+	  						ans.num2 		=  	4927;
+	  						ans.num3 		=  	6939;
+	  						ans.val 		=	ans.num1 + ans.num2 + ans.num3; 
+	  					"ng-resettable-init="
+	  						ans.showSolution = false;
+	  					">
+
+	  					<div class="exercise-box">
+
+				  			<div class="exercise-header">
+								Additionnez dans les deux sens puis vérifiez à l'aide de la calculatrice
+							</div>
+
+		  					<div class="mt2 type-small bold">
+								<div class="vert-add">
+									<div class="term">
+										<div class="ib">
+											&nbsp;		
+										</div>
+										<div class="ib">
+											{{ans.num1}}
+										</div>
+									</div>
+									<div class="term">
+										<div class="ib">
+											&nbsp;		
+										</div>
+										<div class="ib">
+											{{ans.num2}}
+										</div>
+									</div>
+									<div class="term last">
+										<div class="ib">
+											+		
+										</div>
+										<div class="ib">
+											{{ans.num3}}
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="ib">
+										&nbsp;		
+									</div>
+									<div class="ib">
+										<div 	inbook-answerbox-fill="ans.val"
+												class="type-small"
+												input-class="type-small"
+												on-correct="question.markAsCorrect()"
+												on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
+									</div>
+								</div>
+
+								<div vcollapse="!ans.showSolution">
+									<div class="mt4">
+										<div class="solution-header">
+											La solution:
+										</div>
+										<div class="solution-body">
+											{{ans.val}}
+										</div>
+									</div>
+								</div>
+
+								<div class="mt4 center">
+									<div inbook-nextbtn="question"></div>
+								</div>
+							</div>
+						</div>
+  				</div>
+
+  				<div 	inbook-questionseries-item level="9"
+	  					ng-init="
+	  						ans				=	{};
+	  						ans.num1 		=  	4139;
+	  						ans.num2 		=  	4188;
+	  						ans.num3 		=  	7667;
+	  						ans.val 		=	ans.num1 + ans.num2 + ans.num3; 
+	  					"ng-resettable-init="
+	  						ans.showSolution = false;
+	  					">
+
+	  					<div class="exercise-box">
+
+				  			<div class="exercise-header">
+								Additionnez dans les deux sens puis vérifiez à l'aide de la calculatrice
+							</div>
+
+		  					<div class="mt2 type-small bold">
+								<div class="vert-add">
+									<div class="term">
+										<div class="ib">
+											&nbsp;		
+										</div>
+										<div class="ib">
+											{{ans.num1}}
+										</div>
+									</div>
+									<div class="term">
+										<div class="ib">
+											&nbsp;		
+										</div>
+										<div class="ib">
+											{{ans.num2}}
+										</div>
+									</div>
+									<div class="term last">
+										<div class="ib">
+											+		
+										</div>
+										<div class="ib">
+											{{ans.num3}}
+										</div>
+									</div>
+								</div>
+								<div>
+									<div class="ib">
+										&nbsp;		
+									</div>
+									<div class="ib">
+										<div 	inbook-answerbox-fill="ans.val"
+												class="type-small"
+												input-class="type-small"
+												on-correct="question.markAsCorrect()"
+												on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
+									</div>
+								</div>
+
+								<div vcollapse="!ans.showSolution">
+									<div class="mt4">
+										<div class="solution-header">
+											La solution:
+										</div>
+										<div class="solution-body">
+											{{ans.val}}
+										</div>
+									</div>
+								</div>
+
+								<div class="mt4 center">
+									<div inbook-nextbtn="question"></div>
+								</div>
+							</div>
+						</div>
+  				</div>
+
+  				<div 	inbook-questionseries-item level="10"
+	  					ng-init="
+	  						ans				=	{};
+	  						ans.num1 		=  	3826;
+	  						ans.num2 		=  	535;
+	  						ans.num3 		=  	2986;
+	  						ans.num4 		=  	37;
+	  						ans.val 		=	ans.num1 + ans.num2 + ans.num3 + ans.num4; 
+	  					"ng-resettable-init="
+	  						ans.showSolution = false;
+	  					">
+
+	  					<div class="exercise-box">
+
+				  			<div class="exercise-header">
+								Additionnez dans les deux sens puis vérifiez à l'aide de la calculatrice
+							</div>
+
+		  					<div class="mt2 type-small bold">
+			  					<div class="ib">
+				  					{{ans.num1}}
+			  					</div>
+			  					<div class="ib">
+				  					{{ans.num2}}
+			  					</div>
+			  					<div class="ib">
+				  					{{ans.num3}}
+			  					</div>
+			  					<div class="ib">
+			  						{{ans.num4}}	
+			  					</div>
+			  					<div class="ib">
+			  						<div class="ml2 mr2">&equals;</div>
+			  					</div>
+			  					<div class="ib">
+			  						<div 	inbook-answerbox-fill="ans.val"
+											class="type-small"
+											input-class="type-small"
+											on-correct="question.markAsCorrect()"
+											on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
+			  					</div>
+
+			  					<div vcollapse="!ans.showSolution">
+									<div class="mt4">
+										<div class="solution-header">
+											La solution:
+										</div>
+										<div class="solution-body">
+											{{ans.val}}
+										</div>
+									</div>
+								</div>
+
+		  						<div class="mt4 center">
+									<div inbook-nextbtn="question"></div>
+								</div>
+							</div>
+	  					</div>
+	  			</div>
+
+	  			<div 	inbook-questionseries-item level="11"
+	  					ng-init="
+	  						ans				=	{};
+	  						ans.num1 		=  	745;
+	  						ans.num2 		=  	462;
+	  						ans.num3 		=  	892;
+	  						ans.num4 		=  	295;
+	  						ans.val 		=	ans.num1 + ans.num2 + ans.num3 + ans.num4; 
+	  					"ng-resettable-init="
+	  						ans.showSolution = false;
+	  					">
+	  					<div class="exercise-box">
+
+				  			<div class="exercise-header">
+								Additionnez dans les deux sens puis vérifiez à l'aide de la calculatrice
+							</div>
+
+		  					<div class="mt2 type-small bold">
+			  					<div class="ib">
+				  					{{ans.num1}}
+			  					</div>
+			  					<div class="ib">
+				  					{{ans.num2}}
+			  					</div>
+			  					<div class="ib">
+				  					{{ans.num3}}
+			  					</div>
+			  					<div class="ib">
+			  						{{ans.num4}}	
+			  					</div>
+			  					<div class="ib">
+			  						<div class="ml2 mr2">&equals;</div>
+			  					</div>
+			  					<div class="ib">
+			  						<div 	inbook-answerbox-fill="ans.val"
+											class="type-small"
+											input-class="type-small"
+											on-correct="question.markAsCorrect()"
+											on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
+			  					</div>
+
+			  					<div vcollapse="!ans.showSolution">
+									<div class="mt4">
+										<div class="solution-header">
+											La solution:
+										</div>
+										<div class="solution-body">
+											{{ans.val}}
+										</div>
+									</div>
+								</div>
+
+		  						<div class="mt4 center">
+									<div inbook-nextbtn="question"></div>
+								</div>
+							</div>
+	  					</div>
+	  			</div>
+
+	  			<div 	inbook-questionseries-item level="12"
+	  					ng-init="
+	  						ans				=	{};
+	  						ans.num1 		=  	6482;
+	  						ans.num2 		=  	8921;
+	  						ans.num3 		=  	4294;
+	  						ans.val 		=	ans.num1 + ans.num2 + ans.num3; 
+	  					"ng-resettable-init="
+	  						ans.showSolution = false;
+	  					">
+
+	  					<div class="exercise-box">
+
+				  			<div class="exercise-header">
+								Additionnez dans les deux sens puis vérifiez à l'aide de la calculatrice
+							</div>
+
+		  					<div class="mt2 type-small bold">
+			  					<div class="ib">
+				  					{{ans.num1}}
+			  					</div>
+			  					<div class="ib">
+				  					{{ans.num2}}
+			  					</div>
+			  					<div class="ib">
+				  					{{ans.num3}}
+			  					</div>
+			  					<div class="ib">
+			  						<div class="ml2 mr2">&equals;</div>
+			  					</div>
+			  					<div class="ib">
+			  						<div 	inbook-answerbox-fill="ans.val"
+											class="type-small"
+											input-class="type-small"
+											on-correct="question.markAsCorrect()"
+											on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
+			  					</div>
+
+			  					<div vcollapse="!ans.showSolution">
+									<div class="mt4">
+										<div class="solution-header">
+											La solution:
+										</div>
+										<div class="solution-body">
+											{{ans.val}}
+										</div>
+									</div>
+								</div>
+
+		  						<div class="mt4 center">
+									<div inbook-nextbtn="question"></div>
+								</div>
+
+							</div>
+	  					</div>
+	  			</div>
+
+	  			<div 	inbook-questionseries-item level="13"
+	  					ng-init="
+	  						ans				=	{};
+	  						ans.num1 		=  	2765;
+	  						ans.num2 		=  	432;
+	  						ans.num3 		=  	6;
+	  						ans.num4 		=  	2;
+	  						ans.val 		=	ans.num1 + ans.num2 + ans.num3 + ans.num4; 
+	  					"ng-resettable-init="
+	  						ans.showSolution = false;
+	  					">
+
+	  					<div class="exercise-box">
+
+				  			<div class="exercise-header">
+								Additionnez dans les deux sens puis vérifiez à l'aide de la calculatrice
+							</div>
+
+		  					<div class="mt2 type-small bold">
+			  					<div class="ib">
+				  					{{ans.num1}}
+			  					</div>
+			  					<div class="ib">
+				  					{{ans.num2}}
+			  					</div>
+			  					<div class="ib">
+				  					{{ans.num3}}
+			  					</div>
+			  					<div class="ib">
+			  						{{ans.num4}}	
+			  					</div>
+			  					<div class="ib">
+			  						<div class="ml2 mr2">&equals;</div>
+			  					</div>
+			  					<div class="ib">
+			  						<div 	inbook-answerbox-fill="ans.val"
+											class="type-small"
+											input-class="type-small"
+											on-correct="question.markAsCorrect()"
+											on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
+			  					</div>
+
+			  					<div vcollapse="!ans.showSolution">
+									<div class="mt4">
+										<div class="solution-header">
+											La solution:
+										</div>
+										<div class="solution-body">
+											{{ans.val}}
+										</div>
+									</div>
+								</div>
+
+		  						<div class="mt4 center">
+									<div inbook-nextbtn="question"></div>
+								</div>
+
+							</div>
+	  					</div>
+	  			</div>
+
+	  			<div 	inbook-questionseries-item level="14"
+	  					ng-init="
+	  						ans				=	{};
+	  						ans.num1 		=  	432;
+	  						ans.num2 		=  	289;
+	  						ans.num3 		=  	45;
+	  						ans.num4 		=  	8;
+	  						ans.val 		=	ans.num1 + ans.num2 + ans.num3 + ans.num4; 
+	  					"ng-resettable-init="
+	  						ans.showSolution = false;
+	  					">
+
+	  					<div class="exercise-box">
+
+				  			<div class="exercise-header">
+								Additionnez dans les deux sens puis vérifiez à l'aide de la calculatrice
+							</div>
+
+		  					<div class="mt2 type-small bold">
+			  					<div class="ib">
+				  					{{ans.num1}}
+			  					</div>
+			  					<div class="ib">
+				  					{{ans.num2}}
+			  					</div>
+			  					<div class="ib">
+				  					{{ans.num3}}
+			  					</div>
+			  					<div class="ib">
+			  						{{ans.num4}}	
+			  					</div>
+			  					<div class="ib">
+			  						<div class="ml2 mr2">&equals;</div>
+			  					</div>
+			  					<div class="ib">
+			  						<div 	inbook-answerbox-fill="ans.val"
+											class="type-small"
+											input-class="type-small"
+											on-correct="question.markAsCorrect()"
+											on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
+			  					</div>
+
+			  					<div vcollapse="!ans.showSolution">
+									<div class="mt4">
+										<div class="solution-header">
+											La solution:
+										</div>
+										<div class="solution-body">
+											{{ans.val}}
+										</div>
+									</div>
+								</div>
+
+		  						<div class="mt4 center">
+									<div inbook-nextbtn="question"></div>
+								</div>
+							</div>
+	  					</div>
+	  			</div>
+
+	  			<div 	inbook-questionseries-item level="15"
+	  					ng-init="
+	  						ans				=	{};
+	  						ans.num1 		=  	5847;
+	  						ans.num2 		=  	589;
+	  						ans.val 		=	ans.num1 + ans.num2; 
+	  					"ng-resettable-init="
+	  						ans.showSolution = false;
+	  					">
+	  					<div class="exercise-box">
+
+				  			<div class="exercise-header">
+								Additionnez dans les deux sens puis vérifiez à l'aide de la calculatrice
+							</div>
+
+		  					<div class="mt2 type-small bold">
+			  					<div class="ib">
+				  					{{ans.num1}}
+			  					</div>
+			  					<div class="ib">
+				  					{{ans.num2}}
+			  					</div>
+			  					<div class="ib">
+			  						<div class="ml2 mr2">&equals;</div>
+			  					</div>
+			  					<div class="ib">
+			  						<div 	inbook-answerbox-fill="ans.val"
+											class="type-small"
+											input-class="type-small"
+											on-correct="question.markAsCorrect()"
+											on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
+			  					</div>
+
+			  					<div vcollapse="!ans.showSolution">
+									<div class="mt4">
+										<div class="solution-header">
+											La solution:
+										</div>
+										<div class="solution-body">
+											{{ans.val}}
+										</div>
+									</div>
+								</div>
+
+		  						<div class="mt4 center">
+									<div inbook-nextbtn="question"></div>
+								</div>
+							</div>
+	  					</div>
+	  			</div>
+
+	  			<div 	inbook-questionseries-item level="16"
+	  					ng-init="
+	  						ans				=	{};
+	  						ans.num1 		=  	228;
+	  						ans.num2 		=  	12406;
+	  						ans.val 		=	ans.num1 + ans.num2; 
+	  					"ng-resettable-init="
+	  						ans.showSolution = false;
+	  					">
+
+	  					<div class="exercise-box">
+
+				  			<div class="exercise-header">
+								Additionnez dans les deux sens puis vérifiez à l'aide de la calculatrice
+							</div>
+
+		  					<div class="mt2 type-small bold">
+			  					<div class="ib">
+				  					{{ans.num1}}
+			  					</div>
+			  					<div class="ib">
+				  					{{ans.num2}}
+			  					</div>
+			  					<div class="ib">
+			  						<div class="ml2 mr2">&equals;</div>
+			  					</div>
+			  					<div class="ib">
+			  						<div 	inbook-answerbox-fill="ans.val"
+											class="type-small"
+											input-class="type-small"
+											on-correct="question.markAsCorrect()"
+											on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
+			  					</div>
+
+			  					<div vcollapse="!ans.showSolution">
+									<div class="mt4">
+										<div class="solution-header">
+											La solution:
+										</div>
+										<div class="solution-body">
+											{{ans.val}}
+										</div>
+									</div>
+								</div>
+
+		  						<div class="mt4 center">
+									<div inbook-nextbtn="question"></div>
+								</div>
+							</div>
+	  					</div>
+	  			</div>
+
+	  			<div 	inbook-questionseries-item level="17"
+	  					key="true"
+	  					ng-init="
+	  						ans				=	{};
+	  						ans.num1 		=  	1053;
+	  						ans.num2 		=  	409;
+	  						ans.num3 		=  	17443;
+	  						ans.val 		=	ans.num1 + ans.num2 + ans.num3; 
+	  					"ng-resettable-init="
+	  						ans.showSolution = false;
+	  					">
+	  					<div class="exercise-box">
+
+				  			<div class="exercise-header">
+								Additionnez dans les deux sens puis vérifiez à l'aide de la calculatrice
+							</div>
+
+		  					<div class="mt2 type-small bold">
+			  					<div class="ib">
+				  					{{ans.num1}}
+			  					</div>
+			  					<div class="ib">
+				  					{{ans.num2}}
+			  					</div>
+			  					<div class="ib">
+				  					{{ans.num3}}
+			  					</div>
+			  					<div class="ib">
+			  						<div class="ml2 mr2">&equals;</div>
+			  					</div>
+			  					<div class="ib">
+			  						<div 	inbook-answerbox-fill="ans.val"
+											class="type-small"
+											input-class="type-small"
+											on-correct="question.markAsCorrect()"
+											on-incorrect="question.markAsIncorrect();ans.showSolution = true"></div>
+			  					</div>
+
+			  					<div vcollapse="!ans.showSolution">
+									<div class="mt4">
+										<div class="solution-header">
+											La solution:
+										</div>
+										<div class="solution-body">
+											{{ans.val}}
+										</div>
+									</div>
+								</div>
+
+		  						<div class="mt4 center">
+									<div inbook-nextbtn="question"></div>
+								</div>
+							</div>
+	  					</div>
+	  			</div>
+
+  		</div>
+
+</div>

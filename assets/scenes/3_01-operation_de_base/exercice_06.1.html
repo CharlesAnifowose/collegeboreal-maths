@@ -1,0 +1,86 @@
+<div 	class="page-layout" 
+		ng-init="
+			ans={};
+
+			questions = [
+				{
+					num1:'6 000', num2:'5 400',
+					solution 	: '>'
+				},
+				{
+					num1:'3 999', num2:'4000',
+				solution 	: '<'
+				},
+				{
+					num1:'652', num2:'652',
+				solution 	: '='
+				},
+				{
+					num1:'5 900', num2:'6 000',
+				solution 	: '<'
+				},
+				{
+					num1:'92', num2:'72',
+				solution 	: '>'
+				},
+				{
+					num1:'7 000', num2:'8 000',
+				solution 	: '<'
+				},
+				{
+					num1:'982', num2:'982',
+				solution 	: '='
+				},
+				{
+					num1:'8 457', num2:'5 457',
+				solution 	: '>'
+				}
+			]
+		">
+
+
+		<div class="exercise-num">
+			EXERCICE 6
+		</div>
+
+		<div ng-repeat="question in questions">
+
+			<div class="exercise-box" >
+
+				<div class="exercise-header">
+					Comparez les nombres en insérant entre eux un des symboles : &gt;, &lt; ou =
+				</div>
+
+				<div class="exercise-text">
+					{{question.num1}} et {{question.num2}}
+				</div>
+
+				<div inbook-workbook-input persist-to="input1"></div>
+		
+				<div vcollapse="question.showSolution">
+			        <div class="show-solution-btn" ng-click="question.showSolution = true">
+			            Vérifier Solution
+			        </div>
+			    </div>  
+
+				<div class="pl4" vcollapse="!question.showSolution">
+
+					<div class="solution-body">
+						{{question.num1}} {{question.solution}} {{question.num2}}
+					</div>
+
+				</div>
+
+			</div>
+
+			<hr class="question-divider" />
+
+		</div>
+
+
+
+		<div id="continue" class="mt6 center">
+			<div inbook-nextbtn="scene"></div>
+		</div>
+
+</div>

@@ -1,0 +1,77 @@
+<div  	gseq gscroll
+	    class="page-layout">
+
+	    <div gdirections>
+			<div el=".header-section" 	 duration="1" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+	      <div duration="0.85" disable-scroll-focus="true"></div>
+
+	      <div el=".anim-01" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+	        
+	      <div duration="2" disable-scroll-focus="true"></div>
+
+	      <div el=".anim-02" duration="1" ease="power2-in-out" offset="-=1" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+	      <div duration="2" disable-scroll-focus="true"></div>
+
+	      <div el="#continue" duration="1.2" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]" disable-scroll-focus="true"></div>
+
+	    </div>
+		<div class="header-section"> 
+			Multiplications de nombres à deux chiffres et trois chiffres
+		</div>
+
+		<div class="para anim-01">
+			Si le multiplicateur, c'est-à-dire le nombre par lequel on multiplie,
+			contient 2 chiffres ou plus, on procède comme suit :
+		</div>
+
+		<div class="para anim-02">
+
+			<div class="bold para">
+				<div class="ib vbottom" style="width:25%;">
+					Étapes de l'opération
+				</div>
+				<div class="ib vbottom" style="width:70%;">
+					Description
+				</div>
+			</div>
+
+			<div class="para">
+				<div class="ib vtop" style="width:25%;">
+					<img ng-src="{{imgUrl}}diagram_10.png" />
+				</div>
+				<div class="ib vtop" style="width:70%;">
+					Comme dans l'exemple précédent, on commence par multiplier 32 par 3; on obtient 96
+				</div>
+			</div>
+
+			<div class="para">
+				<div class="ib vtop" style="width:25%;">
+					<img ng-src="{{imgUrl}}diagram_11.png" />
+				</div>
+				<div class="ib vtop" style="width:70%;">
+					<div class="mt1">
+						On multiplie ensuite 32 par 1; on obtient 32.
+					</div>
+					<div class="mt1">
+						On inscrit cette réponse en dessous des dizaines du premier produit.
+					</div>
+				</div>
+			</div>
+
+			<div class="para">
+				<div class="ib vtop" style="width:25%;">
+					<img ng-src="{{imgUrl}}diagram_12.png" />
+				</div>
+				<div class="ib vtop" style="width:70%;">
+					On additionne les 2 produits.
+				</div>
+			</div>
+
+		</div>
+
+		<div id="continue" class="mt6 center">
+		<div inbook-nextbtn="scene"></div>
+		</div>
+</div>

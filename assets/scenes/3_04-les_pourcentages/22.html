@@ -1,0 +1,471 @@
+<div 	gseq
+		class="page-layout" 
+		ng-init="
+			ans={};
+
+			ans.input1 = {
+				showSolution: false,
+				question: 'Jeanne épargne 25% sur un sac à main de 20$. Combien lui coûtera le sac à main après le rabais?',
+				solution 	: 'Il lui coûtera 15$.'
+			};
+			ans.input2 = {
+				showSolution: false,
+				question: 'Michel veut laisser un pourboire de 10% à son barbier. Si sa coupe de
+						   cheveux lui coûte 12$, combien doit-il lui laisser?',
+				solution : 'Il doit lui laisser 1,20$.'
+			};
+			ans.input3 = {
+				showSolution: false,
+				question: 'Un employé gagne un salaire brut de 1 600 $ par mois. Il reçoit une
+						   augmentation de 4,8 %. Quel est son nouveau salaire mensuel?',
+				solution : 'Son nouveau salaire mensuel est 1 676,80$.'
+			};
+			ans.input4 = {
+				showSolution: false,
+				question: '',
+				solution : 'Le total de la facture s’élève à 73,81$.'
+			};
+			
+			ans.input5 = {
+				showSolution: false,
+				question: '',
+				solution : 'Il paye 8 440,22$ d’impôts par année.'
+			};
+			ans.input6 = {
+				showSolution: false,
+				question: '',
+				solution : 'Il y a 23,76 grammes de lipides dans une portion de 108 grammes.'
+			};
+			ans.input7 = {
+				showSolution: false,
+				question: '',
+				solution : ''
+			};
+			ans.input8 = {
+				showSolution: false,
+				question: '',
+				solution : ''
+			};
+			ans.input9 = {
+				showSolution: false,
+				question: '',
+				solution : ''
+			};
+			ans.input10 = {
+				showSolution: false,
+				question: '',
+				solution : ''
+			};
+			ans.input11 = {
+				showSolution: false,
+				question: '',
+				solution : ''
+			};
+			ans.input12 = {
+				showSolution: false,
+				question: '',
+				solution : ''
+			};
+
+		">
+
+		<div gdirections>
+			<div el=".exercise-num"   duration="0.8" ease="power4-in-out" presets="[fromTransparent]"></div>
+
+			<div duration="0.45"></div>
+
+			<div el=".anim-01" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+				
+			<div duration="1"></div>
+
+			<div el=".anim-02" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-03" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-04" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-05" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-06" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-07" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-08" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-09" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-10" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-11" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+			<div el=".anim-12" duration="0.8" offset="-=0.75" ease="power2-in-out" presets="[fromTransparent]" disable-scroll-focus="true"></div>
+
+			<div duration="1"></div>
+
+	      	<div el="#continue" duration="1" ease="back-out" presets="[fromTransparent,fromBottom,fromRotation]" disable-scroll-focus="true"></div>	
+
+		</div>
+
+	    <div class="exercise-num">
+	      EXERCICE 13
+	    </div>
+
+		<div class="exercise-box anim-01">
+
+			<div class="exercise-header">
+				Résolvez les problèmes.
+			</div>
+
+			<div class="exercise-text">
+				{{ans.input1.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input1"></div>
+
+			<div vcollapse="ans.input1.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input1.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input1.showSolution">
+				<div class="solution-body">
+					{{ans.input1.solution}}
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-02" />
+
+		<div class="exercise-box anim-02">
+
+			<div class="exercise-header">
+				Résolvez les problèmes.
+			</div>
+
+			<div class="exercise-text">
+				{{ans.input2.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input2"></div>
+
+			<div vcollapse="ans.input2.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input2.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input2.showSolution">
+				<div class="solution-body">
+					{{ans.input2.solution}}
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-03" />
+
+		<div class="exercise-box anim-03">
+
+			<div class="exercise-header">
+				Résolvez les problèmes.
+			</div>
+
+			<div class="exercise-text">
+				{{ans.input3.question}}
+			</div>
+
+			<div inbook-workbook-input persist-to="input3"></div>
+
+			<div vcollapse="ans.input3.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input3.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input3.showSolution">
+				<div class="solution-body">
+					{{ans.input3.solution}}
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-04" />
+
+		<div class="exercise-box anim-04">
+
+			<div class="exercise-header">
+				Résolvez les problèmes.
+			</div>
+
+			<div class="exercise-text">
+				Tu veux impressionner ta nouvelle copine lors d'une sortie au 
+				restaurant alors tu donnes au serveur un pourboire de 30% sur une 
+				facture de 56,78$. À combien s'élève le total de la facture?
+			</div>
+
+			<div inbook-workbook-input persist-to="input4"></div>
+
+			<div vcollapse="ans.input4.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input4.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input4.showSolution">
+				<div class="solution-body">
+					{{ans.input4.solution}}
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-05" />
+
+		<div class="exercise-box anim-05">
+
+			<div class="exercise-header">
+				Résolvez les problèmes.
+			</div>
+
+			<div class="exercise-text">
+				Un travailleur gagne 38 364,62 $ par année. Si son taux d’imposition 
+				est 22 %, combien d’impôt paye-t-il par année? 
+			</div>
+
+			<div inbook-workbook-input persist-to="input5"></div>
+
+			<div vcollapse="ans.input5.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input5.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input5.showSolution">
+				<div class="solution-body">
+					{{ans.input5.solution}}
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-06" />
+
+		<div class="exercise-box anim-06">
+
+			<div class="exercise-header">
+				Résolvez les problèmes.
+			</div>
+
+			<div class="exercise-text">
+				Si des céréales contiennent 22 % de lipides, combien de grammes de 
+				lipides y a-t-il dans une portion de 108 grammes?
+			</div>
+
+			<div inbook-workbook-input persist-to="input6"></div>
+
+			<div vcollapse="ans.input6.showSolution">
+		        <div class="show-solution-btn" ng-click="ans.input6.showSolution = true">
+		            Vérifier Solution
+		        </div>
+		    </div>  
+
+			<div class="pl4" vcollapse="!ans.input6.showSolution">
+				<div class="solution-body">
+					{{ans.input6.solution}}
+				</div>
+			</div>
+				
+		</div> 
+
+		<hr class="question-divider anim-07" />
+
+		<div class="exercise-box anim-07">
+
+			<div class="exercise-header">
+				Résolvez les problèmes.
+			</div>
+
+			<div class="exercise-text">
+				Tu payes la taxe sur les produits et services (TPS de 7 %) sur les 
+				vêtements d’enfants. À combien s’élève le total de la facture si tu 
+				achètes les articles indiqués dans le tableau ci-dessous? 
+			</div>
+
+			 <table class="table">
+				<tr>
+				  <th>Article </th>
+				  <th>Coût de l’article </th>
+				</tr>
+				<tr>
+				  <td>pyjama</td>
+				  <td>16,99$ </td>
+				</tr>
+				<tr>
+				  <td>pantalon</td>
+				  <td>11,00$ </td>
+				</tr>
+				<tr>
+				  <td>pantalon de ski</td>
+				  <td>35,79$ </td>
+				</tr>
+				<tr>
+				  <td>camisole </td>
+				  <td>3,00$ </td>
+				</tr>
+				<tr>
+				  <td>manteau </td>
+				  <td>42,79$ </td>
+				</tr>
+				<tr>
+				  <th>Total (avant la taxe)</th>
+				  <th><div 	inbook-answerbox-fill="109.57"
+							class="type-xxsmall"
+							suffix="$"
+							input-class="type-xxsmall"
+							on-correct="question.markAsCorrect()"
+							on-incorrect="question.markAsIncorrect()">
+					  </div> 
+				  </td>
+				</tr>
+				<tr>
+				  <th>Taxes</th>
+				  <th><div 	inbook-answerbox-fill="7.67"
+							class="type-xxsmall"
+							suffix="$"
+							input-class="type-xxsmall"
+							on-correct="question.markAsCorrect()"
+							on-incorrect="question.markAsIncorrect()">
+					  </div></td>
+				</tr>
+				<tr>
+				  <th>Total de la facture</th>
+				  <th><div 	inbook-answerbox-fill="117.24"
+							class="type-xxsmall"
+							suffix="$"
+							input-class="type-xxsmall"
+							on-correct="question.markAsCorrect()"
+							on-incorrect="question.markAsIncorrect()">
+					  </div></td>
+				</tr>
+			 </table>
+				
+		</div> 
+
+		<hr class="question-divider anim-08" />
+
+		<div class="exercise-box anim-08">
+
+			<div class="exercise-header">
+				Résolvez les problèmes.
+			</div>
+
+			<div class="exercise-text">
+				À une vente de fin de saison, un magasin offre un rabais de 60 % sur les 
+				vêtements et 45 % sur les souliers et accessoires. Pierre et Carmen se 
+				sont acheté les articles indiqués dans le tableau ci-dessous. Calculez le 
+				montant qu'ils ont économisé. 
+			</div>
+
+			  <table class="table">
+				<tr>
+				  <th>Article </th>
+				  <th>Prix régulier  </th>
+				  <th>Rabais  </th>
+				</tr>
+				<tr>
+				  <td>pantalon</td>
+				  <td>55,89$ </td>
+				  <td><div 	inbook-answerbox-fill="33.53"
+							class="type-xxsmall"
+							suffix="$"
+							input-class="type-xxsmall"
+							on-correct="question.markAsCorrect()"
+							on-incorrect="question.markAsIncorrect()">
+					  </div></td>
+				</tr>
+				<tr>
+				  <td>jupe</td>
+				  <td>34,89$ </td>
+				  <td><div 	inbook-answerbox-fill="20.93"
+							class="type-xxsmall"
+							suffix="$"
+							input-class="type-xxsmall"
+							on-correct="question.markAsCorrect()"
+							on-incorrect="question.markAsIncorrect()">
+					  </div></td>
+				</tr>
+				<tr>
+				  <td>soulier de cuir</td>
+				  <td>75,00$ </td>
+				  <td><div 	inbook-answerbox-fill="33.75"
+							class="type-xxsmall"
+							suffix="$"
+							input-class="type-xxsmall"
+							on-correct="question.markAsCorrect()"
+							on-incorrect="question.markAsIncorrect()">
+					  </div></td>
+				</tr>
+				<tr>
+				  <td>cravate de soie </td>
+				  <td>25,00$ </td>
+				  <td><div 	inbook-answerbox-fill="11.25"
+							class="type-xxsmall"
+							suffix="$"
+							input-class="type-xxsmall"
+							on-correct="question.markAsCorrect()"
+							on-incorrect="question.markAsIncorrect()">
+					  </div></td>
+				</tr>
+				<tr>
+				  <td>chemise </td>
+				  <td>46,25$</td>
+				  <td><div 	inbook-answerbox-fill="27.75"
+							class="type-xxsmall"
+							suffix="$"
+							input-class="type-xxsmall"
+							on-correct="question.markAsCorrect()"
+							on-incorrect="question.markAsIncorrect()">
+					  </div></td>
+				</tr>
+				<tr>
+				  <td></td>
+				  <th>Total des rabais</th>
+				  <th><div 	inbook-answerbox-fill="127.21"
+							class="type-xxsmall"
+							suffix="$"
+							input-class="type-xxsmall"
+							on-correct="question.markAsCorrect()"
+							on-incorrect="question.markAsIncorrect()">
+					  </div></td>
+				</tr>
+			  </table>
+							
+		</div> 
+
+	  <div id="continue" class="mt6 center">
+		<div inbook-nextbtn="scene"></div>
+	  </div>
+</div>

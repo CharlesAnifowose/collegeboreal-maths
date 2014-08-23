@@ -1,0 +1,173 @@
+<div  	gseq gscroll
+    	class="page-layout">
+
+	    <div gdirections>
+	      <div el=".exercise-num"   duration="1" ease="power4-in-out" presets="[fromTransparent]"></div>
+	    </div>
+
+	    <div class="exercise-num">
+	      EXERCICE 19
+	    </div>
+
+		<div 	inbook-questionseries
+				on-complete="scene.markAsCompleted();"
+  				ordered=true
+  				no-remove=true>
+
+
+				<div 	inbook-questionseries-item level="1"
+						ng-init="
+							ans={};
+							ans.val 	 = true;
+						">
+
+						<div class="exercise-box">
+
+							<div class="exercise-header">
+								Est-ce triangle congruent avec le triangle sur la place
+							</div>
+
+							<div class="exercise-text center">
+								<div class="ib" style="width: 45%">
+									<img ng-src="{{imgUrl}}exercise19/00.png" />
+								</div>
+								<div class="ib" style="width: 45%">
+									<img ng-src="{{imgUrl}}exercise19/01.png" />
+								</div>
+							</div>
+
+							<div 	inbook-yesorno="ans.val" 
+									on-correct="question.markAsCorrect()"
+									on-incorrect="question.markAsIncorrect()"></div>
+
+							<div class="mt4">
+								<div inbook-nextbtn="question"></div>
+							</div>
+						</div>
+				</div>
+
+				<div 	inbook-questionseries-item level="2"
+						ng-init="
+							ans={};
+							ans.val 	 = false;
+						">
+
+						<div class="exercise-box">
+
+							<div class="exercise-header">
+								Est-ce triangle congruent avec le triangle sur la place
+							</div>
+
+							<div class="exercise-text center">
+								<div class="ib" style="width: 45%">
+									<img ng-src="{{imgUrl}}exercise19/00.png" />
+								</div>
+								<div class="ib" style="width: 45%">
+									<img ng-src="{{imgUrl}}exercise19/02.png" />
+								</div>
+							</div>
+
+							<div 	inbook-yesorno="ans.val" 
+									on-correct="question.markAsCorrect()"
+									on-incorrect="question.markAsIncorrect()"></div>
+
+							<div class="mt4">
+								<div inbook-nextbtn="question"></div>
+							</div>
+						</div>
+				</div>
+
+				<div 	inbook-questionseries-item level="3"
+						ng-init="
+							ans={};
+							ans.val 	 = false;
+						">
+
+						<div class="exercise-box">
+
+							<div class="exercise-header">
+								Est-ce triangle congruent avec le triangle sur la place
+							</div>
+
+							<div class="exercise-text center">
+								<div class="ib" style="width: 45%">
+									<img ng-src="{{imgUrl}}exercise19/00.png" />
+								</div>
+								<div class="ib" style="width: 45%">
+									<img ng-src="{{imgUrl}}exercise19/03.png" />
+								</div>
+							</div>
+
+							<div 	inbook-yesorno="ans.val" 
+									on-correct="question.markAsCorrect()"
+									on-incorrect="question.markAsIncorrect()"></div>
+
+							<div class="mt4">
+								<div inbook-nextbtn="question"></div>
+							</div>
+						</div>
+				</div>
+
+				<div 	inbook-questionseries-item level="4"
+						ng-init="
+							ans={};
+							ans.val 	 = false;
+						">
+
+						<div class="exercise-box">
+
+							<div class="exercise-header">
+								Est-ce triangle congruent avec le triangle sur la place
+							</div>
+
+							<div class="exercise-text center">
+								<div class="ib" style="width: 45%">
+									<img ng-src="{{imgUrl}}exercise19/00.png" />
+								</div>
+								<div class="ib" style="width: 45%">
+									<img ng-src="{{imgUrl}}exercise19/04.png" />
+								</div>
+							</div>
+
+							<div 	inbook-yesorno="ans.val" 
+									on-correct="question.markAsCorrect()"
+									on-incorrect="question.markAsIncorrect()"></div>
+
+							<div class="mt4">
+								<div inbook-nextbtn="question"></div>
+							</div>
+						</div>
+				</div>
+
+				<div 	inbook-questionseries-item level="5"
+						ng-init="
+							ans={};
+							ans.val 	 = true;
+						">
+
+						<div class="exercise-box">
+
+							<div class="exercise-header">
+								Est-ce triangle congruent avec le triangle sur la place
+							</div>
+
+							<div class="exercise-text center">
+								<div class="ib" style="width: 45%">
+									<img ng-src="{{imgUrl}}exercise19/00.png" />
+								</div>
+								<div class="ib" style="width: 45%">
+									<img ng-src="{{imgUrl}}exercise19/05.png" />
+								</div>
+							</div>
+
+							<div 	inbook-yesorno="ans.val" 
+									on-correct="question.markAsCorrect()"
+									on-incorrect="question.markAsIncorrect()"></div>
+
+							<div class="mt4">
+								<div inbook-nextbtn="question"></div>
+							</div>
+						</div>
+				</div>
+		</div>
+</div>

@@ -1,0 +1,111 @@
+<div 	class="page-layout" >
+	<div class="center type-xsmall mt10 bold">EXERCICE 9</div>
+	<div class="inbook-grid-layout" style="width:600px; margin: 10px auto;">
+		<div class="mb1">
+			Trouvez l’aire des rectangles et arrondissez, s’il y a lieu, la réponse au
+		</div>
+		<div>
+			dixième près. Effectuez vos calculs à l’aide de la calculatrice.
+		</div>
+		<div inbook-questionseries on-complete="scene.markAsCompleted();"
+				ordered=true
+				no-remove=true>
+			<div id="question-dots" inbook-questionseries-dots class="mb3"></div> 
+				<div id="questions">		
+							
+				<div inbook-questionseries-item  level="1" >
+					<div><img ng-src="{{imgUrl}}61.PNG" /></div>
+					<div class="">
+						<div class="ib">
+							<div attempts="3" inbook-answerbox-fill="60"  
+							 on-correct="question.markAsCorrect();
+											
+							"></div>
+						</div>
+						<div class="ib">m<sup>2</sup></div>
+					</div>
+				</div>
+				
+				<div inbook-questionseries-item  level="2" >
+					
+					<div class="">
+						<div class="type-small">
+							<div>L = 258m</div>
+							<div class="mt1 mb5">l = 52km</div>
+						</div>
+						<div class="ib">
+							<div attempts="3" inbook-answerbox-fill="13416"  
+							 on-correct="question.markAsCorrect();
+											
+							"></div>
+						</div>
+						<div class="ib">km<sup>2</sup></div>
+					</div>
+				</div>
+				
+				<div inbook-questionseries-item  level="3" >
+					
+					<div class="">
+						<div class="type-small">
+							<div>L = 6m</div>
+							<div class="mt1 mb5">l = 0.5km</div>
+						</div>
+						<div class="ib">
+							<div attempts="3" inbook-answerbox-fill="3"  
+							 on-correct="question.markAsCorrect();
+											
+							"></div>
+						</div>
+						<div class="ib">cm<sup>2</sup></div>
+					</div>
+				</div>
+				
+				<div inbook-questionseries-item  level="4" >
+					<div class="type-small ">
+						<div class="mb1">Trouve l'aire en km<sup>2</sup></div>
+						<div>L = 52km</div>
+						<div class="mt1 mb5">l = 200m</div>
+					</div>
+					<div class="">
+						<div class="ib">
+							<div attempts="3" inbook-answerbox-fill="10.4"  
+							 on-correct="question.markAsCorrect();
+											
+							"></div>
+						</div>
+						<div class="ib">km<sup>2</sup></div>
+					</div>
+				</div>	
+				
+				<div inbook-questionseries-item  level="5" >
+					<div class="type-small">
+						<div class="mb1">Trouve l'aire en cm<sup>2</sup></div>
+						<div>L = 2.5m</div>
+						<div class="mt1 mb5">l = 92km</div>
+					</div>
+					<div class="type-small bold">
+						<div class="ib">
+							<div attempts="3" inbook-answerbox-fill="23000"  
+							 on-correct="question.markAsCorrect();
+											
+							"></div>
+						</div>
+						<div class="ib">cm<sup>2</sup></div>
+					</div>
+				</div>	
+				
+			<div class="mt5 type-small" vcollapse="!questionseries.questionComplete;">
+				<div inbook-nextbtn="question"></div>
+			</div>
+
+			<div class="mt5" vcollapse="!questionseries.seriesCompleted">
+				<div inbook-nextbtn="series"></div>
+			</div>
+			
+			</div>
+		</div>
+	</div>
+	<div id="continue" class="mt6 center">
+  <div inbook-nextbtn="scene"></div>
+  </div>
+</div>

@@ -1,0 +1,135 @@
+
+
+    
+        <title>Module 6.05</title>
+        
+        
+        
+        
+    
+    
+        <div class="page-layout">
+            <div class="header-section"> 
+                Point-milieu d’un segment de droite
+            </div>
+            <div class="exemple-frame">
+                <div class="bold">Voici un exemple.</div>
+                <div class="bold">
+                    A. Trouver les coordonnées du point-milieu du segment de droite situé entre 
+                    les points A (1, 2) et B (7, 6).
+                </div>
+                <div class="bold">Solution: </div>
+                <ol>
+                    <li>
+                        <p>
+                           Placer les points A et B dans le plan; appelons le point milieu P et ses 
+                            coordonnées (x, y). 
+                        </p>
+                        <img ng-src="{{imgUrl}}m7-2.png" />
+                        <p>
+                            Puisque P est le point-milieu du segment AB, nous pouvons affirmer 
+                            que AP = BP.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            Construire un triangle rectangle à partir de AP et un autre à partir de 
+                            BP.
+                        </p>
+                        <img ng-src="{{imgUrl}}m7-3.png" />
+                        <p>
+                            Puisque les côtés AP et BP sont égaux et que l’angle C égale l’angle 
+                            D, nous pouvons affirmer que AC = PD. 
+                        </p>
+                    </li>
+                    <li>
+                       Déterminer la longueur des segments AC et PD. 
+                        <p>
+                            La longueur de AC est égale à la différence des x, soit x - 1. 
+                        </p>
+                        <p>
+                            La longueur de PD est égale à la différence des x, soit 7 - x. 
+                        </p>
+                        <div>
+                            <div>Puisque AC = PD</div> 
+                            <div class="ml10"><span math>x − 1 = 7 − x</span></div> 
+                            <div>d’où <span math>2x = 7 + 1</span></div> 
+                            <div class="ml10"><span math>x = 7 + 1_2</span></div>
+                            <div class="ml10"><span math>x = 4</span></div> 
+                        </div>
+                        <div>Nous avons la première valeur du point P, soit x = 4. </div>
+                    </li>
+                    <li>
+                        Pour trouver la valeur de y, déterminons la longueur des segments FBO 
+                        - 15 - PC et BD. 
+                        <p>
+                            La longueur de PC est égale à la différence des y, soit y - 2.
+                        </p>
+                        <p>
+                            La longueur de BD est égale à la différence des y, soit 6 - y. . 
+                        </p>
+                        <div>
+                            <div>Puisque PC = BD</div> 
+                            <div class="ml10"><span math>y - 2 = 6 - y</span></div> 
+                            <div>d’où <span math>2y = 6 + 2 </span></div> 
+                            <div class="ml10"><span math>y = 6 + 2_2</span></div>
+                            <div class="ml10"><span math>y = 4</span></div> 
+                        </div>
+                        <div>Nous avons la seconde valeur du point P, soit <span math>y = 4</span>.</div>
+                        <div>Les coordonnées du point P sont <span math>(4, 4)</span>. </div>
+                    </li>
+                </ol>
+            </div>
+            
+            <div class="mt10">
+                Tout comme dans le cas de la distance entre deux points donnés, il nous est 
+                possible de développer une formule afin de trouver le point-milieu de tout 
+                segment donné.
+            </div>
+            <div class="mt10">
+                Pour ce faire, tracer un segment de droite ayant comme coordonnées des points 
+                A <span math>(x2, y2)</span> et B <span math>(x2, y2)</span>; le point-milieu du segment est P dont les coordonnées 
+                sont (x, y). Construire un triangle rectangle à partir de AP et un autre à partir de 
+                PB. 
+            </div>
+            <img ng-src="{{imgUrl}}m7-4.png" />
+            <div>AC = PD et BD = PC.</div>
+            <div class="mt1">Déterminer la longueur des segments AC et PD. </div>
+             <p>
+                 La longueur de AC est égale à la différence des x, soit <span math>x - x1</span>. 
+            </p>
+            <p>
+                La longueur de PD est aussi égale à la différence des x, soit <span math>x2 - x</span>.  
+            </p>
+            <div>
+                <div>Puisque AC = PD</div> 
+                <div class="ml10"><span math>x − x1 = x2 – x</span></div> 
+                <div class="ml10"><span math>2x = x1 + x2</span></div>
+                <div class="ml10"><span math>x = x1+ x2/2 </span></div> 
+            </div>
+            <br/>
+            <div class="mt10">De façon analogue, déterminer la longueur des segments BD et PC. </div>
+             <p>
+                 La longueur de BD est égale à la différence des y, soit <span math>y2 - y</span>.  
+            </p>
+            <p>
+                La longueur de PC est aussi égale à la différence des y, soit <span math>y - y1</span>. 
+            </p>
+            <div>
+                <div>Puisque BD = PC </div> 
+                <div class="ml10"><span math>y2 − y = y − y1</span></div> 
+                <div class="ml10"><span math>-2y = -y1 - y2</span></div>
+                <div class="ml10"><span math>2y = y1 + y2</span></div> 
+                <div class="ml10"><span math> y = y1 + y2/2</span></div> 
+            </div>
+            <div class="mt10">Les coordonnées du point-milieu P <span math>(x, y)</span> sont <span math>(x1 + x2)/2</span>, <span math>(y1 + y2)/2</span>. </div>
+            <div>
+                Pour trouver les coordonnées du point-milieu de tout segment de droite, nous 
+                pouvons utiliser cette formule: 
+            </div>
+            <div class="center note-frame">
+                <img ng-src="{{imgUrl}}m7-7.png" />
+            </div>
+        </div>
+    
+

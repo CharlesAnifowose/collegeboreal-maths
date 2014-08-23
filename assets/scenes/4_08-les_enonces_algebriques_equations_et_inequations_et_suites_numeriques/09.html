@@ -1,0 +1,565 @@
+
+<div  class="page-layout">
+		<div class="para"> 
+				Trouvez la valeur de x dans les équations.
+		</div>
+		<div 	inbook-questionseries
+				on-complete="scene.markAsCompleted();"
+  				ordered=true
+  				no-remove=true>
+
+  				<div inbook-questionseries-item level="1">  				
+  					<div class="mt3">
+  						<div class="para">2x = 3</div>
+  						<div>
+	  						<div class="ib">x  =</div>
+					      	<div class="ib" attempts="3" inbook-answerbox-fill="1.5"  
+					       	on-correct="question.markAsCorrect();		          
+					      "></div>
+				      	</div>				      	
+				     </div>
+  				</div>
+
+  				<div inbook-questionseries-item level="2">  				
+  					<div class="mt3">
+  						<div class="para">5x = 12,5</div>
+  						<div>
+	  						<div class="ib">x  =</div>
+					      	<div class="ib" attempts="3" inbook-answerbox-fill="2.5"  
+					       	on-correct="question.markAsCorrect();		          
+					      "></div>
+				      	</div>				      	
+				     </div>
+  				</div>
+				
+				<div inbook-questionseries-item level="3">  				
+  					<div class="mt3">
+  						<div class="para">3 + x = 4,8</div>
+  						<div>
+	  						<div class="ib">x  =</div>
+					      	<div class="ib" attempts="3" inbook-answerbox-fill="1.8"  
+					       	on-correct="question.markAsCorrect();		          
+					      "></div>
+				      	</div>				      	
+				     </div>
+  				</div>
+				
+				<div inbook-questionseries-item level="4">  				
+  					<div class="mt3">
+  						<div class="para"> x + 0,25 = 6,25</div>
+  						<div>
+	  						<div class="ib">x  =</div>
+					      	<div class="ib" attempts="3" inbook-answerbox-fill="6"  
+					       	on-correct="question.markAsCorrect();		          
+					      "></div>
+				      	</div>				      	
+				     </div>
+  				</div>
+				
+				<div inbook-questionseries-item level="5">  				
+  					<div class="mt3">
+  						<div class="para">  20 - x = 12,2</div>
+  						<div>
+	  						<div class="ib">x  =</div>
+					      	<div class="ib" attempts="3" inbook-answerbox-fill="7.8"  
+					       	on-correct="question.markAsCorrect();		          
+					      "></div>
+				      	</div>				      	
+				     </div>
+  				</div>
+				
+				<div inbook-questionseries-item level="6">  	
+					<div
+						ng-init=""
+						ng-resettable-init="
+							ans.locked = false;
+							ans.a = '';
+							ans.b = '';
+							feedback.reveal = false;
+							"
+						ng-equate="
+						  solution.a = 3;
+						  solution.b = 2;
+						  solution.aNumbersMatch = equal(solution.a, ans.a);
+						  solution.bNumbersMatch = equal(solution.b, ans.b);
+						  ans.isCorrect = and(solution.aNumbersMatch, solution.bNumbersMatch);
+						  ans.isCorrectFlag = ifElse(ans.isCorrect, 1, 0);
+						  ">
+	
+  					<div class="mt3">
+  						<div class="para">
+							<div class="ib">5 &times; x = </div>
+							<div class="ib inbook-fraction">
+								<div>15</div>
+								<div class="fraction-line-thin"></div>
+								<div>2</div>
+						   </div>
+						</div>
+  						<div>
+	  						<div class="ib">x  =</div>
+					      	<div class="inbook-fraction ib">
+								<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
+									ng-model="ans.a" 
+									ng-disabled="ans.locked"
+									ng-enter-key="ans.remoteTrigger=true;"
+									/>
+								</div>
+								<div class="fraction-line-thin mb1"></div>
+								<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
+									ng-model="ans.b" 
+									ng-disabled="ans.locked"
+									ng-enter-key="ans.remoteTrigger=true;"
+									/>
+								</div>
+							</div>
+							<div class="type-xxxsmall mb2 ib">
+								<div inbook-answer-submit="1"				
+									 ng-model="ans.isCorrectFlag" 
+									 attempts="1" simple-ui="1"
+									 remote-trigger="ans.remoteTrigger" 
+									 remote-trigger-reset="ans.remoteTrigger = false;"
+									 on-correct=   "question.markAsCorrect();														
+									"
+									 on-incorrect= "
+										storedAns.a = ans.a;
+										storedAns.b = ans.b;
+										feedback.reveal = true;
+										question.markAsIncorrect();
+									 "
+									 on-complete="
+										ans.locked=false; 										
+										track({description:'question', calc:calc, ans:ans})
+									 ">
+								  </div>
+								</div>
+							</div>
+				      	</div>				      	
+				     </div>
+  				</div>
+				
+				<div inbook-questionseries-item level="7">  				
+  					<div class="mt3">
+						<div class="ib inbook-fraction">
+								<div>3</div>
+								<div class="fraction-line-thin"></div>
+								<div>4</div>
+						   </div>
+						   <div class="ib">&plus; x = </div>
+						   <div class="ib inbook-fraction">
+								<div>7</div>
+								<div class="fraction-line-thin"></div>
+								<div>4</div>
+						   </div>
+  						<div>
+	  						<div class="ib">x  =</div>
+					      	<div class="ib" attempts="3" inbook-answerbox-fill="1"  
+					       	on-correct="question.markAsCorrect();		          
+					      "></div>
+				      	</div>				      	
+				     </div>
+  				</div>
+				
+				<div inbook-questionseries-item level="8">  	
+					<div
+						ng-init=""
+						ng-resettable-init="
+							ans.locked = false;
+							ans.a = '';
+							ans.b = '';
+							feedback.reveal = false;
+							"
+						ng-equate="
+						  solution.a = 2;
+						  solution.b = 3;
+						  solution.aNumbersMatch = equal(solution.a, ans.a);
+						  solution.bNumbersMatch = equal(solution.b, ans.b);
+						  ans.isCorrect = and(solution.aNumbersMatch, solution.bNumbersMatch);
+						  ans.isCorrectFlag = ifElse(ans.isCorrect, 1, 0);
+						  ">
+	
+  					<div class="mt3">
+  						<div class="para">
+							<div class="ib inbook-fraction">
+								<div>1</div>
+								<div class="fraction-line-thin"></div>
+								<div>3</div>
+						   </div>
+						   <div class="ib">&plus; x = 1</div>
+						</div>
+  						<div>
+	  						<div class="ib">x  =</div>
+					      	<div class="inbook-fraction ib">
+								<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
+									ng-model="ans.a" 
+									ng-disabled="ans.locked"
+									ng-enter-key="ans.remoteTrigger=true;"
+									/>
+								</div>
+								<div class="fraction-line-thin mb1"></div>
+								<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
+									ng-model="ans.b" 
+									ng-disabled="ans.locked"
+									ng-enter-key="ans.remoteTrigger=true;"
+									/>
+								</div>
+							</div>
+							<div class="type-xxxsmall mb2 ib">
+								<div inbook-answer-submit="1"				
+									 ng-model="ans.isCorrectFlag" 
+									 attempts="1" simple-ui="1"
+									 remote-trigger="ans.remoteTrigger" 
+									 remote-trigger-reset="ans.remoteTrigger = false;"
+									 on-correct=   "question.markAsCorrect();														
+									"
+									 on-incorrect= "
+										storedAns.a = ans.a;
+										storedAns.b = ans.b;
+										feedback.reveal = true;
+										question.markAsIncorrect();
+									 "
+									 on-complete="
+										ans.locked=false; 										
+										track({description:'question', calc:calc, ans:ans})
+									 ">
+								  </div>
+								</div>
+							</div>
+				      	</div>				      	
+				     </div>
+  				</div>
+				
+				
+				
+				<div inbook-questionseries-item level="9"> 
+					<div
+						ng-init=""
+						ng-resettable-init="
+							ans.locked = false;
+							ans.a = '';
+							ans.b = '';
+							feedback.reveal = false;
+							"
+						ng-equate="
+						  solution.a = 2;
+						  solution.b = 3;
+						  solution.aNumbersMatch = equal(solution.a, ans.a);
+						  solution.bNumbersMatch = equal(solution.b, ans.b);
+						  ans.isCorrect = and(solution.aNumbersMatch, solution.bNumbersMatch);
+						  ans.isCorrectFlag = ifElse(ans.isCorrect, 1, 0);
+						  ">
+  					<div class="mt3">
+  						<div class="para">
+							<div class="ib inbook-fraction">
+								<div>5</div>
+								<div class="fraction-line-thin"></div>
+								<div>6</div>
+						   </div>
+						   <div class="ib">&minus; x = 1</div>
+						   <div class="ib inbook-fraction">
+								<div>1</div>
+								<div class="fraction-line-thin"></div>
+								<div>6</div>
+						   </div>
+						</div>
+  						<div>
+	  						<div class="ib">x  =</div>
+					      	<div class="inbook-fraction ib">
+								<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
+									ng-model="ans.a" 
+									ng-disabled="ans.locked"
+									ng-enter-key="ans.remoteTrigger=true;"
+									/>
+								</div>
+								<div class="fraction-line-thin mb1"></div>
+								<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
+									ng-model="ans.b" 
+									ng-disabled="ans.locked"
+									ng-enter-key="ans.remoteTrigger=true;"
+									/>
+								</div>
+							</div>
+							<div class="type-xxxsmall mb2 ib">
+								<div inbook-answer-submit="1"				
+									 ng-model="ans.isCorrectFlag" 
+									 attempts="1" simple-ui="1"
+									 remote-trigger="ans.remoteTrigger" 
+									 remote-trigger-reset="ans.remoteTrigger = false;"
+									 on-correct=   "question.markAsCorrect();														
+									"
+									 on-incorrect= "
+										storedAns.a = ans.a;
+										storedAns.b = ans.b;
+										feedback.reveal = true;
+										question.markAsIncorrect();
+									 "
+									 on-complete="
+										ans.locked=false; 										
+										track({description:'question', calc:calc, ans:ans})
+									 ">
+								  </div>
+								</div>
+							</div>
+				      	</div>				      	
+				     </div>
+  				</div>
+				
+				<div inbook-questionseries-item level="10"> 
+					<div
+						ng-init=""
+						ng-resettable-init="
+							ans.locked = false;
+							ans.a = '';
+							ans.b = '';
+							ans.w = '';
+							feedback.reveal = false;
+							"
+						ng-equate="
+						  solution.a = 1;
+						  solution.b = 2;
+						   solution.w = 4;
+						  solution.aNumbersMatch = equal(solution.a, ans.a);
+						  solution.bNumbersMatch = equal(solution.b, ans.b);
+						  solution.wNumbersMatch = equal(solution.w, ans.w);
+						  ans.isCorrect = and(solution.aNumbersMatch, solution.bNumbersMatch, solution.wNumbersMatch);
+						  ans.isCorrectFlag = ifElse(ans.isCorrect, 1, 0);
+						  "> 				
+  					<div class="mt3">
+  						<div class="para">
+						   <div class="ib">12 &plus; x = 16</div>
+						   <div class="ib inbook-fraction">
+								<div>1</div>
+								<div class="fraction-line-thin"></div>
+								<div>2</div>
+						   </div>
+						</div>
+  						<div>
+	  						<div class="ib">x  =</div>
+					      	<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
+								ng-model="ans.w" 
+								ng-disabled="ans.locked"
+								ng-enter-key="ans.remoteTrigger=true;"
+								/>
+							</div>
+							<div class="inbook-fraction ib">
+								<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
+									ng-model="ans.a" 
+									ng-disabled="ans.locked"
+									ng-enter-key="ans.remoteTrigger=true;"
+									/>
+								</div>
+								<div class="fraction-line-thin mb1"></div>
+								<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
+									ng-model="ans.b" 
+									ng-disabled="ans.locked"
+									ng-enter-key="ans.remoteTrigger=true;"
+									/>
+								</div>
+							</div>
+							<div class="type-xxxsmall mb2 ib">
+								<div inbook-answer-submit="1"				
+									 ng-model="ans.isCorrectFlag" 
+									 attempts="1" simple-ui="1"
+									 remote-trigger="ans.remoteTrigger" 
+									 remote-trigger-reset="ans.remoteTrigger = false;"
+									 on-correct=   "question.markAsCorrect();														
+									"
+									 on-incorrect= "
+										storedAns.a = ans.a;
+										storedAns.b = ans.b;
+										storedAns.w = ans.w;
+										feedback.reveal = true;
+										question.markAsIncorrect();
+									 "
+									 on-complete="
+										ans.locked=false; 										
+										track({description:'question', calc:calc, ans:ans})
+									 ">
+								</div>
+							</div>
+				      	</div>				      	
+				     </div>
+  				</div>
+			</div>
+			
+			<div inbook-questionseries-item level="11">  				
+				<div class="mt3">
+					<div class="para">
+					   <div class="ib">9 &minus; x =</div>
+					   <div class="ib inbook-fraction">
+							<div>12</div>
+							<div class="fraction-line-thin"></div>
+							<div>4</div>
+					   </div>
+					</div>
+					<div>
+						<div class="ib">x  =</div>
+						<div class="ib" attempts="3" inbook-answerbox-fill="6"  
+						on-correct="question.markAsCorrect();		          
+					  "></div>
+					</div>				      	
+				 </div>
+			</div>
+			
+			<div inbook-questionseries-item level="12"> 
+					<div
+						ng-init=""
+						ng-resettable-init="
+							ans.locked = false;
+							ans.a = '';
+							ans.b = '';
+							ans.w = '';
+							feedback.reveal = false;
+							"
+						ng-equate="
+						  solution.a = 1;
+						  solution.b = 2;
+						   solution.w = 2;
+						  solution.aNumbersMatch = equal(solution.a, ans.a);
+						  solution.bNumbersMatch = equal(solution.b, ans.b);
+						  solution.wNumbersMatch = equal(solution.w, ans.w);
+						  ans.isCorrect = and(solution.aNumbersMatch, solution.bNumbersMatch, solution.wNumbersMatch);
+						  ans.isCorrectFlag = ifElse(ans.isCorrect, 1, 0);
+						  "> 				
+						<div class="mt3">
+							<div class="para">
+							   <div class="ib">x &plus; 3</div>
+							   <div class="ib inbook-fraction">
+									<div>1</div>
+									<div class="fraction-line-thin"></div>
+									<div>4</div>
+							   </div>
+							   <div class="ib">= 5</div
+							   ><div class="ib inbook-fraction">
+									<div>3</div>
+									<div class="fraction-line-thin"></div>
+									<div>4</div>
+							   </div>
+							</div>
+						</div>
+  						<div>
+	  						<div class="ib">x  =</div>
+					      	<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
+								ng-model="ans.w" 
+								ng-disabled="ans.locked"
+								ng-enter-key="ans.remoteTrigger=true;"
+								/>
+							</div>
+							<div class="inbook-fraction ib">
+								<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
+									ng-model="ans.a" 
+									ng-disabled="ans.locked"
+									ng-enter-key="ans.remoteTrigger=true;"
+									/>
+								</div>
+								<div class="fraction-line-thin mb1"></div>
+								<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
+									ng-model="ans.b" 
+									ng-disabled="ans.locked"
+									ng-enter-key="ans.remoteTrigger=true;"
+									/>
+								</div>
+							</div>
+							<div class="type-xxxsmall mb2 ib">
+								<div inbook-answer-submit="1"				
+									 ng-model="ans.isCorrectFlag" 
+									 attempts="1" simple-ui="1"
+									 remote-trigger="ans.remoteTrigger" 
+									 remote-trigger-reset="ans.remoteTrigger = false;"
+									 on-correct=   "question.markAsCorrect();														
+									"
+									 on-incorrect= "
+										storedAns.a = ans.a;
+										storedAns.b = ans.b;
+										storedAns.w = ans.w;
+										feedback.reveal = true;
+										question.markAsIncorrect();
+									 "
+									 on-complete="
+										ans.locked=false; 										
+										track({description:'question', calc:calc, ans:ans})
+									 ">
+								</div>
+							</div>			      	
+				     </div>
+  				</div>
+			</div>
+			
+				<div inbook-questionseries-item level="13"> 
+					<div
+						ng-init=""
+						ng-resettable-init="
+							ans.locked = false;
+							ans.a = '';
+							ans.b = '';
+							feedback.reveal = false;
+							"
+						ng-equate="
+						  solution.a = 3;
+						  solution.b = 7;
+						  solution.aNumbersMatch = equal(solution.a, ans.a);
+						  solution.bNumbersMatch = equal(solution.b, ans.b);
+						  ans.isCorrect = and(solution.aNumbersMatch, solution.bNumbersMatch);
+						  ans.isCorrectFlag = ifElse(ans.isCorrect, 1, 0);
+						  ">
+  					<div class="mt3">
+  						<div class="para">
+							<div class="ib">x &minus;</div>
+							<div class="ib inbook-fraction">
+								<div>2</div>
+								<div class="fraction-line-thin"></div>
+								<div>7</div>
+						   </div>
+						   <div class="ib">=</div>
+						   <div class="ib inbook-fraction">
+								<div>1</div>
+								<div class="fraction-line-thin"></div>
+								<div>7</div>
+						   </div>
+						</div>
+  						<div>
+	  						<div class="ib">x  =</div>
+					      	<div class="inbook-fraction ib">
+								<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
+									ng-model="ans.a" 
+									ng-disabled="ans.locked"
+									ng-enter-key="ans.remoteTrigger=true;"
+									/>
+								</div>
+								<div class="fraction-line-thin mb1"></div>
+								<div auto-size-input class="ib type-xxsmall"><input type="text" class="type-xxsmall " 
+									ng-model="ans.b" 
+									ng-disabled="ans.locked"
+									ng-enter-key="ans.remoteTrigger=true;"
+									/>
+								</div>
+							</div>
+							<div class="type-xxxsmall mb2 ib">
+								<div inbook-answer-submit="1"				
+									 ng-model="ans.isCorrectFlag" 
+									 attempts="1" simple-ui="1"
+									 remote-trigger="ans.remoteTrigger" 
+									 remote-trigger-reset="ans.remoteTrigger = false;"
+									 on-correct=   "question.markAsCorrect();														
+									"
+									 on-incorrect= "
+										storedAns.a = ans.a;
+										storedAns.b = ans.b;
+										feedback.reveal = true;
+										question.markAsIncorrect();
+									 "
+									 on-complete="
+										ans.locked=false; 										
+										track({description:'question', calc:calc, ans:ans})
+									 ">
+								  </div>
+								</div>
+							</div>
+				      	</div>				      	
+				     </div>
+  				</div>
+				
+			<div class="mt4">
+				<div inbook-nextbtn="question"></div>
+			</div>
+		</div>
+</div>

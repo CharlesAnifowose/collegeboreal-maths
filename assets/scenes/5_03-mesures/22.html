@@ -1,0 +1,82 @@
+<div  class="page-layout" 
+    ng-init="
+      imgUrl = 'http://d3mw5hjf8nr5ry.cloudfront.net/collegeboreal-sample/images/5_03_mesures/';
+    ">	
+
+
+    	<div class="exercise-num">
+	    	EXERCICE 2.1
+    	</div>
+
+		<div class="para"> 
+			Calculez l'aire totale des solides des numéros  1 à 3. 
+		</div>
+		<div 	inbook-questionseries
+				on-complete="scene.markAsCompleted();"
+  				ordered=true
+  				no-remove=true>
+
+  				<div inbook-questionseries-item level="1"> 
+
+					<div class="exercise-box">
+					
+  						<div class="para">1. Un cube dont l'arête mesure  12 cm.</div>
+  						<div>
+	  						<div class="ib">Aire totale  =</div>
+					      	<div class="ib" attempts="3" inbook-answerbox-fill="864"  
+					       	on-correct="question.markAsCorrect();		          
+					      "></div>
+				      	</div>	
+
+					     <div class="mt4">
+							<div inbook-nextbtn="question"></div>
+						</div>
+				     </div>
+  				</div>
+
+  				<div inbook-questionseries-item level="2">  
+					<div class="exercise-box">
+
+  						<div class="para">
+							2. Un cône dont le rayon de la base mesure 3 cm 
+							et la longueur de la génératrice  est 6 cm.
+						</div>
+  						<div>
+	  						<div class="ib">Aire totale  =</div>
+					      	<div class="ib" attempts="3" inbook-answerbox-fill="84.78"  
+					       	on-correct="question.markAsCorrect();		          
+					      "></div>
+				      	</div>				      	
+
+				     	<div class="mt4">
+							<div inbook-nextbtn="question"></div>
+						</div>
+				     </div>
+  				</div>
+				
+				<div inbook-questionseries-item level="3">  
+
+					<div class="exercise-box">
+
+  						<div class="para">
+							3. Un parallélépipède  (prisme) rectangle  
+							dont la base mesure 20 cm sur 30 cm et sur 
+							une hauteur de 14 cm.
+						</div>
+  						<div>
+	  						<div class="ib">Aire totale  =</div>
+					      	<div class="ib" attempts="3" inbook-answerbox-fill="2600"  
+					       	on-correct="question.markAsCorrect();		          
+					      "></div>
+				      	</div>				      	
+
+				     	<div class="mt4">
+							<div inbook-nextbtn="question"></div>
+						</div>
+
+				     </div>
+  				</div>
+				
+			
+		</div>
+</div>

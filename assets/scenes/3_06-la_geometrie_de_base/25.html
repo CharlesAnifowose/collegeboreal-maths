@@ -1,0 +1,45 @@
+<div 	class="page-layout" >
+	<div class="center type-xsmall mt10 bold">EXERCICE 12</div>
+	<div class="inbook-grid-layout" style="width:600px; margin: 10px auto;">
+	<div class="mt3 mb2">
+		 <div class="mb1">Dessinez les figures équivalentes. Donnez des mesures possibles pour les</div> 
+		 <div>côtés de vos figures.</div>
+	</div>
+		<div inbook-questionseries on-complete="scene.markAsCompleted();"
+				ordered=true
+				no-remove=true>
+			<div id="question-dots" inbook-questionseries-dots class="mb3"></div> 
+				<div id="questions">		
+							
+				<div inbook-questionseries-item  level="1" >
+					<div>a) Dessinez une boîte de céréales et un cadre ayant des aires équivalentes.</div>
+				</div>
+				
+				<div inbook-questionseries-item  level="2" >
+					<div>b) Dessinez deux surfaces de tables ayant une aire équivalente mais des mesures différentes.</div>
+				</div>
+				
+				<div inbook-questionseries-item  level="3" >
+					<div>c) Dessinez deux claviers ayant des périmètres semblables mais des aires différentes.</div>
+				</div>
+				
+				<div inbook-questionseries-item  level="4" >
+					<div>d) Dessinez deux télévisions ayant le même périmètre mais des aires différentes.</div>
+				</div>
+				
+				
+			<div class="mt5 type-small" vcollapse="!questionseries.questionComplete;">
+				<div inbook-nextbtn="question"></div>
+			</div>
+
+			<div class="mt5" vcollapse="!questionseries.seriesCompleted">
+				<div inbook-nextbtn="series"></div>
+			</div>
+			
+			</div>
+		</div>
+	</div>
+	<div id="continue" class="mt6 center">
+  <div inbook-nextbtn="scene"></div>
+  </div>
+</div>
